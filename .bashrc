@@ -444,6 +444,28 @@ alias emacsnoinit='/Applications/Emacs.app/Contents/MacOS/Emacs -q'
 alias mvnver="mvn versions:display-dependency-updates versions:display-plugin-updates | grep 'INFO' | grep '>' | sort | uniq"
 alias mvnclean="mvn dependency:purge-local-repository -DactTransitively=false -DreResolve=false"
 
+function iterm_tab_color {
+    case $1 in
+        green)
+            echo -e "\033]6;1;bg;red;brightness;57\a"
+            echo -e "\033]6;1;bg;green;brightness;197\a"
+            echo -e "\033]6;1;bg;blue;brightness;77\a"
+            ;;
+        red)
+            echo -e "\033]6;1;bg;red;brightness;270\a"
+            echo -e "\033]6;1;bg;green;brightness;60\a"
+            echo -e "\033]6;1;bg;blue;brightness;83\a"
+            ;;
+        orange)
+            echo -e "\033]6;1;bg;red;brightness;227\a"
+            echo -e "\033]6;1;bg;green;brightness;143\a"
+            echo -e "\033]6;1;bg;blue;brightness;10\a"
+            ;;
+        *)
+            echo -e "\033]6;1;bg;*;default\a"
+            ;;
+    esac
+}
 ## Use this to save the dot files in a github repo.
 # mkdir ~/.dotfiles
 #git init --bare $HOME/.dotfiles
