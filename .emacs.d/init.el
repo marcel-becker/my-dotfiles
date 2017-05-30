@@ -4,7 +4,7 @@
 ;; You may delete these explanatory comments.
 ;(package-initialize)
 
-(setq use-spacemacs t)   ; or nil
+(setq use-spacemacs nil)   ; or nil
 
 (when use-spacemacs
   (setq user-emacs-directory
@@ -19,6 +19,7 @@
                  "~/Dropbox/.spacemacs.d/")
                 (t
                  (expand-file-name "~/.spacemacs.d/")))))
+  (setq spacemacs-start-directory user-emacs-directory)
   (if (file-exists-p (expand-file-name "init.el" user-emacs-directory))
       (load (expand-file-name "init.el" user-emacs-directory))))
 

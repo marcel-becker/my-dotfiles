@@ -56379,3 +56379,511 @@ more build-all-docker-images.sh
 docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
 #1495569194
 exit
+#1495754690
+/Applications/Alfred\ 3.app/Contents/Frameworks/Alfred\ Framework.framework/Versions/A/Resources/reindexdel.sh ; exit;
+#1495336768
+git checkout sf-get-url 
+#1495336883
+git checkout master 
+#1495336902
+mvn clean compile
+#1495391066
+ssh -p 443 10.22.54.71
+#1495391082
+ssh -p 443 marcel.becker.local@10.22.54.71
+#1495391106
+ssh 10.22.54.71
+#1495391120
+ssh -v -v -v 10.22.54.71
+#1495471018
+cd src/rspace-eclipse/scharp/
+#1495471021
+git pull --all
+#1495471032
+git checkout sf-publish-repairs 
+#1495471354
+git checkout master 
+#1495471366
+mvn clean compile
+#1495471366
+mvn clean compile
+#1495482659
+mvn dependency:analyze
+#1495494952
+git add Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile Docker/devcloud/base/Dockerfile
+#1495494995
+git commit -m "Moved the go offline command earlier."
+#1495495003
+git push -u origin master 
+#1495495146
+git checkout -b marcel-run-both-uis
+#1495495162
+git add src/main/java/edu/kestrel/scharp/activemq/te3/TE3MainServers.java src/main/java/edu/kestrel/scharp/planner/analysis/
+#1495495184
+git commit -m "Changes to try to run both uis at the same time."
+#1495495196
+git push -u origin marcel-run-both-uis 
+#1495471366
+mvn clean compile
+#1495481798
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile -t scharp/planner .
+#1495481949
+more build-all-docker-images.sh 
+#1495481968
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
+#1495753149
+cd Dropbox/.spacemacs.d/
+#1495753152
+git status
+#1495753192
+more init.el 
+#1495753261
+cd src/
+#1495753263
+cd emacs/
+#1495753266
+git pull
+#1495754341
+emacs-undumped 
+#1495754431
+brew unistall emacs
+#1495754441
+brew uninstall emacs
+#1495754453
+brew uninstall --force emacs
+#1495754814
+brew uninstall emacs-mac
+#1495754827
+brew uninstall --force emacs-mac
+#1495754837
+brew list
+#1495754845
+brew list emacs
+#1495758304
+more INSTALL
+#1495758479
+./configure --with-ns 
+#1495759175
+make install
+#1495770597
+cd
+#1495770646
+configdot add .spacemacs 
+#1495770667
+configdot add .emacs.d/init.el
+#1495770688
+configdot commit -m "Added spacemacs init file."
+#1495770697
+configdot push 
+#1495770719
+configdot push -u origin master
+#1495770734
+configdot pull
+#1495817541
+diff .spacemacs Dropbox/.spacemacs.d/init.el 
+#1495818740
+brew cask list
+#1495818746
+brew update
+#1495818781
+brew upgrade
+#1495818833
+brew doctor
+#1495818862
+brew unlink texinfo
+#1495821151
+brew instal mac-emacs
+#1495822995
+diff .spacemacs .dotfile-backup/.spacemacs 
+#1495823014
+configdot status
+#1495823228
+mv .spacemacs spacemace-saved
+#1495823281
+ls -al
+#1495823284
+more .spacemacs 
+#1495826739
+diff spacemace-saved Dropbox/.spacemacs.d/init.el 
+#1495833830
+rm ~/Dropbox/.emacs.d/elpa/archives/melpa/archive-contents*
+#1495833985
+rm ~/Dropbox/.emacs.d/elpa/archives/gnu/
+#1495833990
+rm ~/Dropbox/.emacs.d/elpa/archives/gnu/*
+#1495834012
+rm ~/Dropbox/.emacs.d/elpa/archives/melpa/*
+#1495834087
+rm ~/Dropbox/.emacs.d/elpa/archives/marmalade/*
+#1495834363
+cd Dropbox/.emacs.d/elpa/
+#1495834444
+rm -rf helm*
+#1495835001
+which emacs
+#1495835032
+/Applications/Emacs.app/Contents/MacOS/Emacs --debug-init
+#1495847717
+diff init.el init.el~
+#1495847729
+rm init.el~
+#1495848761
+cd elpa/window-number-20141106.1829/
+#1495848771
+rm window-number\ \(dhcp210.kestrel.edu\'s\ conflicted\ copy\ 2017-05-26\).elc 
+#1495848781
+rm window-number.elc 
+#1495848814
+rm window-number-autoloads\ \(dhcp210.kestrel.edu\'s\ conflicted\ copy\ 2017-05-26\).el 
+#1495848836
+cd window-numbering-20160809.1110/
+#1495848849
+cd ../winum-20170430.1629/
+#1495848850
+ls
+#1495848861
+rm winum.elc 
+#1495851267
+/Applications/Emacs.app/Contents/MacOS/Emacs --debug-init -q
+#1495853273
+/Applications/Emacs.app/Contents/MacOS/Emacs --debug-init 
+#1495853983
+cd ..
+#1495853990
+find ./ -name "*.elc" -print
+#1495854113
+find ./ -name "*.elc" -print -exec rm -f {} \;
+#1495854185
+exit
+#1495752767
+brew update
+#1495752937
+brew upgrade
+#1495753394
+brew cask upgrade
+#1495753472
+brew cask audit
+#1495753510
+brew cask help
+#1495753526
+brew cask cleanup
+#1495753534
+brew cask doctor
+#1495753544
+brew doctor
+#1495753596
+brew link emacs-mac
+#1495754287
+brew link --overwrite --dry-run emacs-mac
+#1495854186
+exit
+#1495140657
+git pull origin master 
+#1495140671
+git pull
+#1495140674
+git status
+#1495140685
+git push -u origin sf-get-url 
+#1495152650
+git status
+#1495152901
+git pull origin master 
+#1495152947
+git status
+#1495152963
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/ScenarioConfig.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE3ScenarioConfiguration.java src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java 
+#1495152969
+git status
+#1495152984
+git diff src/main/resources/logback.xml
+#1495153001
+git checkout -- src/main/resources/logback.xml
+#1495153003
+git status
+#1495153018
+git commit -m "Added code to load the targets from the data services."
+#1495153030
+git push -u origin sf-get-url 
+#1495153054
+git checkout sf-xmpp 
+#1495153057
+git pull
+#1495153176
+git pull origin master 
+#1495153359
+docker ps -a
+#1495153381
+docker rm -f dd86fcca3d4c
+#1495218740
+git status
+#1495218752
+git pull
+#1495218801
+git checkout marcel-fix-repair-refuel
+#1495218810
+git checkout -b  marcel-fix-repair-refuel
+#1495218813
+git status
+#1495218824
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1495218835
+git add src/main/java/edu/kestrel/scharp/replanner/
+#1495218841
+git diff src/test/java/edu/kestrel/scharp/replanner/ReplannerTest.java
+#1495218855
+git checkout -- src/test/java/edu/kestrel/scharp/replanner/ReplannerTest.java
+#1495218857
+git status
+#1495218876
+git commit -m "Fixed the refueling tanker repair action."
+#1495218884
+git push -u origin marcel-fix-repair-refuel 
+#1495241032
+git status
+#1495241042
+git diff src/main/java/edu/kestrel/scharp/planner/analysis/TBAGraph.java
+#1495241122
+git status
+#1495241141
+git diff src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java
+#1495241161
+git status
+#1495241169
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1495241180
+git status
+#1495241189
+git diff src/main/java/edu/kestrel/scharp/replanner/Replanner.java
+#1495241253
+git status
+#1495241285
+git add src/main/java/edu/kestrel/scharp/planner/analysis/TBAGraph.java src/main/java/edu/kestrel/scharp/planner/manager/
+#1495241299
+git add src/main/java/edu/kestrel/scharp/replanner/Replanner.java src/main/java/edu/kestrel/scharp/usmtf/convert/
+#1495241301
+git status
+#1495241328
+git commit -m "Fixed problems with refueling repair."
+#1495241333
+git push -u origin marcel-fix-repair-refuel 
+#1495241345
+git pull origin master 
+#1495241372
+git pull origin sf-xmpp 
+#1495241380
+git push -u origin marcel-fix-repair-refuel 
+#1495241529
+git checkout sf-xmpp 
+#1495241532
+git status
+#1495241535
+git pull
+#1495241568
+git checkout marcel-fix-repair-refuel 
+#1495241571
+git pull
+#1495241576
+git pull origin master 
+#1495241585
+git status
+#1495241592
+git push -u origin marcel-fix-repair-refuel 
+#1495295982
+docker ps -a
+#1495296243
+cd dmf/services/vdb-dataservices/
+#1495296253
+his | grep volume
+#1495296261
+docker volume ls
+#1495296272
+docker volume rm teiid_9.2.3
+#1495296293
+sh ./docker_scripts/rspace_populate_teiid_data_volume.sh users.json 
+#1495296315
+sh docker_scripts/run_teiid_container.sh 
+#1495316541
+docker ps -a
+#1495316552
+docker rm -f 2db5cfe29b36
+#1495316845
+sh docker_scripts/run_teiid_container.sh 
+#1495512796
+cd src/rspace-eclipse/scharp/
+#1495512798
+git pull
+#1495514156
+git pull --all
+#1495514179
+git checkout sf-publish-repairs 
+#1495514182
+git pull
+#1495666058
+cd backup/
+#1495666082
+ls -F
+#1495666086
+ls -F
+#1495666111
+more Linux
+#1495666140
+cd Linux_Config/
+#1495666151
+cd ;;
+#1495666169
+cd Camera\ Uploads/
+#1495666195
+rm -rf Garmin\ Fenix2/
+#1495666230
+file Icon\?
+#1495666639
+cd EclipseMarsSettings/
+#1495666666
+diff EclipseNeonPreferences.epf EclipseNeonPreferencesIMac.epf 
+#1495666806
+ls -F
+#1495666837
+mv Sarraute-Buffet-Hoffmann-AAAI2012.pdf Books/
+#1495666853
+rm DataBindingExamples.java 
+#1495666865
+mv Sublime\ Text\ for\ Windows\ Cheat\ Sheet.pdf Books/
+#1495666874
+cd Linux_Config/
+#1495666880
+cd Home/
+#1495666883
+cd becker/
+#1495666887
+ls -a
+#1495666930
+cd Music/
+#1495666953
+ls -F
+#1495666983
+cd Dropbox/ 
+#1495666990
+cd CD\ Sheet\ Music/
+#1495666995
+ls -F
+#1495667005
+cd Music/
+#1495667007
+ls 
+#1495667023
+ls -F
+#1495667080
+rm synergy-v1.8.6-stable-2ab21aa-MacOSX-x86_64.dmg 
+#1495667087
+more version.xml 
+#1495667120
+ ls
+#1495667191
+rm eclipse-spring-code-conventions.xml 
+#1495667200
+more eclipse.ini 
+#1495667214
+mv eclipse.ini EclipseMarsSettings/
+#1495667227
+mv EclipseMarsSettings EclipseSettings
+#1495667253
+source .bashrc
+#1495667268
+diff .bashrc ~/.bashrc
+#1495667821
+diff .bashrc .bashrc-merged 
+#1495667945
+rm .bashrc-merged 
+#1495667955
+cp .bashrc ~/.bashrc 
+#1495667960
+source ~/.bashrc
+#1495667972
+./List_Linux_Colors.sh 
+#1495671041
+cd
+#1495671063
+cp ~/Dropbox/.bashrc .
+#1495674353
+cd Dropbox/
+#1495674367
+cd 
+#1495676338
+config_data
+#1495676348
+source ~/.bashrc 
+#1495676356
+configdot 
+#1495676387
+git clone --bare git@github.com:marcel-becker/my-dotfiles.git $HOME/.dotfiles
+#1495676521
+mkdir -p .dotfile-backup
+#1495676540
+config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/{}
+#1495676591
+config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .dotfile-backup/{}
+#1495676619
+cd ls -al
+#1495676666
+configdot checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .dotfile-backup/{}
+#1495676712
+cd .emacs.d/
+#1495676737
+configdot checkout 2>&1 | egrep "\s+\." | awk {'print $1'} 
+#1495677116
+cd .dotfile-backup/
+#1495677125
+mkdir .emacs.d
+#1495677146
+cp ~/.emacs.d/init.el .emacs.d/
+#1495677160
+cd ..
+#1495677179
+configdot pull
+#1495677209
+mv .git-completion.bash .dotfile-backup/
+#1495677221
+mv .spacemacs .dotfile-backup/
+#1495677233
+rm .emacs.d/init.el
+#1495677237
+configdot checkout
+#1495677239
+ls
+#1495677241
+ls -al
+#1495677247
+more .bashrc 
+#1495677319
+configdot config status.showUntrackedFiles no
+#1495677328
+configdot status
+#1495677478
+configdot add .bashrc
+#1495677503
+configdot commit -m "Fixed save dotfiles script."
+#1495677511
+configdot push
+#1495677525
+configdot remote
+#1495677534
+configdot remote -v
+#1495752635
+emacs -debug-init
+#1495854188
+exit
+#1495481968
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
+#1495754690
+/Applications/Alfred\ 3.app/Contents/Frameworks/Alfred\ Framework.framework/Versions/A/Resources/reindexdel.sh ; exit;
+#1495835409
+cd ivy-20170524.950/
+#1495835421
+rm *.elc
+#1495835428
+ls
+#1495835430
+cd ..
+#1495854191
+exit
