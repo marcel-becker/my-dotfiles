@@ -15,7 +15,7 @@ export HISTCONTROL=ignoreboth:erasedups
 export HISTFILESIZE=400000000
 export HISTSIZE=20000
 export HISTTIMEFORMAT="%d/%m/%y %T "
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+export PROMPT_COMMAND="history -a; history -c; history -r $PROMPT_COMMAND"
 
 # append to the history file, don't overwrite it
 shopt -s histappend
