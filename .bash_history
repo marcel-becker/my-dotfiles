@@ -7,15 +7,15 @@ cd planning/
 ls
 cd util/
 ls
-more README.md 
+more README.md
 ls
 ls example-plays/
 more example-plays/Where\'s\ Waldo\ v0.8
 ls
 cd example-plays/
 ls
-more Where\'s\ Waldo\ v0.8.play 
-python ../src/filetomongo.py --replace Where\'s\ Waldo\ v0.8.play 
+more Where\'s\ Waldo\ v0.8.play
+python ../src/filetomongo.py --replace Where\'s\ Waldo\ v0.8.play
 ls
 cd ..
 ls
@@ -45,10 +45,10 @@ ls
 cd rosetta/
 git status
 git pull
-git add api/API_Planning.md 
+git add api/API_Planning.md
 git commit -m "Added API for get_filtered_plays"
 git push origin
-git add api/API_Planning.md 
+git add api/API_Planning.md
 git commit -m "Added API for get_filtered_plays"
 git push origin
 cd ..
@@ -58,19 +58,19 @@ git checkout master
 git diff src/missionspec.py
 git reset src/missionspec.py
 git checkout master
-git reset --hard 
+git reset --hard
 git branch
 git checkout master
 git pull
 git branch
 git checkout mission-spec
 git pull
-cd .. 
+cd ..
 cd planning/
 ls
 git branch
 git branch --help
-git branch 
+git branch
 git branch -d stephenBranch
 git branch
 git branch -d update-correct-mission-spec
@@ -98,7 +98,7 @@ git stash pop
 git status
 git diff src/missionparameterization.py
 git status
-git diff test/missionparameterization_test.py 
+git diff test/missionparameterization_test.py
 git status
 git diff src/mongodbAPI.py
 git checkout -- src/mongodbAPI.py
@@ -124,7 +124,7 @@ ls
 git status
 git add src/missionparameterization.py src/missionspec.py src/mongodbAPI.py src/pxutils.py test/missionparameterization_test.py test/missionspec-integration.py
 git status
-git commit -m "Added mission spec to mongo, fixed some apis" 
+git commit -m "Added mission spec to mongo, fixed some apis"
 git status
 git merge master
 emacs test/missionspec_unit_test.py &
@@ -145,7 +145,7 @@ jobs
 fg
 git status
 rm test/MissionSpec-MarcelTest.py
-git add src/missionparameterization.py 
+git add src/missionparameterization.py
 git add src/missionspec.py
 git add test/missionspec_unit_test.py
 git status
@@ -157,18 +157,18 @@ ping repo.px.net
 git push -u origin mission-spec-handler
 cd test/
 ls
-./run_all.sh 
+./run_all.sh
 cd ../..
 cd planning/
 cd util/
 ls
 cd src
 ls
-./run_script.sh json_to_mongo.py ../example-objects/tag-taxonomy.json 
+./run_script.sh json_to_mongo.py ../example-objects/tag-taxonomy.json
 cd ../..
 ls
 cd test/
-./run_all.sh 
+./run_all.sh
 git status
 git add missionparameterization_unit_test.py ../src/planeditor.py planeditor_unit_test.py
 git status
@@ -179,7 +179,7 @@ cd ../..
 cd rosetta/
 ls
 git status
-git add api/API_Planning.md 
+git add api/API_Planning.md
 git commit -m "Changed response to return to result to fix typo"
 git push origin
 git pull
@@ -208,15 +208,15 @@ git branch dsl-handler
 git checkout dsl-handler
 cd util/src/
 ls
-more run_script.sh 
-python filetomongo.py --replace ../example-plays/Traceroute.play 
-./run_script.sh filetomongo.py --replace ../example-plays/Traceroute.play 
-./run_script.sh filetomongo.py --replace ../example-plays/Tracerout 
-./run_script.sh filetomongo.py --replace 
-./run_script.sh filetomongo.py 
+more run_script.sh
+python filetomongo.py --replace ../example-plays/Traceroute.play
+./run_script.sh filetomongo.py --replace ../example-plays/Traceroute.play
+./run_script.sh filetomongo.py --replace ../example-plays/Tracerout
+./run_script.sh filetomongo.py --replace
+./run_script.sh filetomongo.py
 ./run_script.sh filetomongo
-./run_script.sh filetomongo.py 
-PYTHONPATH=$PYTHONPATH:../../src python filetomongo.py --replace ../example-plays/Traceroute.play 
+./run_script.sh filetomongo.py
+PYTHONPATH=$PYTHONPATH:../../src python filetomongo.py --replace ../example-plays/Traceroute.play
 PYTHONPATH=$PYTHONPATH:../../src python filetomongo.py --replace ../example-plays/
 git branch
 cd ..
@@ -227,12 +227,12 @@ git ls
 ls
 git add example-plays/Traceroute_parameters.json example-plays/Traceroute_spiral1.px
 git status
-git add example-plays/Traceroute.play 
+git add example-plays/Traceroute.play
 git status
 git branch
 git add ../src/dsl.py ../test/dsl_unit_test.py
 git status
-git commit -m "Added initial version of dsl handler" 
+git commit -m "Added initial version of dsl handler"
 git push origin dsl-handler
 ping repo.px.net
 git push origin dsl-handler
@@ -243,7 +243,7 @@ his | grep PYTHON
 PYTHONPATH=$PYTHONPATH:../../src python filetomongo.py --replace ../example-plays/
 git status
 git add ../example-plays/Traceroute_parameters.json
-git add ../example-plays/Where\'s\ Waldo\ v0.8_parameters.json 
+git add ../example-plays/Where\'s\ Waldo\ v0.8_parameters.json
 git add ../../test/dsl_unit_test.py
 git add ../../src/dsl.py
 git status
@@ -273,7 +273,7 @@ git add src/missionparameterization.py
 git add src/planeditor.py test/planeditor_unit_test.py
 git status
 git commit -m "Merged master into branch and fixed conflicts"
-git commit 
+git commit
 git push origin mission-spec-handler
 git status
 git checkout master
@@ -288,24 +288,24 @@ cd demo
 ls
 cd 2014-march/
 ls
-more README.md 
+more README.md
 cd web
 ls
-python ../src/demoserver.py 
+python ../src/demoserver.py
 his | grep PYTHON
 sudo pip install concurrent
 his
-PYTHONPATH=$PYTHONPATH:../../../src:../src python ../src/demoserver.py 
+PYTHONPATH=$PYTHONPATH:../../../src:../src python ../src/demoserver.py
 sudo pip install concurrent
 sudo pip install futures
-PYTHONPATH=$PYTHONPATH:../../../src:../src python ../src/demoserver.py 
+PYTHONPATH=$PYTHONPATH:../../../src:../src python ../src/demoserver.py
 ls
 cd ..
 ls
-more README.md 
+more README.md
 cd web/
 ls
-PYTHONPATH=$PYTHONPATH:../../../src:../src python ../src/demoserver.py 
+PYTHONPATH=$PYTHONPATH:../../../src:../src python ../src/demoserver.py
 cd ../planning/
 ls
 bash
@@ -326,7 +326,7 @@ ls
 clerm
 clear
 ls
-rm \#.bash_profile# 
+rm \#.bash_profile#
 ls
 cd lixo/
 ls
@@ -343,7 +343,7 @@ clear
 clear
 colors
 ls
-cd 
+cd
 cd Documents/
 mkdir iterm2
 cd iterm2/
@@ -364,7 +364,7 @@ vagrant up px_messaging
 vagrant up px_store
 vagrant up px_dsl
 vagrant ssh px_dsl
-rm Berksfile.lock 
+rm Berksfile.lock
 rm ~/.berkshelf/cookbooks/*
 rm -rf ~/.berkshelf/cookbooks/*
 vagrant destroy dsl
@@ -377,7 +377,7 @@ vagrant destroy px-dsl
 vagrant destroy px_dsl
 cd ../planx-dsl/
 ls
-more Vagrantfile 
+more Vagrantfile
 from_jenkins=1 jenkins_job=plx.plx-compiler.build.nightly planx_compiler=1 vagrant up
 from_jenkins=1 jenkins_job=plx.px-compiler.build.nightly planx_compiler=1 vagrant up
 from_jenkins=1 jenkins_job=plx.px-compiler.build.nightly planx_compiler=1 vagrant provision
@@ -429,7 +429,7 @@ cd ..
 cd dsl-compiler/
 ls
 ./plx Helpers.px
-rm GoogleVoiceAndVideoSetup.dmg 
+rm GoogleVoiceAndVideoSetup.dmg
 ls
 cd ..
 ls
@@ -522,7 +522,7 @@ cd files/
 ls
 cd 2014-04-22-spiral2-demo/
 ls
-./load_all.sh 
+./load_all.sh
 cd
 ls
 cd src/planning
@@ -551,7 +551,7 @@ git pull
 cd ..
 cd planx-dsl
 ls
-more vagrant_up.sh 
+more vagrant_up.sh
 vagrant status
 his | grep scp
 vagrant destroy -f
@@ -570,7 +570,7 @@ scp -i ~/.vagrant.d/insecure_private_key vagrant@33.33.33.11:/home/vagrant/.chef
 scp -i ~/.vagrant.d/insecure_private_key vagrant@33.33.33.11:/home/vagrant/.chef/*.pem ~/.chef
 chmod o+rw ~/.chef/*.pem
 scp -i ~/.vagrant.d/insecure_private_key vagrant@33.33.33.11:/home/vagrant/.chef/*.pem ~/.chef
-rm -rf ~/.chef/chef-validator.pem 
+rm -rf ~/.chef/chef-validator.pem
 scp -i ~/.vagrant.d/insecure_private_key vagrant@33.33.33.11:/home/vagrant/.chef/*.pem ~/.chef
 knife client list
 ls
@@ -636,18 +636,18 @@ git pull
 cd ../planx-dsl/
 vagrant status
 his | grep jenkins
-echo 'from_jenkins=1 jenkins_job=px.dsl-server.build.nightly vagrant up' >> vagrant_up.sh 
-more vagrant_up.sh 
+echo 'from_jenkins=1 jenkins_job=px.dsl-server.build.nightly vagrant up' >> vagrant_up.sh
+more vagrant_up.sh
 vagrant destroy
 source ~/.bashrc
 from_jenkins=1 jenkins_job=px.dsl-server.build.nightly vagrant up
 from_jenkins=1 jenkins_job=px.dsl-server.build.nightly vagrant provision
-vagrant destroy 
+vagrant destroy
 from_jenkins=1 jenkins_job=px.dsl-server.build.nightly vagrant provision
 from_jenkins=1 jenkins_job=px.dsl-server.build.nightly vagrant up
-rm -rf Berksfile.lock 
+rm -rf Berksfile.lock
 rm -rf ~/.berkshelf/cookbooks/*
-vagrant destroy 
+vagrant destroy
 from_jenkins=1 jenkins_job=px.dsl-server.build.nightly vagrant up
 vagrant destroy
 git pull
@@ -736,8 +736,8 @@ vagrant status
 ls ~/.chef/
 ping github-enterprise.px.net
 source ~/.profile
-source ~/.bash_profile~ 
-source ~/.bashrc 
+source ~/.bash_profile~
+source ~/.bashrc
 his
 cd ~/.chef
 ls
@@ -746,18 +746,18 @@ knife -v node list
 knife --verbose node list
 knife node list -V
 knife node list
-more knife.rb 
+more knife.rb
 cd ../.berkshelf/
 ls
-more config.json 
+more config.json
 ssh becker@10.100.20.239
 his | grep scp
 ls -al ~/.chef/
 scp -i ~/.vagrant.d/insecure_private_key vagrant@33.33.33.11:/home/vagrant/.chef/*.pem ~/.chef
-chmod o+w ~/.chef/chef-validator.pem 
+chmod o+w ~/.chef/chef-validator.pem
 scp -i ~/.vagrant.d/insecure_private_key vagrant@33.33.33.11:/home/vagrant/.chef/*.pem ~/.chef
 ls -al ~/.chef/
-chmod a+w ~/.chef/chef-validator.pem 
+chmod a+w ~/.chef/chef-validator.pem
 scp -i ~/.vagrant.d/insecure_private_key vagrant@33.33.33.11:/home/vagrant/.chef/*.pem ~/.chef
 ls -al ~/.chef/
 knife client list
@@ -777,7 +777,7 @@ vagrant destroy px_store px_dashboard px_metrics
 knife node list
 vagrant status
 vagrant destroy px_bootstrap
-rm Berksfile.lock 
+rm Berksfile.lock
 rm ~/.berkshelf/cookbooks/*
 rm -rf ~/.berkshelf/cookbooks/*
 bersk install
@@ -791,12 +791,12 @@ ls
 ls -al
 env
 cd ..
-cd 
+cd
 cd .vagrantuser
 more .vagrantuser
 cd .berkshelf/
 ls
-more config.json 
+more config.json
 ls
 cd vagrant/
 ls
@@ -816,15 +816,15 @@ MIRROR=local vagrant up px_dashboard
 MIRROR=local vagrant up px_messaging
 vagrant status
 git status
-git diff Vagrantfile 
+git diff Vagrantfile
 MIRROR=local vagrant provision px_messaging
 git status
-git add Vagrantfile 
-git commit -m 
-git commit -m "Fixed attribute value" 
+git add Vagrantfile
+git commit -m
+git commit -m "Fixed attribute value"
 git push origin
 git status
-git rm Berksfile.lock 
+git rm Berksfile.lock
 ls
 rm -rf ~/.berkshelf/cookbooks/*
 MIRROR=local vagrant provision px_messaging
@@ -835,7 +835,7 @@ vagrant status
 MIRROR=local vagrant up px_store
 git pull
 git status
-git diff Berksfile 
+git diff Berksfile
 vagrant provision px_store
 MIRROR=local vagrant provision px_store
 vagrant status
@@ -845,10 +845,10 @@ knife client delete px-store
 knife node delete px-store
 MIRROR=local vagrant up px_store
 git status
-git add Berksfile metadata.rb 
-git commit -m "Simplified metadata file" 
-more update_chef_pem.sh 
-git add update_chef_pem.sh 
+git add Berksfile metadata.rb
+git commit -m "Simplified metadata file"
+more update_chef_pem.sh
+git add update_chef_pem.sh
 git commit -m "Added script to copy chef server credentials"
 git status
 git push origin
@@ -862,11 +862,11 @@ vagrant destroy -f
 MIRROR=local vagrant up px_metrics
 vagrant destroy -f
 rm -rf ~/.berkshelf/cookbooks/*
-more Berksfile 
+more Berksfile
 berks install
 MIRROR=local vagrant up px_bootstrap
 ls
-sh update_chef_pem.sh 
+sh update_chef_pem.sh
 MIRROR=local vagrant up px_metrics
 MIRROR=local vagrant up px_dashboard
 MIRROR=local vagrant up px_messaging
@@ -896,11 +896,11 @@ vagrant destroy
 rm ~/.vagrant.d/gems/
 rm -rf ~/.vagrant.d/gems/
 vagrant status
-rm -rf ~/.vagrant.d/plugins.json 
+rm -rf ~/.vagrant.d/plugins.json
 vagrant plugin install nugrant
 vagrant plugin install chef
 vagrant status
-his 
+his
 vagrant status
 knife client list
 his
@@ -976,7 +976,7 @@ git checkout feature-set-plan-test
 git status
 git checkout develop
 git pull
-git checkout master 
+git checkout master
 git branch
 git branch -d feature-set-plan-test
 git pull
@@ -1001,7 +1001,7 @@ vagrant destroy px_planner -f
 vagrant destroy px_store -f
 vagrant status
 vagrant destroy px_bootstrap -f
-rm Berksfile.lock 
+rm Berksfile.lock
 rm -rf ~/.berkshelf/cookbooks/*
 git pull
 ping repo.px.net
@@ -1013,7 +1013,7 @@ cd ..
 vagrant plugin list
 cd ~/.vagrant.d/
 ls
-more plugins.json 
+more plugins.json
 rm -r ~/.vagrant.d/plugins.json ~/.vagrant.d/gems
 vagrant plugin install nugrant
 vagrant plugin install vagrant-ohai
@@ -1045,7 +1045,7 @@ cd src/px-repos/planx-local-planx-cluster/
 vagrant halt
 vagrant destroy
 berks --version
-source ~/.rvm/scripts/rvm 
+source ~/.rvm/scripts/rvm
 gem install berkshelf
 sudo gem install berkshelf
 vagrant up px_bootstrap
@@ -1064,7 +1064,7 @@ chef-solo --version
 gem list
 gem list | grep chef
 chef-client --version
-curl -L https://www.opscode.com/chef/install.sh 
+curl -L https://www.opscode.com/chef/install.sh
 chef-client --version
 which chef-client
 gem remove chef
@@ -1127,7 +1127,7 @@ sudo port uninstall ruby
 sudo port uninstall ruby19
 sudo port uninstall ruby18
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
-source ~/.rvm/scripts/rvm 
+source ~/.rvm/scripts/rvm
 rvm list known
 rvm install 1.9.3
 rvm use 1.9.3 --default
@@ -1208,7 +1208,7 @@ cd 1.9.1/
 ls
 cd cache/
 ls
-cd addressable-2.3.6.gem 
+cd addressable-2.3.6.gem
 ls
 cd ..
 rm -rf .gem/*
@@ -1234,7 +1234,7 @@ vagrant plugin install vagrant-berkshelf
 sudo gem update
 vagrant plugin install vagrant-berkshelf
 for x in `gem list --no-versions`; do gem uninstall $x -a -x -I; done
-sudo -s 
+sudo -s
 vagrant plugin install vagrant-berkshelf
 gem list
 sudo -s
@@ -1242,7 +1242,7 @@ vagrant plugin install vagrant-berkshelf
 his | grep rvm
 rm -rf ~/.rvm
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
-source ~/.rvm/scripts/rvm 
+source ~/.rvm/scripts/rvm
 his | grep rvm
 rvm install 1.9.3
 rvm use 1.9.3 --default
@@ -1268,7 +1268,7 @@ cd .vagrant.d/
 ls
 rm -rf gems/ plugins.json tmp/
 ls
-cd 
+cd
 vagrant plugin list
 ls
 vagrant plugin list
@@ -1348,11 +1348,11 @@ rm -rg .vagrant/*
 rm -rf .vagrant/*
 vagrant up px_bootstrap
 cd ..
-cd 
+cd
 cd .vagrant.d/
 ls
-more setup_version 
-rm -rf setup_version data/ rgloader/ tmp/ 
+more setup_version
+rm -rf setup_version data/ rgloader/ tmp/
 ls
 cd ..
 cd src/px-repos/planx-local-planx-cluster/
@@ -1362,9 +1362,9 @@ vagrant up px_bootstrap
 vagrant --version
 cd ~/.vagrant.d/
 ls
-more setup_version 
-echo "1.1" > setup_version 
-more setup_version 
+more setup_version
+echo "1.1" > setup_version
+more setup_version
 cd ..
 cd src/px-repos/planx-local-planx-cluster/
 vagrant up px_bootstrap
@@ -1379,12 +1379,12 @@ vagrant plugin install chef
 vagrant status
 vagrant up px_bootstrap
 cd ..
-cd 
+cd
 cd lixo/
 vagrant init
-more Vagrantfile 
+more Vagrantfile
 vagrant status
-cd 
+cd
 cd src/px-repos/planx-local-planx-cluster/
 vagrant status
 vagrant plugin install vagrant-ohai
@@ -1405,7 +1405,7 @@ rvm use 2.1.1 --default
 vagrant up px_bootstrap
 VAGRANT_LOG=debug vagrant up px_bootstrap
 rm -rf .vagrant/*
-rm -rf ~/.vagrant.d/gems 
+rm -rf ~/.vagrant.d/gems
 VAGRANT_LOG=debug vagrant up px_bootstrap
 vagrant plugin install vagrant-berkshelf
 VAGRANT_LOG=debug vagrant up px_bootstrap
@@ -1426,7 +1426,7 @@ VAGRANT_LOG=debug vagrant up px_bootstrap
 rm -rf .vagrant/*
 VAGRANT_LOG=debug vagrant up px_bootstrap
 ls
-sh update_chef_pem.sh 
+sh update_chef_pem.sh
 MIRROR=local vagrant up px_metrics
 MIRROR=local vagrant provision px_metrics
 MIRROR=local vagrant up px_dashboard
@@ -1449,7 +1449,7 @@ MIRROR=local vagrant up px_battlespace
 MIRROR=local vagrant destroy px_battlespace
 knife client delete px-battlespace
 knife node delete px-battlespace
-rm Berksfile.lock 
+rm Berksfile.lock
 rm -rf ~/.berkshelf/cookbooks/*
 ls
 rm -rf ~/.berkshelf/cookbooks/*
@@ -1480,11 +1480,11 @@ cd vagrant/
 ls
 cd ubuntu-precise-64-1/
 ls
-more Vagrantfile 
-cd 
+more Vagrantfile
+cd
 cd Downloads/
 ls
-tar xvf lua-5.2.3.tar.gz 
+tar xvf lua-5.2.3.tar.gz
 cd lua-5.2.3
 make macosx test
 make install
@@ -1494,7 +1494,7 @@ lua
 lua --version
 lua -v
 cmdlua
-cd 
+cd
 cd .ssh
 ls
 more config
@@ -1513,13 +1513,13 @@ ls
 ls -al
 cd ~/Library/Application\ Support/
 ls
-cd Sublime\ Text\ 
+cd Sublime\ Text\
 ls
 cd Sublime\ Text\ 2/
 ls
 cd Settings/
 ls
-more Session.sublime_session 
+more Session.sublime_session
 rm -rf *
 ping jira.px.ftw
 ping github.px.ftw
@@ -1527,7 +1527,7 @@ ping confluence.px.ftw
 ping openstack.px.ftw
 ping github-enterprise.px.ftw
 ping github-enterprise.px.net
- 
+
 ping github-enterprise.px.net
 ping jira.px.net
 ping jira.px.ftw
@@ -1607,9 +1607,9 @@ ls
 cd docker-vm/
 ls
 vagrant up
-more Vagrantfile 
+more Vagrantfile
 vagrant up
-more Berksfile 
+more Berksfile
 berks --version
 his | grep berkshelf
 gem remove berkshelf
@@ -1627,7 +1627,7 @@ vagrant box repackage ubuntu-10.04-amd64
 vagrant box add ubuntu-14.04-amd64 http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
 vagrant destroy
 vagrant up
-his 
+his
 vagrant ssh
 vagrant up
 vagrant reload
@@ -1709,7 +1709,7 @@ his
 vagrant provision
 docker run -i -t ubuntu:14.04 bash
 ls
-git clone git@github.com:paulczar/docker-chef-solo.git 
+git clone git@github.com:paulczar/docker-chef-solo.git
 git clone git@github.com:rogaha/docker-desktop.git
 ifconfig
 berks --version
@@ -1719,10 +1719,10 @@ ruby --version
 rvm reload
 cd .vagrant.d/
 ls
-rm -rf data/ plugins.json rgloader/ tmp/ setup_version 
+rm -rf data/ plugins.json rgloader/ tmp/ setup_version
 ls
 ping www.stanford.edu
-cat /etc/resolv.conf 
+cat /etc/resolv.conf
 nslookup www.stanford.edu 10.128.1.2
 ifconfig -a
 ifconfig -a | grep inet
@@ -1751,20 +1751,20 @@ ls
 ls -al
 cd ubuntu-12.04-amd64-vbox/
 ls
-more preseed.cfg 
+more preseed.cfg
 ls
-more base.sh 
+more base.sh
 cd ..
 ls
 cd ..
 ls
-cd more README.md 
+cd more README.md
 ls
 cd definitions/
 ls
 cd ubuntu-12.04-amd64-vbox/
 ls
-more _virtualbox.sh 
+more _virtualbox.sh
 ls
 clear
 cd
@@ -1776,7 +1776,7 @@ df
 ls -al
 rm workflow_monitor*
 rm -rf workflow_monitor*
-rm eclipse-rcp-kepler-M6-macosx-cocoa-x86_64.tar.tar.gz 
+rm eclipse-rcp-kepler-M6-macosx-cocoa-x86_64.tar.tar.gz
 ls
 ls -al
 rm -rf XamarinStudio-4.*
@@ -1785,24 +1785,24 @@ rm World-of-Warcraft-Setup-enUS.*
 ls
 ls -a
 ls -al
-rm -r VirtualBox_-_Ubuntu-13.10-amd64-Desktop_VDI-\[VirtualBoxImages.com\].rar 
+rm -r VirtualBox_-_Ubuntu-13.10-amd64-Desktop_VDI-\[VirtualBoxImages.com\].rar
 ls
-rm Vagrant-1.3.5.dmg 
+rm Vagrant-1.3.5.dmg
 ls
 df -u
 df -g
 ls -al
-rm -rf plx.tar python-3.3.2-macosx10.6.dmg 
+rm -rf plx.tar python-3.3.2-macosx10.6.dmg
 ls
 ls -al
-rm chefdk-0.1.0-1.dmg iTerm2_v1_0_0.zip 
+rm chefdk-0.1.0-1.dmg iTerm2_v1_0_0.zip
 ls
 ls -al
-rm Haskell\ Platform\ 2013.2.0.0\ 64bit.pkg 
+rm Haskell\ Platform\ 2013.2.0.0\ 64bit.pkg
 ls
 df
-rm Mistral.pptx 
-cd 
+rm Mistral.pptx
+cd
 cd src/open-vagrant-boxes/
 his
 his | grep rake
@@ -1811,7 +1811,7 @@ vagrant box list
 vagrant box remove ubuntu-10.04-amd64
 vagrant box list
 ls
-ls -al vagrant_insecure.key 
+ls -al vagrant_insecure.key
 ls -al
 cd ..
 cd px-repos/
@@ -1831,8 +1831,8 @@ vagrant box list
 autoconf
 autoconf --version
 which autoconf
-./autogen.sh 
-./configure 
+./autogen.sh
+./configure
 make
 cd "/Users/marcelbecker/src/docker-experiment/docker-vm" && clear
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/
@@ -1875,7 +1875,7 @@ cd /tmp
 ls
 cd ..
 ls
-cd 
+cd
 cd Library/Application\ Support/Sublime\ Text\ 3/Packages/
 ls
 cd Theme\ -\ Default/
@@ -1890,7 +1890,7 @@ ls
 cd
 cd /Applications/Sublime\ Text.app/Contents/MacOS/
 ls
-vim Sublime\ Text 
+vim Sublime\ Text
 cd Packages/
 ls
 cd ..
@@ -1900,7 +1900,7 @@ cd ..
 ls
 cd _CodeSignature/
 ls
-more CodeResources 
+more CodeResources
 cd ..
 ls
 cd SharedSupport/
@@ -1913,16 +1913,16 @@ cd ..
 ls
 cd ..
 ls
-more Info.plist 
+more Info.plist
 lsls
 ls
 cd MacOS/
 ls
-nm -g Sublime\ Text 
+nm -g Sublime\ Text
 ls
-otool -vt Sublime\ Text 
-otx Sublime\ Text 
-file Sublime\ Text 
+otool -vt Sublime\ Text
+otx Sublime\ Text
+file Sublime\ Text
 cd
 cd Library/Application\ Support/Sublime\ Text\ 3/Packages/
 ls
@@ -1931,7 +1931,7 @@ ls
 cd ..
 ls
 cd ..
-cd 
+cd
 cd Dropbox/.emacs.d/
 ls
 cd el-get
@@ -1966,10 +1966,10 @@ autoconf --version
 which autoconf
 cd auctex/
 ls
-./autogen.sh 
+./autogen.sh
 make
 ls
-./configure 
+./configure
 make
 autoconf --version
 ls
@@ -2130,7 +2130,7 @@ LS
 ls
 cd Packages/
 ls
-more Color\ Scheme\ -\ Default.sublime-package 
+more Color\ Scheme\ -\ Default.sublime-package
 cd /
 find . -name '*.sublime-theme' -print
 cd src
@@ -2160,7 +2160,7 @@ cd src/eclipse-test-projects/
 ls
 cd swt-html-richclient/
 ls
-mv 
+mv
 cd ..
 ls
 svn checkout http://blockly.googlecode.com/svn/trunk/ blockly
@@ -2172,15 +2172,15 @@ ls
 mkdir pxftw-repos
 cd pxftw-repos/
 git clone git@github-enterprise.px.ftw:awissner-gross/pinter-lua.git
-cd 
+cd
 cd .ssh
 ls
-more id_rsa.pub 
+more id_rsa.pub
 ls ~/Dropbox/.ssh/
 cp ~/Dropbox/.ssh/innovate_id_rsa* .
 ls
 cd ..
-cd 
+cd
 cd src/pxftw-repos/
 git clone git@github-enterprise.px.ftw:awissner-gross/pinter-lua.git
 ls -al ~/.ssh/
@@ -2244,7 +2244,7 @@ cd Preferences/
 ls
 ls -a
 ls | grep mouse
-more com.apple.driver.AppleBluetoothMultitouch.mouse.plist 
+more com.apple.driver.AppleBluetoothMultitouch.mouse.plist
 cd .GlobalPreferences.plist
 more .GlobalPreferences.plist
 clear
@@ -2266,11 +2266,11 @@ cd musex/
 ls
 cd server/
 ls
-more README 
+more README
 ls
 cd ..
 ls
-meteor 
+meteor
 cd ..
 git clone https://github.com/alanshaw/meteor-spotify.git
 cd meteor-spotify/
@@ -2301,14 +2301,14 @@ ls
 cd client/
 ls
 cd ..
-meteor 
+meteor
 cp ~/Documents/spotify_appkey.key .
 ls
-meteor 
+meteor
 cp spotify_appkey.key server/
-meteor 
+meteor
 mrt add npm
-meteor 
+meteor
 meteor add spotify
 npm install  spotify
 npm install  spotify@0.6.0
@@ -2325,7 +2325,7 @@ npm install spotify
 ls
 cd node
 ls
-./configure 
+./configure
 make
 npm --version
 which npm
@@ -2351,16 +2351,16 @@ sudo npm install spotify
 ls
 cd
 cd src/codex/musex/
-meteor 
+meteor
 cd ..
 ls
 rm -rf node_modules/
 cd musex/
 ls
-meteor 
-npm install -g meteor-npm 
-sudo npm install -g meteor-npm 
-meteor 
+meteor
+npm install -g meteor-npm
+sudo npm install -g meteor-npm
+meteor
 ls
 cd lib/
 ls
@@ -2389,7 +2389,7 @@ cd lib/
 ls
 cd spotify/
 ls
-more Spotify.js 
+more Spotify.js
 cd ..
 ls
 cd ..
@@ -2423,14 +2423,14 @@ ls -al
 cd .meteor/
 ls
 ls -al
-more packages 
+more packages
 cp * ../../.meteor/
 cd ..
 rm -rf musex/
 meteor
 ls
-more smart.json 
-more smart.lock 
+more smart.json
+more smart.lock
 meteor
 meteor rebuild-all
 meteor
@@ -2449,7 +2449,7 @@ meteor create musex-test
 cd musex-test/
 ls
 ls -al
-more musex-test.html 
+more musex-test.html
 meteor
 mkdir server
 ls
@@ -2472,25 +2472,25 @@ rm -rf .meteor/local/build/programs/server/app/*
 meteor
 ls
 more smart.
-more smart.lock 
-rm smart.lock 
+more smart.lock
+rm smart.lock
 meteor rebuild-all
 meteor
 cd ../musex-test/
 ls
-more package.js 
+more package.js
 meteor
 meteor rebuild-all
 ls
-more package.js 
+more package.js
 mrt add npm
 meteor
 meteor-npm
 meteor rebuild-all
 meteor
-sudo npm install -g meteor-npm 
+sudo npm install -g meteor-npm
 meteor-npm
-more packages.json 
+more packages.json
 meteor
 which mrt
 mrt --version
@@ -2501,7 +2501,7 @@ ls -al
 chown -R marcelbecker *
 sudo chown -R marcelbecker *
 ls -al
-cd 
+cd
 cd src/codex/musex-test/
 mtr add router
 mrt add router
@@ -2515,7 +2515,7 @@ mrt add iron-router
 meteor
 rm package.js
 ls
-rm .meteor/local/build/programs/server/app/package.js 
+rm .meteor/local/build/programs/server/app/package.js
 meteor
 cd ..
 cd leaderboard/
@@ -2527,7 +2527,7 @@ cd Applications/
 ls
 cd /Applications/
 ls
-cd 
+cd
 cd src/codex/
 ls
 cd libspotify-12.1.51-Darwin-universal/
@@ -2579,18 +2579,18 @@ meteor create --example leaderboard
 cd leaderboard/
 ls
 more leaderboard.
-more leaderboard.html 
+more leaderboard.html
 ls
-more leaderboard.js 
+more leaderboard.js
 cd /usr/local/lib
 ls
 cd node_modules/
 ls
-sudo cp -r ~/Downloads/node-spotify-0.6.0-OSX . 
+sudo cp -r ~/Downloads/node-spotify-0.6.0-OSX .
 ls
 cd node-spotify-0.6.0-OSX/
 ls
-more spotify.js 
+more spotify.js
 cd ..
 ls
 cd spotify/
@@ -2599,7 +2599,7 @@ cd lib/
 ls
 cd spotify/
 ls
-more Spotify.js 
+more Spotify.js
 cd ..
 sudo npm remove spotify
 ls
@@ -2635,12 +2635,12 @@ cd /usr/local/lib/node_modules/
 ls
 cd node-spotify-0.6.0-OSX/
 ls
-more spotify.js 
+more spotify.js
 cd ..
 ls
 cd spotify-web/
 ls
-more package.json 
+more package.json
 cd ..
 cd node-spotify-0.6.0-OSX/
 ls
@@ -2659,7 +2659,7 @@ cd /usr/local/lib/node_modules/
 ls
 cd spotify-web/
 ls
-more package.json 
+more package.json
 exit
 exit
 cd src/codex/
@@ -2671,23 +2671,23 @@ git clone git@github-enterprise.px.ftw:planning/codex.git
 ls
 cd codex/
 ls
-more controller.lua 
+more controller.lua
 cp ~/eclipse-workspace/eclipse-luna-workspace/Find_The_Frogs/src/*.lua .
 mv main.lua utilities.lua
 ls
 git add inspect.lua utilities.lua
 git pull
 ls
-more frogs.lua 
-more pinter.lua 
+more frogs.lua
+more pinter.lua
 git status
-git branch 
+git branch
 git stash
 git checkout -b develop
 git pull origin develop
 git stash pop
 git status
-git commit -m "Added utilities files to handle frog mission data" 
+git commit -m "Added utilities files to handle frog mission data"
 his | grep git push
 luarocks
 cd src/codex/
@@ -2705,12 +2705,12 @@ cd codex/
 ls
 cd hackathon_grid/
 ls
-more grid.avdl 
+more grid.avdl
 cp -r grids ../planning/codex/
-lua grid.lua 
+lua grid.lua
 luarocks install luajson
 sudo luarocks install luajson
-lua grid.lua 
+lua grid.lua
 luarocks search json
 lua --version
 lua -v
@@ -2720,17 +2720,17 @@ luarocks path
 luarocks show
 luarocks show luajson
 lua grid.
-lua grid.lua 
+lua grid.lua
 which lua
 which luarocks
 luarocks list
 lua -v
 lua
 sudo luarocks install luajson
-lua grid.lua 
-less grid.lua 
-emacs grid.lua 
-lua grid.lua 
+lua grid.lua
+less grid.lua
+emacs grid.lua
+lua grid.lua
 less grid.lua
 luarocks list
 lua
@@ -2752,15 +2752,15 @@ cd cd src/codex/
 cd src/codex/
 ls
 cd planning/codex/
-lua grid.lua 
-lua utilities.lua 
+lua grid.lua
+lua utilities.lua
 git status
 git add utilities.lua
 git commit -m "Added grid metadata example"
-ls 
+ls
 cd grids/
 ls
-more 50-grid.json 
+more 50-grid.json
 git add .
 git status
 cd ..
@@ -2769,7 +2769,7 @@ git add grids
 git status
 git add utilities.lua
 git status
-git commit -m "Added grid files and grid metadata function" 
+git commit -m "Added grid files and grid metadata function"
 git push origin develop
 git pull
 git push origin develop
@@ -2781,23 +2781,23 @@ lua stash
 git stash
 git pull origin develop
 git stash pop
-lua utilities.lua 
-lua MainTest.lua 
+lua utilities.lua
+lua MainTest.lua
 git status
 git add utilities.lua
 git commit utilities.lua
 git status
-git push origin develop 
+git push origin develop
 git pull
 git pull origin develop
-git push origin develop 
-lua MainTest.lua 
+git push origin develop
+lua MainTest.lua
 git status
 git add utilities.lua
-git commit -m "Added the correct prefix" 
+git commit -m "Added the correct prefix"
 git pull origin develop
 git push origin develop
-lua MainTest.lua 
+lua MainTest.lua
 ls
 lua frogs_ingest_only.lua Controller
 sudo luarocks install luasocket
@@ -2812,7 +2812,7 @@ git pull origin develop
 luarocks list
 lua frogs_ingest_only.lua Controller
 lua frogs_ingest_only.lua Master
-lua frogs_ingest_only.lua 
+lua frogs_ingest_only.lua
 lua frogs_ingest_only.lua Controller
 his | grep LUA
 git pull
@@ -2827,21 +2827,21 @@ cd
 cd src/codex/fitzpatrick-search/
 ls
 cd src
-lua main.lua 
-cd 
+lua main.lua
+cd
 cd eclipse-workspace/eclipse-luna-workspace/LuaSimulator/src/
-lua wargame.lua 
+lua wargame.lua
 grep flat *
-lua main.lua 
+lua main.lua
 ls
-lua main.lua 
+lua main.lua
 ls
-lua main.lua 
-lua wargame.lua 
+lua main.lua
+lua wargame.lua
 ,
-lua wargame.lua 
+lua wargame.lua
 ,
-lua wargame.lua 
+lua wargame.lua
 lua wargame.lua 18
 lua -i wargame.lua 18
 lua wargame.lua 18
@@ -2884,9 +2884,9 @@ python wargame.py 18
 wich lua
 which lua
 ls
-cd core-agent/ 
+cd core-agent/
 ls
-more agent_command.py 
+more agent_command.py
 cd ..
 grep AgentCommand *
 cp controller.lua ~/eclipse-workspace/eclipse-luna-workspace/LuaSimulator/src/
@@ -2959,19 +2959,19 @@ git commit -m "Fixed function signature to lat lon translator"
 git pull origin develop
 git push origin develop
 ls
-lua MainTest.lua 
+lua MainTest.lua
 git pull origin develop
 git stash
 git pull origin develop
 git stash pop
-lua MainTest.lua 
+lua MainTest.lua
 git status
 git diff grid.lua
 git pull origin develop
 git add utilities.lua
 git commit -m "Fixed some merge conflicts"
-git pull origin develop 
-git push origin develop 
+git pull origin develop
+git push origin develop
 cd ..
 mkdir simulator
 git clone git@github-enterprise.px.ftw:echu/codex.git
@@ -2999,32 +2999,32 @@ python wargame.py 4
 cd ../..
 cd ..
 cd planning/codex/
-git pull origin develop 
+git pull origin develop
 git checkout -- search_helpers.lua
-git pull origin develop 
+git pull origin develop
 his | grep cp
 cp ~/src/codex/planning/codex/*.lua ~/src/codex/simulator/codex/wargaming/
-git pull origin develop 
+git pull origin develop
 cp ~/src/codex/planning/codex/*.lua ~/src/codex/simulator/codex/wargaming/
-git pull origin develop 
+git pull origin develop
 cp ~/src/codex/planning/codex/*.lua ~/src/codex/simulator/codex/wargaming/
 git pull
-git pull origin develop 
+git pull origin develop
 cp ~/src/codex/planning/codex/wargaming.lua ~/src/codex/simulator/codex/wargaming/
 cp ~/src/codex/planning/codex/controller.lua ~/src/codex/simulator/codex/wargaming/
 cp ~/src/codex/planning/codex/frogs.lua ~/src/codex/simulator/codex/wargaming/
 git status
-git pull origin develop 
-git stash 
-git pull origin develop 
+git pull origin develop
+git stash
+git pull origin develop
 git stash pop
 git add search_helpers.lua search.lua
-git commit -m "Added new search strategy" 
-git pull origin develop 
-git push origin develop 
+git commit -m "Added new search strategy"
+git pull origin develop
+git push origin develop
 git pull origin develop
 his
-diff wargaming.lua ~/src/codex/simulator/codex/wargaming/wargaming.lua 
+diff wargaming.lua ~/src/codex/simulator/codex/wargaming/wargaming.lua
 cp ~/src/codex/planning/codex/frogs.lua ~/src/codex/simulator/codex/wargaming/
 cp ~/src/codex/planning/codex/controller.lua ~/src/codex/simulator/codex/wargaming/
 cp ~/src/codex/planning/codex/search*.lua ~/src/codex/simulator/codex/wargaming/
@@ -3038,7 +3038,7 @@ cd /Applications/Emacs.app/Contents/MacOS/bin/
 ls
 cd ..
 ls
-./Emacs 
+./Emacs
 ./Emacs -debug-init
 sudo port install bzr
 ./Emacs -debug-init
@@ -3050,11 +3050,11 @@ cd Dropbox/.emacs.d/el-get/el-get/
 ls
 cd .git
 ls
-more config 
+more config
 git pull origin master
-git reset --hard 
+git reset --hard
 cd ..
-git reset --hard 
+git reset --hard
 git pull origin master
 cd ..
 ls
@@ -3075,7 +3075,7 @@ ls
 defaults write com.apple.finder AppleShowAllFiles YES
 sudo defaults write com.apple.finder AppleShowAllFiles YES
 cd ..
-d 
+d
 cd el-get
 ls
 cd download-icicles/
@@ -3083,8 +3083,8 @@ ls
 more download-icicles.el
 cd ../..
 ls
-chmod +x get-icicles.sh 
-./get-icicles.sh 
+chmod +x get-icicles.sh
+./get-icicles.sh
 cd icicles
 ls
 rm *.1
@@ -3102,10 +3102,10 @@ cd .emacs.d/
 ls
 cd
 cd eclipse-workspace/eclipse-luna-workspace/LuaSimulator/blitwizard-bin/bin/
-./blitwizard 
+./blitwizard
 cd
 cd src/LuaGraphicsTest/blitwizard-bin/
-./bin/blitwizard 
+./bin/blitwizard
 cd src
 cd
 cd src/
@@ -3115,12 +3115,12 @@ ls
 mv lua-5.2.3.tar.gz LuaSource/
 cd LuaSource/
 ls
-tar zvf lua-5.2.3.tar.gz 
-tar zxf lua-5.2.3.tar.gz 
+tar zvf lua-5.2.3.tar.gz
+tar zxf lua-5.2.3.tar.gz
 ls
 cd lua-5.2.3
 ls
-more README 
+more README
 make
 make macosx
 sudo make install
@@ -3131,7 +3131,7 @@ cd ..
 cd
 cd src/LuaSource/love-0.9.1
 ls
-./configure 
+./configure
 ls
 cd src
 ls
@@ -3158,10 +3158,10 @@ cd ..
 ls
 cd ..
 grep -R "xcode" *
-./configure 
+./configure
 grep -R "sdl2-config" *
 sudo port install sdl2
-cd .. 
+cd ..
 ls
 hg pull && hg update default
 ssh bitbucket.org
@@ -3174,9 +3174,9 @@ ls
 cd LoveSource/
 ls
 make
-more readme.md 
+more readme.md
 ls
-cd Contents/ 
+cd Contents/
 ls
 cd Frameworks/
 ls
@@ -3185,7 +3185,7 @@ ls
 cd MacOS/
 ls
 love
-./love 
+./love
 cd ..
 ls
 cd
@@ -3228,7 +3228,7 @@ cd Contents/
 ls
 cd MacOS/
 ls
-cd .. 
+cd ..
 ls
 cd Resources/
 ls
@@ -3243,9 +3243,9 @@ ls
 cd love.framework/
 ls
 cd Versions/
-ls 
+ls
 cd A/
-ls 
+ls
 cd Resources/
 ls
 cd ..
@@ -3271,7 +3271,7 @@ cd ..
 ls
 cd ..
 ls
-cd Resources/ 
+cd Resources/
 ls
 cd ..
 ls
@@ -3309,7 +3309,7 @@ ls
 ls -al
 cd ..
 ls
-rm sr-speedbar.el 
+rm sr-speedbar.el
 cd el-get/
 ls
 exit
@@ -3336,7 +3336,7 @@ mv jdee backup-packages/
 mv jd* backup-packages/
 ls
 mv slime backup-packages/
-cd backup-packages/ 
+cd backup-packages/
 ls
 cd ..
 ls
@@ -3346,12 +3346,12 @@ cd ..
 rm -rf backups/
 ls
 mv cedet-1.1 backup-packages/
-more tramp 
+more tramp
 ls
 mv elib-1.0 backup-packages/
 mv ecb-cvs backup-packages/
 ls
-rm apac.el 
+rm apac.el
 ls
 rm Editing\ Eclipse\ Plugin\ Instructions\ ·\ mgordon\ droidsafe\ Wiki
 rm Editing\ Eclipse\ Plugin\ Instructions\ ·\ mgordon\ droidsafe\ Wiki*
@@ -3359,7 +3359,7 @@ ls
 rm Editing\ Eclipse\ Plugin\ Instructions\ ·\ mgordon\ droidsafe\ Wiki_files/
 rm -rf Editing\ Eclipse\ Plugin\ Instructions\ ·\ mgordon\ droidsafe\ Wiki_files/
 ls
-cd semantic-cache/ 
+cd semantic-cache/
 ls
 la
 ls -al
@@ -3370,19 +3370,19 @@ rm -rf session.2*
 ls
 more recentf
 ls
-more init-el-get.el 
+more init-el-get.el
 ls
 diff init.saved  init.el
-rm init.saved 
+rm init.saved
 ls
 rm -rf server/
 ls
-more places.txt 
+more places.txt
 ls
 rm *~
 ls
-more ede-projects.el 
-rm ede-projects.el 
+more ede-projects.el
+rm ede-projects.el
 ls
 his
 his | grep emacs
@@ -3418,23 +3418,23 @@ which lua
 /usr/local/bin/lua
 cd eclipse-workspace/eclipse-luna-workspace/LuaSimulator/src/
 lua wargame.lua 18
-cd .. 
+cd ..
 ls
 cd blitwizard-bin/bin
 ls
-chmod +x blitwizard 
-./blitwizard 
+chmod +x blitwizard
+./blitwizard
 cd ..
-~ 
+~
 cd examples/01.helloworld/
 ls
-lua game.lua 
+lua game.lua
 cd ../..
 ls
 cp examples/01.helloworld/game.lua .
-./bin/blitwizard 
+./bin/blitwizard
 cp examples/01.helloworld/hello_world.png .
-./bin/blitwizard 
+./bin/blitwizard
 which ctags
 ctags --version
 which etags
@@ -3445,17 +3445,17 @@ cd ..
 ls
 cd src
 ls
-more main.lua 
+more main.lua
 /Applications/love.app/Contents/MacOS/love ~/eclipse-workspace/eclipse-luna-workspace/LuaSimulator/src
 /Applications/love.app/Contents/MacOS/love ~/eclipse-workspace/eclipse-luna-workspace/LoveGame/
 cd ../../LoveGame/countryside.png .
 /Applications/love.app/Contents/MacOS/love ~/eclipse-workspace/eclipse-luna-workspace/LuaSimulator/src/
-lua wargame.lua 
+lua wargame.lua
 lua wargame.lua 18
 cd ..
 cd LoveGame/
 ls
-/Applications/love.app/Contents/MacOS/love ~/eclipse-workspace/eclipse-luna-workspace/LoveGame/0.9.0\ examples.love 
+/Applications/love.app/Contents/MacOS/love ~/eclipse-workspace/eclipse-luna-workspace/LoveGame/0.9.0\ examples.love
 /Applications/love.app/Contents/MacOS/love ~/eclipse-workspace/eclipse-luna-workspace/LuaSimulator/src/
 sudo port install lpeg
 sudo port install lua-lpeg
@@ -3475,7 +3475,7 @@ ls
 cd blitwizard-bin/
 ls
 ~/Library/Developer/Xcode/DerivedData/love-framework-cokqyzersrtpuccvsbbzrwgxztqu/Build/Products/Debug/love
-~/Library/Developer/Xcode/DerivedData/love-framework-cokqyzersrtpuccvsbbzrwgxztqu/Build/Products/Debug/Love.app/Contents/MacOS/Love 
+~/Library/Developer/Xcode/DerivedData/love-framework-cokqyzersrtpuccvsbbzrwgxztqu/Build/Products/Debug/Love.app/Contents/MacOS/Love
 his
 ~/Library/Developer/Xcode/DerivedData/love-framework-cokqyzersrtpuccvsbbzrwgxztqu/Build/Products/Debug/Love.app/Contents/MacOS/Love ~/src/LuaGraphicsTest/blitwizard-bin
 ~/Library/Developer/Xcode/DerivedData/love-framework-cokqyzersrtpuccvsbbzrwgxztqu/Build/Products/Debug/Love.app/Contents/MacOS/Love ~/src/LuaGraphicsTest/blitwizard-bin/
@@ -3517,11 +3517,11 @@ cd Library/
 ls
 cd Application\ Support/
 ls
-cd Sublime\ Text\ 
+cd Sublime\ Text\
 ls
 cd Sublime\ Text\ 3/
 ls
-cd 
+cd
 ls -al
 cd .config/
 ls
@@ -3536,23 +3536,23 @@ ls
 d Sublime
 cd Sublime
 ls
-more Sync-Sublime-Dropbox.sh 
+more Sync-Sublime-Dropbox.sh
 ls
 cd ..
 ls
 cd ~/Library/Application\ Support/Sublime\ Text\ 2/Settings/
 ls
-more Session.sublime_session 
-c 
-cd 
+more Session.sublime_session
+c
+cd
 cd Dropbox/Sublime
 ls
-chmod +x Sync-Sublime-Dropbox.sh 
-./Sync-Sublime-Dropbox.sh 
+chmod +x Sync-Sublime-Dropbox.sh
+./Sync-Sublime-Dropbox.sh
 ps -al
 ps -ef | grep sublime
 kill -9 49165
-cd 
+cd
 cd Library/Application\ Support/Sublime\ Text\ 2
 ls
 ls -al
@@ -3561,7 +3561,7 @@ ls
 cd Sublime\ Text\ 3
 ls
 ls -al
-cd 
+cd
 cd Dropbox/Sublime3
 ls
 cd ..
@@ -3575,10 +3575,10 @@ ls
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/
 ls
 ls -l
-cd Installed\ Packages 
+cd Installed\ Packages
 ls
-rm -rf Installed\ Packages 
-rm -rf Packages 
+rm -rf Installed\ Packages
+rm -rf Packages
 ls
 cd ..
 rm -rf Sublime\ Text\ 3/
@@ -3593,9 +3593,9 @@ cd ..
 ls
 cd Installed\ Packages/
 ls
-more Package\ Control.sublime-package 
+more Package\ Control.sublime-package
 s
-more Package\ Control.sublime-package 
+more Package\ Control.sublime-package
 ;s
 clear
 ls
@@ -3605,7 +3605,7 @@ ls
 cd US
 cd User/
 ls
-rm Package\ Control.last-run 
+rm Package\ Control.last-run
 rm Package\ Control.cache/
 rm -rfPackage\ Control.cache/
 rm -rf Package\ Control.cache/
@@ -3628,7 +3628,7 @@ ln -s ~/Dropbox/Sublime3/User
 ls
 cd User
 ls
-cd 
+cd
 cd Dropbox/Sublime3
 ls
 ls User/
@@ -3640,7 +3640,7 @@ mv SublimePython.sublime-settings User/
 ls
 rm Package\ Control.sublime-settings Preferences.sublime-settings Side\ Bar*
 ls
-cd 
+cd
 ls
 exit
 cd "/Users/marcelbecker/src/px-repos/plan-construction/mission-specification/src" && clear
@@ -3668,12 +3668,12 @@ ls
 cd snippets/
 ls
 cd ../..
-cp -r emacs-for-python/snippets . 
+cp -r emacs-for-python/snippets .
 ls
 cd
 cd src
 s
-cd 
+cd
 cd src
 ls
 cd px-repos/
@@ -3733,7 +3733,7 @@ git pull
 sudo pip install rope
 sudo pip install ropemacs
 sudo pip install ropemode
-emacs 
+emacs
 ema
 which emacs
 /usr/bin/emacs -Q
@@ -3753,7 +3753,7 @@ ps -eaf | grep Emacs
 kill -9 25723
 /Applications/Emacs.app/Contents/MacOS/Emacs-10.7 --debug-init
 /Applications/Emacs.app/Contents/MacOS/Emacs-10.7 --debug-init -Q
-/Applications/Emacs.app/Contents/MacOS/Emacs-10.7 --debug-init 
+/Applications/Emacs.app/Contents/MacOS/Emacs-10.7 --debug-init
 cd
 sudo pip install ipython[notebook]
 sudo pip install --upgrade ipython[all]
@@ -3766,10 +3766,10 @@ sudo port install bzr
 cd
 cd Dropbox/.emacs.d/el-get/python-mode
 ls
-bzr pull 
+bzr pull
 ls -al
 pip list --outdated
-pip list 
+pip list
 cd
 pip list --outdated
 sudo pip install --upgrade pyobjc*
@@ -3782,7 +3782,7 @@ ls
 cd mission-specification/
 git pull
 ls
-cd 
+cd
 cd Dropbox/.emacs.d/el-get/ein/
 ls
 ls -al
@@ -3792,19 +3792,19 @@ ls -al
 rm -rf .git*
 ls
 ls -al
-rm -rf .travis.yml 
+rm -rf .travis.yml
 ls -al
 cd ..
 rm -rf ein
 git clone https://github.com/millejoh/emacs-ipython-notebook.git ein
 pip freeze
 pip freeze --local
-pip freeze --local | grep -v '^\-e' 
-pip freeze --local | grep -v '^\-e' | cut -d = -f 1 
+pip freeze --local | grep -v '^\-e'
+pip freeze --local | grep -v '^\-e' | cut -d = -f 1
 pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs sudo pip install -U
 pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs sudo pip install -U --allow-external
 sudo pip install --upgrade --allow-external bonjour-py
-sudo pip install --upgrade bonjour-py --allow-external 
+sudo pip install --upgrade bonjour-py --allow-external
 cd
 cd src/px-repos/plan-construction/server/
 git pull
@@ -3824,7 +3824,7 @@ git pull
 cd ..
 cd dashboard/
 git pull
-cd 
+cd
 cd Dropbox/.emacs.d/el-get/yasnippet/
 ls
 cd snippets/
@@ -3833,7 +3833,7 @@ cd python-mode/
 ls
 his | grep Emacs
 /Applications/Emacs.app/Contents/MacOS/Emacs-10.7 --debug-init -Q
-/Applications/Emacs.app/Contents/MacOS/Emacs-10.7 --debug-init 
+/Applications/Emacs.app/Contents/MacOS/Emacs-10.7 --debug-init
 sudo pip install python-epc
 sudo pip search ep
 sudo pip install epc
@@ -3850,7 +3850,7 @@ kill -9 2299
 sudo pip install autopep8
 sudo pip install autopep8 --upgrade
 which autopep8
-autopep8 
+autopep8
 whereis python
 cd /usr/opt
 ls
@@ -3859,7 +3859,7 @@ ls
 cd ..
 cd /usr/share
 ls
-ls -l /usr/local/bin/autopep8 
+ls -l /usr/local/bin/autopep8
 which python
 ls -l /usr/bin/python
 sudo /usr/libexec/locate.updatedb
@@ -3869,10 +3869,10 @@ ls
 cd mission-specification/
 ls
 git pull
-diff pslist.py src/pslist.py 
+diff pslist.py src/pslist.py
 rm pslist.py
 ls
-rm pslist.pyc 
+rm pslist.pyc
 ls
 git status
 git add src/
@@ -3903,9 +3903,9 @@ ls
 cd
 cd src/px-repos/plan-construction/playbook/
 git pull
-git branch 
-git checkout pslist_v1.1 
-git pull origin pslist_v1.1 
+git branch
+git checkout pslist_v1.1
+git pull origin pslist_v1.1
 ls
 cd src
 ls
@@ -3924,7 +3924,7 @@ more INSTALL
 cd ..
 ls company-mode/
 ls
-env 
+env
 env | grep PYTHONPATH
 sudo pip install iptools
 gem install tm2deftheme
@@ -3933,19 +3933,19 @@ ls
 cd /tmp
 ls
 cp ~/Dropbox/Sublime2/Packages/Color\ Scheme\ -\ Default/Cobalt.tmTheme .
-tm2deftheme Cobalt.tmTheme 
+tm2deftheme Cobalt.tmTheme
 ls
-more Cobalt.tmTheme 
-tm2deftheme Cobalt.tmTheme 
+more Cobalt.tmTheme
+tm2deftheme Cobalt.tmTheme
 tm2deftheme Cobalt.tmTheme cobalt-theme.el
 ls
-tm2deftheme 
+tm2deftheme
 tm2deftheme Cobalt.tmTheme -o cobalt-theme.el
 ls
-tm2deftheme 
+tm2deftheme
 tm2deftheme Cobalt.tmTheme -f-o cobalt-theme.el
 ls
-more cobalt-theme.el 
+more cobalt-theme.el
 cd Dropbox/.emacs.d/
 ls
 cd el-get/
@@ -3959,13 +3959,13 @@ ls
 cd ..
 ls
 cd themes/
-ls 
+ls
 cd /tmp
 ls
-more cobalt-theme.el 
+more cobalt-theme.el
 jkljlkjlkjo~~
 dsf
-\\\\\\\~  
+\\\\\\\~
 karabiner
 whereis karabiner
 cd
@@ -3985,9 +3985,9 @@ cd profile_default/
 ls
 cd startup/
 ls
-more README 
+more README
 ipython profile create
-cd 
+cd
 cd Library/Application\ Support/Sublime\ Text\ 2/
 LS
 ls
@@ -4063,8 +4063,8 @@ rm -rf playbook/
 git clone git@github-enterprise.px.ftw:plan-construction/playbook.git
 cd playbook/
 ls
-git checkout develop 
-git pull origin develop 
+git checkout develop
+git pull origin develop
 cd ..
 ls
 cd server/
@@ -4101,9 +4101,9 @@ git push origin master
 cd ..
 ls
 cd plan-generation/
-./pintergen.py pslist-spec.json 
+./pintergen.py pslist-spec.json
 ls
-more pslist-monday.py 
+more pslist-monday.py
 ./pintergen.py pslist-spec.json > pslist-marcel.py
 git pull
 cd ..
@@ -4133,7 +4133,7 @@ cd pinter/
 ls
 cd ..
 ls
-more setup.py 
+more setup.py
 c pinter/
 ls
 cd
@@ -4145,7 +4145,7 @@ cd --
 cd src/px-repos/plan-construction/pinter-python/pinter/
 ls
 ls -l
-git checkout develop 
+git checkout develop
 ls
 pwd
 sudo pip install nanomsg
@@ -4164,7 +4164,7 @@ cd ../pinter-python/
 git pull
 git checkout master
 git pull
-git checkout develop 
+git checkout develop
 cd ..
 ls
 cd ..
@@ -4172,7 +4172,7 @@ cd plan-construction/
 ls
 cd plan-generation/
 ls
-his 
+his
 ./pintergen.py pslist-spec.json > pslist-marcel.py
 exit
 sudo pip install ipython
@@ -4191,14 +4191,14 @@ cd exte
 cd extensions/
 ls
 cd ..
-cd 
+cd
 ls
 cd src
 ls
 mkdir ipython
 cd ipython/
 ipython new-notebook
-ipython 
+ipython
 sudo pip install nose
 iptest
 sudo pip install casperjs
@@ -4207,14 +4207,14 @@ sudo pip install qt
 sudo pip install rpy2
 ipython notebook
 ipython --version
-cd 
+cd
 cd Dropbox/.emacs.d/
 git clone https://github.com/zk-phi/sublimity.git
 ps -aef | grep Emacs
 kill -9 30867
 sudo pip install jedi
 find . -iregex .*\.el$ | xargs etags
-find . -iregex .*\.el$ 
+find . -iregex .*\.el$
 find . -iregex .*\.el$ | xargs etags
 man etags
 sudo pip install virtualenv
@@ -4226,17 +4226,17 @@ ls
 cd /tmp
 ls
 wget https://bitbucket.org/jonwaltman/pydoc-info/downloads/python.info.gz
-gunzip python.info.gz 
+gunzip python.info.gz
 ls
 sudo cp python.info /usr/share/info
 sudo install-info --info-dir=/usr/share/info python.info
 cd /usr/share/info
 ls
-more python.info 
+more python.info
 sudo install-info --info-dir=/usr/share/info python.info
 sudo pip install flake8
 sudo pip install pylint
-cd 
+cd
 cd Dropbox/.emacs.d/el-get/
 ls
 cd helm
@@ -4253,14 +4253,14 @@ python -version
 python --version
 his | grep pip
 sudo pip install python-epc
-cd 
+cd
 cd Dropbox/.emacs.d/.python-environments/
 ls
 cd default/
 ls
 cd bin/
 ls
-./jediepcserver 
+./jediepcserver
 ./python
 file *
 ls
@@ -4288,7 +4288,7 @@ s
 ls
 ipython notebook
 ipython --colors Linux
-cd 
+cd
 cd Dropbox/.emacs.d/
 ls
 cd el-get/
@@ -4340,7 +4340,7 @@ cd src
 cd px-repos/plan-construction/
 cd mission-specification/
 ls
-mkdir src 
+mkdir src
 mv *.py src/
 ls
 rm *.pyc
@@ -4367,7 +4367,7 @@ ls
 ls -al
 cp ../server/.gitignore .
 ls
-more .gitignore 
+more .gitignore
 git status
 git add .gitignore
 git status
@@ -4408,7 +4408,7 @@ y
 vagrant up
 vagrant destroy
 vagrant up
-ssh-add ~/.vagrant.d/insecure_private_key 
+ssh-add ~/.vagrant.d/insecure_private_key
 vagrant ssh core-01 -- -A
 vagrant ssh core-05 -- -A
 fleetctl
@@ -4432,14 +4432,14 @@ exit
 cd src/px-repos/plan-construction/
 ls
 cd playbook/
-git pull 
+git pull
 git pull origin master
 cd ..
 rm -rf playbook/
 git clone git@github-enterprise.px.ftw:plan-construction/playbook.git
 cd playbook/
 git branch
-git checkout pslist_v1.1 
+git checkout pslist_v1.1
 git pull
 ls
 cd src
@@ -4461,7 +4461,7 @@ cd ..
 ls
 cd vagrant-coreos-docker-apache-example/
 ls
-more Dockerfile 
+more Dockerfile
 ls
 cd
 cd app
@@ -4508,11 +4508,11 @@ sudo pip install .
 cd ..
 cd px-luna-client/
 ls
-more README.md 
+more README.md
 cd ..
 ls
 sudo port install avro
-sudo port selfupdate 
+sudo port selfupdate
 sudo port upgrade outdated
 sudo port install snappy
 sudo pip install avro
@@ -4541,7 +4541,7 @@ pip install .
 sudo pip install .
 sudo pip install python-snappy
 sudo port install libsnappy-dev
-sudo port selfupdate 
+sudo port selfupdate
 sudo port upgrade outdated
 sudo pip help
 pip list help
@@ -4552,12 +4552,12 @@ cd ..
 cd plan-generation/
 ls
 git pull
-git stash 
+git stash
 git pull
 git stash pop
 git diff pintergen.py
 git status
-git add pslist-simplified-marcel.py 
+git add pslist-simplified-marcel.py
 git commit -m "Modified version of the pslist plan"
 git pull
 git status
@@ -4622,7 +4622,7 @@ cd vagrant/
 ls
 cd ubuntu-precise-64-1/
 ls
-more Vagrantfile 
+more Vagrantfile
 cd ..
 ls
 cd vagrant-berkshelf/
@@ -4646,20 +4646,20 @@ ls
 ls -al
 cd ubuntu-14.04-amd64-vbox/
 ls
-more base.sh 
+more base.sh
 ls
-more vagrant.sh 
+more vagrant.sh
 cd ..
 ls
 cd ..
 ls
-more README.md 
+more README.md
 ls
 bundle install --path vendor
 bundle exec rake virtualbox:ubuntu-14.04-amd64:all
 vagrant box list
 vagrant status
-cd 
+cd
 cd src/px-repos/
 ls
 cd plan-construction/
@@ -4691,11 +4691,11 @@ vagrant up
 cd ~/.berkshelf/
 ls
 rm -rf vagrant/
-more config.json 
+more config.json
 ls
 rm -rf px_bootstrap/ px_dsl/ px_messaging/ px_metrics/
 ls
-cd default/ 
+cd default/
 ls
 cd ..
 rm -rf default/
@@ -4747,7 +4747,7 @@ git clone git@github-enterprise.px.ftw:appstore/coas.git
 cd ..
 cd plan-construction/px-avro/
 ls
-./build/build.sh 
+./build/build.sh
 which maven
 mvn
 sudo port install mvn
@@ -4757,8 +4757,8 @@ sudo port selfupdate
 sudo port install maven3
 mvn -version
 sudo port select --set maven maven3
-mvn 
-./build/build.sh 
+mvn
+./build/build.sh
 cd ../
 cd px-luna
 ls
@@ -4773,7 +4773,7 @@ sudo pip install avro --upgrade
 sudo pip install .
 cd ..
 cd px-luna
-./build/build.sh 
+./build/build.sh
 ./build/build.sh -v
 whereis javq
 whereis java
@@ -4831,7 +4831,7 @@ vagrant ssh
 vagrant provision
 vagrant ssh
 vagrant up
-ps -ef 
+ps -ef
 ps -ef | grep vagrant
 ps -ef | grep virtual
 vagrant global-status
@@ -4840,7 +4840,7 @@ vagrant global-status
 cd src/coreos/coreos-vagrant/
 ls
 vagrant destroy -f
-vagrant destroy 
+vagrant destroy
 vagrant global status
 vagrant global-status
 vagrant destroy
@@ -4886,7 +4886,7 @@ cd planx-planner/
 ls
 cd recipes/
 ls
-more default.rb 
+more default.rb
 vagrant provision
 cd
 cd src/px-repos/plan-construction/my-vagrant-development/
@@ -4901,20 +4901,20 @@ git status
 git diff recipes/default.rb
 git add recipes/default.rb
 git commit -m "Fixed machine provisioning"
-git push origin master 
+git push origin master
 cd /tmp
 wget http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/luna/R/eclipse-rcp-luna-R-linux-gtk-x86_64.tar.gz
 ls
 wget http://developer.eclipsesource.com/start/index.html?dl=http://developer.eclipsesource.com/technology/epp/luna/eclipse-rcp-luna-R-linux-gtk-x86_64.tar.gz
 wget http://developer.eclipsesource.com/technology/epp/luna/eclipse-rcp-luna-R-linux-gtk-x86_64.tar.gz
 ls
-rm download.php\?file\=%2Ftechnology%2Fepp%2Fdownloads%2Frelease%2Fluna%2FR%2Feclipse-rcp-luna-R-linux-gtk-x86_64.tar.gz 
-rm eclipse-rcp-luna-R-linux-gtk-x86_64.tar.gz 
-rm index.html\?dl\=http\:%2F%2Fdeveloper.eclipsesource.com%2Ftechnology%2Fepp%2Fluna%2Feclipse-rcp-luna-R-linux-gtk-x86_64.tar.gz 
+rm download.php\?file\=%2Ftechnology%2Fepp%2Fdownloads%2Frelease%2Fluna%2FR%2Feclipse-rcp-luna-R-linux-gtk-x86_64.tar.gz
+rm eclipse-rcp-luna-R-linux-gtk-x86_64.tar.gz
+rm index.html\?dl\=http\:%2F%2Fdeveloper.eclipsesource.com%2Ftechnology%2Fepp%2Fluna%2Feclipse-rcp-luna-R-linux-gtk-x86_64.tar.gz
 ls
-cd 
+cd
 ls .pip/
-more .pip/pip.conf 
+more .pip/pip.conf
 cd src
 ls
 cd Apache-Avro/
@@ -4968,22 +4968,22 @@ cd ../runtime/
 git pull
 cd ..
 ls
-more users.avro 
+more users.avro
 ls
-more users.avro 
-rm users.avro 
+more users.avro
+rm users.avro
 ls
 cd px-avro/
-./build/build.sh 
+./build/build.sh
 mvn compile
 javac -v
 javac --version
 javac -version
 git pull
 ls
-./validate.sh 
-more clean.sh 
-more build/build.sh 
+./validate.sh
+more clean.sh
+more build/build.sh
 clear
 git pull
 mvn clean compile
@@ -5002,10 +5002,10 @@ pip freeze | grep pxrancher
 pip freeze | grep px
 pip freeze | grep pxt*
 sudo pip uninstall pxt*
-./build/build.sh 
-more pom.xml 
+./build/build.sh
+more pom.xml
 git pull
-./build/build.sh 
+./build/build.sh
 javac -version
 whereis javac
 mvn -v compile
@@ -5051,18 +5051,18 @@ cd runtime/
 ls
 cd baker/
 ls
-more vpproxygen.sh 
+more vpproxygen.sh
 ls
-more base.bootconf.lua 
+more base.bootconf.lua
 cd
 cd src/px-repos/plan-construction/BlueController/
 git checkout develop
-git pull origin develop 
+git pull origin develop
 cd ..
 cd plan-construction/controller-runtime/baker/
 ls
-chmod +x vpproxygen-marcel.sh 
-./vpproxygen-marcel.sh 
+chmod +x vpproxygen-marcel.sh
+./vpproxygen-marcel.sh
 ls
 cd ..
 cd
@@ -5114,18 +5114,18 @@ cd ..
 cd plan-construction/
 cd mission-specification/
 git pull
-git checkout marcel_new_spec_format 
+git checkout marcel_new_spec_format
 git pull
 git status
 git diff src/pslist.py
-git checkout master 
+git checkout master
 git status
 git add src/pslist.py
-git commit -m "Fixed typos and default arguments" 
+git commit -m "Fixed typos and default arguments"
 git push origin master
-his | grep git 
+his | grep git
 git status
-git checkout marcel_new_spec_format 
+git checkout marcel_new_spec_format
 git pull master
 git pull
 ls
@@ -5156,7 +5156,7 @@ git pull
 git checkout master
 git pull
 git branch
-git checkout core-centric-plan 
+git checkout core-centric-plan
 git pull
 cd ..
 ls
@@ -5210,8 +5210,8 @@ ls
 cd virtualbox/
 ls
 file *
-more id 
-more synced_folders 
+more id
+more synced_folders
 ls
 cd -
 cd ..
@@ -5226,20 +5226,20 @@ vagrant reload
 vagrant provision
 git status
 git add Berksfile Vagrantfile metadata.rb recipes/dropbox.rb recipes/default.rb
-git commit -m 
-git commit -m "Added dropbox and copy of config files" 
+git commit -m
+git commit -m "Added dropbox and copy of config files"
 git push origin master
 cd ..
 cd mission-specification/
 ls
 git status
-git pull origin marcel_new_spec_format 
+git pull origin marcel_new_spec_format
 ls
 cd ..
 ls
 cd mission-specification/
 ls
-cd pslist/ 
+cd pslist/
 ls
 cd ..
 ls
@@ -5250,7 +5250,7 @@ ls
 cd ..
 cd plan-generation/
 ls
-cd 
+cd
 ls
 cd VirtualBox\ VMs/
 ls
@@ -5268,18 +5268,18 @@ git add pslist/pslist-spec-marcel-merged-with-JP-format.json
 git add scripts/parse_marcel_spec.py
 git status
 git commit -m "Changed the effect descriptions"
-git push origin marcel_new_spec_format 
+git push origin marcel_new_spec_format
 vagrant plugin list
 ls
 cd pslist/
 ls
 git status
 git diff pslist-spec-marcel-merged-with-JP-format.json
-git pull origin marcel_new_spec_format 
+git pull origin marcel_new_spec_format
 git status
 git add pslist-spec-marcel-merged-with-JP-format.json ../scripts/parse_marcel_spec.py
 git commit -m "small fixes to spec and processing code"
-git push origin marcel_new_spec_format 
+git push origin marcel_new_spec_format
 git status
 cd ..
 ls
@@ -5339,9 +5339,9 @@ git add pslist-spec-marcel-merged-with-JP-format.json
 git add ../scripts/parse_marcel_spec.py
 git status
 git commit -m "PX-1629, PX-1618, PX-1705 Fixed spec for effects and observables"
-git push origin marcel_new_spec_format 
+git push origin marcel_new_spec_format
 java -jar avro-tools
-cd 
+cd
 cd src
 ls
 mkdir Apache-Avro
@@ -5349,8 +5349,8 @@ cd Apache-Avro/
 ls
 cd avro-src-1.7.7
 ls
-more build.sh 
-./build.sh 
+more build.sh
+./build.sh
 ./build.sh dist
 ./build.sh test
 env x='() { :;}; echo vulnerable' bash -c 'echo hello'
@@ -5365,7 +5365,7 @@ dig vefur.is
 dig vefur.is soa
 dig vefur.is ns
 dig ns01.t.is
-dig 
+dig
 cd src/px-repos/plan-construction/px-avro/
 ls
 cd ../
@@ -5379,7 +5379,7 @@ pwd
 cd ../..
 cd
 cd -
-cd bin 
+cd bin
 ls
 cd ..
 cd baker/
@@ -5402,7 +5402,7 @@ cd ..
 ls
 cd scripts/
 ls
-more bootconf.lua 
+more bootconf.lua
 cd ..
 ls
 cd ..
@@ -5414,7 +5414,7 @@ ls
 cd ..
 ls
 more miniDeploy
-more miniDeployer.sh 
+more miniDeployer.sh
 exit
 exit
 exit
@@ -5422,11 +5422,11 @@ cd src/px-repos/plan-construction/runtime/
 ls
 cd baker/
 ls
-more baker.py 
+more baker.py
 ls
 cd baker
 ls
-more baker.py 
+more baker.py
 cd ..
 ls
 cd ../../..
@@ -5434,47 +5434,47 @@ cd plan-construction/controller-runtime/
 ls
 cd baker/
 ls
-cd deploy/ 
+cd deploy/
 ls
 cd vp
 ls
 cd scripts/
 ls
-more start.lua 
-more bootconf.lua 
+more start.lua
+more bootconf.lua
 ls
-more start.lua 
+more start.lua
 ls
-more chan.lua 
+more chan.lua
 ls
-lua start.lua 
+lua start.lua
 ls
 cd modules/
 ls
-more gen.sh 
+more gen.sh
 tree .
-./gen.sh 
+./gen.sh
 ls
-sh gen.sh 
+sh gen.sh
 ls
 cd cap/
 ls
 cd os/
 ls
-more getProcs.lua 
+more getProcs.lua
 ls
-lua getProcs.lua 
+lua getProcs.lua
 ls
-more killProc.lua 
+more killProc.lua
 ls~
 ls
 cd ..
 ls
 cd test/
 ls
-lua example.lua 
+lua example.lua
 ls
-more echo.lua 
+more echo.lua
 cd ..
 ls
 cd ..
@@ -5486,7 +5486,7 @@ cd controller
 ls
 cd scripts/
 ls
-lua start.lua 
+lua start.lua
 ls
 cd util/
 ls
@@ -5505,9 +5505,9 @@ ls
 cd se
 cd select/
 ls
-more server.lua 
+more server.lua
 ls
-more worker.lua 
+more worker.lua
 cd
 cd src/
 ls
@@ -5524,11 +5524,11 @@ dig vefur.is NS
 dig vefur.is
 dig vefur.is SOA
 dig vefur.is NS
-dig ns02.t.is 
+dig ns02.t.is
 dig ns02.t.is SOA
 dig -x 217.28.177.20
-dig @217.28.177.20 vefur.is 
-dig @217.28.177.10 vefur.is 
+dig @217.28.177.20 vefur.is
+dig @217.28.177.10 vefur.is
 dig @217.28.177.10 vefur.is MX
 dig @217.28.177.20 vefur.is MX
 nmap 80.248.29.148
@@ -5545,7 +5545,7 @@ dig @217.28.177.20 vefur.is axfr
 dig @217.28.177.20 ns01.t.is axfr
 dig @217.28.177.20 ns02.t.is axfr
 dig @217.28.177.20 217.28.176.106 axfr
-dig @217.28.177.20 217.28.176.106 
+dig @217.28.177.20 217.28.176.106
 dig @217.28.177.20 217.28.176.106 MX
 dig @217.28.177.20 217.28.176.106 NS
 dig @217.28.177.20 217.28.176.106 ASO
@@ -5569,8 +5569,8 @@ dig kestrel.edu SOA
 dig kestrel.edu SAO
 dig kestrel.edu SOA
 dig root.kestrel.edu SOA
-dig root.kestrel.edu 
-dig ns3.kestrel.edu 
+dig root.kestrel.edu
+dig ns3.kestrel.edu
 dig -x 50.196.138.178
 dig @50.196.138.178 kestrel.edu MX
 nmap 50.196.138.178 -O -sV
@@ -5584,7 +5584,7 @@ sudo nmap 50.196.138.178 -O -sV -Pn
 dig crake.kestrel.edu
 dig crake.kestrel.edu NS
 dig root.kestrel.edu NS
-dig root.kestrel.edu 
+dig root.kestrel.edu
 dig root.kestrel.edu SOA
 dig root.kestrel.edu MX
 dig ns3.kestrel.edu MX
@@ -5600,26 +5600,26 @@ cd runtime/
 ls
 cd baker/
 ls
-more baker.py 
+more baker.py
 dig uol.com.br
 dig uol.com.br NS
 dig charles.uol.com.br
 dig @200.147.38.8 uol.com.br
 dig @200.147.38.8 uol.com.br MX
-nmap @200.147.38.8 
-nmap 200.147.38.8 
+nmap @200.147.38.8
+nmap 200.147.38.8
 nmap 200.147.38.8 -Pn
 nmap 200.147.36.15 -Pn
-whois 200.147.36.15 
+whois 200.147.36.15
 dig @200.147.38.8 uol.com.br SOA
 nmap 200.221.11.98 -Pn
 nmap 200.147.255.105 -Pn
 nmap 200.147.0.2 -Pn
 hping
-ping 200.147.0.2 
-ping 200.147.0.3 
-ping 200.147.0.4 
-ping 200.147.0.5 
+ping 200.147.0.2
+ping 200.147.0.3
+ping 200.147.0.4
+ping 200.147.0.5
 dig @200.147.38.8 200.147.0.1 NS
 dig @200.147.38.8 200.147.0.2 NS
 dig @200.147.38.8 200.147.1.2 NS
@@ -5633,18 +5633,18 @@ traceroute 200.147.28.162
 dig -x  200.147.28.162
 nmap  200.147.28.162
 nmap  200.147.28.162 -Pn
-ping  200.147.28.162 
-dig  200.147.28.162 SOA 
+ping  200.147.28.162
+dig  200.147.28.162 SOA
 dig  200.147.28.162 NS
 dig 200.147.28.200 NS
-dig 200.147.28.200 
-whois 200.147.28.200 
+dig 200.147.28.200
+whois 200.147.28.200
 dig borges.uol.com.br
 dig borges.uol.com.br NS
 dig @eliot.uol.com.br borges.uol.com.br NS
 dig @eliot.uol.com.br borges.uol.com.br MX
 dig @eliot.uol.co
-traceroute borges.uol.com.br 
+traceroute borges.uol.com.br
 ping uol.com.br
 traceroute 200.221.2.45
 ping uol.com.br
@@ -5700,7 +5700,7 @@ git pull
 git checkout -- test/pxinanemu/dockerfiles/controller/
 git pull
 git checkout -- test/pxinanemu/dockerfiles/controller/*
-rm test/pxinanemu/dockerfiles/controller/drom_id_rsa 
+rm test/pxinanemu/dockerfiles/controller/drom_id_rsa
 git pull
 cd ..
 cd BlueController/
@@ -5708,7 +5708,7 @@ git pull
 alias
 source ~/.bashrc
 cd ..
-git-update-all 
+git-update-all
 cd playbook/
 git pull
 cd ../..
@@ -5742,7 +5742,7 @@ VAGRANT_LOG='debug' vagrant up --provide=docker
 cp ../my-vagrant-development/metadata.rb .
 VAGRANT_LOG='debug' vagrant up --provide=docker
 ls
-more metadata.rb 
+more metadata.rb
 VAGRANT_LOG='debug' vagrant up --provide=docker
 cp ../my-vagrant-development/README.md .
 VAGRANT_LOG='debug' vagrant up --provide=docker
@@ -5779,7 +5779,7 @@ vagrant global-status
 vagrant ssh 0d0006c
 vagrant global-status
 vagrant reload 0d0006c
-vagrant provision 0d0006c 
+vagrant provision 0d0006c
 VAGRANT_LOG='debug' vagrant up --provider=docker
 vagrant up --provider=docker
 vagrant ssh 0d0006c
@@ -5819,7 +5819,7 @@ cd
 cd src/px-repos/plan-construction/px-clusters/
 git pull
 sudo pip install pxrancher
-pxlaunch run MY_CLUSTER coreonly.hcl 
+pxlaunch run MY_CLUSTER coreonly.hcl
 boot2docker
 cd ..
 cd BlueController/
@@ -5831,7 +5831,7 @@ cd ..
 cd pinter-python/
 git pull
 ls
-more Dockerfile 
+more Dockerfile
 cd ../ctrl-core-services/
 git pull
 cd ..
@@ -5852,7 +5852,7 @@ git checkout -- test/pxinanemu/dockerfiles/controller/add_annotations.py
 git pull
 cd test/pxinanemu/dockerfiles/deployer/
 ls
-more Dockerfile 
+more Dockerfile
 nmap 10.10.12.0/24
 cd
 cd src/CNO\ Training/
@@ -5862,11 +5862,11 @@ cd sessions-script/
 sco root@10.111.111.184:/root/* .
 scp root@10.111.111.184:/root/* .
 ls
-more initial-access-1 
+more initial-access-1
 ls
-more typescript 
+more typescript
 y
-more script.txt 
+more script.txt
 cd
 cd src/vagrant-packer-kali/
 git clone https://github.com/ctarwater/packer-kali.git
@@ -5877,7 +5877,7 @@ cd packer-kali/
 ./../packer_0.7.1_darwin_amd64/packer build -only=virtualbox-iso clean-kali.json
 ./../packer_0.7.1_darwin_amd64/packer
 ./../packer_0.7.1_darwin_amd64/packer build
-./../packer_0.7.1_darwin_amd64/packer build -only=virtualbox-iso kali.json 
+./../packer_0.7.1_darwin_amd64/packer build -only=virtualbox-iso kali.json
 ls
 ls -al
 cd assets/
@@ -5894,7 +5894,7 @@ vagrant box list
 ls
 vagrant box outdated
 vagrant box add Kali_virtualbox_2014-10-03T12\:58\:03Z.box kali_virtualbox.box
-vagrant box add kali_virtualbox Kali_virtualbox_2014-10-03T12\:58\:03Z.box 
+vagrant box add kali_virtualbox Kali_virtualbox_2014-10-03T12\:58\:03Z.box
 vagrant box list
 cd ..
 cd px-repos/plan-construction/
@@ -5936,10 +5936,10 @@ cd ../mission-specification/
 git pull
 cd ../
 ls
-more git 
+more git
 ls
 ls -al
-rm -rf git 
+rm -rf git
 ls
 cd pxsvchost/
 git pull
@@ -5963,7 +5963,7 @@ cd src/
 ls
 cd px-repos/
 ls
-rm ca-cert.pem 
+rm ca-cert.pem
 ls
 cd Spiral3/
 LS
@@ -6005,7 +6005,7 @@ rm -rf pxftw-repos/
 ls
 cd Eclipse-SWT-Source/
 ls
-rm swt-4.3.2-cocoa-macosx-x86_64.zip 
+rm swt-4.3.2-cocoa-macosx-x86_64.zip
 ls
 cd ..
 df
@@ -6013,9 +6013,9 @@ cd
 cd Downloads/
 ls
 ls -al
-rm pycharm-community-3.4.1.dmg 
+rm pycharm-community-3.4.1.dmg
 rm libspotify-12.1.51-Darwin-universal
-rm libspotify-12.1.51-Darwin-universal.zip 
+rm libspotify-12.1.51-Darwin-universal.zip
 ls
 rm -rf node-spotify-0.6.0-OSX*
 ls -al
@@ -6029,7 +6029,7 @@ df
 cd /home
 df
 ls
-cd 
+cd
 ls
 rm -rf icicles/
 cd Downloads/
@@ -6037,7 +6037,7 @@ ls
 ls *.zip
 ls -al *.ZIP
 ls -al *.zip
-rm -rf 2013-07-21-antlrworks-2.1.zip 
+rm -rf 2013-07-21-antlrworks-2.1.zip
 ls
 cd Planning\ Concepts\ 3_14
 ls
@@ -6045,20 +6045,20 @@ cd ..
 rm -rf Planning\ Concepts\ 3_14*
 ls
 ls -alS
-rm eclipse-rcp-luna-RC1-macosx-cocoa-x86_64.tar.gz 
+rm eclipse-rcp-luna-RC1-macosx-cocoa-x86_64.tar.gz
 ls -alS
-em EVE-latest.zip 
-rm EVE-latest.zip 
+em EVE-latest.zip
+rm EVE-latest.zip
 ls
 df
 df -a
 df -u
 ls
-rm MonoFramework-MDK-3.2.7.macos10.xamarin.x86.pkg 
-rm LoadTesting-0.36.pinter 
+rm MonoFramework-MDK-3.2.7.macos10.xamarin.x86.pkg
+rm LoadTesting-0.36.pinter
 ls
 ls -al
-rm ideas-spiral3.pdf love-0.9.1-macosx-x64.zip 
+rm ideas-spiral3.pdf love-0.9.1-macosx-x64.zip
 rm -rf libspotify-12.1.51-Darwin-universal/
 ls
 ls -alS
@@ -6066,13 +6066,13 @@ ls Traceroute*
 rm Traceroute*
 ls
 ls *.pdf
-rm CERF-form\ \(3\).pdf 
-more 10.1.1.111.6691.pdf 
+rm CERF-form\ \(3\).pdf
+more 10.1.1.111.6691.pdf
 LS
-rm grayhawk-ifconfig.jpg 
+rm grayhawk-ifconfig.jpg
 ls
 df
-cd 
+cd
 ls
 cd src
 ls
@@ -6107,7 +6107,7 @@ sudo pip install flake8
 sudo pip install rope
 sudo pip install rope -U
 sudo pip install jedi -U
-more /etc/resolv.conf 
+more /etc/resolv.conf
 docker --version
 docker.io --version
 cd ..
@@ -6120,7 +6120,7 @@ cd ..
 ls
 cd BlueController/
 git pull
-git checkout master 
+git checkout master
 git pull
 cd ..
 cd runtime/
@@ -6138,7 +6138,7 @@ cd ../playbook/
 git pull
 git checkout master
 git pull
-git checkout drom-core 
+git checkout drom-core
 git pull
 cd ..
 ls
@@ -6161,9 +6161,9 @@ cd ..
 ls
 cd mission-specification/
 git pull
-git checkout master 
+git checkout master
 git pull
-git checkout marcel_new_spec_format 
+git checkout marcel_new_spec_format
 cd ..
 ls
 cd pxsvchost/
@@ -6206,7 +6206,7 @@ git clone git@github-enterprise.px.ftw:dromaius/dromaius.git
 cd dromaius/
 git pull
 ls
-cd 
+cd
 cd src/my-vagrant-development/
 vagrant halt
 cd ..
@@ -6249,7 +6249,7 @@ ls
 source ~/.bashrc
 cd
 cd ..
-cd 
+cd
 cd sr
 cd srv
 cd src
@@ -6371,20 +6371,20 @@ exit
 exit
 cd src/marcel-utils/
 ls
-./update-git.sh 
+./update-git.sh
 cd ~/Dropbox/
 ls
 mv Latin\ Fake\ Book.pdf Books/
-more Debian-dot-dircolors 
+more Debian-dot-dircolors
 ls
-chmod +x List_Linux_Colors.sh 
-./List_Linux_Colors.sh 
+chmod +x List_Linux_Colors.sh
+./List_Linux_Colors.sh
 ls
-rm sources.list linux-packages.txt linux_etc_apt_sources.list 
+rm sources.list linux-packages.txt linux_etc_apt_sources.list
 ls
 more Linux
 ls
-more Debian-dot-dircolors 
+more Debian-dot-dircolors
 ls
 mv Acoustic-Letter-Demos-Desc.-Chords.pdf Music/
 ks
@@ -6408,21 +6408,21 @@ vagrant reload
 cd ..
 cd px-repos/plan-construction/playbook/
 git status
-git checkout drom-core-marcel 
+git checkout drom-core-marcel
 ls
 cd test/pxinanemu/dockerfiles/controller/
 ls
 more parameters.py
 git status
-more service_local.py 
+more service_local.py
 git stash
-git checkout drom-core-refactor 
+git checkout drom-core-refactor
 ls
 more parameters.py
-git checkout drom-core-marcel 
+git checkout drom-core-marcel
 git stash pop
 pwd
-cd 
+cd
 cd src/my-vagrant-development/
 vagrant reload
 vagrant provision
@@ -6431,7 +6431,7 @@ cd ..
 ls
 cd marcel-utils/
 ls
-./update-git.sh 
+./update-git.sh
 source ~/.bashrc
 cd src/my-vagrant-development/
 vagrant up
@@ -6439,7 +6439,7 @@ cd ..
 cd px-repos/plan-construction/
 cd BlueController/
 git pull
-git checkout develop 
+git checkout develop
 git pull
 cd ..
 cd px-avro/
@@ -6460,27 +6460,27 @@ git pull
 git diff test/pxinanemu/dockerfiles/deployer/Dockerfile
 git checkout -- test/pxinanemu/dockerfiles/deployer/Dockerfile
 git pull
-git checkout drom-core-marcel 
+git checkout drom-core-marcel
 cd test/pxinanemu/dockerfiles/co
 cd test/pxinanemu/dockerfiles/controller/
 ls
-more testplan_local.sh 
+more testplan_local.sh
 ls
-more start_bluecontroller_local 
-rm start_bluecontroller_local testplan_local.sh 
+more start_bluecontroller_local
+rm start_bluecontroller_local testplan_local.sh
 ls
 git pull
 git status
-cd checkout -- start_bluecontroller ../core/Dockerfile ../corebase/Dockerfile 
+cd checkout -- start_bluecontroller ../core/Dockerfile ../corebase/Dockerfile
 git pull
-git checkout drom-core-marcel 
+git checkout drom-core-marcel
 git checkout -- ../core/Dockerfile
 git checkout -- ../corebase/Dockerfile
 git status
 git checkout -- start_bluecontroller
 git status
-rm -rf planout.txt 
-git checkout drom-core-marcel 
+rm -rf planout.txt
+git checkout drom-core-marcel
 git status
 pwd
 cd ../../
@@ -6552,26 +6552,26 @@ git pull
 clear
 source ~/.bashrc
 git status
-git pull 
+git pull
 git pull
 his
 cd ./../..
-cd 
+cd
 cd src/px-repos/
 ls
 cd ..
 ls
 cd marcel-utils/
 ls
-./update-git.sh 
+./update-git.sh
 cd ../px-repos/plan-construction/
 cd px-avro/
-./build/build.sh 
+./build/build.sh
 cd ../..
 cd ..
 cd marcel-utils/
 ls
-./update-git.sh 
+./update-git.sh
 ls
 cd ../px-repos/plan-construction/
 ls
@@ -6587,12 +6587,12 @@ rm -rf UserStories\ Sprint\ 3\ Spiral\ 3/
 ls
 cd ../..
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 clear
 cd ../px-repos/plan-construction/
 cd playbook/
-git checkout drom-core-refactor 
-git pull origin drom-core-refactor 
+git checkout drom-core-refactor
+git pull origin drom-core-refactor
 git pull
 cd src/my-vagrant-development/
 git status
@@ -6607,19 +6607,19 @@ cd
 source ~/.bashrc
 pwd
 cd src/marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ../px-repos/plan-construction/
 ls
 cd playbook/
 git pull
 git status
-git checkout drom-core-refactor 
+git checkout drom-core-refactor
 git stash list
 git stash
 git stash list
-git checkout drom-core-refactor 
+git checkout drom-core-refactor
 git pull
-git checkout drom-core-marcel 
+git checkout drom-core-marcel
 git stash pop
 cd ../px-luna
 git status
@@ -6628,15 +6628,15 @@ git pull
 cd ..
 cd px-avro/
 git pull
-cd ../ 
+cd ../
 cd px-luna
 cd ../px-luna-client/
 git pull
 cd ..
 exit
 ls
-chmod +x update-git.sh 
-./update-git.sh 
+chmod +x update-git.sh
+./update-git.sh
 cd sr
 cd src/
 ls
@@ -6666,7 +6666,7 @@ sudo xcode-select --install
 ls
 cd mac-ports-update/
 port -qv installed > myports.txt
-port -qv installed 
+port -qv installed
 port echo requested | cut -d ' ' -f 1 > requested.txt
 sudo port -f uninstall installed
 sudo port clean all
@@ -6706,7 +6706,7 @@ cd data/
 ls
 cd ..
 rm -rf data/
-more restore_ports.tcl 
+more restore_ports.tcl
 ls
 df
 clear
@@ -6715,29 +6715,29 @@ ls
 vagrant up
 cd .git
 ls
-more config 
+more config
 cd ../..
 cd plan-construction/playbook/
 git pull
 cd test/pxinanemu/dockerfiles/controller/
-rm add_annotations_local.py coreonly.hcl environment_local.sh service_local.py start_network.sh 
+rm add_annotations_local.py coreonly.hcl environment_local.sh service_local.py start_network.sh
 git statu
 git status
 more load_environment
-more load_environment.py 
-rm load_environment.py 
+more load_environment.py
+rm load_environment.py
 ls
 git status
-more initialize_core_local.sh 
+more initialize_core_local.sh
 mv initialize_core_local.sh ~/src/marcel-utils/
 ls
 git status
 git diff parameters.py
 git checkout -- parameters.py
 git status
-git pull origin drom-core-marcel 
+git pull origin drom-core-marcel
 git status
-git checkout drom-core-refactor 
+git checkout drom-core-refactor
 git pull
 git status
 git pull origin master
@@ -6747,7 +6747,7 @@ vagrant provision
 cd ../..
 cd src/marcel-utils/
 git pull
-more hosts.mirror 
+more hosts.mirror
 cd ../
 cd my-vagrant-development/
 vagrant provision
@@ -6759,7 +6759,7 @@ cd ipython/
 ls
 ipython notebook
 ipython --version
-cd 
+cd
 cd Dropbox/.emacs
 cd Dropbox/.emacs.d
 ls
@@ -6767,31 +6767,31 @@ cd emacs-for-python/
 ls
 git pull
 cd ../..
-chmod +x fancy_bash_prompt.sh 
-source fancy_bash_prompt.sh 
-bash -v fancy_bash_prompt.sh 
+chmod +x fancy_bash_prompt.sh
+source fancy_bash_prompt.sh
+bash -v fancy_bash_prompt.sh
 ls
-./List_Linux_Colors.sh 
-bash -v fancy_bash_prompt.sh 
+./List_Linux_Colors.sh
+bash -v fancy_bash_prompt.sh
 cd /proc
 ls
 cd /proc
 source .bashrc
-source fancy_bash_prompt.sh 
+source fancy_bash_prompt.sh
 echo $PS1
-more Debian-dot-dircolors 
+more Debian-dot-dircolors
 ls
 cd
 cd src/plan-construction/
 ls
-../marcel-utils/update-git.sh 
+../marcel-utils/update-git.sh
 cd ../marcel-utils/
 ls
 git status
 git pull
 git add initialize_core_local.sh update_pip_packages.sh
 git commit -m "Added new scripts to update pip local packages."
-git push origin master 
+git push origin master
 cd ..
 cd my-vagrant-development/
 vagrant reload
@@ -6803,7 +6803,7 @@ source ~/.bashrc
 ls
 exit
 cd src/marcel-utils/
-./update-git.sh 
+./update-git.sh
 pwd
 ls
 cd ..
@@ -6835,7 +6835,7 @@ ls
 git checkout master
 git pull
 git branch
-git branch -d full-test 
+git branch -d full-test
 cd ..
 ls
 git clone git@github-enterprise.px.ftw:core/pxsvchost-tool.git
@@ -6852,15 +6852,15 @@ git commit -m "Changed file path."
 ls
 ls -al
 cp ../planning-service/.gitignore .
-nano .gitignore 
+nano .gitignore
 git add .gitignore -m "Added .gitignore"
 git add .gitignore
 git commit -m "Added .gitignore"
-git push origin master 
+git push origin master
 cd ..
 ls
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 git status
 git pull
 exit
@@ -6868,7 +6868,7 @@ cd src/
 ls
 cd marcel-utils/
 ls
-./update-git.sh 
+./update-git.sh
 cd ..
 cd px-repos/plan-construction/
 git clone git@github-enterprise.px.ftw:mbecker/marcel-utils.git
@@ -6878,7 +6878,7 @@ ls
 git status
 git add update-git.sh
 git commit -m "Added git update file"
-git push origin master 
+git push origin master
 cd ../..
 ls
 mv plan-construction ../
@@ -6902,12 +6902,12 @@ df
 ls
 cd marcel-utils/
 ls
-./update-git.sh 
+./update-git.sh
 cd ../plan-construction/
-git clone https://github-enterprise.px.ftw/px-integration/system-integration-tests.git 
+git clone https://github-enterprise.px.ftw/px-integration/system-integration-tests.git
 cd system-integration-tests/
-git checkout full-test 
-git pull origin full-test 
+git checkout full-test
+git pull origin full-test
 cd system-integration-tests/
 pwd
 git pull
@@ -6917,19 +6917,19 @@ cd
 cd Dropbox/
 ls
 cp ~/.git-completion.bash git-completion.bash
-./List_Linux_Colors.sh 
-more List_Linux_Colors.sh 
+./List_Linux_Colors.sh
+more List_Linux_Colors.sh
 cd ..
 cd src/marcel-utils/
 git status
-./update-git.sh 
+./update-git.sh
 cd ../plan-construction/pxappstore/
 git pull
 cd ../
 cd px-avro/
 git checkout -- pom.xml
 git pull
-./build/build.sh 
+./build/build.sh
 cd ..
 cd px-luna
 git pull
@@ -6937,7 +6937,7 @@ git checkout -- pom.xml
 git pull
 cd ../px-luna-client/
 git pull
-cd 
+cd
 cd src/
 mkdir gocd-local-server
 cd gocd-local-server/
@@ -6945,11 +6945,11 @@ git clone https://github.com/gocd/go-development-environment-setup.git
 ls
 cd go-development-environment-setup/
 ls
-more Vagrantfile 
+more Vagrantfile
 vagrant box list
 ls
 vagrant up --provision
-./setup.gui.sh 
+./setup.gui.sh
 cd ..
 ls
 git clone https://github.com/Tpbrown/ansible-gocd.git
@@ -6971,7 +6971,7 @@ ls
 vagrant up
 vagrant provision
 vagrant ssh
-cp ~/src/plan-construction/playbook/test/pxinanemu/dockerfiles/pythonbase/ca-cert.crt . 
+cp ~/src/plan-construction/playbook/test/pxinanemu/dockerfiles/pythonbase/ca-cert.crt .
 vagrant ssh
 cd ..
 ls
@@ -7005,7 +7005,7 @@ cd
 cd src/marcel-utils/
 git status
 ls
-chmod +x update_pip_packages.sh 
+chmod +x update_pip_packages.sh
 git status
 git add update_pip_packages.sh
 git commit -m "Make script executable."
@@ -7015,7 +7015,7 @@ cd ../my-vagrant-development/
 vagrant reload
 cd ..
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ..
 cd my-vagrant-development/
 vagrant halt
@@ -7029,7 +7029,7 @@ git status
 cd ..
 cd marcel-utils/
 git pull
-./update-git.sh 
+./update-git.sh
 cd ..
 cd my-vagrant-development/
 vagrant up
@@ -7041,9 +7041,9 @@ cd plan-construction/
 ls
 cd playbook/
 git checkout master
-git pull origin master 
+git pull origin master
 git branch
-git branch -D drom-core-refactor 
+git branch -D drom-core-refactor
 cd ../
 cd px-avro/
 cd ../marcel-utils/
@@ -7060,7 +7060,7 @@ rm *~
 ls
 cd
 cd src/plan-construction/marcel-utils/
-./update-git.sh 
+./update-git.sh
 xcode select -p
 xcode-select -p
 xcode-select --install
@@ -7076,7 +7076,7 @@ vagrant
 vagrant --version
 exit
 cd src/plan-construction/marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd src/my-vagrant-development/
 vagrant up
 cd src/plan-construction/
@@ -7092,7 +7092,7 @@ hostname
 88ii,,,iijj466822846kk555jjklijjjliiijj888iiiiii888iii,,,,,222246886646iikkjjjkljli464kl;kl;jkljklj54564654kjkljlkjkj455645654jkljlkjkjkljlkj654654lkjkljlkjk,lljklkjlkjjklj45645646565klpkjkljlkjkljjkljkljlkjlkjkjkjkjkjllll882888264iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 ===
 v3.2[SL K H x e ]copyright 1986 - 2003 by interfatron-bbc, ltd., rev 2.67 03/09/03
-cd 
+cd
 cd Dropbox/.emacs.d
 ls
 cd emacs-avro/
@@ -7100,7 +7100,7 @@ ls
 emacs --help
 emacs -q
 emacs
-/Applications/Emacs.app/Contents/MacOS/Emacs-10.4 
+/Applications/Emacs.app/Contents/MacOS/Emacs-10.4
 fg
 ps -al
 bg
@@ -7109,13 +7109,13 @@ bg
 /Applications/Emacs.app/Contents/MacOS/Emacs-10.4
 cd
 cd src/plan-construction/planning-service/src/planning_service/
-flake8 dashboard.py 
-pylint dashboard.py 
+flake8 dashboard.py
+pylint dashboard.py
 pylintcd
-cd 
+cd
 cd Dropbox/.emacs.d
 ls
-chmod +x pycheckers.py 
+chmod +x pycheckers.py
 cd
 cd src/my-vagrant-development/
 vagrant up
@@ -7135,29 +7135,29 @@ uname -u
 uname -a
 source ~/.bashrc
 cd src/plan-construction/marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ..
 cd my-vagrant-development/
 vagrant up
 cd //
-cd 
+cd
 cd src/plan-construction/planning-service/
 git pull
-git checkout marcel-return-multiple-plans 
+git checkout marcel-return-multiple-plans
 git diff src/planning_service/dashboard.py
 git checkout -- src/planning_service/dashboard.py
 git status
-git checkout marcel-return-multiple-plans 
-git pull origin marcel-return-multiple-plans 
+git checkout marcel-return-multiple-plans
+git pull origin marcel-return-multiple-plans
 cd ..
 cd marcel-utils/
 git status
 git commit -m -a "Added workon to pip updates."
 git add update_pip_packages.sh
 git commit -m "Added workon to pip updates."
-git push origin master 
+git push origin master
 git pull
-./update-git.sh 
+./update-git.sh
 ping github-enteprise.px.ftw
 cd ../
 ls
@@ -7166,7 +7166,7 @@ vagrant halt
 cd ../plan-construction/marcel-utils/
 git status
 git pull
-./update-git.sh 
+./update-git.sh
 cd ..
 ls
 cd ..
@@ -7182,13 +7182,13 @@ cd Dropbox/.emacs.d/emacs-avro/
 ls
 git pull
 ls
-more README.md 
+more README.md
 cd
 cd src/plan-construction/
 find . --name "opord*" --print
 find . -name "opord*" --print
 find . -name "opord*" -print
-diff ./plan-generation/tests/opord.avdl ./px-avro/src/main/avro/data/planning/opord.avdl 
+diff ./plan-generation/tests/opord.avdl ./px-avro/src/main/avro/data/planning/opord.avdl
 cd planning-next/
 ls
 cd 2.7/
@@ -7206,7 +7206,7 @@ git --version
 cd src/plan-construction/cd ../
 cd ..
 ls
-cd 
+cd
 cd src/my-vagrant-development/
 git status
 git clone git@github.com:marcel-becker/my-vagrant-development.git my-vagrant-simplified
@@ -7222,7 +7222,7 @@ cd ..
 
 vagrant up
 vagrant provision
-rm Berksfile.lock 
+rm Berksfile.lock
 cd ~/.berkshelf/
 ls
 cd cookbooks/
@@ -7232,7 +7232,7 @@ cd ..
 cd src/my-vagrant-simplified/
 vagrant reload
 vagrant provision
-cd 
+cd
 cd .berkshelf/
 ls
 cd vagrant/
@@ -7242,17 +7242,17 @@ cd ..
 ls
 rm -rg tmp/*
 rm -rf tmp/*
-more config.json 
+more config.json
 rm cookbooks/*
 rm -fr cookbooks/*
 cd ..
-cd 
+cd
 cd src/my-vagrant-simplified/
-rm Berksfile.lock 
+rm Berksfile.lock
 vagrant provision
 vagrant reload
 vagrant provision
-cd 
+cd
 cd .berkshelf/
 ls
 cd vagrant/
@@ -7264,7 +7264,7 @@ ls
 cd re
 cd resources/
 ls
-more entry.rb 
+more entry.rb
 cd ..
 ls
 cd libraries/
@@ -7277,13 +7277,13 @@ cd ..
 ls
 cd recipes/
 ls
-more default.rb 
+more default.rb
 ls
 cd ..
 ls
 cd ..
 ls
-more Berksfile.lock 
+more Berksfile.lock
 ls
 chef-solo --version
 chef-client --version
@@ -7301,9 +7301,9 @@ ls
 rm -rf *
 ls
 cd ..
-cd 
+cd
 cd src/my-vagrant-simplified/
-rm Berksfile.lock 
+rm Berksfile.lock
 vagrant reload
 vagrant provision
 vagrant destroy
@@ -7326,14 +7326,14 @@ cd ..
 vagrant status
 vagrant plugin list
 cd plan-construction/marcel-utils/
-chmod +x vagrant-update.sh 
-./vagrant-update.sh 
-cd 
+chmod +x vagrant-update.sh
+./vagrant-update.sh
+cd
 cd .vagrant
 ls
 cd .vagrant.d/
 ls
-rm plugins.json 
+rm plugins.json
 cd gems/
 ls
 cd ..
@@ -7345,7 +7345,7 @@ vagrant global-status
 vagrant plugin list
 cd
 cd src/plan-construction/marcel-utils/
-./vagrant-update.sh 
+./vagrant-update.sh
 cd ..
 cd ../my-vagrant-simplified/
 vagrant up
@@ -7367,15 +7367,15 @@ cd plan-construction/planning-next/
 git status
 git add 2.6/opord-marcel.avdl
 git commit -m "Revised effects and the activity model in the opord."
-git push origin master 
+git push origin master
 git pull
-git push origin master 
+git push origin master
 cd 2.7/
-more opord.avdl 
+more opord.avdl
 cd ..
 cd marcel-utils/
 ./update
-./update-git.sh 
+./update-git.sh
 git pull
 cd ../..
 cd my-vagrant-development/
@@ -7385,7 +7385,7 @@ cd my-vagrant-development/
 vagrant up
 cd ../plan-construction/marcel-utils/
 git pull
-./update-git.sh 
+./update-git.sh
 vagrant --version
 cd .berkshelf/
 ls
@@ -7411,7 +7411,7 @@ rm -rf ~/.berkshelf/vagrant-berkshelf/*
 vagrant reload
 rm -rf ~/.berkshelf/vagrant-berkshelf/*
 vagrant reload
-ruby password_gen.rb 
+ruby password_gen.rb
 vagrant reload --provision
 rm -rf ~/.berkshelf/vagrant-berkshelf/*
 vagrant reload --provision
@@ -7455,10 +7455,10 @@ ls
 cd ssh_config
 more ssh_config
 ssh-keyscan github.com
-cd 
+cd
 cd src/my-vagrant-simplified/
 knife data bag create ssh_known_hosts
-more ~/.chef/knife.rb 
+more ~/.chef/knife.rb
 vagrant ssh
 his
 vagrant ssh
@@ -7479,7 +7479,7 @@ git commit -m "Added some comments to README file."
 git push -u neworigin master
 vagrant halt
 cd ../plan-construction/marcel-utils/
-./update-git.sh 
+./update-git.sh
 vagrant --version
 cd ../
 cd ..
@@ -7487,7 +7487,7 @@ cd my-vagrant-simplified/
 git status
 git add README.md metadata.rb
 git commit -m "Fixed metadata."
-git push neworigin master 
+git push neworigin master
 vagrant up
 rm -rf /Users/marcelbecker/.berkshelf/vagrant-berkshelf/shelves/berkshelf20141231-2623-1w5ymzt-default/*
 vagrant up
@@ -7510,7 +7510,7 @@ cd
 ls -al
 rm -rf /Users/marcelbecker/.berkshelf/vagrant-berkshelf/shelves/berkshelf20141231-2623-1w5ymzt-default/*
 vagrant reload
-cd 
+cd
 cd src/my-vagrant-simplified/
 vagrant reload
 rm -rf /Users/marcelbecker/.berkshelf/vagrant-berkshelf/shelves/berkshelf20141231-2623-1w5ymzt-default/*
@@ -7524,9 +7524,9 @@ vagrant up
 git status
 git add Vagrantfile recipes/
 git statis
-git status 
+git status
 git commit -m "Fixes for user becker"
-git push neworigin master 
+git push neworigin master
 rm -rf /Users/marcelbecker/.berkshelf/vagrant-berkshelf/shelves/berkshelf20141231-2623-1w5ymzt-default/*
 vagrant provision
 vagrant reload --provision
@@ -7542,12 +7542,12 @@ git status
 git add recipes/
 git status
 git commit -m "Added recipe for emacs24.4."
-git push neworigin master 
+git push neworigin master
 rm -rf /Users/marcelbecker/.berkshelf/vagrant-berkshelf/shelves/berkshelf20141231-2623-1w5ymzt-default/*
 vagrant reload --provision
 vagrant halt
 vagrant destroy
-rm Berksfile.lock 
+rm Berksfile.lock
 rm -rf /Users/marcelbecker/.berkshelf/vagrant-berkshelf/shelves/berkshelf20141231-2623-1w5ymzt-default
 vagrant up --provision
 vagrant reload
@@ -7570,7 +7570,7 @@ git status
 git diff metadata.rb
 git add metadata.rb README.md
 git commit -m "Fixed email address."
-git push origin master 
+git push origin master
 vagrant halt
 exit
 uname -u
@@ -7598,11 +7598,11 @@ ls
 cd my-vagrant-simplified/
 git status
 git add Vagrantfile recipes/default.rb
-git commit -m "Updated build file and recipes." 
-git push origin master 
+git commit -m "Updated build file and recipes."
+git push origin master
 git pull
 git remote -v
-git push neworigin master 
+git push neworigin master
 vagrant up
 rm -rf /Users/marcelbecker/.berkshelf/vagrant-berkshelf/shelves/berkshelf20150102-18316-1hnvusj-default
 vagrant up
@@ -7610,10 +7610,10 @@ rm -rf /Users/marcelbecker/.berkshelf/vagrant-berkshelf/shelves/berkshelf2015010
 vagrant provision
 cd ../plan-construction/
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ../planning-next/
 git status
-git checkout master 
+git checkout master
 git pull
 git branch
 git status
@@ -7636,7 +7636,7 @@ vagrant --version
 exit
 cd src/plan-construction/marcel-utils/
 git pull
-./update-git.sh 
+./update-git.sh
 cd src/planx
 ls
 cd proposal/
@@ -7658,8 +7658,8 @@ rm -rf /Users/marcelbecker/.berkshelf/vagrant-berkshelf/shelves/berkshelf2015010
 vagrant up
 cd ..
 cd plan-construction/marcel-utils/
-./update-git.sh 
-cd 
+./update-git.sh
+cd
 cd src
 ls
 mkdir rspace
@@ -7682,10 +7682,10 @@ ls
 git add .gitignore README.md documents/DARPA-BAA-15-08.pdf
 cd documents/
 ls
-mv RSPACE\ Industry\ Day\ Composite_5Jan15w-oAFv3\ \(1\).pdf RSPACE_Industry_Day_Composite_5Jan15_SLIDES.pdf 
+mv RSPACE\ Industry\ Day\ Composite_5Jan15w-oAFv3\ \(1\).pdf RSPACE_Industry_Day_Composite_5Jan15_SLIDES.pdf
 git add RSPACE_Industry_Day_Composite_5Jan15_SLIDES.pdf
 git commit -m "Initial Commit"
-git push origin master 
+git push origin master
 cd ..
 mkdir src
 cd src/
@@ -7697,7 +7697,7 @@ ls
 make
 git status
 ls
-cd 
+cd
 cd src/
 ls
 mkdir Kestrel-Proposals-SVN
@@ -7728,29 +7728,29 @@ cd trunk/
 ls
 cd ProposalSkeleton/
 ls
-more proposal.tex 
+more proposal.tex
 cd ProposalSkeleton/
 cd -
 cd src/Kestrel-Proposals-SVN/ProposalBoilerplate/trunk/ProposalSkeleton/
 ls
-more proposal.tex 
+more proposal.tex
 ls
-more cover.tex 
-more proposal.tex 
+more cover.tex
+more proposal.tex
 bash
 bash
 his | grep ssh
 ssh repolist@svn.kestrel.edu
 cd src/Kestrel-Proposals-SVN/
 ls
-mkdir planx-prime 
+mkdir planx-prime
 cd planx-prime/
 ls
 svn co svn+ssh://svn@svn.kestrel.edu/planx-prime/trunk
 cd trunk/
 ls
-more cover.tex 
-more proposal.tex 
+more cover.tex
+more proposal.tex
 cp cover.tex ~/src/rspace/proposal/src/white-paper/
 exit
 bash
@@ -7766,13 +7766,13 @@ rm *.gz
 ls
 rm *.pdf
 ls
-rm algorithm-design.tex code-generation.tex composition.tex example.tex overview.tex proof-design-body.tex proof-design.tex requirements.tex test_whitepaper.tex 
+rm algorithm-design.tex code-generation.tex composition.tex example.tex overview.tex proof-design-body.tex proof-design.tex requirements.tex test_whitepaper.tex
 la
 ls
-more clrscode.sty 
+more clrscode.sty
 ls
-more header.png 
-more master.tex 
+more header.png
+more master.tex
 ls
 git status
 cd src
@@ -7782,7 +7782,7 @@ ls
 make clean
 ls
 grep ifxtex *
-grep * ifxtex 
+grep * ifxtex
 mkdir old
 mv ifxetex.* old/
 ls
@@ -7809,7 +7809,7 @@ git status
 git add clrscode.sty
 git status
 git commit -m "Initial outline of whitepaper."
-git push origin master 
+git push origin master
 git status
 cd ..
 ls
@@ -7819,16 +7819,16 @@ git status
 git add C2\ Fundamentals\ 01052015.pdf
 git commit -m "Added C2 slides."
 git status
-git push origin master 
+git push origin master
 git pull
 git status
 git add ../src/white-paper/rspace_whitepaper.tex
 git commit -m "Added some text on planware and some of the key aspects of our approach."
-git push origin master 
+git push origin master
 git status
 git add ../src/white-paper/rspace_whitepaper.tex
 git commit -m "Added some text on planware and some of the key aspects of our approach and some notes."
-git push origin master 
+git push origin master
 ls
 cd ..
 ls
@@ -7843,7 +7843,7 @@ git commit -m "New version of papaer."
 git rm rspace_whitepaper.tex
 git commit -m "Renamed rspace to kestrel_rspace."
 git status
-rm rspace_whitepaper.pdf 
+rm rspace_whitepaper.pdf
 ld
 ls
 rm *.aux *.log
@@ -7853,14 +7853,14 @@ ls
 make
 ls
 git status
-git add kestrel_rspace_whitepaper.tex ../../documents/ATO_CYCLE_MODEL.pdf ../../documents/jp3_30.pdf 
+git add kestrel_rspace_whitepaper.tex ../../documents/ATO_CYCLE_MODEL.pdf ../../documents/jp3_30.pdf
 git commit -m "Added docs."
-git push origin master 
+git push origin master
 git status
 ls
 git add 20150127-DARPA-BAA-15-08-RSPACE-Abstract.docx
-git commit -m "Added word doc." 
-git push origin master 
+git commit -m "Added word doc."
+git push origin master
 make
 ls
 autoconf
@@ -7908,13 +7908,13 @@ cd ..
 ls
 cd icicles
 ls
-rm doremi\ \(Becker-PC\'s\ conflicted\ copy\ 2014-07-04\).el 
+rm doremi\ \(Becker-PC\'s\ conflicted\ copy\ 2014-07-04\).el
 ls
 rm *.el
 ls
 rm -rf *
 ls
-more icicles.el 
+more icicles.el
 cd ..
 cd el-get/
 ls
@@ -7928,7 +7928,7 @@ more icicles.el
 rm -r *
 wget http://www.emacswiki.org/emacs/download/icicles{,-chg,-cmd1,-cmd2,-doc1,-doc2,-face,-fn,-mac,-mcmd,-mode,-opt,-var}.el
 ls
-more icicles.el 
+more icicles.el
 wget http://www.emacswiki.org/emacs/download/{apropos-fn%2bvar,bookmark%2b,col-highlight,crosshairs,doremi,doremi-frm,frame-cmds,fuzzy-match,hexrgb,hl-line%2b,icomplete%2b,info%2b,lacarte,mb-depth%2b,pp%2b,synonyms,thingatpt%2b,vline}.el
 ls
 wget http://www.emacswiki.org/emacs/download/{apropos-fn+var,bookmark+,col-highlight,crosshairs,doremi,doremi-frm,frame-cmds,fuzzy-match,hexrgb,hl-line+,icomplete+,info+,lacarte,mb-depth+,pp+,synonyms,thingatpt+,vline}.el
@@ -8009,13 +8009,13 @@ cd yasnippet-snippets/
 ls
 cd python-mode/
 ls
-more all 
-more main 
-more test_class 
+more all
+more main
+more test_class
 cd
 cd src/plan-construction/
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ..
 git clone git@github-enterprise.px.ftw:Controller/msc-svchost.git
 vagrant global-status
@@ -8034,10 +8034,10 @@ cd ..
 ls
 cd my-vagrant-development/
 ls
-rm Berksfile.lock 
-vagrant up 
+rm Berksfile.lock
+vagrant up
 rm -rf /Users/marcelbecker/.berkshelf/vagrant-berkshelf/shelves/berkshelf20150102-8548-1msvhez-default/*
-vagrant up 
+vagrant up
 exit
 exit
 cd src/my-vagrant-development/
@@ -8045,7 +8045,7 @@ vagrant status
 vagrant reload
 rm -rf /Users/marcelbecker/.berkshelf/vagrant-berkshelf/shelves/berkshelf20150102-8548-1msvhez-default/*
 vagrant reload
-cd 
+cd
 cd .berkshelf/
 ld
 ls
@@ -8063,7 +8063,7 @@ chef --version
 exit
 cd src/plan-construction/
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ..
 ls
 git clone git@github-enterprise.px.ftw:execution/runtimepackager.git
@@ -8078,8 +8078,8 @@ exit
 exit
 exit
 exit
-cd 
-cd Dropbox/ 
+cd
+cd Dropbox/
 ls
 cd Linux_Config/
 ls
@@ -8109,14 +8109,14 @@ cd xfce-perchannel-xml/
 ls
 more xfwm4.xml
 exit
-cd 
+cd
 cd src
 ls
 cd my-vagrant-development/
 vagrant up
 cd ..
 cd plan-construction/marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ...//
 cd ../..
 cd my-vagrant-simplified/
@@ -8129,7 +8129,7 @@ ls
 cd plan-construction/
 ls
 cd mbecker-pxavro/
-./build/build.sh 
+./build/build.sh
 cd ..
 git clone git@github-enterprise.px.ftw:plan-construction/planning-core-services.git
 git clone git@github-enterprise.px.ftw:plan-construction/px-avro.git planconstruction-pxavro
@@ -8151,7 +8151,7 @@ ls
 ls -al
 ./Emacs
 pwd
-cd 
+cd
 cd src/my-vagrant-
 cd src/my-vagrant-development/
 vagrant halt
@@ -8165,7 +8165,7 @@ vagrant up
 chef --version
 vagrant --version
 vagrant up
-cd 
+cd
 cd .berkshelf/
 ls
 cd vagrant-berkshelf/
@@ -8178,7 +8178,7 @@ vagrant provision
 cd /
 find . -name berkshelf.rb
 sudo find . -name berkshelf.rb
-sudo emacs 
+sudo emacs
 cd
 cd src/my-vagrant-simplified/
 vagrant provision
@@ -8189,7 +8189,7 @@ vagrant halt
 vagrant up --provision
 vagrant destroy --force
 vagrant up --provision
-cd 
+cd
 cd Dropbox/Linux_Config/
 ls
 cd Home/
@@ -8197,7 +8197,7 @@ ls
 cd becker/
 ls -al
 cd -
-cd 
+cd
 cd src/my-vagrant-simplified/
 vagrant reload
 cd ../my-vagrant-development/
@@ -8206,11 +8206,11 @@ cd ../my-vagrant-simplified/
 vagrant up
 vagrant reload
 vagrant ssh
-cd 
+cd
 cd src/plan-construction/
 cd marcel-utils/
 git status
-./update-git.sh 
+./update-git.sh
 cd
 cd src/my-vagrant-simplified/
 vagrant halt
@@ -8219,16 +8219,16 @@ git remote --help
 git remote show
 git remote -v show
 git status
-more password_gen.rb 
+more password_gen.rb
 ls
 git add recipes/default.rb
 git commit -m "Fixed recipe."
-git push neworigin master 
+git push neworigin master
 cd ..
 cd plan-construction/marcel-utils/
 git pull
 git status
-./update-git.sh 
+./update-git.sh
 cd ..
 git clone git@github-enterprise.px.ftw:Controller/RuntimeHelpers.git
 git clone git@github-enterprise.px.ftw:execution/runtimepackager.git
@@ -8238,7 +8238,7 @@ cd ..
 cd runtime
 ls
 git pull
-git checkout develop 
+git checkout develop
 git pull
 cd py/
 ls
@@ -8247,11 +8247,11 @@ git clone git@github-enterprise.px.ftw:appstore/applications.git
 git clone git@github-enterprise.px.ftw:appstore/plugins
 ls
 cd plugins/
-git checkout runtime-dev 
+git checkout runtime-dev
 git pull
 cd ..
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ..
 cd my-vagrant-
 cd my-vagrant-development/
@@ -8260,7 +8260,7 @@ vagrant reload
 cd ..
 cd plan-construction/
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd
 cd Dropbox/xfce4-keyboard-overlay/
 python xfce4-keyboard-overlay
@@ -8276,7 +8276,7 @@ s
 ls
 cd 2.8
 ls
-more mission.avdl 
+more mission.avdl
 git pull
 git stash
 git pull
@@ -8284,33 +8284,33 @@ git stash pop
 git status
 git add mission.avdl
 git commit -m "Fixes format."
-git push origin master 
+git push origin master
 git add mission2.avdl
 git commit -m "Fixes format."
-git push origin master 
+git push origin master
 cd ../..
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 exit
 cd src/my-vagrant-development/
 rm -rf /Users/marcelbecker/.berkshelf/vagrant-berkshelf/shelves/berkshelf20150102-8548-1msvhez-default/*
 vagrant up
-cd 
+cd
 cd src/plan-construction/
 ls
 git clone git@github-enterprise.px.ftw:plan-construction/pxplanner.git
 cd pxplanner/
-git checkout strategies 
+git checkout strategies
 git pull
 ls
 exit
 cd src/plan-construction/planning-next/
 git pull
 cd 2.8/
-more pslist-marcel.json 
+more pslist-marcel.json
 exit
 cd ..
-cd 
+cd
 cd src/my-vagrant-development/
 git status
 vagrant up
@@ -8319,7 +8319,7 @@ cd src/my-vagrant-development/
 vagrant up
 exit
 cd src/plan-construction/marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ..
 cd planning-next/
 git pull
@@ -8327,7 +8327,7 @@ cd ..
 ls
 cd planconstruction-pxavro/
 git pull
-git checkout marcel-new-missionspec 
+git checkout marcel-new-missionspec
 git pull
 git status
 cd ..
@@ -8340,10 +8340,10 @@ git add 2.8/pslist-simplified-marcel/scripter-marcel.py
 git status
 git commit -m "Modifies mission plan and scripter to use richer parameter representation."
 git pull
-git push origin master 
+git push origin master
 cd ..
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ..
 cd planning-next/
 git pull
@@ -8353,11 +8353,11 @@ git add 2.8/pslist-simplified-marcel/mission-plan.json
 git add 2.8/pslist-simplified-marcel/scripter-marcel.py
 git status
 git commit -m "Handles commands with class wrapper."
-git push origin master 
+git push origin master
 git pull
 cd ..
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ../planning-next/
 git status
 git pull
@@ -8366,16 +8366,16 @@ ls
 cd ../planconstruction-pxavro/
 git pull
 git status
-git checkout master 
+git checkout master
 git pull
 cd ..
 planconstruction-pxavro/
 cd planconstruction-pxavro/
-git checkout marcel-new-missionspec 
-git pull origin master 
+git checkout marcel-new-missionspec
+git pull origin master
 git commit -m "Merged with master."
 git status
-git push origin marcel-new-missionspec 
+git push origin marcel-new-missionspec
 git status
 cd ..
 ls
@@ -8387,7 +8387,7 @@ git pull
 cd ..
 cd planning-service/
 git status
-git checkout master 
+git checkout master
 git pull
 cd ..
 cd pinter-python/
@@ -8417,12 +8417,12 @@ pip install snappy
 pip install sphinx
 pip install snappy
 cd
-cd 
+cd
 cd src/plan-construction/planning-next/
 git pull
 cd ..
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ..
 cd planning-next/
 ls
@@ -8430,7 +8430,7 @@ git status
 git add 2.8/pslist-simplified-marcel/pslist-script-handwritten.py
 git commit -m "Added base classes to handwritten mission script."
 clear
-git push origin master 
+git push origin master
 cd ..
 git clone git@github-enterprise.px.ftw:gkimmel/testbobs.git kimmell-testbobs
 git clone git@github-enterprise.px.ftw:execution/runtimecommon.git
@@ -8446,20 +8446,20 @@ cd marcel-utils/
 git status
 git add update_pip_packages.sh
 git commit -m "Added execution packages."
-git push origin master 
-./update-git.sh 
+git push origin master
+./update-git.sh
 cd ..
 cd planconstruction-pxavro/
-git checkout master 
+git checkout master
 git pull
 git branch
 git checkout --track origin/marcel-new-mission
 git pull
 git branch
-git checkout -D marcel-new-missionspec 
-git branch -D marcel-new-missionspec 
+git checkout -D marcel-new-missionspec
+git branch -D marcel-new-missionspec
 cd checkout --track origin/alex-new-mission
-git checkout master 
+git checkout master
 cd checkout --track origin/alex-new-mission
 git checkout --track origin/alex-new-mission
 git pull
@@ -8467,12 +8467,12 @@ git checkout --track origin/alex-new-mission
 git pull
 cd ..
 cd pxplanner/
-git checkout master 
+git checkout master
 git pull
 git branch
-git checkout develop 
+git checkout develop
 git pull
-git branch -D strategies 
+git branch -D strategies
 cd ../coas/
 git status
 git checkout -- planx_process_kill/planx_process_kill.lua
@@ -8505,13 +8505,13 @@ git pull
 git status
 git add mission-plan-script.py pslist-script-handwritten.py scripter-marcel.py scriptlib.py
 git commit -m "Code cleanup and refactoring."
-git push origin master 
+git push origin master
 cd ..//..
 cd ..
 cd runtime
 git pull
 ls
-./setup.py 
+./setup.py
 cd ..
 ls
 cd planning-next/
@@ -8520,7 +8520,7 @@ git status
 git add 2.8/pslist-simplified-marcel/mission-plan-script.py
 git add 2.8/pslist-simplified-marcel/scriptlib.py
 git commit -m "PLX-2353, PLX-2360 Added function definitions to commands."
-git push origin master 
+git push origin master
 git pull
 cd ..
 cd px-controller/
@@ -8553,16 +8553,16 @@ cd ..
 ls
 cd pinter-python/
 git pull
-git checkout develop 
+git checkout develop
 git pull
 cd ..
 ls
 cd pinter-python/
-git checkout master 
+git checkout master
 git pull
 cd ../px-sensors/
 git pull
-cd 
+cd
 cd Dropbox/.emacs.d/
 ls
 mkdir pydoc-infor
@@ -8571,38 +8571,38 @@ ls
 cd pydoc-info/
 wget https://bitbucket.org/jonwaltman/pydoc-info/downloads/python.info.gz
 ls
-gunzip python.info.gz 
+gunzip python.info.gz
 ls
-sudo install-info ~/Dropbox/.emacs.d/pydoc-info/python.info python.info 
+sudo install-info ~/Dropbox/.emacs.d/pydoc-info/python.info python.info
 ls
-cp python.info /usr/share/info/ 
-sudo cp python.info /usr/share/info/ 
-sudo install-info --info-dir=/usr/share/info python.info 
+cp python.info /usr/share/info/
+sudo cp python.info /usr/share/info/
+sudo install-info --info-dir=/usr/share/info python.info
 cd /usr/share/info/
 ls
 more dir
-sudo install-info --info-dir=/usr/share/info python.info 
+sudo install-info --info-dir=/usr/share/info python.info
 install-info --help
-sudo install-info --info-dir=/usr/share/info python.info 
+sudo install-info --info-dir=/usr/share/info python.info
 cd
 cd src/plan-construction/planning-next/
 git pull
 cd ..
 git clone git@github-enterprise.px.ftw:mbecker/testbobs.git mbecker-testbobs
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 git pull
-./update-git.sh 
+./update-git.sh
 cd ../pinter-python/
 ls
-git checkout develop 
+git checkout develop
 git branch
 cd ..
 cd pxcl/
 git branch
 cd ..
 cd px-controller/
-cd src/ 
+cd src/
 cd pxcontroller/
 ls
 grep -i getdeployerruntime *
@@ -8634,11 +8634,11 @@ git status
 git log
 git commit -m "PLX-2353, PLX-2360 -- Fixed library code and added auxiliary scripts to run the plan."
 git pull
-git push origin master 
+git push origin master
 cd ..
 cd ../..
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ..
 cd px-luna
 git pull
@@ -8668,24 +8668,24 @@ tar cvf sparql
 tar cvf sparql/* luna-sparkl.tar
 ls
 man tar
-tar cvf sparql/* 
+tar cvf sparql/*
 ls
 cd sparql/
 ls
 cd ..
-tar cvf sparkl.tar sparql/* 
+tar cvf sparkl.tar sparql/*
 ls
-gzip  sparkl.tar 
+gzip  sparkl.tar
 ls
 ls -al
-cd 
+cd
 cd src/my-vagrant-development/
 vagrant halt
 git status
 git pull
 git add recipes/default.rb
 git commit -m "Added packages."
-git push origin master 
+git push origin master
 exit
 cd src/my-vagrant-development/
 git statuw
@@ -8707,7 +8707,7 @@ cd pslist-simplified-marcel/
 ls
 cd scriptlib/src/scriptlib/
 ls
-more activities.py 
+more activities.py
 diff activities.py scriptlib.py
 c
 cd ..
@@ -8717,10 +8717,10 @@ git add mission_plan_parameters.py mission_plan_script.py scriptlib/src/scriptli
 git commit -m "Latest version of scripter."
 git pull
 git status
-git push origin master 
+git push origin master
 git pull
 cd ..
-cd 
+cd
 cd src/plan-construction/px-controller/
 git pull
 cd
@@ -8731,21 +8731,21 @@ cd src/my-vagrant-development/
 vagrant up
 cd ..
 cd plan-construction/marcel-utils/
-./update-git.sh 
+./update-git.sh
 git status
 git add Instructions_For_Marcel.txt
-git commit -m 
+git commit -m
 git commit -m "Added instructions on how to setup pxcontroller for local run"
-git push origin master 
-hostname 
-./update-git.sh 
+git push origin master
+hostname
+./update-git.sh
 cd ../..
 cd my-vagrant-development/
 vagrant reload
 cd ../..
 cd src/plan-construction/marcel-utils/
 git pull
-./update-git.sh 
+./update-git.sh
 cd ..
 ls
 git clone git@github-enterprise.px.ftw:Controller/RuntimeHelpers.git
@@ -8764,14 +8764,14 @@ cd applications/
 git pull
 cd ../
 cd runtimepackager/
-git pull 
+git pull
 cd ..
 cd plugins/
 git pull
 cd ..
 cd marcel-utils/
-./update-git.sh 
-cd 
+./update-git.sh
+cd
 cd src/my-vagrant-development/
 vagrant reload
 vagrant halt
@@ -8783,12 +8783,12 @@ vagrant halt
 cd src/plan-construction/marcel-utils/
 git pull
 git status
-./update-git.sh 
+./update-git.sh
 cd pxcl
 git checkout e2e-exec-jk
 cd ..
 cd pxcl/
-git checkout e2e-exec-jk 
+git checkout e2e-exec-jk
 git pull
 cd ..
 ls
@@ -8803,12 +8803,12 @@ cd ..
 cd planning-next/
 git pull
 git status
-git push origin master 
+git push origin master
 git add 2.8/pslist-simplified-marcel/selected_coa_perfect.json
 git commit -m "Added fixed coa file."
-git push origin master 
+git push origin master
 cd src/plan-construction/marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ../pxplanner/
 git pull
 git status
@@ -8817,16 +8817,16 @@ git add src/pxplanner/engines/action_engine.py
 git add src/pxplanner/pxplanner.py
 git add src/pxplanner/services.py
 git status
-git commit -m 
+git commit -m
 git commit -m "Added print statements for debugging."
-git checkout master 
+git checkout master
 git pull
-git checkout develop 
+git checkout develop
 git pull
-git checkout marcel-tests 
-git pull origin master 
+git checkout marcel-tests
+git pull origin master
 git status
-git push origin marcel-tests 
+git push origin marcel-tests
 cd ..
 cd planning-next/
 cd 2.8/pslist-simplified-marcel/
@@ -8835,7 +8835,7 @@ git add coa_json_scripter.py marcel-run-coa-test.sh marcel-run-test.sh pxplanner
 git status
 git log
 git commit -m "PLX-3486 PLX-3479 PLX-3475 Trying to run mission script with apps."
-git push origin master 
+git push origin master
 cd src/my-vagrant-development/
 vagrant up
 vagrant reload
@@ -8847,11 +8847,11 @@ vagrant reload
 cd src/plan-construction/planning-e2e-integration-testing/
 git  pull
 ls
-./e2e.sh 
+./e2e.sh
 cd ..
 ls
 cd planning-e2e-integration-testing/
-git checkout develop 
+git checkout develop
 git pull
 cd ..
 cd planning-next/2.8/pslist-simplified-marcel/
@@ -8862,18 +8862,18 @@ git commit -m "Working version of scripter using scriplib."
 git status
 git add scriptlib/src/scriptlib/scriptlib.py
 git commit -m "Remove pinter import."
-git push origin master 
+git push origin master
 git pull
 git status
 git pull
 git commit -m "Merged with remote master."
 git pull
-git push origin master 
+git push origin master
 cd ..
 cd ../..
 cd marcel-utils/
 git status
-./update-git.sh 
+./update-git.sh
 cd ..
 rm -rf BlueController/
 rm -rf playbook/
@@ -8903,13 +8903,13 @@ git add implant.hcl msc-pinter.hcl run_tests.sh test_integration.py testing-requ
 git status
 git commit -m "Added tests."
 git pull
-git push origin master 
+git push origin master
 git status
 git pull
 git status
 git pull
 git status
-git push origin master 
+git push origin master
 cd
 cd src/my-vagrant-development/
 vagrant reload
@@ -8921,13 +8921,13 @@ vagrant halt
 cd src/
 cd plan-construction/
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ..
 cd system-integration-tests/
 ls
 cd integration-tests/
 more planx-full-test
-more planx-full-test.hcl 
+more planx-full-test.hcl
 cd
 cd src/
 git clone http://github.com/kivy/kivy
@@ -8966,17 +8966,17 @@ vagrant status
 vagrant halt
 exit
 cd src/plan-construction/marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ..
 mkdir wargaming-integration-testing
 cd wargaming-integration-testing/
 ls
 chmod +x *
 ls
-./test-git-clone.sh 
+./test-git-clone.sh
 cd planning-core-services/
 ls
-git checkout new_war_3 
+git checkout new_war_3
 git pull
 pip --help
 pip install --help
@@ -8988,36 +8988,36 @@ git checkout master
 git pull
 git checkout coa
 git pull
-git checkout coa-with-edges 
+git checkout coa-with-edges
 git pull
 ls
 cd ..
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ../wargaming-integration-testing/
 ls
 cd planning-core-services/
 git pull
-git pull origin master 
+git pull origin master
 git status
 git add requirements.txt
 git commit -m "Merged with master"
-git push origin new_war_3 
+git push origin new_war_3
 cd ..
 ls
 cd gocd-scripts/
 git pull
 cd ../planning-service/
-git pull origin master 
+git pull origin master
 git status
-git push origin new_war_3 
+git push origin new_war_3
 cd ..
 ls
 cd planning-wargaming-integration/
 git status
-git pull origin master 
+git pull origin master
 git status
-git push origin new_war_3 
+git push origin new_war_3
 cd ..
 ls
 cd px-avro/
@@ -9046,7 +9046,7 @@ cd ..
 cd planning-core-services/
 git pull
 cd ../planning-service/
-git checkout new_war_3 
+git checkout new_war_3
 git pull
 cd ..
 cd wargaming-server/
@@ -9055,7 +9055,7 @@ cd ../..
 ls
 mkdir presentation
 rm -r presentation/
-git clone git@github-enterprise.px.ftw:presentation/px-web-scripts.git 
+git clone git@github-enterprise.px.ftw:presentation/px-web-scripts.git
 git clone git@github-enterprise.px.ftw:presentation/px-web-client.git
 his | grep clone
 exit
@@ -9065,16 +9065,16 @@ vagrant up
 vagrant reload
 vagrant halt
 cd src/plan-construction/marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ..
 ls
 cd planning-e2e-integration-testing/
 ls
 cd demo/
 ls
-more selected_coa.json 
+more selected_coa.json
 cp selected_coa.json ~/src/plan-construction/marcel-create-luna-see-with-coa/
-cd ../../ 
+cd ../../
 cd planning-next/
 ls
 find . -name "pslist*
@@ -9082,14 +9082,14 @@ find . -name "pslist*
 find . -name "pslist*"
 cd ..
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 cd ..
 cd planning-
 cd planning-next/
 ls
-cd .. 
+cd ..
 cd planning-next/
-git checkout fixed-coa-5.6 
+git checkout fixed-coa-5.6
 cd 5.6
 ls
 cp mission-plan.json ~/src/plan-construction/marcel-create-luna-see-with-coa/selected-coa-version5-6.json
@@ -9106,7 +9106,7 @@ git status
 git add src/hackathonserver/wshandlers/analyticswshandlers.py
 git commit -m "Added initial version of analytic functions."
 git pull
-git push origin master 
+git push origin master
 git pull
 git status
 git add src/hackathonserver/hackathonserver.py
@@ -9114,7 +9114,7 @@ git add src/hackathonserver/wshandlers/CountValueFrequencyWSHandler.py
 git add src/hackathonserver/wshandlers/MinMaxSizeWSHandler.py
 git status
 git commit -m "Added 2 more handlers for some aggregration metrics."
-git push origin master 
+git push origin master
 git pull
 workon planx-eclipse
 ./stream.sh hackathon 1000 data/with_geo.json
@@ -9136,13 +9136,13 @@ cd px-luna-data-builder/
 ls
 cd range_ingest_logs
 ls
-more range.log 
+more range.log
 cd ..
 ls
 cd config/
 ls
-more px-luna-seed-cg-gordon-enh.cfg 
-more common.sh 
+more px-luna-seed-cg-gordon-enh.cfg
+more common.sh
 cd ..
 ls
 cd ../planning-next/
@@ -9151,13 +9151,13 @@ git diff 2.8/pslist-simplified-marcel/marcel-run-coa-perfect-test.sh
 ls
 cd 2.8/
 ls
-more mission.avdl 
-more pslist-mission.json 
+more mission.avdl
+more pslist-mission.json
 ls
 cd ../..
 mkdir marcel-create-luna-see-with-coa
 cd planning-next/2.8
-diff pslist-mission.json pslist-marcel.json 
+diff pslist-mission.json pslist-marcel.json
 cd pslist-simplified-marcel/
 ls
 cp selected_coa_perfect.json ../../../marcel-create-luna-see-with-coa/
@@ -9168,33 +9168,33 @@ cd msc-pxplanner-test/
 ls
 cd ..
 ls
-more marcel-run-coa-test.sh 
+more marcel-run-coa-test.sh
 cp marcel-run-coa-test.sh ../../../marcel-create-luna-see-with-coa/
 cp -r msc-pxplanner-test/* ../../../marcel-create-luna-see-with-coa/
 cp pxplanner_coa_script.py ../../../marcel-create-luna-see-with-coa/
 cp pxplanner_coa_parameters.py ../../../marcel-create-luna-see-with-coa/
 ls
-more pxplanner_coa.json 
+more pxplanner_coa.json
 cp pxplanner_coa.json ../../../marcel-create-luna-see-with-coa/
 ls
-more mission_plan.json 
+more mission_plan.json
 cd ..
 ls
-more pslist-marcel.json 
+more pslist-marcel.json
 cd ..
 ls
 cd 5.5.0/
 ls
-more pslist-mission3.json 
-diff pslist-mission2.json pslist-mission3.json 
+more pslist-mission3.json
+diff pslist-mission2.json pslist-mission3.json
 cp pslist-mission3.json ../../marcel-create-luna-see-with-coa/
 cd ../..
 cd marcel-create-luna-see-with-coa/
 ls
 rm mock_params.*
 ls
-rm mock_plan.py 
-more implant.hcl 
+rm mock_plan.py
+more implant.hcl
 cd ..
 cd spark-container/
 ls
@@ -9221,7 +9221,7 @@ eval "$(boot2docker shellinit)"
 ./stream.sh hackathon 500 data/one_hour_with_geo.json
 ./stream.sh hackathon 1000 data/one_hour_with_geo.json
 git status
-git push origin master 
+git push origin master
 pwd
 cd ../hackathon-client/
 ls
@@ -9247,7 +9247,7 @@ workon planx-eclipse
 eval "$(boot2docker shellinit)"
 pip install dateutils
 pip install dateutil
-python 
+python
 wscat -c ws://localhost:8000/entropy
 wscat -c ws://localhost:8000/ws/entropy
 wscat -c ws://localhost:8000/ws/minmaxsize
@@ -9283,9 +9283,9 @@ ls
 git status
 git commit -m "Initial commit."
 git remote add origin git@github-enterprise.px.ftw:mbecker/ceate-luna-seed-with-coa.git
-git push -u origin master 
+git push -u origin master
 more lunabuilder.py
-git add lunabuilder.py 
+git add lunabuilder.py
 git status
 git add implant.hcl marcel-run-coa-test.sh msc-pinter.hcl pslist-mission-ingest.json
 git add __init__.py
@@ -9294,12 +9294,12 @@ git status
 git add run_tests.sh
 git add services.py
 more lunabuilder.py
-more marcel-run-coa-test.sh 
+more marcel-run-coa-test.sh
 ls
-more run_tests.sh 
+more run_tests.sh
 ls
 git status
-more test_integration.py 
+more test_integration.py
 ls
 ls *.py
 more lunabuilder.py
@@ -9311,7 +9311,7 @@ git add selected_coa.json
 git add pxplanner_coa.json pxplanner_coa_parameters.py
 git add pxplanner_coa_script.py
 git status
-cp ../pxplanner/.gitignore 
+cp ../pxplanner/.gitignore
 cp ../pxplanner/.gitignore .
 git status
 git add .gitignore
@@ -9323,7 +9323,7 @@ ls
 rm -rf logs/
 ls
 git commit -m "Code to help generate log file for luna seed with coa."
-git push -u origin master 
+git push -u origin master
 git status
 ls
 git status
@@ -9334,10 +9334,10 @@ git init
 git add README.md
 git commit -m "Initial commit."
 git remote add origin git@github-enterprise.px.ftw:mbecker/pxquerybuilderui.git
-git push origin master 
+git push origin master
 git status
-more tornado-server.py 
-more README.md 
+more tornado-server.py
+more README.md
 ls
 cd src/
 ls
@@ -9361,14 +9361,14 @@ git add __init__.py css/* index.html index_template.html js/* pxquerybuilder.py 
 git status
 cd ..
 ls
-more release-note.txt 
-rm release-note.txt 
+more release-note.txt
+rm release-note.txt
 ls
-rm LICENSE.txt 
+rm LICENSE.txt
 ls
-rm pxquerybuilder.py 
+rm pxquerybuilder.py
 ls
-rm tornado-server.py 
+rm tornado-server.py
 ls
 git status
 cp ../pxplanner/.gitignore .
@@ -9378,9 +9378,9 @@ git add .gitignore
 git status
 git commit -m "JS UI and server to navigate PX Luna."
 git status
-git push -u origin master 
-pip install -U pxsvchost 
-pxlaunch run PX ~/src/plan-construction/px-web-common/clusters/marcel-planx-with-coa.hcl 
+git push -u origin master
+pip install -U pxsvchost
+pxlaunch run PX ~/src/plan-construction/px-web-common/clusters/marcel-planx-with-coa.hcl
 PYTHONPATH=".:$PYTHONPATH" pxsvchost -m pxquerybuilder.services --cluster PX
 boot2docker up
 eval "$(boot2docker shellinit)
@@ -9396,7 +9396,7 @@ ls
 cd ..
 cd planning-core-services/
 ls
-more setup.py 
+more setup.py
 pip install -U planningcoresvc
 cp setup.py ../pxquerybuilderui/
 ls
@@ -9411,13 +9411,13 @@ ls
 pip install -U pxplanner
 pip install -U pxrancher
 pip install -U pxscvhost
-deactivate 
+deactivate
 workon planx-eclipse
 pip install -U pxscvhost
-deactivate 
+deactivate
 workon planx-eclipse
 pip install -U pxscvhost
-more ~/.pip/pip.conf 
+more ~/.pip/pip.conf
 pip install -U pxscvhost
 pip install -U pxsvchost
 cd plan-construction/
@@ -9429,7 +9429,7 @@ cd ..
 mv pxquerybuilder src/
 ls
 git status
-git add setup.py 
+git add setup.py
 git add pxquerybuilder/*
 git status
 git add README.md
@@ -9447,7 +9447,7 @@ git add css/* js/* index*
 git status
 git commit -m "Moved files around."
 git status
-git push -u origin master 
+git push -u origin master
 git status
 cd ..
 git status
@@ -9456,10 +9456,10 @@ pip install -U pxplanner
 PYTHONPATH="./src:$PYTHONPATH" pxsvchost -m pxquerybuilder.services --cluster PX
 cd ..
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 pip install -U pxrancher pxavro pxsvchost
-./update-git.sh 
-more Instructions_For_Marcel.txt 
+./update-git.sh
+more Instructions_For_Marcel.txt
 boot2docker ssh "sudo udhcpc"
 brew doctor
 cd /usr/local/share/man
@@ -9480,16 +9480,16 @@ sudo chown marcelbecker:admin *
 ls -al
 brew doctor
 cd
-cd 
+cd
 cd src/plan-construction/planning-next/
 ls
 git pull
 git status
-git checkout master 
+git checkout master
 git pull
 git status
-git diff origin/master 
-git push origin master 
+git diff origin/master
+git push origin master
 git pull
 cd 6.1.0/
 ls
@@ -9506,12 +9506,12 @@ ls
 ls ~/src/plan-construction/pxplanner/
 cp ~/src/plan-construction/pxplanner/README.md .
 cp ~/src/plan-construction/pxplanner/MANIFEST.in .
-cp ~/src/plan-construction/pxplanner/setup.py 
+cp ~/src/plan-construction/pxplanner/setup.py
 cp ~/src/plan-construction/pxplanner/setup.py .
 cp ~/src/plan-construction/pxplanner/requirements.txt .
 cp ~/src/plan-construction/pxplanner/testing-requirements.txt .
 cp ~/src/plan-construction/pxplanner/src/pxplanner/__init__.py src/missionbuilder/
-python src/missionbuilder/missionbuilder.py 
+python src/missionbuilder/missionbuilder.py
 workon planx-eclipse
 cd src/plan-construction/
 git clone git@github-enterprise.px.ftw:appstore/pxql-battlespace-viewer.git
@@ -9519,8 +9519,8 @@ cd pxql-battlespace-viewer/
 pip install -U -r requirements.txt
 pip install -e .
 pip install -e . -U
-pxlaunch run ~/src/plan-construction/px-web-common/clusters/planx.hcl 
-pxlaunch run PX ~/src/plan-construction/px-web-common/clusters/planx.hcl 
+pxlaunch run ~/src/plan-construction/px-web-common/clusters/planx.hcl
+pxlaunch run PX ~/src/plan-construction/px-web-common/clusters/planx.hcl
 pxlaunch list
 ls
 ./launch_server.sh --cluster PX
@@ -9528,18 +9528,18 @@ boot2docker init
 boot2docker up
 eval "$(boot2docker shellinit)"
 ./launch_server.sh --cluster PX
-pxlaunch run PX ~/src/plan-construction/px-web-common/clusters/planx.hcl 
+pxlaunch run PX ~/src/plan-construction/px-web-common/clusters/planx.hcl
 ./launch_server.sh --cluster PX
 ls
 cd ..
 cd px-clusters/
 ls
 git pull
-more change-latest.sh 
+more change-latest.sh
 ls
-pxlaunch pull planx.hcl 
+pxlaunch pull planx.hcl
 boot2docker ssh "sudo udhcpc"
-pxlaunch pull planx.hcl 
+pxlaunch pull planx.hcl
 his
 source ~/.bashrc
 ls
@@ -9556,35 +9556,35 @@ ls -al
 more .profile
 ls
 ls -a
-more .gitignore_global 
-more .gitconfig 
+more .gitignore_global
+more .gitconfig
 more .vagrant
 more .vagrantuser
 ls -al
-more .wgetrc 
-more install.sh 
-ls 
+more .wgetrc
+more install.sh
+ls
 ls -al
 mkdir -h
 mkdir --help
 man mkdir
 cd dotfiles/
 ls
-chmod +x makesymlinks.sh 
-./makesymlinks.sh 
+chmod +x makesymlinks.sh
+./makesymlinks.sh
 ls
-./makesymlinks.sh 
+./makesymlinks.sh
 ls
 ls -al
 rm .bash*
 ls -al
 rm .git*
-rm .wgetrc 
+rm .wgetrc
 ls
 ls -al
-./makesymlinks.sh 
+./makesymlinks.sh
 ls
-more bash_history 
+more bash_history
 workon planx-eclipse
 boot2docker up
 eval "$(boot2docker shellinit)"
@@ -9593,14 +9593,14 @@ cd src/plan-construction/hackathon-server/
 pxlaunch run hackathon common/hackathon.hcl
 pxlaunch destroy hackathon
 pxlaunch run --expose -x "hackathonserver.volume./var/www/hackathon-client.local_path"=/absolute/path/to/client/dist hackathon common/hackathon.hcl
-pxlaunch pull common/hackathon.hcl 
+pxlaunch pull common/hackathon.hcl
 boot2docker --help
 boot2docker status
 boot2docker boot
 boot2docker up
-pxlaunch pull common/hackathon.hcl 
+pxlaunch pull common/hackathon.hcl
 
-pxlaunch pull common/hackathon.hcl 
+pxlaunch pull common/hackathon.hcl
 pxlaunch run --expose -x "hackathonserver.volume./var/www/hackathon-client.local_path"=/absolute/path/to/client/dist hackathon common/hackathon.hcl
 pxlaunch destroy hackathon
 pxlaunch run --expose -x "hackathonserver.volume./var/www/hackathon-client.local_path"=/absolute/path/to/client/dist hackathon common/hackathon.hcl
@@ -9615,8 +9615,8 @@ PYTHONPATH="./src:$PYTHONPATH" pxsvchost -m hackathonserver.hackathonserver --cl
 git pull
 cd data/
 ls
-gunzip one_hour_with_geo.json.gz 
-git checkout -- one_hour_with_geo.json.gz 
+gunzip one_hour_with_geo.json.gz
+git checkout -- one_hour_with_geo.json.gz
 ls
 cd ..
 pxlaunch destroy hackathon
@@ -9633,10 +9633,10 @@ git status
 git commit -m "Fixed min max handler and time stamp parsing."
 git status
 git pull
-git push origin master 
+git push origin master
 pxlaunch destroy hackathon
 PYTHONPATH="./src:$PYTHONPATH" pxsvchost -m hackathonserver.hackathonserver --cluster hackathon
-pxlaunch pull common/hackathon.hcl 
+pxlaunch pull common/hackathon.hcl
 PYTHONPATH="./src:$PYTHONPATH" pxsvchost -m hackathonserver.hackathonserver --cluster hackathon
 pxlaunch list
 pxlaunch run --expose -x "hackathonserver.volume./var/www/hackathon-client.local_path"=/absolute/path/to/client/dist hackathon common/hackathon.hcl
@@ -9652,19 +9652,19 @@ git add src/hackathonserver/hackathonserver.py
 git add src/hackathonserver/wshandlers/CountValueFrequencyWSHandler.py
 git status
 git commit -m "Added the count frequency metric handler."
-git push origin master 
+git push origin master
 git status
 git add src/hackathonserver/wshandlers/EntropyWSHandler.py
 git commit -m "Added the time window sizing as constants."
-git push origin master 
+git push origin master
 git pull
 git status
-git push origin master 
+git push origin master
 pxlaunch destroy hackathon
 pxlaunch run --expose -x "hackathonserver.volume./var/www/hackathon-client.local_path"=/absolute/path/to/client/dist hackathon common/hackathon.hcl
 git pull
 pxlaunch destroy hackathon
-pxlaunch pull common/hackathon.hcl 
+pxlaunch pull common/hackathon.hcl
 pxlaunch run --expose -x "hackathonserver.volume./var/www/hackathon-client.local_path"=/absolute/path/to/client/dist hackathon common/hackathon.hcl
 pxlaunch destroy hackathon
 pxlaunch run --expose -x "hackathonserver.volume./var/www/hackathon-client.local_path"=/absolute/path/to/client/dist hackathon common/hackathon.hcl
@@ -9687,24 +9687,24 @@ git add src/hackathonserver/wshandlers/MinMaxSizeWSHandler.py
 git add src/hackathonserver/wshandlers/EntropyWSHandler.py
 git status
 git pull
-git stash 
+git stash
 git pull
 git stash pop
 git status
 git add src/hackathonserver/wshandlers/EntropyWSHandler.py
 git pull
 git commit -m "Using Luna timestamp for start times."
-git push origin master 
+git push origin master
 ls
 make publish
 ls
-more Makefile 
+more Makefile
 pwd
 PX_ROOT=/Users/marcelbecker/src/plan-construction/ make publish
 pip install -U pxsvchost-tool
 PX_ROOT=/Users/marcelbecker/src/plan-construction/ make publish
 pxlaunch destroy hackathon
-pxlaunch pull common/hackathon.hcl 
+pxlaunch pull common/hackathon.hcl
 python
 cd ,,
 cd ..
@@ -9712,7 +9712,7 @@ git clone git@github-enterprise.px.ftw:dymaxion/hackathon-client.git
 cd ..
 cd plan-construction/hackathon-server/
 git pull
-pxlaunch pull common/hackathon.hcl 
+pxlaunch pull common/hackathon.hcl
 pxlaunch destroy hackathon
 pxlaunch run --expose -x "hackathonserver.volume./var/www/hackathon-client.local_path"=//Users/marcelbecker/src/plan-construction/hackathon-client/dist hackathon common/hackathon.hcl
 pxlaunch destroy hackathon
@@ -9726,11 +9726,11 @@ pip install pavro -U
 pip update pip -U
 pip install pip -U
 pip install -U pxavro
-pxlaunch pull ../px-web-common/clusters/planx.hcl 
+pxlaunch pull ../px-web-common/clusters/planx.hcl
 cd ..
 cd px-luna-data-builder/
 ls
-./build_single.sh 
+./build_single.sh
 ./build_single.sh config/px-luna-seed-cg-gordon-enh-with-coa.cfg latest
 cd ../..
 cd my-vagrant-development/
@@ -9742,7 +9742,7 @@ git clone git@github-enterprise.px.ftw:plan-construction/px-luna-data-builder.gi
 cd planning-px-luna-data-builder/
 git branch --help
 git branch --track gordon-seed-with-coa
-git checkout gordon-seed-with-coa 
+git checkout gordon-seed-with-coa
 cd ..
 cd px-luna-data-builder/
 ls
@@ -9752,9 +9752,9 @@ cp -r px-luna-seed-cg-gordon-enh-with-coa/ ../planning-px-luna-data-builder/
 cd ..
 cd planning-px-luna-data-builder/
 ls
-more build_all.sh 
+more build_all.sh
 ls
-./build_single.sh 
+./build_single.sh
 ./build_single.sh config/px-luna-seed-cg-gordon-enh-with-coa.cfg latest
 docker images
 git status
@@ -9764,19 +9764,19 @@ ls
 cd px-luna-seed-cg-gordon-enh-with-coa/
 ls
 cd ..
-more insertLog.log 
+more insertLog.log
 cd ..
 cd px-luna-data-builder/
 ls
 git status
 cd px-luna-seed-cg-gordon-enh-with-coa/
 ls
-more insertLog.log 
+more insertLog.log
 cp insertLog.log ../../planning-px-luna-data-builder/px-luna-seed-cg-gordon-enh-with-coa/
 cd ..
 cd planning-px-luna-data-builder/
 ls
-diff insertLog.log px-luna-seed-cg-gordon-enh-with-coa/insertLog.log 
+diff insertLog.log px-luna-seed-cg-gordon-enh-with-coa/insertLog.log
 
 ls
 ./build_single.sh config/px-luna-seed-cg-gordon-enh-with-coa.cfg latest
@@ -9797,8 +9797,8 @@ git add config/px-luna-seed-cg-gordon-enh-with-coa.cfg
 git add px-luna-seed-cg-gordon-enh-with-coa/insertLog.log
 git status
 git commit -m "Added config and insert log for seed with coa."
-git push origin master 
-git push origin gordon-seed-with-coa 
+git push origin master
+git push origin gordon-seed-with-coa
 ls
 cd build
 ls
@@ -9820,11 +9820,11 @@ git pull
 cd ..
 ls
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 git status
 git add Instructions_For_Marcel.txt
 git commit -m "Added instructions on how to run ui."
-git push origin master 
+git push origin master
 cd ../px-controller/
 ls
 git status
@@ -9840,7 +9840,7 @@ git status
 git reset HEAD integration-tests/msc-pinter/test_integration.py
 git pull
 git checkout -- integration-tests/msc-pinter/test_integration.py
-git pull 
+git pull
 cd ../px-web-
 cd ../px-web-common/
 git pull
@@ -9852,14 +9852,14 @@ git pull
 cd ..
 ls
 cd marcel-utils/
-./update-git.sh 
+./update-git.sh
 pip install -U pxrancher
-pxlaunch pull ~/src/plan-construction/px-web-common/clusters/planx.hcl 
+pxlaunch pull ~/src/plan-construction/px-web-common/clusters/planx.hcl
 boot2docker ssh "sudo udhcpc"
-boot2docker 
+boot2docker
 boot2docker up
 boot2docker ssh "sudo udhcpc"
-pxlaunch pull ~/src/plan-construction/px-web-common/clusters/planx.hcl 
+pxlaunch pull ~/src/plan-construction/px-web-common/clusters/planx.hcl
 pxlaunch destroy PX
 cd ..
 cd my-vagrant-development/
@@ -9868,15 +9868,15 @@ vagrant up
 vagrant reload
 vagrant halt
 cd src/plan-construction/planning-next/6.1.0/missionbuilder/
-python src/missionbuilder/missionbuilder.py 
+python src/missionbuilder/missionbuilder.py
 workon planx-eclipse
-python src/missionbuilder/missionbuilder.py 
+python src/missionbuilder/missionbuilder.py
 python
 pip install epc -U
 pip install jedi -U
-python src/missionbuilder/missionbuilder.py 
+python src/missionbuilder/missionbuilder.py
 pip install -U pxavro
-python src/missionbuilder/missionbuilder.py 
+python src/missionbuilder/missionbuilder.py
 pwd
 git status
 cd ..
@@ -9884,7 +9884,7 @@ git status
 git pull
 cd missionbuilder/
 ls
-python src/missionbuilder/missionbuilder.py 
+python src/missionbuilder/missionbuilder.py
 pwd
 ls
 git add MANIFEST.in README.md requirements.txt setup.py testing-requirements.txt
@@ -9896,18 +9896,18 @@ git add __init__.py coabuilder.py missionbuilder.py
 git status
 git commit -m "Scripts to help build json for Spiral 6 mission 1."
 git pull
-git push origin master 
+git push origin master
 pwd
 git commit -m "Scripts to help build json for Spiral 6 mission 1."
-python src/missionbuilder/missionbuilder.py 
+python src/missionbuilder/missionbuilder.py
 cd ../..
-python src/missionbuilder/missionbuilder.py 
+python src/missionbuilder/missionbuilder.py
 git commit -m "Scripts to help build json for Spiral 6 mission 1."
-python src/missionbuilder/missionbuilder.py 
+python src/missionbuilder/missionbuilder.py
 git status
 git add src/missionbuilder/missionbuilder.py
 git commit -m "PLX-4561 Defined rules to assist COA creation and analysis."
-git push origin master 
+git push origin master
 pip install -U pxavro
 git pull
 cd ..
@@ -9918,11 +9918,11 @@ cd ..
 ls
 cd planconstruction-pxavro/
 git pull
-git checkout master 
+git checkout master
 git pull
 git remote
 git pull core:master
-more ~/.pip/pip.conf 
+more ~/.pip/pip.conf
 #1440615948
 cd src/plan-construction/marcel-utils/
 #1440615951
@@ -9936,7 +9936,7 @@ pip install -U pxavro pxsvchost pxluna-client
 #1440616035
 pip install pip -U
 #1440616057
-more .pip/pip.conf 
+more .pip/pip.conf
 #1440616062
 pip install pip -U
 #1440616084
@@ -9944,7 +9944,7 @@ pip freeze
 #1440616119
 which python
 #1440615966
-./update-git.sh 
+./update-git.sh
 #1440616617
 pip install pip -U
 #1440624954
@@ -9962,7 +9962,7 @@ cd ..
 #1440706295
 cd pxplanner/
 #1440706310
-git checkout marcel-wargame-integration 
+git checkout marcel-wargame-integration
 #1440706315
 git status
 #1440707005
@@ -9970,11 +9970,11 @@ cd test
 #1440707009
 cd tests/
 #1440707012
-./run_tests.sh 
+./run_tests.sh
 #1440707017
 workon planx-eclipse
 #1440707019
-./run_tests.sh 
+./run_tests.sh
 #1440707335
 pip install coverage
 #1440707362
@@ -9994,7 +9994,7 @@ brew link --overwrite lua
 #1440707952
 brew doctor
 #1440707973
-rm -rf /usr/local/lib/liblua.a 
+rm -rf /usr/local/lib/liblua.a
 #1440707977
 brew doctor
 #1440707997
@@ -10062,7 +10062,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 #1440709165
 makevirtualenv
 #1440709198
-source /usr/local/bin/virtualenvwrapper.sh 
+source /usr/local/bin/virtualenvwrapper.sh
 #1440709206
 mkvirtualenv --help
 #1440709244
@@ -10084,15 +10084,15 @@ cd src/plan-construction/marcel-utils/
 #1441061833
 cd src/plan-construction/planning-wargaming-integration/
 #1441061841
-git checkout master 
+git checkout master
 #1441061655
-./update-git.sh 
+./update-git.sh
 #1441061853
 git pull --prune
 #1441061864
 git branch
 #1441061871
-git branch -D new_war_3 
+git branch -D new_war_3
 #1441061884
 cd integration-tests/
 #1441061897
@@ -10110,7 +10110,7 @@ mkvirtualenv --always-copy planx-eclipse
 #1441062006
 pip install pip -U
 #1441062066
-cd .. 
+cd ..
 #1441062069
 cd pxplanner/
 #1441062070
@@ -10120,15 +10120,15 @@ workon planx-eclipse
 #1441062096
 git status
 #1441062104
-git checkout master 
+git checkout master
 #1441062120
-git pull --all --prune 
+git pull --all --prune
 #1441062026
 pip install -U pxrancher pxsvchost
 #1441062141
-git branch -D marcel-tests 
+git branch -D marcel-tests
 #1441062155
-git branch -D marcel-wargame-integration 
+git branch -D marcel-wargame-integration
 #1441062160
 git branch
 #1441062167
@@ -10136,11 +10136,11 @@ cd integration-tests/
 #1441062168
 ls
 #1441062190
-pip install -U pxluna-client 
+pip install -U pxluna-client
 #1441062253
 pip freeze
 #1441062221
-pxlaunch pull cluster.hcl 
+pxlaunch pull cluster.hcl
 #1441142193
 cd ..
 #1441142202
@@ -10156,7 +10156,7 @@ cd PythonEnvs/
 #1441142458
 ls
 #1441142472
-more postactivate 
+more postactivate
 #1441142497
 cd
 #1441142499
@@ -10166,7 +10166,7 @@ ls
 #1441142725
 ls
 #1441142220
-pxlaunch pull planning-wargaming-integration.hcl 
+pxlaunch pull planning-wargaming-integration.hcl
 #1441146715
 git pull
 #1441146723
@@ -10178,7 +10178,7 @@ cd planconstruction-pxavro/
 #1441146743
 git pull
 #1441146761
-git checkout marcel-planning-schema-cleanup 
+git checkout marcel-planning-schema-cleanup
 #1441146764
 git pull
 #1441147277
@@ -10210,7 +10210,7 @@ cd planning-wargaming-integration/
 #1441212436
 cd integration-tests/
 #1441212442
-./run_tests.sh 
+./run_tests.sh
 #1441213251
 cd ../..
 #1441218824
@@ -10222,7 +10222,7 @@ git pull
 #1441218933
 pip install pxintegrator
 #1441218842
-./update-git.sh 
+./update-git.sh
 #1441218977
 pip install pxintegrator -U
 #1441219074
@@ -10252,29 +10252,29 @@ cd .git
 #1441219702
 ls
 #1441219708
-more config 
+more config
 #1441219078
-./run_tests.sh 
+./run_tests.sh
 #1441219754
 cd ..
 #1441219758
 git branch
 #1441219767
-git branch -D alex-new-mission 
+git branch -D alex-new-mission
 #1441219772
 git branch -D coa
 #1441219779
-git branch -D coa-with-edges 
+git branch -D coa-with-edges
 #1441219782
 git branch
 #1441219791
-git branch -D marcel-new-mission 
+git branch -D marcel-new-mission
 #1441219798
 git branch
 #1441219809
-git checkout master 
+git checkout master
 #1441219815
-git pull origin master 
+git pull origin master
 #1441220009
 git remote add core git@github-enterprise.px.ftw:core/px-avro.git
 #1441220012
@@ -10288,31 +10288,31 @@ cd .git
 #1441220067
 ls
 #1441220071
-more config 
+more config
 #1441220120
 cd ..
 #1441220122
 git remote
 #1441220132
-git pull origin master 
+git pull origin master
 #1441220142
-git pull core master 
+git pull core master
 #1441220158
 git status
 #1441220170
-git checkout marcel-planning-schema-cleanup 
+git checkout marcel-planning-schema-cleanup
 #1441220180
-git pull origin master 
+git pull origin master
 #1441220212
 pxlaunch destroy PX
 #1441221345
 pip install pip -U
 #1441220217
-./run_tests.sh 
+./run_tests.sh
 #1441233167
 boot2docker ssh "sudo udhcpc"
 #1441233172
-./run_tests.sh 
+./run_tests.sh
 #1441236089
 pip install epc
 #1441236129
@@ -10354,7 +10354,7 @@ sudo pip install -U autopep8
 #1441238270
 pip install jedi -U
 #1441295111
-cd 
+cd
 #1441295123
 cd src/plan-construction/planning-wargaming-integration/integration-tests/
 #1441295485
@@ -10362,13 +10362,13 @@ RUN_DEFAULT_CLUSTER="planning-wargaming-integration.hcl" pxintegrator --launch-n
 #1441295493
 workon planx-eclipse
 #1441295497
-RUN_DEFAULT_CLUSTER="planning-wargaming-integration.hcl" pxintegrator --launch-name=PX -s 
+RUN_DEFAULT_CLUSTER="planning-wargaming-integration.hcl" pxintegrator --launch-name=PX -s
 #1441295589
-more test_dashboard.py 
+more test_dashboard.py
 #1441295950
-RUN_DEFAULT_CLUSTER="planning-wargaming-integration.hcl" pxintegrator --launch-name=PX -s 
+RUN_DEFAULT_CLUSTER="planning-wargaming-integration.hcl" pxintegrator --launch-name=PX -s
 #1441296171
-cd 
+cd
 #1441296176
 cd
 #1441296185
@@ -10386,7 +10386,7 @@ RUN_DEFAULT_CLUSTER="planning-wargame-integration-no-pxplanner.hcl" pxintegrator
 #1441296411
 ls
 #1441296445
-pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl 
+pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl
 #1441296631
 cd
 #1441296473
@@ -10410,7 +10410,7 @@ pxsvchost -m pxplanner.service --cluster PX
 #1441296885
 PYTHONPATH="~/src/plan-construction/pxplanner/src:$PYTHONPATH" pxsvchost -m pxplanner.service --cluster PX
 #1441296924
-pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl 
+pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl
 #1441296951
 python
 #1441296984
@@ -10480,7 +10480,7 @@ pxlaunch list
 #1441297702
 docker ps -a
 #1441297637
-pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl 
+pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl
 #1441297749
 pxlaunch destroy PX
 #1441297763
@@ -10506,7 +10506,7 @@ ps -A
 #1441297907
 ps -A | grep px
 #1441297848
-pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl 
+pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl
 #1441297951
 `eval "$(boot2docker shellinit)"`
 #1441297959
@@ -10514,11 +10514,11 @@ boot2docker --help
 #1441297970
 boot2docker restart
 #1441297983
-pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl 
+pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl
 #1441298017
 `eval "$(boot2docker shellinit)"`
 #1441298019
-pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl 
+pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl
 #1441298054
 RUN_DEFAULT_CLUSTER="planning-wargame-integration-no-pxplanner.hcl" pxintegrator --docker-logs=logs --svchost pxplanner.services  --launch-name=PX  -s $@
 #1441298151
@@ -10530,11 +10530,11 @@ git status
 #1441301421
 git status
 #1441301455
-git add planning-wargaming-integration-no-pxplanner.hcl 
+git add planning-wargaming-integration-no-pxplanner.hcl
 #1441301483
 git commit -m "Added cluster file to run local pxplanner for testing purposes."
 #1441301493
-git push origin master 
+git push origin master
 #1441301538
 cd ../
 #1441301542
@@ -10542,11 +10542,11 @@ cd .git
 #1441301543
 ls
 #1441301546
-more config 
+more config
 #1441301696
 cd ..
 #1441301701
-git push origin master 
+git push origin master
 #1441301771
 git status
 #1441302193
@@ -10558,13 +10558,13 @@ cd integration-tests/
 #1441302210
 ./run_
 #1441302214
-./run_tests.sh 
+./run_tests.sh
 #1441302274
 git status
 #1441302313
-git commit -m "Fixed id for test mission, fixed run test command to use the correct cluster file." 
+git commit -m "Fixed id for test mission, fixed run test command to use the correct cluster file."
 #1441302319
-git push origin master 
+git push origin master
 #1441836964
 cd src
 #1441836983
@@ -10576,7 +10576,7 @@ vagrant ssh
 #1441837223
 ls
 #1441837239
-more Vagrantfile 
+more Vagrantfile
 #1441837249
 vagrant halt
 #1441837257
@@ -10590,7 +10590,7 @@ cd vagrant-ubuntu-trusty-64/
 #1441837278
 ls
 #1441837281
-more Vagrantfile 
+more Vagrantfile
 #1441837598
 cd ..
 #1441837609
@@ -10664,7 +10664,7 @@ cd plan-construction/
 #1441838534
 ls
 #1441838540
-cd 
+cd
 #1441838542
 cd src/
 #1441838545
@@ -10702,13 +10702,13 @@ cd rspacesrc/rspace-vagrant-box/
 #1441838585
 ls
 #1441838597
-rm -rf home/ 
+rm -rf home/
 #1441838600
 rm -rf plan-construction/
 #1441838601
 ls
 #1441838606
-more metadata.rb 
+more metadata.rb
 #1441839146
 cd ..
 #1441839162
@@ -10718,7 +10718,7 @@ ls
 #1441839165
 cd rspace-vagrant-development/
 #1441839169
-vagrant up 
+vagrant up
 #1441839409
 vagrant reload
 #1441839478
@@ -10728,7 +10728,7 @@ vagrant ssh
 #1441839701
 ls
 #1441839707
-rm Berksfile.lock 
+rm Berksfile.lock
 #1441839717
 cd ~/.berkshelf/
 #1441839717
@@ -10750,7 +10750,7 @@ ls
 #1441839749
 cd ..
 #1441839750
-cd 
+cd
 #1441839755
 cd src/rspacesrc/rspace-vagrant-development/
 #1441839762
@@ -10788,7 +10788,7 @@ berks init
 #1441840483
 vagrant provision
 #1441840622
-rm Berksfile.lock 
+rm Berksfile.lock
 #1441840624
 vagrant provision
 #1441840680
@@ -10874,17 +10874,17 @@ cd my-vagrant-simplified/
 #1441908697
 ls
 #1441908706
-rm Berksfile.lock 
+rm Berksfile.lock
 #1441908712
-more metadata.rb 
+more metadata.rb
 #1441908726
 more Berksfile
 #1441908730
 ls -al
 #1441908736
-more .kitchen.yml 
+more .kitchen.yml
 #1441908762
-rm .kitchen.yml 
+rm .kitchen.yml
 #1441908770
 vagrant halt
 #1441908790
@@ -10892,7 +10892,7 @@ vagrant destroy
 #1441908808
 vagrant up --provision
 #1441909118
-vagrant halt 
+vagrant halt
 #1441909144
 vagrant destroy
 #1441911338
@@ -10900,7 +10900,7 @@ cd ../my-vagrant-simplified/
 #1441911411
 vagrant up
 #1441911430
-vagrant halt 
+vagrant halt
 #1441911442
 vagrant destroy
 #1441908096
@@ -10940,19 +10940,19 @@ rm -rf .vagrant/
 #1441915241
 ls
 #1441915249
-more Vagrantfile 
+more Vagrantfile
 #1441915264
 vagrant global-status
 #1441915273
 vagrant up
 #1441915548
-more Vagrantfile 
+more Vagrantfile
 #1441915561
-more metadata.rb 
+more metadata.rb
 #1441915571
 more Berksfile
 #1441915578
-rm Berksfile.lock 
+rm Berksfile.lock
 #1441915591
 vagrant reload --provision
 #1441916586
@@ -10966,7 +10966,7 @@ cat > emacs.deskto <<EOF
 #1441916769
 ls
 #1441916772
-more emacs.deskto 
+more emacs.deskto
 #1441917290
 cd src/rspacesrc/rspace-vagrant/
 #1441917292
@@ -10984,7 +10984,7 @@ git remote add rspace git@github.com:marcel-becker/rspace-vagrant.git
 #1441917432
 git remote
 #1441917469
-git push -u rspace master 
+git push -u rspace master
 #1441918047
 git status
 #1441918052
@@ -11070,7 +11070,7 @@ l
 #1441918466
 ls -
 #1441918468
-ls 
+ls
 #1441918476
 vagrant box list
 #1441918507
@@ -11114,9 +11114,9 @@ ls
 #1441918806
 ls -al
 #1441918810
-more Vagrantfile 
+more Vagrantfile
 #1441918824
-ls 
+ls
 #1441918827
 ls -al
 #1441918830
@@ -11190,13 +11190,13 @@ git pull --all --prune
 #1441994513
 workon planx-eclipse
 #1441994610
-cd 
+cd
 #1441994611
 cd src/
 #1441994611
 ls
 #1441994425
-./update-git.sh 
+./update-git.sh
 #1441994632
 cd plan-construction/
 #1441994633
@@ -11232,17 +11232,17 @@ git pull --all --prunt
 #1441994790
 git pull --all --prune
 #1441994800
-git checkout master 
+git checkout master
 #1441994802
 git pull --all --prune
 #1441994817
-git branch 
+git branch
 #1441994826
-git branch -D new_war_3 
+git branch -D new_war_3
 #1441994833
-git checkout marcel-planning-schema-cleanup 
+git checkout marcel-planning-schema-cleanup
 #1441994840
-git pull 
+git pull
 #1441994847
 cd ..
 #1441994851
@@ -11252,29 +11252,29 @@ git pull --all --prunt
 #1441994862
 git pull --all --prune
 #1441994874
-git branch 
+git branch
 #1441994880
-git checkout marcel-planning-schema-cleanup 
+git checkout marcel-planning-schema-cleanup
 #1441994884
 git pull
 #1441994900
 cd ../planning-wargaming-integration/
 #1441994906
-git checkout master 
+git checkout master
 #1441994913
-git pull origin master 
+git pull origin master
 #1441994926
 git pull --all --prunt
 #1441994928
 git pull --all --prune
 #1441994937
-git branch 
+git branch
 #1441994943
-git branch -D new_war_3 
+git branch -D new_war_3
 #1441994949
-git checkout marcel-planning-schema-cleanup 
+git checkout marcel-planning-schema-cleanup
 #1441994957
-git pull origin marcel-planning-schema-cleanup 
+git pull origin marcel-planning-schema-cleanup
 #1441994987
 cd ..
 #1441994994
@@ -11290,9 +11290,9 @@ git remote -v
 #1441995084
 git pull --all --prune
 #1441995104
-git checkout marcel-planning-schema-cleanup 
+git checkout marcel-planning-schema-cleanup
 #1441995111
-git pull origin marcel-planning-schema-cleanup 
+git pull origin marcel-planning-schema-cleanup
 #1441995116
 cd ..
 #1441995139
@@ -11302,9 +11302,9 @@ cd px-luna
 #1441995399
 git remote add core git@github-enterprise.px.ftw:core/px-luna.git
 #1441995403
-git checkout marcel-planning-schema-cleanup 
+git checkout marcel-planning-schema-cleanup
 #1441995406
-git pull 
+git pull
 #1441995412
 cd ..
 #1441995413
@@ -11318,7 +11318,7 @@ cd ..
 #1441995443
 cd px-avro/
 #1441995450
-./build/build.sh 
+./build/build.sh
 #1441995476
 brew install maven
 #1441995995
@@ -11328,39 +11328,39 @@ git pull core master
 #1441996011
 git status
 #1441996023
-git push origin master 
+git push origin master
 #1441996033
-git checkout marcel-planning-schema-cleanup 
+git checkout marcel-planning-schema-cleanup
 #1441996039
-git pull origin master 
+git pull origin master
 #1441996053
 git status
 #1441996076
-git push -u origin marcel-planning-schema-cleanup 
+git push -u origin marcel-planning-schema-cleanup
 #1441996089
 cd ../px-luna/
 #1441996094
-git checkout master 
+git checkout master
 #1441996098
-git pull 
+git pull
 #1441996111
 git remote -v
 #1441996136
 git pull --all --prune
 #1441996160
-git pull core master 
+git pull core master
 #1441996168
 git status
 #1441996173
-git push origin master 
+git push origin master
 #1441996184
-git checkout marcel-planning-schema-cleanup 
+git checkout marcel-planning-schema-cleanup
 #1441996189
-git pull origin master 
+git pull origin master
 #1441996201
 git status
 #1441996209
-git push origin marcel-planning-schema-cleanup 
+git push origin marcel-planning-schema-cleanup
 #1441996487
 cd ..
 #1441996497
@@ -11368,7 +11368,7 @@ cd my-vagrant-development/
 #1441996501
 vagrant up
 #1441996819
-more Berksfile.lock 
+more Berksfile.lock
 #1441996828
 ls
 #1441996831
@@ -11406,7 +11406,7 @@ cd PythonEnv/
 #1441997049
 ls
 #1441994528
-pxlaunch pull planning-wargaming-integration.hcl 
+pxlaunch pull planning-wargaming-integration.hcl
 #1441997081
 source planx-wargaming/bin/activate
 #1441997118
@@ -11414,7 +11414,7 @@ ls
 #1441997091
 pip install -U pxavro pxluna-client
 #1441997126
-more wargaming-testing.hcl 
+more wargaming-testing.hcl
 #1441997134
 ls
 #1441997237
@@ -11426,7 +11426,7 @@ sudo -H pip uninstall avro
 #1441997298
 ls
 #1441997307
-deactivate 
+deactivate
 #1441997316
 rm -rf planx-wargaming/
 #1441997393
@@ -11460,13 +11460,13 @@ cd pxplanner/
 #1441997741
 ls
 #1441997746
-more requirements.txt 
+more requirements.txt
 #1441997760
-pip install -u futures pxcl 
+pip install -u futures pxcl
 #1441997768
-pip install -U futures pxcl 
+pip install -U futures pxcl
 #1441997843
-more testing-requirements.txt 
+more testing-requirements.txt
 #1441997867
 pip install -U pytest mock pytest-tornado coverage greenado
 #1441997911
@@ -11476,15 +11476,15 @@ cd planning-core-services/
 #1441997921
 ls
 #1441997927
-more requirements.txt 
+more requirements.txt
 #1441997933
-more testing-requirements.txt 
+more testing-requirements.txt
 #1441997939
 cd ..
 #1441997943
 cd wargaming-server/
 #1441997447
-pxlaunch pull planx.hcl 
+pxlaunch pull planx.hcl
 #1441997959
 git checkout master
 #1441997966
@@ -11502,7 +11502,7 @@ cd wargaming-server/
 #1441998147
 ls
 #1441998151
-more requirements.txt 
+more requirements.txt
 #1441998232
 cd ..
 #1441998315
@@ -11526,13 +11526,13 @@ cd config/
 #1441998422
 ls
 #1441998432
-more px-luna-seed-spiral-6-coas.cfg 
+more px-luna-seed-spiral-6-coas.cfg
 #1441998487
 docker pull docker.px.ftw/px_core/px-luna-seed-spiral-6-coas
 #1441998515
 docker pull docker.px.ftw/px_core/px-luna-seed-spiral-6-coas:latest
 #1441998162
-pip install -r requirements.txt 
+pip install -r requirements.txt
 #1441998543
 docker pull px_core/px-luna-seed-spiral-6-coas:latest
 #1441998563
@@ -11558,9 +11558,9 @@ brew install libvirt
 #1441998811
 pip install libvirt-python
 #1441998841
-pip install -r requirements.txt 
+pip install -r requirements.txt
 #1441998870
-pip install -r testing-requirements.txt 
+pip install -r testing-requirements.txt
 #1442000730
 cd ..
 #1442000732
@@ -11568,7 +11568,7 @@ cd px-avro/
 #1442000839
 java -version
 #1442000737
-./build/build.sh 
+./build/build.sh
 #1442001153
 java -version
 #1442001163
@@ -11576,17 +11576,17 @@ which java
 #1442001373
 javac -version
 #1442001486
-/usr/libexec/java_home 
+/usr/libexec/java_home
 #1442001492
 /usr/libexec/java_home -v 1.8
 #1442001504
 /usr/libexec/java_home -v '1.8'
 #1442001587
-/usr/libexec/java_home 
+/usr/libexec/java_home
 #1442001597
-./build/build.sh 
+./build/build.sh
 #1442001848
-cd 
+cd
 #1442001854
 cd src/plan-construction/planning-next/
 #1442001857
@@ -11600,9 +11600,9 @@ cd pxcl
 #1442001965
 git describe
 #1442001976
-git checkout master 
+git checkout master
 #1442001981
-git pull origin master 
+git pull origin master
 #1442002042
 git tag -a 6.3.0 -m 6.3.0
 #1442002051
@@ -11632,7 +11632,7 @@ git push origin 6.3.0
 #1442002147
 cd ../planning-wargaming-integration/
 #1442002150
-git describe 
+git describe
 #1442002156
 git pull
 #1442002165
@@ -11646,7 +11646,7 @@ ls
 #1442002218
 cd planning-core-services/
 #1442002222
-git pull 
+git pull
 #1442002243
 git status
 #1442002262
@@ -11668,7 +11668,7 @@ cd wargaming-integration-testing/
 #1442002451
 cd planning-wargaming-integration/integration-tests/
 #1442002456
-more planning-wargaming-integration.hcl 
+more planning-wargaming-integration.hcl
 #1442001918
 ./build/build.sh --avro ../px-avro -DskipDeb=false -DskipTests=true
 #1442002491
@@ -11676,25 +11676,25 @@ source ../../PythonEnv/marcel-planning-schema-cleanup-env/bin/activate
 #1442002508
 pxlaunch run PX planning-wargaming-integration
 #1442002511
-pxlaunch run PX planning-wargaming-integration.hcl 
+pxlaunch run PX planning-wargaming-integration.hcl
 #1442002546
-./run_tests.sh 
+./run_tests.sh
 #1442002582
 cd ..
 #1442002595
 cd px-avro/
 #1442002604
-pip uninstall pxavro 
+pip uninstall pxavro
 #1442002620
-pip install -e . --no-deps 
+pip install -e . --no-deps
 #1442002634
 pxlaunch destroy PX
 #1442002667
-./build/build_docker.sh 
+./build/build_docker.sh
 #1442002704
 boot2docker ssh "sudo udhcpc"
 #1442002710
-./build/build_docker.sh 
+./build/build_docker.sh
 #1442002720
 boot2docker init
 #1442002729
@@ -11704,7 +11704,7 @@ boot2docker boot
 #1442002758
 eval "$(boot2docker shellinit)"
 #1442002763
-./build/build_docker.sh 
+./build/build_docker.sh
 #1442002815
 cd ../planning-wargaming-integration/
 #1442002819
@@ -11716,7 +11716,7 @@ exit
 #1442002964
 docker pull docker.px.ftw/px_core/px-luna-seed-spiral-6-coas:latest
 #1442002824
-./run_tests.sh 
+./run_tests.sh
 #1442003017
 docker pull docker.px.ftw/px_core/px-luna-seed-spiral-6-coas:latest
 #1442003141
@@ -11728,15 +11728,15 @@ pip uninstall pxplanner
 #1442003186
 pip install -U pip
 #1442003215
-pip install -e . --no-deps 
+pip install -e . --no-deps
 #1442003222
 cd ..
 #1442003229
 cd planning-wargaming-integration/integration-tests/
 #1442003234
-./run_tests.sh 
+./run_tests.sh
 #1442003437
-more run_tests.sh 
+more run_tests.sh
 #1442003489
 RUN_DEFAULT_CLUSTER="planning-wargaming-integration.hcl" pxintegrator --svchost pxplanner.service --launch-name=PX -s $@
 #1442003600
@@ -11746,7 +11746,7 @@ cd ../..
 #1442003648
 cd planning-core-services/
 #1442003663
-pip install -e . --no-deps 
+pip install -e . --no-deps
 #1442003666
 cd -
 #1442003669
@@ -11768,7 +11768,7 @@ git pull
 #1442248724
 git status
 #1442248730
-./update-git.sh 
+./update-git.sh
 #1442249205
 cd ../wargaming-integration-testing/
 #1442249211
@@ -11786,31 +11786,31 @@ git status
 #1442346898
 git pull
 #1442346944
-git checkout master 
+git checkout master
 #1442346947
 git pull
 #1442346971
 git pull --all --prune
 #1442346983
-git branch 
+git branch
 #1442346993
-git branch -D marcel-planning-schema-cleanup 
+git branch -D marcel-planning-schema-cleanup
 #1442346996
-git branch 
+git branch
 #1442346999
 cd ..
 #1442347002
 cd px-avro/
 #1442347010
-git checkout master 
+git checkout master
 #1442347012
 git pull
 #1442347031
 git pull --all --prune
 #1442347042
-git branch 
+git branch
 #1442347052
-git branch -D marcel-planning-schema-cleanup 
+git branch -D marcel-planning-schema-cleanup
 #1442347055
 git status
 #1442347059
@@ -11828,7 +11828,7 @@ git status
 #1442347091
 git pull
 #1442347098
-./update-git.sh 
+./update-git.sh
 #1442347445
 cd ..
 #1442347465
@@ -11836,7 +11836,7 @@ cd planning-wargaming-integration/integration-tests/
 #1442347466
 ls
 #1442347479
-pxlaunch pull planning-wargaming-integration.hcl 
+pxlaunch pull planning-wargaming-integration.hcl
 #1442347798
 boot2docker init
 #1442347804
@@ -11844,7 +11844,7 @@ boot2docker boot
 #1442347907
 eval "$(boot2docker shellinit)"
 #1442347913
-pxlaunch pull planning-wargaming-integration.hcl 
+pxlaunch pull planning-wargaming-integration.hcl
 #1442351222
 cd ../../pxplanner/integration-tests/
 #1442351223
@@ -11862,11 +11862,11 @@ cd config/
 #1442352716
 ls
 #1442352724
-more px-luna-seed-spiral-6-coas.cfg 
+more px-luna-seed-spiral-6-coas.cfg
 #1442352735
 cd ..
 #1442351231
-pxlaunch pull cluster.hcl 
+pxlaunch pull cluster.hcl
 #1442352757
 ./build_single.sh config/px-luna-seed-spiral-6-coas.cfg latest
 #1442352888
@@ -11882,7 +11882,7 @@ cd config/
 #1442353034
 ls
 #1442353038
-more seedmix.sh 
+more seedmix.sh
 #1442353076
 cd ..
 #1442353088
@@ -11906,9 +11906,9 @@ cd planconstruction-pxavro/
 #1442443990
 git pull
 #1442444006
-git checkout master 
+git checkout master
 #1442444013
-git pull origin master 
+git pull origin master
 #1442444021
 cd ..
 #1442444026
@@ -11962,7 +11962,7 @@ git branch
 #1442444197
 cd ../px-luna/
 #1442444200
-git branch 
+git branch
 #1442444201
 ls
 #1442444203
@@ -11988,7 +11988,7 @@ cd marcel-utils/
 #1442444288
 git pull
 #1442444293
-./update-git.sh 
+./update-git.sh
 #1442444597
 boot2docker ssh "sudo udhcpc"
 #1442444978
@@ -12002,9 +12002,9 @@ cd wargaming-integration-testing/
 #1442445292
 cd px-avro/
 #1442445297
-./build/build.sh 
+./build/build.sh
 #1442445398
-git pull origin master 
+git pull origin master
 #1442445405
 cd ..
 #1442445408
@@ -12012,9 +12012,9 @@ cd px-luna/
 #1442445420
 ./build/build.sh --avro ../px-avro -DskipDeb=false -DskipTests=true
 #1442445487
-./build/build_docker.sh 
+./build/build_docker.sh
 #1442444601
-pxlaunch pull cluster.hcl 
+pxlaunch pull cluster.hcl
 #1442603531
 cd ../..
 #1442603536
@@ -12026,9 +12026,9 @@ cd px-avro/
 #1442603541
 ls
 #1442603545
-git branch 
+git branch
 #1442603557
-./build/build.sh 
+./build/build.sh
 #1442603650
 cd ../px-luna/
 #1442603673
@@ -12042,13 +12042,13 @@ cd ../px-avro/
 #1442604097
 git log
 #1442963600
-git branch 
+git branch
 #1442963626
 cd ../px-avro/
 #1442963731
 git checkout mas
 #1442963735
-git checkout master 
+git checkout master
 #1442963742
 git remote -v
 #1442963750
@@ -12056,7 +12056,7 @@ git status
 #1442963773
 git checkout -b marcel-rename-plan-request
 #1442964307
-./build/build.sh 
+./build/build.sh
 #1442964414
 cd ../px-luna/
 #1442964431
@@ -12072,9 +12072,9 @@ cd px-avro/
 #1443023659
 git pull --all --prune
 #1443024921
-git pull origin master 
+git pull origin master
 #1443024939
-./build/build.sh 
+./build/build.sh
 #1443025252
 cd ../px-luna/
 #1443025271
@@ -12084,23 +12084,23 @@ his
 #1443025344
 git pull --all --prune
 #1443025361
-git pull origin master 
+git pull origin master
 #1443025367
 ./build/build.sh --avro ../px-avro/ -DskipDeb=false
 #1443025400
-git checkout master 
+git checkout master
 #1443025407
 git remote
 #1443025418
-git pull core master 
+git pull core master
 #1443025432
 git status
 #1443025462
-git checkout marcel-rename-plan-request 
+git checkout marcel-rename-plan-request
 #1443025481
 git merge master --rebase
 #1443025503
-git merge master 
+git merge master
 #1443025735
 cd ../px-avro/
 #1443025743
@@ -12110,23 +12110,23 @@ git add src/main/avro/messaging/planning_server.avdl
 #1443025802
 git commit -m "Changed name of avro plansuggestion message to COAAutocompletion."
 #1443025813
-git checkout master 
+git checkout master
 #1443025821
-git pull origin master 
+git pull origin master
 #1443025831
-git pull core master 
+git pull core master
 #1443025852
 git status
 #1443025512
 ./build/build.sh --avro ../px-avro/ -DskipDeb=false
 #1443025990
-git checkout marcel-rename-plan-request 
+git checkout marcel-rename-plan-request
 #1443025996
 git merge master
 #1443026019
 cd ../px-avro/
 #1443026025
-./build/build.sh 
+./build/build.sh
 #1443026347
 git rebase master
 #1443026551
@@ -12138,31 +12138,31 @@ git status
 #1443026637
 git log
 #1443026370
-./build/build.sh 
+./build/build.sh
 #1443026668
-git checkout master 
+git checkout master
 #1443026705
-git checkout marcel-rename-plan-request 
+git checkout marcel-rename-plan-request
 #1443026918
 cd ../px-luna/
 #1443026921
 git status
 #1443026927
-git checkout master 
+git checkout master
 #1443026935
-git pull origin master 
+git pull origin master
 #1443026944
-git pull core master 
+git pull core master
 #1443026962
-git checkout marcel-rename-plan-request 
+git checkout marcel-rename-plan-request
 #1443026969
-git rebase master 
+git rebase master
 #1443026995
 cd ../planning-wargaming-integration/
 #1443026997
 ls
 #1443027012
-git checkout master 
+git checkout master
 #1443026723
 ./build/build.sh -DskipTest=true
 #1443027015
@@ -12170,9 +12170,9 @@ git pull
 #1443027028
 git pull --all --prune
 #1443027039
-git branch 
+git branch
 #1443027046
-git branch -D marcel-planning-schema-cleanup 
+git branch -D marcel-planning-schema-cleanup
 #1443027050
 git status
 #1443027081
@@ -12180,7 +12180,7 @@ git checkout -b marcel-rename-plan-request
 #1443027090
 ls
 #1443027113
-more setup.py 
+more setup.py
 #1443027170
 cd src
 #1443027170
@@ -12190,13 +12190,13 @@ cd planning-wargaming-integration/
 #1443027178
 ls
 #1443027186
-more services.py 
+more services.py
 #1443027193
-rm services.py dashboard.py 
+rm services.py dashboard.py
 #1443027194
 ls
 #1443027197
-more __init__.py 
+more __init__.py
 #1443027201
 cd ..
 #1443027201
@@ -12240,7 +12240,7 @@ cd px-avro/
 #1443027876
 pip install -e .
 #1443027893
-pip install -e . --no-deps 
+pip install -e . --no-deps
 #1443028122
 cd ../px-luna/
 #1443028265
@@ -12252,7 +12252,7 @@ cd pxplanner/
 #1443028289
 git pull
 #1443028298
-git checkout master 
+git checkout master
 #1443028307
 git pull --all --prune
 #1443042886
@@ -12266,21 +12266,21 @@ git status
 #1443042928
 git checkout master
 #1443042933
-git pull origin master 
+git pull origin master
 #1443042944
-git pull core master 
+git pull core master
 #1443042959
 git status
 #1443043016
-git checkout marcel-rename-plan-request 
+git checkout marcel-rename-plan-request
 #1443043066
 cd ../pxplanner/
 #1443043072
 cd tests/
 #1443043075
-./run_tests.sh 
+./run_tests.sh
 #1443043027
-./build/build.sh 
+./build/build.sh
 #1443043345
 cd ..
 #1443043358
@@ -12288,7 +12288,7 @@ cd planning-wargaming-integration/
 #1443043360
 ls
 #1443043372
-more planning-wargaming-integration.hcl 
+more planning-wargaming-integration.hcl
 #1443043561
 pwd
 #1443043568
@@ -12304,63 +12304,63 @@ cd ..
 #1443043706
 cd px-luna/
 #1443043759
-pxlaunch pull planning-wargaming-integration.hcl 
+pxlaunch pull planning-wargaming-integration.hcl
 #1443043869
 boot2docker boot
 #1443043876
 boot2docker init
 #1443043882
-pxlaunch pull planning-wargaming-integration.hcl 
+pxlaunch pull planning-wargaming-integration.hcl
 #1443044001
 boot2docker ssh "sudo udhcpc"
 #1443043724
 ./build/build.sh --avro ../px-avro -DskipDeb=false
 #1443044061
-./build/build_docker.sh 
+./build/build_docker.sh
 #1443044222
-git checkout master 
+git checkout master
 #1443044230
-git pull origin master 
+git pull origin master
 #1443044241
-git pull core master 
+git pull core master
 #1443044255
-git push origin master 
+git push origin master
 #1443044267
 git pull
 #1443044277
-git checkout marcel-rename-plan-request 
+git checkout marcel-rename-plan-request
 #1443044281
-git rebase master 
+git rebase master
 #1443044287
 cd ../px-avro/
 #1443044292
-git checkout master 
+git checkout master
 #1443044297
-git pull origin master 
+git pull origin master
 #1443044306
-git pull core master 
+git pull core master
 #1443044315
-git push origin master 
+git push origin master
 #1443044323
-git pull 
+git pull
 #1443044330
-git checkout marcel-rename-plan-request 
+git checkout marcel-rename-plan-request
 #1443044332
-git rebase 
+git rebase
 #1443044337
 git rebase master
 #1443044006
-pxlaunch pull planning-wargaming-integration.hcl 
+pxlaunch pull planning-wargaming-integration.hcl
 #1443046333
 cd ../px-luna/
 #1443046347
 docker images | grep luna
 #1443046376
-./build/build_docker.sh 
+./build/build_docker.sh
 #1443046393
 docker images | grep luna
 #1443046409
-./run_tests.sh 
+./run_tests.sh
 #1443046623
 docker logs PX-pxplanner
 #1443046629
@@ -12372,13 +12372,13 @@ cd pxplanner/
 #1443046809
 PYTHONPATH="./src:$PYTHONPATH" pxsvchost -m pxplanner.pxplanner --cluster PX
 #1443046802
-pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl 
+pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl
 #1443046896
-./run_tests.sh 
+./run_tests.sh
 #1443047050
 RUN_DEFAULT_CLUSTER="planning-wargaming-integration-no-pxplanner.hcl" pxintegrator --launch-name=PX -s
 #1443047107
-pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl 
+pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl
 #1443047132
 RUN_DEFAULT_CLUSTER="planning-wargaming-integration-no-pxplanner.hcl" pxintegrator --launch-name=PX -s
 #1443047336
@@ -12400,19 +12400,19 @@ cd ..
 #1443047356
 ls
 #1443047364
-more pxsvchost.log 
+more pxsvchost.log
 #1443047484
-pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl 
+pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl
 #1443047674
 RUN_DEFAULT_CLUSTER="planning-wargaming-integration-no-pxplanner.hcl" pxintegrator --launch-name=PX --docker-logs=logs --svchost wargaming_server.services -s
 #1443047737
-pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl 
+pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl
 #1443047776
 RUN_DEFAULT_CLUSTER="planning-wargaming-integration-no-pxplanner.hcl" pxintegrator --launch-name=PX --docker-logs=logs --svchost wargaming_server.services -s
 #1443047843
-pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl 
+pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl
 #1443047875
-./run_tests.sh 
+./run_tests.sh
 #1443047925
 cd
 #1443047933
@@ -12422,11 +12422,11 @@ cd wargaming-server/
 #1443047942
 git pull
 #1443048059
-pxlaunch run PX wargaming-testing.hcl 
+pxlaunch run PX wargaming-testing.hcl
 #1443048133
 pxlaunch destroy PX
 #1443048136
-pxlaunch run PX wargaming-testing.hcl 
+pxlaunch run PX wargaming-testing.hcl
 #1443048192
 pxsvchost -m wargaming_server.services --cluster PX --config wargaming_server.configs.cluster
 #1443048208
@@ -12540,43 +12540,43 @@ git pull
 #1443119455
 git pull
 #1443119488
-git branch 
+git branch
 #1443119531
 cd ../px-avro/
 #1443119536
 git pull
 #1443119554
-git checkout master 
+git checkout master
 #1443119560
-git pull origin master 
+git pull origin master
 #1443119573
-git pull core master 
+git pull core master
 #1443119585
 git status
 #1443119595
-git push origin master 
+git push origin master
 #1443119608
-git checkout marcel-rename-plan-request 
+git checkout marcel-rename-plan-request
 #1443119613
-git rebase master 
+git rebase master
 #1443119619
 cd ..
 #1443119622
 cd px-luna/
 #1443119628
-git checkout master 
+git checkout master
 #1443119633
-git pull origin master 
+git pull origin master
 #1443119644
-git pull core master 
+git pull core master
 #1443119657
 git status
 #1443119664
-git push origin master 
+git push origin master
 #1443119674
-git checkout marcel-rename-plan-request 
+git checkout marcel-rename-plan-request
 #1443119680
-git rebase master 
+git rebase master
 #1443119686
 git status
 #1443119690
@@ -12584,7 +12584,7 @@ cd ..
 #1443119695
 cd planning-wargaming-integration/
 #1443119703
-git pull origin master 
+git pull origin master
 #1443119726
 cd ..
 #1443119728
@@ -12608,9 +12608,9 @@ git status
 #1443119866
 git commit -m "Renamed PlanSuggestion message to COAAutocompletion. Changed sample planner coa id to COA_ST3."
 #1443119877
-git branch 
+git branch
 #1443119904
-git branch -d marcel-planning-schema-cleanup 
+git branch -d marcel-planning-schema-cleanup
 #1443119922
 cd tests/
 #1443119935
@@ -12618,7 +12618,7 @@ cd ../../px-avro/
 #1443120136
 his
 #1443119940
-./build/build.sh 
+./build/build.sh
 #1443120248
 pip install -e .
 #1443120255
@@ -12630,17 +12630,17 @@ ls
 #1443120333
 cd el-get/
 #1443120337
-git pull 
+git pull
 #1443120265
 ./build/build.sh --avro ../px-avro -DskipDeb=false
 #1443118317
-pxlaunch pull planning-wargaming-integration.hcl 
+pxlaunch pull planning-wargaming-integration.hcl
 #1443123895
 RUN_DEFAULT_CLUSTER="planning-wargaming-integration-no-pxplanner.hcl" pxintegrator --launch-name=PX --docker-logs=logs --svchost wargaming_server.services -s
 #1443123937
-./build/build_docker.sh 
+./build/build_docker.sh
 #1443123985
-pxlaunch run PX wargaming-testing.hcl 
+pxlaunch run PX wargaming-testing.hcl
 #1443124002
 cd ..
 #1443124005
@@ -12648,7 +12648,7 @@ cd pxplanner/
 #1443124044
 pxsvchost -m wargaming_server.services --cluster PX --config wargaming_server.configs.cluster
 #1443124242
-pip uninstall wargaming-server 
+pip uninstall wargaming-server
 #1443124091
 RUN_DEFAULT_CLUSTER="wargaming-testing.hcl" pxintegrator --launch-name=PX --docker-logs=logs --svchost wargaming_server.services -s
 #1443124271
@@ -12656,11 +12656,11 @@ PYTHONPATH="./src:$PYTHONPATH" pxsvchost -m wargaming_server.services --cluster 
 #1443124013
 PYTHONPATH="./src:$PYTHONPATH" pxsvchost -m pxplanner.pxplanner --cluster PX
 #1443124301
-pxlaunch run PX wargaming-testing.hcl 
+pxlaunch run PX wargaming-testing.hcl
 #1443124330
 RUN_DEFAULT_CLUSTER="wargaming-testing.hcl" pxintegrator --launch-name=PX --docker-logs=logs --svchost wargaming_server.services -s
 #1443124405
-pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl 
+pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl
 #1443124459
 pxintegrator --cluster PX --docker-logs=logs --svchost wargaming_server.services -s
 #1443124860
@@ -12672,15 +12672,15 @@ ls
 #1443124878
 cd unit_tests/
 #1443124880
-./run_tests.sh 
+./run_tests.sh
 #1443125015
-pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl 
+pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl
 #1443125034
 pxintegrator --cluster PX --docker-logs=logs --svchost wargaming_server.services -s
 #1443125136
 cd tests
 #1443125138
-./run_tests.sh 
+./run_tests.sh
 #1443125324
 cd ..
 #1443125329
@@ -12690,25 +12690,25 @@ cd planning-core-services/
 #1443125340
 cd tests/
 #1443125343
-./run_tests.sh 
+./run_tests.sh
 #1443125352
 git status
 #1443125118
 docker pull docker.px.ftw/pxsvchost/wargaming_server:latest
 #1443125535
-git checkout master 
+git checkout master
 #1443125541
 git pull
 #1443125548
-./run_tests.sh 
+./run_tests.sh
 #1443125560
-git branch 
+git branch
 #1443125569
-git branch -d marcel-planning-schema-cleanup 
+git branch -d marcel-planning-schema-cleanup
 #1443125579
 cd ..
 #1443125587
-pip install -e . 
+pip install -e .
 #1443125618
 git pull --all --prune
 #1443125633
@@ -12724,7 +12724,7 @@ pip install -e .
 #1443125680
 cd ../pxplanner/
 #1443125695
-pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl 
+pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl
 #1443125778
 pxintegrator --cluster PX --docker-logs=logs --svchost wargaming_server.services -s
 #1443125709
@@ -12732,7 +12732,7 @@ PYTHONPATH="./src:$PYTHONPATH" pxsvchost -m pxplanner.pxplanner --cluster PX
 #1443125823
 git status
 #1443125839
-git push -u origin marcel-rename-plan-request 
+git push -u origin marcel-rename-plan-request
 #1443125851
 cd ..
 #1443125858
@@ -12742,7 +12742,7 @@ git status
 #1443125875
 cd tests/
 #1443125877
-./run_tests.sh 
+./run_tests.sh
 #1443125881
 cd ..
 #1443125889
@@ -12752,13 +12752,13 @@ git status
 #1443125899
 cd tests/
 #1443125903
-./run_tests.sh 
+./run_tests.sh
 #1443125997
-more run_tests.sh 
+more run_tests.sh
 #1443126019
 py.test
 #1443126071
-py.test test_pxplanner.py 
+py.test test_pxplanner.py
 #1443126748
 git status
 #1443126756
@@ -12766,7 +12766,7 @@ git add test_pxplanner.py
 #1443126776
 git commit -m "Fixed test to use new COAAutocompletion request format."
 #1443126785
-git push -u origin marcel-rename-plan-request 
+git push -u origin marcel-rename-plan-request
 #1443126799
 cd ..
 #1443126816
@@ -12774,7 +12774,7 @@ cd test
 #1443126819
 cd tests
 #1443126821
-./run_tests.sh 
+./run_tests.sh
 #1443126841
 grep missionspec_id *
 #1443126951
@@ -12784,15 +12784,15 @@ cd px-luna/
 #1443126959
 git status
 #1443126969
-git diff marcel-rename-plan-request master 
+git diff marcel-rename-plan-request master
 #1443126974
-git checkout master 
+git checkout master
 #1443126979
-git branch 
+git branch
 #1443126985
-git diff master marcel-rename-plan-request 
+git diff master marcel-rename-plan-request
 #1443126994
-git branch -d marcel-rename-plan-request 
+git branch -d marcel-rename-plan-request
 #1443126997
 cd ..
 #1443127000
@@ -12802,15 +12802,15 @@ git status
 #1443127013
 git pull
 #1443127032
-git push -u origin marcel-rename-plan-request 
+git push -u origin marcel-rename-plan-request
 #1443127043
-git checkout master 
+git checkout master
 #1443127046
 git pull
 #1443127054
-git pull core master 
+git pull core master
 #1443127064
-git checkout marcel-rename-plan-request 
+git checkout marcel-rename-plan-request
 #1443127093
 git status
 #1443127149
@@ -12828,13 +12828,13 @@ git status
 #1443127242
 git checkout -m "Changed name of plan suggestion request message to COAAutocompletion. Removed source code for component since it is not used."
 #1443127252
-git push -u origin marcel-rename-plan-request 
+git push -u origin marcel-rename-plan-request
 #1443127072
-./build/build.sh 
+./build/build.sh
 #1443127528
-pip uninstall pxavro . 
+pip uninstall pxavro .
 #1443127536
-pip uninstall pxavro 
+pip uninstall pxavro
 #1443127544
 pip install -e .
 #1443127550
@@ -12846,7 +12846,7 @@ cd px-luna/
 #1443127563
 ./build/build.sh --avro ../px-avro -DskipDeb=false
 #1443128009
-./build/build_docker.sh 
+./build/build_docker.sh
 #1443128234
 cd ..
 #1443128235
@@ -12856,15 +12856,15 @@ cd planning-wargaming-integration/integration-tests/
 #1443128287
 cd ..
 #1443128256
-./run_tests.sh 
+./run_tests.sh
 #1443128292
 PYTHONPATH="./src:$PYTHONPATH" pxsvchost -m pxplanner.pxplanner --cluster PX
 #1443128355
-pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl 
+pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl
 #1443128440
 RUN_DEFAULT_CLUSTER="planning-wargaming-integration-no-pxplanner.hcl" pxintegrator --launch-name=PX --docker-logs=logs --svchost wargaming_server.services -s
 #1443128671
-pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl 
+pxlaunch run PX planning-wargaming-integration-no-pxplanner.hcl
 #1443128704
 RUN_DEFAULT_CLUSTER="planning-wargaming-integration-no-pxplanner.hcl" pxintegrator --launch-name=PX --docker-logs=logs --svchost wargaming_server.services -s
 #1443129222
@@ -12872,15 +12872,15 @@ git status
 #1443129247
 git commit -m "Changed name of avro plansuggestion message to COAAutocompletion."
 #1443129258
-git push origin marcel-rename-plan-request 
+git push origin marcel-rename-plan-request
 #1443129336
-git rebase master 
+git rebase master
 #1443129345
-git pull origin master 
+git pull origin master
 #1443129368
 cd ..
 #1443129372
-more requirements.txt 
+more requirements.txt
 #1443129410
 git add requirements.txt
 #1443129423
@@ -12898,7 +12898,7 @@ git rebase --continue
 #1443129501
 git status
 #1443129522
-git pull origin master 
+git pull origin master
 #1443129533
 git status
 #1443129551
@@ -12906,7 +12906,7 @@ git add requirements.txt
 #1443129564
 git commit -m "Fixed merge conflicts."
 #1443129582
-git push -u origin marcel-rename-plan-request 
+git push -u origin marcel-rename-plan-request
 #1443129601
 git pull
 #1443129634
@@ -12916,15 +12916,15 @@ git commit -m "Fixed conflicts."
 #1443129652
 git status
 #1443129663
-git pull origin marcel-rename-plan-request 
+git pull origin marcel-rename-plan-request
 #1443129677
-git push -u origin marcel-rename-plan-request 
+git push -u origin marcel-rename-plan-request
 #1443196709
 cd ..
 #1443196717
 cd px-avro/
 #1443196725
-git pull origin master 
+git pull origin master
 #1443196747
 cd ..
 #1443196757
@@ -12934,41 +12934,41 @@ cd px-avro/
 #1443196762
 git pull
 #1443196771
-git checkout master 
+git checkout master
 #1443196777
-git pull origin master 
+git pull origin master
 #1443196785
-git pull core master 
+git pull core master
 #1443196839
-git push origin master 
+git push origin master
 #1443196857
 git pull
 #1443196865
 cd ../px-luna/
 #1443196869
-git pull origin master 
+git pull origin master
 #1443196879
-git pull core master 
+git pull core master
 #1443196899
-git push origin master 
+git push origin master
 #1443196909
 cd ../px-luna/
 #1443196925
 cd ../px-avro/
 #1443196930
-git checkout marcel-rename-plan-request 
+git checkout marcel-rename-plan-request
 #1443196935
-git pull origin master 
+git pull origin master
 #1443196960
 git status
 #1443197239
-git push origin marcel-rename-plan-request 
+git push origin marcel-rename-plan-request
 #1443197428
-git checkout master 
+git checkout master
 #1443197433
-git pull 
+git pull
 #1443197261
-./build/build.sh 
+./build/build.sh
 #1443199941
 cd ../px-luna/
 #1443199949
@@ -12978,15 +12978,15 @@ cd ..
 #1443203715
 cd px-avro/
 #1443203719
-git branch 
+git branch
 #1443203730
 git pull --all --prunt
 #1443203732
 git pull --all --prune
 #1443203773
-git branch 
+git branch
 #1443203791
-git checkout data-references-edgy 
+git checkout data-references-edgy
 #1443203794
 git pull
 #1443205904
@@ -13000,7 +13000,7 @@ cd px-luna/
 #1443206402
 cd ../px-avro/
 #1443206412
-./build/build.sh 
+./build/build.sh
 #1443206732
 cd ../px-luna/
 #1443206740
@@ -13008,83 +13008,83 @@ cd ../px-luna/
 #1443206766
 cd ../px-avro/
 #1443206775
-git pull origin master 
+git pull origin master
 #1443206950
 git pull
 #1443206970
-git checkout marcel-rename-plan-request 
+git checkout marcel-rename-plan-request
 #1443206975
 git pull
 #1443206995
 cd tests/
 #1443206998
-./run_tests.sh 
+./run_tests.sh
 #1443207036
-git pull origin master 
+git pull origin master
 #1443207091
 git checkout master
 #1443207095
-./run_tests.sh 
+./run_tests.sh
 #1443206794
-./build/build.sh 
+./build/build.sh
 #1443207162
 git branch --all
 #1443207248
 cd ..
 #1443207269
-git checkout marcel-rename-plan-request 
+git checkout marcel-rename-plan-request
 #1443207288
-git pull origin master 
+git pull origin master
 #1443207310
-git checkout master 
+git checkout master
 #1443207325
 git pull --all --prune
 #1443207339
-git branch 
+git branch
 #1443207350
-git branch -D marcel-rename-plan-request 
+git branch -D marcel-rename-plan-request
 #1443207355
 git status
 #1443207366
 git describe
 #1443207376
-git pull origin master 
+git pull origin master
 #1443207404
-git checkout data-references-edgy 
+git checkout data-references-edgy
 #1443207413
-git pull origin master 
+git pull origin master
 #1443207423
-git describe 
+git describe
 #1443207435
 git status
 #1443207442
-./build/build.sh 
+./build/build.sh
 #1443207681
 git describe
 #1443207683
 ls
 #1443207690
-more pom.xml 
+more pom.xml
 #1443207699
 ls
 #1443207710
-./clean.sh 
+./clean.sh
 #1443207718
 ls
 #1443207734
-pip uninstall pxavro 
+pip uninstall pxavro
 #1443207743
-./build/build.sh 
+./build/build.sh
 #1443207761
 ls
 #1443207783
 python setup.py --version
 #1443207788
-./build/build.sh 
+./build/build.sh
 #1443207805
-git checkout master 
+git checkout master
 #1443207808
-./build/build.sh 
+./build/build.sh
 #1443207832
 grep 999 ./
 #1443207843
@@ -13100,7 +13100,7 @@ cd ../px-luna/
 #1443208190
 git pull
 #1443208197
-git pull core master 
+git pull core master
 #1443208210
 git status
 #1443208241
@@ -13116,7 +13116,7 @@ ls
 #1443208474
 git pull core master
 #1443208499
-./build/build.sh 
+./build/build.sh
 #1443210618
 ls
 #1443210623
@@ -13132,13 +13132,13 @@ cd px-luna/
 #1443210648
 ./build/build.sh --avro ../px-avro -DskipDeb=false
 #1443210938
-./build/build_docker.sh 
+./build/build_docker.sh
 #1443210956
 cd ..
 #1443210959
 cd px-avro/
 #1443210972
-pip install -e . --no-deps 
+pip install -e . --no-deps
 #1443210978
 cd ..
 #1443210985
@@ -13148,51 +13148,51 @@ cd test
 #1443210995
 cd tests
 #1443210997
-./run_tests.sh 
+./run_tests.sh
 #1443211024
-git checkout marcel-rename-plan-request 
+git checkout marcel-rename-plan-request
 #1443211052
-git push -u origin marcel-rename-plan-request 
+git push -u origin marcel-rename-plan-request
 #1443211066
-./run_tests.sh 
+./run_tests.sh
 #1443211119
 cd ../..
 #1443211124
 cd px-avro/
 #1443211145
-git branch 
+git branch
 #1443211154
-git checkout data-references-edgy 
+git checkout data-references-edgy
 #1443211164
-git pull origin master 
+git pull origin master
 #1443211178
-./build/build.sh 
+./build/build.sh
 #1443212281
 cd ../px-luna/
 #1443212290
 ./build/build.sh --avro ../px-avro -DskipDeb=false
 #1443212577
-./build/build_docker.sh 
+./build/build_docker.sh
 #1443212597
 cd ../px-avro/
 #1443212608
-pip install -e . --no-deps 
+pip install -e . --no-deps
 #1443212618
 cd test
 #1443212621
 cd tests
 #1443212623
-./run_tests.sh 
+./run_tests.sh
 #1443212662
-git pull origin master 
+git pull origin master
 #1443212673
-git checkout master 
+git checkout master
 #1443212685
-git push origin master 
+git push origin master
 #1443212709
-git checkout data-references-edgy 
+git checkout data-references-edgy
 #1443212718
-git pull origin master 
+git pull origin master
 #1443212755
 ./build/build.sh -DskipTests=true
 #1443213115
@@ -13200,19 +13200,19 @@ cd ../px-luna/
 #1443213142
 ./build/build.sh --avro ../px-avro -DskipDeb=false -DskipTests=true
 #1443213222
-git pull origin master 
+git pull origin master
 #1443213269
 gitt diff master..marcel-rename-plan-request
 #1443213278
 git diff master..marcel-rename-plan-request
 #1443213313
-git checkout master 
+git checkout master
 #1443213316
-./run_tests.sh 
+./run_tests.sh
 #1443213820
 cd ../px-avro/
 #1443213825
-git checkout master 
+git checkout master
 #1443213830
 git pull
 #1443214273
@@ -13220,25 +13220,25 @@ git pull
 #1443214409
 ./build/build.sh
 #1443214849
-pip install -e . --no-deps 
+pip install -e . --no-deps
 #1443214864
 cd ../px-luna/
 #1443215035
-git checkout marcel-rename-plan-request 
+git checkout marcel-rename-plan-request
 #1443215039
 git pull
 #1443215050
-./run_tests.sh 
+./run_tests.sh
 #1443214879
-./build/build.sh --avro ../px-avro -DskipDeb=false 
+./build/build.sh --avro ../px-avro -DskipDeb=false
 #1443215168
 git status
 #1443215173
 git pull
 #1443215183
-git pull core master 
+git pull core master
 #1443215202
-git push origin master 
+git push origin master
 #1443215217
 cd ..
 #1443215221
@@ -13246,7 +13246,7 @@ cd px-avro/
 #1443215224
 git status
 #1443215230
-git pull origin master 
+git pull origin master
 #1443215243
 git status
 #1443215255
@@ -13254,37 +13254,37 @@ git add src/main/avro/messaging/planning_server.avdl
 #1443215284
 git commit -m "Added @edgerange comments for foreign key fields."
 #1443215293
-git push origin master 
+git push origin master
 #1443215391
-git checkout data-references-edgy 
+git checkout data-references-edgy
 #1443215401
-git pull origin master 
+git pull origin master
 #1443215447
 ./build/build.sh -DskipTests=true
 #1443215815
 pip install -e .
 #1443215934
-git push origin marcel-rename-plan-request 
+git push origin marcel-rename-plan-request
 #1443215954
 git status
 #1443216528
 git status
 #1443216543
-git add ../src/pxplanner/engines/action_engine.py 
+git add ../src/pxplanner/engines/action_engine.py
 #1443216574
 git commit -m "Removed import of effect parameters."
 #1443216576
 git status
 #1443216582
-git push origin marcel-rename-plan-request 
+git push origin marcel-rename-plan-request
 #1443216601
-./run_tests.sh 
+./run_tests.sh
 #1443219686
-git checkout master 
+git checkout master
 #1443219694
-git pull core master 
+git pull core master
 #1443219718
-git push origin master 
+git push origin master
 #1443219732
 cd ..
 #1443219734
@@ -13292,17 +13292,17 @@ cd pxplanner/
 #1443219740
 git status
 #1443219749
-git pull origin master 
+git pull origin master
 #1443219755
 git status
 #1443219865
-git checkout master 
+git checkout master
 #1443219868
 git pull
 #1443219885
 cd tests/
 #1443219887
-./run_tests.sh 
+./run_tests.sh
 #1443219900
 cd ..
 #1443219911
@@ -13310,11 +13310,11 @@ cd planning-wargaming-integration/
 #1443219914
 git status
 #1443219924
-git pull origin master 
+git pull origin master
 #1443219930
 git status
 #1443220004
-git checkout master 
+git checkout master
 #1443220007
 git pull
 #1443466569
@@ -13326,13 +13326,13 @@ cd planware
 #1443466606
 git status
 #1443466620
-more Instructions.txt 
+more Instructions.txt
 #1443466628
 git pull
 #1443466641
 git status
 #1443466652
-more Instructions.txt 
+more Instructions.txt
 #1443466660
 ls
 #1443466675
@@ -13342,7 +13342,7 @@ git add Instructions.txt
 #1443466698
 git commit -m "Added instructions file to run vm. "
 #1443466705
-git push origin master 
+git push origin master
 #1443466708
 cd ..
 #1443466709
@@ -13402,23 +13402,23 @@ cd .settings/
 #1443481603
 ls
 #1443481606
-more org.eclipse.jdt.core.prefs 
+more org.eclipse.jdt.core.prefs
 #1443481628
 cd ..
 #1443481631
-cd .project 
+cd .project
 #1443481631
 ls
 #1443481637
-cd .project 
+cd .project
 #1443481641
-more .project 
+more .project
 #1443481647
 ls
 #1443481650
 ls -al
 #1443481662
-more .classpath 
+more .classpath
 #1443481689
 cd components/core/
 #1443481689
@@ -13428,7 +13428,7 @@ cd test/
 #1443481695
 ls
 #1443481699
-more build.xml 
+more build.xml
 #1443481724
 cd ..
 #1443481727
@@ -13468,11 +13468,11 @@ cd src/plan-construction/wargaming-integration-testing/
 #1443560416
 cd px-avro/
 #1443560421
-git pull origin master 
+git pull origin master
 #1443560434
 cd ../px-luna/
 #1443560437
-git pull origin master 
+git pull origin master
 #1443560447
 cd ..
 #1443560451
@@ -13492,11 +13492,11 @@ cd test
 #1443560521
 cd tests
 #1443560523
-./run_tests.sh 
+./run_tests.sh
 #1443560543
 pip install coverage
 #1443560556
-more ../testing-requirements.txt 
+more ../testing-requirements.txt
 #1443560569
 pip uninstall pxavro
 #1443560593
@@ -13504,11 +13504,11 @@ source ../../PythonEnv/marcel-planning-schema-cleanup-env/bin/activate
 #1443560600
 pip install -U pxavro
 #1443560641
-./run_tests.sh 
+./run_tests.sh
 #1443560872
 git pull
 #1443560881
-./run_tests.sh 
+./run_tests.sh
 #1443560967
 cd src/my-vagrant-development/
 #1443560971
@@ -13540,7 +13540,7 @@ ls
 #1443565420
 rm *.pyc
 #1443634058
-pip 
+pip
 #1443634062
 git pull
 #1443634083
@@ -13556,11 +13556,11 @@ cd ../..
 #1443634307
 cd tests/
 #1443634310
-./run_tests.sh 
+./run_tests.sh
 #1443634326
 rm -r __pycache__/
 #1443634328
-./run_tests.sh 
+./run_tests.sh
 #1443634398
 git status
 #1443634412
@@ -13586,45 +13586,45 @@ git status
 #1443634559
 git commit -m "Small change to fix tests."
 #1443634594
-git push origin data-references 
+git push origin data-references
 #1443634610
 pip uninstall pxcl
 #1443634618
-./run_tests.sh 
+./run_tests.sh
 #1443634827
 git pull
 #1443634888
 git status
 #1443634893
-./run_tests.sh 
+./run_tests.sh
 #1443635018
 git status
 #1443635030
-git push origin data-references 
+git push origin data-references
 #1443635036
 git pull
 #1443635112
-more ~/.gitconfig 
+more ~/.gitconfig
 #1443635245
-git checkout master 
+git checkout master
 #1443635258
 git pull --all --prune
 #1443635294
 cd ..
 #1443635296
-more requirements.txt 
+more requirements.txt
 #1443635307
 git checkout -- requirements.txt
 #1443635312
-git pull origin master 
+git pull origin master
 #1443635321
 git pull --all --prune
 #1443635329
-git branch 
+git branch
 #1443635381
-git branch -D marcel-rename-plan-request data-references 
+git branch -D marcel-rename-plan-request data-references
 #1443635387
-git pull origin master 
+git pull origin master
 #1444422860
 brew doctor
 #1444422877
@@ -13644,21 +13644,21 @@ ant
 #1444436111
 git status
 #1444436131
-more .gitignore 
+more .gitignore
 #1444436139
 ls
 #1444436161
-more runGrid.csh 
+more runGrid.csh
 #1444436174
 ls
 #1444436177
-builtin 
+builtin
 #1444436178
 ant
 #1444436340
 ant test
 #1444676624
-cd 
+cd
 #1444676628
 cd Dropbox/.emacs.d
 #1444676629
@@ -13718,13 +13718,13 @@ cd px-controller-msc/
 #1444687226
 ls
 #1444687230
-more requirements.txt 
+more requirements.txt
 #1444687253
 ls
 #1444687255
-more setup.py 
+more setup.py
 #1444687045
-./update-git.sh 
+./update-git.sh
 #1444687295
 ls
 #1444687299
@@ -13754,27 +13754,27 @@ ls
 #1444687270
 pip install -U pxcontrollermsc
 #1444687446
-pxlaunch pull steel-thread.hcl 
+pxlaunch pull steel-thread.hcl
 #1444687510
-more steel-thread.hcl 
+more steel-thread.hcl
 #1444687530
-pxlaunch pull steel-thread.hcl 
+pxlaunch pull steel-thread.hcl
 #1444687558
 boot2docker boot
 #1444687605
 boot2docker shellinit
 #1444687613
-pxlaunch pull steel-thread.hcl 
+pxlaunch pull steel-thread.hcl
 #1444687630
-pxlaunch pull local-msc.hcl 
+pxlaunch pull local-msc.hcl
 #1444687650
 `eval "$(boot2docker shellinit)"`
 #1444687654
-pxlaunch pull local-msc.hcl 
+pxlaunch pull local-msc.hcl
 #1444687665
 boot2docker ssh "sudo udhcpc"
 #1444687669
-pxlaunch pull local-msc.hcl 
+pxlaunch pull local-msc.hcl
 #1444687693
 boot2docker boot
 #1444687705
@@ -13784,7 +13784,7 @@ eval "$(boot2docker shellinit)"
 #1444687721
 boot2docker shellinit
 #1444687733
-pxlaunch pull local-msc.hcl 
+pxlaunch pull local-msc.hcl
 #1444687745
 pip install pxrancher -U
 #1444687795
@@ -13874,9 +13874,9 @@ brew upgrade
 #1444688475
 brew update
 #1444687830
-pxlaunch pull local-msc.hcl 
+pxlaunch pull local-msc.hcl
 #1444690594
-pxlaunch pull steel-thread.hcl 
+pxlaunch pull steel-thread.hcl
 #1444692044
 cd ..
 #1444692048
@@ -13884,7 +13884,7 @@ cd ../..
 #1444692053
 cd planconstruction-pxluna-data-builder/
 #1444692058
-git checkout marcel-implement-coa-m7 
+git checkout marcel-implement-coa-m7
 #1444692062
 git pull
 #1444692094
@@ -13898,7 +13898,7 @@ git checkout master
 #1444692466
 git pull
 #1444692483
-git checkout marcel-implement-coa-m7 
+git checkout marcel-implement-coa-m7
 #1444692508
 pip install -U pxavro pxluna-client
 #1444692568
@@ -13932,7 +13932,7 @@ git pull
 #1444845776
 ls
 #1444845788
-more epy-bindings.el 
+more epy-bindings.el
 #1444846143
 cd ..
 #1444846151
@@ -14040,7 +14040,7 @@ more recentf-mb-macbook
 #1444931965
 ls
 #1444931976
-more recentf-mb-macbook.kestrel.edu 
+more recentf-mb-macbook.kestrel.edu
 #1444931988
 ls -al recentf*
 #1444931995
@@ -14070,7 +14070,7 @@ cd ..
 #1444938858
 ls
 #1444938867
-rm projectile-bookmarks.eld 
+rm projectile-bookmarks.eld
 #1444938879
 cd el-get/
 #1444938879
@@ -14086,7 +14086,7 @@ ls
 #1444939546
 grep projectile *
 #1444939571
-grep -r projectile 
+grep -r projectile
 #1444939576
 grep -r projectile *
 #1444939648
@@ -14130,7 +14130,7 @@ cd ELPA/
 #1444940849
 ls
 #1444940852
-more archive-contents 
+more archive-contents
 #1444940860
 ls
 #1444940877
@@ -14142,7 +14142,7 @@ cd melpa/
 #1444940882
 ls
 #1444940886
-more archive-contents 
+more archive-contents
 #1444940896
 ls
 #1444940899
@@ -14152,7 +14152,7 @@ cd marmalade/
 #1444940901
 ls
 #1444940904
-more archive-contents 
+more archive-contents
 #1444941076
 cd ../..
 #1444941077
@@ -14216,11 +14216,11 @@ rm session.10*
 #1444942430
 ls
 #1444942451
-rm tabbar-extension.el 
+rm tabbar-extension.el
 #1444942452
 ls
 #1444942456
-more template.py 
+more template.py
 #1444942459
 cd ..
 #1444942460
@@ -14230,7 +14230,7 @@ cd .emacs.d
 #1444942467
 ls
 #1444942475
-more get-icicles.sh 
+more get-icicles.sh
 #1444942900
 cp get-icicles.sh icicles
 #1444942901
@@ -14262,7 +14262,7 @@ rm *
 #1444943313
 cd ..
 #1444943317
-./get-icicles.sh 
+./get-icicles.sh
 #1444943462
 ls
 #1444943466
@@ -14302,7 +14302,7 @@ rm -rf icicles
 #1444943682
 ls
 #1444943685
-rm get-icicles.sh 
+rm get-icicles.sh
 #1444943686
 ls
 #1444943687
@@ -14310,17 +14310,17 @@ cd ..
 #1444943718
 ls
 #1444943752
-cd ~/.emacs.d/.recentf 
+cd ~/.emacs.d/.recentf
 #1444943758
-more  ~/.emacs.d/.recentf 
+more  ~/.emacs.d/.recentf
 #1444943770
 ls
 #1444943777
-more recentf-mb-macbook 
+more recentf-mb-macbook
 #1444943786
-more .recentf 
+more .recentf
 #1444943804
-rm .recentf 
+rm .recentf
 #1444943805
 ls
 #1444943841
@@ -14328,7 +14328,7 @@ rm ac-comphist*
 #1444943842
 ls
 #1444943850
-more anything-config.el 
+more anything-config.el
 #1444943870
 ls
 #1444943882
@@ -14338,15 +14338,15 @@ ls
 #1444943884
 ls -al
 #1444943894
-rm .recentf 
+rm .recentf
 #1444943895
 ls
 #1444943901
-more init.el 
+more init.el
 #1444943903
 ls
 #1444943916
-rm projectile-bookmarks.eld 
+rm projectile-bookmarks.eld
 #1444943918
 cd anaconda-mode/
 #1444943919
@@ -14356,7 +14356,7 @@ cd 0.1.1/
 #1444943921
 ls
 #1444943932
-cd .. 
+cd ..
 #1444943933
 ls
 #1444943936
@@ -14392,9 +14392,9 @@ ls
 #1444943981
 ls -al
 #1444943998
-more ac-comphist.dat 
+more ac-comphist.dat
 #1444944002
-rm ac-comphist.dat 
+rm ac-comphist.dat
 #1444944002
 ls
 #1444944005
@@ -14432,11 +14432,11 @@ rm -rg ido.last places.txt SessionDesktop.el abbrev_defs auto-save-list/
 #1444944075
 ls
 #1444944083
-more SessionDesktop.el 
+more SessionDesktop.el
 #1444944095
 ls
 #1444944106
-more abbrev_defs 
+more abbrev_defs
 #1444944119
 ls
 #1444944124
@@ -14444,13 +14444,13 @@ rm -rf auto-save-list/
 #1444944124
 ls
 #1444944132
-rm -rf ido.last 
+rm -rf ido.last
 #1444944134
 ls
 #1444944137
-more places.txt 
+more places.txt
 #1444944148
-rm places.txt 
+rm places.txt
 #1444944149
 ls
 #1444944153
@@ -14470,19 +14470,19 @@ cd Dropbox/.emacs.d
 #1444944211
 ls
 #1444944217
-more recentf-mb-macbook 
+more recentf-mb-macbook
 #1444944227
 ls
 #1444944234
-rm recentf-mb-macbook 
+rm recentf-mb-macbook
 #1444944342
 ls
 #1444944391
-more savehistory-mb-macbook 
+more savehistory-mb-macbook
 #1444945111
 ls
 #1444945116
-more recentf-mb-macbook 
+more recentf-mb-macbook
 #1444945126
 cp recentf-mb-macbook recentf
 #1444946345
@@ -14492,7 +14492,7 @@ cd icicles
 #1444947059
 ls
 #1444947062
-more palette.el 
+more palette.el
 #1444947069
 rm *
 #1444947070
@@ -14510,7 +14510,7 @@ cd icicles/
 #1444947308
 ls
 #1444947310
-more col-highlight.el 
+more col-highlight.el
 #1444947963
 ls
 #1444947965
@@ -14520,7 +14520,7 @@ rm -rf icicles/
 #1444947977
 cd Dropbox/.emacs.d
 #1444947979
-./get-icicles.sh 
+./get-icicles.sh
 #1444948142
 ls
 #1444948146
@@ -14546,7 +14546,7 @@ rm *.el.1
 #1444971381
 ls
 #1444971480
-more info+.el 
+more info+.el
 #1444971577
 wget -nd -P . http://www.emacswiki.org/wiki/download/fuzzy.el
 #1444971588
@@ -14554,53 +14554,53 @@ more fuzzy.el
 #1444971749
 grep fuzzy *.el
 #1444972402
-rm ffap.el 
+rm ffap.el
 #1444972409
 rm fuzzy.el
 #1444972437
-more apropos.el 
+more apropos.el
 #1444972442
-rm apropos.el 
+rm apropos.el
 #1444972443
 ls
 #1444972445
 ls -al
 #1444972482
-rm fuzzy.el.1 image-dired.el image-file.el info.el kmacro.el 
+rm fuzzy.el.1 image-dired.el image-file.el info.el kmacro.el
 #1444972483
 ls
 #1444972484
 ls -al
 #1444972496
-rm wid-edit.el widget.el 
+rm wid-edit.el widget.el
 #1444972498
 ls -al
 #1444972548
-rm thingatpt.el ring.el pp.el regexp-opt.el menu-bar.el dired.el dired-x.el 
+rm thingatpt.el ring.el pp.el regexp-opt.el menu-bar.el dired.el dired-x.el
 #1444972551
 ls -al
 #1444972565
-rm package.el mwheel.el 
+rm package.el mwheel.el
 #1444972591
-rm cus-face.el cus-load.el cus-start.el cus-theme.el dired-aux.el 
+rm cus-face.el cus-load.el cus-start.el cus-theme.el dired-aux.el
 #1444972593
 ls -al
 #1444972617
-rm cus-edit.el cl.el bookmark.el easymenu.el 
+rm cus-edit.el cl.el bookmark.el easymenu.el
 #1444972704
 cd ..
 #1444972705
 ls
 #1444972712
-more helm-init.el 
+more helm-init.el
 #1445018110
 cd Dropbox/.emacs.d/icicles
 #1445018110
 ls
 #1445018120
-more autofit-frame.el 
+more autofit-frame.el
 #1445019300
-/Applications/Emacs.app/Contents/MacOS/Emacs 
+/Applications/Emacs.app/Contents/MacOS/Emacs
 #1445038130
 ps -aux
 #1445038134
@@ -14616,7 +14616,7 @@ cd ..
 #1445275132
 ls
 #1445275146
-git clone git@github.com:syl20bnr/spacemacs.git 
+git clone git@github.com:syl20bnr/spacemacs.git
 #1445276454
 pwd
 #1445276469
@@ -14704,7 +14704,7 @@ cd ,,
 #1445314573
 cd ..
 #1445314586
-grep -r popwin 
+grep -r popwin
 #1445314592
 grep -r popwin *
 #1445315510
@@ -14724,7 +14724,7 @@ cd perspectives/
 #1445362090
 ls
 #1445362093
-more packages.el 
+more packages.el
 #1445362103
 ls
 #1445362567
@@ -14764,9 +14764,9 @@ cd .spacemacs.d/
 #1445363249
 ls
 #1445363255
-more init.el 
+more init.el
 #1445363346
-/Applications/Emacs.app/Contents/MacOS/Emacs -q --load init.el 
+/Applications/Emacs.app/Contents/MacOS/Emacs -q --load init.el
 #1445376485
 cd ../..
 #1445376490
@@ -14798,19 +14798,19 @@ ld
 #1445376611
 ls
 #1445376627
-pxlaunch pull steel-thread.hcl 
+pxlaunch pull steel-thread.hcl
 #1445376659
 boot2docker ssh "sudo udhcpc"
 #1445376669
 boot2docker up
 #1445376500
-./update-git.sh 
+./update-git.sh
 #1445376700
 boot2docker shellinit
 #1445376704
 boot2docker ssh "sudo udhcpc"
 #1445376708
-pxlaunch pull steel-thread.hcl 
+pxlaunch pull steel-thread.hcl
 #1445376735
 workon planx-eclipse
 #1445376743
@@ -14830,15 +14830,15 @@ ls
 #1445376861
 workon planx-eclipse
 #1445376871
-pip install -r requirements.txt 
+pip install -r requirements.txt
 #1445376932
 cd ..
 #1445376938
 git clone git@github-enterprise.px.ftw:wargaming/CoaX.git
 #1445376881
-pip install -U -r requirements.txt 
+pip install -U -r requirements.txt
 #1445376770
-pxlaunch pull steel-thread.hcl 
+pxlaunch pull steel-thread.hcl
 #1445534495
 ls
 #1445534518
@@ -14894,7 +14894,7 @@ which berks
 #1445538633
 /opt/chefdk/bin/berks --version
 #1445538644
-/usr/local/bin/berks 
+/usr/local/bin/berks
 #1445538658
 /usr/local/bin/berks -v
 #1445538681
@@ -14948,7 +14948,7 @@ git add Vagrantfile recipes/default.rb
 #1445617806
 git commit -m "Added emacs24.5 to the recipe."
 #1445617812
-git push  origin master 
+git push  origin master
 #1445617824
 git push
 #1445617837
@@ -14962,7 +14962,7 @@ cd ..
 #1445617862
 cd vagrant-spacemacs-test/
 #1445617866
-git pull 
+git pull
 #1445617883
 git status
 #1445617890
@@ -14972,7 +14972,7 @@ git stash
 #1445618406
 git pull
 #1445618413
-git stash pop 
+git stash pop
 #1445618420
 git status
 #1445618429
@@ -14982,7 +14982,7 @@ git add recipes/default.rb
 #1445618539
 git commit -m "Added emacs24.5"
 #1445618543
-git push 
+git push
 #1445618554
 git status
 #1445618562
@@ -15026,11 +15026,11 @@ cd coax/
 #1445905668
 ls
 #1445905674
-more coax.py 
+more coax.py
 #1445905678
 ls
 #1445905690
-pxlaunch run PX test.hcl 
+pxlaunch run PX test.hcl
 #1445905700
 boot2docker init
 #1445905712
@@ -15038,7 +15038,7 @@ boot2docker boot
 #1445905758
 boot2docker shellinit
 #1445905762
-pxlaunch run PX test.hcl 
+pxlaunch run PX test.hcl
 #1445905880
 docker images -a | grep nsq
 #1445905893
@@ -15082,11 +15082,11 @@ cd .emacs.d/elpa
 #1445906560
 ls
 #1445906613
-cd Dropbox/.emacs.d/elpa/evil-anzu-20150124.1609/evil-anzu-autoloads.el 
+cd Dropbox/.emacs.d/elpa/evil-anzu-20150124.1609/evil-anzu-autoloads.el
 #1445906623
-more Dropbox/.emacs.d/elpa/evil-anzu-20150124.1609/evil-anzu-autoloads.el 
+more Dropbox/.emacs.d/elpa/evil-anzu-20150124.1609/evil-anzu-autoloads.el
 #1445906637
-more Dropbox/.emacs.d/elpa/evil-anzu-20150124.1609/evil-anzu.el 
+more Dropbox/.emacs.d/elpa/evil-anzu-20150124.1609/evil-anzu.el
 #1445906910
 cd Dropbox/.emacs.d/elpa/
 #1445906910
@@ -15130,7 +15130,7 @@ cd ..
 #1445907523
 cd elpa/
 #1445907524
-ls 
+ls
 #1445907530
 cd rainbow-delimiters-1.3.21/
 #1445907531
@@ -15170,7 +15170,7 @@ xcode
 #1445954987
 git status
 #1445954995
-./update-git.sh 
+./update-git.sh
 #1445955034
 cd ../planconstruction-pxluna-data-builder/
 #1445955038
@@ -15178,7 +15178,7 @@ git status
 #1445955041
 git pull
 #1445955047
-git checkout master 
+git checkout master
 #1445955052
 git pull
 #1445955068
@@ -15200,9 +15200,9 @@ git pull
 #1445955145
 git remote -v
 #1445955151
-git pull core master 
+git pull core master
 #1445955157
-git push origin master 
+git push origin master
 #1445955161
 cd ..
 #1445955176
@@ -15220,17 +15220,17 @@ git pull -all --prune
 #1445955320
 git pull --all --prune
 #1445955330
-git pull origin master 
+git pull origin master
 #1445955337
-git pull core master 
+git pull core master
 #1445955346
-git push origin master 
+git push origin master
 #1445955363
 cd ..
 #1445955366
 cd CoaX/
 #1445955378
-git pull 
+git pull
 #1445955384
 cd src/coax/
 #1445955385
@@ -15248,7 +15248,7 @@ ls
 #1445955508
 cp test.hcl marcel-test.hcl
 #1445956014
-pxlaunch pull marcel-test.hcl 
+pxlaunch pull marcel-test.hcl
 #1445956034
 boot2docker init
 #1445956039
@@ -15258,29 +15258,29 @@ boot2docker shellinit
 #1445956078
 boot2docker ssh "sudo udhcpc"
 #1445956083
-pxlaunch pull marcel-test.hcl 
+pxlaunch pull marcel-test.hcl
 #1445956134
-pxlaunch run PX marcel-test.hcl 
+pxlaunch run PX marcel-test.hcl
 #1445956204
 pxlaunch destroy PX
 #1445956209
-pxlaunch pull marcel-test.hcl 
+pxlaunch pull marcel-test.hcl
 #1445956217
-pxlaunch run PX marcel-test.hcl 
+pxlaunch run PX marcel-test.hcl
 #1445956242
-more testCOA.sh 
+more testCOA.sh
 #1445956268
-pip install -r ../../testing-requirements.txt 
+pip install -r ../../testing-requirements.txt
 #1445956273
 pip install -r ../../testing-requirements.txt -U
 #1445956308
 pip install -r ../../requirements.txt -U
 #1445956333
-pxexec testCOA.py 
+pxexec testCOA.py
 #1445956352
 cd ../..
 #1445956401
-PYTHONPATH="src/:$PYTHONPATH" pxexec coax.testCOA 
+PYTHONPATH="src/:$PYTHONPATH" pxexec coax.testCOA
 #1445956425
 PYTHONPATH="src/:$PYTHONPATH" pxexec coax.testCOA 0 COA_ST4
 #1445956440
@@ -15300,7 +15300,7 @@ PYTHONPATH="src/:$PYTHONPATH" pxexec coax.testCOA 0 COA_ST4 --cluster PX
 #1445956541
 pxlaunch run PX
 #1445956553
-pxlaunch run PX src/coax/marcel-test.hcl 
+pxlaunch run PX src/coax/marcel-test.hcl
 #1445956562
 PYTHONPATH="src/:$PYTHONPATH" pxexec coax.testCOA 0 COA_ST4 --cluster PX
 #1445956758
@@ -15330,7 +15330,7 @@ workon planx-eclipse
 #1445959146
 docker-machine upgrade default
 #1445959186
-docker-machine 
+docker-machine
 #1445959200
 docker-machine restart
 #1445959222
@@ -15346,13 +15346,13 @@ docker-machine create
 #1445959449
 docker-machine create default
 #1445959602
-boot2docker 
+boot2docker
 #1445959605
 boot2docker init
 #1445959610
 boot2docker boot
 #1445959641
-pxlaunch run PX src/coax/marcel-test.hcl 
+pxlaunch run PX src/coax/marcel-test.hcl
 #1445959662
 PYTHONPATH="src/:$PYTHONPATH" pxexec coax.testCOA 0 COA_ST4 --cluster PX
 #1445959670
@@ -15396,7 +15396,7 @@ PYTHONPATH="./src/:$PYTHONPATH" sudo pxexec coax.testCOA 0 COA_ST4 --cluster PX 
 #1445959915
 pxlaunch destroy PX
 #1445959925
-pxlaunch run PX src/coax/marcel-test.hcl 
+pxlaunch run PX src/coax/marcel-test.hcl
 #1445959933
 PYTHONPATH="./src/:$PYTHONPATH" sudo pxexec coax.testCOA 0 COA_ST4 --cluster PX --cluster PX
 #1445959944
@@ -15432,9 +15432,9 @@ eval "boot2docker shellinit"
 #1445960686
 pip install -U pip
 #1445960716
-pxlaunch pull src/coax/marcel-test.hcl 
+pxlaunch pull src/coax/marcel-test.hcl
 #1445960908
-pxlaunch run PX src/coax/marcel-test.hcl 
+pxlaunch run PX src/coax/marcel-test.hcl
 #1445960961
 boot2docker boot
 #1445960987
@@ -15454,7 +15454,7 @@ docker ps
 #1445961061
 docker ps
 #1445961087
-pxlaunch run PX src/coax/marcel-test.hcl 
+pxlaunch run PX src/coax/marcel-test.hcl
 #1445961112
 PYTHONPATH="./src/:$PYTHONPATH" pxexec coax.testCOA 0 COA_ST4 --cluster PX --cluster PX
 #1445961393
@@ -15472,11 +15472,11 @@ cd Spiral6/SteelThreads/
 #1445961661
 ls
 #1445961671
-pxlaunch pull steel-thread.hcl 
+pxlaunch pull steel-thread.hcl
 #1445961754
 pxlaunch destroy PX
 #1445961764
-pxlaunch run PX steel-thread.hcl 
+pxlaunch run PX steel-thread.hcl
 #1445961798
 ls
 #1445961853
@@ -15496,7 +15496,7 @@ pxexec send_start_messages_test.py --cluster PX
 #1445962326
 pxlaunch destroy PX
 #1445962336
-pxlaunch run PX steel-thread.hcl 
+pxlaunch run PX steel-thread.hcl
 #1445962358
 pxexec send_start_messages_test.py --cluster PX
 #1445962394
@@ -15510,11 +15510,11 @@ docker logs --help
 #1445963383
 pxlaunch destroy PX
 #1445963393
-pxlaunch run PX steel-thread.hcl 
+pxlaunch run PX steel-thread.hcl
 #1445963409
 docker logs -f
 #1445963471
-if command -v workon >/dev/null 2>&1; then workon planx-eclipse; else source /Users/marcelbecker/PythonEnvs/planx-eclipse/bin/activate; fi 
+if command -v workon >/dev/null 2>&1; then workon planx-eclipse; else source /Users/marcelbecker/PythonEnvs/planx-eclipse/bin/activate; fi
 #1445963500
 docker logs PX-msc1
 #1445963512
@@ -15526,13 +15526,13 @@ docker logs PX-msc1
 #1445963428
 pxexec send_start_messages_test.py --cluster PX
 #1445965976
-pxlaunch pull steel-thread.hcl 
+pxlaunch pull steel-thread.hcl
 #1445963421
 docker logs -f PX-msc1
 #1445966053
 pxlaunch destroy PX
 #1445966076
-pxlaunch run PX steel-thread.hcl 
+pxlaunch run PX steel-thread.hcl
 #1445966094
 pxexec send_start_messages_test.py --cluster PX
 #1445966490
@@ -15546,7 +15546,7 @@ git pull
 #1445966517
 ls
 #1445966523
-more README.md 
+more README.md
 #1445966523
 ls
 #1445966568
@@ -15556,7 +15556,7 @@ ls
 #1445966626
 pxlaunch destroy PX
 #1445966636
-pxlaunch run PX steel-thread.hcl 
+pxlaunch run PX steel-thread.hcl
 #1445966920
 pxappstore --load --cluster PX
 #1445966929
@@ -15568,7 +15568,7 @@ pxexec send_start_messages_test.py --cluster PX
 #1445967068
 pxlaunch destroy PX
 #1445967094
-pxlaunch run PX steel-thread.hcl 
+pxlaunch run PX steel-thread.hcl
 #1445967126
 pxappstore --upload --cluster PX ~/src/plan-construction/applications/
 #1445967154
@@ -15576,7 +15576,7 @@ pxexec send_start_messages_test.py --cluster PX
 #1445967317
 pxlaunch destroy PX
 #1445967331
-pxlaunch run PX steel-thread.hcl 
+pxlaunch run PX steel-thread.hcl
 #1445967345
 pxappstore --upload --cluster PX ~/src/plan-construction/applications/
 #1445967381
@@ -15584,7 +15584,7 @@ pxexec send_start_messages_test.py --cluster PX
 #1445968144
 pxlaunch destroy PX
 #1445968156
-pxlaunch run PX steel-thread.hcl 
+pxlaunch run PX steel-thread.hcl
 #1445968193
 pxappstore --upload --cluster PX ~/src/plan-construction/applications/
 #1445968210
@@ -15592,7 +15592,7 @@ pxexec send_start_messages_test.py --cluster PX
 #1445968331
 pxlaunch destroy PX
 #1445968348
-pxlaunch run PX steel-thread.hcl 
+pxlaunch run PX steel-thread.hcl
 #1445968360
 pxappstore --upload --cluster PX ~/src/plan-construction/applications/
 #1445968661
@@ -15602,7 +15602,7 @@ pxexec send_start_messages_test.py --cluster PX
 #1445968701
 pxlaunch destroy PX
 #1445968713
-pxlaunch run PX steel-thread.hcl 
+pxlaunch run PX steel-thread.hcl
 #1445968725
 pxappstore --upload --cluster PX ~/src/plan-construction/applications/
 #1445968682
@@ -15616,7 +15616,7 @@ cd planconstruction-pxluna-data-builder/
 #1445969255
 git pull
 #1445969277
-git pull core master 
+git pull core master
 #1445969280
 git status
 #1445969307
@@ -15638,7 +15638,7 @@ git add seed_scripts/luna_coa_seeder.py
 #1445969535
 git commit -m "Uncommented the addition of COA M7 to seed."
 #1445969543
-git checkout master 
+git checkout master
 #1445969552
 ./build_single.sh config/stage-1/px-luna-seed-steel-thread.cfg latest
 #1445969637
@@ -15652,7 +15652,7 @@ docker pull docker.px.ftw/px-integration/luna-seed-mix:latest
 #1445969813
 ./build_single.sh config/stage-1/px-luna-seed-steel-thread.cfg latest
 #1445969994
-git checkout marcel-add-m7-to-seed 
+git checkout marcel-add-m7-to-seed
 #1445969999
 ./build_single.sh config/stage-1/px-luna-seed-steel-thread.cfg latest
 #1445970211
@@ -15676,7 +15676,7 @@ cd -
 #1445970833
 ls
 #1445970852
-./build_all.sh 
+./build_all.sh
 #1445970858
 ./build_all.sh latest
 #1445970875
@@ -15720,7 +15720,7 @@ eval "$(boot2docker shellinit)"
 #1445972652
 `eval "$(boot2docker shellinit)"`
 #1445972671
-pxlaunch run PX src/coax/marcel-test.hcl 
+pxlaunch run PX src/coax/marcel-test.hcl
 #1445972690
 PYTHONPATH="./src/:$PYTHONPATH" pxexec coax.testCOA 0 COA_ST6 --cluster PX --cluster PX
 #1445972830
@@ -15758,7 +15758,7 @@ cd ../..
 #1445973226
 cd ..
 #1445973228
-cd 
+cd
 #1445973282
 cd src/plan-construction/planconstruction-pxluna-data-builder/
 #1445973290
@@ -15770,19 +15770,19 @@ pip install -U pxluna-client
 #1445973740
 ls
 #1445973748
-vim logs/px-luna-empty-seed.cfg.log 
+vim logs/px-luna-empty-seed.cfg.log
 #1445973773
-vim logs/luna-px-luna-empty-seed.log 
+vim logs/luna-px-luna-empty-seed.log
 #1445973793
 docker images
 #1445973823
-vim logs/px-luna-empty-seed.cfg.log 
+vim logs/px-luna-empty-seed.cfg.log
 #1445974172
 pip freeze | grep luna
 #1445974208
 ./build_all.sh 6.1.820
 #1445974227
-./build_all.sh 
+./build_all.sh
 #1445974244
 ./build_all.sh 6.1.820 -v
 #1445974264
@@ -15800,7 +15800,7 @@ sudo pip install pxluna-client
 #1445974901
 sudo pip install pxluna-client -U
 #1445974937
-git push origin marcel-add-m7-to-seed 
+git push origin marcel-add-m7-to-seed
 #1445974980
 cd src/my-vagrant-development/
 #1445974983
@@ -15830,7 +15830,7 @@ git add seed_scripts/luna_coa_seeder.py
 #1445975865
 git commit -m "Added comma to previous item in list."
 #1445975875
-git push origin marcel-add-m7-to-seed 
+git push origin marcel-add-m7-to-seed
 #1445976198
 ./build_single.sh config/stage-1/px-luna-seed-steel-thread.cfg latest
 #1445976421
@@ -15878,7 +15878,7 @@ docker images
 #1445978418
 docker images -a
 #1445978448
-pxlaunch pull src/coax/marcel-test.hcl 
+pxlaunch pull src/coax/marcel-test.hcl
 #1445978520
 cd ../
 #1445978531
@@ -15888,11 +15888,11 @@ ls
 #1445978577
 cd src/plan-construction/planconstruction-pxluna-data-builder/
 #1445978539
-pxlaunch pull steel-thread.hcl 
+pxlaunch pull steel-thread.hcl
 #1445978588
 ./build_single.sh config/stage-1/px-luna-seed-steel-thread.cfg latest
 #1445978731
-pxlaunch pull local-msc.hcl 
+pxlaunch pull local-msc.hcl
 #1445979485
 ./build_all.sh 6.1.820 -v
 #1445979545
@@ -15904,7 +15904,7 @@ pip install pxluna-client -U
 #1445979596
 ./build_all.sh
 #1445979723
-more build_all.sh 
+more build_all.sh
 #1445979837
 docker images | grep luna
 #1445979878
@@ -15924,7 +15924,7 @@ cd logs/
 #1445980000
 ls
 #1445980022
-more px-luna-empty-seed.cfg.log 
+more px-luna-empty-seed.cfg.log
 #1445980057
 cd ..
 #1445980058
@@ -15970,7 +15970,7 @@ cd logs
 #1445980250
 ls
 #1445980255
-more px-luna-empty-seed.cfg.log 
+more px-luna-empty-seed.cfg.log
 #1445980268
 cd ..
 #1445980276
@@ -16028,7 +16028,7 @@ ls
 #1445980782
 ls -al
 #1445980790
-more ct.shutdown 
+more ct.shutdown
 #1445980791
 ls
 #1445980797
@@ -16046,7 +16046,7 @@ pwd
 #1445980809
 ls -al
 #1445980817
-cd 
+cd
 #1445980826
 cd src/plan-construction/px-luna-data-builder/
 #1445980827
@@ -16064,7 +16064,7 @@ cd logs/
 #1445980852
 ls
 #1445980857
-more px-luna-empty-seed.cfg.log 
+more px-luna-empty-seed.cfg.log
 #1445980893
 his | grep build
 #1445980911
@@ -16080,7 +16080,7 @@ ls
 #1445980968
 ls -al
 #1445980975
-more px-luna-empty-seed.cfg.log 
+more px-luna-empty-seed.cfg.log
 #1445981138
 which java
 #1445981155
@@ -16150,11 +16150,11 @@ sbcl --dynamic-space-size 2000
 #1446215729
 cd
 #1446215763
-/Applications/Emacs.app/Contents/MacOS/Emacs -q --load ~/.spacemacs.d/init.el 
+/Applications/Emacs.app/Contents/MacOS/Emacs -q --load ~/.spacemacs.d/init.el
 #1446215867
 /Applications/Emacs.app/Contents/MacOS/Emacs -q --load ~/.spacemacs.d/init.el --debug-init
 #1446219742
-cd 
+cd
 #1446219744
 cd
 #1446219752
@@ -16176,9 +16176,9 @@ which python
 #1446513759
 which pip
 #1446479354
-source ~/Dropbox/.bashrc 
+source ~/Dropbox/.bashrc
 #1446479376
-diff ~/.bashrc ~/Dropbox/.bashrc 
+diff ~/.bashrc ~/Dropbox/.bashrc
 #1446479423
 ls
 #1446479439
@@ -16212,7 +16212,7 @@ python --version
 #1446586265
 his | grep python
 #1446586756
-diff ~/.bashrc ~/Dropbox/.bashrc 
+diff ~/.bashrc ~/Dropbox/.bashrc
 #1446593674
 ls
 #1446593679
@@ -16242,7 +16242,7 @@ cd src/my-vagrant-development/
 #1446594215
 vagrant up
 #1446764758
-cd 
+cd
 #1446764771
 cd /Applications/
 #1446764772
@@ -16290,13 +16290,13 @@ cd /Applications/eclipse/Eclipse.app/Contents/Resources/
 #1446764994
 ls
 #1446764997
-ls -al 
+ls -al
 #1446765071
 ls
 #1446765073
-cd 
+cd
 #1446765088
-find . -name plug-in 
+find . -name plug-in
 #1446765167
 cd /Applications/eclipse/
 #1446765168
@@ -16354,7 +16354,7 @@ cd readme/
 #1446765252
 ls
 #1446765256
-more readme_eclipse.html 
+more readme_eclipse.html
 #1446765271
 ls
 #1446765273
@@ -16382,7 +16382,7 @@ ls -al
 #1446765292
 cd ..
 #1446765294
-ls 
+ls
 #1446765296
 ls -al
 #1446765471
@@ -16484,13 +16484,13 @@ cd ..
 #1446766641
 ls
 #1446766654
-more Info.plist 
+more Info.plist
 #1446766666
 cd Resources/
 #1446766666
 ls
 #1446766824
-cd 
+cd
 #1446766834
 cd Downloads/Eclipse.app/
 #1446766835
@@ -16532,7 +16532,7 @@ ant
 #1446826364
 ifconfig
 #1446828963
-cd 
+cd
 #1446828973
 cd Downloads/Eclipse.app/Contents/Eclipse/
 #1446828974
@@ -16574,7 +16574,7 @@ cd test/
 #1446850123
 ls
 #1446850132
-more build.xml 
+more build.xml
 #1446850150
 cd ..
 #1446850152
@@ -16612,7 +16612,7 @@ ls
 #1446850271
 cd  org/
 #1446850276
-cd critco/bgb/ 
+cd critco/bgb/
 #1446850276
 ls
 #1446850281
@@ -16678,7 +16678,7 @@ cd src/plan-construction/planconstruction-pxluna-data-builder/
 #1447175887
 git status
 #1447175904
-diff build_single.sh 
+diff build_single.sh
 #1447175914
 git diff build_single.sh
 #1447175936
@@ -16692,9 +16692,9 @@ git checkout -- src/luna_builder.sh
 #1447175968
 git status
 #1447175800
-./update-git.sh 
+./update-git.sh
 #1447175989
-git pull origin master 
+git pull origin master
 #1447176460
 ./build_single.sh config/stage-0/px-luna-empty-seed.cfg latest
 #1447176479
@@ -16712,7 +16712,7 @@ cd src/
 #1447176819
 ls
 #1447176824
-more luna_builder.sh 
+more luna_builder.sh
 #1447177348
 pwd
 #1447177368
@@ -16728,7 +16728,7 @@ git status
 #1447177807
 git commit -m "Added start and stop state to M7."
 #1447177824
-git push -u origin marcel-add-m7-to-seed 
+git push -u origin marcel-add-m7-to-seed
 #1447178020
 which boot2docker
 #1447178078
@@ -16756,27 +16756,27 @@ git status
 #1447182699
 git pull
 #1447182721
-git push -u origin marcel-add-m7-to-seed  
+git push -u origin marcel-add-m7-to-seed
 #1447182734
-git checkout master 
+git checkout master
 #1447182742
 git pull
 #1447182758
-git pull origin master 
+git pull origin master
 #1447182768
-git pull core master 
+git pull core master
 #1447191804
-git checkout marcel-add-m7-to-seed 
+git checkout marcel-add-m7-to-seed
 #1447191809
 ./build_single.sh config/stage-0/px-luna-empty-seed.cfg latest
 #1447191844
-./build_all.sh 
+./build_all.sh
 #1447191851
 ./build_all.sh latest
 #1447191972
 ./build_all.sh 6.1.1395
 #1447263802
-git checkout master 
+git checkout master
 #1447263819
 git pull
 #1447263830
@@ -16784,15 +16784,15 @@ git stash
 #1447263833
 git pull
 #1447263849
-git pull core master 
+git pull core master
 #1447263861
-git push origin master 
+git push origin master
 #1447264050
 pip install -U pxsvchost
 #1447264124
 git pull --all --prune
 #1447264142
-git branch -d marcel-add-m7-to-seed 
+git branch -d marcel-add-m7-to-seed
 #1447264152
 clear
 #1447264153
@@ -16802,23 +16802,23 @@ cd planconstruction-pxavro/
 #1447264165
 git pull
 #1447264183
-git pull core master 
+git pull core master
 #1447264204
 git status
 #1447264211
-git push origin master 
+git push origin master
 #1447264231
 cd ../planconstruction-pxluna
 #1447264241
 git pull --all --prune
 #1447264261
-git pull origin master 
+git pull origin master
 #1447264270
-git pull core master 
+git pull core master
 #1447264279
 git status
 #1447264285
-git push origin master 
+git push origin master
 #1447264308
 cd ../marcel-utils/
 #1447264310
@@ -16836,7 +16836,7 @@ docker-machine env dev
 #1447264478
 eval "$(docker-machine env dev)"
 #1447264317
-./update-git.sh 
+./update-git.sh
 #1447264591
 cd ..
 #1447264598
@@ -16850,11 +16850,11 @@ git add build_single.sh src/luna_builder.sh
 #1447264653
 git status
 #1447264657
-git commit -m 
+git commit -m
 #1447264680
 git commit -m "Added some logging commands before running the build."
 #1447264689
-git push origin marcel-test-mac-build-single 
+git push origin marcel-test-mac-build-single
 #1447264484
 docker pull docker.px.ftw/px-integration/luna-seed-mix:latest
 #1447265270
@@ -16866,7 +16866,7 @@ cd planconstruction-pxluna-data-builder/
 #1447265301
 ./build-all
 #1447265310
-./build_all.sh 
+./build_all.sh
 #1447265330
 pip freeze | grep luna
 #1447265342
@@ -16874,7 +16874,7 @@ pip freeze | grep luna
 #1447265353
 ./build_all.sh 6.1.841
 #1447265374
-more build_all.sh 
+more build_all.sh
 #1447265414
 sh -v build_all.sh 6.1.841
 #1447265483
@@ -16970,23 +16970,23 @@ git diff send_start_messages_test.py
 #1447278888
 ls
 #1447278905
-pxlaunch pull steel-thread.hcl 
+pxlaunch pull steel-thread.hcl
 #1447278953
 pip install pxrancher -U
 #1447278996
-pxlaunch pull steel-thread.hcl 
+pxlaunch pull steel-thread.hcl
 #1447282870
 ls
 #1447282883
-pxlaunch pull local-msc.hcl 
+pxlaunch pull local-msc.hcl
 #1447285636
 docker images | grep px-luna
 #1447285665
-cd 
+cd
 #1447285674
 cd src/plan-construction/planconstruction-pxluna-data-builder/
 #1447285680
-./build_all.sh 
+./build_all.sh
 #1447285684
 ./build_all.sh latest
 #1447285796
@@ -16996,7 +16996,7 @@ cd logs/
 #1447285871
 ls
 #1447285894
-more luna-px-luna-empty-seed.log 
+more luna-px-luna-empty-seed.log
 #1447285951
 cd ..
 #1447285956
@@ -17040,7 +17040,7 @@ cd plan-construction/planconstruction-pxluna-data-builder/
 #1447286272
 ./build_all.sh 6.1.841
 #1447286301
-more logs/px-luna-empty-seed.cfg.log 
+more logs/px-luna-empty-seed.cfg.log
 #1447286457
 ls
 #1447286462
@@ -17050,7 +17050,7 @@ ls
 #1447286332
 ./build_all.sh 6.1.1442
 #1447286472
-more px-luna-empty-seed.cfg.log 
+more px-luna-empty-seed.cfg.log
 #1447286586
 docker images
 #1447441655
@@ -17058,7 +17058,7 @@ cd ../..
 #1447441660
 cd marcel-utils/
 #1447441674
-./update-git.sh 
+./update-git.sh
 #1447442658
 cd ../pxplanner/
 #1447442660
@@ -17066,7 +17066,7 @@ git pull
 #1447442676
 git diff src/pxplanner/pxplanner.py
 #1447442701
-git stash 
+git stash
 #1447442704
 git pull
 #1447442904
@@ -17084,25 +17084,25 @@ git add build_all.sh
 #1447443033
 git status
 #1447443043
-git commit -m 
+git commit -m
 #1447443074
 git commit -m "Added some tracing statements to check what is going wrong with script on mac using docker-machine."
 #1447443085
-git push -u origin marcel-test-mac-build-single 
+git push -u origin marcel-test-mac-build-single
 #1447443097
-git checkout master 
+git checkout master
 #1447443104
-git pull 
+git pull
 #1447443114
-git pull core master 
+git pull core master
 #1447443147
 git status
 #1447443156
-git push origin master 
+git push origin master
 #1447443170
-git checkout marcel-test-mac-build-single 
+git checkout marcel-test-mac-build-single
 #1447443176
-git pull origin master 
+git pull origin master
 #1447443429
 git add build_all.sh build_single.sh
 #1447443433
@@ -17110,25 +17110,25 @@ git status
 #1447443453
 git commit -m "Merged with origin master."
 #1447443461
-git push -u origin marcel-test-mac-build-single 
+git push -u origin marcel-test-mac-build-single
 #1447443473
-git checkout master 
+git checkout master
 #1447443479
 git status
 #1447443490
-git checkout marcel-change-datareference-label 
+git checkout marcel-change-datareference-label
 #1447443496
-git pull origin master 
+git pull origin master
 #1447443820
 git status
 #1447443830
-git push origin marcel-change-datareference-label 
+git push origin marcel-change-datareference-label
 #1447445303
 git pull
 #1447453409
 git status
 #1447453424
-git checkout master 
+git checkout master
 #1447453427
 git pull
 #1447454086
@@ -17168,11 +17168,11 @@ git status
 #1447454343
 git commit -m "Fixed the serialization and the build scripts."
 #1447454358
-git push origin master 
+git push origin master
 #1447454408
 git pull
 #1447455169
-git push origin master 
+git push origin master
 #1447455330
 ant
 #1447455336
@@ -17204,7 +17204,7 @@ cd marcel-utils/
 #1447700815
 git pull
 #1447700871
-./update-git.sh 
+./update-git.sh
 #1447701053
 cd ..
 #1447701063
@@ -17212,11 +17212,11 @@ cd planconstruction-pxavro/
 #1447701067
 git remote -v
 #1447701074
-git pull core master 
+git pull core master
 #1447701083
 git status
 #1447701090
-git push origin master 
+git push origin master
 #1447701102
 cd ..
 #1447701106
@@ -17224,9 +17224,9 @@ cd planconstruction-pxluna
 #1447701109
 git pull
 #1447701116
-git pull core master 
+git pull core master
 #1447701128
-git push origin master 
+git push origin master
 #1447701139
 cd ..
 #1447701148
@@ -17236,7 +17236,7 @@ git pull
 #1447701157
 git pull core master
 #1447701170
-git push origin master 
+git push origin master
 #1447701196
 docker pull docker.px.ftw/px-integration/luna-seed-mix:latest
 #1447710240
@@ -17254,7 +17254,7 @@ ping -v docker.px.ftw
 #1447785017
 git pull
 #1447785028
-git checkout master 
+git checkout master
 #1447785030
 git pull
 #1447785039
@@ -17262,7 +17262,7 @@ cd ..
 #1447785051
 cd marcel-utils/
 #1447785059
-./update-git.sh 
+./update-git.sh
 #1447785399
 cd ../pxplanner/
 #1447785401
@@ -17308,7 +17308,7 @@ pip install -U pxrancher pxsvchost pxintegrator pxluna-client
 #1447780146
 docker pull docker.px.ftw/px_core/px-luna
 #1447785808
-pxlaunch pull steel-thread.hcl 
+pxlaunch pull steel-thread.hcl
 #1447786223
 docker-machine restart
 #1447786227
@@ -17318,7 +17318,7 @@ docker-machine env dev
 #1447791144
 eval "$(docker-machine env dev)"
 #1447791152
-pxlaunch pull steel-thread.hcl 
+pxlaunch pull steel-thread.hcl
 #1447796937
 ping -v docker.px.ftw
 #1447796972
@@ -17352,11 +17352,11 @@ cd tests/
 #1447801386
 ls
 #1447801391
-./run_tests.sh 
+./run_tests.sh
 #1447801409
 pip install pytest_tornado
 #1447801422
-./run_tests.sh 
+./run_tests.sh
 #1447801463
 cd ..
 #1447801467
@@ -17364,19 +17364,19 @@ py.test .
 #1447801478
 cd tests/
 #1447801485
-py.test test_dadi.py 
+py.test test_dadi.py
 #1447801491
-py.test test_pxplanner.py 
+py.test test_pxplanner.py
 #1447801513
-more run_tests.sh 
+more run_tests.sh
 #1447801530
-./run_tests.sh 
+./run_tests.sh
 #1447802593
 cd ..
 #1447802600
-pip install -r requirements.txt 
+pip install -r requirements.txt
 #1447802628
-pip install -r testing-requirements.txt 
+pip install -r testing-requirements.txt
 #1447802639
 pip install -r testing-requirements.txt -U
 #1447802686
@@ -17384,25 +17384,25 @@ pip install -r requirements.txt -U
 #1447803100
 cd tests/
 #1447803103
-./run_tests.sh 
+./run_tests.sh
 #1447803121
 pip install pxplanner
 #1447803159
-./run_tests.sh 
+./run_tests.sh
 #1447803180
 pip install pxavro pxluna-client
 #1447803184
 pip install pxavro pxluna-client -U
 #1447803227
-./run_tests.sh 
+./run_tests.sh
 #1447803278
 pip install -r ../testing-requirements.txt -U
 #1447803314
-./run_tests.sh 
+./run_tests.sh
 #1447803321
 git pull
 #1447803333
-./run_tests.sh 
+./run_tests.sh
 #1447803366
 pip uninstall pxavro
 #1447803377
@@ -17410,7 +17410,7 @@ pip install -r ../testing-requirements.txt -U
 #1447803412
 pip install -U pxavro
 #1447803430
-./run_tests.sh 
+./run_tests.sh
 #1447803485
 pip install -U pytest
 #1447803505
@@ -17418,13 +17418,13 @@ pip install -U pytest_tornado
 #1447803529
 pip install -U pytest
 #1447803547
-./run_tests.sh 
+./run_tests.sh
 #1447803562
 cd ..
 #1447803569
 py.test .
 #1447803582
-more requirements.txt 
+more requirements.txt
 #1447803601
 pip insta -U futures pxsvchost planningcoresvc
 #1447803609
@@ -17446,7 +17446,7 @@ cd src/plan-construction/marcel-utils/
 #1447878204
 pip install pxrancher pxsvchost pxintegrator pxluna-client -U
 #1447878230
-./update-git.sh 
+./update-git.sh
 #1447884878
 workon planx-eclipse
 #1447884893
@@ -17456,7 +17456,7 @@ git pull
 #1447885003
 ping github-enterprise.px.ftw
 #1447885022
-pxlaunch pull steel-thread.hcl 
+pxlaunch pull steel-thread.hcl
 #1447957527
 doecker-machine restart dev
 #1447957535
@@ -17480,7 +17480,7 @@ git status
 #1447958566
 cd ..
 #1447958569
-cd 
+cd
 #1447958570
 ls
 #1447958573
@@ -17640,7 +17640,7 @@ git status
 #1447959419
 git remote -v
 #1447959422
-git remote 
+git remote
 #1447959425
 git remote -v
 #1447959439
@@ -17690,11 +17690,11 @@ cd heads/
 #1447959529
 ls
 #1447959531
-cd master 
+cd master
 #1447959532
 ls
 #1447959535
-more master 
+more master
 #1447959538
 cd ..
 #1447959539
@@ -17720,7 +17720,7 @@ rm -rf antlr4/
 #1447959579
 ls
 #1447957603
-pxlaunch pull steel-thread.hcl 
+pxlaunch pull steel-thread.hcl
 #1447963026
 brew doctor
 #1447963043
@@ -17734,19 +17734,19 @@ mvn --version
 #1447971628
 cd ..
 #1447971630
-cd 
+cd
 #1447971640
 cd src/plan-construction/planconstruction-pxavro/
 #1447971642
 git pull
 #1447971675
-git pull core master 
+git pull core master
 #1447971692
 cd ../planconstruction-pxluna
 #1447971694
 git pull
 #1447971706
-git pull core master 
+git pull core master
 #1447971713
 git status
 #1447971721
@@ -17756,7 +17756,7 @@ cd planconstruction-pxluna-data-builder/
 #1447971730
 git pull
 #1447971746
-git pull core master 
+git pull core master
 #1447971755
 git status
 #1447971769
@@ -17774,23 +17774,23 @@ git pull
 #1447971797
 git pull --all --prune
 #1447971812
-git branch 
+git branch
 #1447971828
-git branch -d data-references-edgy 
+git branch -d data-references-edgy
 #1447971843
-git checkout data-references-edgy 
+git checkout data-references-edgy
 #1447971859
-git checkout master 
+git checkout master
 #1447971868
-git branch -D data-references-edgy 
+git branch -D data-references-edgy
 #1447971878
-git checkout marcel-change-datareference-label 
+git checkout marcel-change-datareference-label
 #1447971881
 git pull
 #1447971893
-./build/clean_m2.sh 
+./build/clean_m2.sh
 #1447971905
-./build/clean_build.sh 
+./build/clean_build.sh
 #1447972144
 pip install py.test
 #1447972158
@@ -17798,19 +17798,19 @@ pip install pytest
 #1447972162
 pip install pytest -U
 #1447972182
-pip install -U -r requirements.txt 
+pip install -U -r requirements.txt
 #1447972203
-./build/clean_build.sh 
+./build/clean_build.sh
 #1447972406
 mvn --version
 #1447972497
-git checkout master 
+git checkout master
 #1447972502
-./build/clean_build.sh 
+./build/clean_build.sh
 #1447972600
 pip uninstall pxavro
 #1447972608
-./build/clean_build.sh 
+./build/clean_build.sh
 #1447972707
 java -version
 #1447972719
@@ -17820,31 +17820,31 @@ py.test --version
 #1447972786
 pip install -r testing-requirements.txt -U
 #1447972806
-./build/clean_build.sh 
+./build/clean_build.sh
 #1447972999
-./build/clean_m2.sh 
+./build/clean_m2.sh
 #1447973016
 mvn clean
 #1447973027
 git pull
 #1447973050
-./build/build.sh 
+./build/build.sh
 #1447973483
 pip install ptest_tornado -U
 #1447973494
 pip install pytest_tornado -U
 #1447973526
-./build/build.sh 
+./build/build.sh
 #1447973710
-git checkout marcel-change-datareference-label 
+git checkout marcel-change-datareference-label
 #1447973721
-./build/clean_build.sh 
+./build/clean_build.sh
 #1447974342
 cd ..
 #1447974345
 cd px-luna/
 #1447974367
-./build/build.sh --avro ../px-avro/ 
+./build/build.sh --avro ../px-avro/
 #1447974918
 cd ..
 #1447974927
@@ -17862,9 +17862,9 @@ pip install pytest_tornado -U
 #1447975132
 cd px-avro/
 #1447975139
-pip install -U -r requirements.txt 
+pip install -U -r requirements.txt
 #1447975152
-pip install -U -r testing-requirements.txt 
+pip install -U -r testing-requirements.txt
 #1447975174
 pip uninstall pxavro
 #1447975183
@@ -17874,13 +17874,13 @@ cd ..
 #1447975192
 cd px-luna/
 #1447975229
-./build/build_docker.sh 
+./build/build_docker.sh
 #1447975241
 cd ..
 #1447975245
 cd px-avro/
 #1447975251
-./build/build.sh 
+./build/build.sh
 #1448319860
 git config
 #1448319874
@@ -17888,7 +17888,7 @@ git config --get-all
 #1448319907
 git config -l
 #1448319961
-cd 
+cd
 #1448319963
 git config -l
 #1448319980
@@ -17934,7 +17934,7 @@ git add .gitignore README.md
 #1448320333
 git status
 #1448320348
-git push 
+git push
 #1448320365
 git push origin master
 #1448320415
@@ -17954,13 +17954,13 @@ cd .git
 #1448320500
 ls
 #1448320504
-more config 
+more config
 #1448320527
 cd ..
 #1448320528
 ls
 #1448320535
-git push 
+git push
 #1448320640
 git config --local push.default matching
 #1448320670
@@ -17976,9 +17976,9 @@ cd ~/.ssh
 #1448320823
 ls
 #1448320832
-more id_rsa 
+more id_rsa
 #1448320842
-more id_rsa.pub 
+more id_rsa.pub
 #1448320869
 ssh stash.kestrel.edu
 #1448320899
@@ -17990,11 +17990,11 @@ more known_hosts
 #1448321041
 ls
 #1448321049
-more kestrel_id_rsa.pub 
+more kestrel_id_rsa.pub
 #1448321072
-more id_rsa.pub 
+more id_rsa.pub
 #1448321168
-cd 
+cd
 #1448321172
 cd src/planware
 #1448321173
@@ -18006,7 +18006,7 @@ git remote -v
 #1448321205
 cd .git/
 #1448321207
-more config 
+more config
 #1448321225
 cd ..
 #1448321229
@@ -18032,13 +18032,13 @@ git status
 #1448321305
 git commit -m "Initial commit."
 #1448321311
-git push origin master 
+git push origin master
 #1448321383
 git add README.md
 #1448321389
 git commit -m "Initial commit."
 #1448321393
-git push origin master 
+git push origin master
 #1448475492
 git status
 #1448475497
@@ -18048,7 +18048,7 @@ git status
 #1448475622
 git commit -m "Added all extranet documents to internal repo."
 #1448475629
-git push origin master 
+git push origin master
 #1448477440
 git status
 #1448477518
@@ -18058,7 +18058,7 @@ git add Docs/NC_Reference_UC/
 #1448477551
 git commit -m "Copied some documents from Next Century Wiki."
 #1448477558
-git push 
+git push
 #1448489102
 cd
 #1448489105
@@ -18084,7 +18084,7 @@ ls
 #1448904079
 cd
 #1448904089
-cd 
+cd
 #1448904095
 cd src/rspace
 #1448904096
@@ -18112,7 +18112,7 @@ ls
 #1448904146
 cp models.zuml models-marcel.zip
 #1448904152
-unzip models-marcel.zip 
+unzip models-marcel.zip
 #1448904161
 ls
 #1448904180
@@ -18122,7 +18122,7 @@ cd
 #1448924444
 cd ..
 #1448924448
-cd 
+cd
 #1448924456
 cd src/rspacesrc/
 #1448924457
@@ -18136,7 +18136,7 @@ vagrant up
 #1448925255
 vagrant reload
 #1448925523
-cd 
+cd
 #1448925529
 cd src/rspace/rspace/
 #1448925532
@@ -18150,11 +18150,11 @@ git add External/Mitre-AO-COI-Documents/
 #1448925551
 git status
 #1448925555
-git commit -m 
+git commit -m
 #1448925570
 git commit -m "Added mitre AO-COI documents."
 #1448925577
-git push origin master 
+git push origin master
 #1449005912
 CD SRC
 #1449005914
@@ -18170,7 +18170,7 @@ cd spray/
 #1449006001
 ls
 #1449006003
-more README 
+more README
 #1449006009
 cd docs
 #1449006009
@@ -18202,7 +18202,7 @@ cd org.eclipselabs.spray.repository
 #1449006474
 ls
 #1449006477
-more category.xml 
+more category.xml
 #1449006494
 mvn
 #1449006525
@@ -18250,13 +18250,13 @@ cd org.eclipselabs.spray.distribution/
 #1449082101
 ls
 #1449082116
-mvn clean install -s settings.xml 
+mvn clean install -s settings.xml
 #1449087103
 ls
 #1449087109
-more settings.xml 
+more settings.xml
 #1449087127
-mvn clean install -s settings.xml 
+mvn clean install -s settings.xml
 #1449092452
 cd
 #1449092453
@@ -18316,13 +18316,13 @@ cd parser/
 #1449092650
 ls
 #1449092661
-more MetaSlangGrammar.g 
+more MetaSlangGrammar.g
 #1449092685
 ls
 #1449092687
 ls -al
 #1449092763
-diff MetaSlangGrammar.g ~/src/planware-netbeans/src/edu/kestrel/planware/parser/PlanwareParser.java 
+diff MetaSlangGrammar.g ~/src/planware-netbeans/src/edu/kestrel/planware/parser/PlanwareParser.java
 #1449093274
 cd
 #1449093286
@@ -18364,7 +18364,7 @@ cd src/
 #1449167480
 ls
 #1449167487
-cd main/java/edu/kestrel/planware/HelloXtend.xtend 
+cd main/java/edu/kestrel/planware/HelloXtend.xtend
 #1449167488
 ls
 #1449188820
@@ -18410,11 +18410,11 @@ git add generate-XML-ATOs-from-legacy-ATOs.zip
 #1449268098
 git commit -m "Added zip file with code to parse ATOs and generate XML files."
 #1449268103
-git push origin master 
+git push origin master
 #1449268265
 git pull
 #1449268282
-git push origin master 
+git push origin master
 #1449268453
 ls
 #1449268457
@@ -18448,7 +18448,7 @@ git status
 #1449268729
 git commit -m "Added jaguar java model files to repo."
 #1449268735
-git push origin master 
+git push origin master
 #1449686083
 ls
 #1449686088
@@ -18470,7 +18470,7 @@ ls
 #1449686207
 cd ..
 #1449686211
-cd 
+cd
 #1449686215
 cd src/coordinators
 #1449686216
@@ -18578,7 +18578,7 @@ mvn -source 7 compile
 #1449774871
 ls
 #1449774875
-rm log4j2.xml 
+rm log4j2.xml
 #1449774877
 ls
 #1449774880
@@ -18590,7 +18590,7 @@ cp ~/src/rspace/rspace/.gitignore .
 #1449774931
 ls
 #1449774939
-more .gitignore 
+more .gitignore
 #1449774946
 git status
 #1449774963
@@ -18654,7 +18654,7 @@ git remote add origin git@github.com:KestrelInstitute/scharp.git
 #1450224809
 git status
 #1450224823
-git push -u origin master 
+git push -u origin master
 #1450224933
 git status
 #1450225099
@@ -18680,9 +18680,9 @@ git add src/main/java/edu/kestrel/scharp/planner/*
 #1450225245
 git status
 #1450225266
-git commit -m "Fixed generics and removed unused code." 
+git commit -m "Fixed generics and removed unused code."
 #1450225275
-git push origin master 
+git push origin master
 #1450387470
 xjc -help
 #1450388970
@@ -18770,7 +18770,7 @@ git status
 #1450399737
 git commit -m "Fixed compilation errors."
 #1450399743
-git push -u origin master 
+git push -u origin master
 #1450399854
 git status
 #1450399865
@@ -18786,9 +18786,9 @@ git status
 #1450399906
 git commit -m "Removed old files."
 #1450399916
-git push -u origin master 
+git push -u origin master
 #1450400471
-cd 
+cd
 #1450400473
 cd src/
 #1450400493
@@ -18826,13 +18826,13 @@ ls
 #1450401005
 ls -al
 #1450401011
-more .project 
+more .project
 #1450401234
 cd ..
 #1450401236
 ls
 #1450401254
-more BUILD 
+more BUILD
 #1450401279
 brew install sbt
 #1450401335
@@ -18854,7 +18854,7 @@ sbt --help
 #1450402831
 ls
 #1450402836
-more BUILD 
+more BUILD
 #1450402860
 sbt update-classifiers
 #1450403000
@@ -18944,15 +18944,15 @@ cd edu/kestrel/scharp/
 #1450415023
 ls
 #1450415051
-more package-info.java 
+more package-info.java
 #1450415079
-more GeodeticDatumType.java 
+more GeodeticDatumType.java
 #1450415131
-more AircraftMissionDataType.java 
+more AircraftMissionDataType.java
 #1450415251
 ls
 #1450415314
-more AircraftRoleType.java 
+more AircraftRoleType.java
 #1450417419
 cd ../../..
 #1450417424
@@ -19038,35 +19038,35 @@ cd xsd/
 #1451931879
 ls
 #1451931908
-xjc composites.xsd ../xjb/bindings.xjb 
+xjc composites.xsd ../xjb/bindings.xjb
 #1451931993
-xjc sets.xsd ../xjb/bindings.xjb 
+xjc sets.xsd ../xjb/bindings.xjb
 #1451932247
-xjc sets.xsd -b ../xjb/bindings.xjb 
+xjc sets.xsd -b ../xjb/bindings.xjb
 #1451933882
-xjc sets.xsd -b ../xjb/sets-bindings.xjb 
+xjc sets.xsd -b ../xjb/sets-bindings.xjb
 #1451933932
 ls
 #1451934054
-xjc fields.xsd ../xjb/fields-bindings.xjb 
+xjc fields.xsd ../xjb/fields-bindings.xjb
 #1451934077
-xjc fields.xsd -b ../xjb/fields-bindings.xjb 
+xjc fields.xsd -b ../xjb/fields-bindings.xjb
 #1451934574
-xjc fields.xsd -b ../xjb/bindings.xjb 
+xjc fields.xsd -b ../xjb/bindings.xjb
 #1451934670
-xjc sets.xsd -b ../xjb/sets-bindings.xjb 
+xjc sets.xsd -b ../xjb/sets-bindings.xjb
 #1451934695
-xjc fields.xsd ../xjb/fields-bindings.xjb 
+xjc fields.xsd ../xjb/fields-bindings.xjb
 #1451934708
-xjc fields.xsd -b ../xjb/fields-bindings.xjb 
+xjc fields.xsd -b ../xjb/fields-bindings.xjb
 #1451935222
 grep -i cellsequence *
 #1451935574
 ls
 #1451935585
-xjc messages.xsd 
+xjc messages.xsd
 #1451935622
-xjc messages.xsd -b ../xjb/bindings.xjb 
+xjc messages.xsd -b ../xjb/bindings.xjb
 #1451935750
 ls
 #1451935761
@@ -19074,11 +19074,11 @@ rm -rf edu/ mtf/ org/ us/
 #1451935762
 ls
 #1451935766
-xjc messages.xsd -b ../xjb/bindings.xjb 
+xjc messages.xsd -b ../xjb/bindings.xjb
 #1451935988
-grep -i intervalduration sets.xsd 
+grep -i intervalduration sets.xsd
 #1451940085
-xjc messages.xsd -b ../xjb/bindings.xjb 
+xjc messages.xsd -b ../xjb/bindings.xjb
 #1451940147
 ls
 #1451940154
@@ -19116,17 +19116,17 @@ cd main/resources/xsd/
 #1451941056
 ls
 #1451941069
-xjc messages.xsd -b ../xjb/bindings.xjb 
+xjc messages.xsd -b ../xjb/bindings.xjb
 #1451942137
 ls
 #1451942141
-xjc messages.xsd -b ../xjb/bindings.xjb 
+xjc messages.xsd -b ../xjb/bindings.xjb
 #1451943989
 xjc --version
 #1451943999
 xjc -version
 #1451944016
-xjc messages.xsd -b ../xjb/bindings.xjb 
+xjc messages.xsd -b ../xjb/bindings.xjb
 #1451944598
 ls -
 #1451944599
@@ -19134,7 +19134,7 @@ ls
 #1451944605
 rm -rf edu/ org/
 #1451944608
-xjc messages.xsd -b ../xjb/bindings.xjb 
+xjc messages.xsd -b ../xjb/bindings.xjb
 #1451944629
 xjc messages.xsd -b ../xjb/bindings.xjb -extension
 #1451948510
@@ -19200,9 +19200,9 @@ git commit -m "Initial commit."
 #1452014612
 git remote add origin git@github.com:KestrelInstitute/atodatamodel.git
 #1452014620
-git push - origin master 
+git push - origin master
 #1452014629
-git push -u origin master 
+git push -u origin master
 #1452016535
 cd src/main/resources/xsd/
 #1452016564
@@ -19240,7 +19240,7 @@ cd po/
 #1452029394
 ls
 #1452029398
-more Items.java 
+more Items.java
 #1452032625
 cd
 #1452032628
@@ -19302,33 +19302,33 @@ grep -i f15c *
 #1452036338
 ls
 #1452036401
-more FobTaskableUnits.xml 
+more FobTaskableUnits.xml
 #1452036431
-more EobFacilities.xml 
+more EobFacilities.xml
 #1452036444
-more CNXMSNs.xml 
+more CNXMSNs.xml
 #1452036448
-more CRCSites.xml 
+more CRCSites.xml
 #1452036470
-more CNXMSNs.xml 
+more CNXMSNs.xml
 #1452036482
-more CruiseMissiles.xml 
+more CruiseMissiles.xml
 #1452036518
-more MSEL.xml 
+more MSEL.xml
 #1452111163
 ls
 #1452111287
 ./daffodil.
 #1452111292
-./daffodil.sh 
+./daffodil.sh
 #1452121261
-cd 
+cd
 #1452121266
 cd src/daffodil/
 #1452121266
 ls
 #1452121279
-rm -rf daffodil-1.1.0.zip 
+rm -rf daffodil-1.1.0.zip
 #1452121280
 ls
 #1452121283
@@ -19348,11 +19348,11 @@ chmod +x daffodil
 #1452121321
 ./daffodil --help
 #1452121578
-./daffodil parse --schema ~/src/daffodil/eclipse-worspace/atodatamodel/src/main/resources/xsd/messages.xsd ~/src/rspace/rspace/Docs/External/Scenarios/PACIFICA/PACIFICA/Delta/D001_000.ATO.txt 
+./daffodil parse --schema ~/src/daffodil/eclipse-worspace/atodatamodel/src/main/resources/xsd/messages.xsd ~/src/rspace/rspace/Docs/External/Scenarios/PACIFICA/PACIFICA/Delta/D001_000.ATO.txt
 #1452121777
-./daffodil parse  -v --schema ~/src/daffodil/eclipse-worspace/atodatamodel/src/main/resources/xsd/messages.xsd ~/src/rspace/rspace/Docs/External/Scenarios/PACIFICA/PACIFICA/Delta/D001_000.ATO.txt 
+./daffodil parse  -v --schema ~/src/daffodil/eclipse-worspace/atodatamodel/src/main/resources/xsd/messages.xsd ~/src/rspace/rspace/Docs/External/Scenarios/PACIFICA/PACIFICA/Delta/D001_000.ATO.txt
 #1452121792
-./daffodil -v parse   --schema ~/src/daffodil/eclipse-worspace/atodatamodel/src/main/resources/xsd/messages.xsd ~/src/rspace/rspace/Docs/External/Scenarios/PACIFICA/PACIFICA/Delta/D001_000.ATO.txt 
+./daffodil -v parse   --schema ~/src/daffodil/eclipse-worspace/atodatamodel/src/main/resources/xsd/messages.xsd ~/src/rspace/rspace/Docs/External/Scenarios/PACIFICA/PACIFICA/Delta/D001_000.ATO.txt
 #1452122350
 his
 #1452122379
@@ -19370,7 +19370,7 @@ exit
 #1452122482
 exit
 #1452122533
-./daffodil -v parse   --schema ~/src/daffodil/eclipse-worspace/atodatamodel/src/main/resources/xsd/messages.xsd ~/src/rspace/rspace/Docs/External/Scenarios/PACIFICA/PACIFICA/Delta/D001_000.ATO.txt 
+./daffodil -v parse   --schema ~/src/daffodil/eclipse-worspace/atodatamodel/src/main/resources/xsd/messages.xsd ~/src/rspace/rspace/Docs/External/Scenarios/PACIFICA/PACIFICA/Delta/D001_000.ATO.txt
 #1452122549
 cd src/daffodil/daffodil-1.1.0/
 #1452122550
@@ -19378,7 +19378,7 @@ ls
 #1452122552
 cd bin
 #1452122557
-./daffodil -v parse   --schema ~/src/daffodil/eclipse-worspace/atodatamodel/src/main/resources/xsd/messages.xsd ~/src/rspace/rspace/Docs/External/Scenarios/PACIFICA/PACIFICA/Delta/D001_000.ATO.txt 
+./daffodil -v parse   --schema ~/src/daffodil/eclipse-worspace/atodatamodel/src/main/resources/xsd/messages.xsd ~/src/rspace/rspace/Docs/External/Scenarios/PACIFICA/PACIFICA/Delta/D001_000.ATO.txt
 #1452124056
 cd ../..
 #1452124058
@@ -19414,7 +19414,7 @@ ls
 #1452124116
 cd ..
 #1452124120
-more run.bat 
+more run.bat
 #1452124284
 ls
 #1452124292
@@ -19422,7 +19422,7 @@ cd tmp/
 #1452124292
 ls
 #1452124298
-more preprocessed-ATO.txt 
+more preprocessed-ATO.txt
 #1452124358
 ls
 #1452124365
@@ -19434,7 +19434,7 @@ cd make-DFDL-output-schema-valid/
 #1452124375
 ls
 #1452124384
-more run-saxon.bat 
+more run-saxon.bat
 #1452124397
 ls
 #1452124400
@@ -19454,7 +19454,7 @@ cd DFDL-schemas/
 #1452124446
 ls
 #1452124449
-more messages.xsd 
+more messages.xsd
 #1452124486
 cd ..
 #1452124487
@@ -19468,15 +19468,15 @@ cd bin/
 #1452124494
 ls
 #1452124517
-./daffodil -v parse   --schema ~/src/daffodil/eclipse-worspace/atodatamodel/src/main/resources/xsd/messages.xsd ~/src/rspace/rspace/Docs/External/Scenarios/PACIFICA/PACIFICA/Delta/D001_000.ATO.txt 
+./daffodil -v parse   --schema ~/src/daffodil/eclipse-worspace/atodatamodel/src/main/resources/xsd/messages.xsd ~/src/rspace/rspace/Docs/External/Scenarios/PACIFICA/PACIFICA/Delta/D001_000.ATO.txt
 #1452124528
-./daffodil.sh -v parse   --schema ~/src/daffodil/eclipse-worspace/atodatamodel/src/main/resources/xsd/messages.xsd ~/src/rspace/rspace/Docs/External/Scenarios/PACIFICA/PACIFICA/Delta/D001_000.ATO.txt 
+./daffodil.sh -v parse   --schema ~/src/daffodil/eclipse-worspace/atodatamodel/src/main/resources/xsd/messages.xsd ~/src/rspace/rspace/Docs/External/Scenarios/PACIFICA/PACIFICA/Delta/D001_000.ATO.txt
 #1452124611
-./daffodil.sh -v parse   --schema ../../DFDL-schemas/messages.xsd ~/src/rspace/rspace/Docs/External/Scenarios/PACIFICA/PACIFICA/Delta/D001_000.ATO.txt 
+./daffodil.sh -v parse   --schema ../../DFDL-schemas/messages.xsd ~/src/rspace/rspace/Docs/External/Scenarios/PACIFICA/PACIFICA/Delta/D001_000.ATO.txt
 #1452124650
-more ../../DFDL-schemas/fields.xsd 
+more ../../DFDL-schemas/fields.xsd
 #1452124721
-diff ../../DFDL-schemas/fields.xsd ~/src/daffodil/eclipse-worspace/atodatamodel/src/main/resources/xsd/fields.xsd 
+diff ../../DFDL-schemas/fields.xsd ~/src/daffodil/eclipse-worspace/atodatamodel/src/main/resources/xsd/fields.xsd
 #1452191172
 cd
 #1452191174
@@ -19554,7 +19554,7 @@ cd ..
 #1452192741
 ls
 #1452193110
-./run.bat 
+./run.bat
 #1452193288
 git status
 #1452193292
@@ -19582,19 +19582,19 @@ cd Lisp/
 #1452193376
 ls
 #1452193401
-more Specware4.lisp.compile.log 
+more Specware4.lisp.compile.log
 #1452194172
-chmod +x run.sh 
+chmod +x run.sh
 #1452194182
-chmod make-DFDL-output-schema-valid/run-saxon.sh 
+chmod make-DFDL-output-schema-valid/run-saxon.sh
 #1452194194
-chmod +x make-DFDL-output-schema-valid/run-saxon.sh 
+chmod +x make-DFDL-output-schema-valid/run-saxon.sh
 #1452194198
-./run.sh 
+./run.sh
 #1452194219
 which bash
 #1452194252
-./run.sh 
+./run.sh
 #1452194334
 cd
 #1452194349
@@ -19610,11 +19610,11 @@ cd generate-XML-ATOs-from-legacy-ATOs
 #1452194358
 ls
 #1452194363
-./run.sh 
+./run.sh
 #1452194907
 ls
 #1452194936
-diff ATO.xml tmp/invalid-ATO.xml 
+diff ATO.xml tmp/invalid-ATO.xml
 #1452194956
 ls
 #1452194967
@@ -19622,19 +19622,19 @@ cd tmp/
 #1452194968
 ls
 #1452194976
-more invalid-ATO.xml 
+more invalid-ATO.xml
 #1452194991
-more preprocessed-ATO.txt 
+more preprocessed-ATO.txt
 #1452195003
-more unformatted-ATO.xml 
+more unformatted-ATO.xml
 #1452195026
-diff unformatted-ATO.xml ../ATO.xml 
+diff unformatted-ATO.xml ../ATO.xml
 #1452195047
 ls
 #1452195105
 cd ..
 #1452195117
-./run.sh 
+./run.sh
 #1452195312
 ls
 #1452195316
@@ -19648,23 +19648,23 @@ cd ..
 #1452195327
 ./run.
 #1452195335
-./run.sh 
+./run.sh
 #1452195503
 cd tmp/
 #1452195503
 ls
 #1452195952
-./run.sh 
+./run.sh
 #1452195956
 cd ..
 #1452195958
-./run.sh 
+./run.sh
 #1452196224
 java -classpath make-DFDL-output-schema-valid/saxon/saxon9ee.jar -jar make-DFDL-output-schema-valid/saxon/saxon9he.jar
 #1452196369
 java -classpath make-DFDL-output-schema-valid/saxon/saxon9ee.jar -jar make-DFDL-output-schema-valid/saxon/saxon9he.jar -t make-DFDL-output-schema-valid/Dummy.xml make-DFDL-output-schema-valid/preprocess-ATO-input.xsl
 #1452196679
-./run.sh 
+./run.sh
 #1452197233
 java -Xms1024m -Xmx5024m  -XX:ReservedCodeCacheSize=128m -cp ./Daffodil/bin/../lib/* edu.illinois.ncsa.daffodil.Main parse -s DFDL-schemas/messages.xsd -r AirTaskingOrder ATO.txt
 #1452197398
@@ -19690,7 +19690,7 @@ ls
 #1452197735
 rm -rf tmp/*
 #1452197743
-./run.sh 
+./run.sh
 #1452197828
 cd tmp/
 #1452197828
@@ -19700,7 +19700,7 @@ rm -rf *
 #1452198037
 cd ..
 #1452198041
-./run.sh 
+./run.sh
 #1452198593
 cd tmp
 #1452198594
@@ -19726,7 +19726,7 @@ cd ../..
 #1452274892
 make
 #1452276496
-more Applications/Specware/bin/unix/Specware4.sbclexe.log 
+more Applications/Specware/bin/unix/Specware4.sbclexe.log
 #1452279898
 dirname .
 #1452279904
@@ -19738,11 +19738,11 @@ cd
 #1452280602
 cd src/coordinators-eclipse-workspace/XLSTest/
 #1452280607
-./run.sh 
+./run.sh
 #1452280630
 ls
 #1452280670
-./run.sh 
+./run.sh
 #1452280677
 cd lib
 #1452280678
@@ -19768,11 +19768,11 @@ cd tmp
 #1452280931
 ls
 #1452280935
-more preprocessed_DeltaAto.txt 
+more preprocessed_DeltaAto.txt
 #1452281170
 ../run.
 #1452281176
-../run.sh 
+../run.sh
 #1452281186
 cd ..
 #1452281191
@@ -19786,7 +19786,7 @@ cd ..
 #1452281245
 ls
 #1452281358
-./run.sh 
+./run.sh
 #1452281364
 cd tmp/
 #1452281364
@@ -19838,7 +19838,7 @@ NamePool contents: 2 entries in 2 chains. 6 URIs
 #1452286219
 Done! Please see the newly created ATO.xml
 #1452286219
-marcelbecker@mb-macbook:~/src/coordinators-eclipse-workspace/XLSTest$ 
+marcelbecker@mb-macbook:~/src/coordinators-eclipse-workspace/XLSTest$
 #1452286225
 java -classpath "./lib/saxon9ee.jar" -jar ./lib/saxxon9he.jar -t -o:tmp/preprocessed_DeltaAto.txt DummyDeltaATO.xml preprocess-DeltaATO-input.xsl
 #1452286229
@@ -19850,7 +19850,7 @@ cd ..
 #1452286237
 java -classpath "./lib/saxon9ee.jar" -jar ./lib/saxxon9he.jar -t -o:tmp/preprocessed_DeltaAto.txt DummyDeltaATO.xml preprocess-DeltaATO-input.xsl
 #1452286304
-./run.sh 
+./run.sh
 #1452286167
 make
 #1452286322
@@ -19860,11 +19860,11 @@ java -classpath "./lib/saxon9ee.jar" -jar ./lib/saxon9he.jar -t -o:tmp/preproces
 #1452286364
 ls
 #1452286375
-more PACIFICA_ECHO_ATO.txt 
+more PACIFICA_ECHO_ATO.txt
 #1452286384
 ls
 #1452286390
-more PACIFICA_ECHO_ATO.txt 
+more PACIFICA_ECHO_ATO.txt
 #1452286416
 java -classpath "./lib/saxon9ee.jar" -jar ./lib/saxon9he.jar -t -o:tmp/preprocessed_EchoAto.txt DummyEchoATO.xml preprocess-EchoATO-input.xsl
 #1452286464
@@ -19880,15 +19880,15 @@ java -classpath "./lib/saxon9ee.jar" -jar ./lib/saxon9he.jar -t -o:tmp/preproces
 #1452287208
 NamePool contents: 2 entries in 2 chains. 6 URIs
 #1452287208
-marcelbecker@mb-macbook:~/src/coordinators-eclipse-workspace/XLSTest$ 
+marcelbecker@mb-macbook:~/src/coordinators-eclipse-workspace/XLSTest$
 #1452287218
 ./run.
 #1452287223
-./run.sh 
+./run.sh
 #1452287291
 ls tmp/
 #1452287355
-./run.sh 
+./run.sh
 #1452287440
 ls tmp/
 #1452287471
@@ -19922,17 +19922,17 @@ Parsing Delta ATO.txt using Daffodil. This will take about 1 minute.
 #1452287912
 Done! Please see the newly created ATO.xml
 #1452287912
-marcelbecker@mb-macbook:~/src/coordinators-eclipse-workspace/XLSTest$ 
+marcelbecker@mb-macbook:~/src/coordinators-eclipse-workspace/XLSTest$
 #1452287913
 ls
 #1452287918
-rm run.bat 
+rm run.bat
 #1452287924
-./run.sh 
+./run.sh
 #1452288736
 ls tmp/
 #1452288894
-./run.sh 
+./run.sh
 #1452289379
 java -Xms1024m -Xmx5024m  -XX:ReservedCodeCacheSize=128m -cp lib/* edu.illinois.ncsa.daffodil.Main parse -s DFDL-schemas/messages.xsd -r AirTaskingOrder -o tmp/invalid-DeltaATO.xml tmp/preprocessed-DeltaATO.txt
 #1452289401
@@ -19952,7 +19952,7 @@ TIMEFRAM/280600ZFEB20)
 #1452290926
 Data (hex) starting at byte 64 is: (0x2F4348472F2F0A414B4E4C44472F4E4F2F2F0A54494D454652414D2F3238303630305A4645423230)
 #1452290926
-marcelbecker@mb-macbook:~/src/coordinators-eclipse-workspace/XLSTest$ 
+marcelbecker@mb-macbook:~/src/coordinators-eclipse-workspace/XLSTest$
 #1452290930
 java -Xms1024m -Xmx5024m  -XX:ReservedCodeCacheSize=128m -classpath "lib/*" edu.illinois.ncsa.daffodil.Main parse -s DFDL-schemas/messages.xsd -r AirTaskingOrder -o tmp/invalid-DeltaATO.xml tmp/preprocessed_DeltaATO.txt
 #1452795426
@@ -19974,7 +19974,7 @@ ls
 #1452796832
 git init
 #1452796854
-cp ../scharp/.gitignore . 
+cp ../scharp/.gitignore .
 #1452796861
 git status
 #1452796875
@@ -20026,27 +20026,27 @@ git add lib/
 #1452797150
 git status
 #1452797156
-git commit -m 
+git commit -m
 #1452797164
 git commit -m "Initial commit."
 #1452797181
 git remote add origin ssh://git@stash.kestrel.edu:2222/rspce/atoxmlparser.git
 #1452797193
-git push -u origin master 
+git push -u origin master
 #1452797770
 git add README.md
 #1452797780
 git commit -m "Added README file."
 #1452797785
-git push -u origin master 
+git push -u origin master
 #1452797819
 git add README.md
 #1452797821
 git commit -m "Added README file."
 #1452797825
-git push -u origin master 
+git push -u origin master
 #1452797912
-./run.sh 
+./run.sh
 #1452798575
 exit
 #1452799710
@@ -20064,7 +20064,7 @@ git add .gitignore
 #1452799751
 git commit -m "Added ATO xml schemas."
 #1452799762
-git push -u origin master 
+git push -u origin master
 #1452904196
 grep 12G31VIX0 *
 #1452904701
@@ -20084,7 +20084,7 @@ git status
 #1453139788
 git commit -m "Fixed some to the time representation functions to use java.time package as the basis."
 #1453139796
-git push -u origin master 
+git push -u origin master
 #1453139810
 git add src/test/
 #1453139813
@@ -20100,7 +20100,7 @@ git status
 #1453139884
 git commit -m "Added air domain classes."
 #1453139889
-git push -u origin master 
+git push -u origin master
 #1453139928
 cd src/main/data/
 #1453139933
@@ -20108,7 +20108,7 @@ grep 10G12XO *
 #1453234374
 grep -i z22029 *
 #1453237492
-grep -i TSGCN00078 
+grep -i TSGCN00078
 #1453237509
 grep -i TSGCN00078 *
 #1453238199
@@ -20120,7 +20120,7 @@ grep <aircraft_call_sign> *
 #1453238240
 grep -i "<aircraft_call_sign>" *
 #1453238367
-cd 
+cd
 #1453238377
 cd src/planware
 #1453238378
@@ -20166,15 +20166,15 @@ ls
 #1453238423
 more external.
 #1453238426
-more external.lisp 
+more external.lisp
 #1453238433
-more external.sw 
+more external.sw
 #1453238533
 cd ..
 #1453238542
 cd TargetScheduler2 ls
 #1453238547
-cd TargetScheduler2 
+cd TargetScheduler2
 #1453238548
 ls
 #1453238550
@@ -20276,7 +20276,7 @@ find ./ -name *.sfsl
 #1453239430
 ls
 #1453239436
-more Instructions.txt 
+more Instructions.txt
 #1453239452
 find ./ -name *.sfsl
 #1453239505
@@ -20306,7 +20306,7 @@ cd Generated/
 #1453239918
 ls
 #1453239922
-more Planware.lisp 
+more Planware.lisp
 #1453239927
 git status
 #1453240165
@@ -20330,7 +20330,7 @@ cd Generated/
 #1453240189
 ls
 #1453240278
-rm Planware.sfsl 
+rm Planware.sfsl
 #1453248440
 ls
 #1453248441
@@ -20348,9 +20348,9 @@ cd ..
 #1453248478
 ls
 #1453248486
-more TargetScheduler-output.sw 
+more TargetScheduler-output.sw
 #1453248496
-more TargetSchedulerControl.sw 
+more TargetSchedulerControl.sw
 #1453248503
 cd Generated/
 #1453248503
@@ -20396,7 +20396,7 @@ git status
 #1453248958
 git commit -m "Added the original planware generated files for ants."
 #1453248966
-git push -u origin master 
+git push -u origin master
 #1453312003
 git status
 #1453312007
@@ -20418,7 +20418,7 @@ ls
 #1453320508
 cd entities/
 #1453320519
-diff IScenario.java ../interfaces/IScenario.java 
+diff IScenario.java ../interfaces/IScenario.java
 #1453336292
 cd ../..
 #1453336295
@@ -20442,7 +20442,7 @@ git status
 #1453336376
 git commit -m "Initial classes to create the planner code."
 #1453336381
-git push origin master 
+git push origin master
 #1453400251
 exit
 #1453400253
@@ -20466,7 +20466,7 @@ grep -r ./* A659
 #1453415802
 grep -r "A659" *
 #1453494162
-cd 
+cd
 #1453494170
 cd src/coordinators-eclipse-workspace/
 #1453494171
@@ -20504,7 +20504,7 @@ git status
 #1453494333
 git commit -m "Added data files and scenario creation code that instantiates the entire pacifica scenario."
 #1453494343
-git push -u origin master 
+git push -u origin master
 #1453939167
 git status
 #1453939201
@@ -20556,7 +20556,7 @@ cd src/main/data/
 #1453940253
 ls
 #1453940259
-rm -rf Entity\ Data.eml 
+rm -rf Entity\ Data.eml
 #1453940260
 ls
 #1453940263
@@ -20564,7 +20564,7 @@ git status
 #1453940319
 git commit -m "Initial version of Pacifica scenario with all units and corresponding resource classes."
 #1453940327
-git push -u origin master 
+git push -u origin master
 #1454003290
 exit
 #1454005065
@@ -20578,7 +20578,7 @@ git status
 #1454005135
 git commit -m "Added data files."
 #1454005144
-git push -u origin master 
+git push -u origin master
 #1454106624
 git status
 #1454106724
@@ -20616,7 +20616,7 @@ git commit -m "Added air refueling tracks, started working on scheduler for unit
 #1454106884
 git status
 #1454106890
-git push -u origin master 
+git push -u origin master
 #1454116793
 git status
 #1454116837
@@ -20624,7 +20624,7 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java s
 #1454116841
 git status
 #1454116856
-rm src/main/data/~\$C2WSPTT\ 4-2\ Parametric\ data\ with\ source.xlsx 
+rm src/main/data/~\$C2WSPTT\ 4-2\ Parametric\ data\ with\ source.xlsx
 #1454116862
 git status
 #1454116891
@@ -20648,7 +20648,7 @@ git status
 #1454433699
 git commit -m "Initial version of the scheduler for fighter missions."
 #1454433706
-git push -u origin master 
+git push -u origin master
 #1454447535
 git status
 #1454447544
@@ -20662,7 +20662,7 @@ git status
 #1454447591
 git commit -m "Fixed main schedule loop to use plan cell manager."
 #1454447596
-git push -u origin master 
+git push -u origin master
 #1454467698
 git status
 #1454467725
@@ -20690,9 +20690,9 @@ git status
 #1454725051
 git commit -m "Initial scheduler for air refueling tankers."
 #1454725062
-git push -r origin master 
+git push -r origin master
 #1454725075
-git push -u origin master 
+git push -u origin master
 #1454725079
 git status
 #1454888675
@@ -20714,7 +20714,7 @@ git status
 #1454978036
 git commit -m "Added turn activities, fixed activity sequence expansion, added initial code to expand tanker missions."
 #1454978042
-git push origin master 
+git push origin master
 #1455124936
 git status
 #1455124951
@@ -20748,7 +20748,7 @@ git status
 #1455125072
 git commit -m "Implementing the skeleton of the request provider bidding mechanism."
 #1455125077
-git push origin master 
+git push origin master
 #1455125082
 clear
 #1455151914
@@ -20764,7 +20764,7 @@ git status
 #1455151965
 git commit -m "Intermediary expansion of air refueling activities and bidding process."
 #1455151971
-git push origin master 
+git push origin master
 #1455294353
 exit
 #1455340432
@@ -20780,7 +20780,7 @@ git status
 #1455340488
 git commit -m "Fixed some problems with the synching of refuel activities."
 #1455340494
-git push -u origin master 
+git push -u origin master
 #1455479973
 cd src/coordinators-eclipse-workspace/
 #1455479977
@@ -20810,7 +20810,7 @@ git commit -m "Fixed air refueling time bounds, removed logging overhead."
 #1455480113
 git status
 #1455480122
-git push origin master 
+git push origin master
 #1455486869
 git status
 #1455486895
@@ -20818,7 +20818,7 @@ git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/PacificaScenario.ja
 #1455486920
 git commit -m "Fixed log statements."
 #1455486931
-git push origin master 
+git push origin master
 #1455487733
 cd src/main/data/
 #1455489837
@@ -20844,7 +20844,7 @@ git status
 #1455499781
 git commit -m "Changed the structure of the task and bid to reuse more code."
 #1455499786
-git push origin master 
+git push origin master
 #1455499851
 git status
 #1455499861
@@ -20856,7 +20856,7 @@ git status
 #1455499899
 git commit -m "Removed unused interface and class RequesterProviderContract."
 #1455499905
-git push origin master 
+git push origin master
 #1455499909
 git status
 #1455514404
@@ -20868,7 +20868,7 @@ git status
 #1455514440
 git commit -m "Added test for Support Missions."
 #1455514446
-git push origin master 
+git push origin master
 #1455566715
 git status
 #1455566861
@@ -20888,13 +20888,13 @@ git status
 #1455665639
 git commit -m "Fixed problems with dropping targets caused by the same target showing up in multiple ATOs."
 #1455665644
-git push origin master 
+git push origin master
 #1455688131
-cd  
+cd
 #1455688134
 cd .ssh
 #1455688136
-ls 
+ls
 #1455688144
 more config
 #1455688244
@@ -20906,7 +20906,7 @@ cd src/coordinators-eclipse-workspace/scharp/
 #1455689080
 ls
 #1455689086
-git status 
+git status
 #1455689118
 git add src/main/java/edu/kestrel/scharp/airdomain/entities/ src/main/java/edu/kestrel/scharp/planner/
 #1455689121
@@ -20918,7 +20918,7 @@ git status
 #1455689150
 git commit -m "Removed commented out code."
 #1455689156
-git push origin master 
+git push origin master
 #1455692311
 exit
 #1455733920
@@ -20942,7 +20942,7 @@ cd scharp/
 #1455734033
 ls -al .settings/
 #1455734053
-cd 
+cd
 #1455734062
 cd Dropbox/EclipseMarsSettings/DOT_metadata/
 #1455734062
@@ -20950,17 +20950,17 @@ ls
 #1455734064
 ls -al
 #1455734076
-rm .lock .log 
+rm .lock .log
 #1455734077
 ls
 #1455734079
 ls -al
 #1455734086
-rm -r .bak_0.log 
+rm -r .bak_0.log
 #1455734088
 cd ..
 #1455734090
-cd 
+cd
 #1455734126
 cd src/coordinators-eclipse-workspace/scharp/
 #1455734158
@@ -20980,7 +20980,7 @@ git status
 #1455735152
 git commit -m "Changed method names to clarify their behavior."
 #1455735157
-git push origin master 
+git push origin master
 #1455748173
 git status
 #1455748189
@@ -20992,23 +20992,23 @@ git status
 #1455748249
 git commit -m "Added the results manager to collect statistics about the scenario scheduled."
 #1455748256
-git push origin master 
+git push origin master
 #1455752325
 git status
 #1455752339
-git push origin test-remove-files 
+git push origin test-remove-files
 #1455752357
 git status
 #1455752630
-git checkout master 
+git checkout master
 #1455752644
 his | grep pull
 #1455752653
 git pull --all --prune
 #1455752664
-git branch 
+git branch
 #1455752674
-git branch -d test-remove-files 
+git branch -d test-remove-files
 #1455752677
 git pull
 #1455840920
@@ -21022,15 +21022,15 @@ git status
 #1455840969
 git commit -m "Fixed the stats computation."
 #1455840974
-git push origin master 
+git push origin master
 #1455840985
 git pull
 #1455841005
-git push origin master 
+git push origin master
 #1455841018
 git status
 #1455919812
-cd 
+cd
 #1455919813
 cd src
 #1455919815
@@ -21050,7 +21050,7 @@ cd
 #1455924382
 cd src/coordinators-eclipse-workspace/scharp/
 #1455924385
-git branch 
+git branch
 #1455924396
 git checkout -b multi-thread
 #1456158899
@@ -21066,7 +21066,7 @@ ls
 #1456159520
 git status
 #1456159534
-more .gitignore 
+more .gitignore
 #1456159535
 ls
 #1456159550
@@ -21078,7 +21078,7 @@ git add .gitignore
 #1456159577
 git commit -m "Added .gitignore."
 #1456159583
-git push origin master 
+git push origin master
 #1456161193
 ls
 #1456163714
@@ -21106,7 +21106,7 @@ git status
 #1456166876
 git commit -m "Added support to running the system using multithreaded execution."
 #1456166887
-git push -u origin multi-thread 
+git push -u origin multi-thread
 #1456170884
 git status
 #1456170900
@@ -21116,7 +21116,7 @@ git status
 #1456170916
 git commit -m "Small fixes."
 #1456170925
-git push -u origin multi-thread 
+git push -u origin multi-thread
 #1456170932
 clear
 #1456262477
@@ -21160,13 +21160,13 @@ cd ..
 #1456775946
 ls
 #1456775952
-cd eclipse-dir 
+cd eclipse-dir
 #1456775953
 ls
 #1456775971
 pwd
 #1456775982
-more eclipse-dir 
+more eclipse-dir
 #1456776040
 cd src/coordinators-eclipse-workspace/
 #1456776041
@@ -21190,7 +21190,7 @@ eclipse
 #1456783153
 which eclipse
 #1456784759
-cd 
+cd
 #1456784762
 cd eclipse-workspace/
 #1456784763
@@ -21198,7 +21198,7 @@ ls
 #1456784769
 ls -al
 #1456789866
-cd 
+cd
 #1456789873
 cd Library/
 #1456789874
@@ -21324,11 +21324,11 @@ ls
 #1457046636
 ls -al
 #1457046644
-cd .project 
+cd .project
 #1457046645
 ls
 #1457046657
-more .project 
+more .project
 #1457046666
 ls
 #1457048027
@@ -21368,9 +21368,9 @@ ls
 #1457112942
 git clone git@github.com:KestrelInstitute/scharpware.git
 #1457114973
-pwd  
+pwd
 #1457114974
-ls 
+ls
 #1457114977
 ls -al
 #1457114987
@@ -21416,7 +21416,7 @@ git statys
 #1457118972
 git status
 #1457118979
-ls 
+ls
 #1457119026
 cd ../../
 #1457119027
@@ -21474,7 +21474,7 @@ rm src/main/resources/xsd/messages-remove-anonymous-types.xml
 #1457119534
 rm src/main/resources/xsd/messages-remove-anonymous-types1.xml
 #1457119542
-rm pom.xml.split 
+rm pom.xml.split
 #1457119542
 ls
 #1457119545
@@ -21486,7 +21486,7 @@ ls
 #1457119654
 git commit -m "Added java files to repo."
 #1457119660
-git push -u origin master 
+git push -u origin master
 #1457119698
 cd ../../..
 #1457119700
@@ -21564,13 +21564,13 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/
 #1457370184
 git status
 #1457370203
-git add src/main/java/edu/kestrel/scharp/airdomain/interfaces/IDmpi.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/PacificaScenario.java src/main/java/edu/kestrel/scharp/planner/interfaces/IPlanningBid.java 
+git add src/main/java/edu/kestrel/scharp/airdomain/interfaces/IDmpi.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/PacificaScenario.java src/main/java/edu/kestrel/scharp/planner/interfaces/IPlanningBid.java
 #1457370207
 git status
 #1457370229
 git commit -m "Added schedule output."
 #1457370243
-git push -u origin multi-thread 
+git push -u origin multi-thread
 #1457370248
 git status
 #1457376628
@@ -21616,7 +21616,7 @@ open vnc://192.168.41.230:5900
 #1457561191
 open vnc://192.168.41.230:5901
 #1457559732
-./update-git.sh 
+./update-git.sh
 #1457565499
 cd ..
 #1457565500
@@ -21702,13 +21702,13 @@ git status
 #1457661762
 git commit -m "Added json output to schedule, and updated POM to get the json java libraries."
 #1457661770
-git push origin multi-thread 
+git push origin multi-thread
 #1457671623
 cd
 #1457671626
 cd Downloads/
 #1457671632
-java -jar jboss-devstudio-8.1.0.GA-installer-standalone.jar 
+java -jar jboss-devstudio-8.1.0.GA-installer-standalone.jar
 #1457677502
 exit
 #1457738878
@@ -21726,7 +21726,7 @@ ls
 #1457738952
 cd jboss-a-mq-6.2.0.redhat-133/
 #1457738955
-cd bin 
+cd bin
 #1457738965
 ./status
 #1457738972
@@ -21752,7 +21752,7 @@ cd ../..
 #1457741534
 cd ..
 #1457741680
-cd 
+cd
 #1457741689
 cd src/jboss-fuse/
 #1457741690
@@ -21760,7 +21760,7 @@ ls
 #1457741696
 cd jboss-a-mq-6.2.0.redhat-133/bin/
 #1457741697
-stat 
+stat
 #1457741712
 sh start
 #1457741718
@@ -21776,7 +21776,7 @@ ps -aux
 #1457741844
 ps -au
 #1457741848
-ps -al 
+ps -al
 #1457741861
 ps -Al
 #1457741929
@@ -21818,11 +21818,11 @@ cd jboss-a-mq-6.2.0.redhat-133/
 
 
 #1457750593
-./bin/client "activemq:producer --user admin --password admin" 
+./bin/client "activemq:producer --user admin --password admin"
 #1457750629
 ./bin/client activemq:dstat
 #1457750663
-./bin/client "activemq:consumer --user admin --password admin" 
+./bin/client "activemq:consumer --user admin --password admin"
 #1457750673
 ./bin/client activemq:dstat
 #1457751240
@@ -21852,7 +21852,7 @@ cd marcel-utils/
 #1457974776
 git pull
 #1457974782
-./update-git.sh 
+./update-git.sh
 #1457975101
 cd ..
 #1457975297
@@ -21862,7 +21862,7 @@ workon planx-eclipse
 #1457975333
 pip install -U pxrancher
 #1457971070
-./update-git.sh 
+./update-git.sh
 #1457975516
 ls px-web*
 #1457975518
@@ -21872,7 +21872,7 @@ cd ..
 #1457975525
 ls
 #1457975459
-pip install -U pxbuild 
+pip install -U pxbuild
 #1457979316
 his | grep build_
 #1458066476
@@ -21902,19 +21902,19 @@ ls
 #1458075093
 cd px-avro/
 #1458075166
-git checkout  master 
+git checkout  master
 #1458075174
 git pull --all --prune
 #1458075219
 ls
 #1458075225
-git branch 
+git branch
 #1458075244
-git checkout -d marcel-change-datareference-label 
+git checkout -d marcel-change-datareference-label
 #1458075258
-git checkout marcel-coa-mission-foreignkey 
+git checkout marcel-coa-mission-foreignkey
 #1458075265
-./build/build.sh 
+./build/build.sh
 #1458077074
 cd ..
 #1458077078
@@ -21966,7 +21966,7 @@ cd ..
 #1458077672
 cd px-avro/
 #1458077682
-pip uninstall pxavro 
+pip uninstall pxavro
 #1458077695
 pip install pip -U
 #1458077741
@@ -21982,11 +21982,11 @@ git clone git@github-enterprise.px.ftw:px-integration/luna-seed-mix.git
 #1458077903
 cd luna-seed-mix/
 #1458077907
-./pull_data.sh 
+./pull_data.sh
 #1458078711
 pip install -U pxbuild
 #1458079013
-deactivate 
+deactivate
 #1458079097
 virtualenvwrapper_verify_virtualenv
 #1458079104
@@ -21994,9 +21994,9 @@ virtualenvwrapper_verify_virtualenv planx-eclipse
 #1458079110
 workon planx-eclipse
 #1458079114
-virtualenvwrapper_verify_virtualenv 
+virtualenvwrapper_verify_virtualenv
 #1458079252
-deactivate 
+deactivate
 #1458079261
 rmvirtualenv planx-eclipse
 #1458079287
@@ -22008,7 +22008,7 @@ workon
 #1458079349
 ls
 #1458079355
-cd 
+cd
 #1458079358
 cd PythonEnvs/
 #1458079358
@@ -22052,7 +22052,7 @@ ls
 #1458079581
 sudo pip install virtualenvwrapper -U
 #1458079808
-more ~/.pip/pip.conf 
+more ~/.pip/pip.conf
 #1458079840
 python -c "import requests; print requests.get('http://pypi.python.org', verify=True)"
 #1458080272
@@ -22072,7 +22072,7 @@ virtualenv planx --always-copy
 #1458080734
 which python
 #1458080799
-virtualenv planx 
+virtualenv planx
 #1458080831
 workon planx
 #1458080842
@@ -22100,13 +22100,13 @@ cd src/plan-construction/pxsvchost
 #1458081172
 ls
 #1458081174
-more requirements.txt 
+more requirements.txt
 #1458081187
 pip install statsd
 #1458081200
 cd ../px-luna
 #1458081202
-ls 
+ls
 #1458081211
 cd ..
 #1458081217
@@ -22114,7 +22114,7 @@ cd px-luna-client/
 #1458081217
 ls
 #1458081225
-more requirements.txt 
+more requirements.txt
 #1458081236
 pip install tore
 #1458081245
@@ -22130,7 +22130,7 @@ cd pxplanner/
 #1458081292
 ls
 #1458081294
-more requirements.txt 
+more requirements.txt
 #1458081305
 pip install futures
 #1458081346
@@ -22158,7 +22158,7 @@ cd px-avro/
 #1458082189
 ls
 #1458082195
-./build/build.sh 
+./build/build.sh
 #1458083052
 pip uninstall pxavro
 #1458083064
@@ -22176,7 +22176,7 @@ cd ~/.m2
 #1458083906
 ls
 #1458083910
-more settings.xml 
+more settings.xml
 #1458083923
 cd ..
 #1458083927
@@ -22192,7 +22192,7 @@ cd ..
 #1458085646
 cd px-avro/
 #1458085654
-./build/build.sh 
+./build/build.sh
 #1458146180
 open vnc://192.168.41.230:5901
 #1458170169
@@ -22224,7 +22224,7 @@ source ~/.bashrc
 #1458332902
 ls
 #1458332904
-pwd 
+pwd
 #1458332905
 his
 #1458332971
@@ -22358,7 +22358,7 @@ cd nextcentury-scharp/
 #1458834262
 ls
 #1458834270
-npm install 
+npm install
 #1458834516
 bower install
 #1458834647
@@ -22372,7 +22372,7 @@ cd exerciseData
 #1458834676
 ls
 #1458834681
-./import.sh 
+./import.sh
 #1458834761
 cd ..
 #1458834768
@@ -22382,7 +22382,7 @@ cd nextcentury-scharp/
 #1458834773
 gulp
 #1458834910
-cd .. 
+cd ..
 #1458834912
 ls
 #1458834927
@@ -22436,7 +22436,7 @@ cd exerciseData
 #1458839473
 ls
 #1458839477
-./import.sh 
+./import.sh
 #1458839529
 mongoimport -d ATO_DELTA -c Data --type csv --headerline --file delta-strike-missions-wide.csv
 #1458846003
@@ -22458,17 +22458,17 @@ ls
 #1458846326
 cd exerciseData
 #1458846337
-npm install 
+npm install
 #1458846372
 his
 #1458846401
 mongoimport -d ATO -c planware-delta --file schedule.json --jsonArray
 #1458846437
-mongoimport -d ATO -c planware-delta --file schedule.json 
+mongoimport -d ATO -c planware-delta --file schedule.json
 #1458846463
 mongoimport -d ATO_DELTA -c Data --type csv --headerline --file delta-strike-missions-wide.csv
 #1458850972
-mongoimport -d ATO -c planware-delta --file schedule.json 
+mongoimport -d ATO -c planware-delta --file schedule.json
 #1458850988
 mongoimport -d ATO -c planware-delta --file schedule.json --jsonArray
 #1458851069
@@ -22572,7 +22572,7 @@ ln -s ../../nextcentury-scharp/dist.dev/ ./scharp
 #1458852124
 cd ..
 #1458852133
-./gradlew 
+./gradlew
 #1458852179
 ./gradlew jettyRun
 #1458852242
@@ -22588,7 +22588,7 @@ cd ..
 #1458852366
 cd nextcentury-scharp/
 #1458852373
-npm install 
+npm install
 #1458852401
 bower install
 #1458852409
@@ -22626,7 +22626,7 @@ cd exerciseData
 #1458855616
 ls
 #1458855624
-./import.sh 
+./import.sh
 #1458861102
 ssh DoD_Admin@71.179.165.116
 #1458861118
@@ -22636,15 +22636,15 @@ ssh DoD_Admin@71.179.165.116:422
 #1458861154
 ssh DoD_Admin@71.179.165.116 -p 422
 #1458861199
-ping 71.179.165.116 
+ping 71.179.165.116
 #1458861645
-ssh -p 422 -L 3390:wts:3389 DoD_Admin@71.179.165.116 
+ssh -p 422 -L 3390:wts:3389 DoD_Admin@71.179.165.116
 #1458861801
-ssh -p 422 -L 3390:localhost:3389 DoD_Admin@71.179.165.116 
+ssh -p 422 -L 3390:localhost:3389 DoD_Admin@71.179.165.116
 #1458861886
-ssh 71.179.165.116 -l DoD_Admin -L 3390:localhost:3389 
+ssh 71.179.165.116 -l DoD_Admin -L 3390:localhost:3389
 #1458861909
-ssh 71.179.165.117 -l DoD_Admin -L 3390:localhost:3389 
+ssh 71.179.165.117 -l DoD_Admin -L 3390:localhost:3389
 #1458862627
 ssh crake.kestrel.edu
 #1458862647
@@ -22706,7 +22706,7 @@ cd ..
 #1459986980
 cd px-luna
 #1459986985
-git checkout dev 
+git checkout dev
 #1459986989
 git pull
 #1459986999
@@ -22728,7 +22728,7 @@ ls
 #1459987065
 git pull --all --prune
 #1459987083
-git checkout dev 
+git checkout dev
 #1459987087
 git pull
 #1459987109
@@ -22750,7 +22750,7 @@ git pull --all
 #1459987230
 git checkout origin/dev
 #1459987244
-git checkout marcel-unify-parameters 
+git checkout marcel-unify-parameters
 #1459987251
 git pull
 #1459987260
@@ -22780,11 +22780,11 @@ git checkout dev
 #1459987453
 git checkout -b dev
 #1459987460
-git pull origin dev 
+git pull origin dev
 #1459987472
 git pull core dev
 #1459987492
-git pull origin dev 
+git pull origin dev
 #1459987500
 git status
 #1459987523
@@ -22812,13 +22812,13 @@ pxbuild  all
 #1459987918
 git pull
 #1459987935
-./build/build.sh 
+./build/build.sh
 #1459988121
 git pull
 #1459988137
 mvn clean
 #1459988151
-./build/build.sh 
+./build/build.sh
 #1459988228
 cd ..
 #1459988241
@@ -22828,7 +22828,7 @@ cd px-luna
 #1459988346
 pxbuild all
 #1459988363
-docker-machine 
+docker-machine
 #1459988373
 docker-machine start
 #1459988394
@@ -22898,7 +22898,7 @@ cd marcel-utils/
 #1459989548
 git pull
 #1459989843
-./update-git.sh 
+./update-git.sh
 #1459989020
 docker pull docker.px.ftw/pxbase/px-testing:latest
 #1460047130
@@ -22942,43 +22942,43 @@ cd TE2_release_v1_2/
 #1460070709
 ls
 #1460070723
-more CruiseMissiles.xml 
+more CruiseMissiles.xml
 #1460070729
-more Mappings.xml 
+more Mappings.xml
 #1460070736
-more MissionSCLs.xml 
+more MissionSCLs.xml
 #1460070750
-more Squadrons.xml 
+more Squadrons.xml
 #1460070765
 ls
 #1460070777
 ls -al
 #1460070791
-more AircraftSCLs.xml 
+more AircraftSCLs.xml
 #1460070841
-cd FobAircraftLocations.xml 
+cd FobAircraftLocations.xml
 #1460070848
-more  FobAircraftLocations.xml 
+more  FobAircraftLocations.xml
 #1460070856
-more SAMSites.xml 
+more SAMSites.xml
 #1460070866
 ls
 #1460070882
-more EventParams.xml 
+more EventParams.xml
 #1460070885
-more Facilities.xml 
+more Facilities.xml
 #1460070893
 ls
 #1460070901
-more Refuelings.xml 
+more Refuelings.xml
 #1460070908
-more Airbases.xml 
+more Airbases.xml
 #1460070927
-more CRCSites.xml 
+more CRCSites.xml
 #1460070931
-more CNXMSNs.xml 
+more CNXMSNs.xml
 #1460070935
-more CruiseMissiles.xml 
+more CruiseMissiles.xml
 #1460070936
 ls
 #1460129491
@@ -22988,9 +22988,9 @@ git pull
 #1460129502
 git pull core dev
 #1460129516
-git push origin dev 
+git push origin dev
 #1460129533
-git checkout marcel-unify-parameters 
+git checkout marcel-unify-parameters
 #1460129536
 git pull
 #1460129558
@@ -23010,7 +23010,7 @@ ping docker.px.ftw
 #1460405321
 ls
 #1460405330
-./pull_data.sh 
+./pull_data.sh
 #1460405861
 pxbuild all
 #1460406261
@@ -23020,7 +23020,7 @@ pxbuild --use-docker all
 #1460406343
 ls
 #1460406351
-./pull_data.sh 
+./pull_data.sh
 #1460406367
 pxbuild --use-docker all
 #1460406389
@@ -23090,7 +23090,7 @@ docker-machine restart dev
 #1460413050
 docker-machine env dev
 #1460413055
-docker-machine env 
+docker-machine env
 #1460413073
 eval $(doecker-machine env)
 #1460413080
@@ -23128,7 +23128,7 @@ ls
 #1460480393
 cat planx_key.
 #1460480397
-cat planx_key.pub 
+cat planx_key.pub
 #1460480504
 cd
 #1460480533
@@ -23188,7 +23188,7 @@ scp -i ~/.ssh/planx_key .git-completion.bash ubuntu@10.130.2.77:/home/ubuntu/
 #1460483553
 scp -i ~/.ssh/planx_key .git-completion.bash ubuntu@10.130.2.77:/home/ubuntu/.git-completion.bash
 #1460483601
-more .git-completion.bash 
+more .git-completion.bash
 #1460483611
 ls
 #1460483618
@@ -23272,13 +23272,13 @@ emacs --version
 #1460655839
 source ~/.bashrc
 #1460655881
-emacsnoinit 
+emacsnoinit
 #1460657567
 cd Dropbox/.emacs.d
 #1460657568
 ls
 #1460737107
-cd 
+cd
 #1460737112
 cd src/plan-construction/
 #1460737123
@@ -23320,7 +23320,7 @@ cd PythonEnvs/
 #1460737845
 ls
 #1460737144
-./update-git.sh 
+./update-git.sh
 #1460737847
 ls-al
 #1460737849
@@ -23360,7 +23360,7 @@ pip install pxrancher pxbuild
 #1460738709
 emacs
 #1460738820
-emacsnw 
+emacsnw
 #1460738845
 alias
 #1460739068
@@ -23392,7 +23392,7 @@ pxbuild-gocd gather-meta --all pxbox-testbed-dev
 #1460740697
 ls
 #1460740708
-more px-luna-seed-steel-thread.hcl 
+more px-luna-seed-steel-thread.hcl
 #1460740767
 his
 #1460743676
@@ -23406,7 +23406,7 @@ cd offline-dev-environment/
 #1460743686
 ls
 #1460743835
-./clone_stuff.sh 
+./clone_stuff.sh
 #1460743916
 cd ..
 #1460743918
@@ -23478,7 +23478,7 @@ sudo pip install ipython -U
 #1461176140
 sudo -H pip install ipython -U
 #1461177737
-cd 
+cd
 #1461177747
 cd src/
 #1461177748
@@ -23522,7 +23522,7 @@ git pull --all --prune
 #1461342675
 git branch -a
 #1461342714
-git checkout marcel-unify-parameters 
+git checkout marcel-unify-parameters
 #1461342754
 git pull --all
 #1461342772
@@ -23570,7 +23570,7 @@ git checkout dev
 #1461343345
 git pull --all
 #1461343364
-git checkout master 
+git checkout master
 #1461343373
 git pull --all --prune
 #1461343388
@@ -23580,7 +23580,7 @@ git branch -a
 #1461343416
 git branch -r | grep origin
 #1461343435
-git checkout marcel-unify-parameters 
+git checkout marcel-unify-parameters
 #1461343439
 git pull
 #1461343946
@@ -23590,7 +23590,7 @@ git add src/main/avro/data/subsystems/appstore/parameter.avdl
 #1461343985
 git commit -m "Added default value, made description required."
 #1461343996
-git push -u origin marcel-unify-parameters 
+git push -u origin marcel-unify-parameters
 #1461348000
 git status
 #1461348011
@@ -23598,7 +23598,7 @@ git add src/main/avro/data/subsystems/appstore/parameter.avdl
 #1461348044
 git commit -m "Added fields back into parameter protocol and schema."
 #1461348066
-git push origin marcel-unify-parameters 
+git push origin marcel-unify-parameters
 #1461600498
 ls
 #1461600503
@@ -23638,13 +23638,13 @@ git add src/pxplanner/action_recommendation_manager.py
 #1461694677
 git commit -m "Remove app.parameterGroups."
 #1461694686
-git push -u origin staging5 
+git push -u origin staging5
 #1461694875
 git add src/pxplanner/action_recommendation_manager.py
 #1461694885
 git commit -m "Remove app.parameterGroups."
 #1461694891
-git push -u origin staging5 
+git push -u origin staging5
 #1461695098
 git add src/pxplanner/action_recommendation_manager.py
 #1461695102
@@ -23654,13 +23654,13 @@ git add src/pxplanner/dadi/activity_wrappers.py
 #1461695121
 git commit -m "Remove app.parameterGroups."
 #1461695126
-git push -u origin staging5 
+git push -u origin staging5
 #1461695236
 git add src/pxplanner/dadi/activity_wrappers.py
 #1461695241
 git commit -m "Remove app.parameterGroups."
 #1461695244
-git push -u origin staging5 
+git push -u origin staging5
 #1461699320
 ls
 #1461699325
@@ -23684,9 +23684,9 @@ git checkout dev
 #1461709320
 git branch -a
 #1461709347
-git checkout origin/staging5 
+git checkout origin/staging5
 #1461709372
-git checkout master 
+git checkout master
 #1461709375
 git pull
 #1461709384
@@ -23704,7 +23704,7 @@ git checkout origin/dev
 #1461709551
 git checkout -t origin/dev
 #1461709571
-git checkout -t origin/staging5 
+git checkout -t origin/staging5
 #1461709576
 git pull
 #1461709609
@@ -23716,11 +23716,11 @@ git pull
 #1461709634
 git pull core dev
 #1461709666
-git push origin dev 
+git push origin dev
 #1461709756
 git checkout staging5
 #1461709760
-git pull 
+git pull
 #1461709778
 workon planx
 #1461709797
@@ -23762,7 +23762,7 @@ git pull core dev
 #1461710418
 git remote -v
 #1461710427
-git push origin dev 
+git push origin dev
 #1461710442
 git checkout staging5
 #1461710464
@@ -23866,13 +23866,13 @@ grep Label pretty_*
 #1461962157
 more pretty_6C98E6FA8D6048B2AC7662CF0ECA33EA.xml
 #1461964703
-cd 
+cd
 #1461964718
 cd src/coordinators-eclipse-workspace/scharp/src/main/data/TE2/
 #1461964719
 ls
 #1461964780
-diff RSPACE\ TE2\ SCLs.csv RSPACE\ TE2\ SCLs\ v3.2.csv 
+diff RSPACE\ TE2\ SCLs.csv RSPACE\ TE2\ SCLs\ v3.2.csv
 #1461965307
 his
 #1461965335
@@ -23894,7 +23894,7 @@ for i in *.xml; do xmllint --format "$i" > pretty_"$i"; done
 #1461965366
 ls
 #1461965372
-more pretty_Targets.xml 
+more pretty_Targets.xml
 #1462237053
 exit
 #1462237058
@@ -23948,7 +23948,7 @@ git add src/test/java/edu/kestrel/scharp/planner/manager/TE2PlanManagerTest.java
 #1462381663
 git commit -m "Several changes to parse the TE2 files."
 #1462381676
-git push -u origin multi-thread 
+git push -u origin multi-thread
 #1462382143
 mvn --version
 #1462382169
@@ -24042,11 +24042,11 @@ ls
 #1462473464
 docker build -t scharp/activemq .
 #1462473687
-ls 
+ls
 #1462473702
-chmod +x docker-build.sh 
+chmod +x docker-build.sh
 #1462473706
-chmod +x docker-run.sh 
+chmod +x docker-run.sh
 #1462474137
 cd ../DockerJava/
 #1462474146
@@ -24058,7 +24058,7 @@ cp ../DockerAMQ/docker-* .
 #1462474211
 ls
 #1462474462
-./docker-build.sh 
+./docker-build.sh
 #1462474754
 cd ..
 #1462474762
@@ -24070,7 +24070,7 @@ cd jboss-fuse-docker/
 #1462474771
 ls
 #1462474776
-./build.sh 
+./build.sh
 #1462480413
 df
 #1462480469
@@ -24086,7 +24086,7 @@ df
 #1462480646
 cd src/coordinators-eclipse-workspace/scharp/Docker/DockerJava/
 #1462480658
-./docker-build.sh 
+./docker-build.sh
 #1462480834
 docker images
 #1462480855
@@ -24096,7 +24096,7 @@ docker rmi -f $(docker images -aq)
 #1462480885
 docker images
 #1462480889
-./docker-build.sh 
+./docker-build.sh
 #1462481309
 docker-machine restart
 #1462481390
@@ -24116,11 +24116,11 @@ cd PythonEnvs/
 #1462481686
 ls
 #1462481704
-more postactivate 
+more postactivate
 #1462481729
 ls
 #1462481405
-./docker-build.sh 
+./docker-build.sh
 #1462488405
 docker images
 #1462488409
@@ -24128,7 +24128,7 @@ cd ..
 #1462488413
 cd DockerAMQ/
 #1462488417
-./docker-build.sh 
+./docker-build.sh
 #1462488456
 ls
 #1462488467
@@ -24138,23 +24138,23 @@ curl -O http://archive.apache.org/dist/activemq/apache-activemq/5.13.3/apache-ac
 #1462488482
 ls
 #1462488506
-tar xz apache-activemq-5.13.3-bin.tar.gz 
+tar xz apache-activemq-5.13.3-bin.tar.gz
 #1462488560
-tar -xz apache-activemq-5.13.3-bin.tar.gz 
+tar -xz apache-activemq-5.13.3-bin.tar.gz
 #1462488577
-tar -xzf apache-activemq-5.13.3-bin.tar.gz 
+tar -xzf apache-activemq-5.13.3-bin.tar.gz
 #1462488628
-curl http://www.mirrorservice.org/sites/ftp.apache.org/activemq/5.13.3/apache-activemq-5.13.3-bin.tar.gz 
+curl http://www.mirrorservice.org/sites/ftp.apache.org/activemq/5.13.3/apache-activemq-5.13.3-bin.tar.gz
 #1462488640
-curl -O http://www.mirrorservice.org/sites/ftp.apache.org/activemq/5.13.3/apache-activemq-5.13.3-bin.tar.gz 
+curl -O http://www.mirrorservice.org/sites/ftp.apache.org/activemq/5.13.3/apache-activemq-5.13.3-bin.tar.gz
 #1462488700
 ls
 #1462488709
-tar -xzf apache-activemq-5.13.3-bin.tar.gz 
+tar -xzf apache-activemq-5.13.3-bin.tar.gz
 #1462488711
 ls
 #1462488760
-./docker-build.sh 
+./docker-build.sh
 #1462488867
 docker images
 #1462488874
@@ -24166,7 +24166,7 @@ docker rm -f $(docker ps -aq)
 #1462489000
 ls
 #1462489008
-./docker-run.sh 
+./docker-run.sh
 #1462489046
 ls
 #1462489051
@@ -24174,7 +24174,7 @@ docker logs
 #1462489064
 docker logs e3073ea9b226973b0002d6d79422c3511e5cddad0bbbe057108559053c8e3c4d
 #1462489134
-./docker-run.sh 
+./docker-run.sh
 #1462489141
 docker ps
 #1462489144
@@ -24208,7 +24208,7 @@ sudo rm /usr/local/bin/docker
 #1462489865
 sudo rm /usr/local/bin/boot2docker
 #1462489884
-sudo rm /usr/local/share/boot2docker/boot2docker.iso 
+sudo rm /usr/local/share/boot2docker/boot2docker.iso
 #1462489898
 sudo rmdir /usr/local/share/boot2docker/
 #1462489910
@@ -24286,7 +24286,7 @@ docker-machine create
 #1462490856
 docker-machine ls
 #1462490862
-docker-machine create 
+docker-machine create
 #1462490879
 docker-machine create --driver virtualbox
 #1462490907
@@ -24294,7 +24294,7 @@ docker-machine create --driver virtualbox default
 #1462490988
 docker-machine stop
 #1462491012
-docker-machine create --driver virtualbox 
+docker-machine create --driver virtualbox
 #1462491017
 docker-machine create --driver virtualbox default
 #1462491039
@@ -24392,7 +24392,7 @@ docker ps -a
 #1462492105
 docker images
 #1462492113
-./docker-build.sh 
+./docker-build.sh
 #1462492672
 docker images
 #1462492675
@@ -24400,9 +24400,9 @@ cd ..
 #1462492679
 cd DockerAMQ/
 #1462492685
-./docker-build.sh 
+./docker-build.sh
 #1462492733
-./docker-run.sh 
+./docker-run.sh
 #1462492743
 docker ps -a
 #1462492789
@@ -24410,11 +24410,11 @@ docker exec -it scharp/activemq bash
 #1462492834
 docker run -it scharp/activemq bash
 #1462492952
-./docker-run.sh 
+./docker-run.sh
 #1462492956
-./docker-build.sh 
+./docker-build.sh
 #1462493012
-./docker-run.sh 
+./docker-run.sh
 #1462493017
 docker ps
 #1462493020
@@ -24424,9 +24424,9 @@ docker exec -it scharp/activemq bash
 #1462493053
 docker run -it scharp/activemq bash
 #1462493805
-./docker-build.sh 
+./docker-build.sh
 #1462493818
-./docker-run.sh 
+./docker-run.sh
 #1462493848
 docker logs 80e9af755ac1c93e919e89bc50611c3f0a86576114a46eb55fd2d5aa1a695075
 #1462494007
@@ -24460,7 +24460,7 @@ docker build -t scharp/activemq .
 #1462495384
 docker run --name='activemq' -d -e 'ACTIVEMQ_NAME=amqp-srv1' -e 'ACTIVEMQ_REMOVE_DEFAULT_ACCOUNT=true' -e 'ACTIVEMQ_ADMIN_LOGIN=admin' -e 'ACTIVEMQ_ADMIN_PASSWORD=admin' -e 'ACTIVEMQ_WRITE_LOGIN=producer_login' -e 'ACTIVEMQ_WRITE_PASSWORD=producer_password' -e 'ACTIVEMQ_READ_LOGIN=consumer_login' -e 'ACTIVEMQ_READ_PASSWORD=consumer_password' -e 'ACTIVEMQ_JMX_LOGIN=jmx_login' -e 'ACTIVEMQ_JMX_PASSWORD=jmx_password' -e 'ACTIVEMQ_STATIC_TOPICS=topic1;topic2;topic3' -e 'ACTIVEMQ_STATIC_QUEUES=queue1;queue2;queue3' -e 'ACTIVEMQ_MIN_MEMORY=1024' -e  'ACTIVEMQ_MAX_MEMORY=4096' -e 'ACTIVEMQ_ENABLED_SCHEDULER=true' -v /data/activemq:/data/activemq -v /var/log/activemq:/var/log/activemq -p 8161:8161 -p 61616:61616 -p 61613:61613 scharp/activemq
 #1462495791
-docker-machine ip 
+docker-machine ip
 #1462495905
 docker ps -a
 #1462495916
@@ -24472,9 +24472,9 @@ cd ..
 #1462495925
 cd DockerAMQ/
 #1462495933
-./docker-build.sh 
+./docker-build.sh
 #1462496110
-./docker-run.sh 
+./docker-run.sh
 #1462553817
 docker ps
 #1462553832
@@ -24486,7 +24486,7 @@ cd src
 #1462558040
 ls
 #1462558045
-cd 
+cd
 #1462558046
 cd src/
 #1462558047
@@ -24526,7 +24526,7 @@ ls
 #1462830352
 cd jboss-fuse-docker/
 #1462830354
-./build.sh 
+./build.sh
 #1462830364
 docker-machine start
 #1462830385
@@ -24534,7 +24534,7 @@ eval "$(docker-machine env dev)"
 #1462830393
 docker-machine env
 #1462830478
-./build.sh 
+./build.sh
 #1462831054
 docker run --rm -ti -P jboss/jboss-fuse-full
 #1462831074
@@ -24564,11 +24564,11 @@ docker-machine ls
 #1462832840
 docker run --rm -ti -P jboss/jboss-fuse-full
 #1462833453
-./build.sh 
+./build.sh
 #1462833907
 docker run --rm -ti -p 8181:8181 -p 8101:8101 jboss/jboss-fuse-full
 #1462833953
-./build.sh 
+./build.sh
 #1462903900
 cd src/Apache-Camel/apache-camel-2.17.1/examples/camel-example-jms-file/
 #1462903901
@@ -24586,7 +24586,7 @@ cd test/
 #1462904079
 ls
 #1462904094
-more ID-mb-macbook-local-54521-1462903971257-4-10-1-1-1 
+more ID-mb-macbook-local-54521-1462903971257-4-10-1-1-1
 #1462904856
 cd ..
 #1462904857
@@ -24614,11 +24614,11 @@ ls
 #1462904908
 more camel-client
 #1462904914
-more camel-client.xml 
+more camel-client.xml
 #1462912037
 cd ../..
 #1462912039
-cd 
+cd
 #1462912041
 cd src/
 #1462912042
@@ -24632,9 +24632,9 @@ cd activemq-parent-5.13.3
 #1462912060
 ls
 #1462912119
-cd more README.txt 
+cd more README.txt
 #1462912141
-more README.txt 
+more README.txt
 #1462912180
 ls
 #1462912375
@@ -24642,23 +24642,23 @@ cd ..
 #1462912378
 ls
 #1462912395
-pgp -ka KEYS 
+pgp -ka KEYS
 #1462912403
 gpg --import keys
 #1462912449
-gpg --verify apache-activemq-5.13.3-bin.zip.asc 
+gpg --verify apache-activemq-5.13.3-bin.zip.asc
 #1462912506
-gpg --verify apache-activemq-5.13.3-bin.tar.gz.asc 
+gpg --verify apache-activemq-5.13.3-bin.tar.gz.asc
 #1462912566
 gpg --import keys
 #1462912570
-gpg --import KEYS 
+gpg --import KEYS
 #1462912583
-gpg --verify apache-activemq-5.13.3-bin.tar.gz.asc 
+gpg --verify apache-activemq-5.13.3-bin.tar.gz.asc
 #1462927207
 ls
 #1462927229
-java -jar jboss-eap-6.4.0-installer.jar 
+java -jar jboss-eap-6.4.0-installer.jar
 #1462985931
 exit
 #1462927202
@@ -24732,7 +24732,7 @@ pip install tornado -U
 #1462993858
 python --version
 #1462993868
-pip install tornado 
+pip install tornado
 #1462993909
 workon planx-eclipse
 #1462993918
@@ -24746,7 +24746,7 @@ pip --version
 #1462993978
 pip --version
 #1462994003
-deactivate 
+deactivate
 #1462994008
 pip --version
 #1462994033
@@ -24754,9 +24754,9 @@ cd ..
 #1462994054
 virtualenv marcel-add-description-coas-env/
 #1462994087
-virtualenv --always_copy marcel-add-description-coas-env/ 
+virtualenv --always_copy marcel-add-description-coas-env/
 #1462994099
-virtualenv --always-copy marcel-add-description-coas-env/ 
+virtualenv --always-copy marcel-add-description-coas-env/
 #1462994130
 ls -al
 #1462994137
@@ -24790,7 +24790,7 @@ cd deploy/
 #1463088455
 ls
 #1463088460
-more README 
+more README
 #1463088465
 ls
 #1463088467
@@ -24836,9 +24836,9 @@ ls
 #1463090545
 more README.
 #1463090554
-more README.md 
+more README.md
 #1463093653
-cd 
+cd
 #1463093665
 cd src/jboss-fuse/EAP-6.4.0/
 #1463093666
@@ -24852,9 +24852,9 @@ cd helloworld-mdb
 #1463093697
 ls
 #1463093703
-more README.md 
+more README.md
 #1463093751
-cd 
+cd
 #1463093754
 cd -
 #1463093756
@@ -24918,7 +24918,7 @@ ls
 #1463098756
 cd jboss-fuse/jboss-eap-6.1.0.GA-maven-repository/cd ..
 #1463098758
-cd 
+cd
 #1463098766
 cd src/jboss-fuse/
 #1463098772
@@ -24942,13 +24942,13 @@ ls
 #1463099691
 rm -rf JBossAMQTest.jar
 #1463099697
-rm JBossAMQTest.jar.undeployed 
+rm JBossAMQTest.jar.undeployed
 #1463099698
 ls
 #1463099707
-mr activemq-rar-5.11.0.redhat-620133.rar.undeployed 
+mr activemq-rar-5.11.0.redhat-620133.rar.undeployed
 #1463099712
-rm activemq-rar-5.11.0.redhat-620133.rar.undeployed 
+rm activemq-rar-5.11.0.redhat-620133.rar.undeployed
 #1463099714
 ls
 #1463099731
@@ -24978,7 +24978,7 @@ docker rm 0ba80507ffa7
 #1463099970
 docker ps -aq
 #1463100031
-./bin/standalone.sh 
+./bin/standalone.sh
 #1463100256
 cd jboss-eap-6.4.0.GA-quickstarts/
 #1463100257
@@ -24992,31 +24992,31 @@ mvn compile package
 #1463100385
 cd ../..
 #1463100390
-./bin/standalone.sh 
+./bin/standalone.sh
 #1463100426
 cd standalone/deployments/
 #1463100427
 ls
 #1463100447
-rm jboss-helloworld-mdb.war jboss-helloworld-mdb.war.failed 
+rm jboss-helloworld-mdb.war jboss-helloworld-mdb.war.failed
 #1463100447
 ls
 #1463100457
-cd activemq-rar.rar.failed 
+cd activemq-rar.rar.failed
 #1463100457
 ls
 #1463100464
-rm activemq-rar.rar.failed 
+rm activemq-rar.rar.failed
 #1463100465
 ls
 #1463100521
 cd ../..
 #1463100526
-./bin/standalone.sh 
+./bin/standalone.sh
 #1463100872
 cp /Users/marcelbecker/src/jboss-fuse/jboss-eap-quickstarts/helloworld-mdb/target/jboss-helloworld-mdb.war standalone/deployments/
 #1463100876
-./bin/standalone.sh 
+./bin/standalone.sh
 #1463101791
 cd ../..
 #1463101794
@@ -25036,23 +25036,23 @@ mvn package
 #1463102103
 cp /Users/marcelbecker/src/jboss-fuse/jboss-eap-quickstarts/helloworld-mdb/target/jboss-helloworld-mdb.war standalone/deployments/
 #1463102113
-./bin/standalone.sh 
+./bin/standalone.sh
 #1463102148
 ls standalone/deployments/
 #1463102165
-rm -rf standalone/deployments/jboss-helloworld-mdb.war.failed 
+rm -rf standalone/deployments/jboss-helloworld-mdb.war.failed
 #1463102180
-rm -rf standalone/deployments/activemq-rar.rar.failed 
+rm -rf standalone/deployments/activemq-rar.rar.failed
 #1463102185
 ls standalone/deployments/
 #1463103976
 mvn compile
 #1463103987
-more README.md 
+more README.md
 #1463109957
 mvn clean install
 #1463102189
-./bin/standalone.sh 
+./bin/standalone.sh
 #1463156428
 cd ..
 #1463156445
@@ -25064,7 +25064,7 @@ ls
 #1463156474
 cd helloworld-mdb
 #1463156484
-mvn compile 
+mvn compile
 #1463179469
 exit
 #1463179472
@@ -25124,21 +25124,21 @@ cd wildfly-10.0.0.Final
 #1463181520
 ls
 #1463181526
-./bin/standalone.sh 
+./bin/standalone.sh
 #1463182519
-./bin/standalone.sh -c standalone/configuration/standalone.xml 
+./bin/standalone.sh -c standalone/configuration/standalone.xml
 #1463182535
-./bin/standalone.sh -c standalone.xml 
+./bin/standalone.sh -c standalone.xml
 #1463185420
-./bin/standalone.sh -c standalone-full.xml 
+./bin/standalone.sh -c standalone-full.xml
 #1463185585
-./bin/standalone.sh -c standalone.xml 
+./bin/standalone.sh -c standalone.xml
 #1463186997
 ./bin/standalone.sh
 #1463187099
-./bin/standalone.sh -c standalone-full.xml 
+./bin/standalone.sh -c standalone-full.xml
 #1463187815
-./bin/standalone.sh -c standalone.xml 
+./bin/standalone.sh -c standalone.xml
 #1463188325
 ps -al
 #1463188366
@@ -25146,7 +25146,7 @@ kill -9 4739
 #1463188375
 ps -al
 #1463192249
-./bin/standalone.sh -c standalone.xml 
+./bin/standalone.sh -c standalone.xml
 #1463192277
 ps -al
 #1463192283
@@ -25176,7 +25176,7 @@ ls
 #1463259155
 cd wildfly-10.0.0.Final
 #1463259163
-./bin/standalone.sh 
+./bin/standalone.sh
 #1463259206
 ps -Al
 #1463259227
@@ -25186,13 +25186,13 @@ kill -9 14757
 #1463259252
 ps -A | grep java
 #1463259288
-./bin/standalone.sh 
+./bin/standalone.sh
 #1463260553
 cd src/jboss-fuse/jboss-a-mq-6.2.0.redhat-133/
 #1463262550
 ls
 #1463262564
-./bin/add-user.sh 
+./bin/add-user.sh
 #1463260571
 ./bin/standalone
 #1463267252
@@ -25244,7 +25244,7 @@ git status
 #1463420314
 git commit -m "Integration with AMQ."
 #1463420322
-git checkout 10.x 
+git checkout 10.x
 #1463420326
 git status
 #1463420329
@@ -25280,7 +25280,7 @@ cd ..
 #1463421294
 mvn -e wildfly:undeploy
 #1463420452
-./bin/standalone.sh 
+./bin/standalone.sh
 #1463421320
 ./bin/standalone.sh -c standalone-full.xml
 #1463421351
@@ -25298,7 +25298,7 @@ cp wildfly-10.0.0.Final.zip wildfly-test/
 #1463421443
 cd wildfly-test/
 #1463421447
-unzip wildfly-10.0.0.Final.zip 
+unzip wildfly-10.0.0.Final.zip
 #1463421451
 ls
 #1463421455
@@ -25340,7 +25340,7 @@ cd scharp/
 #1463434907
 ls
 #1463434911
-git checkout multi-thread 
+git checkout multi-thread
 #1463434913
 ls
 #1463505027
@@ -25364,7 +25364,7 @@ cd src/jboss-fuse/
 #1463699184
 ls
 #1463699206
-cd jboss-eap-6.4.0-installer.jar 
+cd jboss-eap-6.4.0-installer.jar
 #1463699223
 ls
 #1463699231
@@ -25372,13 +25372,13 @@ cd EAP-6.4.0/
 #1463699232
 ls
 #1463699236
-./bin/standalone.sh 
+./bin/standalone.sh
 #1463699394
 cd ../wildfly-10.0.0.Final
 #1463699395
 ls
 #1463699398
-./bin/standalone.sh 
+./bin/standalone.sh
 #1463699468
 cd ..
 #1463699474
@@ -25416,7 +25416,7 @@ rm -rf *
 #1463699534
 cd ../..
 #1463699538
-./bin/standalone.sh 
+./bin/standalone.sh
 #1463700492
 cd ..
 #1463700498
@@ -25428,13 +25428,13 @@ cd jboss-eap-7.0
 #1463700506
 ls
 #1463700510
-./bin/standalone.sh 
+./bin/standalone.sh
 #1463700664
-./bin/jboss-cli.sh 
+./bin/jboss-cli.sh
 #1463700697
-./bin/add-user.sh 
+./bin/add-user.sh
 #1463700735
-./bin/standalone.sh 
+./bin/standalone.sh
 #1463701759
 cd
 #1463701792
@@ -25448,11 +25448,11 @@ ls
 #1463701807
 more README.
 #1463701813
-more README.md 
+more README.md
 #1463701842
 mvn clean install wildfly:deploy
 #1463701877
-more README.md 
+more README.md
 #1463760020
 cd
 #1463760023
@@ -25472,7 +25472,7 @@ cd jboss-eap-7.0
 #1463765640
 ls
 #1463765651
-java -jar fuse-eap-installer-6.2.1.redhat-084.jar 
+java -jar fuse-eap-installer-6.2.1.redhat-084.jar
 #1463765693
 cd ..
 #1463765694
@@ -25480,7 +25480,7 @@ ls
 #1463765745
 cp ../wildfly-10.0.0.Final.zip .
 #1463765752
-unzip wildfly-10.0.0.Final.zip 
+unzip wildfly-10.0.0.Final.zip
 #1463765759
 ls
 #1463765773
@@ -25492,11 +25492,11 @@ cd wildfly-10.0.0.Final
 #1463765781
 ls
 #1463765787
-java -jar fuse-eap-installer-6.2.1.redhat-084.jar 
+java -jar fuse-eap-installer-6.2.1.redhat-084.jar
 #1463765959
-java -jar temporary fuse-eap-installer-6.2.1.redhat-084.jar 
+java -jar temporary fuse-eap-installer-6.2.1.redhat-084.jar
 #1463765992
-java -jar fuse-eap-installer-6.2.1.redhat-084.jar 
+java -jar fuse-eap-installer-6.2.1.redhat-084.jar
 #1463786114
 ./bin/standalone.sh -c standalone-full.xml
 #1463786188
@@ -25554,7 +25554,7 @@ cd META-INF/
 #1463787170
 ls
 #1463787175
-more ra.xml 
+more ra.xml
 #1463787324
 rm -rf ls
 #1463787327
@@ -25564,7 +25564,7 @@ rm *.jar
 #1463787338
 ls
 #1463787354
-rm broker-config.xml log4j.properties 
+rm broker-config.xml log4j.properties
 #1463787355
 ls
 #1463787370
@@ -25646,7 +25646,7 @@ cd main/
 #1463787624
 ls
 #1463787627
-more module.xml 
+more module.xml
 #1463786573
 ./bin/fuse
 #1464019715
@@ -25670,9 +25670,9 @@ ls
 #1464020334
 cd jboss-fuse/JBoss-EAP7/
 #1464020342
-jar -jar jboss-devstudio-9.1.0.GA-installer-standalone.jar 
+jar -jar jboss-devstudio-9.1.0.GA-installer-standalone.jar
 #1464020359
-java -jar jboss-devstudio-9.1.0.GA-installer-standalone.jar 
+java -jar jboss-devstudio-9.1.0.GA-installer-standalone.jar
 #1464022916
 ps -al
 #1464022922
@@ -25730,7 +25730,7 @@ git --config
 #1464024830
 git config --help
 #1464024850
-git config 
+git config
 #1464024865
 git config --get-all
 #1464024891
@@ -25764,11 +25764,11 @@ cd apache-tomee-plus-1.7.4/
 #1464128806
 ls
 #1464128826
-./bin/startup.sh 
+./bin/startup.sh
 #1464128855
-./bin/tomee.sh 
+./bin/tomee.sh
 #1464133088
-./bin/shutdown.sh 
+./bin/shutdown.sh
 #1464133334
 ps -al
 #1464133338
@@ -25788,11 +25788,11 @@ ps -A | grep tom
 #1464198195
 ls
 #1464198212
-./bin/tomee.sh 
+./bin/tomee.sh
 #1464198224
 ./bin/tomee.sh start
 #1464198403
-./bin/startup.sh 
+./bin/startup.sh
 #1464198438
 l
 #1464198438
@@ -25810,7 +25810,7 @@ cd WEB-INF/
 #1464198477
 ls
 #1464198481
-more web.xml 
+more web.xml
 #1464198514
 ls
 #1464198517
@@ -25830,7 +25830,7 @@ cd jsp/
 #1464198537
 ls
 #1464198545
-more 401.jsp 
+more 401.jsp
 #1464198556
 cd ..
 #1464198557
@@ -25852,7 +25852,7 @@ cd ..
 #1464199486
 ./bin/tomee.sh stop
 #1464199498
-./bin/shutdown.sh 
+./bin/shutdown.sh
 #1464212964
 cd ..
 #1464212965
@@ -25884,9 +25884,9 @@ cd ..
 #1464213043
 ls
 #1464213048
-cd 
+cd
 #1464213051
-pwd 
+pwd
 #1464213063
 cd src/jboss-fuse/jboss-a-mq-6.2.0.redhat-133/
 #1464213064
@@ -25894,7 +25894,7 @@ ls
 #1464213076
 cd deploy/ ls
 #1464213078
-cd deploy/ 
+cd deploy/
 #1464213079
 ls
 #1464213081
@@ -25906,7 +25906,7 @@ cd etc
 #1464213106
 ls
 #1464213113
-more users.properties 
+more users.properties
 #1464213117
 cd ..
 #1464213130
@@ -25958,7 +25958,7 @@ cd apache-activemq-5.13.3
 #1464294788
 ls
 #1464294802
-./bin/macosx/activemq 
+./bin/macosx/activemq
 #1464294805
 ./bin/macosx/activemq start
 #1464294871
@@ -25968,7 +25968,7 @@ cd conf/
 #1464294879
 ls
 #1464294882
-more users.properties 
+more users.properties
 #1464294927
 cd ..
 #1464294927
@@ -25992,7 +25992,7 @@ cd java/
 #1464294984
 ls
 #1464294989
-more pom.xml 
+more pom.xml
 #1464295002
 cd ..
 #1464295002
@@ -26010,7 +26010,7 @@ cd data/
 #1464295019
 ls
 #1464295025
-more activemq.log 
+more activemq.log
 #1464295031
 cd ..
 #1464295031
@@ -26032,11 +26032,11 @@ cd tomee-scharp/
 #1464304167
 ls
 #1464304170
-more pom.xml 
+more pom.xml
 #1464304204
-versions:display-dependency-updates 
+versions:display-dependency-updates
 #1464304211
-mvn versions:display-dependency-updates 
+mvn versions:display-dependency-updates
 #1464304303
 mvn versions:use-latest-releases
 #1464304316
@@ -26070,7 +26070,7 @@ cd entities/
 #1464304348
 ls
 #1464304352
-more Book.java 
+more Book.java
 #1464304355
 cd ..
 #1464304355
@@ -26080,7 +26080,7 @@ cd presentation/
 #1464304358
 ls
 #1464304362
-more BookBean.java 
+more BookBean.java
 #1464304625
 cd ../..
 #1464304627
@@ -26164,7 +26164,7 @@ cd src/jboss-workspace/tomee-scharp/
 #1464308812
 mvn install tomee:run -P node2
 #1464308637
-mvn install tomee:run 
+mvn install tomee:run
 #1464309633
 cd ..
 #1464310052
@@ -26182,7 +26182,7 @@ cd src/jboss-workspace/Copy\ of\ MyNewMDBTest/
 #1464318113
 mvn install tomee:run -P node1
 #1464316104
-mvn install tomee:run 
+mvn install tomee:run
 #1464325747
 mvn install tomee:run -Pnode1
 #1464325829
@@ -26250,17 +26250,17 @@ git commit -m "Pacifica schedule json."
 #1464451221
 git status
 #1464451228
-git push origin multi-thread 
+git push origin multi-thread
 #1464451235
-git checkout master 
+git checkout master
 #1464451239
 git status
 #1464451356
 git tag -a TE1-SingleThread -m "Pacifica Scenario with single thread execution."
 #1464451364
-git push origin TE1-SingleThread 
+git push origin TE1-SingleThread
 #1464451382
-git checkout multi-thread 
+git checkout multi-thread
 #1464451393
 git status
 #1464451474
@@ -26272,7 +26272,7 @@ cd aocoi/
 #1464451959
 mvn versions:use-latest-releases
 #1464451975
-mvn versions:display-dependency-updates 
+mvn versions:display-dependency-updates
 #1464452795
 cd ../scharp
 #1464452795
@@ -26296,7 +26296,7 @@ mvn compile
 #1464457480
 [INFO] ------------------------------------------------------------------------
 #1464457480
-marcelbecker@mb-macbook:~/src/coordinators-eclipse-workspace/scharp$ 
+marcelbecker@mb-macbook:~/src/coordinators-eclipse-workspace/scharp$
 #1464457492
 mvn install tomee:run
 #1464460285
@@ -26320,7 +26320,7 @@ cd ..
 #1464465500
 cd scharp-tomee/
 #1464465509
-mvn versions:display-dependency-updates 
+mvn versions:display-dependency-updates
 #1464465666
 cd ..
 #1464465666
@@ -26340,11 +26340,11 @@ cd edu.kestrel.scharp/
 #1464465820
 ls
 #1464465823
-more pom.xml 
+more pom.xml
 #1464465842
 mvn compile
 #1464465850
-mvn install 
+mvn install
 #1464465862
 mvn tomee:run
 #1464465918
@@ -26368,7 +26368,7 @@ cd META-INF/
 #1464465935
 ls
 #1464465938
-more persistence.xml 
+more persistence.xml
 #1464465956
 cd ..
 #1464465957
@@ -26386,7 +26386,7 @@ cd WEB-INF/
 #1464465970
 ls
 #1464465974
-more beans.xml 
+more beans.xml
 #1464465981
 ls
 #1464465984
@@ -26452,7 +26452,7 @@ cd META-INF/
 #1464471009
 ls
 #1464471014
-more MANIFEST.MF 
+more MANIFEST.MF
 #1464471016
 cd ..
 #1464471019
@@ -26466,7 +26466,7 @@ cd WEB-INF/
 #1464471032
 ls
 #1464471036
-more web.xml 
+more web.xml
 #1464471042
 cd ..
 #1464471053
@@ -26510,9 +26510,9 @@ ls
 #1464473598
 git status
 #1464473607
-git checkout master 
+git checkout master
 #1464473720
-mvn install 
+mvn install
 #1464473754
 mvn compile
 #1464473903
@@ -26522,9 +26522,9 @@ ps -A | grep java
 #1464474516
 mvn tomee:run
 #1464474777
-cd .. 
+cd ..
 #1464474779
-ls 
+ls
 #1464474788
 cd scharp-tomee-from-archetype/
 #1464474789
@@ -26648,7 +26648,7 @@ cd logs
 #1464477275
 ls
 #1464477281
-more localhost_access_log.2016-05-28.txt 
+more localhost_access_log.2016-05-28.txt
 #1464477285
 cd ..
 #1464477286
@@ -26674,7 +26674,7 @@ cd conf/
 #1464477312
 ls
 #1464477320
-more openejb.xml 
+more openejb.xml
 #1464478136
 ls
 #1464478142
@@ -26718,7 +26718,7 @@ cd ..
 #1464478995
 ls
 #1464479014
-more web.xml 
+more web.xml
 #1464479455
 cd ../
 #1464479460
@@ -26768,7 +26768,7 @@ cd conf/
 #1464482223
 ls
 #1464482226
-more system.properties 
+more system.properties
 #1464483922
 cd ..
 #1464483924
@@ -26826,7 +26826,7 @@ cd WEB-INF/
 #1464484184
 ls
 #1464484188
-more web.xml 
+more web.xml
 #1464484285
 ls
 #1464484292
@@ -26868,7 +26868,7 @@ ls
 #1464486644
 cd ..
 #1464486648
-cd .. 
+cd ..
 #1464486649
 cd ..
 #1464486652
@@ -26918,7 +26918,7 @@ ls
 #1464553128
 git pull
 #1464553150
-git checkout master 
+git checkout master
 #1464559502
 mvn compile
 #1464559941
@@ -27104,7 +27104,7 @@ cd lib/
 #1464641434
 ls
 #1464641444
-cd ../web.xml 
+cd ../web.xml
 #1464641445
 ls
 #1464641448
@@ -27112,11 +27112,11 @@ cd ..
 #1464641449
 ls
 #1464641451
-cd web.xml 
+cd web.xml
 #1464641451
 ls
 #1464641454
-more web.xml 
+more web.xml
 #1464641474
 cd ../../..
 #1464641478
@@ -27154,15 +27154,15 @@ git commit -m "Several changes to use AMQ and Tomee."
 #1464641638
 git status
 #1464641649
-git push origin multi-thread 
+git push origin multi-thread
 #1464641674
 git status
 #1464641679
-git checkout master 
+git checkout master
 #1464641682
 git pull
 #1464641912
-git checkout multi-thread 
+git checkout multi-thread
 #1464642152
 git status
 #1464642172
@@ -27178,9 +27178,9 @@ git commit -m "Fixes location of json file to be on src/main/resources/data."
 #1464642255
 git status
 #1464642269
-git push origin multi-thread 
+git push origin multi-thread
 #1464642333
-git checkout master 
+git checkout master
 #1464642336
 git pull
 #1464642341
@@ -27188,9 +27188,9 @@ git status
 #1464642384
 git tag -a TE1-MultiThread -m "Pacifica Scenario with single vm multi-thread execution."
 #1464642398
-git push origin TE1-MultiThread 
+git push origin TE1-MultiThread
 #1464642437
-git branch -d multi-thread 
+git branch -d multi-thread
 #1464642441
 git status
 #1464646774
@@ -27204,7 +27204,7 @@ cd avro-1.8.1/
 #1464646795
 ls
 #1464646813
-jar xvf avro-1.8.1-sources.jar 
+jar xvf avro-1.8.1-sources.jar
 #1464646815
 ls
 #1464646834
@@ -27228,11 +27228,11 @@ cd avro-src/
 #1464646901
 ls
 #1464646911
-tar xvf avro-src-1.8.1.tar.gz 
+tar xvf avro-src-1.8.1.tar.gz
 #1464646914
 ls
 #1464646918
-cd avro-src-1.8.1 
+cd avro-src-1.8.1
 #1464646919
 ls
 #1464646927
@@ -27264,7 +27264,7 @@ cd example/
 #1464646953
 ls
 #1464646957
-more GenericMain.java 
+more GenericMain.java
 #1464646970
 cd ..
 #1464646971
@@ -27312,7 +27312,7 @@ cd javadoc/
 #1464647066
 ls
 #1464647072
-jar xvf avro-1.8.1-javadoc.jar 
+jar xvf avro-1.8.1-javadoc.jar
 #1464647074
 ls
 #1464728286
@@ -27386,7 +27386,7 @@ mvn versions:display-dependency-updates
 #1464735662
 mvn dependency:tree -Dverbose
 #1464735704
-cd .. 
+cd ..
 #1464735706
 cd scharp
 #1464735709
@@ -27462,7 +27462,7 @@ mvn dependency:tree -Dverbose
 #1464735904
 [INFO] ------------------------------------------------------------------------
 #1464735904
-marcelbecker@mb-macbook:~/src/coordinators-eclipse-workspace/scharp$ 
+marcelbecker@mb-macbook:~/src/coordinators-eclipse-workspace/scharp$
 #1464735915
 mvn versions:display-dependency-updates
 #1464736191
@@ -27478,7 +27478,7 @@ git status
 #1464736506
 cd -
 #1464736508
-cd 
+cd
 #1464736515
 cd src/coordinators-eclipse-workspace/scharp
 #1464736516
@@ -27498,7 +27498,7 @@ git add pom.xml
 #1464736618
 git commit -m "Updated dependencies."
 #1464736625
-git push origin master 
+git push origin master
 #1464736632
 git status
 #1464736796
@@ -27506,7 +27506,7 @@ git add src/test/java/edu/kestrel/scharp/airdomain/entities/TE2ScenarioTest.java
 #1464736844
 git commit -m "Commented out code to create json representation for scenario."
 #1464736848
-git push origin master 
+git push origin master
 #1464736965
 git status
 #1464738599
@@ -27516,7 +27516,7 @@ git status
 #1464738628
 git commit -m "Added avro files and adjusted pom.xml."
 #1464738635
-git push origin master 
+git push origin master
 #1464739346
 git status
 #1464632695
@@ -27578,7 +27578,7 @@ cd WEB-INF/
 #1464902705
 ls
 #1464902708
-more web.xml 
+more web.xml
 #1464902738
 ls
 #1464902745
@@ -27620,7 +27620,7 @@ cd conf
 #1464928638
 ls
 #1464928646
-emacs system.properties 
+emacs system.properties
 #1464928731
 ls
 #1464928737
@@ -27642,7 +27642,7 @@ ls
 #1464928752
 more catalina.p
 #1464928755
-more catalina.properties 
+more catalina.properties
 #1464930057
 cd ..
 #1464930057
@@ -27666,7 +27666,7 @@ more system.properties
 #1464930453
 ls
 #1464931437
-more log4j2.xml 
+more log4j2.xml
 #1464931464
 cd ..
 #1464931464
@@ -27676,7 +27676,7 @@ cd logs/
 #1464931467
 ls
 #1464931469
-more localhost_access_log.2016-06-02.txt 
+more localhost_access_log.2016-06-02.txt
 #1464931472
 cd ..
 #1464931473
@@ -27738,7 +27738,7 @@ cd lib/
 #1464968056
 ls
 #1464968823
-cd 
+cd
 #1464968831
 cd src/scharp
 #1464968831
@@ -27766,7 +27766,7 @@ git add pom.xml src/main/java/edu/kestrel/scharp/activemq/LoadScenarioBean.java 
 #1464968954
 git status
 #1464968966
-git add src/main/java/edu/kestrel/scharp/activemq/LoadScenarioBean.java 
+git add src/main/java/edu/kestrel/scharp/activemq/LoadScenarioBean.java
 #1464968983
 git add src/main/java/edu/kestrel/scharp/activemq/AmqClient.java src/main/java/edu/kestrel/scharp/activemq/AmqServer.java src/main/java/edu/kestrel/scharp/activemq/PlannerServerStart.java
 #1464968985
@@ -27774,7 +27774,7 @@ git status
 #1464969016
 git commit -m "Creating local AMQ client and server."
 #1464969035
-git push -u origin use-amq  
+git push -u origin use-amq
 #1464969040
 cd ..
 #1464969043
@@ -27800,15 +27800,15 @@ git clone git@github.com:KestrelInstitute/scharp.git
 #1464969346
 ls
 #1464969361
-chmod +x copy-eclipse-workspace.sh 
+chmod +x copy-eclipse-workspace.sh
 #1464969367
-./copy-eclipse-workspace.sh 
+./copy-eclipse-workspace.sh
 #1464969390
 ./copy-eclipse-workspace.sh ~/src/coordinators-eclipse-workspace/ ~/src/rspace-eclipse/
 #1464970138
 cd scharp/
 #1464970143
-git checkout use-amq 
+git checkout use-amq
 #1464970146
 git pull
 #1464973793
@@ -27856,7 +27856,7 @@ more system.properties
 #1464988236
 ls
 #1464988246
-more openejb.xml 
+more openejb.xml
 #1464988260
 ls
 #1464983672
@@ -27914,7 +27914,7 @@ git commit -m "Fixed pom to try to remove slf4j warning about re-definition of d
 #1465017270
 git status
 #1465017280
-git push origin use-amq 
+git push origin use-amq
 #1465017290
 git status
 #1465229752
@@ -27938,7 +27938,7 @@ git status
 #1465250184
 git commit -m "Added sam sites (threats) to scenario."
 #1465250192
-git push origin use-amq 
+git push origin use-amq
 #1465251376
 git statis
 #1465251378
@@ -27950,7 +27950,7 @@ git add src/main/java/edu/kestrel/scharp/airdomain/entities/Threat.java
 #1465251457
 git commit -m "Adds toString method to Threat class."
 #1465251463
-git push origin use-amq 
+git push origin use-amq
 #1465251841
 git status
 #1465251851
@@ -27990,7 +27990,7 @@ git status
 #1465324040
 git pull
 #1465324050
-git push origin use-amq 
+git push origin use-amq
 #1465324056
 git status
 #1465329004
@@ -28056,7 +28056,7 @@ git status
 #1465344340
 git commit -m "Added the getPlan code to send a json message."
 #1465344347
-git push origin use-amq 
+git push origin use-amq
 #1465359301
 git status
 #1465360122
@@ -28066,7 +28066,7 @@ git status
 #1465360144
 git pull --all
 #1465360153
-git checkout multi-thread 
+git checkout multi-thread
 #1465362692
 git status
 #1465362726
@@ -28076,23 +28076,23 @@ git status
 #1465362756
 git commit -m "Fixed file paths for data files."
 #1465362765
-git push origin multi-thread 
+git push origin multi-thread
 #1465362846
 git status
 #1465363111
-git checkout master 
+git checkout master
 #1465363113
 git pull
 #1465363172
-git checkout use-amq 
+git checkout use-amq
 #1465363175
 git pull
 #1465363180
 git status
 #1465363242
-git checkout master 
+git checkout master
 #1465363286
-git checkout use-amq 
+git checkout use-amq
 #1465363399
 git status
 #1465366445
@@ -28112,7 +28112,7 @@ git commit -m "Fixes the missing air base for EL PASO. Minor changes to test cod
 #1465366750
 git pull
 #1465366758
-git push origin use-amq 
+git push origin use-amq
 #1465366825
 git status
 #1465366946
@@ -28144,7 +28144,7 @@ cd src/rspace-eclipse/scharp/
 #1465400457
 git pull
 #1465402581
-cd 
+cd
 #1465402609
 cd src/jboss-fuse/
 #1465402610
@@ -28168,7 +28168,7 @@ git add AirTaskingOrder.json GetPlanRequestMessage.json GetPlanResponseMessage.j
 #1465404884
 git commit -m "Added message json strings to git."
 #1465404893
-git push origin use-amq 
+git push origin use-amq
 #1465405641
 cd ../..
 #1465405644
@@ -28206,13 +28206,13 @@ git pull
 #1465413506
 git status
 #1465413511
-more users.properties 
+more users.properties
 #1465413520
 ls
 #1465402623
 ./bin/standalone
 #1465413525
-./build.sh 
+./build.sh
 #1465419187
 fdocker run --rm -ti -P jboss/jboss-fuse-full
 #1465419193
@@ -28290,7 +28290,7 @@ git status
 #1465454424
 git commit -m "Makes the planner server work with the java script client."
 #1465454431
-git push origin use-amq 
+git push origin use-amq
 #1465454439
 git pull
 #1465454805
@@ -28304,7 +28304,7 @@ git pull
 #1465454857
 git commit -m "Fixes the planner server to accept messages coming from the stomp js server."
 #1465454865
-git push origin use-amq 
+git push origin use-amq
 #1465454873
 mvn compile install
 #1465454894
@@ -28324,7 +28324,7 @@ cd target/
 #1465455548
 ls
 #1465455555
-java -jar scharp-0.0.1-SNAPSHOT.jar 
+java -jar scharp-0.0.1-SNAPSHOT.jar
 #1465455568
 java -jar scharp-0.0.1-SNAPSHOT.jar MainServers
 #1465456219
@@ -28368,11 +28368,11 @@ java -jar target/scharp-0.0.1-SNAPSHOT.jar MainServers
 #1465457436
 cd target/
 #1465457448
-jar tvf scharp-0.0.1-SNAPSHOT.jar 
+jar tvf scharp-0.0.1-SNAPSHOT.jar
 #1465457585
 cd ..
 #1465457587
-jar tvf scharp-0.0.1-SNAPSHOT.jar 
+jar tvf scharp-0.0.1-SNAPSHOT.jar
 #1465457598
 java -jar target/scharp-0.0.1-SNAPSHOT.jar MainServers
 #1465458432
@@ -28404,7 +28404,7 @@ git status
 #1465460144
 git add src/main/java/edu/kestrel/scharp/activemq/
 #1465460174
-git add src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlannerServer.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/PacificaScenario.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java 
+git add src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlannerServer.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/PacificaScenario.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java
 #1465460177
 git status
 #1465460182
@@ -28416,7 +28416,7 @@ git status
 #1465460222
 git commit -m "Fixed pom and code to use data files from jar file."
 #1465460227
-git push origin use-amq 
+git push origin use-amq
 #1465460231
 his
 #1465460796
@@ -28438,7 +28438,7 @@ git add pom.xml
 #1465482734
 git commit -m "Added jboss repo to pom."
 #1465482742
-git push origin use-amq 
+git push origin use-amq
 #1465483177
 java -jar target/scharp-0.0.1-SNAPSHOT.jar MainServers
 #1465487449
@@ -28450,11 +28450,11 @@ git checkout -- src/main/resources/data/Pacifica/output/
 #1465487476
 git status
 #1465487479
-git pull 
+git pull
 #1465487486
 git checkout master
 #1465488705
-git checkout use-amq 
+git checkout use-amq
 #1465489061
 cd src
 #1465489073
@@ -28468,11 +28468,11 @@ cd scharp-merge-repo/
 #1465489108
 git pull --all
 #1465489114
-git checkout use-amq 
+git checkout use-amq
 #1465489118
 git pull
 #1465489126
-git pull origin master 
+git pull origin master
 #1465489511
 git status
 #1465489523
@@ -28484,9 +28484,9 @@ git commit -m "Fixed merge with master conflicts."
 #1465489554
 git pull
 #1465489560
-git pull origin master 
+git pull origin master
 #1465489571
-git push origin use-amq 
+git push origin use-amq
 #1465489598
 git status
 #1465489629
@@ -28522,7 +28522,7 @@ cd DockerJava/
 #1465492083
 ls
 #1465492088
-./docker-build.sh 
+./docker-build.sh
 #1465492099
 docker-engine start
 #1465492107
@@ -28532,7 +28532,7 @@ docker-machine env
 #1465492120
 eval $(docker-machine env)
 #1465492124
-./docker-build.sh 
+./docker-build.sh
 #1465492151
 cd ..
 #1465492156
@@ -28540,9 +28540,9 @@ cd jboss-fuse-docker/
 #1465492159
 ls
 #1465492162
-./build.sh 
+./build.sh
 #1465493636
-his 
+his
 #1465493806
 cd ..
 #1465493837
@@ -28550,7 +28550,7 @@ cd DockerScharpPlanner/
 #1465493838
 ls
 #1465493843
-./docker-build.sh 
+./docker-build.sh
 #1465496493
 cd
 #1465496496
@@ -28608,7 +28608,7 @@ git remote -v
 #1465506384
 git status
 #1465506390
-git checkout master 
+git checkout master
 #1465506394
 git pull
 #1465506538
@@ -28618,7 +28618,7 @@ cd src/rspace-eclipse/scharp/Docker/DockerScharpPlanner/
 #1465506554
 ls
 #1465506559
-./docker-build.sh 
+./docker-build.sh
 #1465506571
 docker-machine eval
 #1465506575
@@ -28626,39 +28626,39 @@ docker-machine env
 #1465506584
 eval $(docker-machine env)
 #1465506587
-./docker-build.sh 
+./docker-build.sh
 #1465506602
 git pull
 #1465506621
-./docker-build.sh 
+./docker-build.sh
 #1465506643
 mkdir --help
 #1465506687
-./docker-build.sh 
+./docker-build.sh
 #1465506940
 docker run -it scharp/planner bash
 #1465507032
-./docker-build.sh 
+./docker-build.sh
 #1465507063
 docker run -it scharp/planner bash
 #1465507309
 docker build -t scharp/planner . -no-cache
 #1465507328
-docker build -no-cache -t scharp/planner . 
+docker build -no-cache -t scharp/planner .
 #1465507338
 docker build --help
 #1465507351
-docker build --no-cache -t scharp/planner . 
+docker build --no-cache -t scharp/planner .
 #1465507370
 docker run -it scharp/planner bash
 #1465507457
-docker build --no-cache -t scharp/planner . 
+docker build --no-cache -t scharp/planner .
 #1465507466
 docker run -it scharp/planner bash
 #1465507492
-docker build --no-cache -t scharp/planner . 
+docker build --no-cache -t scharp/planner .
 #1465508547
-cd 
+cd
 #1465508561
 cd src/rspace-eclipse/scharp/Docker/
 #1465508562
@@ -28666,17 +28666,17 @@ ls
 #1465508565
 cd jboss-fuse-docker/
 #1465508574
-./build.sh 
+./build.sh
 #1465509208
 ls
 #1465509227
-chmod +x start-fuse.sh 
+chmod +x start-fuse.sh
 #1465509237
-./start-fuse.sh 
+./start-fuse.sh
 #1465509390
 [
 #1465509392
-./start-fuse.sh 
+./start-fuse.sh
 #1465509689
 ls
 #1465509691
@@ -28702,15 +28702,15 @@ git add .gitignore
 #1465513274
 git commit -m "Added Docker files."
 #1465513280
-git push origin master 
+git push origin master
 #1465513287
 git pull
 #1465513332
 cd Docker/DockerScharpPlanner/
 #1465513339
-./docker-build.sh 
+./docker-build.sh
 #1465513483
-./docker-build.sh 
+./docker-build.sh
 #1465513518
 docker build -t --clear-cache scharp/planner .
 #1465513530
@@ -28720,9 +28720,9 @@ docker build --rm=true -t --no-cache scharp/planner .
 #1465513584
 docker build --rm=true  --no-cache -t scharp/planner .
 #1465513935
-./docker-run.sh 
+./docker-run.sh
 #1465514735
-git checkout master 
+git checkout master
 #1465514743
 git status
 #1465514779
@@ -28768,9 +28768,9 @@ git status
 #1465516304
 git commit -m "Fixed problem with typo on file name for cat code mapping."
 #1465516311
-git push origin master 
+git push origin master
 #1465512541
-./start-fuse.sh 
+./start-fuse.sh
 #1465517891
 mvn clean install package
 #1465519200
@@ -28780,17 +28780,17 @@ git add Docker/DockerScharpPlanner/docker-build.sh
 #1465519242
 git commit -m "Added option to remove intermediate docker containers in docker build command."
 #1465519248
-git push origin master 
+git push origin master
 #1465525818
 git pull
 #1465525842
 git status
 #1465526157
-git checkout pm2 
+git checkout pm2
 #1465526161
 git status
 #1465526339
-git checkout master 
+git checkout master
 #1465526343
 git pull
 #1465526349
@@ -28800,7 +28800,7 @@ git pull
 #1465575240
 his
 #1465575259
-./docker-run-on-mac.sh 
+./docker-run-on-mac.sh
 #1465575741
 git status
 #1465575746
@@ -28816,9 +28816,9 @@ git add Docker/DockerScharpPlanner/docker-build.sh Docker/DockerScharpPlanner/do
 #1465575934
 git status
 #1465576088
-git commit -m "Changed deprecated method ByteArrayOutputStream.toString to new String(). Added set -x to docker build and run scripts." 
+git commit -m "Changed deprecated method ByteArrayOutputStream.toString to new String(). Added set -x to docker build and run scripts."
 #1465576093
-git push origin master 
+git push origin master
 #1465576104
 git status
 #1465580946
@@ -28826,7 +28826,7 @@ git add .gitignore src/main/java/edu/kestrel/scharp/airdomain/entities/Scenario.
 #1465580970
 git commit -m "Added method to print units and scls in short form."
 #1465580975
-git push origin  master 
+git push origin  master
 #1465584133
 git status
 #1465584195
@@ -28844,7 +28844,7 @@ git clone git@github.com:KestrelInstitute/scharp.git scharp-test-manager2
 #1465584321
 cd scharp-test-manager2/
 #1465584325
-git checkout pm2 
+git checkout pm2
 #1465584330
 git pull
 #1465584446
@@ -28864,7 +28864,7 @@ cd rspace-eclipse
 #1465585246
 ls
 #1465585251
-./copy-eclipse-workspace.sh 
+./copy-eclipse-workspace.sh
 #1465585274
 ./copy-eclipse-workspace.sh ~/src/rspace-eclipse ~/src/rspace-eclipse-test
 #1465593804
@@ -28882,7 +28882,7 @@ git status
 #1465593893
 git commit -m "Fixed number of available aircraft for unit."
 #1465593901
-git push origin pm2 
+git push origin pm2
 #1465598031
 git status
 #1465598040
@@ -28892,7 +28892,7 @@ mvn dependency:tree
 #1465618530
 git status
 #1465618554
-git add src/main/java/edu/kestrel/scharp/airdomain/entities/Scenario.java src/main/java/edu/kestrel/scharp/airdomain/entities/StandardConfigurationLoad.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java src/main/java/edu/kestrel/scharp/planner/manager/PlanManager2.java 
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/Scenario.java src/main/java/edu/kestrel/scharp/airdomain/entities/StandardConfigurationLoad.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java src/main/java/edu/kestrel/scharp/planner/manager/PlanManager2.java
 #1465618558
 git status
 #1465618567
@@ -28904,25 +28904,25 @@ git commit -m "Fixed the reading of SCLs from data files."
 #1465618617
 git status
 #1465618629
-git push origin pm2 
+git push origin pm2
 #1465618648
 git checkout -- src/main/resources/data/Pacifica/output/schedule.json
 #1465618650
 git status
 #1465618656
-git checkout master 
+git checkout master
 #1465618658
 git pull
 #1465618675
-git checkout pm2 
+git checkout pm2
 #1465618683
-git pull origin master 
+git pull origin master
 #1465624632
 git diff git status
 #1465624636
 git status
 #1465624709
-git add src/main/java/edu/kestrel/scharp/airdomain/entities/Scenario.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/resources/data/TE2/RSPACE_TE2_unit_contracts.csv src/main/resources/log4j2.xml src/main/java/edu/kestrel/scharp/airdomain/entities/AircraftType.java src/main/java/edu/kestrel/scharp/airdomain/interfaces/IAircraftType.java src/main/resources/data/TE2/RSPACE_TE2_FixedWingAcTypes.csv src/main/resources/logback.xml 
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/Scenario.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/resources/data/TE2/RSPACE_TE2_unit_contracts.csv src/main/resources/log4j2.xml src/main/java/edu/kestrel/scharp/airdomain/entities/AircraftType.java src/main/java/edu/kestrel/scharp/airdomain/interfaces/IAircraftType.java src/main/resources/data/TE2/RSPACE_TE2_FixedWingAcTypes.csv src/main/resources/logback.xml
 #1465624711
 git status
 #1465625145
@@ -28930,7 +28930,7 @@ git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java sr
 #1465626401
 git status
 #1465626417
-git add src/main/java/edu/kestrel/scharp/planner/manager/PlanManager2.java src/main/java/edu/kestrel/scharp/planner/manager/StatsSummaryManager.java 
+git add src/main/java/edu/kestrel/scharp/planner/manager/PlanManager2.java src/main/java/edu/kestrel/scharp/planner/manager/StatsSummaryManager.java
 #1465626424
 git commit -- src/main/resources/data/Pacifica/output/schedule.json
 #1465626433
@@ -28940,7 +28940,7 @@ git commit -m "Merged with master."
 #1465626451
 git status
 #1465626459
-git push origin pm2 
+git push origin pm2
 #1465626469
 git checkout -- src/main/resources/data/Pacifica/output/schedule.json
 #1465626472
@@ -28950,7 +28950,7 @@ cd ..
 #1465626604
 cd scharp-test-manager2/
 #1465626614
-git checkout master 
+git checkout master
 #1465626617
 git pull
 #1465626628
@@ -28970,7 +28970,7 @@ git pull
 #1465626692
 git stash
 #1465626702
-git pull origin master 
+git pull origin master
 #1465626710
 git stash pop
 #1465626972
@@ -28980,17 +28980,17 @@ git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java
 #1465627024
 git commit -m "Fixed merging conflicts and removed pacifica scenario code from te2 scenario file."
 #1465627029
-git push origin master 
+git push origin master
 #1465627188
 git pull --al
 #1465627191
 git pull --all
 #1465627197
-git checkout control-orbits 
+git checkout control-orbits
 #1465627200
 git pull
 #1465627206
-git pull origin master 
+git pull origin master
 #1465628201
 git status
 #1465628211
@@ -29000,7 +29000,7 @@ git commit -m "Merged with master."
 #1465628225
 git status
 #1465628232
-git push origin control-orbits 
+git push origin control-orbits
 #1465628651
 git status
 #1465628658
@@ -29008,35 +29008,35 @@ git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java
 #1465628677
 git commit -m "Fixed problems after merge."
 #1465628684
-git push origin control-orbits 
+git push origin control-orbits
 #1465628905
 git status
 #1465628956
-git checkout master 
+git checkout master
 #1465628959
 git pull
 #1465628964
-git branch 
+git branch
 #1465628977
-git branch -d multi-thread 
+git branch -d multi-thread
 #1465628990
-git branch -d control-orbits 
+git branch -d control-orbits
 #1465628998
-git branch 
+git branch
 #1465629005
-git branch -d pm2 
+git branch -d pm2
 #1465629009
 git status
 #1465629014
-git checkout use-amq 
+git checkout use-amq
 #1465629016
 git status
 #1465629024
-git checkout master 
+git checkout master
 #1465629056
 git status
 #1465629065
-git branch -d use-amq 
+git branch -d use-amq
 #1465629069
 git status
 #1465837825
@@ -29086,9 +29086,9 @@ vagrant reload
 #1465845322
 vagrant plugin list
 #1465845406
-cd ~/.vagrant.d/plugins.json 
+cd ~/.vagrant.d/plugins.json
 #1465845414
-more ~/.vagrant.d/plugins.json 
+more ~/.vagrant.d/plugins.json
 #1465845509
 rm -rf ~/.vagrant.d/plugins.json ~/.vagrant.d/gems/
 #1465845533
@@ -29186,7 +29186,7 @@ vagrant halt
 #1465854646
 ls
 #1465854654
-rm Berksfile.lock 
+rm Berksfile.lock
 #1465854655
 ls
 #1465854659
@@ -29244,13 +29244,13 @@ vagrant ssh
 #1465932120
 ls
 #1465932139
-his 
+his
 #1465932150
 his | grep docker
 #1465931956
 vagrant provision
 #1465932172
-cd 
+cd
 #1465932182
 cd src/rspace-eclipse/scharp/
 #1465932183
@@ -29264,7 +29264,7 @@ cd jboss-fuse-docker/
 #1465932190
 ls
 #1465932198
-./docker-run-on-mac.sh 
+./docker-run-on-mac.sh
 #1465932218
 docker ps -a
 #1465932230
@@ -29282,7 +29282,7 @@ docker rm -f 2eef1cefc623
 #1465932562
 docker ps -a
 #1465932569
-./docker-run-on-mac.sh 
+./docker-run-on-mac.sh
 #1465933159
 docker ps -a
 #1465933162
@@ -29322,7 +29322,7 @@ git status
 #1465939122
 git commit -m "Generates a plan for TE2 targets."
 #1465939134
-git push origin master 
+git push origin master
 #1465959377
 more ~/.vagrant
 #1465959385
@@ -29336,9 +29336,9 @@ vagrant provision
 #1465969376
 ls
 #1465969383
-more Berksfile.lock 
+more Berksfile.lock
 #1465969399
-rm Berksfile.lock 
+rm Berksfile.lock
 #1465969405
 vagrant provision
 #1465969495
@@ -29356,11 +29356,11 @@ git status
 #1466009961
 git branch marcel-optimize-strik-opts
 #1466009968
-git checkout -t marcel-optimize-strik-opts 
+git checkout -t marcel-optimize-strik-opts
 #1466009982
-git checkout -t  -b marcel-optimize-strik-opts 
+git checkout -t  -b marcel-optimize-strik-opts
 #1466009991
-git checkout marcel-optimize-strik-opts 
+git checkout marcel-optimize-strik-opts
 #1466009994
 git status
 #1466010023
@@ -29378,9 +29378,9 @@ git status
 #1466010094
 git commit -m "Initial changes to the input functions that compute cat code to munition maps and strike options."
 #1466010101
-git push -u origin marcel-optimize-strik-opts 
+git push -u origin marcel-optimize-strik-opts
 #1466010109
-git checkout master 
+git checkout master
 #1466010534
 mvn compile install
 #1466010574
@@ -29394,7 +29394,7 @@ cd src/rspace-eclipse/scharp/Docker/jboss-fuse-docker/
 #1466010798
 cd Docker/DockerScharpPlanner/
 #1466010803
-./docker-build.sh 
+./docker-build.sh
 #1466010818
 ls
 #1466010829
@@ -29410,11 +29410,11 @@ vagrant reload
 #1466011103
 vagrant provision
 #1466010846
-./docker-build.sh 
+./docker-build.sh
 #1466011243
 ls
 #1466010759
-./docker-run-on-mac.sh 
+./docker-run-on-mac.sh
 #1466013298
 docker ps -a
 #1466013309
@@ -29426,11 +29426,11 @@ eval $(docker-machine env)
 #1466013320
 docker ps -a
 #1466013694
-./docker-run-on-mac.sh 
+./docker-run-on-mac.sh
 #1466013977
 ls
 #1466013997
-./docker-build.sh 
+./docker-build.sh
 #1466014015
 vagrant provision
 #1466014071
@@ -29438,7 +29438,7 @@ vagrant ssh
 #1466014440
 cd src/jboss-fuse/jboss-fuse-6.3.0.redhat-077/
 #1466013983
-./docker-build.sh 
+./docker-build.sh
 #1466014214
 vagrant provision
 #1466014446
@@ -29446,7 +29446,7 @@ vagrant provision
 #1466014809
 cd src/jboss-fuse/jboss-fuse-6.2.1.redhat-084/
 #1466011251
-./docker-run.sh 
+./docker-run.sh
 #1466014874
 clear
 #1466014874
@@ -29512,7 +29512,7 @@ git status
 #1466052800
 git commit -m "Fixed input functions."
 #1466052840
-git checkout master 
+git checkout master
 #1466096522
 git sttus
 #1466096526
@@ -29536,7 +29536,7 @@ git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java
 #1466102533
 git commit -m "Fixed the map of available aircraft types to use the correct labels."
 #1466102539
-git push origin master 
+git push origin master
 #1466102711
 git status
 #1466102760
@@ -29544,11 +29544,11 @@ git add src/test/java/edu/kestrel/scharp/planner/manager/TE2PlanManagerTest.java
 #1466102785
 git commit -m "Fixed test for TE2 to use PlanManager2."
 #1466102791
-git push origin master 
+git push origin master
 #1466102807
-git checkout marcel-optimize-strik-opts 
+git checkout marcel-optimize-strik-opts
 #1466102816
-git pull origin master 
+git pull origin master
 #1466112558
 git status
 #1466112581
@@ -29556,7 +29556,7 @@ git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java
 #1466112599
 git commit -m "Fixed merge conflict."
 #1466112609
-git push origin marcel-optimize-strik-opts 
+git push origin marcel-optimize-strik-opts
 #1466112658
 git status
 #1466112667
@@ -29564,31 +29564,31 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/PlanManager2.java
 #1466112685
 git commit -m "Fixed log statement."
 #1466112691
-git push origin marcel-optimize-strik-opts 
+git push origin marcel-optimize-strik-opts
 #1466112698
-git checkout master 
+git checkout master
 #1466112746
 git add src/main/resources/logback.xml
 #1466112762
 git commit -m "Added logger for PlanManager2."
 #1466112767
-git push origin marcel-optimize-strik-opts 
+git push origin marcel-optimize-strik-opts
 #1466112772
-git checkout master 
+git checkout master
 #1466112777
 git pull
 #1466113167
 git status
 #1466113187
-git checkout marcel-optimize-strik-opts 
+git checkout marcel-optimize-strik-opts
 #1466113268
 git diff src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java
 #1466113285
 git checkout -- src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java
 #1466113289
-git checkout master 
+git checkout master
 #1466113293
-git checkout marcel-optimize-strik-opts 
+git checkout marcel-optimize-strik-opts
 #1466118765
 cd src/rspace/TE-2-MitreDocuments/
 #1466118765
@@ -29606,7 +29606,7 @@ cd RSABP1_20160426
 #1466118785
 ls
 #1466118797
-grep -ri "call" 
+grep -ri "call"
 #1466118804
 grep -ri "call" .
 #1466118815
@@ -29716,7 +29716,7 @@ find . "*.xml"
 #1466119945
 find . "*.xml" | grep -i "callword" -
 #1466119964
-find . "*.xml" | grep -i "callword" 
+find . "*.xml" | grep -i "callword"
 #1466119978
 ls
 #1466119986
@@ -29754,7 +29754,7 @@ git status
 #1466123133
 git commit -m "Added scls for refueling, added call signs for units."
 #1466123142
-git push origin marcel-optimize-strik-opts 
+git push origin marcel-optimize-strik-opts
 #1466123443
 git status
 #1466123451
@@ -29762,9 +29762,9 @@ git add src/test/java/edu/kestrel/scharp/airdomain/entities/TE2ScenarioTest.java
 #1466123475
 git commit -m "Added function to measure time for loading scenario."
 #1466123480
-git push origin marcel-optimize-strik-opts 
+git push origin marcel-optimize-strik-opts
 #1466123485
-git checkout master 
+git checkout master
 #1466124045
 git status
 #1466124057
@@ -29772,7 +29772,7 @@ git add src/test/java/edu/kestrel/scharp/airdomain/entities/TE2ScenarioTest.java
 #1466124086
 git commit -m "Added timing and changed print statements to log."
 #1466124091
-git push origin master 
+git push origin master
 #1466124235
 git status
 #1466124250
@@ -29780,13 +29780,13 @@ git add src/main/resources/logback.xml
 #1466124264
 git commit -m "Changed log level."
 #1466124269
-git push origin master 
+git push origin master
 #1466124276
-git checkout marcel-optimize-strik-opts 
+git checkout marcel-optimize-strik-opts
 #1466140254
 git status
 #1466140277
-git pull origin master 
+git pull origin master
 #1466140427
 git status
 #1466140448
@@ -29796,7 +29796,7 @@ git commit -m "Fixed merge conflicts."
 #1466140471
 git status
 #1466140480
-git push origin marcel-optimize-strik-opts 
+git push origin marcel-optimize-strik-opts
 #1466143254
 git status
 #1466143269
@@ -29812,7 +29812,7 @@ git status
 #1466143352
 git commit -m "Removed code that parsed the pacifica scenario from TE2 test. Fixed some of the logging statements."
 #1466143358
-git push origin marcel-optimize-strik-opts 
+git push origin marcel-optimize-strik-opts
 #1466183878
 tmux display-message -p '#S'
 #1466185662
@@ -29826,7 +29826,7 @@ vagrant status
 #1466185737
 vagrant up
 #1466185887
-more Vagrantfile 
+more Vagrantfile
 #1466185912
 vagrant halt
 #1466185931
@@ -29834,7 +29834,7 @@ vagrant global-status
 #1466185948
 cd /Users/marcelbecker/src/rspacesrc/rspace-vagrant
 #1466186077
-cd 
+cd
 #1466186087
 cd Downloads/
 #1466186088
@@ -29846,7 +29846,7 @@ ls
 #1466185953
 vagrant provision
 #1466186128
-./ready-api.sh 
+./ready-api.sh
 #1466188833
 vagrant ssh
 #1466189823
@@ -29886,7 +29886,7 @@ git status
 #1466018032
 git pull
 #1466018047
-git push origin master 
+git push origin master
 #1466189831
 exit
 #1466018023
@@ -29896,7 +29896,7 @@ git status
 #1466018032
 git pull
 #1466018047
-git push origin master 
+git push origin master
 #1466189831
 exit
 #1466189854
@@ -29904,7 +29904,7 @@ exit
 #1466189856
 exit
 #1466011251
-./docker-run.sh 
+./docker-run.sh
 #1466014874
 clear
 #1466015077
@@ -29914,9 +29914,9 @@ title test
 #1466015098
 title jboss
 #1466015263
-./docker-build.sh 
+./docker-build.sh
 #1466016046
-./docker-run-on-mac.sh 
+./docker-run-on-mac.sh
 #1466189858
 exit
 #1466190398
@@ -29948,25 +29948,25 @@ cd status
 #1466199001
 git status
 #1466199020
-recipes/default.rbgit add Vagrantfile 
+recipes/default.rbgit add Vagrantfile
 #1466199033
 git add Vagrantfile recipes/default.rb
 #1466199045
 git commit -m "Fixed Paths."
 #1466199050
-git push origin master 
+git push origin master
 #1466199064
 git pull
 #1466199070
-git push origin master 
+git push origin master
 #1466199082
-git pull origin master 
+git pull origin master
 #1466199135
 git add Vagrantfile recipes/default.rb
 #1466199139
 git commit -m "Fixed Paths."
 #1466199144
-git push origin master 
+git push origin master
 #1466202015
 cd ..
 #1466202016
@@ -30002,7 +30002,7 @@ cd ..
 #1466202177
 git pull --all
 #1466202192
-git checkout TE2-integration 
+git checkout TE2-integration
 #1466202194
 ls
 #1466202199
@@ -30010,11 +30010,11 @@ cd Docker/
 #1466202199
 ls
 #1466202221
-more buildDocker.sh 
+more buildDocker.sh
 #1466202274
 ./buildDocker.sh tomcat-jdk/
 #1466202313
-./buildDocker.sh 
+./buildDocker.sh
 #1466202365
 git pull
 #1466203765
@@ -30062,7 +30062,7 @@ cd Docker/
 #1466204458
 ls
 #1466204461
-./buildDocker.sh 
+./buildDocker.sh
 #1466204549
 docker
 #1466204563
@@ -30084,7 +30084,7 @@ exit
 #1466204679
 docker -- version
 #1466204688
-more .profile 
+more .profile
 #1466204708
 which docker
 #1466204738
@@ -30126,7 +30126,7 @@ cd Docker/
 #1466205188
 ls
 #1466205192
-./buildDocker.sh 
+./buildDocker.sh
 #1466205218
 docker-machine start
 #1466205264
@@ -30138,7 +30138,7 @@ his
 #1466205313
 eval $(docker-machine env)
 #1466205320
-./buildDocker.sh 
+./buildDocker.sh
 #1466205340
 clear
 #1466205342
@@ -30168,11 +30168,11 @@ git status
 #1466272055
 git commit -m "Fixed installation for maven and dot files."
 #1466272063
-git push origin master 
+git push origin master
 #1466273395
-more ~/.profile 
+more ~/.profile
 #1466273658
-diff ~/.bashrc ~/Dropbox/.bashrc 
+diff ~/.bashrc ~/Dropbox/.bashrc
 #1466274464
 cd ~/Documents/
 #1466274464
@@ -30188,7 +30188,7 @@ ls
 #1466274570
 ls -al
 #1466274584
-more com.googlecode.iterm2.plist 
+more com.googlecode.iterm2.plist
 #1466274673
 cp com.googlecode.iterm2.plist ~/Dropbox/MacItermColors/
 #1466274689
@@ -30200,7 +30200,7 @@ cd .berkshelf/
 #1466275947
 ls
 #1466275951
-more config.json 
+more config.json
 #1466276067
 vagrant --version
 #1466310701
@@ -30220,7 +30220,7 @@ title MARCEL
 #1466211462
 ls
 #1466211466
-./buildDocker.sh 
+./buildDocker.sh
 #1466310707
 exit
 #1466440783
@@ -30236,13 +30236,13 @@ ls
 #1466440939
 git pull --all --prune
 #1466440951
-git checkout master 
+git checkout master
 #1466440965
 git checkout -- src/main/resources/log4j2.xml
 #1466440981
-git branch 
+git branch
 #1466440990
-git checkout master 
+git checkout master
 #1466440994
 git pull
 #1466441042
@@ -30254,7 +30254,7 @@ rm -rf Docker/DockerJava/ Docker/jboss-fuse-docker/
 #1466441057
 git pull
 #1466441066
-ls 
+ls
 #1466441071
 git status
 #1466441143
@@ -30264,7 +30264,7 @@ ls
 #1466441172
 cp Marcel_Notes_WIP.txt ~/src/rspace-eclipse/scharp/
 #1466460558
-cd 
+cd
 #1466460564
 cd src/rspace-eclipse/scharp/
 #1466460566
@@ -30272,11 +30272,11 @@ git status
 #1466460569
 git pull
 #1466460581
-git checkout master 
+git checkout master
 #1466460586
 git pull
 #1466460615
-git branch -d marcel-optimize-strik-opts 
+git branch -d marcel-optimize-strik-opts
 #1466460618
 git pull
 #1466460625
@@ -30284,7 +30284,7 @@ git pull --all --prune
 #1466460640
 git status
 #1466460654
-git add src/test/java/edu/kestrel/scharp/activemq/codedrop/TestMainServersEmbeddedBroker.java 
+git add src/test/java/edu/kestrel/scharp/activemq/codedrop/TestMainServersEmbeddedBroker.java
 #1466460662
 git diff src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlannerServer.java
 #1466460674
@@ -30298,7 +30298,7 @@ git status
 #1466460729
 git commit -m "Added a unit test for the planner server that uses junit and an embedded AMQ broker instead of jboss-fuse."
 #1466460735
-git push origin master 
+git push origin master
 #1466469559
 git status
 #1466469604
@@ -30320,11 +30320,11 @@ ls
 #1466531617
 cd scharp/
 #1466531622
-git checkout master 
+git checkout master
 #1466531632
 git checkout -- pom.xml
 #1466531635
-git checkout master 
+git checkout master
 #1466531637
 git pull
 #1466531648
@@ -30348,7 +30348,7 @@ ls -al /usr/bin/java
 #1466532855
 /usr/bin/java -version
 #1466532919
-/usr/libexec/java_home 
+/usr/libexec/java_home
 #1466532962
 /usr/libexec/java_home -V
 #1466533042
@@ -30360,7 +30360,7 @@ mvn -X compile
 #1466533152
 mvn --version
 #1466534825
-cd 
+cd
 #1466534831
 cd src/rspace-eclipse/scharp/
 #1466534835
@@ -30376,21 +30376,21 @@ git commit -m src/main/java/edu/kestrel/scharp/activemq/AmqJsonClient.java src/m
 #1466611900
 git commit -m "Moved amq constant parameters to its own file."
 #1466611936
-git add src/main/java/edu/kestrel/scharp/activemq/AmqJsonClient.java src/main/java/edu/kestrel/scharp/activemq/AmqJsonServer.java src/main/java/edu/kestrel/scharp/activemq/AmqConfigurationConstants.java src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanningCellManager.java 
+git add src/main/java/edu/kestrel/scharp/activemq/AmqJsonClient.java src/main/java/edu/kestrel/scharp/activemq/AmqJsonServer.java src/main/java/edu/kestrel/scharp/activemq/AmqConfigurationConstants.java src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanningCellManager.java
 #1466611938
 git status
 #1466611942
 git commit -m "Moved amq constant parameters to its own file."
 #1466611950
-git push -u origin marcel-schedule-with-amq 
+git push -u origin marcel-schedule-with-amq
 #1466611963
-git checkout master 
+git checkout master
 #1466611968
 git pull
 #1466611993
-git checkout marcel-schedule-with-amq 
+git checkout marcel-schedule-with-amq
 #1466612041
-git pull --rebase origin master 
+git pull --rebase origin master
 #1466612049
 git status
 #1466612054
@@ -30400,7 +30400,7 @@ git checkout -- pom.xml
 #1466612078
 git checkout -- src/main/resources/data/Pacifica/output/schedule.json
 #1466612084
-git pull --rebase origin master 
+git pull --rebase origin master
 #1466612098
 git status
 #1466612109
@@ -30408,7 +30408,7 @@ git pull
 #1466612126
 git status
 #1466612135
-git push -u origin marcel-schedule-with-amq 
+git push -u origin marcel-schedule-with-amq
 #1466612143
 clear
 #1466612374
@@ -30416,7 +30416,7 @@ cd src/emacs-eclim/
 #1466612375
 ls
 #1466612382
-java -jar eclim_2.5.0.jar 
+java -jar eclim_2.5.0.jar
 #1466614030
 which eclipse
 #1466614038
@@ -30458,13 +30458,13 @@ git pull --all --prunt
 #1466700546
 git pull --all --prune
 #1466700556
-git checkout unit-contract 
+git checkout unit-contract
 #1466700561
 git pull
 #1466700983
-git pull origin master 
+git pull origin master
 #1466707969
-cd 
+cd
 #1466707973
 cd src/rspace-eclipse
 #1466707975
@@ -30496,15 +30496,15 @@ status
 #1466708122
 git status
 #1466708132
-git push -u origin marcel-schedule-with-amq 
+git push -u origin marcel-schedule-with-amq
 #1466708140
-git checkout master 
+git checkout master
 #1466708161
 git checkout -b marcel-strike-options
 #1466721952
 git status
 #1466721976
-git add src/main/avro/AircraftInterface.avdl src/main/java/edu/kestrel/scharp/activemq/AmqJsonClient.java src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlannerServer.java src/test/java/edu/kestrel/scharp/activemq/codedrop/TestMainServersEmbeddedBroker.java 
+git add src/main/avro/AircraftInterface.avdl src/main/java/edu/kestrel/scharp/activemq/AmqJsonClient.java src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlannerServer.java src/test/java/edu/kestrel/scharp/activemq/codedrop/TestMainServersEmbeddedBroker.java
 #1466721978
 git status
 #1466722012
@@ -30512,13 +30512,13 @@ git commit -m "Added GetStrikeOptions handler and test."
 #1466722015
 git status
 #1466722021
-git pull origin master 
+git pull origin master
 #1466722040
-git push -u origin marcel-strike-options 
+git push -u origin marcel-strike-options
 #1466722784
 git status
 #1466722796
-git checkout marcel-schedule-with-amq 
+git checkout marcel-schedule-with-amq
 #1466722807
 mvn clean
 #1466732861
@@ -30578,7 +30578,7 @@ git commit -m "Several fixes to handle bids and tasks created from serialization
 #1466801496
 git status
 #1466801722
-git push origin marcel-schedule-with-amq 
+git push origin marcel-schedule-with-amq
 #1466801734
 cd ../
 #1466801736
@@ -30626,7 +30626,7 @@ cd scharp/
 #1466802216
 git pull --all --prune
 #1466802221
-git branch 
+git branch
 #1466802229
 cd ..
 #1466802235
@@ -30636,13 +30636,13 @@ cd scharp/
 #1466802242
 git status
 #1466802246
-git checkout master 
+git checkout master
 #1466802249
 git pull
 #1466802253
-git branch 
+git branch
 #1466802263
-git checkout marcel-strike-options 
+git checkout marcel-strike-options
 #1466802266
 git pull
 #1466802342
@@ -30656,13 +30656,13 @@ git add src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlannerServer.java
 #1466803562
 git commit -m "Added munition breakdown to getStrikeOptions message."
 #1466803572
-git push -u origin marcel-strike-options 
+git push -u origin marcel-strike-options
 #1466803577
 git status
 #1466803683
-git checkout master 
+git checkout master
 #1466803692
-git checkout marcel-schedule-with-amq  
+git checkout marcel-schedule-with-amq
 #1466803693
 ls
 #1466803698
@@ -30672,27 +30672,27 @@ mvn generate-source
 #1466803720
 mvn generate-sources
 #1466804682
-git checkout master 
+git checkout master
 #1466804684
 git pull
 #1466804697
-git checkout marcel-schedule-with-amq 
+git checkout marcel-schedule-with-amq
 #1466804706
-git pull origin master 
+git pull origin master
 #1466804724
 git status
 #1466804735
-git push origin marcel-schedule-with-amq 
+git push origin marcel-schedule-with-amq
 #1466804744
-git checkout master 
+git checkout master
 #1466804755
 git checkout -- src/main/resources/data/Pacifica/output/schedule.json
 #1466804758
 git status
 #1466804765
-git branch 
+git branch
 #1466804783
-git branch -d marcel-strike-options 
+git branch -d marcel-strike-options
 #1466804788
 clear
 #1466804889
@@ -30722,7 +30722,7 @@ git status
 #1466818151
 git commit -m "Added plan configuration server to send configuration for planning cell agents."
 #1466818158
-git push origin marcel-schedule-with-amq 
+git push origin marcel-schedule-with-amq
 #1466818354
 git status
 #1466818372
@@ -30732,7 +30732,7 @@ git add src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlanManagerServer.ja
 #1466818511
 git commit -m "Fixed indentation."
 #1466818516
-git push origin marcel-schedule-with-amq 
+git push origin marcel-schedule-with-amq
 #1466835077
 exit
 #1467068585
@@ -30740,13 +30740,13 @@ cd src/rspace-eclipse/scharp/
 #1467068588
 git status
 #1467068621
-git add src/main/java/edu/kestrel/scharp/activemq/AmqJsonServer.java src/main/java/edu/kestrel/scharp/activemq/codedrop2/MainServers.java src/test/java/edu/kestrel/scharp/activemq/codedrop/TestMainServersEmbeddedBroker.java src/main/java/edu/kestrel/scharp/activemq/AmqConnectionManager.java src/test/java/edu/kestrel/scharp/activemq/AmqConnectionManagerTest.java 
+git add src/main/java/edu/kestrel/scharp/activemq/AmqJsonServer.java src/main/java/edu/kestrel/scharp/activemq/codedrop2/MainServers.java src/test/java/edu/kestrel/scharp/activemq/codedrop/TestMainServersEmbeddedBroker.java src/main/java/edu/kestrel/scharp/activemq/AmqConnectionManager.java src/test/java/edu/kestrel/scharp/activemq/AmqConnectionManagerTest.java
 #1467068624
 git status
 #1467068660
 git commit -m "Added an AmqConnectionManager to reuse the connection and session objects."
 #1467068665
-git push origin marcel-schedule-with-amq 
+git push origin marcel-schedule-with-amq
 #1467142752
 git status
 #1467142756
@@ -30778,9 +30778,9 @@ java -jar target/scharp-0.0.1-SNAPSHOT.jar PlanManagerServer
 #1467158198
 mvn install
 #1467158233
-java -jar target/scharp-0.0.1-SNAPSHOT.jar  -Dedu.kestrel.scharp.activemq.planCellId="DAVIS MONTHAN AFB" 
+java -jar target/scharp-0.0.1-SNAPSHOT.jar  -Dedu.kestrel.scharp.activemq.planCellId="DAVIS MONTHAN AFB"
 #1467158222
-java -jar target/scharp-0.0.1-SNAPSHOT.jar 
+java -jar target/scharp-0.0.1-SNAPSHOT.jar
 #1467158405
 mvn clean
 #1467158416
@@ -30788,11 +30788,11 @@ mvn generate-sources
 #1467158435
 mvn compile package install
 #1467158463
-java -jar target/scharp-0.0.1-SNAPSHOT.jar 
+java -jar target/scharp-0.0.1-SNAPSHOT.jar
 #1467158667
-java -Dedu.kestrel.scharp.activemq.planCellId="USS EISENHOWER" -jar target/scharp-0.0.1-SNAPSHOT.jar  
+java -Dedu.kestrel.scharp.activemq.planCellId="USS EISENHOWER" -jar target/scharp-0.0.1-SNAPSHOT.jar
 #1467158588
-java -Dedu.kestrel.scharp.activemq.planCellId="DAVIS MONTHAN AFB" -jar target/scharp-0.0.1-SNAPSHOT.jar 
+java -Dedu.kestrel.scharp.activemq.planCellId="DAVIS MONTHAN AFB" -jar target/scharp-0.0.1-SNAPSHOT.jar
 #1467219157
 git status
 #1467219172
@@ -30814,21 +30814,21 @@ git status
 #1467219252
 git commit -m "Several changes to handle distributed scheduling."
 #1467219259
-git push origin marcel-schedule-with-amq 
+git push origin marcel-schedule-with-amq
 #1467219852
 git status
 #1467219858
-git checkout master 
+git checkout master
 #1467219861
 git pull
 #1467219876
 git pull --all --prune
 #1467219887
-git branch 
+git branch
 #1467219893
-git checkout marcel-schedule-with-amq 
+git checkout marcel-schedule-with-amq
 #1467219899
-git pull origin master 
+git pull origin master
 #1467224461
 cd ../..
 #1467224466
@@ -30844,9 +30844,9 @@ ls
 #1467224480
 git status
 #1467224490
-git checkout master 
+git checkout master
 #1467224499
-git pull 
+git pull
 #1467226056
 exit
 #1467226057
@@ -30876,7 +30876,7 @@ git commit -m "Merged with master after adding unit contract reasoning into mast
 #1467226213
 git status
 #1467226409
-git push origin marcel-schedule-with-amq 
+git push origin marcel-schedule-with-amq
 #1467250511
 ps -al
 #1467250515
@@ -30898,11 +30898,11 @@ ps -AC | grep java
 #1467303825
 git status
 #1467303855
-git add src/main/java/edu/kestrel/scharp/activemq/AmqJsonClient.java src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlanManagerClient.java src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellAMQClient.java src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellAMQServer.java src/test/java/edu/kestrel/scharp/planner/manager/DistributedPlanManagerTest.java 
+git add src/main/java/edu/kestrel/scharp/activemq/AmqJsonClient.java src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlanManagerClient.java src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellAMQClient.java src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellAMQServer.java src/test/java/edu/kestrel/scharp/planner/manager/DistributedPlanManagerTest.java
 #1467303914
 git commit -m "Test for distributed plan cells with multiple plan managers. Added startup of plan cell manager thread soon after creation."
 #1467303919
-git push origin marcel-schedule-with-amq 
+git push origin marcel-schedule-with-amq
 #1467312741
 git status
 #1467312757
@@ -30912,13 +30912,13 @@ git status
 #1467312786
 git commit -m "Fixes configuration of planning cells."
 #1467312802
-git push origin marcel-schedule-with-amq 
+git push origin marcel-schedule-with-amq
 #1467313081
 git pull
 #1467313092
 git pull --all --prune
 #1467313107
-git checkout master 
+git checkout master
 #1467313112
 git pull
 #1467314057
@@ -30928,13 +30928,13 @@ git branch
 #1467314076
 git status
 #1467314081
-git checkout marcel-schedule-with-amq 
+git checkout marcel-schedule-with-amq
 #1467314084
 git status
 #1467314090
-git checkout master 
+git checkout master
 #1467314096
-git branch -d marcel-schedule-with-amq 
+git branch -d marcel-schedule-with-amq
 #1467314116
 git checkout -b marcel-distributed-scheduler
 #1467318513
@@ -30946,9 +30946,9 @@ cd DockerJava/
 #1467318521
 ls
 #1467318526
-./docker-build.sh 
+./docker-build.sh
 #1467318683
-./docker-build-mac.sh 
+./docker-build-mac.sh
 #1467318725
 cd ../
 #1467318726
@@ -30958,9 +30958,9 @@ cd DockerScharpPlanner/
 #1467318735
 ls
 #1467318747
-./docker-build.sh 
+./docker-build.sh
 #1467318800
-./docker-build-mac.sh 
+./docker-build-mac.sh
 #1467319799
 cd
 #1467319803
@@ -30996,19 +30996,19 @@ cd DockerScharpPlanner/
 #1467320302
 ls
 #1467320309
-./docker-build-mac.sh 
+./docker-build-mac.sh
 #1467320675
 ./docker-run
 #1467320728
 cd src/rspace-eclipse/scharp/Docker/DockerScharpPlanner/
 #1467320744
-./docker-run-plan-cell.sh 
+./docker-run-plan-cell.sh
 #1467320998
-./docker-build-mac.sh 
+./docker-build-mac.sh
 #1467321004
-./docker-run-plan-cell.sh 
+./docker-run-plan-cell.sh
 #1467321125
-./docker-build-mac.sh 
+./docker-build-mac.sh
 #1467321543
 cd src/rspace-eclipse/scharp/
 #1467321551
@@ -31016,15 +31016,15 @@ cd Docker/DockerScharpPlanner/
 #1467321563
 ls
 #1467321571
-./docker-run-eisenhower.sh 
+./docker-run-eisenhower.sh
 #1467321640
 cd src/rspace-eclipse/scharp/Docker/DockerScharpPlanner/
 #1467321648
-./docker-run-luke.sh 
+./docker-run-luke.sh
 #1467321128
-./docker-run-plan-cell.sh 
+./docker-run-plan-cell.sh
 #1467320678
-./docker-run.sh 
+./docker-run.sh
 #1467322264
 cd src/rspace-eclipse/scharp/Docker/DockerScharpPlanner/
 #1467322269
@@ -31032,7 +31032,7 @@ cd ..
 #1467322273
 cd jboss-fuse-docker/
 #1467322281
-./docker-run-on-mac.sh 
+./docker-run-on-mac.sh
 #1467322301
 docker ps -a
 #1467322328
@@ -31040,35 +31040,35 @@ docker rm -f $(docker ps -aq)
 #1467322331
 docker ps -a
 #1467322394
-./docker-run.sh 
+./docker-run.sh
 #1467322580
 cd src/rspace-eclipse/scharp/Docker/DockerScharpPlanner/
 #1467322587
-./docker-run-huachuca.sh 
+./docker-run-huachuca.sh
 #1467322533
-./docker-run-eisenhower.sh 
+./docker-run-eisenhower.sh
 #1467322521
-./docker-run-monthan.sh 
+./docker-run-monthan.sh
 #1467322498
-./docker-run-nanager.sh 
+./docker-run-nanager.sh
 #1467322334
-./docker-run-on-mac.sh 
+./docker-run-on-mac.sh
 #1467328060
-./docker-build-mac.sh 
+./docker-build-mac.sh
 #1467328916
-cd 
+cd
 #1467328923
 cd src/rspace-eclipse/scharp/
 #1467328926
 ls
 #1467328940
-chmod +x run-plan-cell.sh 
+chmod +x run-plan-cell.sh
 #1467328943
-./run-plan-cell.sh 
+./run-plan-cell.sh
 #1467329153
 cd src/rspace-eclipse/scharp/
 #1467329156
-./run-plan-cell.sh 
+./run-plan-cell.sh
 #1467329567
 ./run-plan-cell.sh 0
 #1467329651
@@ -31080,7 +31080,7 @@ docker-machine env
 #1467329681
 docker ps -a
 #1467327964
-./docker-run-luke.sh 
+./docker-run-luke.sh
 #1467329703
 docker rm -f $(docker ps -aq)
 #1467329744
@@ -31124,7 +31124,7 @@ mvn clean compile install
 #1467335824
 ./run-plan-cell.sh 0
 #1467330761
-./docker-run-on-mac.sh 
+./docker-run-on-mac.sh
 #1467335961
 ./run-plan-cell.sh 3
 #1467335956
@@ -31136,7 +31136,7 @@ mvn clean compile install
 #1467336078
 clear
 #1467336176
-./docker-run-on-mac.sh 
+./docker-run-on-mac.sh
 #1467339417
 ./run-plan-cell.sh 0
 #1467339438
@@ -31160,7 +31160,7 @@ mvn clean compile install
 #1467340012
 ./run-plan-cell.sh 0
 #1467339977
-./docker-run-on-mac.sh 
+./docker-run-on-mac.sh
 #1467340190
 exit
 #1467340193
@@ -31180,7 +31180,7 @@ mv Docker/DockerScharpPlanner/docker-run-nanager.sh Docker/DockerScharpPlanner/d
 #1467340337
 git status
 #1467340351
-git add Docker/DockerScharpPlanner/docker-run-manager.sh 
+git add Docker/DockerScharpPlanner/docker-run-manager.sh
 #1467340354
 git status
 #1467340367
@@ -31194,7 +31194,7 @@ git status
 #1467340440
 git commit -m "Fixes to make the scheduler to run as independent nodes in different virtual machines."
 #1467340449
-git push -u origin marcel-distributed-scheduler 
+git push -u origin marcel-distributed-scheduler
 #1467340466
 git status
 #1467340478
@@ -31206,7 +31206,7 @@ exit
 #1467345863
 exit
 #1467392755
-uname 
+uname
 #1467392765
 uname -a
 #1467393206
@@ -31214,15 +31214,15 @@ cd src/rspace-eclipse/scharp/Docker/DockerScharpPlanner/
 #1467393221
 ls
 #1467393238
-./docker-build-mac.sh 
+./docker-build-mac.sh
 #1467393880
-./docker-run-plan-cell.sh 
+./docker-run-plan-cell.sh
 #1467393893
 ./docker-run-plan-cell.sh 0
 #1467394003
-./docker-run.sh 
+./docker-run.sh
 #1467394108
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1467395003
 ./docker-run
 #1467395024
@@ -31254,7 +31254,7 @@ git status
 #1467395495
 git commit -m "Changed scripts to build and run docker images for planner."
 #1467395500
-git push origin marcel-distributed-scheduler 
+git push origin marcel-distributed-scheduler
 #1467396184
 git status
 #1467396192
@@ -31262,7 +31262,7 @@ git add Docker/DockerScharpPlanner/Readme.md
 #1467396223
 git commit -m "Added instruction on how to run the planner using multiple docker images."
 #1467396229
-git push origin marcel-distributed-scheduler 
+git push origin marcel-distributed-scheduler
 #1467398426
 git status
 #1467398428
@@ -31300,17 +31300,17 @@ docker run -v ~/.m2:/root/.m2 -v "$PWD":/usr/src -w /usr/src maven:3-jdk-8 mvn p
 #1467399080
 ls
 #1467399085
-cd target/ 
+cd target/
 #1467399086
 ls
 #1467399089
 ls -al
 #1467400800
-cd 
+cd
 #1467400819
 cd src/rspace-eclipse/scharp/Docker/DockerSharpBaseImage/
 #1467400827
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1467401184
 cd ..
 #1467401208
@@ -31318,21 +31318,21 @@ ls
 #1467401220
 cd DockerSharpUpdateImage/
 #1467401251
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1467403900
 cd ../DockerSharpBaseImage/
 #1467403907
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1467410612
 cd ../DockerSharpUpdateImage/
 #1467410621
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1467410672
 cd ../..
 #1467410705
 cd -
 #1467410708
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1467411706
 git status
 #1467411715
@@ -31360,7 +31360,7 @@ ls
 #1467411814
 cd DockerScharpUpdateImage/
 #1467411819
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1467411879
 git status
 #1467411890
@@ -31370,9 +31370,9 @@ git status
 #1467411922
 git commit -m "Added some code to speed up the build of the docker image for development."
 #1467411927
-git push origin marcel-distributed-scheduler 
+git push origin marcel-distributed-scheduler
 #1467395010
-./docker-run.sh 
+./docker-run.sh
 #1467395063
 ./docker-run-plan-cell.sh 1
 #1467395176
@@ -31410,7 +31410,7 @@ cd ..
 #1467413139
 cd jboss-fuse-docker/
 #1467413146
-./docker-run.sh 
+./docker-run.sh
 #1467413322
 ./docker-run-plan-cell.sh 0
 #1467413334
@@ -31434,7 +31434,7 @@ git status
 #1467413541
 git commit -m "Added a check for mac os in docker run scripts for jboss-fuse."
 #1467413547
-git push origin marcel-distributed-scheduler 
+git push origin marcel-distributed-scheduler
 #1467418083
 git status
 #1467418091
@@ -31442,13 +31442,13 @@ git add ../../../src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellMa
 #1467418110
 git commit -m "Removed loop for debug printing."
 #1467418116
-git push origin marcel-distributed-scheduler 
+git push origin marcel-distributed-scheduler
 #1467418201
-git checkout master 
+git checkout master
 #1467418206
 git pull
 #1467418219
-git branch -d marcel-distributed-scheduler 
+git branch -d marcel-distributed-scheduler
 #1467418222
 git pull
 #1467418229
@@ -31484,7 +31484,7 @@ emacs --version
 #1467438795
 alias
 #1467438833
-/Applications/Emacs.app/Contents/MacOS/Emacs -q -l jmax/init.el 
+/Applications/Emacs.app/Contents/MacOS/Emacs -q -l jmax/init.el
 #1467736017
 cd
 #1467736028
@@ -31554,7 +31554,7 @@ ls
 #1467736987
 cd )
 #1467736989
-cd 
+cd
 #1467736998
 cd Downloads/Eclipse.app/Contents/
 #1467736999
@@ -31572,9 +31572,9 @@ cd MacOS/
 #1467737012
 ls
 #1467737028
-./eclipse 
+./eclipse
 #1467736031
-/Applications/Emacs.app/Contents/MacOS/Emacs -q -l jmax/init.el 
+/Applications/Emacs.app/Contents/MacOS/Emacs -q -l jmax/init.el
 #1467756403
 cd
 #1467756409
@@ -31654,7 +31654,7 @@ ls
 #1467829481
 cd DockerScharpUpdateImage/
 #1467829487
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1467829573
 cd ../..
 #1467829579
@@ -31666,7 +31666,7 @@ cd DockerScharpPlanner/
 #1467829589
 ls
 #1467829600
-./docker-run.sh 
+./docker-run.sh
 #1467829816
 git status
 #1467830052
@@ -31722,9 +31722,9 @@ git commit -m "Support for single and multiple node planning, fixed problem with
 #1467831132
 git status
 #1467831144
-git push -u origin marcel-strike-options 
+git push -u origin marcel-strike-options
 #1467831909
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1467832111
 ls
 #1467839600
@@ -31748,7 +31748,7 @@ git commit -m "Added mission options to getStrikeOptions response."
 #1467845628
 git status
 #1467845633
-git push origin marcel-strike-options 
+git push origin marcel-strike-options
 #1467846242
 git status
 #1467846295
@@ -31758,11 +31758,11 @@ git status
 #1467846319
 git commit -m "Print the strike options message."
 #1467846326
-git push -u origin marcel-strike-options 
+git push -u origin marcel-strike-options
 #1467830671
 ./run-plan-cell.sh 0
 #1467823197
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1467912185
 git status
 #1467912303
@@ -31774,31 +31774,31 @@ git add src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlannerServer.java s
 #1467912534
 git commit -m "Moved some avro translation functions to a new utils file."
 #1467912541
-git push origin marcel-strike-options 
+git push origin marcel-strike-options
 #1467912551
-git checkout master 
+git checkout master
 #1467912567
 git checkout -- src/main/resources/data/Pacifica/output/schedule.json
 #1467912571
-git checkout master 
+git checkout master
 #1467912578
 git add pom.xml
 #1467912608
 git commit -m "Changed the version of openejb-core dependency."
 #1467912615
-git push origin master 
+git push origin master
 #1467912620
 git pull
 #1467912632
-git checkout marcel-strike-options 
+git checkout marcel-strike-options
 #1467912635
 git pull
 #1467912641
-git pull origin master 
+git pull origin master
 #1467913850
 git status
 #1467913860
-git push origin marcel-strike-options 
+git push origin marcel-strike-options
 #1467913865
 git pull
 #1467914070
@@ -31818,7 +31818,7 @@ git add pom.xml src/main/avro/PlanInterface.avdl
 #1467918582
 git commit -m "Updated dependencies versions in pom.xml"
 #1467918587
-git push origin marcel-strike-options 
+git push origin marcel-strike-options
 #1467922584
 git pull
 #1467922592
@@ -31832,7 +31832,7 @@ clear
 #1467923071
 ./run-plan-cell.sh -1
 #1467923426
-mvn clean install 
+mvn clean install
 #1467923452
 ./run-plan-cell.sh -1
 #1467924991
@@ -31842,17 +31842,17 @@ git diff src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlannerServer.java
 #1467925028
 git commit -m "Fixed imports."
 #1467925033
-git push origin marcel-strike-options 
+git push origin marcel-strike-options
 #1467925087
 git pull
 #1467925095
-git checkout master 
+git checkout master
 #1467925107
 git checkout -- src/main/resources/data/Pacifica/output/schedule.json
 #1467925111
 git status
 #1467925118
-git checkout master 
+git checkout master
 #1467925121
 git pull
 #1467925148
@@ -31862,9 +31862,9 @@ git checkout -b -t  marcel-clear-schedule
 #1467925173
 git checkout -b  marcel-clear-schedule
 #1467925180
-git branch 
+git branch
 #1467925189
-git branch -d marcel-strike-options 
+git branch -d marcel-strike-options
 #1467925192
 git status
 #1467925198
@@ -31872,17 +31872,17 @@ git pull
 #1467936224
 git status
 #1467936260
-git add src/main/avro/MessageInterface.avdl src/main/avro/PlanQueryInterface.avdl src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlannerServer.java src/main/java/edu/kestrel/scharp/planner/interfaces/IPlanningCell.java src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.java src/main/java/edu/kestrel/scharp/planner/manager/StatsSummaryManager.java src/test/java/edu/kestrel/scharp/activemq/codedrop/TestMainServersEmbeddedBroker.java 
+git add src/main/avro/MessageInterface.avdl src/main/avro/PlanQueryInterface.avdl src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlannerServer.java src/main/java/edu/kestrel/scharp/planner/interfaces/IPlanningCell.java src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.java src/main/java/edu/kestrel/scharp/planner/manager/StatsSummaryManager.java src/test/java/edu/kestrel/scharp/activemq/codedrop/TestMainServersEmbeddedBroker.java
 #1467936262
 git status
 #1467936272
 git checkout -- src/main/resources/data/Pacifica/output/schedule.json
 #1467936277
-git status 
+git status
 #1467936300
 git commit -m "Added clear all tasks message and processor."
 #1467936305
-git push origin marcel-clear-schedule 
+git push origin marcel-clear-schedule
 #1467937598
 cd Docker/DockerScharpCacheMaven/
 #1467937599
@@ -31890,19 +31890,19 @@ ls
 #1467937605
 cd DockerScharpBaseImage/
 #1467937610
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1467938113
 cd ../
 #1467938122
 cd DockerScharpUpdateImage/
 #1467938126
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1467938245
 cd ../..
 #1467938269
 cd DockerScharpCacheMaven/DockerScharpBaseImage/
 #1467938270
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1468012339
 cd ../..
 #1468012344
@@ -31920,7 +31920,7 @@ git status
 #1468012412
 git commit -m "Initial development for select strike option."
 #1468012416
-git checkout master 
+git checkout master
 #1468012420
 git pull
 #1468200974
@@ -31960,7 +31960,7 @@ cd  emacs-src/
 #1468201598
 ls
 #1468201604
-./autogen.sh 
+./autogen.sh
 #1468201760
 ./autogen.sh git
 #1468201772
@@ -31988,9 +31988,9 @@ git pull --all --prunte
 #1468256278
 git pull --all --prune
 #1468256321
-git branch 
+git branch
 #1468256328
-git checkout marcel-clear-schedule 
+git checkout marcel-clear-schedule
 #1468256344
 git diff src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
 #1468256376
@@ -32010,7 +32010,7 @@ git add src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlannerServer.java
 #1468258890
 git commit -m "Added select strike option message and handler."
 #1468258896
-git push origin marcel-clear-schedule 
+git push origin marcel-clear-schedule
 #1468259397
 git status
 #1468259406
@@ -32018,21 +32018,21 @@ git add src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlannerServer.java
 #1468259422
 git commit -m "Commented out the printing of the messages."
 #1468259446
-git push origin marcel-clear-schedule 
+git push origin marcel-clear-schedule
 #1468259522
 git status
 #1468259537
-git checkout usmtf 
+git checkout usmtf
 #1468259546
 mvn clean
 #1468259558
 mvn generate-sources
 #1468266341
-git pull --all 
+git pull --all
 #1468266347
-git branch 
+git branch
 #1468266528
-git checkout --track origin/drsRoute 
+git checkout --track origin/drsRoute
 #1468266536
 mvn clean
 #1468266544
@@ -32146,9 +32146,9 @@ git status
 #1468340175
 aspell
 #1468340568
-cd 
+cd
 #1468340577
-cd Dropbox/.emacs.d 
+cd Dropbox/.emacs.d
 #1468340577
 ls
 #1468340581
@@ -32186,9 +32186,9 @@ cd icicles
 #1468341145
 ls
 #1468341150
-./get-icicles.sh 
+./get-icicles.sh
 #1468341541
-cd 
+cd
 #1468341543
 cd icicles/
 #1468341544
@@ -32198,7 +32198,7 @@ cd ..
 #1468341552
 rm -rf icicles/
 #1468341572
-cd 
+cd
 #1468341582
 cd .emacs.d/ici
 #1468341596
@@ -32220,7 +32220,7 @@ cd ..
 #1468343416
 ls
 #1468343422
-rm widget.el 
+rm widget.el
 #1468344173
 mv icicles/* .
 #1468344174
@@ -32230,11 +32230,11 @@ rm -rf icicles
 #1468344182
 ls
 #1468344699
-more dired-aux.el 
+more dired-aux.el
 #1468344706
-./get-icicles.sh 
+./get-icicles.sh
 #1468345040
-more icicles/dired-aux.el 
+more icicles/dired-aux.el
 #1468345059
 ls -al
 #1468345091
@@ -32246,17 +32246,17 @@ ls -al
 #1468345657
 cd ..
 #1468345659
-more col-highlight.el 
+more col-highlight.el
 #1468347483
 /Applications/Emacs.app/Contents/MacOS/Emacs  --debug-init
 #1468348057
-rm dired+.el 
+rm dired+.el
 #1468348059
 ls
 #1468348081
-rm dired-aux.el dired-x.el 
+rm dired-aux.el dired-x.el
 #1468348095
-rm bookmark.el 
+rm bookmark.el
 #1468348096
 ls
 #1468351085
@@ -32266,9 +32266,9 @@ cd src/rspace
 #1468351092
 ls
 #1468351098
-cd 
+cd
 #1468351111
-cd - 
+cd -
 #1468351127
 cd src/rspace/ATOUSMTF2004/
 #1468351128
@@ -32306,7 +32306,7 @@ ls
 #1468351330
 grep catcode *
 #1468351345
-cd HTML_Sets/ 
+cd HTML_Sets/
 #1468351346
 ls
 #1468351352
@@ -32376,19 +32376,19 @@ cd ..
 #1468355262
 /Applications/Emacs.app/Contents/MacOS/Emacs  --debug-init
 #1468357649
-cd 
+cd
 #1468357663
 cd src/rspace-eclipse/scharp/
 #1468357667
-git pull 
+git pull
 #1468357679
 git stash
 #1468357681
-git pull 
+git pull
 #1468357689
 git stash pop
 #1468358452
-git pull origin master 
+git pull origin master
 #1468358462
 git status
 #1468358470
@@ -32396,13 +32396,13 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler
 #1468358490
 git commit -m "Fixed conflicts and removed some unused code."
 #1468358495
-git push origin drsRoute 
+git push origin drsRoute
 #1468358502
-git pull origin master 
+git pull origin master
 #1468358520
 git status
 #1468358531
-git push origin drsRoute 
+git push origin drsRoute
 #1468367695
 git pull
 #1468367708
@@ -32450,7 +32450,7 @@ git status
 #1468448820
 git commit -m "Fixed some merge conflicts."
 #1468448827
-git push origin drsRoute 
+git push origin drsRoute
 #1468448833
 git pull
 #1468453392
@@ -32468,7 +32468,7 @@ git status
 #1468453498
 git commit -m "Changed the computation of duration for refueling activiities."
 #1468453503
-git push origin drsRoute 
+git push origin drsRoute
 #1468453518
 git pull
 #1468453632
@@ -32478,7 +32478,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler.
 #1468453667
 git commit -m "Fixed conflicts."
 #1468453698
-git push origin drsRoute 
+git push origin drsRoute
 #1468453704
 git pull
 #1468453794
@@ -32498,15 +32498,15 @@ git diff src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
 #1468537095
 git diff src/main/java/edu/kestrel/scharp/planner/resource/RBAtomicCapacityProfile.java
 #1468555410
-more ~/.gitconfig 
+more ~/.gitconfig
 #1468555445
-more ~/.gitignore_global 
+more ~/.gitignore_global
 #1468555636
 git pull
 #1468555663
 git checkout -- src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
 #1468555667
-git stash 
+git stash
 #1468555673
 git pull
 #1468555683
@@ -32522,7 +32522,7 @@ git add src/main/java/edu/kestrel/scharp/planner/resource/RBAtomicCapacityProfil
 #1468555988
 git commit -m "Fixed merge conflicts."
 #1468555994
-git push origin drsRoute 
+git push origin drsRoute
 #1468556008
 git status
 #1468556757
@@ -32552,13 +32552,13 @@ git commit -m "Integration of multi-aircraft mission and route generation."
 #1468615360
 git status
 #1468615365
-git push origin drsRoute 
+git push origin drsRoute
 #1468615369
 git pull
 #1468615378
-git pull --all --prune 
+git pull --all --prune
 #1468615394
-git pull origin multi-aircraft-missions 
+git pull origin multi-aircraft-missions
 #1468615401
 git satus
 #1468615406
@@ -32582,11 +32582,11 @@ git commit -m "Integration of multi-aircraft mission and route generation."
 #1468615486
 git status
 #1468615495
-git push origin drsRoute 
+git push origin drsRoute
 #1468615500
 git pull
 #1468615507
-git pull origin multi-aircraft-missions 
+git pull origin multi-aircraft-missions
 #1468615514
 git status
 #1468627309
@@ -32602,7 +32602,7 @@ ls
 #1468628932
 cd Drop
 #1468628938
-cd 
+cd
 #1468628941
 cd Dropbox/
 #1468628941
@@ -32616,7 +32616,7 @@ ls -al
 #1468628967
 /Applications/Emacs.app/Contents/MacOS/Emacs  --debug-init
 #1468861806
-cd 
+cd
 #1468861813
 cd src/rspace-eclipse/scharp/
 #1468861816
@@ -32642,37 +32642,37 @@ git commit -m "Added earliest start and latest finish to scenario and task objec
 #1468872234
 git pull
 #1468872244
-git push origin drsRoute 
+git push origin drsRoute
 #1468872254
-git pull origin master 
+git pull origin master
 #1468872260
-git pull origin multi-aircraft-missions 
+git pull origin multi-aircraft-missions
 #1468872264
 git status
 #1468872271
-git push origin drsRoute 
+git push origin drsRoute
 #1468872515
-git checkout master 
+git checkout master
 #1468872518
 git pull
 #1468872531
 git pull --all --prune
 #1468872536
-git branch 
+git branch
 #1468872547
-git checkout marcel-clear-schedule 
+git checkout marcel-clear-schedule
 #1468872550
 git status
 #1468872590
-git checkout master 
+git checkout master
 #1468872595
-git branch 
+git branch
 #1468872607
-git branch -d drsRoute 
+git branch -d drsRoute
 #1468872613
-git branch -d marcel-clear-schedule 
+git branch -d marcel-clear-schedule
 #1468872620
-git branch -d usmtf 
+git branch -d usmtf
 #1468872623
 git status
 #1468872625
@@ -32698,13 +32698,13 @@ git status
 #1468875719
 git commit -m "Fixed problems with serialization of objects and fighter scheduler returning null when failed to schedule air refueling task."
 #1468875733
-git push -u origin marcel-fix-fighter-scheduler 
+git push -u origin marcel-fix-fighter-scheduler
 #1468875960
-git checkout master 
+git checkout master
 #1468875963
 git pull
 #1468875978
-git branch -d marcel-fix-fighter-scheduler 
+git branch -d marcel-fix-fighter-scheduler
 #1468875981
 git status
 #1468875984
@@ -32718,21 +32718,21 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler
 #1468884626
 git commit -m "Fixed the stats manager to count the number of assets used by the mission when counting sorties."
 #1468884635
-git push origin master 
+git push origin master
 #1468884643
 git pull
 #1468946726
 git pull --all --prune
 #1468946733
-git branch 
+git branch
 #1468948964
 git checkout -b marcel-add-control
 #1468950000
-git checkout -t origin/sf-scenario-directory 
+git checkout -t origin/sf-scenario-directory
 #1468950003
 git pull
 #1468951390
-git checkout marcel-add-control 
+git checkout marcel-add-control
 #1468951392
 ls
 #1468969160
@@ -32760,7 +32760,7 @@ git status
 #1468990697
 git commit -m "Initial version of C2 tasks and scheduler."
 #1468990708
-git push -u origin marcel-add-control 
+git push -u origin marcel-add-control
 #1468990713
 git status
 #1469028122
@@ -32774,7 +32774,7 @@ git status
 #1469031161
 git commit -m "Fixed some problems with control task creation and bid creation."
 #1469031166
-git push origin marcel-add-control 
+git push origin marcel-add-control
 #1469034743
 git status
 #1469034764
@@ -32786,7 +32786,7 @@ git commit -m "Changed log."
 #1469034790
 git status
 #1469034799
-git push origin marcel-add-control 
+git push origin marcel-add-control
 #1469050377
 git pull --all --prune
 #1469050391
@@ -32796,23 +32796,23 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/TankerBid.java src/mai
 #1469050443
 git status
 #1469050458
-git push origin marcel-add-control 
+git push origin marcel-add-control
 #1469050466
-git checkout master 
+git checkout master
 #1469050475
 git status
 #1469050496
 git commit -m "Testing tanker tasks."
 #1469050503
-git push origin marcel-add-control 
+git push origin marcel-add-control
 #1469050512
-git checkout master 
+git checkout master
 #1469050517
 git pull
 #1469050528
-git checkout marcel-add-control 
+git checkout marcel-add-control
 #1469050532
-git pull origin master 
+git pull origin master
 #1469051451
 git status
 #1469051567
@@ -32824,11 +32824,11 @@ git commit -m "Merged with refueling and circumnavigation code."
 #1469051604
 git status
 #1469051612
-git push origin marcel-add-control 
+git push origin marcel-add-control
 #1469051625
-git branch 
+git branch
 #1469051654
-git pull origin master 
+git pull origin master
 #1469051659
 git status
 #1469052074
@@ -32838,15 +32838,15 @@ git status
 #1469056288
 git pull --all --prune
 #1469056296
-git checkout master 
+git checkout master
 #1469056299
 git pull
 #1469056304
-git branch 
+git branch
 #1469056315
-git branch -d marcel-add-control 
+git branch -d marcel-add-control
 #1469056323
-git branch -d sf-scenario-directory 
+git branch -d sf-scenario-directory
 #1469056325
 git pull
 #1469056331
@@ -32866,13 +32866,13 @@ git pull --all --prune
 #1469119757
 git status
 #1469119763
-git checkout master 
+git checkout master
 #1469119767
 git pull
 #1469119774
 git status
 #1469119779
-git checkout marcel-test-multi-target 
+git checkout marcel-test-multi-target
 #1469119957
 git rebase master
 #1469119964
@@ -32886,7 +32886,7 @@ git checkout -- src/main/resources/logback.xml
 #1469120015
 git status
 #1469120022
-git rebase master 
+git rebase master
 #1469120030
 git status
 #1469142054
@@ -32906,7 +32906,7 @@ git status
 #1469142122
 git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java
 #1469142136
-git add src/main/java/edu/kestrel/scharp/planner/entities/FighterGoState.java src/main/java/edu/kestrel/scharp/planner/entities/GoState.java src/main/resources/data/Pacifica/Pacifica_Delta_ATO.csv 
+git add src/main/java/edu/kestrel/scharp/planner/entities/FighterGoState.java src/main/java/edu/kestrel/scharp/planner/entities/GoState.java src/main/resources/data/Pacifica/Pacifica_Delta_ATO.csv
 #1469142138
 git status
 #1469142150
@@ -32918,21 +32918,21 @@ git commit -m "Changes to improve scheduling of support missions."
 #1469142180
 git status
 #1469142191
-git push -u origin marcel-test-multi-target 
+git push -u origin marcel-test-multi-target
 #1469142204
 git pull --all --prune
 #1469142218
-git checkout master 
+git checkout master
 #1469142221
 git pull
 #1469142617
 git status
 #1469142642
-git checkout marcel-test-multi-target 
+git checkout marcel-test-multi-target
 #1469142645
 git pull
 #1469142651
-git rebase master 
+git rebase master
 #1469142753
 git rebase --continue
 #1469142772
@@ -32954,11 +32954,11 @@ git pull
 #1469142880
 git status
 #1469142906
-git push -u origin marcel-test-multi-target 
+git push -u origin marcel-test-multi-target
 #1469142918
 git pull
 #1469142927
-git pull origin  master 
+git pull origin  master
 #1469142933
 git status
 #1469152528
@@ -32968,21 +32968,21 @@ git add src/main/java/edu/kestrel/scharp/planner/propagation/ConstraintNetwork.j
 #1469152541
 git status
 #1469152551
-git checkout -- src/main/resources/data/Pacifica/output/schedule.json 
+git checkout -- src/main/resources/data/Pacifica/output/schedule.json
 #1469152555
 git status
 #1469152578
 git commit -m "Fixed propagation for activity sequences."
 #1469152589
-git checkout master 
+git checkout master
 #1469165232
 git status
 #1469165241
-git checkout marcel-test-multi-target 
+git checkout marcel-test-multi-target
 #1469165249
 git stash
 #1469165254
-git checkout marcel-test-multi-target 
+git checkout marcel-test-multi-target
 #1469165259
 git stash pop
 #1469166124
@@ -32994,7 +32994,7 @@ git status
 #1469166199
 git commit -m "Debugging how to make the support mission to start during the take off time window defined by the unit contract."
 #1469166205
-git push origin marcel-test-multi-target 
+git push origin marcel-test-multi-target
 #1469205679
 grep Facility* *
 #1469207305
@@ -33002,7 +33002,7 @@ git status
 #1469207347
 git checkout main
 #1469207355
-git checkout master 
+git checkout master
 #1469207359
 git status
 #1469207993
@@ -33020,7 +33020,7 @@ git status
 #1469227796
 git commit -m "Fixes path and file names for TE2 configuration, migrate data loading functions to use new Mitre files."
 #1469227807
-git push -u origin marcel-fix-pathnames 
+git push -u origin marcel-fix-pathnames
 #1469227820
 git pull --all --prune
 #1469229021
@@ -33038,7 +33038,7 @@ git pull
 #1469229041
 git status
 #1469229062
-git remote -v 
+git remote -v
 #1469229078
 cd ..
 #1469229085
@@ -33072,7 +33072,7 @@ git commit -m "Temporary state for reading unit contract from json file."
 #1469302752
 git status
 #1469302761
-git push origin marcel-fix-pathnames 
+git push origin marcel-fix-pathnames
 #1469302765
 ls
 #1469381077
@@ -33080,25 +33080,25 @@ git branch
 #1469381409
 git status
 #1469381421
-git checkout marcel-test-multi-target 
+git checkout marcel-test-multi-target
 #1469381425
-git pull origin master 
+git pull origin master
 #1469381441
 git status
 #1469381452
-git push origin marcel-test-multi-target 
+git push origin marcel-test-multi-target
 #1469381458
 git status
 #1469382073
-git checkout marcel-fix-pathnames 
+git checkout marcel-fix-pathnames
 #1469382076
 git pull
 #1469382088
-git pull origin master 
+git pull origin master
 #1469382105
 git status
 #1469382116
-git push -u origin marcel-fix-pathnames 
+git push -u origin marcel-fix-pathnames
 #1469389892
 git status
 #1469389906
@@ -33108,7 +33108,7 @@ git status
 #1469389932
 git commit -m "Fixed scenarion loading functions to load the correct TE2 files."
 #1469389940
-git push origin marcel-fix-pathnames 
+git push origin marcel-fix-pathnames
 #1469407221
 git status
 #1469407244
@@ -33118,17 +33118,17 @@ git status
 #1469407298
 git commit -m "Added TE2 files from the zip file posted by Mitre for TE2 experiments."
 #1469407304
-git push origin marcel-fix-pathnames 
+git push origin marcel-fix-pathnames
 #1469407311
 ls
 #1469407443
 git status
 #1469408203
-git pull origin master 
+git pull origin master
 #1469408217
 git status
 #1469408233
-git push origin marcel-test-multi-target  
+git push origin marcel-test-multi-target
 #1469408237
 git status
 #1469408239
@@ -33136,13 +33136,13 @@ git pull
 #1469408262
 git pull --all --prune
 #1469408270
-git branch 
+git branch
 #1469408285
-git checkout marcel-fix-pathnames 
+git checkout marcel-fix-pathnames
 #1469408288
 git pull
 #1469408293
-git pull origin master 
+git pull origin master
 #1469408413
 git status
 #1469408420
@@ -33150,7 +33150,7 @@ git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2ScenarioConfigur
 #1469408437
 git commit -m "Merged with master and fixed conflicts."
 #1469408443
-git push origin marcel-fix-pathnames 
+git push origin marcel-fix-pathnames
 #1469410465
 git status
 #1469410744
@@ -33160,7 +33160,7 @@ git status
 #1469410790
 git commit -m "Implemented method addAvailabilityPatter for AirUnitResource."
 #1469410796
-git push origin marcel-fix-pathnames 
+git push origin marcel-fix-pathnames
 #1469411106
 git status
 #1469411113
@@ -33168,7 +33168,7 @@ gt add src/test/java/edu/kestrel/scharp/planner/manager/DistributedPlanManagerTe
 #1469411124
 git commit -m "Removed code commented out."
 #1469411130
-git push origin marcel-fix-pathnames 
+git push origin marcel-fix-pathnames
 #1469411146
 git status
 #1469411154
@@ -33176,7 +33176,7 @@ git add src/test/java/edu/kestrel/scharp/planner/manager/DistributedPlanManagerT
 #1469411158
 git commit -m "Removed code commented out."
 #1469411161
-git push origin marcel-fix-pathnames 
+git push origin marcel-fix-pathnames
 #1469411809
 git status
 #1469411827
@@ -33186,13 +33186,13 @@ git status
 #1469411860
 git commit -m "Fixed unit test to use Distributed Plan Managet instead of PlanManager2."
 #1469411868
-git push origin marcel-fix-pathnames 
+git push origin marcel-fix-pathnames
 #1469412013
 git status
 #1469412020
 git pull --all --prune
 #1469412035
-git checkout -t origin/drs1 
+git checkout -t origin/drs1
 #1469412038
 git pull
 #1469413249
@@ -33200,31 +33200,31 @@ git status
 #1469413290
 git checkout -- src/main/java/edu/kestrel/scharp/airdomain/entities/EntryExit.java
 #1469413296
-git checkout marcel-test-multi-target 
+git checkout marcel-test-multi-target
 #1469413298
 git pull
 #1469413579
-git checkout drs1 
+git checkout drs1
 #1469413582
 git status
 #1469414095
-git checkout marcel-test-multi-target 
+git checkout marcel-test-multi-target
 #1469414097
 git pull
 #1469419946
 git status
 #1469419964
-git add src/main/java/edu/kestrel/scharp/planner/entities/Activity.java src/main/java/edu/kestrel/scharp/planner/entities/TankerActivity.java src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java 
+git add src/main/java/edu/kestrel/scharp/planner/entities/Activity.java src/main/java/edu/kestrel/scharp/planner/entities/TankerActivity.java src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java
 #1469419967
 git status
 #1469420005
 git commit -m "Fixed refuel activity with empty parent."
 #1469420013
-git push origin marcel-test-multi-target 
+git push origin marcel-test-multi-target
 #1469458500
 git status
 #1469458512
-git checkout master 
+git checkout master
 #1469458514
 git pull
 #1469458531
@@ -33238,11 +33238,11 @@ git pull
 #1469458650
 git pull --all --prune
 #1469458655
-git branch 
+git branch
 #1469458665
-git branch -d marcel-test-multi-target 
+git branch -d marcel-test-multi-target
 #1469458677
-git checkout marcel-test-multi-target 
+git checkout marcel-test-multi-target
 #1469458684
 git status
 #1469458695
@@ -33250,25 +33250,25 @@ git checkout -- src/main/resources/data/Pacifica/output/schedule.json
 #1469458697
 git status
 #1469458705
-git checkout master 
+git checkout master
 #1469458714
-git branch -d marcel-test-multi-target 
+git branch -d marcel-test-multi-target
 #1469458769
-git checkout marcel-fix-pathnames 
+git checkout marcel-fix-pathnames
 #1469458773
-git pull origin master 
+git pull origin master
 #1469458786
 git status
 #1469458793
-git push origin marcel-fix-pathnames 
+git push origin marcel-fix-pathnames
 #1469464022
 git status
 #1469464060
-git pull origin master 
+git pull origin master
 #1469464067
 git status
 #1469464851
-git checkout master 
+git checkout master
 #1469464897
 git checkout -b marcel-expand-support
 #1469464901
@@ -33276,13 +33276,13 @@ git pull
 #1469470930
 git status
 #1469470955
-git add src/main/java/edu/kestrel/scharp/planner/entities/SupportTask.java src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java 
+git add src/main/java/edu/kestrel/scharp/planner/entities/SupportTask.java src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java
 #1469470983
 git commit -m "Initial version to expand support mission to follow fighter route."
 #1469470994
-git push -u origin marcel-expand-support 
+git push -u origin marcel-expand-support
 #1469471004
-git checkout marcel-fix-pathnames 
+git checkout marcel-fix-pathnames
 #1469471007
 git status
 #1469471112
@@ -33316,33 +33316,33 @@ git add ../../../../../.gitignore
 #1469472137
 git commit -m "Added target files to repo."
 #1469472143
-git push origin marcel-fix-pathnames 
+git push origin marcel-fix-pathnames
 #1469472817
 git branch
 #1469472835
-git checkout marcel-test-multi-target 
+git checkout marcel-test-multi-target
 #1469472888
-git checkout master 
+git checkout master
 #1469472906
-git checkout marcel-test-multi-target 
+git checkout marcel-test-multi-target
 #1469472910
 git status
 #1469472917
-git pull origin master 
+git pull origin master
 #1469472932
 git status
 #1469472951
-git push -u origin marcel-test-multi-target 
+git push -u origin marcel-test-multi-target
 #1469477321
-git checkout master 
+git checkout master
 #1469477324
-git pull 
+git pull
 #1469477335
-git checkout marcel-fix-pathnames 
+git checkout marcel-fix-pathnames
 #1469477337
-git pull 
+git pull
 #1469477344
-git pull origin master 
+git pull origin master
 #1469477745
 git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java
 #1469477756
@@ -33352,19 +33352,19 @@ git add ../../../java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java
 #1469477776
 git commit -m "Fixed merge conflicts."
 #1469477781
-git status 
+git status
 #1469477817
-git pull origin master 
+git pull origin master
 #1469477821
 git status
 #1469477828
-git push origin marcel-fix-pathnames 
+git push origin marcel-fix-pathnames
 #1469477963
 git status
 #1469477976
 git pull --all --prune
 #1469477995
-git checkout marcel-expand-support 
+git checkout marcel-expand-support
 #1469478010
 ggit pull
 #1469478036
@@ -33374,11 +33374,11 @@ git status
 #1469478042
 git pull
 #1469478049
-git pull origin master 
+git pull origin master
 #1469478107
 git status
 #1469478119
-git push -u origin marcel-expand-support 
+git push -u origin marcel-expand-support
 #1469478125
 git status
 #1469478697
@@ -33392,19 +33392,19 @@ git status
 #1469514584
 git commit -m "Added the expansion of the support activity to follow the route of the fighter mission."
 #1469514594
-git push -u origin marcel-expand-support 
+git push -u origin marcel-expand-support
 #1469514703
-git pull origin master 
+git pull origin master
 #1469514739
 git status
 #1469514752
-git push origin marcel-expand-support 
+git push origin marcel-expand-support
 #1469553159
 git status
 #1469553164
 git pull
 #1469553174
-git checkout drs1 
+git checkout drs1
 #1469553179
 git pull
 #1469557064
@@ -33416,17 +33416,17 @@ git status
 #1469557216
 git commit -m "Added recon tasks to target task, and fix class cast exceptions."
 #1469557223
-git push -u origin drs1 
+git push -u origin drs1
 #1469557282
-git pull origin master 
+git pull origin master
 #1469557294
 git status
 #1469557304
-git push -u origin drs1 
+git push -u origin drs1
 #1469557308
 clear
 #1469557448
-git pull origin master 
+git pull origin master
 #1469557748
 git status
 #1469557762
@@ -33436,11 +33436,11 @@ git status
 #1469557787
 git commit -m "fixed merge conflicts."
 #1469557795
-git push -u origin drs1 
+git push -u origin drs1
 #1469557803
-git pull origin master 
+git pull origin master
 #1469557926
-git checkout master 
+git checkout master
 #1469557931
 git pull
 #1469557940
@@ -33452,13 +33452,13 @@ git pull
 #1469557961
 git pull --all --prune
 #1469557973
-git branch 
+git branch
 #1469557981
-git branch -d drs1 
+git branch -d drs1
 #1469557987
-git branch -d marcel-fix-pathnames 
+git branch -d marcel-fix-pathnames
 #1469558001
-git branch -d marcel-test-multi-target 
+git branch -d marcel-test-multi-target
 #1469558003
 git status
 #1469558007
@@ -33466,13 +33466,13 @@ git branch
 #1469558015
 git pull --all --prune
 #1469558617
-git checkout marcel-expand-support 
+git checkout marcel-expand-support
 #1469558622
 git pull
 #1469558646
 git pull --all --prune
 #1469558673
-git pull origin master 
+git pull origin master
 #1469561510
 git status
 #1469561533
@@ -33484,31 +33484,31 @@ git commit -m "Merged with master and fixed conflicts; adjusted support mission 
 #1469561622
 git status
 #1469561632
-git push origin marcel-expand-support 
+git push origin marcel-expand-support
 #1469561676
-git pull origin master 
+git pull origin master
 #1469561696
 git status
 #1469561704
-git push origin marcel-expand-support 
+git push origin marcel-expand-support
 #1469561803
 git pull --all --prune
 #1469561813
-git checkout lwg-refueling 
+git checkout lwg-refueling
 #1469561816
 git pull
 #1469561952
-git checkout master 
+git checkout master
 #1469561955
-git pull 
+git pull
 #1469561996
 git pull --all --prune
 #1469562005
-git checkout marcel-expand-support 
+git checkout marcel-expand-support
 #1469562008
 git pull
 #1469562016
-git pull origin master 
+git pull origin master
 #1469562036
 git status
 #1469562055
@@ -33516,9 +33516,9 @@ git commit -m "Merged with master."
 #1469562071
 git status
 #1469562080
-git push origin marcel-expand-support 
+git push origin marcel-expand-support
 #1469562382
-git checkout master 
+git checkout master
 #1469565211
 git pull
 #1469565229
@@ -33540,7 +33540,7 @@ git checkout -b marcel-fix-secondary-tasks
 #1469567043
 git status
 #1469569426
-git pull 
+git pull
 #1469569437
 git status
 #1469569449
@@ -33566,7 +33566,7 @@ git status
 #1469569922
 git commit -m "Adding multiple c2 tasks."
 #1469569927
-git checkout master 
+git checkout master
 #1469569932
 git pull
 #1469570588
@@ -33574,7 +33574,7 @@ git status
 #1469570602
 git diff src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java
 #1469570632
-git add src/main/java/edu/kestrel/scharp/planner/entities/PlanningTask.java src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java 
+git add src/main/java/edu/kestrel/scharp/planner/entities/PlanningTask.java src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java
 #1469570635
 git status
 #1469570657
@@ -33584,7 +33584,7 @@ git status
 #1469570691
 git commit -m "fixed null pointer exception in planning bid."
 #1469570701
-git push origin master 
+git push origin master
 #1469571020
 git pull
 #1469571470
@@ -33596,27 +33596,27 @@ git pull
 #1469571503
 git status
 #1469571805
-git branch 
+git branch
 #1469571819
 git pull --all --prune
 #1469571840
-git branch 
+git branch
 #1469571852
-git branch -d lwg-refueling 
+git branch -d lwg-refueling
 #1469571861
-git branch -d marcel-expand-support 
+git branch -d marcel-expand-support
 #1469571876
-git checkout marcel-fix-secondary-tasks 
+git checkout marcel-fix-secondary-tasks
 #1469571893
 git checkout -- src/main/resources/data/Pacifica/output/schedule.json
 #1469571896
 git pull
 #1469571908
-git checkout marcel-fix-secondary-tasks 
+git checkout marcel-fix-secondary-tasks
 #1469571913
 git status
 #1469576204
-git status 
+git status
 #1469576230
 git add src/main/java/edu/kestrel/scharp/planner/entities/TankerTask.java src/main/java/edu/kestrel/scharp/planner/entities/TargetTask.java src/main/java/edu/kestrel/scharp/planner/manager/ControlAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java
 #1469576233
@@ -33628,7 +33628,7 @@ git status
 #1469576274
 git commit -m "Trying to get controller to schedule 2 control missions."
 #1469576281
-git checkout master 
+git checkout master
 #1469576285
 git pull
 #1469576615
@@ -33638,13 +33638,13 @@ git diff src/main/java/edu/kestrel/scharp/planner/manager/ControlAirUnitSchedule
 #1469633719
 git pull --all --prune
 #1469633736
-git checkout sf-config2 
+git checkout sf-config2
 #1469633746
 git pull
 #1469633762
 mvn generate-sources verify compile install
 #1469633807
-./run-plan-cell.sh 
+./run-plan-cell.sh
 #1469633811
 ./run-plan-cell.sh -1
 #1469634677
@@ -33702,7 +33702,7 @@ mvn install
 #1469654699
 git pull --all --prune
 #1469654708
-git pull origin master 
+git pull origin master
 #1469655488
 mvn install
 #1469655514
@@ -33734,7 +33734,7 @@ git commit -m "Fixed the config and scenario loading file to allow it to read fr
 #1469657048
 git status
 #1469657058
-git push origin sf-config2 
+git push origin sf-config2
 #1469662995
 git status
 #1469663012
@@ -33744,9 +33744,9 @@ git pull
 #1469663028
 git pull --all --prune
 #1469663041
-git branch 
+git branch
 #1469663055
-git branch -d sf-config2 
+git branch -d sf-config2
 #1469663058
 git status
 #1469663104
@@ -33754,17 +33754,17 @@ git pull --all --prune
 #1469663114
 git status
 #1469663181
-git checkout lwg-control-scheduler 
+git checkout lwg-control-scheduler
 #1469663187
 git pull
 #1469663352
-git checkout master 
+git checkout master
 #1469663358
 git pull --all --prune
 #1469663368
-git branch -d lwg-control-scheduler 
+git branch -d lwg-control-scheduler
 #1469663372
-git branch 
+git branch
 #1469663389
 cd Docker/DockerScharpCacheMaven/
 #1469663390
@@ -33772,15 +33772,15 @@ ls
 #1469663394
 cd DockerScharpBaseImage/
 #1469663406
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1469665277
 git status
 #1469665281
-git checkout master 
+git checkout master
 #1469666369
 git stash
 #1469666379
-git checkout master 
+git checkout master
 #1469666385
 git pull
 #1469666408
@@ -33802,9 +33802,9 @@ git status
 #1469673014
 git commit -m "Added support and fighter mission connection, fixed summary report."
 #1469673022
-git push -u origin marcel-link-activities 
+git push -u origin marcel-link-activities
 #1469673145
-git pull origin master 
+git pull origin master
 #1469682062
 git checkout master
 #1469682065
@@ -33812,13 +33812,13 @@ git pull
 #1469682075
 git pull --all --prune
 #1469682087
-git branch -d marcel-link-activities 
+git branch -d marcel-link-activities
 #1469682090
-git branch 
+git branch
 #1469682109
-git branch -d lwg-control-scheduler 
+git branch -d lwg-control-scheduler
 #1469682121
-git checkout marcel-fix-secondary-tasks 
+git checkout marcel-fix-secondary-tasks
 #1469682141
 git rm src/main/resources/data/Pacifica/output/schedule.json
 #1469682155
@@ -33828,7 +33828,7 @@ git rm src/main/resources/data/Pacifica/output/schedule.json
 #1469682162
 git pull
 #1469682169
-git push origin master 
+git push origin master
 #1469682184
 git checkout sf-analysis3
 #1469682197
@@ -33840,27 +33840,27 @@ git status
 #1469682233
 git commit -m "deleted schedule.json."
 #1469682237
-git push origin master 
+git push origin master
 #1469682242
 git status
 #1469682250
-git checkout sf-analysis3 
+git checkout sf-analysis3
 #1469682253
 git pull
 #1469682267
 mvn verify compile install
 #1469682314
-./run-plan-cell.sh 
+./run-plan-cell.sh
 #1469682322
 ./run-plan-cell.sh -1
 #1469682444
-git pull origin master 
+git pull origin master
 #1469682458
 git status
 #1469682468
 git checkout -- src/main/resources/data/Pacifica/output/schedule.json
 #1469682478
-git pull origin master 
+git pull origin master
 #1469682500
 git add src/main/resources/data/Pacifica/output/schedule.json
 #1469682503
@@ -33870,7 +33870,7 @@ git commit -m "fixed removal of schedule.json."
 #1469682532
 git status
 #1469682544
-git push origin sf-analysis3 
+git push origin sf-analysis3
 #1469682897
 git status
 #1469682948
@@ -33886,25 +33886,25 @@ git diff src/test/java/edu/kestrel/scharp/activemq/codedrop/TestMainServersEmbed
 #1469683064
 git diff src/main/java/edu/kestrel/scharp/usmtf/ato/ROUTE.java
 #1469683110
-git checkout master 
+git checkout master
 #1469683128
 git reset --hard
 #1469683133
 git status
 #1469683138
-git checkout master 
+git checkout master
 #1469683145
-git branch -d sf-analysis3 
+git branch -d sf-analysis3
 #1469683172
 git pull
 #1469683199
-git branch 
+git branch
 #1469683201
 ls
 #1469683704
 mvn compile install
 #1469683742
-./run-plan-cell.sh 
+./run-plan-cell.sh
 #1469683750
 ./run-plan-cell.sh -1
 #1469683757
@@ -33940,13 +33940,13 @@ git add src/main/java/edu/kestrel/scharp/activemq/codedrop2/MainServers.java
 #1469684369
 git commit -m "Make the central plan server and Davis Monthen DC2C node to run on the same node and vm."
 #1469684378
-git push origin marcel-fix-main-servers 
+git push origin marcel-fix-main-servers
 #1469720625
 git status
 #1469684108
 ./run-plan-cell.sh 0
 #1469720681
-git checkout master 
+git checkout master
 #1469720686
 ls
 #1469720687
@@ -33974,11 +33974,11 @@ cd Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/
 #1469723984
 ls
 #1469723990
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1469724070
-more docker-run.sh 
+more docker-run.sh
 #1469724153
-./docker-run.sh 
+./docker-run.sh
 #1469724419
 git status
 #1469724494
@@ -33996,11 +33996,11 @@ git status
 #1469724601
 git commit -m "Changed the te2 config file to check for empty string when processing properties."
 #1469724615
-git push -u origin marcel-fix-docker 
+git push -u origin marcel-fix-docker
 #1469724777
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1469725049
-./docker-run.sh 
+./docker-run.sh
 #1469725091
 git status
 #1469725137
@@ -34012,9 +34012,9 @@ git add Dockerfile
 #1469725208
 git commit -m "Fixed Dockerfile."
 #1469725223
-git push -u origin marcel-fix-docker 
+git push -u origin marcel-fix-docker
 #1469725253
-git pull origin master 
+git pull origin master
 #1469725270
 git pull master --rebase
 #1469725283
@@ -34026,11 +34026,11 @@ git pull
 #1469725328
 git sttaus
 #1469725331
-git status 
+git status
 #1469725346
 git commit -m "Rebased."
 #1469725353
-git push -u origin marcel-fix-docker 
+git push -u origin marcel-fix-docker
 #1469725453
 cd ..
 #1469725453
@@ -34044,7 +34044,7 @@ cd DockerScharpPlanner/
 #1469725470
 ls
 #1469725482
-./docker-run.sh 
+./docker-run.sh
 #1469725499
 ./docker-run-plan-cell.sh -1
 #1469725506
@@ -34058,7 +34058,7 @@ ls
 #1469727491
 ls
 #1469727497
-./docker-run.sh 
+./docker-run.sh
 #1469727749
 ./docker-run.sh 1
 #1469727762
@@ -34088,7 +34088,7 @@ cd ..
 #1469730423
 cd DockerScharpCacheMaven/DockerScharpUpdateImage/
 #1469730428
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1469730641
 ./docker-run-plan-cell.sh 1
 #1469730665
@@ -34096,9 +34096,9 @@ cd Docker/DockerScharpPlanner/
 #1469730665
 ls
 #1469730673
-./docker-run.sh 
+./docker-run.sh
 #1469730692
-./docker-run.sh 
+./docker-run.sh
 #1469732185
 git status
 #1469732199
@@ -34114,21 +34114,21 @@ git status
 #1469732543
 git commit -m "Check for properties with empty strings."
 #1469732554
-git push -u origin marcel-fix-docker 
+git push -u origin marcel-fix-docker
 #1469732608
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1469732672
 git status
 #1469732681
-git add ../../../src/main/java/edu/kestrel/scharp/activemq/AmqJsonServer.java 
+git add ../../../src/main/java/edu/kestrel/scharp/activemq/AmqJsonServer.java
 #1469732690
 git commit -m "typo"
 #1469732697
-git push -u origin marcel-fix-docker 
+git push -u origin marcel-fix-docker
 #1469732707
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1469732788
-./docker-run.sh 
+./docker-run.sh
 #1469732806
 ./docker-run-plan-cell.sh 0
 #1469732815
@@ -34140,7 +34140,7 @@ git push -u origin marcel-fix-docker
 #1469732863
 ./docker-run-plan-cell.sh 4
 #1469732881
-git pull origin master 
+git pull origin master
 #1469732963
 git status
 #1469732980
@@ -34150,7 +34150,7 @@ git status
 #1469732991
 git commit -m "Fixed scripts."
 #1469733000
-git push -u origin marcel-fix-docker 
+git push -u origin marcel-fix-docker
 #1469733224
 git status
 #1469733232
@@ -34158,19 +34158,19 @@ git add ../DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile
 #1469733252
 git commit -m "Remove the checkout of the branch."
 #1469733265
-git push -u origin marcel-fix-docker 
+git push -u origin marcel-fix-docker
 #1469737719
 git pull
 #1469737733
-git checkout master 
+git checkout master
 #1469737737
 git pull
 #1469737747
 ls
 #1469737754
-more Dockerfile 
+more Dockerfile
 #1469737770
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1469738482
 pwd
 #1469738505
@@ -34186,7 +34186,7 @@ pwd
 #1469738590
 ./docker-
 #1469738592
-./docker-run.sh 
+./docker-run.sh
 #1469740383
 git status
 #1469740390
@@ -34194,7 +34194,7 @@ git add ../../../src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenari
 #1469740407
 git commit -m "Fixed the turn duration for unit contract."
 #1469740412
-git push origin master 
+git push origin master
 #1469740423
 git pull
 #1469741572
@@ -34204,7 +34204,7 @@ cd DockerScharpPlanner/
 #1469741593
 ls
 #1469741602
-./docker-run-plan-cell.sh 
+./docker-run-plan-cell.sh
 #1469741607
 ./docker-run-plan-cell.sh 0
 #1469741712
@@ -34218,7 +34218,7 @@ ls
 #1469742005
 ./docker-run
 #1469742010
-./docker-run.sh 
+./docker-run.sh
 #1469742014
 ./docker-run.sh -1
 #1469745689
@@ -34226,27 +34226,27 @@ git status
 #1469745704
 git branch
 #1469745763
-git branch -d marcel-fix-main-servers 
+git branch -d marcel-fix-main-servers
 #1469745775
-git checkout marcel-fix-docker 
+git checkout marcel-fix-docker
 #1469745780
-git pull origin master 
+git pull origin master
 #1469745852
 cd ../..
 #1469745869
 cd Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/
 #1469745874
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1469745898
-git push -u origin marcel-fix-docker 
+git push -u origin marcel-fix-docker
 #1469745926
-git pull origin master 
+git pull origin master
 #1469745932
 cd
 #1469745949
 cd src/rspace-eclipse/scharp/Docker/DockerScharpPlanner/
 #1469745957
-./docker-run.sh 
+./docker-run.sh
 #1469745961
 ./docker-run.sh -1
 #1469746061
@@ -34256,9 +34256,9 @@ git add ../../../src/main/java/edu/kestrel/scharp/activemq/codedrop2/MainServers
 #1469746086
 git commit -m "debugging docker."
 #1469746097
-git push -u origin marcel-fix-docker 
+git push -u origin marcel-fix-docker
 #1469746111
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1469746193
 ./docker-run.sh -1
 #1469746399
@@ -34280,7 +34280,7 @@ ls
 #1469746699
 ls
 #1469746845
-./docker-run.sh 
+./docker-run.sh
 #1469746973
 git status
 #1469747798
@@ -34304,7 +34304,7 @@ cd Docker/DockerScharpPlanner/
 #1469747995
 ./docker-run.sh 1
 #1469747837
-./docker-run.sh 
+./docker-run.sh
 #1469748310
 exit
 #1469748312
@@ -34336,7 +34336,7 @@ mvn install
 #1469749393
 mvn install
 #1469750493
-git pull origin master 
+git pull origin master
 #1469750504
 git status
 #1469750519
@@ -34344,7 +34344,7 @@ pwd
 #1469750522
 git status
 #1469750550
-git add README.md src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.java run-plan-cell.sh 
+git add README.md src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.java run-plan-cell.sh
 #1469750552
 git status
 #1469750579
@@ -34352,17 +34352,17 @@ git commit -m "Fixes to docker scripts."
 #1469750583
 git status
 #1469750596
-git push -u origin marcel-fix-docker 
+git push -u origin marcel-fix-docker
 #1469750607
-git pull origin master 
+git pull origin master
 #1469750626
 git checkout -- src/test/java/edu/kestrel/scharp/activemq/codedrop/TestClient.java
 #1469750627
-git pull origin master 
+git pull origin master
 #1469750649
 git status
 #1469750660
-git push origin marcel-fix-docker 
+git push origin marcel-fix-docker
 #1469750672
 mvn validate
 #1469750679
@@ -34380,7 +34380,7 @@ git pull
 #1469765444
 git pull --all --prune
 #1469766650
-git pull origin master 
+git pull origin master
 #1469766667
 git status
 #1469766685
@@ -34390,7 +34390,7 @@ git status
 #1469766699
 git status
 #1469766705
-git pull origin master 
+git pull origin master
 #1469766743
 mvn verify
 #1469766774
@@ -34414,7 +34414,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.jav
 #1469768642
 git status
 #1469768672
-git add Docker/DockerScharpPlanner/docker-run.sh README.md run-plan-cell.sh 
+git add Docker/DockerScharpPlanner/docker-run.sh README.md run-plan-cell.sh
 #1469768675
 git status
 #1469768693
@@ -34440,7 +34440,7 @@ exit
 #1469769051
 exit
 #1469768988
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1469769070
 exit
 #1469769074
@@ -34470,7 +34470,7 @@ git status
 #1469769401
 git commit -m "Reverted back to separate DC2C Davis Monthan from Central Plan Manager. It did not work in distributed mode."
 #1469769412
-git push -u origin marcel-fix-docker 
+git push -u origin marcel-fix-docker
 #1469769235
 ./docker-run.sh 0
 #1469769428
@@ -34482,7 +34482,7 @@ mvn install
 #1469769283
 ./docker-run.sh 3
 #1469769190
-./docker-run.sh 
+./docker-run.sh
 #1469769464
 cd ../
 #1469769442
@@ -34490,13 +34490,13 @@ mvn install
 #1469769481
 cd DockerScharpCacheMaven/DockerScharpUpdateImage/
 #1469769486
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1469769629
 ./docker-run.sh 0
 #1469769649
 ./docker-run.sh 4
 #1469770163
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1469770246
 ./docker-run.sh 0
 #1469770254
@@ -34508,7 +34508,7 @@ cd DockerScharpCacheMaven/DockerScharpUpdateImage/
 #1469770396
 git pull
 #1469770136
-./docker-run.sh 
+./docker-run.sh
 #1469770492
 ./docker-run.sh 4
 #1469770468
@@ -34524,7 +34524,7 @@ git diff ../DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile
 #1469771154
 git diff ../../src/test/java/edu/kestrel/scharp/activemq/codedrop/TestClient.java
 #1469771226
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1469771395
 ./docker-run.sh 4
 #1469771371
@@ -34540,7 +34540,7 @@ git diff ../../src/test/java/edu/kestrel/scharp/activemq/codedrop/TestClient.jav
 #1469771421
 docker ps -q
 #1469771428
-docker ps -a 
+docker ps -a
 #1469771443
 docker-machine start
 #1469771452
@@ -34586,7 +34586,7 @@ git add ../../src/test/java/edu/kestrel/scharp/activemq/codedrop/TestClient.java
 #1469772258
 git commit -m "Run computePlan."
 #1469772267
-git push origin marcel-fix-docker 
+git push origin marcel-fix-docker
 #1469772278
 git checkout -- ../DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile
 #1469772282
@@ -34596,7 +34596,7 @@ git add ../DockerScharpPlanner/Readme.md
 #1469772627
 git commit -m "Fixed Readme."
 #1469772636
-git push origin marcel-fix-docker 
+git push origin marcel-fix-docker
 #1469773292
 cd ../..
 #1469773295
@@ -34606,13 +34606,13 @@ git pull
 #1469773312
 git pull --all --prune
 #1469773319
-git pull origin master 
+git pull origin master
 #1469773324
 mvn clean
 #1469773340
 mvn validate compile install
 #1469773393
-./run-plan-cell.sh 
+./run-plan-cell.sh
 #1469773401
 cd ../../..
 #1469773409
@@ -34650,13 +34650,13 @@ git pull -all --prune
 #1469773574
 git pull --all --prune
 #1469773580
-git checkout master 
+git checkout master
 #1469773583
 git pull
 #1469774529
 git pull --all --prune
 #1469774862
-./run-plan-cell.sh 
+./run-plan-cell.sh
 #1469774866
 ./run-plan-cell.sh 0
 #1469841706
@@ -34670,7 +34670,7 @@ mvn validate compile install
 #1469841919
 cd ..
 #1469841921
-cd 
+cd
 #1469841925
 cd -
 #1469841957
@@ -34678,7 +34678,7 @@ cd DockerScharpCacheMaven/DockerScharpUpdateImage/
 #1469841958
 ls
 #1469842152
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1470492881
 git pull
 #1470492929
@@ -34704,9 +34704,9 @@ cd DockerJava/
 #1470673784
 ls
 #1470673792
-./docker-build.sh 
+./docker-build.sh
 #1470673801
-./docker-build-mac.sh 
+./docker-build-mac.sh
 #1470673977
 ls
 #1470673994
@@ -34716,7 +34716,7 @@ cd DockerScharpCacheMaven/DockerScharpBaseImage/
 #1470674009
 ls
 #1470674014
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1470675982
 cd ../
 #1470675989
@@ -34728,7 +34728,7 @@ cd DockerScharpUpdateImage/
 #1470676002
 ls
 #1470676008
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1470676263
 docker ps
 #1470676272
@@ -34760,7 +34760,7 @@ git checkout -b marcel-fix-amq-tests
 #1470694339
 git diff Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile
 #1470694351
-git diff Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile 
+git diff Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile
 #1470694378
 git status
 #1470694388
@@ -34788,39 +34788,39 @@ git commit -m "Trying to fix problem related to running several amq tests in seq
 #1470694548
 git status
 #1470694553
-git checkout master 
+git checkout master
 #1470694585
-git checkout sf-strike-options 
+git checkout sf-strike-options
 #1470695084
 cd /tmp
 #1470695085
 ls
 #1470695090
-more selected-strike-option.jsn 
+more selected-strike-option.jsn
 #1470695207
 ls
 #1470695211
-more plan.jsn 
+more plan.jsn
 #1470695576
 ls
 #1470695581
-more selected-strike-option.jsn 
+more selected-strike-option.jsn
 #1470769606
 cd
 #1470769617
-cd 
+cd
 #1470769623
 cd src/rspace-eclipse/scharp/
 #1470769627
 git status
 #1470769657
-git checkout master 
+git checkout master
 #1470769694
-git checkout sf-strike-options 
+git checkout sf-strike-options
 #1470769738
 git pull
 #1470769763
-git checkout master 
+git checkout master
 #1470769781
 git checkout -b marcel-refactor-schedule-task
 #1470769794
@@ -34840,31 +34840,31 @@ git commit -m "Refactored scheduleTaskMultithread."
 #1470775652
 git pull
 #1470775668
-git push -u origin marcel-refactor-schedule-task 
+git push -u origin marcel-refactor-schedule-task
 #1470775676
-git checkout master 
+git checkout master
 #1470775679
 git pull
 #1470775775
-git checkout marcel-refactor-schedule-task 
+git checkout marcel-refactor-schedule-task
 #1470775780
-git pull origin master 
+git pull origin master
 #1470776335
-git checkout master 
+git checkout master
 #1470776649
 git status
 #1470776955
-git checkout drs4 
+git checkout drs4
 #1470776957
 git pull
 #1470777062
 git status
 #1470777073
-git pull origin master 
+git pull origin master
 #1470777094
 git status
 #1470777189
-git push origin drs4 
+git push origin drs4
 #1470777195
 git pull
 #1470777231
@@ -34872,15 +34872,15 @@ git status
 #1470777329
 git pull --all --prune
 #1470777429
-git checkout master 
+git checkout master
 #1470777431
 git pull
 #1470777439
-git checkout marcel-refactor-schedule-task 
+git checkout marcel-refactor-schedule-task
 #1470777443
-git pull origin master 
+git pull origin master
 #1470784230
-git add src/main/java/edu/kestrel/scharp/airdomain/entities/Location.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java src/main/java/edu/kestrel/scharp/planner/entities/FighterGoState.java src/main/java/edu/kestrel/scharp/planner/entities/Route.java src/main/java/edu/kestrel/scharp/planner/entities/Tanker.java src/main/java/edu/kestrel/scharp/planner/entities/TargetBid.java src/main/java/edu/kestrel/scharp/planner/entities/TargetTask.java src/main/java/edu/kestrel/scharp/planner/manager/ControlAirUnitScheduler.java 
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/Location.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java src/main/java/edu/kestrel/scharp/planner/entities/FighterGoState.java src/main/java/edu/kestrel/scharp/planner/entities/Route.java src/main/java/edu/kestrel/scharp/planner/entities/Tanker.java src/main/java/edu/kestrel/scharp/planner/entities/TargetBid.java src/main/java/edu/kestrel/scharp/planner/entities/TargetTask.java src/main/java/edu/kestrel/scharp/planner/manager/ControlAirUnitScheduler.java
 #1470784233
 git status
 #1470784248
@@ -34892,13 +34892,13 @@ git commit -m "Replaced System.out.println by log.info."
 #1470784278
 git status
 #1470784286
-git checkout master 
+git checkout master
 #1470784290
 git pull
 #1470784542
 git status
 #1470851873
-cd 
+cd
 #1470851875
 cd src/
 #1470851875
@@ -34942,15 +34942,15 @@ git status
 #1470853063
 git commit -m "Trying to figure out why results are not stable across runs."
 #1470853073
-git push -u origin marcel-refactor-schedule-task 
+git push -u origin marcel-refactor-schedule-task
 #1470861288
-cd 
+cd
 #1470861293
 cd src/rspace
 #1470861293
 ls
 #1470861299
-cd ATOUSMTF2004/ 
+cd ATOUSMTF2004/
 #1470861300
 ls
 #1470861314
@@ -35010,9 +35010,9 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.
 #1470867173
 git commit -m "Added sorting for strike options."
 #1470867182
-git push -u origin marcel-refactor-schedule-task 
+git push -u origin marcel-refactor-schedule-task
 #1470867190
-git checkout master 
+git checkout master
 #1470867192
 git pull
 #1470936699
@@ -35040,19 +35040,19 @@ git status
 #1471025342
 git pull
 #1471025365
-git checkout sf-strike-options 
+git checkout sf-strike-options
 #1471025368
 git pull
 #1471025372
 git status
 #1471025384
-git pull origin marcel-refactor-schedule-task 
+git pull origin marcel-refactor-schedule-task
 #1471026556
 git status
 #1471026563
-git checkout master 
+git checkout master
 #1471026583
-git checkout marcel-refactor-schedule-task 
+git checkout marcel-refactor-schedule-task
 #1471026584
 ls
 #1471026596
@@ -35064,7 +35064,7 @@ git commit -m "Changed how the successful tasks are reported -- only plan manage
 #1471037749
 git status
 #1471037771
-git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/StatsSummaryManager.java src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java 
+git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/StatsSummaryManager.java src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java
 #1471037777
 git statusd
 #1471037779
@@ -35076,7 +35076,7 @@ git status
 #1471037791
 git commit -m "Changed how the successful tasks are reported -- only plan manager sends the task to stats manager."
 #1471037804
-git push origin marcel-refactor-schedule-task 
+git push origin marcel-refactor-schedule-task
 #1471038199
 open /tmp
 #1471041641
@@ -35086,7 +35086,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java src/ma
 #1471041692
 git commit -m "Fixed the map of scheduled threats to use the threat name instead of the task name."
 #1471041701
-git push -u origin marcel-refactor-schedule-task 
+git push -u origin marcel-refactor-schedule-task
 #1471199246
 xattr -d -r -s com.apple.quarantine '/Applications/1Password 6.app'
 #1471294919
@@ -35114,13 +35114,13 @@ git status
 #1471386740
 git commit -m "Added recon targets to fighter mission performing recon."
 #1471386752
-git push origin marcel-refactor-schedule-task 
+git push origin marcel-refactor-schedule-task
 #1471386760
-git pull origin master 
+git pull origin master
 #1471386778
 git status
 #1471386788
-git push origin marcel-refactor-schedule-task 
+git push origin marcel-refactor-schedule-task
 #1471386796
 git status
 #1471453346
@@ -35130,7 +35130,7 @@ pip install -U enum34 --user
 #1471453471
 pip install -U pip --user
 #1471454831
-more ~/.pip/pip.conf 
+more ~/.pip/pip.conf
 #1471455635
 which python
 #1471455646
@@ -35154,9 +35154,9 @@ git add Instructions_For_Marcel.txt
 #1471458009
 git commit -m "Added instructions on how to setup openstack."
 #1471458025
-git push -u origin master 
+git push -u origin master
 #1471458037
-./update-git.sh 
+./update-git.sh
 #1471460042
 cd ..
 #1471460044
@@ -35206,7 +35206,7 @@ pip uninstall pxsvchost
 #1471460490
 pip uninstall pxsvchost --user
 #1471460497
-sudo -H pip uninstall pxsvchost 
+sudo -H pip uninstall pxsvchost
 #1471460510
 sudo -H pip uninstall pxrancher
 #1471460516
@@ -35256,7 +35256,7 @@ pxbuild-gocd gather-meta pxbox-testbed-dev
 #1471461799
 pxbuild-gocd --help
 #1471461828
-pxbuild-gocd gather-meta 
+pxbuild-gocd gather-meta
 #1471472101
 his | grep ssh
 #1471475484
@@ -35290,7 +35290,7 @@ ifconfig
 #1471477774
 netstat -tunl
 #1471482636
-cd 
+cd
 #1471482639
 cd src/rspace
 #1471482640
@@ -35336,7 +35336,7 @@ scp -P422 RSPACE_TE2_ACO_USMTF.aco DoD_Admin@50.225.83.4:/home/DoD_Admin/becker
 #1471483052
 his
 #1471483078
-cd 
+cd
 #1471483090
 cd src/rspace-eclipse/scharp/output/
 #1471483092
@@ -35382,7 +35382,7 @@ cp TE2_release_v1_3.zip TE2_release_v1_3.ptt
 #1471494156
 scp -P422 TE2_release_v1_3.ptt DoD_Admin@50.225.83.4:/home/DoD_Admin/becker
 #1471494447
-diff TE2_release_v1_2/Airbases.xml TE2_release_v1_5/Airbases.xml 
+diff TE2_release_v1_2/Airbases.xml TE2_release_v1_5/Airbases.xml
 #1471494674
 ls
 #1471494689
@@ -35390,11 +35390,11 @@ cd TE2_release_v1_2
 #1471494690
 ls
 #1471494694
-more Mappings.xml 
+more Mappings.xml
 #1471494695
 ls
 #1471494700
-more Targets.xml 
+more Targets.xml
 #1471494752
 cd ..
 #1471494753
@@ -35404,7 +35404,7 @@ cd TE2_release_v1_3
 #1471494767
 ls
 #1471494770
-more Mappings.xml 
+more Mappings.xml
 #1471495265
 cd ../
 #1471495286
@@ -35450,23 +35450,23 @@ scp -r -P422 RSPACE_RR1_Scenario.ptt DoD_Admin@50.225.83.4:/home/DoD_Admin/becke
 #1471540608
 git status
 #1471540631
-git checkout master 
+git checkout master
 #1471540635
 git pull
 #1471540652
 git pull --all --prune
 #1471541168
-git branch 
+git branch
 #1471541191
-git branch -d drs4 
+git branch -d drs4
 #1471541208
-git branch -d marcel-refactor-schedule-task 
+git branch -d marcel-refactor-schedule-task
 #1471541544
 cd ../..
 #1471541557
-git checkout -t origin/compose 
+git checkout -t origin/compose
 #1471541562
-git pull origin master 
+git pull origin master
 #1471541580
 git status
 #1471541654
@@ -35488,7 +35488,7 @@ git pull
 #1471567746
 git status
 #1471567758
-git checkout marcel-fix-clear-schedule 
+git checkout marcel-fix-clear-schedule
 #1471567761
 git pull
 #1471531928
@@ -35504,7 +35504,7 @@ git statis
 #1471636005
 git status
 #1471636072
-git add src/main/java/edu/kestrel/scharp/planner/entities/TankerActivity.java src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java 
+git add src/main/java/edu/kestrel/scharp/planner/entities/TankerActivity.java src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java
 #1471636075
 git status
 #1471636116
@@ -35524,11 +35524,11 @@ git status
 #1471636514
 git commit -m "Fixes the clear schedule functionality."
 #1471636522
-git push origin marcel-fix-clear-schedule 
+git push origin marcel-fix-clear-schedule
 #1471714035
 git status
 #1471714044
-git checkout master 
+git checkout master
 #1471714051
 git status
 #1471714059
@@ -35542,7 +35542,7 @@ git diff src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.j
 #1471714183
 git status
 #1471714213
-git add src/main/java/edu/kestrel/scharp/planner/entities/Activity.java src/main/java/edu/kestrel/scharp/planner/entities/AircraftResource.java src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler.java 
+git add src/main/java/edu/kestrel/scharp/planner/entities/Activity.java src/main/java/edu/kestrel/scharp/planner/entities/AircraftResource.java src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler.java
 #1471714220
 git diff src/main/resources/logback.xml
 #1471714234
@@ -35550,15 +35550,15 @@ git checkout -- src/main/resources/logback.xml
 #1471714236
 git status
 #1471714268
-git commit -m "Fixed the bounds and route creation for sead missions." 
+git commit -m "Fixed the bounds and route creation for sead missions."
 #1471714274
 git status
 #1471714726
-git checkout master 
+git checkout master
 #1471714736
 git pull
 #1471714932
-git checkout marcel-fix-clear-schedule 
+git checkout marcel-fix-clear-schedule
 #1471714934
 ls
 #1471720741
@@ -35568,7 +35568,7 @@ git status
 #1471803897
 git pull
 #1471803907
-git push -u origin marcel-fix-clear-schedule 
+git push -u origin marcel-fix-clear-schedule
 #1471805479
 git status
 #1471805495
@@ -35576,13 +35576,13 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/ControlAirUnitScheduler
 #1471805497
 git status
 #1471805505
-git push -u origin marcel-fix-clear-schedule 
+git push -u origin marcel-fix-clear-schedule
 #1471805513
 git status
 #1471805734
 git add src/test/java/edu/kestrel/scharp/activemq/codedrop/TestMainServersEmbeddedBroker.java
 #1471805742
-git push -u origin marcel-fix-clear-schedule 
+git push -u origin marcel-fix-clear-schedule
 #1471805774
 git diff src/main/resources/logback.xml
 #1471809887
@@ -35590,7 +35590,7 @@ git status
 #1471884639
 cd src/
 #1471884641
-cd 
+cd
 #1471884649
 cd src/scharp-compile-test-workspace/
 #1471884650
@@ -35606,7 +35606,7 @@ git status
 #1471884711
 git stash
 #1471884715
-git pull 
+git pull
 #1471884722
 git stash pop
 #1471884742
@@ -35656,23 +35656,23 @@ git diff src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager
 #1471930130
 git status
 #1471930151
-git add src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/search/SearchStrategy.java 
+git add src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/search/SearchStrategy.java
 #1471930153
 git status
 #1471930193
 git commit -m "Fixed problem with sub-task failing and reservation not being cancelled."
 #1471930204
-git push -u origin marcel-fix-clear-schedule 
+git push -u origin marcel-fix-clear-schedule
 #1471930215
 git pull
 #1471975555
-cd 
+cd
 #1471975565
 cd src/plan-construction/marcel-utils/
 #1471975567
 ls
 #1471975600
-./update-git.sh 
+./update-git.sh
 #1471975832
 cd ../px-web-scripts/
 #1471975835
@@ -35684,9 +35684,9 @@ git pull
 #1471975854
 git pull --all --prune
 #1471975859
-git branch 
+git branch
 #1471975870
-git branch -d devel 
+git branch -d devel
 #1471975876
 ls
 #1471975880
@@ -35722,15 +35722,15 @@ workon planx-eclipse
 #1471976005
 pxbuild-gocd gather-meta pxbox-testbed-dev
 #1471977225
-cd 
+cd
 #1471977228
 cd .gocd/
 #1471977229
 ls
 #1471977235
-more gocd-cli.cfg 
+more gocd-cli.cfg
 #1471977331
-git pull origin master 
+git pull origin master
 #1471977342
 git status
 #1471977353
@@ -35742,9 +35742,9 @@ git status
 #1471977448
 git commit -m "Added a comment on how to setup the scheduler to fail the fighter mission bid in case there is no support mission available."
 #1471977457
-git push -u origin marcel-fix-clear-schedule 
+git push -u origin marcel-fix-clear-schedule
 #1471977467
-git pull origin master 
+git pull origin master
 #1471978459
 git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
 #1471978473
@@ -35752,7 +35752,7 @@ git commit -m "Fixed merge conflicts."
 #1471978480
 git pull --all --prune
 #1471978489
-git pull origin master 
+git pull origin master
 #1471978677
 mvn validate generate-sources
 #1471978792
@@ -35792,7 +35792,7 @@ git status
 #1471979032
 git commit -m "Organized imports for files."
 #1471979106
-git push -u origin marcel-fix-clear-schedule 
+git push -u origin marcel-fix-clear-schedule
 #1471979116
 git pull
 #1471979190
@@ -35804,19 +35804,19 @@ git status
 #1471985400
 git commit -m "Fixes sorting of top level tasks after cler plan."
 #1471985410
-git push -u origin marcel-fix-clear-schedule 
+git push -u origin marcel-fix-clear-schedule
 #1471985456
 git pull
 #1471985483
 git status
 #1471985495
-git push -u origin marcel-fix-clear-schedule 
+git push -u origin marcel-fix-clear-schedule
 #1471985868
-git pull origin master 
+git pull origin master
 #1471985890
 git status
 #1471985901
-git push -u origin marcel-fix-clear-schedule 
+git push -u origin marcel-fix-clear-schedule
 #1471986678
 ps -aux
 #1471986680
@@ -35852,7 +35852,7 @@ scp -r -P422 SCHARP.ato DoD_Admin@50.225.83.4:/home/DoD_Admin/becker
 #1471989951
 git status
 #1471989956
-git checkout master 
+git checkout master
 #1471989959
 git pull
 #1471989971
@@ -35870,11 +35870,11 @@ git add ../src/main/java/edu/kestrel/scharp/planner/entities/TargetTask.java ../
 #1471994056
 git commit -m "Reset the target task counter, fix the update of the strike option when scheduling xcas."
 #1471994064
-git push -u origin marcel-fix-change-in-stkopt-count 
+git push -u origin marcel-fix-change-in-stkopt-count
 #1472057258
 git status
 #1472057265
-git checkout master 
+git checkout master
 #1472057269
 git pull
 #1472057287
@@ -35894,7 +35894,7 @@ cd lixo/
 #1472065760
 ls
 #1472065768
-git clone     git@github.com:KestrelInstitute/scharp.git 
+git clone     git@github.com:KestrelInstitute/scharp.git
 #1472065775
 cd scharp/
 #1472065790
@@ -35908,7 +35908,7 @@ git add src/main/java/edu/kestrel/scharp/planner/analysis/display/PlanAnalysisGU
 #1472074605
 git commit -m "Fixed null pointe exception in analysis ui."
 #1472074613
-git push origin master 
+git push origin master
 #1472074619
 git pull
 #1472077138
@@ -35916,11 +35916,11 @@ mvn --version
 #1472077315
 git pull --all --prune
 #1472077322
-git branch 
+git branch
 #1472077346
-git branch -d marcel-fix-clear-schedule 
+git branch -d marcel-fix-clear-schedule
 #1472077366
-git branch -d marcel-fix-change-in-stkopt-count 
+git branch -d marcel-fix-change-in-stkopt-count
 #1472077425
 clear
 #1472077428
@@ -35942,7 +35942,7 @@ ls
 #1472077503
 ls -al
 #1472077507
-cd 
+cd
 #1472077514
 cd /System/Library/Frameworks/JavaVM.framework/Versions/
 #1472077515
@@ -35952,7 +35952,7 @@ cd A/
 #1472077518
 ls
 #1472077525
-cd JavaVM 
+cd JavaVM
 #1472077526
 ls
 #1472077529
@@ -36024,7 +36024,7 @@ cd /var/folders/13/vqvjldlj7ysclsvx7ctrw3kw0000gn/T/
 #1472088210
 ls
 #1472088248
-rm SCHARP.ato 
+rm SCHARP.ato
 #1472088250
 ls
 #1472088288
@@ -36042,7 +36042,7 @@ ls
 #1472101882
 scp -r -P422 SCHARP.ato DoD_Admin@50.225.83.4:/home/DoD_Admin/becker
 #1472103364
-git pull origin master 
+git pull origin master
 #1472103372
 git status
 #1472103383
@@ -36054,23 +36054,23 @@ git status
 #1472103474
 git commit -m "Added some code to change the number of resources required in mission."
 #1472103478
-git pull origin master 
+git pull origin master
 #1472103495
 git status
 #1472103625
 scp -r -P422 SCHARP.ato DoD_Admin@50.225.83.4:/home/DoD_Admin/becker
 #1472104093
-grep hit ptt-output-1-ship-mission.xml 
+grep hit ptt-output-1-ship-mission.xml
 #1472104102
-grep -i hit ptt-output-1-ship-mission.xml 
+grep -i hit ptt-output-1-ship-mission.xml
 #1472104119
-grep -i down ptt-output-1-ship-mission.xml 
+grep -i down ptt-output-1-ship-mission.xml
 #1472104126
-grep -i down ptt-output-2-ship-mission.xml 
+grep -i down ptt-output-2-ship-mission.xml
 #1472104138
-grep -i down ptt-output-4-ship-mission.xml 
+grep -i down ptt-output-4-ship-mission.xml
 #1472104156
-grep -i release ptt-output-4-ship-mission.xml 
+grep -i release ptt-output-4-ship-mission.xml
 #1472104160
 grep -i release ptt-output-4-ship-mission.xml | lc
 #1472104167
@@ -36096,7 +36096,7 @@ git diff ../src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.jav
 #1472150076
 git status
 #1472150099
-git add ../src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java ../src/main/java/edu/kestrel/scharp/planner/analysis/display/PlanAnalysisGUI.java ../src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java 
+git add ../src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2Scenario.java ../src/main/java/edu/kestrel/scharp/planner/analysis/display/PlanAnalysisGUI.java ../src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java
 #1472150105
 git diff ../src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
 #1472150134
@@ -36114,21 +36114,21 @@ git status
 #1472150223
 git commit -m "Reformatting and removing unused variables."
 #1472150232
-git push -u origin marcel-experiment-ptt 
+git push -u origin marcel-experiment-ptt
 #1472150240
-git checkout master 
+git checkout master
 #1472150245
 git pull
 #1472150318
-git checkout marcel-experiment-ptt 
+git checkout marcel-experiment-ptt
 #1472150324
-git pull origin master 
+git pull origin master
 #1472150340
 git pull
 #1472150343
 git status
 #1472150357
-git push -u origin marcel-experiment-ptt 
+git push -u origin marcel-experiment-ptt
 #1472150996
 git status
 #1472151021
@@ -36138,7 +36138,7 @@ git status
 #1472151063
 git commit -m "Added strategic task field to target and mission AI info in json/avro representation."
 #1472151070
-git push -u origin marcel-experiment-ptt 
+git push -u origin marcel-experiment-ptt
 #1472154942
 cd ..
 #1472154949
@@ -36154,11 +36154,11 @@ cd DockerScharpBaseImage/
 #1472154967
 ls
 #1472154970
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1472155984
 ls
 #1472155990
-more docker-build-no-cache.sh 
+more docker-build-no-cache.sh
 #1472156022
 docker run -it scharp/plannerbase bash
 #1472156033
@@ -36196,7 +36196,7 @@ git status
 #1472158495
 git commit -m "Fixed problem with waypoints."
 #1472158505
-git push -u origin marcel-experiment-ptt 
+git push -u origin marcel-experiment-ptt
 #1472158688
 git status
 #1472158697
@@ -36204,17 +36204,17 @@ git rm src/main/avro/MissionInterface.avdl
 #1472158726
 git commit -m "removed src/main/avro/MissionInterface.avdl"
 #1472158736
-git push -u origin marcel-experiment-ptt 
+git push -u origin marcel-experiment-ptt
 #1472158752
 mvn generate-sources compile
 #1472158903
-java -version 
+java -version
 #1472158908
 mvn generate-sources compile
 #1472158939
 git status
 #1472158943
-git checkout master 
+git checkout master
 #1472158947
 git pull
 #1472158959
@@ -36222,23 +36222,23 @@ mvn generate-sources compile
 #1472158989
 mvn clean
 #1472159015
-git checkout marcel-experiment-ptt 
+git checkout marcel-experiment-ptt
 #1472159020
 git pull
 #1472165253
 git status
 #1472165263
-git checkout master 
+git checkout master
 #1472165298
 git stash
 #1472165306
 git status
 #1472165311
-git pull origin master 
+git pull origin master
 #1472165330
 git status
 #1472165336
-git checkout master 
+git checkout master
 #1472165341
 git pull
 #1472165368
@@ -36246,7 +36246,7 @@ git checkout -b marcel-investigate-vmf-fails
 #1472165374
 git stash pop
 #1472165381
-git pull origin master 
+git pull origin master
 #1472165394
 git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java
 #1472165397
@@ -36254,11 +36254,11 @@ git status
 #1472165413
 git commit -m "Added some log statements."
 #1472165430
-git push -u origin marcel-investigate-vmf-fails 
+git push -u origin marcel-investigate-vmf-fails
 #1472165437
-git branch 
+git branch
 #1472165450
-git branch -D marcel-experiment-ptt 
+git branch -D marcel-experiment-ptt
 #1472165457
 git status
 #1472156051
@@ -36272,23 +36272,23 @@ cd DockerJava/
 #1472165738
 ls
 #1472165747
-./docker-build-mac.sh 
+./docker-build-mac.sh
 #1472165776
-more docker-build-mac.sh 
+more docker-build-mac.sh
 #1472165796
-more ../DockerScharpCacheMaven/DockerScharpBaseImage/docker-build-no-cache.sh 
+more ../DockerScharpCacheMaven/DockerScharpBaseImage/docker-build-no-cache.sh
 #1472165886
-./docker-build-mac.sh 
+./docker-build-mac.sh
 #1472176728
 git status
 #1472176744
-git pull origin master 
+git pull origin master
 #1472180409
 ls
 #1472180413
 git status
 #1472180431
-git add ../../src/main/java/edu/kestrel/scharp/planner/entities/FighterAirUnitResource.java docker-build.sh docker-build-mac.sh 
+git add ../../src/main/java/edu/kestrel/scharp/planner/entities/FighterAirUnitResource.java docker-build.sh docker-build-mac.sh
 #1472180466
 git commit -m "Fixed merge conflits. Add no cache to docker java image build script."
 #1472180474
@@ -36300,7 +36300,7 @@ git commit -m "Fixed merge conflits. Add no cache to docker java image build scr
 #1472180489
 git status
 #1472180499
-git push -u origin marcel-investigate-vmf-fails 
+git push -u origin marcel-investigate-vmf-fails
 #1472180513
 docker images
 #1472180522
@@ -36308,11 +36308,11 @@ cd ..
 #1472180532
 cd DockerScharpCacheMaven/DockerScharpBaseImage/
 #1472180536
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1472189960
 grep -i "koala 30" ptt-output-4-ship-mission.xml
 #1472251228
-cd 
+cd
 #1472251238
 cd src/rspace-eclipse/scharp/output/
 #1472251240
@@ -36336,9 +36336,9 @@ git commit -m "Fixing tanker reject bid."
 #1472267163
 git status
 #1472267171
-git push -u origin marcel-investigate-vmf-fails 
+git push -u origin marcel-investigate-vmf-fails
 #1472267214
-git pull origin master 
+git pull origin master
 #1472267448
 git status
 #1472267479
@@ -36346,19 +36346,19 @@ git add ../src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitSchedu
 #1472267492
 git commit -m "Fixed merge conflicts."
 #1472267500
-git push -u origin marcel-investigate-vmf-fails 
+git push -u origin marcel-investigate-vmf-fails
 #1472267506
 git status
 #1472267510
-git pull origin master 
+git pull origin master
 #1472267519
 git pull --all --prune
 #1472267551
-git branch 
+git branch
 #1472267572
-git branch -d sf-strike-options 
+git branch -d sf-strike-options
 #1472267584
-git branch -D sf-strike-options 
+git branch -D sf-strike-options
 #1472268455
 ls
 #1472268458
@@ -36376,9 +36376,9 @@ git add ../src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitSchedul
 #1472311041
 git status
 #1472311081
-git commit -m "Small clean up"  
+git commit -m "Small clean up"
 #1472311115
-git push -u origin marcel-investigate-vmf-fails 
+git push -u origin marcel-investigate-vmf-fails
 #1472311137
 git pull origin master
 #1472311211
@@ -36388,7 +36388,7 @@ git add ../src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitSchedu
 #1472311243
 git commit -m "Fixed merge conflicts."
 #1472311266
-git push -u origin marcel-investigate-vmf-fails 
+git push -u origin marcel-investigate-vmf-fails
 #1472343636
 git status
 #1472343646
@@ -36400,7 +36400,7 @@ git status
 #1472343874
 cd ..
 #1472343882
-cd 
+cd
 #1472343884
 cd src/
 #1472343884
@@ -36418,7 +36418,7 @@ ls
 #1472343909
 git pull --all --prune
 #1472343918
-git checkout marcel-investigate-vmf-fails 
+git checkout marcel-investigate-vmf-fails
 #1472343922
 git pull
 #1472355283
@@ -36442,23 +36442,23 @@ git status
 #1472356442
 git commit -m "Fixed air refueling."
 #1472356454
-git push -u origin marcel-investigate-vmf-fails 
+git push -u origin marcel-investigate-vmf-fails
 #1472356461
-git pull origin master 
+git pull origin master
 #1472356465
 git status
 #1472357019
-git pull origin master 
+git pull origin master
 #1472358533
 git status
 #1472358547
-git add ../../../src/main/java/edu/kestrel/scharp/planner/entities/XCASBid.java ../../../src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java ../../../src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java ../../../src/main/java/edu/kestrel/scharp/usmtf/convert/PlanToATOConverter.java 
+git add ../../../src/main/java/edu/kestrel/scharp/planner/entities/XCASBid.java ../../../src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java ../../../src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java ../../../src/main/java/edu/kestrel/scharp/usmtf/convert/PlanToATOConverter.java
 #1472358550
 git status
 #1472358574
 git commit -m "Changed System.out.println to log.info."
 #1472358585
-git push -u origin marcel-investigate-vmf-fails 
+git push -u origin marcel-investigate-vmf-fails
 #1472358599
 clear
 #1472359017
@@ -36490,13 +36490,13 @@ exit
 #1472490900
 cd src/rspace-eclipse/scharp/Docker/DockerScharpCacheMaven/DockerScharpBaseImage/
 #1472490907
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1472491517
 cd ../
 #1472491524
 cd DockerScharpUpdateImage/
 #1472491531
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1472491648
 cd ../..
 #1472491658
@@ -36512,17 +36512,17 @@ cd jboss-fuse-docker/
 #1472491705
 ls
 #1472491711
-./docker-build.sh 
+./docker-build.sh
 #1472492475
 ls
 #1472492575
-./docker-run-plan-cell.sh 
+./docker-run-plan-cell.sh
 #1472492581
 ./docker-run-plan-cell.sh 0
 #1472492596
 ./docker-run-plan-cell.sh 1
 #1472492486
-./docker-run-on-mac.sh 
+./docker-run-on-mac.sh
 #1472492815
 ./docker-run.sh 0
 #1472493032
@@ -36574,7 +36574,7 @@ exit
 #1472499635
 docker images
 #1472499715
-docker start 
+docker start
 #1472499723
 docker-machine start
 #1472499729
@@ -36586,7 +36586,7 @@ eval $(docker-machine env)
 #1472499744
 docker ps -a
 #1472499763
-docker rm b1f06a5ab003 
+docker rm b1f06a5ab003
 #1472499769
 docker rm 5e764bef3274
 #1472499796
@@ -36608,7 +36608,7 @@ ls
 #1472500224
 c
 #1472500225
-cd 
+cd
 #1472500227
 cd src/
 #1472500227
@@ -36644,7 +36644,7 @@ ps -A | grep java
 #1472503441
 df
 #1472503546
-cd 
+cd
 #1472508407
 cd src/
 #1472508408
@@ -36658,7 +36658,7 @@ git pull
 #1472508427
 git status
 #1472508436
-git checkout master 
+git checkout master
 #1472508438
 git pull
 #1472508449
@@ -36676,7 +36676,7 @@ exit
 #1472510192
 exit
 #1472510195
-exit 
+exit
 #1472510197
 exit
 #1472510355
@@ -36692,21 +36692,21 @@ exit
 #1472510391
 ./Docker/DockerScharpPlanner/docker-run.sh 4
 #1472510223
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1472510891
 git status
 #1472510961
-git add src/main/resources/logback.xml 
+git add src/main/resources/logback.xml
 #1472510980
 git commit -m "Setting the log level."
 #1472510988
-git push origin master 
+git push origin master
 #1472511073
-./Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/docker-build-no-cache.sh 
+./Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/docker-build-no-cache.sh
 #1472511091
 cd ./Docker/DockerScharpCacheMaven/DockerScharpUpdateImage
 #1472511097
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1472511764
 git status
 #1472511793
@@ -36718,9 +36718,9 @@ git status
 #1472511842
 git commit -m "Fixed reset resources for remote agents."
 #1472511852
-git push -u origin marcel-fix-clear-schedule-remote 
+git push -u origin marcel-fix-clear-schedule-remote
 #1472511999
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1472511487
 ./Docker/DockerScharpPlanner/docker-run.sh 0
 #1472511498
@@ -36734,7 +36734,7 @@ git push -u origin marcel-fix-clear-schedule-remote
 #1472512220
 ./Docker/DockerScharpPlanner/docker-run.sh 0
 #1472511142
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1472513097
 git status
 #1472513122
@@ -36752,9 +36752,9 @@ git add ../../../src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellMa
 #1472513184
 git commit -m "Added debug statements."
 #1472513194
-git push -u origin marcel-fix-clear-schedule-remote 
+git push -u origin marcel-fix-clear-schedule-remote
 #1472513213
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1472513353
 ./Docker/DockerScharpPlanner/docker-run.sh 0
 #1472514451
@@ -36764,7 +36764,7 @@ git add ../../DockerScharpPlanner/docker-run.sh ../../../src/main/resources/logb
 #1472514482
 git commit -m "Fixed the docker run script."
 #1472514487
-git push -u origin marcel-fix-clear-schedule-remote 
+git push -u origin marcel-fix-clear-schedule-remote
 #1472513851
 ./Docker/DockerScharpPlanner/docker-run.sh 2
 #1472513836
@@ -36772,17 +36772,17 @@ git push -u origin marcel-fix-clear-schedule-remote
 #1472513874
 ./Docker/DockerScharpPlanner/docker-run.sh 4
 #1472513269
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1472513862
 ./Docker/DockerScharpPlanner/docker-run.sh 3
 #1472514526
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1472514693
 ./Docker/DockerScharpPlanner/docker-run.sh 0
 #1472515003
 ./Docker/DockerScharpPlanner/docker-run.sh 03
 #1472514798
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1472515217
 git status
 #1472515224
@@ -36790,7 +36790,7 @@ git add ../../../src/main/resources/logback.xml
 #1472515252
 git commit -m "Added a logger for amq server to see messages received."
 #1472515258
-git push -u origin marcel-fix-clear-schedule-remote 
+git push -u origin marcel-fix-clear-schedule-remote
 #1472515275
 his
 #1472514992
@@ -36802,17 +36802,17 @@ his
 #1472515012
 ./Docker/DockerScharpPlanner/docker-run.sh 4
 #1472515281
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1472515498
 git status
 #1472515345
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1472515711
 pwd
 #1472530300
 ~
 #1472530309
-git checkout master 
+git checkout master
 #1472530316
 git pull --all --prune
 #1472530331
@@ -36824,9 +36824,9 @@ git checkout master
 #1472530444
 git pull
 #1472530452
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1472530815
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1472530856
 ./Docker/DockerScharpPlanner/docker-run.sh 1
 #1472530863
@@ -36834,7 +36834,7 @@ git pull
 #1472530868
 ./Docker/DockerScharpPlanner/docker-run.sh 3
 #1472531106
-cd 
+cd
 #1472531112
 cd src/jboss-fuse/
 #1472531113
@@ -36848,7 +36848,7 @@ cd etc
 #1472531157
 ls
 #1472531163
-more config.properties 
+more config.properties
 #1472531421
 cd ..
 #1472531425
@@ -36880,11 +36880,11 @@ cd
 #1472532954
 cd src/rspace-eclipse/scharp/
 #1472532964
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1472532992
 ps -A
 #1472533467
-cd 
+cd
 #1472533474
 cd src/
 #1472533475
@@ -36902,13 +36902,13 @@ cd conf/
 #1472533506
 ls
 #1472533511
-more users.properties 
+more users.properties
 #1472533609
 cd ..
 #1472533610
 ls
 #1472533629
-./bin/macosx/activemq 
+./bin/macosx/activemq
 #1472533637
 ./bin/macosx/activemq start
 #1472533179
@@ -36934,7 +36934,7 @@ ls
 #1472534205
 ./bin/macosx/activemq status
 #1472534215
-./bin/macosx/activemq 
+./bin/macosx/activemq
 #1472534221
 ./bin/macosx/activemq console
 #1472534270
@@ -36974,11 +36974,11 @@ cd data/
 #1472534732
 ls
 #1472534741
-more activemq.log 
+more activemq.log
 #1472534750
 ls
 #1472534755
-rm activemq.log 
+rm activemq.log
 #1472534770
 ps -Al
 #1472534780
@@ -36992,7 +36992,7 @@ cd ..
 #1472534918
 ./Docker/DockerScharpPlanner/docker-run.sh 0
 #1472535462
-git checkout marcel-fix-clear-schedule-remote 
+git checkout marcel-fix-clear-schedule-remote
 #1472535464
 git pull
 #1472537183
@@ -37004,39 +37004,39 @@ git status
 #1472538183
 git add ../../../src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlannerServer.java
 #1472538195
-git push origin marcel-fix-clear-schedule-remote 
+git push origin marcel-fix-clear-schedule-remote
 #1472538228
 git commit -m "Changed getStrikeOptions to ignore an empty list of targets."
 #1472538238
-git push origin marcel-fix-clear-schedule-remote 
+git push origin marcel-fix-clear-schedule-remote
 #1472538503
-git pull origin master 
+git pull origin master
 #1472538518
 git status
 #1472538534
-git push origin marcel-fix-clear-schedule-remote 
+git push origin marcel-fix-clear-schedule-remote
 #1472538539
 git status
 #1472538589
 cd ..
 #1472538596
-git checkout master 
+git checkout master
 #1472538606
-git checkout marcel-investigate-vmf-fails 
+git checkout marcel-investigate-vmf-fails
 #1472538609
 git pull
 #1472538616
-git pull origin master 
+git pull origin master
 #1472538629
 git status
 #1472538639
-git push origin marcel-investigate-vmf-fails 
+git push origin marcel-investigate-vmf-fails
 #1472540097
 git pull
 #1472540104
 git status
 #1472540110
-git checkout master 
+git checkout master
 #1472540117
 git status
 #1472540129
@@ -37044,7 +37044,7 @@ mvn generate-sources
 #1472540151
 cd DockerScharpUpdateImage/
 #1472540156
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1472571103
 git pull
 #1472571482
@@ -37132,7 +37132,7 @@ mvn compile install
 #1472580120
 bin/macosx/activemq console
 #1472580435
-~/src/rspace-eclipse/scharp/Docker/jboss-fuse-docker/docker-run.sh 
+~/src/rspace-eclipse/scharp/Docker/jboss-fuse-docker/docker-run.sh
 #1472580555
 exit
 #1472580188
@@ -37162,17 +37162,17 @@ cd ..
 #1472581036
 cd rspace-eclipse/scharp/
 #1472581072
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1472581128
 ~/src/Apache-ActiveMQ/apache-activemq-5.13.3/bin/macosx/activemq status
 #1472581134
 ~/src/Apache-ActiveMQ/apache-activemq-5.13.3/bin/macosx/activemq stop
 #1472581142
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1472581162
 docker-machine stop
 #1472581170
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1472581521
 git pull
 #1472582217
@@ -37206,17 +37206,17 @@ his
 #1472583591
 git pull --all --prune
 #1472583601
-git checkout marcel-investigate-vmf-fails 
+git checkout marcel-investigate-vmf-fails
 #1472583619
 git diff src/test/java/edu/kestrel/scharp/activemq/codedrop/TestClient.java
 #1472583652
-git stash 
+git stash
 #1472583656
-git checkout marcel-investigate-vmf-fails 
+git checkout marcel-investigate-vmf-fails
 #1472583666
 git pull
 #1472583673
-git pull origin master 
+git pull origin master
 #1472583695
 git stash pop
 #1472583943
@@ -37224,9 +37224,9 @@ cd ..
 #1472583959
 cd scharp/Docker/DockerJava/
 #1472583967
-./docker-build.sh 
+./docker-build.sh
 #1472585152
-cd 
+cd
 #1472585171
 cd src/jboss-fuse/jboss-fuse-6.2.1.redhat-084/
 #1472585172
@@ -37236,23 +37236,23 @@ cd etc
 #1472585175
 ls
 #1472585183
-more config.properties 
+more config.properties
 #1472585217
 grep -i Xmx *
 #1472585221
 ls
 #1472585225
-cd startup.properties 
+cd startup.properties
 #1472585228
-more startup.properties 
+more startup.properties
 #1472585252
 ls
 #1472585255
-more system.properties 
+more system.properties
 #1472585275
 ls
 #1472585305
-more exec.init.script 
+more exec.init.script
 #1472585317
 ls
 #1472585325
@@ -37292,7 +37292,7 @@ cd etc
 #1472585376
 ls
 #1472585390
-more jre.properties 
+more jre.properties
 #1472585449
 grep wrapper *
 #1472585459
@@ -37310,7 +37310,7 @@ grep "\-D" *.cfg
 #1472585520
 ls
 #1472585531
-more startup.properties 
+more startup.properties
 #1472585555
 cd ..
 #1472585556
@@ -37334,17 +37334,17 @@ cd jboss-fuse-docker/
 #1472587868
 ls
 #1472585991
-~/src/rspace-eclipse/scharp/Docker/jboss-fuse-docker/docker-run.sh 
+~/src/rspace-eclipse/scharp/Docker/jboss-fuse-docker/docker-run.sh
 #1472588005
 java -X
 #1472587879
-./docker-build.sh 
+./docker-build.sh
 #1472594778
 ./Docker/DockerScharpPlanner/docker-run.sh 0
 #1472594892
 ./Docker/DockerScharpPlanner/docker-run.sh 1
 #1472594638
-./docker-run.sh 
+./docker-run.sh
 #1472595041
 ./Docker/DockerScharpPlanner/docker-run.sh 0
 #1472595083
@@ -37364,7 +37364,7 @@ stop
 #1472598740
 ./Docker/DockerScharpPlanner/docker-run.sh 4
 #1472598847
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1472598876
 docker ps
 #1472598886
@@ -37390,7 +37390,7 @@ ps -Al | grep jboss
 #1472599078
 ./Docker/DockerScharpPlanner/docker-run.sh 4
 #1472599015
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1472599296
 ./Docker/DockerScharpPlanner/docker-run.sh 0
 #1472599678
@@ -37468,7 +37468,7 @@ git diff src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler
 #1472667959
 his | grep pxbuild
 #1472667965
-cd 
+cd
 #1472667968
 cd src/
 #1472667968
@@ -37556,13 +37556,13 @@ pxlaunch -m docker run px *.hcl
 #1472687885
 docker status
 #1472687891
-docker 
+docker
 #1472688011
 docker ip
 #1472688238
 docker info
 #1472688580
-if command -v workon >/dev/null 2>&1; then workon planx-eclipse; else source /Users/marcelbecker/PythonEnvs/planx-eclipse/bin/activate; fi 
+if command -v workon >/dev/null 2>&1; then workon planx-eclipse; else source /Users/marcelbecker/PythonEnvs/planx-eclipse/bin/activate; fi
 #1472688583
 python
 #1472690721
@@ -37574,13 +37574,13 @@ pip install -e .
 #1472690757
 pip install -U pip
 #1472690784
-pip install -U pip 
+pip install -U pip
 #1472690798
 pxlaunch list
 #1472690810
 pxlaunch run px --machine docker
 #1472690818
-pxlaunch run px 
+pxlaunch run px
 #1472690827
 pxlaunch run px *.hcl
 #1472690946
@@ -37592,7 +37592,7 @@ docker exec -it px-luna bash
 #1472690974
 docker ps -a
 #1472690985
-docker ps 
+docker ps
 #1472690990
 ps -A
 #1472691011
@@ -37616,23 +37616,23 @@ cd logs/
 #1472691244
 ls
 #1472691252
-more luna.log 
+more luna.log
 #1472691670
 ls
 #1472691678
-more pxwebclientproxy.log 
+more pxwebclientproxy.log
 #1472691738
-more pxwebserver.log 
+more pxwebserver.log
 #1472691748
 ls
 #1472691771
-more lunalogs.log 
+more lunalogs.log
 #1472691776
-more luna.log 
+more luna.log
 #1472691781
 ls
 #1472691793
-more nsqd.log 
+more nsqd.log
 #1472750042
 docker ps
 #1472750067
@@ -37678,7 +37678,7 @@ ls
 #1472754981
 pip install -U . -e
 #1472754993
-pip install -e . 
+pip install -e .
 #1472755009
 pxlaunch list
 #1472755016
@@ -37710,7 +37710,7 @@ cd ..
 #1472755233
 ls
 #1472755234
-cd 
+cd
 #1472755244
 cd src/plan-construction/pxrancher/
 #1472755269
@@ -37726,15 +37726,15 @@ git status
 #1472755329
 more docker_machine.py
 #1472762858
-git dd ../DockerJava/docker-run.sh ../DockerScharpCacheMaven/DockerScharpBaseImage/docker-build-no-cache.sh ../DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile ../DockerScharpCacheMaven/DockerScharpUpdateImage/docker-build-no-cache.sh ../DockerScharpPlanner/docker-build-no-cache.sh ../DockerScharpPlanner/docker-build.sh ../DockerScharpPlanner/docker-run.sh docker-build.sh 
+git dd ../DockerJava/docker-run.sh ../DockerScharpCacheMaven/DockerScharpBaseImage/docker-build-no-cache.sh ../DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile ../DockerScharpCacheMaven/DockerScharpUpdateImage/docker-build-no-cache.sh ../DockerScharpPlanner/docker-build-no-cache.sh ../DockerScharpPlanner/docker-build.sh ../DockerScharpPlanner/docker-run.sh docker-build.sh
 #1472762865
 git status
 #1472762871
 ls
 #1472762881
-more docker-run-on-mac.sh 
+more docker-run-on-mac.sh
 #1472762990
-git add ../DockerJava/docker-run.sh ../DockerScharpCacheMaven/DockerScharpBaseImage/docker-build-no-cache.sh ../DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile ../DockerScharpCacheMaven/DockerScharpUpdateImage/docker-build-no-cache.sh ../DockerScharpPlanner/docker-build-no-cache.sh ../DockerScharpPlanner/docker-build.sh ../DockerScharpPlanner/docker-run.sh docker-build.sh 
+git add ../DockerJava/docker-run.sh ../DockerScharpCacheMaven/DockerScharpBaseImage/docker-build-no-cache.sh ../DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile ../DockerScharpCacheMaven/DockerScharpUpdateImage/docker-build-no-cache.sh ../DockerScharpPlanner/docker-build-no-cache.sh ../DockerScharpPlanner/docker-build.sh ../DockerScharpPlanner/docker-run.sh docker-build.sh
 #1472762993
 git status
 #1472763006
@@ -37760,11 +37760,11 @@ git commit -m "Removed initialization of docker-machined from docker build and r
 #1472763209
 git status
 #1472763216
-git pull origin master 
+git pull origin master
 #1472763231
 git pull
 #1472763241
-git push -u origin marcel-investigate-vmf-fails 
+git push -u origin marcel-investigate-vmf-fails
 #1472763447
 his
 #1472763457
@@ -37822,7 +37822,7 @@ cd ../..
 #1472764371
 mvn validate compile
 #1472764390
-git checkout master 
+git checkout master
 #1472764397
 git pull
 #1472764411
@@ -37850,7 +37850,7 @@ ls
 #1472793778
 ls -a
 #1472793813
-more ../.profile 
+more ../.profile
 #1472793829
 ls
 #1472793831
@@ -37898,35 +37898,35 @@ ls
 #1472793943
 cd
 #1472793947
-cd 
+cd
 #1472793948
 ls
 #1472793971
-more bootsrapper.properties 
+more bootsrapper.properties
 #1472793995
-cd eclipse-dir 
+cd eclipse-dir
 #1472793996
 ls
 #1472794001
-more eclipse-dir 
+more eclipse-dir
 #1472794006
-rm eclipse-dir 
+rm eclipse-dir
 #1472794007
 ls
 #1472794013
-more install.sh 
+more install.sh
 #1472794046
-rm install.sh 
+rm install.sh
 #1472794048
 ls
 #1472794056
-more myports.txt 
+more myports.txt
 #1472794066
-rm -rf myports.txt 
+rm -rf myports.txt
 #1472794069
-more pmd-eclipse.log 
+more pmd-eclipse.log
 #1472794073
-rm pmd-eclipse.log 
+rm pmd-eclipse.log
 #1472794074
 ls
 #1472794087
@@ -38014,19 +38014,19 @@ cd ..
 #1472794249
 ls
 #1472794257
-rm bootsrapper.properties 
+rm bootsrapper.properties
 #1472794259
 ls
 #1472794267
-rm default-soapui-workspace.xml 
+rm default-soapui-workspace.xml
 #1472794268
 ls
 #1472794273
-rm soapui-settings.xml 
+rm soapui-settings.xml
 #1472794274
 ls
 #1472794280
-rm restore_ports.tcl 
+rm restore_ports.tcl
 #1472794292
 ls
 #1472794297
@@ -38046,7 +38046,7 @@ cd kivy/
 #1472794722
 ls
 #1472794725
-more README.md 
+more README.md
 #1472794739
 cd ..
 #1472794743
@@ -38086,7 +38086,7 @@ du
 #1472794827
 df
 #1472794842
-cd 
+cd
 #1472794845
 cd Downloads/
 #1472794849
@@ -38102,19 +38102,19 @@ df
 #1472794932
 ls -lS
 #1472794956
-rm -rf SCHARP.ato 
+rm -rf SCHARP.ato
 #1472794985
 rm Spray*
 #1472794986
 ls
 #1472795043
-rm AppCleaner_3.3.zip KeyCue75-Install.dmg sprint_demo.zip umongo-osx-all_1-6-2.zip 
+rm AppCleaner_3.3.zip KeyCue75-Install.dmg sprint_demo.zip umongo-osx-all_1-6-2.zip
 #1472795044
 ls
 #1472795049
 ls *.dmg
 #1472795054
-rm Seil-12.1.0.dmg 
+rm Seil-12.1.0.dmg
 #1472795083
 ls -lS
 #1472795153
@@ -38140,7 +38140,7 @@ df
 #1472795222
 clear
 #1472795225
-cd 
+cd
 #1472795226
 ls
 #1472795243
@@ -38150,7 +38150,7 @@ ls
 #1472795248
 df
 #1472795255
-rm restore_ports.tcl 
+rm restore_ports.tcl
 #1472795258
 ls
 #1472795265
@@ -38206,7 +38206,7 @@ rm -rf .isabelle/
 #1472795735
 rm -rf .ivy2/
 #1472795742
-rm -rf .jboss-cli-history 
+rm -rf .jboss-cli-history
 #1472795765
 rm -rf .mono/
 #1472795773
@@ -38216,7 +38216,7 @@ rm -rf .npm/
 #1472795794
 rm -rf .qt
 #1472795842
-rm -rf .readyapi/ .sbt/ .soapui/ 
+rm -rf .readyapi/ .sbt/ .soapui/
 #1472795851
 cd .virtualenvs/
 #1472795852
@@ -38230,7 +38230,7 @@ cd Dropbox/
 #1472795863
 ls
 #1472795917
-rm eclipse.kepler.ini 
+rm eclipse.kepler.ini
 #1472795951
 ls -a
 #1472795964
@@ -38246,7 +38246,7 @@ cd ..
 #1472796007
 ls
 #1472796018
-cd git 
+cd git
 #1472796018
 ls
 #1472796021
@@ -38280,7 +38280,7 @@ cd upstream/
 #1472834808
 ls
 #1472834826
-more recommendation-service-dev_733_run_1_metadata.json 
+more recommendation-service-dev_733_run_1_metadata.json
 #1472834873
 cd ..
 #1472834874
@@ -38294,7 +38294,7 @@ ls
 #1472835757
 pxbuild-meta all pxbox-testbed-dev.meta --ignore pxbox-testbed-dev
 #1472838730
-cd 
+cd
 #1472838740
 cd src/rspace-eclipse/scharp/
 #1472838741
@@ -38304,29 +38304,29 @@ git pull
 #1472838751
 git branch
 #1472838782
-git branch -d marcel-investigate-vmf-fails 
+git branch -d marcel-investigate-vmf-fails
 #1472838863
-git checkout marcel-fix-secondary-tasks 
+git checkout marcel-fix-secondary-tasks
 #1472838866
 git status
 #1472838878
-git checkout master 
+git checkout master
 #1472838890
-git branch -d marcel-fix-secondary-tasks 
+git branch -d marcel-fix-secondary-tasks
 #1472838951
-git branch -D marcel-fix-secondary-tasks 
+git branch -D marcel-fix-secondary-tasks
 #1472838956
-git branch 
+git branch
 #1472838969
-git branch -d marcel-fix-clear-schedule-remote 
+git branch -d marcel-fix-clear-schedule-remote
 #1472838985
-git checkout marcel-fix-docker 
+git checkout marcel-fix-docker
 #1472838994
 git status
 #1472839009
-git checkout master 
+git checkout master
 #1472839023
-git branch -d  marcel-fix-docker 
+git branch -d  marcel-fix-docker
 #1472862455
 his | grep Emacs
 #1472862471
@@ -38370,7 +38370,7 @@ cd pxplanner/
 #1473179960
 git pull
 #1473179967
-git checkout master 
+git checkout master
 #1473179973
 git pull --all --prune
 #1473179983
@@ -38384,13 +38384,13 @@ git pull --all --prune
 #1473180023
 git checkout dev
 #1473180028
-git branch 
+git branch
 #1473180039
-git checkout master 
+git checkout master
 #1473180048
 git checkout -t origin/dev
 #1473180055
-git branch -d dev 
+git branch -d dev
 #1473180057
 git checkout -t origin/dev
 #1473180059
@@ -38408,7 +38408,7 @@ ssh -L 5901:127.0.0.1:5901 -N -f -l ubuntu 10.130.2.77 -i ~/.ssh/planx_key
 #1473191858
 open vnc://localhost:5901
 #1473191968
-ps 
+ps
 #1473191981
 ps -A
 #1473191987
@@ -38452,17 +38452,17 @@ git pull --all --prune
 #1473269428
 git remote -v
 #1473269442
-git push origin dev 
+git push origin dev
 #1473269468
 git pull core dev
 #1473269473
 git status
 #1473269480
-git push origin dev 
+git push origin dev
 #1473269528
 git branch marcel-mission-receipt
 #1473269537
-git checkout marcel-mission-receipt 
+git checkout marcel-mission-receipt
 #1473269742
 git add remote alexavro git@github-enterprise.px.ftw:awissner-gross/px-avro.git
 #1473269757
@@ -38470,7 +38470,7 @@ git remote add alexavro git@github-enterprise.px.ftw:awissner-gross/px-avro.git
 #1473269771
 git pull alexavro dev
 #1473269834
-./build/build.sh 
+./build/build.sh
 #1473269973
 pxbuild all
 #1473270098
@@ -38526,13 +38526,13 @@ ps
 #1473284715
 ps -a
 #1473284887
-cd 
+cd
 #1473284894
 cd src/plan-construction/pxplanner/
 #1473284899
 git pull --all --prune
 #1473284923
-git checkout -t origin/dev 
+git checkout -t origin/dev
 #1473284927
 git pull
 #1473284942
@@ -38558,25 +38558,25 @@ git checkout dev
 #1473285014
 ls
 #1473285017
-git pull 
+git pull
 #1473285026
 git pull core dev
 #1473285036
-git push origin dev 
+git push origin dev
 #1473285050
 cd ../planconstruction-pxluna
 #1473285055
-git checkout dev 
+git checkout dev
 #1473285061
-git pull 
+git pull
 #1473285071
-git pull core dev 
+git pull core dev
 #1473285077
 git status
 #1473285085
 git remote -v
 #1473285092
-git push origin dev 
+git push origin dev
 #1473285098
 cd ..
 #1473285099
@@ -38586,15 +38586,15 @@ cd planconstruction-pxluna-data-builder/
 #1473285120
 git checkout dev
 #1473285130
-git checkout -t origin/dev 
+git checkout -t origin/dev
 #1473285134
-git pull 
+git pull
 #1473285142
 git remote -v
 #1473285147
-git pull core dev 
+git pull core dev
 #1473285154
-git push origin dev 
+git push origin dev
 #1473285160
 ls
 #1473286145
@@ -38602,21 +38602,21 @@ cd ..
 #1473286148
 cd pxplanner/
 #1473286150
-git branch 
+git branch
 #1473286197
-git checkout -t origin/performance-and-simplification 
+git checkout -t origin/performance-and-simplification
 #1473286202
 git pull
 #1473286206
 ls
 #1473286211
-more requirements.txt 
+more requirements.txt
 #1473286459
 git status
 #1473286660
 git checkout dev
 #1473286671
-git checkout -t origin/jak-multi-action 
+git checkout -t origin/jak-multi-action
 #1473286675
 git pull
 #1473286836
@@ -38630,25 +38630,25 @@ pip install -U pytest
 #1473286940
 pytest .
 #1473286954
-more testing-requirements.txt 
+more testing-requirements.txt
 #1473286970
 pip install -r -U testing-requirements.txt --
 #1473286972
-pip install -r -U testing-requirements.txt 
+pip install -r -U testing-requirements.txt
 #1473286984
-pip install -U -r testing-requirements.txt 
+pip install -U -r testing-requirements.txt
 #1473287025
 pytest .
 #1473284742
 ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.130.2.77 -i ~/.ssh/planx_key
 #1473292176
-git checkout master 
+git checkout master
 #1473292182
 git checkout dev
 #1473292189
 pytest .
 #1473292218
-more requirements.txt 
+more requirements.txt
 #1473353023
 /Applications/Emacs.app/Contents/MacOS/Emacs --debug-init
 #1473353096
@@ -38692,11 +38692,11 @@ ls
 #1473357743
 /Applications/Emacs.app/Contents/MacOS/Emacs --debug-init
 #1473359930
-/Applications/Emacs.app/Contents/MacOS/Emacs 
+/Applications/Emacs.app/Contents/MacOS/Emacs
 #1473361393
 ls
 #1473362326
-/Applications/Emacs.app/Contents/MacOS/Emacs 
+/Applications/Emacs.app/Contents/MacOS/Emacs
 #1473367021
 cd ~/.emacs.d/
 #1473367022
@@ -38722,9 +38722,9 @@ cd ..
 #1473367117
 cp -r ~/Dropbox/.emacs.d/elpa .
 #1473367141
-/Applications/Emacs.app/Contents/MacOS/Emacs 
+/Applications/Emacs.app/Contents/MacOS/Emacs
 #1473367253
-cd 
+cd
 #1473367258
 cd Dropbox/.emacs.d/
 #1473367273
@@ -38760,7 +38760,7 @@ cd yasnippet-snippets/
 #1473368269
 ls
 #1473368291
-more README.md 
+more README.md
 #1473368326
 cd ../
 #1473368329
@@ -38776,7 +38776,7 @@ cd snippets/
 #1473368337
 ls
 #1473367285
-/Applications/Emacs.app/Contents/MacOS/Emacs 
+/Applications/Emacs.app/Contents/MacOS/Emacs
 #1473369062
 cd ..
 #1473369067
@@ -38788,15 +38788,15 @@ cd el-get
 #1473369073
 ls
 #1473369088
-/Applications/Emacs.app/Contents/MacOS/Emacs 
+/Applications/Emacs.app/Contents/MacOS/Emacs
 #1473369933
 grep -r preceding-sexp .
 #1473370121
-/Applications/Emacs.app/Contents/MacOS/Emacs 
+/Applications/Emacs.app/Contents/MacOS/Emacs
 #1473370332
 grep -r preceding-sexp .
 #1473370537
-/Applications/Emacs.app/Contents/MacOS/Emacs 
+/Applications/Emacs.app/Contents/MacOS/Emacs
 #1473371954
 ls
 #1473371964
@@ -38806,13 +38806,13 @@ ls
 #1473371993
 more dired-ranger.el
 #1473374477
-/Applications/Emacs.app/Contents/MacOS/Emacs 
+/Applications/Emacs.app/Contents/MacOS/Emacs
 #1473375870
 exit
 #1473375864
 more dired-ranger.el
 #1473375874
-/Applications/Emacs.app/Contents/MacOS/Emacs 
+/Applications/Emacs.app/Contents/MacOS/Emacs
 #1473378492
 cd ..
 #1473378493
@@ -38824,7 +38824,7 @@ cd elpa
 #1473378514
 ls
 #1473378530
-more dired-explorer-readme.txt 
+more dired-explorer-readme.txt
 #1473378596
 ls
 #1473378600
@@ -38836,7 +38836,7 @@ cd emacs-avro/
 #1473378613
 git pull
 #1473378640
-cd 
+cd
 #1473378645
 cd .emacs.d/
 #1473378645
@@ -38876,7 +38876,7 @@ make
 #1473381104
 ls
 #1473381134
-cd 
+cd
 #1473381145
 cd Dropbox/.emacs.d/el-get/pylookup/
 #1473381146
@@ -38908,19 +38908,19 @@ pip install -U pip
 #1473436574
 ls
 #1473436580
-./tests/run_tests.sh 
+./tests/run_tests.sh
 #1473436608
 pip install -U planningcoresvc
 #1473436633
-./tests/run_tests.sh 
+./tests/run_tests.sh
 #1473436669
 pip install -U -r requirements.txt testing-requirements.txt --
 #1473436677
-pip install -U -r requirements.txt testing-requirements.txt 
+pip install -U -r requirements.txt testing-requirements.txt
 #1473436683
-pip install -U -r requirements.txt 
+pip install -U -r requirements.txt
 #1473436714
-./tests/run_tests.sh 
+./tests/run_tests.sh
 #1473436774
 git pull
 #1473436789
@@ -38928,9 +38928,9 @@ pip uninstall pxplanner
 #1473436797
 pip install -U pxavro
 #1473436808
-./tests/run_tests.sh 
+./tests/run_tests.sh
 #1473436886
-more tests/run_tests.sh 
+more tests/run_tests.sh
 #1473436966
 export PYTHONPATH="$PYTHONPATH:src/" pytest .
 #1473436976
@@ -38940,23 +38940,23 @@ rm tests/__pycache__/*
 #1473437020
 PYTHONPATH="$PYTHONPATH:src/" pytest .
 #1473437296
-PYTHONPATH="$PYTHONPATH:src/" pytest 
+PYTHONPATH="$PYTHONPATH:src/" pytest
 #1473437338
-PYTHONPATH="$PYTHONPATH:src/" pytest tests/test_pxplanner.py 
+PYTHONPATH="$PYTHONPATH:src/" pytest tests/test_pxplanner.py
 #1473437378
 PYTHONPATH="$PYTHONPATH:src/" pytest tests/*
 #1473437395
 PYTHONPATH="$PYTHONPATH:src/" pytest tests
 #1473438033
-git pull origin performance-and-simplification 
+git pull origin performance-and-simplification
 #1473438081
 ls
 #1473438087
-more requirements.txt 
+more requirements.txt
 #1473438880
 git status
 #1473438897
-more coa_status.txt 
+more coa_status.txt
 #1473438970
 git add src/pxplanner/action_recommender.py src/pxplanner/pxplanner.py
 #1473438972
@@ -38968,7 +38968,7 @@ git status~
 #1473439004
 git status
 #1473440385
-git pull origin performance-and-simplification 
+git pull origin performance-and-simplification
 #1473440397
 git status
 #1473440405
@@ -38976,7 +38976,7 @@ git diff src/pxplanner/pxplanner.py
 #1473440416
 git checkout -- src/pxplanner/pxplanner.py
 #1473440424
-git pull origin performance-and-simplification 
+git pull origin performance-and-simplification
 #1473440560
 git diff src/pxplanner/pxplanner.py
 #1473440904
@@ -38996,23 +38996,23 @@ git pull --all --prunt
 #1473442687
 git pull --all --prune
 #1473442705
-pxbuild all 
+pxbuild all
 #1473442711
 workon planx-eclipse
 #1473442715
-pxbuild all 
+pxbuild all
 #1473442844
-./clean.sh 
+./clean.sh
 #1473442849
-pxbuild all 
+pxbuild all
 #1473442914
-pip install -U requirements.txt 
+pip install -U requirements.txt
 #1473442943
-pip install -U -r requirements.txt 
+pip install -U -r requirements.txt
 #1473442966
-./build/build.sh 
+./build/build.sh
 #1473443120
-more ~/.gocd/gocd-cli.cfg 
+more ~/.gocd/gocd-cli.cfg
 #1473444013
 pip install -e .
 #1473452120
@@ -39028,9 +39028,9 @@ git add tests/test_action_recommender.py
 #1473453176
 git commit -m "Renamed duplicated test case."
 #1473453197
-git branch 
+git branch
 #1473453203
-git checkout performance-and-simplification 
+git checkout performance-and-simplification
 #1473453205
 git pull~
 #1473453208
@@ -39038,15 +39038,15 @@ git pull
 #1473453220
 PYTHONPATH="$PYTHONPATH:src/" pytest tests
 #1473453585
-git checkout -t origin/jak-multi-action 
+git checkout -t origin/jak-multi-action
 #1473453599
-git checkout jak-multi-action 
+git checkout jak-multi-action
 #1473453811
-git pull origin performance-and-simplification 
+git pull origin performance-and-simplification
 #1473453819
 git status
 #1473453855
-git push origin jak-multi-action 
+git push origin jak-multi-action
 #1473453864
 git status
 #1473453873
@@ -39072,7 +39072,7 @@ git pull
 #1473453934
 git pull core dev
 #1473453941
-git push origin dev 
+git push origin dev
 #1473453948
 cd ..
 #1473453956
@@ -39082,7 +39082,7 @@ git pull
 #1473453964
 git pull core dev
 #1473453970
-git push origin dev 
+git push origin dev
 #1473453978
 cd ..
 #1473453989
@@ -39090,7 +39090,7 @@ cd planconstruction-pxluna-data-builder/
 #1473453990
 git pull
 #1473453999
-git pull core dev 
+git pull core dev
 #1473454005
 cd ..
 #1473454006
@@ -39112,13 +39112,13 @@ git clone git@github-enterprise.px.ftw:Controller/px-controller-diagnostics.git
 #1473454140
 cd px-controller-diagnostics/
 #1473454144
-git checkout dev 
+git checkout dev
 #1473454146
 git pull
 #1473454205
 clear
 #1473454289
-cd 
+cd
 #1473454298
 cd src/pxbuild-test/
 #1473454298
@@ -39168,7 +39168,7 @@ docker rmi $(docker images -a | grep "^<none>" | awk "{print $3}")
 #1473463037
 docker images -a | grep "^<none>" | awk "{print $3}"
 #1473463057
-docker images -a | grep "^<none>" 
+docker images -a | grep "^<none>"
 #1473463119
 docker images -a | grep "^<none>" | awk '{print $3}'
 #1473463133
@@ -39184,7 +39184,7 @@ git pull
 #1473701681
 git pull --all --prune
 #1473701696
-git pull origin performance-and-simplification 
+git pull origin performance-and-simplification
 #1473701821
 git checkout dev
 #1473701825
@@ -39214,7 +39214,7 @@ git checkout -- src/main/avro/data/battlespace/cybox/px_objects/user_account_obj
 #1473715506
 git pull
 #1473715537
-cd 
+cd
 #1473715543
 cd src/plan-construction/pxplanner/
 #1473715543
@@ -39224,9 +39224,9 @@ git status
 #1473715558
 git checkout -- tests/test_action_recommender.py
 #1473715564
-git checkout performance-and-simplification 
+git checkout performance-and-simplification
 #1473716316
-git checkout jak-multi-action 
+git checkout jak-multi-action
 #1473719322
 PYTHONPATH="$PYTHONPATH:src/" pytest tests
 #1473719345
@@ -39236,7 +39236,7 @@ git add src/pxplanner/action_recommender.py
 #1473719370
 git commit -m "Fixed action recommender unit test."
 #1473719376
-git push origin jak-multi-action 
+git push origin jak-multi-action
 #1473719425
 git status
 #1473719546
@@ -39282,7 +39282,7 @@ pip install flake8 importmagic autopep8 yapf -U
 #1473785231
 sudo pip install -U jedi rope flake8 importmagic autopep8 yapf
 #1473808344
-cd 
+cd
 #1473808354
 cd .local/
 #1473808355
@@ -39364,7 +39364,7 @@ pxlaunch destroy px
 #1473877233
 eval $(docker-machine env)
 #1473877239
-docker-machine env 
+docker-machine env
 #1473877244
 eval $(docker-machine env)
 #1473877252
@@ -39374,9 +39374,9 @@ pxbuild-upstream --help
 #1473877512
 pxbuild-upstream tags2dir pxbox pxbox-debug
 #1473877559
-pxbuild-upstream tags2dir 
+pxbuild-upstream tags2dir
 #1473877572
-pxbuild-upstream 
+pxbuild-upstream
 #1473877643
 ls
 #1473877651
@@ -39396,9 +39396,9 @@ cd px-luna-dev
 #1473877683
 ls
 #1473877694
-./cli.sh 
+./cli.sh
 #1473877715
-more docker_cli.sh 
+more docker_cli.sh
 #1473877733
 ./docker_cli.sh --clusted px
 #1473877748
@@ -39408,11 +39408,11 @@ ls
 #1473877774
 ./cli.sh --cluster px
 #1473877806
-more cli.sh 
+more cli.sh
 #1473877818
-more run.sh 
+more run.sh
 #1473877842
-cd 
+cd
 #1473877848
 cd src/plan-construction/px-luna
 #1473877849
@@ -39422,9 +39422,9 @@ ls
 #1473877869
 ./cli.sh
 #1473877884
-git pull 
+git pull
 #1473877892
-./build/build.sh 
+./build/build.sh
 #1473877938
 ls
 #1473877948
@@ -39440,11 +39440,11 @@ ls
 #1473878276
 ./cli.sh --cluster px
 #1473878304
-./build/build.sh 
+./build/build.sh
 #1473878337
-./build/clean_m2.sh 
+./build/clean_m2.sh
 #1473878345
-./build/build.sh 
+./build/build.sh
 #1473878493
 ls
 #1473878499
@@ -39454,11 +39454,11 @@ git status
 #1473878590
 git pull --all --prune
 #1473878619
-git reset --hard 
+git reset --hard
 #1473878625
 git pull
 #1473878640
-./build/build.sh 
+./build/build.sh
 #1473879566
 ls
 #1473879568
@@ -39472,9 +39472,9 @@ ls
 #1473879577
 cd ..
 #1473879582
-./cli.sh 
+./cli.sh
 #1473879596
-./docker_cli.sh 
+./docker_cli.sh
 #1473880591
 git pull
 #1473880600
@@ -39526,13 +39526,13 @@ ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.130.2.77 -i ~/.ssh/planx_key
 #1473960750
 pxlaunch list px
 #1473960759
-pxlaunch list 
+pxlaunch list
 #1473960764
 pxlaunch status px
 #1473960924
 pxlaunch destroy px
 #1473961306
-his 
+his
 #1473961333
 cd
 #1473961339
@@ -39594,9 +39594,9 @@ pxlaunch destroy px
 #1473964140
 ls
 #1473964146
-more pxwebserver.log 
+more pxwebserver.log
 #1473964408
-more pxwebclientproxy.log 
+more pxwebclientproxy.log
 #1473964559
 ls
 #1473964564
@@ -39658,7 +39658,7 @@ pxlaunch status px
 #1473969814
 exit
 #1473968721
-docker stats --all 
+docker stats --all
 #1473969824
 exit
 #1473969835
@@ -39714,7 +39714,7 @@ docker ps --help
 #1473970690
 docker ps -s
 #1473970814
-docker ps 
+docker ps
 #1473971030
 docker ps --format "{{.ID}}: {{.Command}}" --all
 #1473971040
@@ -39782,7 +39782,7 @@ cd integration-tests/
 #1473972344
 ls
 #1473972352
-more run_tests.sh.bak 
+more run_tests.sh.bak
 #1473972367
 cd ..
 #1473972376
@@ -39790,7 +39790,7 @@ pxsvchost -v --cluster px -m pxplanner.services
 #1473972417
 ls
 #1473972423
-cd pxplanner.hcl.template 
+cd pxplanner.hcl.template
 #1473972428
 cd src/pxplanner
 #1473972429
@@ -39820,7 +39820,7 @@ cd pxcontrollermsc/
 #1473972578
 ls
 #1473972586
-more msc.py 
+more msc.py
 #1473973016
 cd ../..
 #1473973018
@@ -39832,21 +39832,21 @@ pxbuild all --verbose
 #1473973042
 pxbuild all --help
 #1473973054
-pxbuild --verbose all 
+pxbuild --verbose all
 #1473973081
 rm src/pxplanner/version.py
 #1473973083
-pxbuild --verbose all 
+pxbuild --verbose all
 #1473973140
 ~
 #1473973144
-more requirements.txt 
+more requirements.txt
 #1473973162
 cd ..
 #1473973172
 cd px-luna-client/
 #1473973181
-git checkout dev 
+git checkout dev
 #1473973190
 pxbuild all
 #1473973213
@@ -39870,7 +39870,7 @@ pxbuild --verbose all -use-docker
 #1473973328
 pxbuild --help
 #1473973350
-pxbuild --verbose --use-docker all 
+pxbuild --verbose --use-docker all
 #1473973368
 clear
 #1473974979
@@ -39890,11 +39890,11 @@ cd px-web-server/
 #1473975020
 ls
 #1473975025
-more run_server.sh 
+more run_server.sh
 #1473975063
 pxlaunch list px
 #1473975071
-pxlaunch list 
+pxlaunch list
 #1473975081
 pxlaunch status px
 #1473975094
@@ -39918,11 +39918,11 @@ cd clusters/
 #1473975193
 ls
 #1473975210
-more service.hcl 
+more service.hcl
 #1473975224
 ls
 #1473975233
-more planx.hcl 
+more planx.hcl
 #1473975274
 ls
 #1473975276
@@ -39952,19 +39952,19 @@ cd ../
 #1473975411
 cd px-web-transform/
 #1473975416
-pip install . 
+pip install .
 #1473975421
 cd ..
 #1473975426
 cd px-web-xform-initial/
 #1473975429
-pip install . 
+pip install .
 #1473975440
 cd ..
 #1473975444
 cd px-web-server/
 #1473975448
-pip install . 
+pip install .
 #1473975459
 PYTHONPATH="$PYTHONPATH:src/" ./run_server.sh --cluster px
 #1473975483
@@ -39984,7 +39984,7 @@ cd ../px-web-server/
 #1473975554
 PYTHONPATH="$PYTHONPATH:src/" ./run_server.sh --cluster px
 #1473975589
-more requirements.txt 
+more requirements.txt
 #1473975614
 cd ../px-avro
 #1473975622
@@ -40008,7 +40008,7 @@ cd src/pxbuild-test/
 #1473979316
 cd logs/
 #1473979325
-more pxwebclientproxy.log 
+more pxwebclientproxy.log
 #1473979423
 cd ..
 #1473979424
@@ -40056,13 +40056,13 @@ man ps
 #1473980857
 ps -f
 #1473980862
-ps -fw 
+ps -fw
 #1473980867
 ps -fw -w
 #1473980869
-ps -fw 
+ps -fw
 #1473980882
-ps -fwA 
+ps -fwA
 #1473980891
 ps -fwAF
 #1473980901
@@ -40148,7 +40148,7 @@ brew install pdb
 #1473990481
 pdb
 #1473990891
-cd 
+cd
 #1473990898
 cd src/plan-construction/pxplanner/
 #1473990921
@@ -40198,7 +40198,7 @@ pxlaunch pull *.hcl
 #1474044403
 pxlaunch run --expose px *.hcl
 #1474046711
-his 
+his
 #1474046724
 pxbuild-upstream fetch-gocd pxbox-testbed-dev
 #1474046772
@@ -40208,11 +40208,11 @@ pxbuild-upstream tags2dir pxbox pxbox-debug lunaseed
 #1474050068
 ls
 #1474050081
-chmod +x reload-px.sh 
+chmod +x reload-px.sh
 #1474050098
-./reload-px.sh 
+./reload-px.sh
 #1474050173
-pxbuild-upstream fetch-gocd pxbox-testbed-dev 
+pxbuild-upstream fetch-gocd pxbox-testbed-dev
 #1474050198
 pxbuild all
 #1474050225
@@ -40248,13 +40248,13 @@ cd logs
 #1474058417
 ls
 #1474058422
-more pxscore.hcl 
+more pxscore.hcl
 #1474058427
 l
 #1474058428
 ls
 #1474058447
-pxbuild-upstream fetch-gocd pxbox-testbed-dev 
+pxbuild-upstream fetch-gocd pxbox-testbed-dev
 #1474058467
 rm -rf upstream/
 #1474058473
@@ -40272,9 +40272,9 @@ pxbuild-upstream fetch-gocd pxbox-testbed-dev
 #1474058604
 ls
 #1474059356
-pxbuild-upstream fetch-gocd-last pxbox-testbed-dev 
+pxbuild-upstream fetch-gocd-last pxbox-testbed-dev
 #1474059390
-pxbuild-upstream fetch-gocd pxbox-testbed-dev 
+pxbuild-upstream fetch-gocd pxbox-testbed-dev
 #1474059395
 ls
 #1474059398
@@ -40336,7 +40336,7 @@ pxbuild-meta all pxbox-testbed-dev.meta --ignore pxbox-testbed-dev
 #1474306218
 ls
 #1474306231
-pxbuild-upstream fetch-gocd pxbox-testbed-dev 
+pxbuild-upstream fetch-gocd pxbox-testbed-dev
 #1474306244
 pxbuild-upstream tags2dir pxbox pxbox-debug default_seed
 #1474306263
@@ -40360,7 +40360,7 @@ ls
 #1474318438
 git pull
 #1474318457
-git checkout performance-and-simplification 
+git checkout performance-and-simplification
 #1474318482
 git diff tests/test_action_recommender.py
 #1474318563
@@ -40370,9 +40370,9 @@ git status
 #1474318575
 git checkout -- tests/test_action_recommender.py
 #1474318581
-git status 
+git status
 #1474318610
-git checkout performance-and-simplification 
+git checkout performance-and-simplification
 #1474318625
 git pull
 #1474318652
@@ -40382,7 +40382,7 @@ pip install pxsvchost -U
 #1474318705
 py.test .
 #1474318729
-pip install -r requirements.txt 
+pip install -r requirements.txt
 #1474318745
 pip install -r requirements.txt -U
 #1474318771
@@ -40422,9 +40422,9 @@ cd pxsvchost
 #1474319077
 git pull --all
 #1474319086
-git checkout dev 
+git checkout dev
 #1474319092
-git pull 
+git pull
 #1474319107
 pip install -r requirements.txt -U
 #1474319131
@@ -40436,7 +40436,7 @@ pip freeze
 #1474319207
 alias
 #1474319220
-pip-upgrade 
+pip-upgrade
 #1474319265
 pip freeze --local
 #1474319291
@@ -40456,25 +40456,25 @@ PYTHONPATH="$PYTHONPATH:src/" py.test .
 #1474319395
 his
 #1474319400
-pip-upgrade 
+pip-upgrade
 #1474319511
 PYTHONPATH="$PYTHONPATH:src/" py.test .
 #1474319541
 pip install -U restrictions
 #1474319577
-PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh 
+PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh
 #1474319609
-pip install -r testing-requirements.txt 
+pip install -r testing-requirements.txt
 #1474319617
 pip install -r testing-requirements.txt -U
 #1474319633
-PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh 
+PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh
 #1474319764
 pxbuild all
 #1474320060
 pip install -U pxintegrator
 #1474320088
-PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh 
+PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh
 #1474320132
 pip install -U pytest
 #1474320299
@@ -40482,11 +40482,11 @@ pip install -U py-pytest-tornado
 #1474320313
 pip install -U px-pytest-tornado
 #1474320373
-PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh 
+PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh
 #1474320392
-git checkout jak-multi-action 
+git checkout jak-multi-action
 #1474320395
-PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh 
+PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh
 #1474320442
 pip freeze --help
 #1474320502
@@ -40502,15 +40502,15 @@ deactivate
 #1474320668
 pip freeze
 #1474320797
-pip uninstall BlueController ctrlcoresvc mock psutil py2app pyfleet pyhcl pymongo pyparsing PyRSS2Gen pyzmq rope ropemacs ropemode sexpdata tornadorpc 
+pip uninstall BlueController ctrlcoresvc mock psutil py2app pyfleet pyhcl pymongo pyparsing PyRSS2Gen pyzmq rope ropemacs ropemode sexpdata tornadorpc
 #1474320807
-sudo pip uninstall BlueController ctrlcoresvc mock psutil py2app pyfleet pyhcl pymongo pyparsing PyRSS2Gen pyzmq rope ropemacs ropemode sexpdata tornadorpc 
+sudo pip uninstall BlueController ctrlcoresvc mock psutil py2app pyfleet pyhcl pymongo pyparsing PyRSS2Gen pyzmq rope ropemacs ropemode sexpdata tornadorpc
 #1474320831
 workon planx-eclipse
 #1474320844
-PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh 
+PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh
 #1474320868
-deactivate 
+deactivate
 #1474320889
 remove -rf ~/PythonEnvs/planx-eclipse/
 #1474320896
@@ -40526,23 +40526,23 @@ workon planx-eclipse
 #1474320976
 pip install pxsvchost pxbuild pxrancher
 #1474321075
-PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh 
+PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh
 #1474321088
-pip install -U -r requirements.txt 
+pip install -U -r requirements.txt
 #1474321138
-pip install -U -r testing-requirements.txt 
+pip install -U -r testing-requirements.txt
 #1474321179
-PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh 
+PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh
 #1474321214
-git checkout performance-and-simplification 
+git checkout performance-and-simplification
 #1474321217
-PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh 
+PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh
 #1474321298
 pip install -U pxavro pxluna-client
 #1474321320
 git pull
 #1474321332
-PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh 
+PYTHONPATH="$PYTHONPATH:src/" tests/run_tests.sh
 #1474321408
 pxbuild all
 #1474321578
@@ -40556,7 +40556,7 @@ eval $(docker-machine env)
 #1474321631
 pxlaunch run --expose px *.hcl
 #1474321668
-pxbuild-upstream fetch-gocd pxbox-testbed-dev 
+pxbuild-upstream fetch-gocd pxbox-testbed-dev
 #1474321683
 pxlaunch destroy px
 #1474321710
@@ -40584,7 +40584,7 @@ pxsvchost --cluster px -m pxplanner
 #1474321940
 pxsvchost --cluster px -m services
 #1474321954
-more integration-tests/run_tests.sh.bak 
+more integration-tests/run_tests.sh.bak
 #1474321967
 pxsvchost --cluster px -m pxplanner.services
 #1474322011
@@ -40682,25 +40682,25 @@ ls
 #1474406125
 cd tests/
 #1474406128
-./run_tests.sh 
+./run_tests.sh
 #1474406135
 workon planx-eclipse
 #1474406138
-./run_tests.sh 
+./run_tests.sh
 #1474479551
 git pull
 #1474479558
-./run_tests.sh 
+./run_tests.sh
 #1474479611
 cd ..
 #1474479621
-pxbuild-upstream fetch-gocd pxbox-testbed-dev 
+pxbuild-upstream fetch-gocd pxbox-testbed-dev
 #1474479627
 workon planx-eclipse
 #1474479665
 pip install -U pxsvchost pxrancher
 #1474479696
-pxbuild-upstream fetch-gocd pxbox-testbed-dev 
+pxbuild-upstream fetch-gocd pxbox-testbed-dev
 #1474479708
 pxlaunch pull *.hcl
 #1474479876
@@ -40880,7 +40880,7 @@ ls
 #1474571372
 which venv
 #1474571385
-deactivate 
+deactivate
 #1474571392
 mkvirtualenv --always-copy --clear test-pip
 #1474571403
@@ -40906,7 +40906,7 @@ pip install autopep8
 #1474571538
 workon
 #1474571545
-deactivate 
+deactivate
 #1474571551
 which pip
 #1474571561
@@ -40924,7 +40924,7 @@ python --version
 #1474579578
 which python
 #1474579595
-deactivate 
+deactivate
 #1474579600
 which python
 #1474579605
@@ -41000,7 +41000,7 @@ pip uninstall enum34
 #1474580712
 ls
 #1474580714
-pip 
+pip
 #1474580727
 sudo pip install -U virtualenv
 #1474580762
@@ -41022,7 +41022,7 @@ pip install -U jedi
 #1474580892
 pip install -U autopep8
 #1474580904
-deactivate 
+deactivate
 #1474580909
 pip uninstall jedi
 #1474580920
@@ -41038,7 +41038,7 @@ sudo -H pip  uninstall yapf
 #1474581003
 pip list
 #1474581095
-sudo -H pip  uninstall elpy epc iptools pyflakes pep8 pika macholib MarkupSafe matplotlib 
+sudo -H pip  uninstall elpy epc iptools pyflakes pep8 pika macholib MarkupSafe matplotlib
 #1474581112
 pip list
 #1474581201
@@ -41052,7 +41052,7 @@ sudo -H pip  uninstall altgraph antlr4-python2-runtime astroid Bottleneck bson
 #1474581274
 pip list
 #1474581354
-sudo -H pip  uninstall commentjson cffi configparser cryptography Cython decorator docutils gnureadline importmagic ipython ipython-genutils Jinja Jinja2 jsonrpclib logilab-common modulegraph msgpack-python nose numexpr numpy numpydoc pytz 
+sudo -H pip  uninstall commentjson cffi configparser cryptography Cython decorator docutils gnureadline importmagic ipython ipython-genutils Jinja Jinja2 jsonrpclib logilab-common modulegraph msgpack-python nose numexpr numpy numpydoc pytz
 #1474581388
 ls
 #1474581390
@@ -41072,7 +41072,7 @@ sudo pip install -U virtualenvwrapper
 #1474581575
 workon planx-eclipse
 #1474581580
-deactivate 
+deactivate
 #1474581593
 sudo -H pip install -U virtualenvwrapper
 #1474581611
@@ -41082,7 +41082,7 @@ sudo -H pip install -U virtualenvwrapper
 #1474581628
 sudo -H pip install -U jinja2 virtualenvwrapper
 #1474581637
-sudo -H pip install -U jinja2 
+sudo -H pip install -U jinja2
 #1474581647
 sudo -H pip install -U virtualenvwrapper
 #1474581658
@@ -41112,9 +41112,9 @@ cd planx-eclipse/
 #1474581810
 ls
 #1474581819
-more pip-selfcheck.json 
+more pip-selfcheck.json
 #1474581830
-cd lib 
+cd lib
 #1474581831
 ls
 #1474581834
@@ -41128,7 +41128,7 @@ ls
 #1474581947
 pip install yapf
 #1474581962
-deactivate 
+deactivate
 #1474581963
 cd
 #1474581966
@@ -41162,7 +41162,7 @@ ls
 #1474582578
 ls -al
 #1474582583
-more pip.conf 
+more pip.conf
 #1474582653
 pip --version
 #1474582795
@@ -41184,7 +41184,7 @@ pip install -U autopep8 -I
 #1474585081
 autopep8
 #1474585104
-deactivate 
+deactivate
 #1474585117
 sudo -H pip install autopep8
 #1474585144
@@ -41196,19 +41196,19 @@ sudo -H pip install -U virtualenvwrapper
 #1474585309
 cd ..
 #1474585311
-ls 
+ls
 #1474585320
 cd PythonEnvs/
 #1474585327
-more postactivate 
+more postactivate
 #1474585333
 ls
 #1474585358
-./get_env_details 
+./get_env_details
 #1474585363
 workon planx-eclipse
 #1474585371
-./get_env_details 
+./get_env_details
 #1474585861
 ls -l /usr/bin/python
 #1474585868
@@ -41216,13 +41216,13 @@ python --version
 #1474585884
 which python
 #1474585893
-deactivate 
+deactivate
 #1474585898
 python --version
 #1474585902
 which python
 #1474585936
-workon planx-eclipse 
+workon planx-eclipse
 #1474585947
 pip install -U virtualenv
 #1474585951
@@ -41230,7 +41230,7 @@ pip install -U virtualenv -U
 #1474585960
 pip install -U virtualenvwrapper -
 #1474585962
-pip install -U virtualenvwrapper 
+pip install -U virtualenvwrapper
 #1474586001
 pip rm virtualenv virtualenvwrapper
 #1474586011
@@ -41250,7 +41250,7 @@ pip uninstall virtualenv
 #1474586161
 pip uninstall virtualenvwrapper
 #1474586243
-deactivate 
+deactivate
 #1474586248
 workon planx-eclipse
 #1474586370
@@ -41270,11 +41270,11 @@ sudo -H /usr/local/bin/pip uninstall virtualenv-clone virtualenvwrapper
 #1474586637
 sudo -H /usr/local/bin/pip uninstall virtualenv
 #1474586644
-sudo -H /usr/local/bin/pip uninstall virtualenv-clone 
+sudo -H /usr/local/bin/pip uninstall virtualenv-clone
 #1474586653
 sudo -H /usr/local/bin/pip uninstall  virtualenvwrapper
 #1474586658
-deactivate 
+deactivate
 #1474586665
 pip list
 #1474586687
@@ -41284,13 +41284,13 @@ pip list -v
 #1474586718
 pip list -v -o
 #1474586779
-sudo -H uninstall zope.interface ujson Twisted traitlets 
+sudo -H uninstall zope.interface ujson Twisted traitlets
 #1474586792
-sudo -H pip uninstall zope.interface ujson Twisted traitlets 
+sudo -H pip uninstall zope.interface ujson Twisted traitlets
 #1474586803
 pip list
 #1474586831
-sudo -H pip uninstall Sphinx 
+sudo -H pip uninstall Sphinx
 #1474586840
 pip list -v -o
 #1474586907
@@ -41314,9 +41314,9 @@ workon planx-eclipse
 #1474587064
 pip list --local -o
 #1474587083
-pip list --local 
+pip list --local
 #1474587106
-pip install -U wheel setuptools pytest 
+pip install -U wheel setuptools pytest
 #1474587214
 sudo -H pip install epc
 #1474587221
@@ -41372,13 +41372,13 @@ ls
 #1474588052
 ls -l /Users/marcelbecker/PythonEnvs/planx-eclipse/lib/python2.7/site-packages
 #1474588743
-cd 
+cd
 #1474588782
 cd Dropbox/.emacs.d/elpa/jedi-core-20160709.722/
 #1474588783
 ls
 #1474588795
-more setup.py 
+more setup.py
 #1474588828
 pip install -U jedi epc argparse
 #1474588860
@@ -41390,7 +41390,7 @@ pip uninstall epc
 #1474588885
 pip uninstall argparse
 #1474588898
-deactivate 
+deactivate
 #1474588902
 pip uninstall argparse
 #1474588913
@@ -41404,7 +41404,7 @@ workon planx-eclipse
 #1474588958
 pip install jedi
 #1474588968
-cd 
+cd
 #1474588997
 cd PythonEnvs/planx-eclipse/lib/python2.7/site-packages/
 #1474588997
@@ -41446,7 +41446,7 @@ pip install jedi
 #1474590354
 pip -vvv install jedi
 #1474590385
-deactivate 
+deactivate
 #1474590389
 cd
 #1474590391
@@ -41484,19 +41484,19 @@ pip show jedi
 #1474590631
 pip -vvv install jedi --no-cache-dir
 #1474590662
-pip -vvv install epc --no-cache-dir 
+pip -vvv install epc --no-cache-dir
 #1474590675
-deactivate 
+deactivate
 #1474590681
 workon planx-eclipse
 #1474590686
 pip -vvv install jedi --no-cache-dir
 #1474590692
-pip -vvv install epc --no-cache-dir 
+pip -vvv install epc --no-cache-dir
 #1474590715
-pip -vvv install pylint --no-cache-dir 
+pip -vvv install pylint --no-cache-dir
 #1474590734
-pip -vvv install argparse --no-cache-dir 
+pip -vvv install argparse --no-cache-dir
 #1474591023
 pip -vvv install yapf autopep8 importmagic --no-cache-dir
 #1474591040
@@ -41512,15 +41512,15 @@ cd src/plan-construction/pxplanner/
 #1474647409
 ls
 #1474916136
-cd 
+cd
 #1474916143
 cd src/rspace-eclipse/scharp/
 #1474916149
 git pull --all --prune
 #1474916157
-git branch 
+git branch
 #1474916170
-git checkout -t origin/drs4 
+git checkout -t origin/drs4
 #1474916174
 git pull
 #1474925719
@@ -41532,7 +41532,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler.
 #1474925771
 git commit -m "Fixed problems with time bounds of orbit activity for tanker resources."
 #1474925781
-git push origin drs4 
+git push origin drs4
 #1474997092
 exit
 #1474997094
@@ -41554,7 +41554,7 @@ pip install -U pip-tools --no-cache-dir
 #1475004661
 pip install -U pxrancher pxsvchost pxbuild --no-cache-dir
 #1475004712
-more .pip/pip.conf 
+more .pip/pip.conf
 #1475004737
 pip install -U pxrancher pxsvchost pxbuild --no-cache-dir
 #1475004806
@@ -41568,15 +41568,15 @@ git add Instructions_For_Marcel.txt
 #1475004834
 git commit -m "added instructions."
 #1475004842
-git push origin master 
+git push origin master
 #1475006366
 ssh-keygen -R github-enterprise.px.ftw
 #1475006379
 ssh-keygen -R 10.128.1.118
 #1475006382
-git push origin master 
+git push origin master
 #1475006395
-./update-git.sh 
+./update-git.sh
 #1475006514
 cd ..
 #1475006519
@@ -41584,7 +41584,7 @@ cd ../pxbuild-test/
 #1475006521
 ls
 #1475006528
-pxbuild-upstream fetch-gocd pxbox-testbed-dev 
+pxbuild-upstream fetch-gocd pxbox-testbed-dev
 #1475006542
 pxbuild-upstream tags2dir pxbox pxbox-debug default_seed
 #1475006555
@@ -41612,7 +41612,7 @@ git status
 #1475018287
 git commit -m "Fixed time bounds for tanker activities."
 #1475018296
-git push origin drs4 
+git push origin drs4
 #1475026551
 cd src/rspace-eclipse/scharp/
 #1475026555
@@ -41622,7 +41622,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/ControlAirUnitScheduler
 #1475026589
 git commit -m "Removed old code copied from tanker scheduler."
 #1475026594
-git push origin drs4 
+git push origin drs4
 #1475026600
 git pull
 #1475027090
@@ -41636,7 +41636,7 @@ git status
 #1475027162
 git commit -m "Fixed json unit contract file."
 #1475027171
-git push origin drs4 
+git push origin drs4
 #1475103980
 git pull
 #1475103999
@@ -41650,7 +41650,7 @@ git pull
 #1475104034
 git pull core dev
 #1475104043
-git push origin dev 
+git push origin dev
 #1475104072
 cd ../planconstruction-pxluna
 #1475104075
@@ -41660,7 +41660,7 @@ git remote -v
 #1475104093
 git pull core dev
 #1475104103
-git push origin dev 
+git push origin dev
 #1475104115
 git pull --all --prune
 #1475104131
@@ -41718,7 +41718,7 @@ cd ../px-controller-msc/
 #1475104361
 git pull
 #1475104374
-workon planx 
+workon planx
 #1475104386
 pip install pxsvchost pxrancher -U
 #1475104438
@@ -41968,7 +41968,7 @@ git status
 #1475258598
 git diff ../tests/test_action_recommender.py
 #1475264854
-cd 
+cd
 #1475264859
 cd src/plan-construction/
 #1475264860
@@ -41984,7 +41984,7 @@ git pull
 #1475264940
 ls
 #1475264948
-more README.md 
+more README.md
 #1475264984
 cd ..
 #1475265001
@@ -42072,7 +42072,7 @@ workon planx-eclipse
 #1475526786
 git clone https://github-enterprise.px.ftw/plan-construction/mono.git
 #1475526806
-cd mono 
+cd mono
 #1475526821
 git submodule update --init plan-construction/
 #1475526855
@@ -42122,7 +42122,7 @@ git remote -v
 #1475528473
 git checkout staging4
 #1475528495
-git branch 
+git branch
 #1475521149
 ssh -i ~/.ssh/planx_key ubuntu@gocd-integration-agent07
 #1475528935
@@ -42162,15 +42162,15 @@ git commit -m "Fixed merge conflicts."
 #1475602818
 git pull
 #1475602836
-git push origin drs4 
+git push origin drs4
 #1475602852
-cd 
+cd
 #1475602858
 cd src/plan-construction/
 #1475602885
 mkdir planx-monorepo
 #1475602906
-cp marcel-utils/cruise-config.xml 
+cp marcel-utils/cruise-config.xml
 #1475602914
 cp marcel-utils/cruise-config.xml planx-monorepo/
 #1475602922
@@ -42204,7 +42204,7 @@ ls
 #1475613003
 ls -al
 #1475613007
-more .gitmodules 
+more .gitmodules
 #1475614502
 ls
 #1475614601
@@ -42220,11 +42220,11 @@ cd ..
 #1475614639
 ls -al
 #1475614644
-more .gitmodules 
+more .gitmodules
 #1475614821
 git config -f .gitmodules submodule.Controller/px-controller-msc.branch dev
 #1475614825
-more .gitmodules 
+more .gitmodules
 #1475614842
 git submodule update --remote
 #1475614863
@@ -42248,29 +42248,29 @@ ls
 #1475615280
 cd ..
 #1475615287
-more .gitmodules 
+more .gitmodules
 #1475615399
-cd plan-construction/pxplanner/tests/run_tests.sh 
+cd plan-construction/pxplanner/tests/run_tests.sh
 #1475615409
-more plan-construction/pxplanner/tests/run_tests.sh 
+more plan-construction/pxplanner/tests/run_tests.sh
 #1475615486
 cp ../../plan-construction/planx-monorepo/create_submodules_for_mono.sh .
 #1475615487
 ls
 #1475615496
-chmod +x create_submodules_for_mono.sh 
+chmod +x create_submodules_for_mono.sh
 #1475615500
-./create_submodules_for_mono.sh 
+./create_submodules_for_mono.sh
 #1475615525
 cp ../../plan-construction/planx-monorepo/create_submodules_for_mono.sh .
 #1475615527
-chmod +x create_submodules_for_mono.sh 
+chmod +x create_submodules_for_mono.sh
 #1475615531
-./create_submodules_for_mono.sh 
+./create_submodules_for_mono.sh
 #1475620677
 ls
 #1475620696
-more .gitmodules 
+more .gitmodules
 #1475688978
 his | grep ssh
 #1475690991
@@ -42330,7 +42330,7 @@ cd ../..
 #1475691413
 ls
 #1475691419
-more import.sh 
+more import.sh
 #1475691426
 cd ..
 #1475691427
@@ -42340,7 +42340,7 @@ cp create_submodules_for_mono.sh mono/
 #1475691438
 ls
 #1475691445
-./create_submodules_for_mono.sh 
+./create_submodules_for_mono.sh
 #1475691452
 cd mono/
 #1475691452
@@ -42392,7 +42392,7 @@ workon planx-eclipse
 #1475692059
 alias
 #1475691456
-./create_submodules_for_mono.sh 
+./create_submodules_for_mono.sh
 #1475692076
 pip-upgrade
 #1475692215
@@ -42412,7 +42412,7 @@ cd luna-seed-mix/
 #1475692319
 ls
 #1475692321
-./pull_data.sh 
+./pull_data.sh
 #1475692440
 ls
 #1475692448
@@ -42454,7 +42454,7 @@ git status
 #1475704806
 git pull --all
 #1475704820
-git push -u origin staging4 
+git push -u origin staging4
 #1475704862
 git remote -v
 #1475704868
@@ -42464,7 +42464,7 @@ cd .git
 #1475704876
 ls
 #1475704878
-more config 
+more config
 #1475705019
 cd ..
 #1475705020
@@ -42472,7 +42472,7 @@ ls
 #1475705021
 his
 #1475705032
-git push -u origin staging4 
+git push -u origin staging4
 #1475688999
 ssh -i ~/.ssh/planx_key ubuntu@gocd-integration-agent24
 #1475800870
@@ -42480,17 +42480,17 @@ cd rspace-eclipse/scharp/
 #1475800876
 git pull --all --prune
 #1475800886
-git checkout master 
+git checkout master
 #1475800889
 git pull
 #1475800900
-git checkout -t origin/marcel-fix-tanker-profile 
+git checkout -t origin/marcel-fix-tanker-profile
 #1475800902
 git pull
 #1475800910
 ls
 #1475800916
-rm hs_err_pid2576.log 
+rm hs_err_pid2576.log
 #1475800919
 ls
 #1475800925
@@ -42548,17 +42548,17 @@ cd mono-copy-test/
 #1475863095
 ls
 #1475863099
-git checkout mono-imported 
+git checkout mono-imported
 #1475863108
 git pull
 #1475863168
-git branch 
+git branch
 #1475863176
 git pull --all --prune
 #1475863195
 git branch staging4
 #1475863202
-git checkout staging4 
+git checkout staging4
 #1475863205
 git status
 #1475863207
@@ -42572,7 +42572,7 @@ cd ..
 #1475863214
 ls
 #1475863231
-git push -u origin staging4 
+git push -u origin staging4
 #1475864616
 pxbuild --help
 #1475864659
@@ -42584,7 +42584,7 @@ git status
 #1475864814
 git commit -am "Added project name to pxbuild."
 #1475864824
-git push -u origin staging4 
+git push -u origin staging4
 #1475870298
 ls
 #1475870305
@@ -42592,11 +42592,11 @@ cd mono-copy-test/
 #1475870306
 ls
 #1475870324
-python 
+python
 #1475870737
 ls
 #1475870747
-python update_pxbuildconf.py 
+python update_pxbuildconf.py
 #1475871686
 cd controller/
 #1475871686
@@ -42624,13 +42624,13 @@ ls
 #1475871750
 cd ../..
 #1475871758
-python update_pxbuildconf.py 
+python update_pxbuildconf.py
 #1475872211
 git status
 #1475872230
-more  appstore/applications/pxbuild.conf 
+more  appstore/applications/pxbuild.conf
 #1475872261
-more plan-construction/pxplanner/pxbuild.conf 
+more plan-construction/pxplanner/pxbuild.conf
 #1475872289
 pxbuild --project plan-construction/pxplanner all
 #1475872563
@@ -42650,7 +42650,7 @@ cd ..
 #1475873962
 ls
 #1475874006
-git add appstore/ controller/ core/ execution/ plan-construction/ presentation/ px-integration/ px-playbooks/ range/ wargaming/ 
+git add appstore/ controller/ core/ execution/ plan-construction/ presentation/ px-integration/ px-playbooks/ range/ wargaming/
 #1475874009
 git status
 #1475874139
@@ -42664,7 +42664,7 @@ git status
 #1475874351
 git commit -m "PLX-11620 Added project name to build config file."
 #1475874359
-git push -u origin staging4 
+git push -u origin staging4
 #1476201034
 ping google.com
 #1476201134
@@ -42690,7 +42690,7 @@ cd runtimetools/
 #1476215799
 ls
 #1476215804
-more pxbuild.conf 
+more pxbuild.conf
 #1476215813
 git status
 #1476215824
@@ -42714,17 +42714,17 @@ ls
 #1476224753
 ls -al
 #1476224764
-git branch 
+git branch
 #1476224767
 cd ..
 #1476224771
-git branch 
+git branch
 #1476224774
 cd ..
 #1476224776
 ls -al
 #1476224783
-more .gitmodules 
+more .gitmodules
 #1476224885
 ls
 #1476224890
@@ -42756,7 +42756,7 @@ ls
 #1476226540
 git pull --all
 #1476226546
-git checkout staging4 
+git checkout staging4
 #1476226549
 ls
 #1476226553
@@ -42786,7 +42786,7 @@ git branch
 #1476235418
 git pull
 #1476235445
-git checkout marcel-cleanup-profile 
+git checkout marcel-cleanup-profile
 #1476235456
 mvn generate-sources
 #1476298494
@@ -42838,7 +42838,7 @@ cd px-controller-msc/
 #1476298599
 ls
 #1476298602
-more pxbuild.conf 
+more pxbuild.conf
 #1476298629
 cd ..
 #1476298629
@@ -42856,7 +42856,7 @@ cd px-orchestrator/
 #1476299480
 ls
 #1476299484
-more pxbuild.conf 
+more pxbuild.conf
 #1476299487
 ls
 #1476299971
@@ -42882,9 +42882,9 @@ cd src/rspace-eclipse/scharp/
 #1476378016
 git status
 #1476378021
-git checkout master 
+git checkout master
 #1476378024
-git status 
+git status
 #1476378037
 git pull --all --prune
 #1476378159
@@ -42892,7 +42892,7 @@ git tag -a TE2 -m "Version used for Test and Evaluation 2."
 #1476378211
 git push origin TE2
 #1476378241
-git checkout marcel-cleanup-profile 
+git checkout marcel-cleanup-profile
 #1476378330
 cd ..
 #1476378333
@@ -42926,9 +42926,9 @@ git status
 #1476378445
 git pull --all --prune
 #1476378454
-git branch 
+git branch
 #1476378465
-git branch -d marcel-investigate-vmf-fails 
+git branch -d marcel-investigate-vmf-fails
 #1476378467
 ls
 #1476390592
@@ -42936,7 +42936,7 @@ git status
 #1476390635
 git pull --all
 #1476390642
-git checkout drs4 
+git checkout drs4
 #1476390655
 mvn generate-sources
 #1476426575
@@ -42956,13 +42956,13 @@ git commit -m "Several changes to capacity profile and supporting datastructures
 #1476426664
 git status
 #1476426673
-git push -u origin marcel-cleanup-profile 
+git push -u origin marcel-cleanup-profile
 #1476426683
 git status
 #1476426685
 ls
 #1476460970
-cd 
+cd
 #1476460978
 cd src/planx-mono-test/mono/
 #1476460979
@@ -43006,7 +43006,7 @@ cd gocdparser/
 #1476461102
 ls
 #1476461105
-more gocd_parser.py 
+more gocd_parser.py
 #1476461182
 ls
 #1476461184
@@ -43030,7 +43030,7 @@ cd planx-mono-test/
 #1476461223
 ls
 #1476461233
-cd mono/ 
+cd mono/
 #1476461234
 ls
 #1476461248
@@ -43052,13 +43052,13 @@ la
 #1476461827
 ls
 #1476461833
-python update_pxbuild.py 
+python update_pxbuild.py
 #1476463109
 git status
 #1476463114
-python update_pxbuild.py 
+python update_pxbuild.py
 #1476463156
-more core/pxavro-maven-plugin/pxbuild.conf 
+more core/pxavro-maven-plugin/pxbuild.conf
 #1476463160
 git status
 #1476463190
@@ -43068,17 +43068,17 @@ git status
 #1476463206
 git commit -m "Added pxbuild.conf file to repos."
 #1476463212
-git push -u origin staging4 
+git push -u origin staging4
 #1476482740
 git add src/main/java/edu/kestrel/scharp/planner/datastructures/RBDoubleLinkedTree.java src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
 #1476482768
 git commit -m "Fixed profile remove node."
 #1476482778
-git push -u origin marcel-cleanup-profile 
+git push -u origin marcel-cleanup-profile
 #1476482783
 git pull --all
 #1476482797
-git checkout drs4 
+git checkout drs4
 #1476482801
 git pull
 #1476728749
@@ -43138,17 +43138,17 @@ git checkout marcel-pxbuild-conf
 #1476732302
 git checkout -b marcel-pxbuild-conf
 #1476732311
-git push origin marcel-pxbuild-conf 
+git push origin marcel-pxbuild-conf
 #1476732320
 git remote -v
 #1476732841
-git checkout staging4 
+git checkout staging4
 #1476732861
-git checkout marcel-pxbuild-conf 
+git checkout marcel-pxbuild-conf
 #1476732868
-git branch -D staging4 
+git branch -D staging4
 #1476732878
-git checkout -t origin/staging4 
+git checkout -t origin/staging4
 #1476732881
 git pull
 #1476732973
@@ -43158,9 +43158,9 @@ git status
 #1476732984
 git log
 #1476733011
-git checkout marcel-pxbuild-conf 
+git checkout marcel-pxbuild-conf
 #1476733022
-git branch -D staging4 
+git branch -D staging4
 #1476733031
 exit
 #1476733045
@@ -43176,9 +43176,9 @@ ls
 #1476733098
 git log
 #1476733132
-git diff marcel-pxbuild-conf 
+git diff marcel-pxbuild-conf
 #1476733205
-git checkout marcel-pxbuild-conf 
+git checkout marcel-pxbuild-conf
 #1476733208
 git log
 #1476733266
@@ -43224,7 +43224,7 @@ ls
 #1476736649
 git checkout -b staging4-rewrite-pxbuild-conf
 #1476736661
-python update_pxbuild.py 
+python update_pxbuild.py
 #1476736665
 git status
 #1476736678
@@ -43236,7 +43236,7 @@ git checkout staging4
 #1476736706
 git status
 #1476736716
-git branch -D staging4-rewrite-pxbuild-conf 
+git branch -D staging4-rewrite-pxbuild-conf
 #1476736718
 git status
 #1476736760
@@ -43250,9 +43250,9 @@ git status
 #1476736811
 git commit -m "Update pxbuild.conf file."
 #1476736820
-git push -U origin staging4 
+git push -U origin staging4
 #1476736827
-git push -u origin staging4 
+git push -u origin staging4
 #1476736834
 git status
 #1476737410
@@ -43278,7 +43278,7 @@ rm controller/mockruntimetools/pxbuild.conf core/px-avro-common/pxbuild.conf cor
 #1476737780
 git status
 #1476737808
-python update_pxbuild.py 
+python update_pxbuild.py
 #1476737839
 git reset --hard
 #1476737842
@@ -43290,7 +43290,7 @@ rm appstore/effects/pxbuild.conf appstore/plugins/pxbuild.conf appstore/pxappsto
 #1476737857
 git status
 #1476737886
-python update_pxbuild.py 
+python update_pxbuild.py
 #1476737901
 git status
 #1476737949
@@ -43306,7 +43306,7 @@ git commit -m "Fixed pxbuild.conf."
 #1476737981
 git status
 #1476738073
-git push -u origin staging4 
+git push -u origin staging4
 #1476738097
 git pull
 #1476738133
@@ -43318,11 +43318,11 @@ git reset bf1dbc0eed564549a132cd788e4b542854669cfa --hard
 #1476738458
 git status
 #1476738563
-git push -f origin staging4 
+git push -f origin staging4
 #1476738571
 git status
 #1476738582
-python update_pxbuild.pypy 
+python update_pxbuild.pypy
 #1476738588
 python update_pxbuild.py
 #1476738618
@@ -43336,13 +43336,13 @@ git status
 #1476738660
 git commit -m "Fixed pxbuild.conf files."
 #1476738667
-git push -u origin staging4 
+git push -u origin staging4
 #1476739026
 cd core/pxintegrator/
 #1476739027
 ls
 #1476739031
-more pxbuild.conf 
+more pxbuild.conf
 #1476728785
 ssh ubuntu@10.130.2.77 -i ~/.ssh/planx_key
 #1476814736
@@ -43352,15 +43352,15 @@ cd ..
 #1476814738
 ls
 #1476814755
-diff update_pxbuild.py mono/update_pxbuild.py 
+diff update_pxbuild.py mono/update_pxbuild.py
 #1476814768
 his | grep scp
 #1476814821
 scp -vr -i ~/.ssh/planx_key ubuntu@10.130.2.77:/home/ubuntu/src/planx-mono-test/mergeall.sh .
 #1476814834
-more mergeall.sh 
+more mergeall.sh
 #1476814953
-cd mono 
+cd mono
 #1476814954
 ls
 #1476814956
@@ -43376,13 +43376,13 @@ cd ..
 #1476817113
 git status
 #1476817133
-git merge origin/dev 
+git merge origin/dev
 #1476817147
 git status
 #1476817152
 git log
 #1476817170
-git push origin staging4 
+git push origin staging4
 #1476819466
 ls
 #1476828749
@@ -43498,7 +43498,7 @@ touch pom.xml
 #1476995235
 ls
 #1476995413
-mvn 
+mvn
 #1476996869
 mvn -e
 #1476996881
@@ -43538,7 +43538,7 @@ mvn clean
 #1476999148
 ls
 #1476999152
-cd pxplanner.hcl.template 
+cd pxplanner.hcl.template
 #1476999159
 cd src/
 #1476999160
@@ -43548,9 +43548,9 @@ cd ..
 #1476999162
 ls
 #1476999170
-rm pop.xml 
+rm pop.xml
 #1476999174
-more setup.py 
+more setup.py
 #1476999552
 python setup.py develop
 #1476999564
@@ -43596,7 +43596,7 @@ ls
 #1477003820
 mvn test -X
 #1477004063
-mvn 
+mvn
 #1477004085
 mvn exec:exec
 #1477004471
@@ -43670,7 +43670,7 @@ cd ..
 #1477007971
 mvn compile
 #1477007994
-cd core 
+cd core
 #1477007995
 ls
 #1477008003
@@ -43678,7 +43678,7 @@ cd px-luna-client/
 #1477008004
 ls
 #1477008018
-more tox.ini 
+more tox.ini
 #1477008028
 cd ..
 #1477008029
@@ -43700,11 +43700,11 @@ cd ..
 #1477008064
 ls
 #1477008079
-more integration-requirements.txt 
+more integration-requirements.txt
 #1477008090
-more testing-requirements.txt 
+more testing-requirements.txt
 #1477008101
-more setup.py 
+more setup.py
 #1477008292
 cp ../../plan-construction/pxplanner/pom.xml .
 #1477008293
@@ -43734,9 +43734,9 @@ mvn install
 #1477076973
 pxbuild all
 #1477077067
-./clean.sh 
+./clean.sh
 #1477077071
-more clean.sh 
+more clean.sh
 #1477077106
 ls
 #1477077117
@@ -43778,7 +43778,7 @@ pxbuild all
 #1477077530
 ls
 #1477077544
-./build/build.sh 
+./build/build.sh
 #1477077617
 cd ..
 #1477077618
@@ -43786,9 +43786,9 @@ ls
 #1477077628
 cd px-luna
 #1477077634
-./build/build.sh 
+./build/build.sh
 #1477081690
-mvn compile test 
+mvn compile test
 #1477083768
 pip install pytest-incremental
 #1477083772
@@ -43812,11 +43812,11 @@ py.test --inc-graph-image
 #1477084517
 ls
 #1477084534
-more deps.dot 
+more deps.dot
 #1477084597
 git status
 #1477084637
-more .gitignore 
+more .gitignore
 #1477084647
 ls
 #1477084670
@@ -43838,11 +43838,11 @@ ps -A
 #1477086778
 kill -9 80163
 #1477086288
-py.test --inc-deps --inc-path plan-construction --inc-path controller 
+py.test --inc-deps --inc-path plan-construction --inc-path controller
 #1477087264
 ls -al
 #1477087270
-more .pytest-incremental.db 
+more .pytest-incremental.db
 #1477087278
 ls
 #1477087287
@@ -43860,7 +43860,7 @@ pytest -inc plan-construction/pxplanner/tests
 #1477092903
 ls -al
 #1477092908
-rm -rf .pytest-incremental.db 
+rm -rf .pytest-incremental.db
 #1477092911
 pytest -inc plan-construction/pxplanner/tests
 #1477092920
@@ -43874,7 +43874,7 @@ cd pxplanner/
 #1477092936
 ls -al
 #1477092945
-rm .pytest-incremental.db 
+rm .pytest-incremental.db
 #1477092970
 py.test tests
 #1477093021
@@ -43886,7 +43886,7 @@ py.test tests
 #1477093243
 ls
 #1477093248
-more testing-requirements.txt 
+more testing-requirements.txt
 #1477093265
 cd test
 #1477093268
@@ -43910,7 +43910,7 @@ pytest --trace-config
 #1477093639
 ls
 #1477093646
-more conftest.py 
+more conftest.py
 #1477093681
 pytest -no pytest_incremental
 #1477093691
@@ -43924,11 +43924,11 @@ pytest -no pytest_incremental
 #1477093738
 ls -al
 #1477093747
-./run_tests.sh 
+./run_tests.sh
 #1477093774
 pip uninstall pytest_incremental
 #1477093780
-./run_tests.sh 
+./run_tests.sh
 #1477093802
 cd ..
 #1477093812
@@ -43938,7 +43938,7 @@ cd ..
 #1477093921
 cd controller/
 #1477093926
-pytest . 
+pytest .
 #1477094012
 ls
 #1477094056
@@ -43946,7 +43946,7 @@ cd px-controller-cal/
 #1477094057
 ls
 #1477094061
-more Makefile 
+more Makefile
 #1477094086
 ls
 #1477094089
@@ -43970,7 +43970,7 @@ cd ..
 #1477094116
 ls
 #1477094125
-more requirements.txt 
+more requirements.txt
 #1477094155
 cd ..
 #1477094163
@@ -43982,7 +43982,7 @@ cd tests/
 #1477094170
 ls
 #1477094174
-./run_tests.sh 
+./run_tests.sh
 #1477094253
 cd ..
 #1477094255
@@ -43996,7 +43996,7 @@ rm -rf __pycache__/
 #1477094265
 ls
 #1477094285
-more README.md 
+more README.md
 #1477094321
 ls
 #1477094326
@@ -44024,7 +44024,7 @@ cd ui/
 #1477094377
 ls
 #1477094389
-more handlers.py 
+more handlers.py
 #1477094416
 ls
 #1477100303
@@ -44038,7 +44038,7 @@ cd src/planx-mono-test/
 #1477335463
 ls
 #1477335475
-more README.md 
+more README.md
 #1477335498
 cd mono/
 #1477335499
@@ -44066,7 +44066,7 @@ ls
 #1477335633
 mv import_commands.asc import_commands
 #1477335656
-edit import_commands 
+edit import_commands
 #1477335747
 his | grep ssh
 #1477335764
@@ -44076,11 +44076,11 @@ git status
 #1477336593
 ls
 #1477336609
-chmod +x build-mono-repo.sh 
+chmod +x build-mono-repo.sh
 #1477336617
-chmod +x import.sh 
+chmod +x import.sh
 #1477336622
-chmod +x mergeall.sh 
+chmod +x mergeall.sh
 #1477336624
 ls
 #1477336630
@@ -44090,7 +44090,7 @@ git status
 #1477336666
 git commit -m "Added scripts to generate/import mono repo from individual git repos."
 #1477336719
-git push -u origin staging4 
+git push -u origin staging4
 #1477337043
 man parallel
 #1477339397
@@ -44148,27 +44148,27 @@ pipdeptree -p pxavro
 #1477343212
 python
 #1477345234
-python mono-scripts/merge-requirements.py 
+python mono-scripts/merge-requirements.py
 #1477345254
 pip install requirements-parser
 #1477345266
-python mono-scripts/merge-requirements.py 
+python mono-scripts/merge-requirements.py
 #1477345423
-more appstore/pxappstore/requirements.txt 
+more appstore/pxappstore/requirements.txt
 #1477345552
-python mono-scripts/merge-requirements.py 
+python mono-scripts/merge-requirements.py
 #1477346073
 pip freeze | grep req
 #1477346257
-python mono-scripts/merge-requirements.py 
+python mono-scripts/merge-requirements.py
 #1477347456
 python
 #1477348564
 ls core/px-avro
 #1477348582
-more setup.py 
+more setup.py
 #1477348602
-more core/px-avro/setup.py 
+more core/px-avro/setup.py
 #1477348632
 ls
 #1477348639
@@ -44180,7 +44180,7 @@ cd pxcommon/
 #1477348644
 ls
 #1477348647
-more setup.py 
+more setup.py
 #1477348728
 cd ../..
 #1477348741
@@ -44188,17 +44188,17 @@ python setup.py develop
 #1477348817
 python setup.py version
 #1477349019
-python mono-scripts/merge-requirements.py 
+python mono-scripts/merge-requirements.py
 #1477349112
-more requirements.txt 
+more requirements.txt
 #1477349196
-python mono-scripts/merge-requirements.py 
+python mono-scripts/merge-requirements.py
 #1477349217
-more requirements.txt 
+more requirements.txt
 #1477349285
-python mono-scripts/merge-requirements.py 
+python mono-scripts/merge-requirements.py
 #1477349451
-more requirements.txt 
+more requirements.txt
 #1477349606
 python setup.py develop
 #1477337093
@@ -44216,11 +44216,11 @@ cd planx.egg-info/
 #1477413274
 ls
 #1477413281
-more requires.txt 
+more requires.txt
 #1477413286
 ls
 #1477413291
-more SOURCES.txt 
+more SOURCES.txt
 #1477413313
 cd ..
 #1477413322
@@ -44252,7 +44252,7 @@ ls
 #1477415227
 cd px-forge/
 #1477415238
-more setup.py 
+more setup.py
 #1477415315
 cd ..
 #1477415317
@@ -44270,13 +44270,13 @@ cd px-luna
 #1477415353
 ls
 #1477415377
-cd .. 
+cd ..
 #1477415383
 cd px-luna-client/
 #1477415384
 ls
 #1477415390
-more setup.py 
+more setup.py
 #1477415493
 ls
 #1477415521
@@ -44290,15 +44290,15 @@ cd ..
 #1477415595
 python setup.py install
 #1477416070
-grep -r setup.py 
+grep -r setup.py
 #1477416142
-grep -r "base_package" setup.py 
+grep -r "base_package" setup.py
 #1477416329
-find -r "setup.py" * 
+find -r "setup.py" *
 #1477416342
-find  "setup.py" ./ 
+find  "setup.py" ./
 #1477416395
-find . -name "setup.py"  
+find . -name "setup.py"
 #1477416500
 find . -name "setup.py"  | grep "base_package"
 #1477416519
@@ -44312,9 +44312,9 @@ find . -name "setup.py"  -exec grep -i "base_package" \;
 #1477416822
 find . -name "setup.py"  -exec grep -i "base_package" {} +
 #1477418213
-python mono-scripts/collect-package-meta-data.py 
+python mono-scripts/collect-package-meta-data.py
 #1477418796
-more appstore/pxappstore/setup.py 
+more appstore/pxappstore/setup.py
 #1477418923
 python setup.py --help
 #1477418940
@@ -44322,7 +44322,7 @@ python setup.py --help-commands
 #1477419068
 python setup.py check
 #1477420248
-python mono-scripts/collect-package-meta-data.py 
+python mono-scripts/collect-package-meta-data.py
 #1477420376
 python appstore/pxappstore/setup.py check
 #1477420383
@@ -44394,7 +44394,7 @@ ls
 #1477425178
 cd ..
 #1477425180
-ls 
+ls
 #1477425191
 cd src/
 #1477425191
@@ -44446,9 +44446,9 @@ cd sample_svc/
 #1477425919
 ls
 #1477425929
-more __init__.py 
+more __init__.py
 #1477425941
-more services.py 
+more services.py
 #1477425960
 cd ../..
 #1477425977
@@ -44458,9 +44458,9 @@ cd ../..
 #1477426070
 cd -
 #1477426076
-more setup.py 
+more setup.py
 #1477426123
-more requirements.txt 
+more requirements.txt
 #1477426169
 cd ..
 #1477426173
@@ -44488,11 +44488,11 @@ cd execution/runtime/bin/
 #1477426383
 ls
 #1477426390
-more setup.py 
+more setup.py
 #1477426441
 ls
 #1477426446
-more gen_files.sh 
+more gen_files.sh
 #1477426456
 ls
 #1477426476
@@ -44592,13 +44592,13 @@ cd ..
 #1477426992
 ls
 #1477426996
-more setup.py 
+more setup.py
 #1477427160
 pip install .
 #1477427194
 cd ../..
 #1477427198
-pytest 
+pytest
 #1477428501
 cd ~/PythonEnvs/planx-eclipse/lib/python2.7/site-packages/pxavro
 #1477428502
@@ -44644,7 +44644,7 @@ cd
 #1477428840
 cd src/planx-mono-test/mono/
 #1477430704
-cd 
+cd
 #1477430713
 cd src/rspace-eclipse/scharp/
 #1477430715
@@ -44658,9 +44658,9 @@ ls
 #1477436731
 ls core/px-luna-analytics/src/Test_luna_analytics/
 #1477438641
-chmod +x install-all-packages.sh 
+chmod +x install-all-packages.sh
 #1477438644
-./install-all-packages.sh 
+./install-all-packages.sh
 #1477439192
 pytest
 #1477439220
@@ -44672,7 +44672,7 @@ cd core px-avro
 #1477439264
 cd px-avro
 #1477439270
-./build/build.sh 
+./build/build.sh
 #1477439318
 pip install .
 #1477439343
@@ -44688,7 +44688,7 @@ cd core/px-avro
 #1477439474
 ls
 #1477439489
-./clean.sh 
+./clean.sh
 #1477439492
 ls
 #1477439495
@@ -44700,7 +44700,7 @@ cd pxavro
 #1477439500
 ls
 #1477439505
-more README.md 
+more README.md
 #1477439528
 ls
 #1477439538
@@ -44714,7 +44714,7 @@ mvn generate-sources --offline
 #1477439597
 mvn clean
 #1477439624
-./build/build.sh 
+./build/build.sh
 #1477439701
 ls
 #1477439711
@@ -44726,7 +44726,7 @@ mvn clean
 #1477439787
 ls
 #1477439813
-./build/buildFromLocalAvro.sh 
+./build/buildFromLocalAvro.sh
 #1477440380
 exit
 #1477440384
@@ -44756,7 +44756,7 @@ ls
 #1477440889
 ./build/build.sh --avro ../px-avro -DskipDeb=false -DskipTests=true --offline
 #1477440896
-mvn 
+mvn
 #1477440919
 mvn install
 #1477440945
@@ -44806,7 +44806,7 @@ ls
 #1477441360
 cd ..
 #1477441371
-pip uninstall pxplanner 
+pip uninstall pxplanner
 #1477441395
 pip uninstall pxluna-client
 #1477441401
@@ -44814,41 +44814,41 @@ pip uninstall planx
 #1477441409
 pip freeze
 #1477441480
-pip uninstall pxwebcommon pxtrace pxwebserver pxwebtransform pxwebxform-initial 
+pip uninstall pxwebcommon pxtrace pxwebserver pxwebtransform pxwebxform-initial
 #1477441508
-pip uninstall  pxtrace pxwebserver pxwebtransform pxwebxform-initial 
+pip uninstall  pxtrace pxwebserver pxwebtransform pxwebxform-initial
 #1477441522
-pip uninstall pxwebserver pxwebtransform pxwebxform-initial 
+pip uninstall pxwebserver pxwebtransform pxwebxform-initial
 #1477441533
-pip uninstall  pxwebtransform pxwebxform-initial 
+pip uninstall  pxwebtransform pxwebxform-initial
 #1477441544
-pip uninstall  pxwebxform-initial 
+pip uninstall  pxwebxform-initial
 #1477441549
 pip freeze
 #1477441598
-pip uninstall pxnovnc pxorchestrator pxrelaynetworklib pxscoreobjects runtimetools sample-svc 
+pip uninstall pxnovnc pxorchestrator pxrelaynetworklib pxscoreobjects runtimetools sample-svc
 #1477441626
-pip uninstall pxorchestrator pxrelaynetworklib pxscoreobjects runtimetools sample-svc 
+pip uninstall pxorchestrator pxrelaynetworklib pxscoreobjects runtimetools sample-svc
 #1477441635
-pip uninstall pxrelaynetworklib pxscoreobjects runtimetools sample-svc 
+pip uninstall pxrelaynetworklib pxscoreobjects runtimetools sample-svc
 #1477441644
-pip uninstall pxscoreobjects runtimetools sample-svc 
+pip uninstall pxscoreobjects runtimetools sample-svc
 #1477441654
-pip uninstall pxscoreobjects sample-svc 
+pip uninstall pxscoreobjects sample-svc
 #1477441661
 pip freeze
 #1477441735
-pip uninstall pxcommon pxcontrollermsc pxforge pxintegrator pxlogrecv pxmercury 
+pip uninstall pxcommon pxcontrollermsc pxforge pxintegrator pxlogrecv pxmercury
 #1477441777
-pip uninstall pxcontrollermsc pxforge pxintegrator pxlogrecv pxmercury 
+pip uninstall pxcontrollermsc pxforge pxintegrator pxlogrecv pxmercury
 #1477441786
-pip uninstall  pxforge pxintegrator pxlogrecv pxmercury 
+pip uninstall  pxforge pxintegrator pxlogrecv pxmercury
 #1477441794
-pip uninstall  pxintegrator pxlogrecv pxmercury 
+pip uninstall  pxintegrator pxlogrecv pxmercury
 #1477441813
-pip uninstall  pxlogrecv pxmercury 
+pip uninstall  pxlogrecv pxmercury
 #1477441823
-pip uninstall  pxmercury 
+pip uninstall  pxmercury
 #1477441841
 pip freeze
 #1477441857
@@ -44870,7 +44870,7 @@ sudo pip freezae
 #1477441957
 sudo pip freeze
 #1477442091
-sudo pip uninstall pxrancher pxthrift pxbuild px-pytest-tornado 
+sudo pip uninstall pxrancher pxthrift pxbuild px-pytest-tornado
 #1477442107
 sudo pip freeze
 #1477442151
@@ -44884,17 +44884,17 @@ pip freeze | grep etr
 #1477442276
 pip uninstall etr-agent etr-controller etr-host
 #1477442309
-pytest 
+pytest
 #1477442343
-./install-all-packages.sh 
+./install-all-packages.sh
 #1477442571
-pytest 
+pytest
 #1477442589
 pytest plan-construction/pxplanner/tests/
 #1477442602
 cd plan-construction/pxplanner/tests/
 #1477442605
-./run_tests.sh 
+./run_tests.sh
 #1477501193
 ssh ubuntu@10.130.2.77 -i ~/.ssh/planx_key
 #1477501258
@@ -44914,13 +44914,13 @@ git status
 #1477501376
 git add update_pxbuild.py
 #1477501388
-more collect-package-meta-data.py 
+more collect-package-meta-data.py
 #1477501402
 ls
 #1477501412
 git status
 #1477501421
-more merge-requirements.py 
+more merge-requirements.py
 #1477501457
 git add merge-requirements.py
 #1477501459
@@ -44938,13 +44938,13 @@ cp install-all-packages.sh mono-scripts/
 #1477501518
 git add mono-scripts/install-all-packages.sh
 #1477501530
-more planx-all-packages.txt 
+more planx-all-packages.txt
 #1477501540
-rm planx-all-packages.txt 
+rm planx-all-packages.txt
 #1477501540
 ls
 #1477501548
-more setup-dirs.txt 
+more setup-dirs.txt
 #1477501574
 cp setup-dirs.txt mono-scripts/
 #1477501576
@@ -44956,13 +44956,13 @@ git add setup-dirs.txt
 #1477501687
 git commit -m "PLX-11620 Scripts to collect package data and help install packages."
 #1477501693
-git push origin staging4 
+git push origin staging4
 #1477501798
 cd ..
 #1477501807
 cd core/px-avro
 #1477501810
-./clean.sh 
+./clean.sh
 #1477501817
 mvn clean
 #1477501835
@@ -44980,11 +44980,11 @@ cd ../..
 #1477521334
 mvn validate
 #1477521348
-mvn 
+mvn
 #1477521354
 ls
 #1477521362
-more pom.xml.pxbuild 
+more pom.xml.pxbuild
 #1477521374
 mvn --help
 #1477521404
@@ -45048,13 +45048,13 @@ ls
 #1477581681
 clear
 #1477581700
-git checkout marcel-fix-tanker-profile 
+git checkout marcel-fix-tanker-profile
 #1477581712
-git checkout master 
+git checkout master
 #1477581727
-git branch -d marcel-fix-tanker-profile 
+git branch -d marcel-fix-tanker-profile
 #1477581735
-git checkout marcel-cleanup-profile 
+git checkout marcel-cleanup-profile
 #1477581738
 git pull
 #1477581742
@@ -45078,15 +45078,15 @@ git add requirements.txt
 #1477672872
 git commit -m "PLX-11620 Global requirements for mono repo."
 #1477672880
-cd 
+cd
 #1477672960
-git push -u origin staging4 
+git push -u origin staging4
 #1477673168
 exit
 #1477672440
 ssh ubuntu@10.130.2.77 -i ~/.ssh/planx_key
 #1477676156
-cd 
+cd
 #1477676173
 cd src/plan-construction/pxplanner/integration-
 #1477676175
@@ -45102,11 +45102,11 @@ cd ..
 #1477676192
 ls
 #1477676212
-more run_tests.sh.bak 
+more run_tests.sh.bak
 #1477676230
-more test_initial.py 
+more test_initial.py
 #1477676252
-more test_pxplanner_action_recommendation.py 
+more test_pxplanner_action_recommendation.py
 #1477676266
 cd ..
 #1477676267
@@ -45150,7 +45150,7 @@ git clone git@github-enterprise.px.ftw:core/pxavro-maven-plugin.git
 #1478035218
 cd pxavro-maven-plugin/
 #1478035222
-./build/build.sh 
+./build/build.sh
 #1478035250
 pxbuild all
 #1478035257
@@ -45166,7 +45166,7 @@ cd px-avro-common/
 #1478035329
 ls
 #1478035332
-./build/build.sh 
+./build/build.sh
 #1478035344
 mvn install
 #1478035353
@@ -45174,9 +45174,9 @@ cd ..
 #1478035359
 cd pxavro-maven-plugin/
 #1478035363
-./build/build.sh 
+./build/build.sh
 #1478035464
-cd 
+cd
 #1478035467
 cd .m2
 #1478035468
@@ -45246,7 +45246,7 @@ ls
 #1478186243
 make
 #1478186251
-./build 
+./build
 #1478186276
 brew install latex
 #1478186371
@@ -45254,19 +45254,19 @@ curl -L https://iterm2.com/misc/install_shell_integration_and_utilities.sh | bas
 #1478187999
 make
 #1478188004
-./build 
+./build
 #1478188849
 cd /Library/TeX/texbin
 #1478188850
 ls
 #1478188933
-diff ~/.bashrc ~/Dropbox/.bashrc 
+diff ~/.bashrc ~/Dropbox/.bashrc
 #1478189991
 ~
 #1478189998
 open /Applications/Xcode.app/Contents/Applications/FileMerge.app/
 #1478190912
-source ~/Dropbox/.bashrc-merged 
+source ~/Dropbox/.bashrc-merged
 #1478190921
 pwd
 #1478190922
@@ -45288,21 +45288,21 @@ cd
 #1478191502
 cd src/hallmark/hallmark/Proposal/
 #1478191505
-./build 
+./build
 #1478191985
-latex 
+latex
 #1478191999
 exit
 #1478035332
-./build/build.sh 
+./build/build.sh
 #1478035344
 mvn install
 #1478035359
 cd pxavro-maven-plugin/
 #1478035363
-./build/build.sh 
+./build/build.sh
 #1478035464
-cd 
+cd
 #1478035467
 cd .m2
 #1478035474
@@ -45342,13 +45342,13 @@ curl -L https://iterm2.com/misc/install_shell_integration_and_utilities.sh | bas
 #1478188849
 cd /Library/TeX/texbin
 #1478188933
-diff ~/.bashrc ~/Dropbox/.bashrc 
+diff ~/.bashrc ~/Dropbox/.bashrc
 #1478189991
 ~
 #1478189998
 open /Applications/Xcode.app/Contents/Applications/FileMerge.app/
 #1478190912
-source ~/Dropbox/.bashrc-merged 
+source ~/Dropbox/.bashrc-merged
 #1478190921
 pwd
 #1478190964
@@ -45368,7 +45368,7 @@ cd
 #1478191502
 cd src/hallmark/hallmark/Proposal/
 #1478191985
-latex 
+latex
 #1478192018
 which latex
 #1478192026
@@ -45380,7 +45380,7 @@ cd src/
 #1478192045
 cd hallmark/hallmark/Proposal/
 #1478198679
-more defs.tex 
+more defs.tex
 #1478199796
 latexmk
 #1478200045
@@ -45412,7 +45412,7 @@ make
 #1478210114
 git rm proposal.aux proposal.bbl proposal.blgls
 #1478210160
-git rm proposal.aux proposal.bbl proposal.blg proposal.synctex.gz proposal.fdb_latexmk proposal.fls 
+git rm proposal.aux proposal.bbl proposal.blg proposal.synctex.gz proposal.fdb_latexmk proposal.fls
 #1478210193
 git rm proposal.aux proposal.bbl proposal.blg proposal.synctex.gz
 #1478210231
@@ -45428,7 +45428,7 @@ git add ../.gitignore
 #1478210364
 git commit -m "Removed generated files."
 #1478210381
-git push origin master 
+git push origin master
 #1478210401
 rm *.bak
 #1478210407
@@ -45450,9 +45450,9 @@ whereis aspell
 #1478220184
 which aspell
 #1478280815
-./build 
+./build
 #1478281349
-more build 
+more build
 #1478281355
 pdflatex proposal.
 #1478282010
@@ -45466,7 +45466,7 @@ git add innovative-claims.tex
 #1478282077
 git commit -m "Added some additional text to the beginning of the text, elaborated on the benefits."
 #1478282091
-git push -u origin marcel-comments 
+git push -u origin marcel-comments
 #1478282101
 git pull
 #1478282115
@@ -45494,11 +45494,11 @@ ssh ubuntu@10.130.2.77 -i ~/.ssh/planx_key
 #1477581596
 cd src/rspace-eclipse/scharp/
 #1477581700
-git checkout marcel-fix-tanker-profile 
+git checkout marcel-fix-tanker-profile
 #1477581727
-git branch -d marcel-fix-tanker-profile 
+git branch -d marcel-fix-tanker-profile
 #1477581735
-git checkout marcel-cleanup-profile 
+git checkout marcel-cleanup-profile
 #1477672401
 his | grep ssh
 #1477672799
@@ -45510,13 +45510,13 @@ git add requirements.txt
 #1477672872
 git commit -m "PLX-11620 Global requirements for mono repo."
 #1477672880
-cd 
+cd
 #1477672960
-git push -u origin staging4 
+git push -u origin staging4
 #1477672440
 ssh ubuntu@10.130.2.77 -i ~/.ssh/planx_key
 #1477676156
-cd 
+cd
 #1477676173
 cd src/plan-construction/pxplanner/integration-
 #1477676175
@@ -45524,11 +45524,11 @@ cd src/plan-construction/pxplanner/integration-tests/
 #1477676186
 cd coa_test/
 #1477676212
-more run_tests.sh.bak 
+more run_tests.sh.bak
 #1477676230
-more test_initial.py 
+more test_initial.py
 #1477676252
-more test_pxplanner_action_recommendation.py 
+more test_pxplanner_action_recommendation.py
 #1478032664
 ssh ubuntu@10.130.2.77 -i ~/.ssh/planx_key
 #1478032675
@@ -45574,7 +45574,7 @@ mvn install
 #1478035359
 cd pxavro-maven-plugin/
 #1478035464
-cd 
+cd
 #1478035467
 cd .m2
 #1478035474
@@ -45618,13 +45618,13 @@ make
 #1478188849
 cd /Library/TeX/texbin
 #1478188933
-diff ~/.bashrc ~/Dropbox/.bashrc 
+diff ~/.bashrc ~/Dropbox/.bashrc
 #1478189991
 ~
 #1478189998
 open /Applications/Xcode.app/Contents/Applications/FileMerge.app/
 #1478190912
-source ~/Dropbox/.bashrc-merged 
+source ~/Dropbox/.bashrc-merged
 #1478190964
 mkdir ~/Dropbox/backup
 #1478190993
@@ -45638,13 +45638,13 @@ cp ~/Dropbox/.bashrc-merged ~/.bashrc
 #1478191502
 cd src/hallmark/hallmark/Proposal/
 #1478191985
-latex 
+latex
 #1478035344
 mvn install
 #1478035359
 cd pxavro-maven-plugin/
 #1478035464
-cd 
+cd
 #1478035467
 cd .m2
 #1478035474
@@ -45678,13 +45678,13 @@ brew install latex
 #1478188849
 cd /Library/TeX/texbin
 #1478188933
-diff ~/.bashrc ~/Dropbox/.bashrc 
+diff ~/.bashrc ~/Dropbox/.bashrc
 #1478189991
 ~
 #1478189998
 open /Applications/Xcode.app/Contents/Applications/FileMerge.app/
 #1478190912
-source ~/Dropbox/.bashrc-merged 
+source ~/Dropbox/.bashrc-merged
 #1478190964
 mkdir ~/Dropbox/backup
 #1478190993
@@ -45698,7 +45698,7 @@ cp ~/Dropbox/.bashrc-merged ~/.bashrc
 #1478191502
 cd src/hallmark/hallmark/Proposal/
 #1478191985
-latex 
+latex
 #1478192018
 which latex
 #1478192026
@@ -45710,7 +45710,7 @@ cd src/
 #1478192045
 cd hallmark/hallmark/Proposal/
 #1478198679
-more defs.tex 
+more defs.tex
 #1478199796
 latexmk
 #1478200083
@@ -45736,7 +45736,7 @@ make
 #1478210114
 git rm proposal.aux proposal.bbl proposal.blgls
 #1478210160
-git rm proposal.aux proposal.bbl proposal.blg proposal.synctex.gz proposal.fdb_latexmk proposal.fls 
+git rm proposal.aux proposal.bbl proposal.blg proposal.synctex.gz proposal.fdb_latexmk proposal.fls
 #1478210193
 git rm proposal.aux proposal.bbl proposal.blg proposal.synctex.gz
 #1478210231
@@ -45770,7 +45770,7 @@ whereis aspell
 #1478220184
 which aspell
 #1478281349
-more build 
+more build
 #1478281355
 pdflatex proposal.
 #1478282023
@@ -45792,7 +45792,7 @@ git commit -m "Deleted generated file proposal.out"
 #1478295282
 git tatus
 #1478296577
-git pull origin master 
+git pull origin master
 #1478296678
 git add innovative-claims.tex
 #1478296718
@@ -45806,11 +45806,11 @@ git commit -m "Added emacs specific local variables and fixed merge conflicts."
 #1478462814
 git stash
 #1478462840
-rm comment.cut 
+rm comment.cut
 #1478462860
-more comment.cut 
+more comment.cut
 #1478462879
-git rm comment.cut 
+git rm comment.cut
 #1478462897
 git stash pop
 #1478463208
@@ -45820,13 +45820,13 @@ git add proposal.tex technical-approach.tex
 #1478464714
 git commit -m "Added table of halmark requirements."
 #1478464721
-git push origin marcel-comments 
+git push origin marcel-comments
 #1478464818
 git commit -m "latest version of pdf."
 #1478464822
-git push origin master 
+git push origin master
 #1478464927
-git checkout marcel-comments 
+git checkout marcel-comments
 #1478465504
 build
 #1478466379
@@ -45834,15 +45834,15 @@ git diff technical-approach.tex
 #1478466417
 git commit -m "Fixed typo."
 #1478466422
-git push -u origin marcel-comments 
+git push -u origin marcel-comments
 #1478471227
-rm .#technical-approach.tex 
+rm .#technical-approach.tex
 #1478471632
-git checkout master 
+git checkout master
 #1478476050
 ./build
 #1478476594
-git diff management-plan.tex 
+git diff management-plan.tex
 #1478476768
 git add management-plan.tex proposal.tex technical-plan.tex
 #1478476808
@@ -45852,11 +45852,11 @@ git add technical-approach.tex technical-plan.tex
 #1478487693
 git commit -m "Fixed table of questions, added content to technical approach."
 #1478487735
-./build 
+./build
 #1478488109
 git add proposal.pdf
 #1478488112
-git commit -m 
+git commit -m
 #1478488120
 git commit -m "Latest pdf version."
 #1478488487
@@ -45864,7 +45864,7 @@ git add teaming.tex
 #1478488499
 git commit -m "Make the names bold."
 #1478489352
-git status 
+git status
 #1478489357
 git add technical-plan.tex
 #1478489377
@@ -45890,7 +45890,7 @@ git add technical-approach.tex
 #1478543070
 git commit -m "final fixes"
 #1478543078
-git push -u origin master 
+git push -u origin master
 #1478550624
 curl -L https://iterm2.com/misc/install_shell_integration_and_utilities.sh | bash
 #1478556862
@@ -45906,7 +45906,7 @@ git pull
 #1478557130
 mkdir ~/tmp
 #1478557170
-more build-mono-repo.sh 
+more build-mono-repo.sh
 #1478557228
 brew install parallel
 #1478632319
@@ -45914,7 +45914,7 @@ rm -rf ~/tmp/*
 #1478632375
 ps -al
 #1478632396
-./build-mono-repo.sh 
+./build-mono-repo.sh
 #1478635176
 cd /tmp
 #1478635180
@@ -45924,11 +45924,11 @@ cd tmp
 #1478635185
 cd mono-clone/
 #1478635205
-chmod +x update_pxbuild.py 
+chmod +x update_pxbuild.py
 #1478635229
 workon planx-eclipse
 #1478635240
-more update_pxbuild.py 
+more update_pxbuild.py
 #1478635294
 git add appstore/
 #1478635353
@@ -45966,9 +45966,9 @@ cd ..
 #1478638920
 pwd
 #1478638925
-./update_pxbuild.py 
+./update_pxbuild.py
 #1478638931
-python update_pxbuild.py 
+python update_pxbuild.py
 #1478638945
 git add controller/ core execution/ plan-construction/ presentation/ px-integration/ px-io/ range/ wargaming/
 #1478638961
@@ -45978,7 +45978,7 @@ git commit -m "Added pxbuild.conf project-name."
 #1478638988
 git status
 #1478639005
-git push -u mono dev 
+git push -u mono dev
 #1478639970
 clear
 #1478640024
@@ -45990,7 +45990,7 @@ virtualenv ~/PythonEnvs/mono-test
 #1478640061
 git checkout staging4
 #1478640102
-./mono-scripts/install-all-packages.sh 
+./mono-scripts/install-all-packages.sh
 #1478640787
 pip install pxbuild -U
 #1478640859
@@ -46000,7 +46000,7 @@ pxbuild --project core/pxavro-maven-plugin all
 #1478641078
 cd core/pxavro-maven-plugin/
 #1478641082
-./build/build.sh 
+./build/build.sh
 #1478641095
 mvn validate
 #1478641108
@@ -46008,7 +46008,7 @@ more pom.xml
 #1478641139
 mvn build
 #1478641162
-mvn 
+mvn
 #1478641178
 brew install maven
 #1478641213
@@ -46058,7 +46058,7 @@ exit
 #1478191502
 cd src/hallmark/hallmark/Proposal/
 #1478191985
-latex 
+latex
 #1478192018
 which latex
 #1478192026
@@ -46070,7 +46070,7 @@ cd src/
 #1478192045
 cd hallmark/hallmark/Proposal/
 #1478198679
-more defs.tex 
+more defs.tex
 #1478199796
 latexmk
 #1478200045
@@ -46100,7 +46100,7 @@ make
 #1478210114
 git rm proposal.aux proposal.bbl proposal.blgls
 #1478210160
-git rm proposal.aux proposal.bbl proposal.blg proposal.synctex.gz proposal.fdb_latexmk proposal.fls 
+git rm proposal.aux proposal.bbl proposal.blg proposal.synctex.gz proposal.fdb_latexmk proposal.fls
 #1478210193
 git rm proposal.aux proposal.bbl proposal.blg proposal.synctex.gz
 #1478210231
@@ -46116,7 +46116,7 @@ git add ../.gitignore
 #1478210364
 git commit -m "Removed generated files."
 #1478210381
-git push origin master 
+git push origin master
 #1478210401
 rm *.bak
 #1478219345
@@ -46136,9 +46136,9 @@ whereis aspell
 #1478220184
 which aspell
 #1478280815
-./build 
+./build
 #1478281349
-more build 
+more build
 #1478281355
 pdflatex proposal.
 #1478282023
@@ -46150,7 +46150,7 @@ git add innovative-claims.tex
 #1478282077
 git commit -m "Added some additional text to the beginning of the text, elaborated on the benefits."
 #1478282091
-git push -u origin marcel-comments 
+git push -u origin marcel-comments
 #1478282101
 git pull
 #1478558970
@@ -46174,7 +46174,7 @@ open vnc://10.130.2.77:5901
 #1478634453
 cd src/planx-mono-test/
 #1478634527
-more install-all-packages.sh 
+more install-all-packages.sh
 #1478634563
 git status
 #1478634628
@@ -46182,13 +46182,13 @@ cd mono
 #1478634632
 cd mono-scripts/
 #1478634674
-more import_commands 
+more import_commands
 #1478634703
 git status .
 #1478634707
-git status 
+git status
 #1478634918
-cd 
+cd
 #1478634926
 cd tmp/
 #1478634932
@@ -46208,7 +46208,7 @@ git checkout -b staging4-saved
 #1478636021
 git remote -v
 #1478636033
-git push -u origin staging4-saved 
+git push -u origin staging4-saved
 #1478642118
 whereis mvn
 #1478642124
@@ -46254,7 +46254,7 @@ ls
 #1478642366
 ./mvn -v
 #1478642378
-more mvn.cmd 
+more mvn.cmd
 #1478642413
 /usr/libexec/java_home
 #1478644806
@@ -46278,7 +46278,7 @@ git add innovative-claims.tex
 #1478282077
 git commit -m "Added some additional text to the beginning of the text, elaborated on the benefits."
 #1478282091
-git push -u origin marcel-comments 
+git push -u origin marcel-comments
 #1478282101
 git pull
 #1478642442
@@ -46316,9 +46316,9 @@ rm -rf ~/.pxbuild/*
 #1478642933
 pxbuild --project core/pxtrace all
 #1478642993
-pip install -r core/pxtrace/requirements.txt 
+pip install -r core/pxtrace/requirements.txt
 #1478643029
-./mono-scripts/install-all-packages.sh 
+./mono-scripts/install-all-packages.sh
 #1478643152
 pxbuild --project core/px-avro-common
 #1478643158
@@ -46352,7 +46352,7 @@ git origin -v
 #1478716559
 git remote -v
 #1478716578
-git push -u mono staging4 
+git push -u mono staging4
 #1478800604
 exit
 #1478722150
@@ -46364,7 +46364,7 @@ git origin -v
 #1478716559
 git remote -v
 #1478716578
-git push -u mono staging4 
+git push -u mono staging4
 #1478722150
 open vnc://10.130.2.77:5901
 #1478802227
@@ -46402,7 +46402,7 @@ git status
 #1479315697
 git commit -m "Several changes to basic data structures for resource profile."
 #1479315711
-git push -u origin marcel-cleanup-profile 
+git push -u origin marcel-cleanup-profile
 #1479315721
 git pull --all --prune
 #1479315727
@@ -46410,7 +46410,7 @@ exit
 #1478716559
 git remote -v
 #1478716578
-git push -u mono staging4 
+git push -u mono staging4
 #1478722150
 open vnc://10.130.2.77:5901
 #1478802227
@@ -46450,9 +46450,9 @@ git add src/main/java/edu/kestrel/scharp/planner/search
 #1479488262
 git commit -m "Several fixes to resource profile data structures."
 #1479488276
-git push origin marcel-cleanup-profile 
+git push origin marcel-cleanup-profile
 #1479488287
-git pull origin  master 
+git pull origin  master
 #1479489776
 git add src/main/java/edu/kestrel/scharp/planner/entities
 #1479489786
@@ -46474,7 +46474,7 @@ git add src/test/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacit
 #1479494424
 git commit -m "Fixed imports."
 #1479494434
-git push -u origin marcel-cleanup-profile 
+git push -u origin marcel-cleanup-profile
 #1479494439
 git status
 #1479519728
@@ -46482,7 +46482,7 @@ exit
 #1479315697
 git commit -m "Several changes to basic data structures for resource profile."
 #1479315711
-git push -u origin marcel-cleanup-profile 
+git push -u origin marcel-cleanup-profile
 #1479315721
 git pull --all --prune
 #1479499142
@@ -46520,7 +46520,7 @@ exit
 #1479315697
 git commit -m "Several changes to basic data structures for resource profile."
 #1479315711
-git push -u origin marcel-cleanup-profile 
+git push -u origin marcel-cleanup-profile
 #1479315721
 git pull --all --prune
 #1479506338
@@ -46536,7 +46536,7 @@ ls
 #1479506359
 cd scharp/
 #1479506384
-git checkout master 
+git checkout master
 #1479506391
 git status
 #1479519045
@@ -46554,7 +46554,7 @@ cd scharp-compile-test-workspace/
 #1479506359
 cd scharp/
 #1479506384
-git checkout master 
+git checkout master
 #1479519045
 pwd
 #1479519734
@@ -46582,7 +46582,7 @@ git add src/main/java/edu/kestrel/scharp/planner/search
 #1479882105
 git commit -m "Several changes to capacity profile."
 #1479882122
-git push -u origin marcel-cleanup-profile 
+git push -u origin marcel-cleanup-profile
 #1479882147
 git status
 #1479882151
@@ -46600,7 +46600,7 @@ git add src/main/java/edu/kestrel/scharp/planner/datastructures
 #1479488262
 git commit -m "Several fixes to resource profile data structures."
 #1479488287
-git pull origin  master 
+git pull origin  master
 #1479493859
 git add src/test/java/edu/kestrel/scharp/planner/resource
 #1479493884
@@ -46658,7 +46658,7 @@ cd scharp-compile-test-workspace/
 #1479506359
 cd scharp/
 #1479506384
-git checkout master 
+git checkout master
 #1479519045
 pwd
 #1479519734
@@ -46672,7 +46672,7 @@ cd scharp-compile-test-workspace/
 #1479506359
 cd scharp/
 #1479506384
-git checkout master 
+git checkout master
 #1479519045
 pwd
 #1479519734
@@ -46696,7 +46696,7 @@ git add src/test/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacit
 #1480368041
 git commit -m "Several changes to air unit capacity profile representation."
 #1480368062
-git checkout drs4 
+git checkout drs4
 #1480376187
 git diff src/main/java/edu/kestrel/scharp/planner/entities/AircraftResource.java
 #1480376251
@@ -46704,7 +46704,7 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/AircraftResource.java
 #1480376312
 git commit -m "Fixed hasEnoughServiceCapacity for tanker missions with multiple positioning legs."
 #1480376319
-git push origin drs4 
+git push origin drs4
 #1480436418
 git diff src/main/java/edu/kestrel/scharp/planner/entities/Resource.java
 #1480436433
@@ -46726,9 +46726,9 @@ git commit -m "Fixed the refueling activity scheduler."
 #1480452726
 git pull
 #1480452771
-git push -u origin drs4 
+git push -u origin drs4
 #1480453131
-git checkout marcel-cleanup-profile 
+git checkout marcel-cleanup-profile
 #1480461322
 kill -9 44886
 #1480461332
@@ -46740,7 +46740,7 @@ ps -A | grep Eclipse
 #1480483119
 git diff src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java
 #1480483133
-git add 
+git add
 #1480483162
 git add src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacityProfile.java
 #1480483170
@@ -46748,9 +46748,9 @@ git add src/main/java/edu/kestrel/scharp/planner/resource/TankerUnitCapacityInte
 #1480483195
 git commit -m "Fixing problems with synch or support and strike."
 #1480483202
-git push origin marcel-cleanup-profile 
+git push origin marcel-cleanup-profile
 #1480483213
-git pull origin master 
+git pull origin master
 #1480486029
 git add src/main/java/edu/kestrel/scharp/planner/entities
 #1480486034
@@ -46766,7 +46766,7 @@ git add src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacit
 #1480486957
 git commit -m "Added changes to capacity interval entry for replacing existing activity in interval."
 #1480486963
-git status 
+git status
 #1480487486
 git status
 #1480487504
@@ -46774,9 +46774,9 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitGoBasedResource
 #1480487523
 git commit -m "Fixed toString method for resources."
 #1480487534
-git push -u origin marcel-cleanup-profile 
+git push -u origin marcel-cleanup-profile
 #1480559740
-cd log 
+cd log
 #1480560358
 more main
 #1480571511
@@ -46790,15 +46790,15 @@ mvn dependency:tree -Dverbose
 #1480575370
 cd log/
 #1480575399
-more thread-VFA-86-ScheduleTask.log 
+more thread-VFA-86-ScheduleTask.log
 #1480575625
-more thread-main.log 
+more thread-main.log
 #1480575843
 lx
 #1480575844
 ls
 #1480575853
-more thread-manager.log 
+more thread-manager.log
 #1480486039
 git add src/main/java/edu/kestrel/scharp/planner/resource/
 #1480486056
@@ -46810,15 +46810,15 @@ git add src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacit
 #1480486957
 git commit -m "Added changes to capacity interval entry for replacing existing activity in interval."
 #1480486963
-git status 
+git status
 #1480487504
 git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitGoBasedResource.java src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java src/main/java/edu/kestrel/scharp/planner/entities/FighterAirUnitResource.java
 #1480487523
 git commit -m "Fixed toString method for resources."
 #1480487534
-git push -u origin marcel-cleanup-profile 
+git push -u origin marcel-cleanup-profile
 #1480559740
-cd log 
+cd log
 #1480560358
 more main
 #1480571511
@@ -46828,13 +46828,13 @@ cd logs
 #1480573595
 mvn dependency:tree -Dverbose
 #1480575399
-more thread-VFA-86-ScheduleTask.log 
+more thread-VFA-86-ScheduleTask.log
 #1480575625
-more thread-main.log 
+more thread-main.log
 #1480575843
 lx
 #1480575853
-more thread-manager.log 
+more thread-manager.log
 #1481042005
 cd ../..
 #1481042008
@@ -46850,7 +46850,7 @@ git diff src/main/java/edu/kestrel/scharp/planner/resource/RBAtomicCapacityProfi
 #1481042199
 git diff src/main/java/edu/kestrel/scharp/planner/search/SearchState.java
 #1481042241
-git pull 
+git pull
 #1481042256
 mvn clean
 #1481042264
@@ -46882,21 +46882,21 @@ git reset
 #1481219734
 git checkout -
 #1481219764
-git reset --hard origin/marcel-cleanup-profile 
+git reset --hard origin/marcel-cleanup-profile
 #1481219778
 git pull
 #1481219789
-git pull origin marcel-cleanup-profile 
+git pull origin marcel-cleanup-profile
 #1481219896
 git reset --hard
 #1481219908
-git checkout marcel-cleanup-profile 
+git checkout marcel-cleanup-profile
 #1481219915
 git log
 #1481228952
 git status
 #1481261361
-git checkout master 
+git checkout master
 #1481261367
 pwd
 #1481261377
@@ -46982,7 +46982,7 @@ git diff src/main/java/edu/kestrel/scharp/planner/resource/Resource.java
 #1479488262
 git commit -m "Several fixes to resource profile data structures."
 #1479488287
-git pull origin  master 
+git pull origin  master
 #1479493859
 git add src/test/java/edu/kestrel/scharp/planner/resource
 #1479493884
@@ -47068,7 +47068,7 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/AircraftResource.java
 #1480376312
 git commit -m "Fixed hasEnoughServiceCapacity for tanker missions with multiple positioning legs."
 #1480376319
-git push origin drs4 
+git push origin drs4
 #1480436418
 git diff src/main/java/edu/kestrel/scharp/planner/entities/Resource.java
 #1480436433
@@ -47086,7 +47086,7 @@ git add src/main/java/edu/kestrel/scharp/planner/resource/RBAtomicCapacityInterv
 #1480452614
 git commit -m "Fixed the refueling activity scheduler."
 #1480452771
-git push -u origin drs4 
+git push -u origin drs4
 #1480461322
 kill -9 44886
 #1480461332
@@ -47098,7 +47098,7 @@ ps -A | grep Eclipse
 #1480483119
 git diff src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java
 #1480483133
-git add 
+git add
 #1480483162
 git add src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacityProfile.java
 #1480483170
@@ -47114,13 +47114,13 @@ git add src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacit
 #1480486957
 git commit -m "Added changes to capacity interval entry for replacing existing activity in interval."
 #1480486963
-git status 
+git status
 #1480487504
 git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitGoBasedResource.java src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java src/main/java/edu/kestrel/scharp/planner/entities/FighterAirUnitResource.java
 #1480487523
 git commit -m "Fixed toString method for resources."
 #1480559740
-cd log 
+cd log
 #1480560358
 more main
 #1480571511
@@ -47130,17 +47130,17 @@ cd logs
 #1480573595
 mvn dependency:tree -Dverbose
 #1480575399
-more thread-VFA-86-ScheduleTask.log 
+more thread-VFA-86-ScheduleTask.log
 #1480575625
-more thread-main.log 
+more thread-main.log
 #1480575843
 lx
 #1480703419
 git diff ../src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java
 #1480724285
-cd 
+cd
 #1480724312
-more thread-manager.log 
+more thread-manager.log
 #1480729934
 git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2PacificaScenarioConfiguration.java src/main/java/edu/kestrel/scharp/planner/entities src/main/java/edu/kestrel/scharp/planner/entities
 #1480729951
@@ -47160,9 +47160,9 @@ git add src/main/resources/logback.xml
 #1480730062
 git commit -m "Capacity profile for tanker resources."
 #1480961538
-git checkout master 
+git checkout master
 #1480962142
-git pull origin master 
+git pull origin master
 #1480963273
 git commit -m "Merged with master"
 #1480967026
@@ -47170,9 +47170,9 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/ControlAirUnitScheduler
 #1480967043
 git commit -m "Fixed bounds for control mission."
 #1480967057
-git checkout drs4 
+git checkout drs4
 #1480967875
-git checkout marcel-cleanup-profile 
+git checkout marcel-cleanup-profile
 #1480982104
 git add src/main/java/edu/kestrel/scharp/planner/manager
 #1480982109
@@ -47232,7 +47232,7 @@ git commit -m "Format."
 #1481136995
 cd log/
 #1481137038
-more thread-9\ ARS-BidderRejectTask.log 
+more thread-9\ ARS-BidderRejectTask.log
 #1481137049
 rm -rf *
 #1481146344
@@ -47240,7 +47240,7 @@ git add ../src/main/java/edu/kestrel/scharp/planner
 #1481146421
 git commit -m "Added a test before calls to log that calls Activity.printShort. Cleaned up some code."
 #1481151803
-git stash list 
+git stash list
 #1481151840
 git stash --help
 #1481151857
@@ -47270,7 +47270,7 @@ git diff ../src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanMana
 #1481161607
 git commit -m "Chaged the messages to accept and reject bid to only send the bid id instead of the full bid."
 #1481161620
-git push origin marcel-cleanup-profile 
+git push origin marcel-cleanup-profile
 #1481176215
 git diff ../src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
 #1481176423
@@ -47304,11 +47304,11 @@ git add ../src/main/java/edu/kestrel/scharp/planner/manager/
 #1481234984
 git commit -m "Fixed providerRejectBid to avoid searching for a local activity since the bid passed as parameter is now the local bid."
 #1481235009
-git push -u origin marcel-cleanup-profile 
+git push -u origin marcel-cleanup-profile
 #1481235063
 git status
 #1481237021
-./run-plan-cell.sh 
+./run-plan-cell.sh
 #1481237029
 ./run-plan-cell.sh -1
 #1481237040
@@ -47396,7 +47396,7 @@ git add src/main/java/edu/kestrel/scharp/airdomain/interfaces
 #1481310224
 git commit -m "Changed main server configuration to use TE3 instead of TE2. Moved the planning cell configuration (map from planning cell to units) to the scenario files."
 #1481310233
-git push origin master 
+git push origin master
 #1481312080
 whereis mvn
 #1481312086
@@ -47406,7 +47406,7 @@ which mvn
 #1481313152
 pwd
 #1481313165
-git checkout marcel-cleanup-profile 
+git checkout marcel-cleanup-profile
 #1481313172
 git pull
 #1481313645
@@ -47432,7 +47432,7 @@ java -version
 #1481314216
 javac -version
 #1481314249
-more ~/.profile 
+more ~/.profile
 #1481314401
 unset JAVA_HOME
 #1481314408
@@ -47498,7 +47498,7 @@ git add ../src/main/java/edu/kestrel/scharp/planner/manager/
 #1481234984
 git commit -m "Fixed providerRejectBid to avoid searching for a local activity since the bid passed as parameter is now the local bid."
 #1481237021
-./run-plan-cell.sh 
+./run-plan-cell.sh
 #1481237029
 ./run-plan-cell.sh -1
 #1481237040
@@ -47544,7 +47544,7 @@ which java
 #1481314803
 java -version
 #1481314905
-more ~/.mavenrc 
+more ~/.mavenrc
 #1481315172
 mvn -version
 #1481317669
@@ -47552,7 +47552,7 @@ cd
 #1481317685
 cd src/scharp-compile-test-workspace/scharp/
 #1481317715
-mvn clean generate-sources compile package 
+mvn clean generate-sources compile package
 #1481321769
 git stash --help
 #1481321779
@@ -47566,7 +47566,7 @@ git add src/main/java/edu/kestrel/scharp/planner/resource
 #1481321868
 git commit -m "Fixed compilation problems to make oracle javac happy."
 #1481321881
-git stash 
+git stash
 #1481321895
 mvn clean build
 #1481321905
@@ -47578,7 +47578,7 @@ git add pom.xml
 #1481322043
 git commit -m "Fixed pom.xml to add an option to compile using eclipse compiler."
 #1481322091
-git checkout master 
+git checkout master
 #1481323618
 cd output/
 #1481323619
@@ -47590,19 +47590,19 @@ git add .gitignore
 #1481323689
 git commit -m "Added some entries to gitignore."
 #1481323696
-git push -u origin marcel-cleanup-profile 
+git push -u origin marcel-cleanup-profile
 #1481323886
-git push -u origin master 
+git push -u origin master
 #1481323954
-git checkout marcel-cleanup-profile 
+git checkout marcel-cleanup-profile
 #1481323970
-git pull origin master 
+git pull origin master
 #1481323988
-git push origin marcel-cleanup-profile 
+git push origin marcel-cleanup-profile
 #1481324371
 mvn clean compile
 #1481324791
-git diff origin/marcel-cleanup-profile marcel-cleanup-profile 
+git diff origin/marcel-cleanup-profile marcel-cleanup-profile
 #1481327873
 gpwd
 #1481327876
@@ -47672,7 +47672,7 @@ git add src/main/java/edu/kestrel/scharp/airdomain/interfaces
 #1481310224
 git commit -m "Changed main server configuration to use TE3 instead of TE2. Moved the planning cell configuration (map from planning cell to units) to the scenario files."
 #1481310233
-git push origin master 
+git push origin master
 #1481312080
 whereis mvn
 #1481312086
@@ -47700,7 +47700,7 @@ java -version
 #1481314216
 javac -version
 #1481314249
-more ~/.profile 
+more ~/.profile
 #1481314401
 unset JAVA_HOME
 #1481314408
@@ -47738,21 +47738,21 @@ git checkout -- src/test/java/edu/kestrel/scharp/planner/resource/GenericRedBlac
 #1481324230
 git checkout -- src/main/java/edu/kestrel/scharp/planner/resource/AirUnitCapacityIntervalEntry.java src/main/java/edu/kestrel/scharp/planner/resource
 #1481324261
-git pull origin master 
+git pull origin master
 #1481324314
 git diff pom.xml
 #1481324410
 git reset --hard
 #1481324850
-git diff origin/marcel-cleanup-profile marcel-cleanup-profile  
+git diff origin/marcel-cleanup-profile marcel-cleanup-profile
 #1481324853
-git diff marcel-cleanup-profile origin/marcel-cleanup-profile 
+git diff marcel-cleanup-profile origin/marcel-cleanup-profile
 #1481324911
 git diff origin/
 #1481324913
 git diff origin
 #1481324965
-git diff origin/marcel-cleanup-profile 
+git diff origin/marcel-cleanup-profile
 #1481325150
 git diff 476cff5ac31fa4e9e245128162603097c9e8a0ce e181fba9bcf7fe834907249d3496d857f125d18a
 #1481325377
@@ -47762,13 +47762,13 @@ git log
 #1481325439
 git diff 476cff5ac31fa4e9e245128162603097c9e8a0ce 8df40c2ca8bf6f27ecf268664dfffd68d5c27033
 #1481325602
-git checkout master 
+git checkout master
 #1481325664
 rm hs_err_pid80*
 #1481326025
-git checkout marcel-cleanup-profile 
+git checkout marcel-cleanup-profile
 #1481326038
-git reset --hard origin/marcel-cleanup-profile 
+git reset --hard origin/marcel-cleanup-profile
 #1481327178
 git add src/test/java/edu/kestrel/scharp/planner/manager
 #1481327343
@@ -47798,11 +47798,11 @@ git add src/test/java/edu/kestrel/scharp/planner/manager/DistributedPlanManagerT
 #1481328441
 git commit -m "Removed folder codedrop from test folder."
 #1481328449
-git push origin marcel-cleanup-profile 
+git push origin marcel-cleanup-profile
 #1481329177
 git status
 #1481329195
-rm hs_err_pid80620.log 
+rm hs_err_pid80620.log
 #1481329198
 ls
 #1481331298
@@ -47842,7 +47842,7 @@ exit
 #1481571935
 ./run-plan-cell.sh 2
 #1481572325
-exit 
+exit
 #1481571928
 ./run-plan-cell.sh 1
 #1481572329
@@ -47882,7 +47882,7 @@ exit
 #1481571935
 ./run-plan-cell.sh 2
 #1481572325
-exit 
+exit
 #1481571928
 ./run-plan-cell.sh 1
 #1481572329
@@ -47936,7 +47936,7 @@ git diff Docker/buildDocker.sh
 #1481649413
 git stash
 #1481649418
-git checkout master 
+git checkout master
 #1481649435
 git ../neon/
 #1481649437
@@ -47968,23 +47968,23 @@ cd neon/
 #1481651183
 ls
 #1481651191
-more README.md 
+more README.md
 #1481651237
 cp gradle.properties.sample gradle.properties
 #1481651422
-./gradlew jettyRun 
+./gradlew jettyRun
 #1481651422
-./gradlew jettyRun 
+./gradlew jettyRun
 #1481655873
 cd ..
 #1481655908
 ls
 #1481655915
-more buildDocker.sh 
+more buildDocker.sh
 #1481655946
 ./buildDocker.sh neon
 #1481314249
-more ~/.profile 
+more ~/.profile
 #1481314401
 unset JAVA_HOME
 #1481314408
@@ -48018,21 +48018,21 @@ git checkout -- src/test/java/edu/kestrel/scharp/planner/resource/GenericRedBlac
 #1481324230
 git checkout -- src/main/java/edu/kestrel/scharp/planner/resource/AirUnitCapacityIntervalEntry.java src/main/java/edu/kestrel/scharp/planner/resource
 #1481324261
-git pull origin master 
+git pull origin master
 #1481324314
 git diff pom.xml
 #1481324410
 git reset --hard
 #1481324850
-git diff origin/marcel-cleanup-profile marcel-cleanup-profile  
+git diff origin/marcel-cleanup-profile marcel-cleanup-profile
 #1481324853
-git diff marcel-cleanup-profile origin/marcel-cleanup-profile 
+git diff marcel-cleanup-profile origin/marcel-cleanup-profile
 #1481324911
 git diff origin/
 #1481324913
 git diff origin
 #1481324965
-git diff origin/marcel-cleanup-profile 
+git diff origin/marcel-cleanup-profile
 #1481325150
 git diff 476cff5ac31fa4e9e245128162603097c9e8a0ce e181fba9bcf7fe834907249d3496d857f125d18a
 #1481325377
@@ -48044,7 +48044,7 @@ git diff 476cff5ac31fa4e9e245128162603097c9e8a0ce 8df40c2ca8bf6f27ecf268664dfffd
 #1481325664
 rm hs_err_pid80*
 #1481326038
-git reset --hard origin/marcel-cleanup-profile 
+git reset --hard origin/marcel-cleanup-profile
 #1481327178
 git add src/test/java/edu/kestrel/scharp/planner/manager
 #1481327343
@@ -48068,7 +48068,7 @@ git add src/test/java/edu/kestrel/scharp/planner/manager/DistributedPlanManagerT
 #1481328441
 git commit -m "Removed folder codedrop from test folder."
 #1481329195
-rm hs_err_pid80620.log 
+rm hs_err_pid80620.log
 #1481331298
 git checkout master
 #1481334080
@@ -48086,13 +48086,13 @@ git add eclipse-utils/
 #1481562177
 git commit -m "Added Eclipse formatter to distribution."
 #1481562183
-git push -u origin marcel-cleanup-profile 
+git push -u origin marcel-cleanup-profile
 #1481563049
-find . -name ".ds*" 
+find . -name ".ds*"
 #1481563062
-find . -i -name ".ds*"  -print 
+find . -i -name ".ds*"  -print
 #1481563068
-find . -a -name ".ds*"  -print 
+find . -a -name ".ds*"  -print
 #1481563078
 git sttaus
 #1481571724
@@ -48114,15 +48114,15 @@ git add src/main/java/edu/kestrel/scharp/usmtf/convert/PlanToATOConverter.java
 #1481572504
 git commit -m "Fixed amq server and client code to use TE3 as the default scenario. Refactored config class hierarchy. Moved common scenario parsing code to super class Scenario file."
 #1481572510
-git push origin marcel-cleanup-profile 
+git push origin marcel-cleanup-profile
 #1481579156
 mvn clean compile
 #1481579477
-git checkout marcel-cleanup-profile 
+git checkout marcel-cleanup-profile
 #1481579853
-git branch -d marcel-cleanup-profile 
+git branch -d marcel-cleanup-profile
 #1481579860
-git branch 
+git branch
 #1481580421
 git checkout -b marcel-simplify-bid
 #1481586951
@@ -48142,11 +48142,11 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/
 #1481587191
 git commit -m "Fixed findAvailableTimeWithBumping for AirUnitResources. Stopped sending bid accept messages for intermediary sub-tasks."
 #1481587198
-git push origin marcel-simplify-bid 
+git push origin marcel-simplify-bid
 #1481648516
-git checkout master 
+git checkout master
 #1481648563
-git branch -d marcel-simplify-bid 
+git branch -d marcel-simplify-bid
 #1481648620
 cd Docker/
 #1481648630
@@ -48158,7 +48158,7 @@ docker start
 #1481648768
 docker-machine start
 #1481648827
-more docker-build-no-cache.sh 
+more docker-build-no-cache.sh
 #1481648856
 docker-machine env
 #1481648858
@@ -48166,9 +48166,9 @@ eval $(docker-machine env)
 #1481648882
 cd DockerJava/
 #1481648886
-more Dockerfile 
+more Dockerfile
 #1481648906
-./docker-build.sh 
+./docker-build.sh
 #1481651778
 cd ..
 #1481651792
@@ -48176,7 +48176,7 @@ cd DockerScharpCacheMaven/DockerScharpBaseImage/
 #1481651795
 ls
 #1481651801
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1481666890
 pwd
 #1481666897
@@ -48186,7 +48186,7 @@ git status
 #1481667016
 git stash show
 #1481667020
-git stash 
+git stash
 #1481667320
 docker ps -a
 #1481667337
@@ -48196,9 +48196,9 @@ docker-machine stop
 #1481667355
 exit
 #1481328449
-git push origin marcel-cleanup-profile 
+git push origin marcel-cleanup-profile
 #1481329195
-rm hs_err_pid80620.log 
+rm hs_err_pid80620.log
 #1481329198
 ls
 #1481331298
@@ -48222,13 +48222,13 @@ git remote show
 #1481579701
 git checkout -- src/main/java/edu/kestrel/scharp/activemq/codedrop2/PlannerServer.java src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java
 #1481579710
-git checkout marcel-cleanup-profile 
+git checkout marcel-cleanup-profile
 #1481579735
-git checkout master 
+git checkout master
 #1481579818
 git status
 #1481579827
-git branch -d marcel-cleanup-profile 
+git branch -d marcel-cleanup-profile
 #1481666880
 pwd
 #1481666884
@@ -48264,11 +48264,11 @@ git add src/test/java/edu/kestrel/scharp/planner/manager/DistributedPlanManagerT
 #1481328441
 git commit -m "Removed folder codedrop from test folder."
 #1481328449
-git push origin marcel-cleanup-profile 
+git push origin marcel-cleanup-profile
 #1481329177
 git status
 #1481329195
-rm hs_err_pid80620.log 
+rm hs_err_pid80620.log
 #1481331298
 git checkout master
 #1481331302
@@ -48296,7 +48296,7 @@ mvn compile package
 #1481571935
 ./run-plan-cell.sh 2
 #1481572325
-exit 
+exit
 #1481571928
 ./run-plan-cell.sh 1
 #1481329233
@@ -48348,7 +48348,7 @@ docker-machine env
 #1481651750
 eval $(docker-machine env)
 #1481651755
-./buildDocker.sh 
+./buildDocker.sh
 #1481651925
 ./buildDocker.sh tomcat
 #1481651985
@@ -48358,7 +48358,7 @@ cd scharp-ui-neon/
 #1481652124
 cd..
 #1481652138
-more buildDocker.sh 
+more buildDocker.sh
 #1481652167
 ./buildDocker.sh neon
 #1481652196
@@ -48366,7 +48366,7 @@ more buildDocker.sh
 #1481652367
 cd scharp-ui
 #1481652370
-more Dockerfile 
+more Dockerfile
 #1481652880
 cd ../
 #1481652892
@@ -48412,7 +48412,7 @@ ls
 #1481654751
 git remote show
 #1481654756
-git remote show -v 
+git remote show -v
 #1481654787
 git remote -v
 #1481654805
@@ -48446,7 +48446,7 @@ bower install
 #1481651126
 gulp
 #1481651191
-more README.md 
+more README.md
 #1481651237
 cp gradle.properties.sample gradle.properties
 #1481653226
@@ -48482,11 +48482,11 @@ ls -al
 #1481655040
 cd ..
 #1481655046
-./gradlew jettyRun 
+./gradlew jettyRun
 #1481660580
 docker ip
 #1481660588
-docker ps 
+docker ps
 #1481660595
 eval $(docker-machine env)
 #1481660599
@@ -48522,7 +48522,7 @@ git diff Docker/buildDocker.sh
 #1481649413
 git stash
 #1481649418
-git checkout master 
+git checkout master
 #1481649435
 git ../neon/
 #1481649437
@@ -48550,11 +48550,11 @@ cd ..
 #1481651183
 cd neon/
 #1481651191
-more README.md 
+more README.md
 #1481651237
 cp gradle.properties.sample gradle.properties
 #1481651422
-./gradlew jettyRun 
+./gradlew jettyRun
 #1481655311
 npm uninstall gulp bower typings
 #1481655340
@@ -48574,7 +48574,7 @@ npm install -g fsevents@0.2.1
 #1481655985
 cd Docker/
 #1481656053
-more buildDocker.sh 
+more buildDocker.sh
 #1481656139
 ./buildDocker.sh neon
 #1481656765
@@ -48604,7 +48604,7 @@ docker run -d -p 8080:8080 --name ui --net=host library/scharp-ui
 #1481660356
 docker run -d  8080:8080 --name ui --net=host library/scharp-ui
 #1481660432
-docker ps 
+docker ps
 #1481660461
 docker rm 5b4f708efb64 6894e1ffa0f2
 #1481661114
@@ -48616,13 +48616,13 @@ docker build --rm -t library/scharp-ui-neon scharp-ui-neon/
 #1481661859
 ls
 #1481661868
-chmod +x marcel-build-and-run.sh 
+chmod +x marcel-build-and-run.sh
 #1481661896
 docker ps
 #1481661900
 docker ps -a
 #1481661918
-./marcel-build-and-run.sh 
+./marcel-build-and-run.sh
 #1481662316
 docker build --rm -t library/scharp-ui scharp-ui-update/
 #1481662756
@@ -48648,13 +48648,13 @@ sudo pip install pip -U
 #1481667956
 exit
 #1481661868
-chmod +x marcel-build-and-run.sh 
+chmod +x marcel-build-and-run.sh
 #1481661896
 docker ps
 #1481661900
 docker ps -a
 #1481661918
-./marcel-build-and-run.sh 
+./marcel-build-and-run.sh
 #1481662316
 docker build --rm -t library/scharp-ui scharp-ui-update/
 #1481662756
@@ -48676,7 +48676,7 @@ sudo pip install virtualenvwrapper -U
 #1481667933
 sudo pip install pip -U
 #1481671056
-cd 
+cd
 #1481671066
 cd src/rspace-eclipse/scharp/
 #1481671079
@@ -48692,7 +48692,7 @@ git add src/main/java/edu/kestrel/scharp/activemq/PlannerServer.java src/main/ja
 #1481672807
 git commit -m "Fixed null pointer exception due to fuel estimation being null.  Changed to TE3 scenario in UI message server."
 #1481672818
-git push origin master 
+git push origin master
 #1481676015
 git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE3ScenarioConfiguration.java  src/main/resources/data/TE3/RSPACE TE3 TACINFO.jsn
 #1481676040
@@ -48702,7 +48702,7 @@ git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE3ScenarioConfigur
 #1481676071
 git commit -m "Fixed tacinfo file and TE3 config file."
 #1481676076
-git push -u origin master 
+git push -u origin master
 #1481738327
 git checkout -- src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java
 #1481738350
@@ -48722,11 +48722,11 @@ sudo pip install pip -U
 #1481668601
 cd src/scharp/nextcentury-scharp/
 #1481668610
-brew install node 
+brew install node
 #1481668666
 npm install -g npm@latest
 #1481668704
-brew install pkg-config 
+brew install pkg-config
 #1481668751
 sudo xcodebuild -license
 #1481668840
@@ -48740,7 +48740,7 @@ npm install
 #1481668977
 ls
 #1481668980
-more package.json 
+more package.json
 #1481669353
 npm install --no-optional
 #1481669378
@@ -48748,7 +48748,7 @@ cd ../..
 #1481669385
 cd scharp/neon/
 #1481669409
-./gradlew jettyRun 
+./gradlew jettyRun
 #1481738365
 exit
 #1481660461
@@ -48760,13 +48760,13 @@ docker build --rm -t library/scharp-ui scharp-ui/
 #1481661465
 docker build --rm -t library/scharp-ui-neon scharp-ui-neon/
 #1481661868
-chmod +x marcel-build-and-run.sh 
+chmod +x marcel-build-and-run.sh
 #1481661896
 docker ps
 #1481661900
 docker ps -a
 #1481661918
-./marcel-build-and-run.sh 
+./marcel-build-and-run.sh
 #1481662316
 docker build --rm -t library/scharp-ui scharp-ui-update/
 #1481662756
@@ -48790,9 +48790,9 @@ sudo pip install pip -U
 #1481668296
 echo $PATH
 #1481668334
-more /usr/local/bin/virtualenvwrapper.sh 
+more /usr/local/bin/virtualenvwrapper.sh
 #1481668402
-sh -x  /usr/local/bin/virtualenvwrapper.sh 
+sh -x  /usr/local/bin/virtualenvwrapper.sh
 #1481668435
 whereis python
 #1481668462
@@ -48826,11 +48826,11 @@ cd ../
 #1481669681
 ln -s ../../scharp/dist.dev/ ./scharp
 #1481669684
-cd scharp 
+cd scharp
 #1481669688
 ls -al
 #1481669697
-ls -al scharp 
+ls -al scharp
 #1481669711
 cd ../../
 #1481669733
@@ -48838,7 +48838,7 @@ cd neon/examples/
 #1481669734
 ls
 #1481669738
-rm -rf scharp 
+rm -rf scharp
 #1481669762
 ln -s ../../nextcentury-scharp/dist.dev/ ./scharp
 #1481671041
@@ -48848,7 +48848,7 @@ exit
 #1481669734
 ls
 #1481669738
-rm -rf scharp 
+rm -rf scharp
 #1481669762
 ln -s ../../nextcentury-scharp/dist.dev/ ./scharp
 #1481738367
@@ -48860,7 +48860,7 @@ git pull --all --prune
 #1481738423
 git branch
 #1481738434
-git branch -d drs4 
+git branch -d drs4
 #1481739427
 docker-machine stop
 #1481739434
@@ -48894,17 +48894,17 @@ cd ../
 #1481669681
 ln -s ../../scharp/dist.dev/ ./scharp
 #1481669684
-cd scharp 
+cd scharp
 #1481669688
 ls -al
 #1481669697
-ls -al scharp 
+ls -al scharp
 #1481669711
 cd ../../
 #1481669733
 cd neon/examples/
 #1481669738
-rm -rf scharp 
+rm -rf scharp
 #1481669762
 ln -s ../../nextcentury-scharp/dist.dev/ ./scharp
 #1481671041
@@ -48922,7 +48922,7 @@ cd Docker/
 #1481739516
 git pull
 #1481739566
-./marcel-build-and-run.sh 
+./marcel-build-and-run.sh
 #1481741145
 docker images
 #1481741194
@@ -48934,7 +48934,7 @@ docker build --rm -t library/tomcat9-jdk8 tomcat-jdk/
 #1481742268
 docker build --rm -t library/scharp-ui-neon scharp-ui-neon/
 #1481742271
-more marcel-build-and-run.sh 
+more marcel-build-and-run.sh
 #1481742280
 docker build --rm -t library/scharp-ui scharp-ui/
 #1481742296
@@ -48956,7 +48956,7 @@ ls
 #1481743299
 cd ..
 #1481743305
-./gradlew jettyRun 
+./gradlew jettyRun
 #1481741310
 ps -aux
 #1481741316
@@ -48988,23 +48988,23 @@ cd ../
 #1481669681
 ln -s ../../scharp/dist.dev/ ./scharp
 #1481669684
-cd scharp 
+cd scharp
 #1481669688
 ls -al
 #1481669697
-ls -al scharp 
+ls -al scharp
 #1481669711
 cd ../../
 #1481669733
 cd neon/examples/
 #1481669738
-rm -rf scharp 
+rm -rf scharp
 #1481669762
 ln -s ../../nextcentury-scharp/dist.dev/ ./scharp
 #1481738367
 exit
 #1481669738
-rm -rf scharp 
+rm -rf scharp
 #1481669762
 ln -s ../../nextcentury-scharp/dist.dev/ ./scharp
 #1481738367
@@ -49016,7 +49016,7 @@ git pull --all --prune
 #1481738423
 git branch
 #1481738434
-git branch -d drs4 
+git branch -d drs4
 #1481739427
 docker-machine stop
 #1481739434
@@ -49044,17 +49044,17 @@ cd ../
 #1481669681
 ln -s ../../scharp/dist.dev/ ./scharp
 #1481669684
-cd scharp 
+cd scharp
 #1481669688
 ls -al
 #1481669697
-ls -al scharp 
+ls -al scharp
 #1481669711
 cd ../../
 #1481669733
 cd neon/examples/
 #1481669738
-rm -rf scharp 
+rm -rf scharp
 #1481669762
 ln -s ../../nextcentury-scharp/dist.dev/ ./scharp
 #1481738367
@@ -49068,7 +49068,7 @@ cd src/scharp/nextcentury-scharp/
 #1481739508
 cd Docker/
 #1481739566
-./marcel-build-and-run.sh 
+./marcel-build-and-run.sh
 #1481741145
 docker images
 #1481741194
@@ -49080,7 +49080,7 @@ docker build --rm -t library/tomcat9-jdk8 tomcat-jdk/
 #1481742268
 docker build --rm -t library/scharp-ui-neon scharp-ui-neon/
 #1481742271
-more marcel-build-and-run.sh 
+more marcel-build-and-run.sh
 #1481742280
 docker build --rm -t library/scharp-ui scharp-ui/
 #1481742296
@@ -49094,7 +49094,7 @@ cd examples/
 #1481743277
 cd scharp
 #1481743305
-./gradlew jettyRun 
+./gradlew jettyRun
 #1481741310
 ps -aux
 #1481741316
@@ -49108,27 +49108,27 @@ docker exec -it ui bash
 #1481748099
 cd log/
 #1481748162
-more thread-thread_IS_UNDEFINED.log 
+more thread-thread_IS_UNDEFINED.log
 #1481750085
-more thread-main.log 
+more thread-main.log
 #1481750134
-ls 
+ls
 #1481750247
-more thread-310\ FS-ScheduleTask.log 
+more thread-310\ FS-ScheduleTask.log
 #1481750360
-more thread-VFA-2-BidderRejectTask.log 
+more thread-VFA-2-BidderRejectTask.log
 #1481751291
-more TankerTask-0001.log 
+more TankerTask-0001.log
 #1481752284
 rm *
 #1481752713
-more TargetTask-0001.log 
+more TargetTask-0001.log
 #1481752895
 rm -rf *
 #1481752918
-more INIT.log 
+more INIT.log
 #1481752929
-more UNKNOWN.log 
+more UNKNOWN.log
 #1481756805
 cd ..
 #1481756807
@@ -49136,9 +49136,9 @@ pwd
 #1481756831
 cd tasks/
 #1481756939
-more more TargetTask-0009.log 
+more more TargetTask-0009.log
 #1481756948
-more TargetTask-0009.log 
+more TargetTask-0009.log
 #1481756972
 ls
 #1481757431
@@ -49152,11 +49152,11 @@ git add ../../src/main/resources/logback.xml
 #1481757514
 git commit -m "Added the ability of tagging log messages by tasks, and to write the log to task specific files."
 #1481757524
-git push -u origin marcel-log-by-tasks 
+git push -u origin marcel-log-by-tasks
 #1481772588
 git status
 #1481772597
-git checkout master 
+git checkout master
 #1481772599
 git pull
 #1481772748
@@ -49182,11 +49182,11 @@ mvn dependency:tree -Dverbose
 #1481781448
 mvn dependency:tree -Dverbose > mvn-deps.txt
 #1481782436
-mvn dependency:resolve -Dverbose 
+mvn dependency:resolve -Dverbose
 #1481782621
-mvn dependency:analyze-duplicate -Dverbose 
+mvn dependency:analyze-duplicate -Dverbose
 #1481825368
-mvn dependency:tree -Dverbose 
+mvn dependency:tree -Dverbose
 #1481828368
 maven clean
 #1481830618
@@ -49196,13 +49196,13 @@ mvn generate-sources
 #1481830706
 mvn compile package
 #1481830768
-mvn dependency:analyze -Dverbose 
+mvn dependency:analyze -Dverbose
 #1481745078
 pwd
 #1481756939
-more more TargetTask-0009.log 
+more more TargetTask-0009.log
 #1481756948
-more TargetTask-0009.log 
+more TargetTask-0009.log
 #1481756972
 ls
 #1481757431
@@ -49216,7 +49216,7 @@ git add ../../src/main/resources/logback.xml
 #1481757514
 git commit -m "Added the ability of tagging log messages by tasks, and to write the log to task specific files."
 #1481757524
-git push -u origin marcel-log-by-tasks 
+git push -u origin marcel-log-by-tasks
 #1481772748
 cd ../..
 #1481772750
@@ -49236,17 +49236,17 @@ mvn dependency:tree -Dverbose
 #1481781448
 mvn dependency:tree -Dverbose > mvn-deps.txt
 #1481782436
-mvn dependency:resolve -Dverbose 
+mvn dependency:resolve -Dverbose
 #1481782621
-mvn dependency:analyze-duplicate -Dverbose 
+mvn dependency:analyze-duplicate -Dverbose
 #1481825368
-mvn dependency:tree -Dverbose 
+mvn dependency:tree -Dverbose
 #1481828368
 maven clean
 #1481830706
 mvn compile package
 #1481830768
-mvn dependency:analyze -Dverbose 
+mvn dependency:analyze -Dverbose
 #1481745078
 pwd
 #1481833952
@@ -49260,7 +49260,7 @@ git rm src/main/webapp/WEB-INF
 #1481834045
 git rm -r src/main/webapp
 #1481834180
-git commit -m "Cleaned pom.xml to remove unused dependencies and fix slf4j warning, remove the generated avro classes on mvn clean, updated versions. Fixed package for avro PlanConfig class. Consolidated all log commands to use slf4j.  
+git commit -m "Cleaned pom.xml to remove unused dependencies and fix slf4j warning, remove the generated avro classes on mvn clean, updated versions. Fixed package for avro PlanConfig class. Consolidated all log commands to use slf4j.
 "
 #1481835571
 git diff pom.xml
@@ -49285,21 +49285,21 @@ mvn compile
 #1481839302
 mvn package
 #1481839338
-git push -u origin marcel-clean-pom 
+git push -u origin marcel-clean-pom
 #1481845758
 git stash show
 #1481845763
 git stash
 #1481845768
-git checkout master 
+git checkout master
 #1481845770
 git pull
 #1481845808
-git branch 
+git branch
 #1481845818
-git branch -d marcel-log-by-tasks 
+git branch -d marcel-log-by-tasks
 #1481845824
-git branch -d marcel-clean-pom 
+git branch -d marcel-clean-pom
 #1481845864
 git checkout -b marcel-synch-multi-mission
 #1481845870
@@ -49317,7 +49317,7 @@ git status
 #1481861598
 git commit -m "Optimized some string formatting."
 #1481861606
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1481861614
 exit
 #1481861616
@@ -49333,9 +49333,9 @@ git add ../../src/main/resources/logback.xml
 #1481757514
 git commit -m "Added the ability of tagging log messages by tasks, and to write the log to task specific files."
 #1481757524
-git push -u origin marcel-log-by-tasks 
+git push -u origin marcel-log-by-tasks
 #1481772597
-git checkout master 
+git checkout master
 #1481772750
 mvn versions:display-dependency-updates versions:display-plugin-updates
 #1481772995
@@ -49357,11 +49357,11 @@ mvn dependency:tree -Dverbose
 #1481781448
 mvn dependency:tree -Dverbose > mvn-deps.txt
 #1481782436
-mvn dependency:resolve -Dverbose 
+mvn dependency:resolve -Dverbose
 #1481782621
-mvn dependency:analyze-duplicate -Dverbose 
+mvn dependency:analyze-duplicate -Dverbose
 #1481825368
-mvn dependency:tree -Dverbose 
+mvn dependency:tree -Dverbose
 #1481828368
 maven clean
 #1481830618
@@ -49371,11 +49371,11 @@ mvn generate-sources
 #1481830706
 mvn compile package
 #1481830768
-mvn dependency:analyze -Dverbose 
+mvn dependency:analyze -Dverbose
 #1481756939
-more more TargetTask-0009.log 
+more more TargetTask-0009.log
 #1481756948
-more TargetTask-0009.log 
+more TargetTask-0009.log
 #1481757431
 git checkout -b marcel-log-by-tasks
 #1481757449
@@ -49387,7 +49387,7 @@ git add ../../src/main/resources/logback.xml
 #1481757514
 git commit -m "Added the ability of tagging log messages by tasks, and to write the log to task specific files."
 #1481757524
-git push -u origin marcel-log-by-tasks 
+git push -u origin marcel-log-by-tasks
 #1481772750
 mvn versions:display-dependency-updates versions:display-plugin-updates
 #1481772995
@@ -49405,17 +49405,17 @@ mvn dependency:tree -Dverbose
 #1481781448
 mvn dependency:tree -Dverbose > mvn-deps.txt
 #1481782436
-mvn dependency:resolve -Dverbose 
+mvn dependency:resolve -Dverbose
 #1481782621
-mvn dependency:analyze-duplicate -Dverbose 
+mvn dependency:analyze-duplicate -Dverbose
 #1481825368
-mvn dependency:tree -Dverbose 
+mvn dependency:tree -Dverbose
 #1481828368
 maven clean
 #1481830706
 mvn compile package
 #1481830768
-mvn dependency:analyze -Dverbose 
+mvn dependency:analyze -Dverbose
 #1481833952
 git checkout -b marcel-clean-pom
 #1481833985
@@ -49427,7 +49427,7 @@ git rm src/main/webapp/WEB-INF
 #1481834045
 git rm -r src/main/webapp
 #1481834180
-git commit -m "Cleaned pom.xml to remove unused dependencies and fix slf4j warning, remove the generated avro classes on mvn clean, updated versions. Fixed package for avro PlanConfig class. Consolidated all log commands to use slf4j.  
+git commit -m "Cleaned pom.xml to remove unused dependencies and fix slf4j warning, remove the generated avro classes on mvn clean, updated versions. Fixed package for avro PlanConfig class. Consolidated all log commands to use slf4j.
 #1481905373
 "
 #1481835571
@@ -49453,15 +49453,15 @@ mvn compile
 #1481839302
 mvn package
 #1481839338
-git push -u origin marcel-clean-pom 
+git push -u origin marcel-clean-pom
 #1481845758
 git stash show
 #1481845768
-git checkout master 
+git checkout master
 #1481845818
-git branch -d marcel-log-by-tasks 
+git branch -d marcel-log-by-tasks
 #1481845824
-git branch -d marcel-clean-pom 
+git branch -d marcel-clean-pom
 #1481845864
 git checkout -b marcel-synch-multi-mission
 #1481851338
@@ -49485,7 +49485,7 @@ git commit -m "Changed the node to unit allocation map."
 #1481930099
 cd src/main/resources/data/TE3/
 #1481930149
-diff RSPACE\ TE3\ unit\ contracts\ v1.1.csv RSPACE\ TE3\ unit\ contracts\ v1.2.csv 
+diff RSPACE\ TE3\ unit\ contracts\ v1.1.csv RSPACE\ TE3\ unit\ contracts\ v1.2.csv
 #1481939328
 git add ../../../java/edu/kestrel/scharp/airdomain/scenarios/TE3Scenario.java ../../../java/edu/kestrel/scharp/airdomain/scenarios/TE3ScenarioConfiguration.java ../../../java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java RSPACE\ TE3\ unit\ contracts\ v1.1.*
 #1481939376
@@ -49499,13 +49499,13 @@ git add RSPACE\ TE3\ unit\ contracts\ v1.2.jsn
 #1481939431
 git add RSPACE\ TE3\ unit\ contracts\ v1.2.xlsx
 #1481939449
-rm RSPACE\ TE3\ unit\ contracts\ v1.2.di 
+rm RSPACE\ TE3\ unit\ contracts\ v1.2.di
 #1481939566
 git commit -m "Added new version of unit contract, updated scenario to use new unit contract file and march 1st and the operations day. Fixed scheduling of XCAS and XDCA task to use the correct bounds for the task."
 #1482164757
 git pull --all --prune
 #1482164767
-git branch 
+git branch
 #1482164803
 cd ../..
 #1482164817
@@ -49517,7 +49517,7 @@ git diff src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitSchedule
 #1482188069
 git checkout -- src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
 #1482188087
-git add src/main/java/edu/kestrel/scharp/planner/resource/AirUnitCapacityIntervalEntry.java 
+git add src/main/java/edu/kestrel/scharp/planner/resource/AirUnitCapacityIntervalEntry.java
 #1482188093
 git diff src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacityProfile.java
 #1482188112
@@ -49547,13 +49547,13 @@ git add src/main/resources/logback.xml
 #1482368563
 git stash
 #1482368570
-git pull origin marcel-test-refueling 
+git pull origin marcel-test-refueling
 #1482368575
 git stash pop
 #1482424476
 ssh becker@crake.kestrel.edu
 #1482432029
-cd log/ 
+cd log/
 #1482435936
 cd tasks/
 #1482519488
@@ -49575,7 +49575,7 @@ git add ../src/main/java/edu/kestrel/scharp/planner/search/
 #1482559623
 git commit -m "Postponing reservation until bid is accepted."
 #1482559645
-git pull origin master 
+git pull origin master
 #1482559671
 cd ..
 #1482559672
@@ -49587,19 +49587,19 @@ git add src/main/java/edu/kestrel/scharp/planner/manager
 #1482561749
 git commit -m "Added task id to activity id."
 #1482561759
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1482561767
 git status
 #1482561787
 exit
 #1481825368
-mvn dependency:tree -Dverbose 
+mvn dependency:tree -Dverbose
 #1481828368
 maven clean
 #1481830706
 mvn compile package
 #1481830768
-mvn dependency:analyze -Dverbose 
+mvn dependency:analyze -Dverbose
 #1481833952
 git checkout -b marcel-clean-pom
 #1481833985
@@ -49611,7 +49611,7 @@ git rm src/main/webapp/WEB-INF
 #1481834045
 git rm -r src/main/webapp
 #1481834180
-git commit -m "Cleaned pom.xml to remove unused dependencies and fix slf4j warning, remove the generated avro classes on mvn clean, updated versions. Fixed package for avro PlanConfig class. Consolidated all log commands to use slf4j.  
+git commit -m "Cleaned pom.xml to remove unused dependencies and fix slf4j warning, remove the generated avro classes on mvn clean, updated versions. Fixed package for avro PlanConfig class. Consolidated all log commands to use slf4j.
 #1482258808
 "
 #1481835571
@@ -49637,15 +49637,15 @@ mvn compile
 #1481839302
 mvn package
 #1481839338
-git push -u origin marcel-clean-pom 
+git push -u origin marcel-clean-pom
 #1481845758
 git stash show
 #1481845763
 git stash
 #1481845818
-git branch -d marcel-log-by-tasks 
+git branch -d marcel-log-by-tasks
 #1481845824
-git branch -d marcel-clean-pom 
+git branch -d marcel-clean-pom
 #1481845864
 git checkout -b marcel-synch-multi-mission
 #1481845870
@@ -49661,9 +49661,9 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/TankerAirUnitResource.
 #1481861598
 git commit -m "Optimized some string formatting."
 #1481861606
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1482258810
-cd 
+cd
 #1482258819
 cd src/scharp-compile-test-workspace/scharp/
 #1482274893
@@ -49697,17 +49697,17 @@ git add ../src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapa
 #1482352920
 git commit -m "Fixed the reservation of refueling activities to properly remove the old orbit resulting from the orbit activity split. Minor changes to logging statements."
 #1482352928
-git push -u origin marcel-test-refueling 
+git push -u origin marcel-test-refueling
 #1482353086
 cd ..
 #1482365717
 mvn clean generate-sources
 #1482365824
-git checkout marcel-test-refueling 
+git checkout marcel-test-refueling
 #1482365834
-git pull origin master 
+git pull origin master
 #1482365872
-git push origin marcel-test-refueling 
+git push origin marcel-test-refueling
 #1482430645
 ls
 #1482430655
@@ -49717,17 +49717,17 @@ pwd
 #1482559212
 git pull --all --prune
 #1482559234
-git checkout master 
+git checkout master
 #1482559239
 git status
 #1482559243
 git pull
 #1482559250
-git branch 
+git branch
 #1482559257
-git branch -d drs4 
+git branch -d drs4
 #1482559261
-git branch -d marcel-test-refueling 
+git branch -d marcel-test-refueling
 #1482559280
 mvn clean generate-sources compile
 #1482561788
@@ -49739,7 +49739,7 @@ git add RSPACE\ TE3\ unit\ contracts\ v1.2.jsn
 #1481939431
 git add RSPACE\ TE3\ unit\ contracts\ v1.2.xlsx
 #1481939449
-rm RSPACE\ TE3\ unit\ contracts\ v1.2.di 
+rm RSPACE\ TE3\ unit\ contracts\ v1.2.di
 #1481939566
 git commit -m "Added new version of unit contract, updated scenario to use new unit contract file and march 1st and the operations day. Fixed scheduling of XCAS and XDCA task to use the correct bounds for the task."
 #1482164803
@@ -49751,7 +49751,7 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
 #1482188069
 git checkout -- src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
 #1482188087
-git add src/main/java/edu/kestrel/scharp/planner/resource/AirUnitCapacityIntervalEntry.java 
+git add src/main/java/edu/kestrel/scharp/planner/resource/AirUnitCapacityIntervalEntry.java
 #1482188093
 git diff src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacityProfile.java
 #1482188112
@@ -49771,11 +49771,11 @@ git diff src/main/java/edu/kestrel/scharp/planner/search/SearchStrategy.java
 #1482358417
 git log
 #1482368570
-git pull origin marcel-test-refueling 
+git pull origin marcel-test-refueling
 #1482424476
 ssh becker@crake.kestrel.edu
 #1482432029
-cd log/ 
+cd log/
 #1482435936
 cd tasks/
 #1482519488
@@ -49803,13 +49803,13 @@ rm -rf log/*
 #1482561749
 git commit -m "Added task id to activity id."
 #1481825368
-mvn dependency:tree -Dverbose 
+mvn dependency:tree -Dverbose
 #1481828368
 maven clean
 #1481830706
 mvn compile package
 #1481830768
-mvn dependency:analyze -Dverbose 
+mvn dependency:analyze -Dverbose
 #1481833952
 git checkout -b marcel-clean-pom
 #1481833985
@@ -49819,7 +49819,7 @@ git rm src/main/webapp/WEB-INF
 #1481834045
 git rm -r src/main/webapp
 #1481834180
-git commit -m "Cleaned pom.xml to remove unused dependencies and fix slf4j warning, remove the generated avro classes on mvn clean, updated versions. Fixed package for avro PlanConfig class. Consolidated all log commands to use slf4j.  
+git commit -m "Cleaned pom.xml to remove unused dependencies and fix slf4j warning, remove the generated avro classes on mvn clean, updated versions. Fixed package for avro PlanConfig class. Consolidated all log commands to use slf4j.
 #1482258808
 "
 #1481835571
@@ -49845,13 +49845,13 @@ mvn compile
 #1481839302
 mvn package
 #1481839338
-git push -u origin marcel-clean-pom 
+git push -u origin marcel-clean-pom
 #1481845758
 git stash show
 #1481845818
-git branch -d marcel-log-by-tasks 
+git branch -d marcel-log-by-tasks
 #1481845824
-git branch -d marcel-clean-pom 
+git branch -d marcel-clean-pom
 #1481845864
 git checkout -b marcel-synch-multi-mission
 #1481851382
@@ -49861,7 +49861,7 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/TankerAirUnitResource.
 #1481861598
 git commit -m "Optimized some string formatting."
 #1482258810
-cd 
+cd
 #1482258819
 cd src/scharp-compile-test-workspace/scharp/
 #1482274893
@@ -49895,23 +49895,23 @@ git add ../src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapa
 #1482352920
 git commit -m "Fixed the reservation of refueling activities to properly remove the old orbit resulting from the orbit activity split. Minor changes to logging statements."
 #1482352928
-git push -u origin marcel-test-refueling 
+git push -u origin marcel-test-refueling
 #1482353086
 cd ..
 #1482365717
 mvn clean generate-sources
 #1482365824
-git checkout marcel-test-refueling 
+git checkout marcel-test-refueling
 #1482365872
-git push origin marcel-test-refueling 
+git push origin marcel-test-refueling
 #1482430655
 rm -rf log/*
 #1482432004
 pwd
 #1482559257
-git branch -d drs4 
+git branch -d drs4
 #1482559261
-git branch -d marcel-test-refueling 
+git branch -d marcel-test-refueling
 #1482860846
 cd src/rspace-eclipse/scharp/
 #1482860860
@@ -49921,7 +49921,7 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/XDCABid.java src/main/
 #1482861490
 git stash
 #1482861493
-git checkout drs5 
+git checkout drs5
 #1482865265
 git push commit -m "Fixed the cancellation of refuel activities to use the resource scheduled activities instead of children of refueling mission."
 #1482865299
@@ -49931,17 +49931,17 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningOptions.java
 #1482865320
 git commit -m "Fixed the cancellation of refuel activities to use the resource scheduled activities instead of children of refueling mission."
 #1482865342
-git push -u origin drs5 
+git push -u origin drs5
 #1482867413
 git diff src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
 #1482867453
 git checkout -- src/main/java/edu/kestrel/scharp/planner/analysis/TBAGraph.java
 #1482867463
-git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java 
+git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
 #1482867469
 git diff src/main/java/edu/kestrel/scharp/planner/entities/DCAActivity.java
 #1482867482
-git add src/main/java/edu/kestrel/scharp/planner/entities/DCAActivity.java 
+git add src/main/java/edu/kestrel/scharp/planner/entities/DCAActivity.java
 #1482867493
 git diff src/main/java/edu/kestrel/scharp/planner/manager/DCAEscortUnitScheduler.java
 #1482867516
@@ -49969,27 +49969,27 @@ git add src/main/java/edu/kestrel/scharp/planner/resource/AirUnitCapacityInterva
 #1482883395
 git commit -m "Changed field in interval entry from set of activities to list."
 #1482883587
-git checkout marcel-change-print-statements 
+git checkout marcel-change-print-statements
 #1482884497
 git stauts
 #1482884523
 git commit -m "Fixed merge conflicts."
 #1482884532
-git push -u origin marcel-change-print-statements 
+git push -u origin marcel-change-print-statements
 #1482884688
-git branch 
+git branch
 #1482884701
-git branch -d marcel-change-print-statements 
+git branch -d marcel-change-print-statements
 #1482885161
 git add src/main/java/edu/kestrel/scharp/planner/manager/DCAEscortUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler.java
 #1482885234
 ls
 #1482972100
-git stash 
+git stash
 #1482972105
 git checkout drs5
 #1483034418
-git checkout master 
+git checkout master
 #1483034437
 git pull --all --prune
 #1483047480
@@ -50003,11 +50003,11 @@ git add src/main/java/edu/kestrel/scharp/planner/manager
 #1483055433
 git commit -m "Commented out some unused methods."
 #1483055441
-git push -u origin marcel-functional-manager 
+git push -u origin marcel-functional-manager
 #1483055449
-git checkout marcel-synch-multi-mission 
+git checkout marcel-synch-multi-mission
 #1483055454
-git pull origin master 
+git pull origin master
 #1483055771
 git statis
 #1483055788
@@ -50021,7 +50021,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler
 #1483059260
 git commit -m "Removed cancellation of resource reservations in Fighter scheduler."
 #1483059285
-git stash show 
+git stash show
 #1483059298
 git stash pop
 #1483059307
@@ -50033,21 +50033,21 @@ git add src/main/resources/logback.xml
 #1483059337
 git commit -m "Changed log level."
 #1483059347
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1483059358
 git stash --help
 #1483059381
 git stash drop
 #1483059391
-git checkout marcel-functional-manager 
+git checkout marcel-functional-manager
 #1483060212
-git checkout marcel-synch-multi-mission  
+git checkout marcel-synch-multi-mission
 #1483064714
 mvn clean generate-sources compile
 #1483070162
 exit
 #1483841559
-cd 
+cd
 #1483841567
 cd src/scharp-compile-test-workspace/scharp/
 #1483841569
@@ -50069,7 +50069,7 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/XDCABid.java src/main/
 #1482861490
 git stash
 #1482861493
-git checkout drs5 
+git checkout drs5
 #1482865265
 git push commit -m "Fixed the cancellation of refuel activities to use the resource scheduled activities instead of children of refueling mission."
 #1482865299
@@ -50083,11 +50083,11 @@ git diff src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
 #1482867453
 git checkout -- src/main/java/edu/kestrel/scharp/planner/analysis/TBAGraph.java
 #1482867463
-git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java 
+git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
 #1482867469
 git diff src/main/java/edu/kestrel/scharp/planner/entities/DCAActivity.java
 #1482867482
-git add src/main/java/edu/kestrel/scharp/planner/entities/DCAActivity.java 
+git add src/main/java/edu/kestrel/scharp/planner/entities/DCAActivity.java
 #1482867516
 git add src/main/java/edu/kestrel/scharp/planner/manager/DCAEscortUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler.java
 #1482867532
@@ -50113,21 +50113,21 @@ git add src/main/java/edu/kestrel/scharp/planner/resource/AirUnitCapacityInterva
 #1482883395
 git commit -m "Changed field in interval entry from set of activities to list."
 #1482883587
-git checkout marcel-change-print-statements 
+git checkout marcel-change-print-statements
 #1482884497
 git stauts
 #1482884523
 git commit -m "Fixed merge conflicts."
 #1482884532
-git push -u origin marcel-change-print-statements 
+git push -u origin marcel-change-print-statements
 #1482884701
-git branch -d marcel-change-print-statements 
+git branch -d marcel-change-print-statements
 #1482885161
 git add src/main/java/edu/kestrel/scharp/planner/manager/DCAEscortUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler.java
 #1482885234
 ls
 #1482972100
-git stash 
+git stash
 #1483047480
 git checkout -b marcel-functional-manager
 #1483055382
@@ -50145,7 +50145,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler
 #1483059260
 git commit -m "Removed cancellation of resource reservations in Fighter scheduler."
 #1483059285
-git stash show 
+git stash show
 #1483059298
 git stash pop
 #1483059321
@@ -50159,15 +50159,15 @@ git stash --help
 #1483059381
 git stash drop
 #1483060212
-git checkout marcel-synch-multi-mission  
+git checkout marcel-synch-multi-mission
 #1483124074
 cd src/rspace-eclipse/scharp/
 #1483124142
 git commit -m "Added some log statements to update activities time windows."
 #1483124149
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1483124172
-git checkout -t origin/marcel-fix-dca-refuel-time 
+git checkout -t origin/marcel-fix-dca-refuel-time
 #1483124181
 mvn clean generate-sources
 #1483124256
@@ -50175,9 +50175,9 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/DCAEscortUnitScheduler.
 #1483124266
 git commit -m "Re-formatted files."
 #1483125329
-git checkout marcel-synch-multi-mission 
+git checkout marcel-synch-multi-mission
 #1483126341
-git checkout marcel-fix-dca-refuel-time 
+git checkout marcel-fix-dca-refuel-time
 #1483126352
 mvn clean generate-sources compile
 #1483128726
@@ -50191,13 +50191,13 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/Activity.java
 #1483130854
 git commit -m "Moved method propagate activity time windows to activity class and removed from schedulers."
 #1483130869
-git push -u origin marcel-fix-dca-refuel-time 
+git push -u origin marcel-fix-dca-refuel-time
 #1483138435
-git pull 
+git pull
 #1483138473
-git branch -d marcel-fix-dca-refuel-time 
+git branch -d marcel-fix-dca-refuel-time
 #1483138481
-git branch 
+git branch
 #1483138510
 git pull origin master  --rebase
 #1483461601
@@ -50217,9 +50217,9 @@ git add src/main/java/edu/kestrel/scharp/planner/entities
 #1483592944
 git commit -m "First commit for functional manager."
 #1483592982
-git pull origin master 
+git pull origin master
 #1483593292
-git checkout master 
+git checkout master
 #1483593301
 git checkout drs5
 #1483638349
@@ -50227,9 +50227,9 @@ git add src/main/java/edu/kestrel/scharp/airdomain/entities/Location.java src/ma
 #1483638361
 git commit -m "Just re-formatted code."
 #1483638367
-git push -u origin drs5 
+git push -u origin drs5
 #1483638806
-git checkout marcel-functional-manager 
+git checkout marcel-functional-manager
 #1483638808
 git pull
 #1483660463
@@ -50257,11 +50257,11 @@ git status
 #1483841491
 git commit -m "Fixes to delegate the task to the functional manager and send the bid to the functional manager requester."
 #1483841498
-git push -u origin marcel-functional-manager 
+git push -u origin marcel-functional-manager
 #1483848336
 exit
 #1483841498
-git push -u origin marcel-functional-manager 
+git push -u origin marcel-functional-manager
 #1483929511
 bash
 #1483929544
@@ -50273,7 +50273,7 @@ exit
 #1483841491
 git commit -m "Fixes to delegate the task to the functional manager and send the bid to the functional manager requester."
 #1483841498
-git push -u origin marcel-functional-manager 
+git push -u origin marcel-functional-manager
 #1483929252
 cd
 #1483929262
@@ -50293,9 +50293,9 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/DCAEscortUnitScheduler.
 #1483124266
 git commit -m "Re-formatted files."
 #1483125329
-git checkout marcel-synch-multi-mission 
+git checkout marcel-synch-multi-mission
 #1483126341
-git checkout marcel-fix-dca-refuel-time 
+git checkout marcel-fix-dca-refuel-time
 #1483128726
 git diff src/main/java/edu/kestrel/scharp/planner/manager/DCAEscortUnitScheduler.java
 #1483128737
@@ -50307,11 +50307,11 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/Activity.java
 #1483130854
 git commit -m "Moved method propagate activity time windows to activity class and removed from schedulers."
 #1483130869
-git push -u origin marcel-fix-dca-refuel-time 
+git push -u origin marcel-fix-dca-refuel-time
 #1483138473
-git branch -d marcel-fix-dca-refuel-time 
+git branch -d marcel-fix-dca-refuel-time
 #1483138481
-git branch 
+git branch
 #1483138510
 git pull origin master  --rebase
 #1483461601
@@ -50337,7 +50337,7 @@ git add src/main/java/edu/kestrel/scharp/airdomain/entities/Location.java src/ma
 #1483638361
 git commit -m "Just re-formatted code."
 #1483638367
-git push -u origin drs5 
+git push -u origin drs5
 #1483660463
 git add src/main/java/edu/kestrel/scharp/planner/interfaces/IPlanningCell.java src/main/java/edu/kestrel/scharp/planner/manager
 #1483660505
@@ -50379,13 +50379,13 @@ git add src/main/java/edu/kestrel/scharp/planner/analysis/reasons/NoDCAReason.ja
 #1484004454
 git commit -m "Added all unit clients to the plan manager."
 #1484004470
-git pull 
+git pull
 #1484006123
 git add src/main/java/edu/kestrel/scharp/planner/interfaces/IPlanningTask.java src/main/java/edu/kestrel/scharp/planner/manager
 #1484006139
 git commit -m "Merged with master."
 #1484006159
-git push -u origin master 
+git push -u origin master
 #1484006938
 git statis
 #1484006948
@@ -50393,21 +50393,21 @@ git add src/main/java/edu/kestrel/scharp/activemq/te3/SEADServer.java
 #1484006982
 git commit -m "Fixed SeadServer to use the planning cell manager collect bids method."
 #1484006998
-git checkout master 
+git checkout master
 #1484007015
 mvn clean generate-sources compile
 #1484061368
-git checkout marcel-functional-manager 
+git checkout marcel-functional-manager
 #1484076420
 git pull
 #1484076466
-git add src/main/java/edu/kestrel/scharp/activemq/te3/SEADServer.java src/main/java/edu/kestrel/scharp/airdomain/entities/Scenario.java src/main/java/edu/kestrel/scharp/airdomain/interfaces/IScenario.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE3Scenario.java 
+git add src/main/java/edu/kestrel/scharp/activemq/te3/SEADServer.java src/main/java/edu/kestrel/scharp/airdomain/entities/Scenario.java src/main/java/edu/kestrel/scharp/airdomain/interfaces/IScenario.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE3Scenario.java
 #1484076472
 git diff src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
 #1484076511
 git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
 #1484076534
-git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java 
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
 #1484076545
 git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.java
 #1484076556
@@ -50417,7 +50417,7 @@ git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
 #1484076614
 git commit -m "Several small fixes to functional managers and some code refactoring in fighte unit scheduler to move code to static manager utils class."
 #1484076641
-git pull origin master 
+git pull origin master
 #1484091877
 git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
 #1484091908
@@ -50437,7 +50437,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager
 #1484097380
 git commit -m "Removed peek() from the code that waits for the task or bid."
 #1484097391
-git push -u origin marcel-functional-manager 
+git push -u origin marcel-functional-manager
 #1484097934
 git status
 #1484098411
@@ -50467,9 +50467,9 @@ git add src/main/java/edu/kestrel/scharp/airdomain/entities/Location.java src/ma
 #1483638361
 git commit -m "Just re-formatted code."
 #1483638367
-git push -u origin drs5 
+git push -u origin drs5
 #1483638806
-git checkout marcel-functional-manager 
+git checkout marcel-functional-manager
 #1483660463
 git add src/main/java/edu/kestrel/scharp/planner/interfaces/IPlanningCell.java src/main/java/edu/kestrel/scharp/planner/manager
 #1483660505
@@ -50501,9 +50501,9 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/DCAEscortUnitScheduler.
 #1483124266
 git commit -m "Re-formatted files."
 #1483125329
-git checkout marcel-synch-multi-mission 
+git checkout marcel-synch-multi-mission
 #1483126341
-git checkout marcel-fix-dca-refuel-time 
+git checkout marcel-fix-dca-refuel-time
 #1483128726
 git diff src/main/java/edu/kestrel/scharp/planner/manager/DCAEscortUnitScheduler.java
 #1483128737
@@ -50515,9 +50515,9 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/Activity.java
 #1483130854
 git commit -m "Moved method propagate activity time windows to activity class and removed from schedulers."
 #1483130869
-git push -u origin marcel-fix-dca-refuel-time 
+git push -u origin marcel-fix-dca-refuel-time
 #1483138473
-git branch -d marcel-fix-dca-refuel-time 
+git branch -d marcel-fix-dca-refuel-time
 #1483138510
 git pull origin master  --rebase
 #1483461601
@@ -50543,7 +50543,7 @@ git add src/main/java/edu/kestrel/scharp/airdomain/entities/Location.java src/ma
 #1483638361
 git commit -m "Just re-formatted code."
 #1483638367
-git push -u origin drs5 
+git push -u origin drs5
 #1483660463
 git add src/main/java/edu/kestrel/scharp/planner/interfaces/IPlanningCell.java src/main/java/edu/kestrel/scharp/planner/manager
 #1483660505
@@ -50581,11 +50581,11 @@ git add src/main/java/edu/kestrel/scharp/planner/analysis/reasons/NoDCAReason.ja
 #1484004454
 git commit -m "Added all unit clients to the plan manager."
 #1484004470
-git pull 
+git pull
 #1484006123
 git add src/main/java/edu/kestrel/scharp/planner/interfaces/IPlanningTask.java src/main/java/edu/kestrel/scharp/planner/manager
 #1484006159
-git push -u origin master 
+git push -u origin master
 #1484006938
 git statis
 #1484006948
@@ -50593,11 +50593,11 @@ git add src/main/java/edu/kestrel/scharp/activemq/te3/SEADServer.java
 #1484006982
 git commit -m "Fixed SeadServer to use the planning cell manager collect bids method."
 #1484061368
-git checkout marcel-functional-manager 
+git checkout marcel-functional-manager
 #1484076466
-git add src/main/java/edu/kestrel/scharp/activemq/te3/SEADServer.java src/main/java/edu/kestrel/scharp/airdomain/entities/Scenario.java src/main/java/edu/kestrel/scharp/airdomain/interfaces/IScenario.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE3Scenario.java 
+git add src/main/java/edu/kestrel/scharp/activemq/te3/SEADServer.java src/main/java/edu/kestrel/scharp/airdomain/entities/Scenario.java src/main/java/edu/kestrel/scharp/airdomain/interfaces/IScenario.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE3Scenario.java
 #1484076534
-git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java 
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
 #1484076545
 git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.java
 #1484076556
@@ -50631,13 +50631,13 @@ git checkout src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitSche
 #1484165649
 git commit -m "Fixed conflicts after merge with master."
 #1484167295
-git stash 
+git stash
 #1484167379
 git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
 #1484167397
 git commit -m "Merged with master."
 #1484167413
-git push -u origin marcel-functional-manager 
+git push -u origin marcel-functional-manager
 #1484167423
 git stash pop
 #1484167506
@@ -50645,9 +50645,9 @@ git add src/main/java/edu/kestrel/scharp/planner/analysis/display/PlanAnalysisGU
 #1484167555
 git commit -m "Changed the PlanAnalysisGUI to use functional plan manager instead of distributed plan manager."
 #1484168695
-git branch 
+git branch
 #1484168712
-git checkout te3-evaluation-workflow 
+git checkout te3-evaluation-workflow
 #1484249653
 ps -aux
 #1484249659
@@ -50687,7 +50687,7 @@ git diff src/test/java/edu/kestrel/scharp/workflow/TestEcho.java
 #1484271284
 git add src/test/java/edu/kestrel/scharp/workflow/TestEcho.java
 #1484271944
-git add 
+git add
 #1484271952
 git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellAMQServer.java
 #1484271959
@@ -50733,7 +50733,7 @@ git add src/test/java/edu/kestrel/scharp/activemq/
 #1484372522
 git commit -m "Implemented integration with sead and strike ui bridge."
 #1484372833
-git checkout master 
+git checkout master
 #1484372991
 rm -rf log/*
 #1484373327
@@ -50767,7 +50767,7 @@ git commit -m "Changed logging tag for get and select options. Fixed response ty
 #1484418356
 git pull --all
 #1484418363
-git pull origin master 
+git pull origin master
 #1484418382
 mvn clean generate-sources compile
 #1484437391
@@ -50795,7 +50795,7 @@ git pul
 #1484438113
 git pull
 #1484438121
-git push -u origin te3-evaluation-workflow 
+git push -u origin te3-evaluation-workflow
 #1484439603
 git status
 #1484439915
@@ -50839,7 +50839,7 @@ git commit -m "Changed logging tag for get and select options. Fixed response ty
 #1484418356
 git pull --all
 #1484418363
-git pull origin master 
+git pull origin master
 #1484418382
 mvn clean generate-sources compile
 #1484437391
@@ -50887,7 +50887,7 @@ git commit -m "Fixed pom to use the correct main class. Added script to run TE3 
 #1484440956
 git pull
 #1484440971
-git push -u origin te3-evaluation-workflow 
+git push -u origin te3-evaluation-workflow
 #1484441038
 git status
 #1484441814
@@ -50895,9 +50895,9 @@ cd scharp/Docker/activemq/
 #1484441863
 cd DockerJava/
 #1484441878
-more docker-build.sh 
+more docker-build.sh
 #1484441882
-more Dockerfile 
+more Dockerfile
 #1484442196
 cd ,,
 #1484442205
@@ -50905,7 +50905,7 @@ cd ls
 #1484442212
 cd jboss-fuse-docker/
 #1484442218
-./docker-build.sh 
+./docker-build.sh
 #1484442639
 cd DockerScharpCacheMaven/
 #1484442648
@@ -50915,7 +50915,7 @@ cd ../
 #1484442960
 cd DockerScharpUpdateImage/
 #1484442967
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1484443112
 cd ..
 #1484443123
@@ -50923,7 +50923,7 @@ cd DockerScharpPlanner/
 #1484443124
 ls
 #1484443132
-more docker-run.sh 
+more docker-run.sh
 #1484443148
 ./docker-run.sh 1
 #1484443310
@@ -50951,7 +50951,7 @@ cd jboss-fuse-docker/
 #1484443073
 ls
 #1484443082
-./docker-run.sh 
+./docker-run.sh
 #1484443340
 cd ../..
 #1484443368
@@ -50961,7 +50961,7 @@ git status
 #1484443405
 git commit -m "Updated jboss fuse version, and run scripts to use TE3MainServers."
 #1484443411
-git push -u origin te3-evaluation-workflow 
+git push -u origin te3-evaluation-workflow
 #1484443482
 exit
 #1484440291
@@ -50971,9 +50971,9 @@ exit
 #1484441863
 cd DockerJava/
 #1484441878
-more docker-build.sh 
+more docker-build.sh
 #1484441882
-more Dockerfile 
+more Dockerfile
 #1484442196
 cd ,,
 #1484442205
@@ -50981,7 +50981,7 @@ cd ls
 #1484442212
 cd jboss-fuse-docker/
 #1484442218
-./docker-build.sh 
+./docker-build.sh
 #1484442639
 cd DockerScharpCacheMaven/
 #1484442648
@@ -50991,7 +50991,7 @@ cd ../
 #1484442960
 cd DockerScharpUpdateImage/
 #1484442967
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1484443112
 cd ..
 #1484443123
@@ -50999,7 +50999,7 @@ cd DockerScharpPlanner/
 #1484443124
 ls
 #1484443132
-more docker-run.sh 
+more docker-run.sh
 #1484443148
 ./docker-run.sh 1
 #1484443168
@@ -51019,7 +51019,7 @@ cd jboss-fuse-docker/
 #1484443073
 ls
 #1484443082
-./docker-run.sh 
+./docker-run.sh
 #1484443340
 cd ../..
 #1484443368
@@ -51065,7 +51065,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java src/te
 #1484523367
 git commit -m "Fixed problem with dca missions with 2 ships instead of 4."
 #1484523376
-git push -u origin te3-evaluation-workflow 
+git push -u origin te3-evaluation-workflow
 #1484523486
 git pull --all
 #1484529157
@@ -51081,9 +51081,9 @@ docker ps
 #1484530988
 git checkout -- src/main/java/edu/kestrel/scharp/planner/analysis/display/PlanAnalysisGUI.java
 #1484530991
-git checkout marcel-synch-multi-mission 
+git checkout marcel-synch-multi-mission
 #1484530997
-git pull origin master 
+git pull origin master
 #1484531994
 git add src/main/java/edu/kestrel/scharp/planner/manager
 #1484532010
@@ -51091,7 +51091,7 @@ git commit -m "Merged with master."
 #1484532035
 mvn clean generate-sources compile
 #1484534664
-git checkout master 
+git checkout master
 #1484534672
 git status
 #1484534685
@@ -51101,7 +51101,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.
 #1484534714
 git commit -m "Commented out code not in use."
 #1484534732
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1484534747
 exit
 #1484442952
@@ -51109,13 +51109,13 @@ cd ../
 #1484442960
 cd DockerScharpUpdateImage/
 #1484442967
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1484443112
 cd ..
 #1484443123
 cd DockerScharpPlanner/
 #1484443132
-more docker-run.sh 
+more docker-run.sh
 #1484443148
 ./docker-run.sh 1
 #1484443168
@@ -51133,7 +51133,7 @@ cd ..
 #1484443072
 cd jboss-fuse-docker/
 #1484443082
-./docker-run.sh 
+./docker-run.sh
 #1484443340
 cd ../..
 #1484443368
@@ -51187,7 +51187,7 @@ docker ps
 #1484530988
 git checkout -- src/main/java/edu/kestrel/scharp/planner/analysis/display/PlanAnalysisGUI.java
 #1484530991
-git checkout marcel-synch-multi-mission 
+git checkout marcel-synch-multi-mission
 #1484532010
 git commit -m "Merged with master."
 #1484534685
@@ -51195,7 +51195,7 @@ git diff src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager
 #1484534714
 git commit -m "Commented out code not in use."
 #1484534732
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1484534747
 exit
 #1484587205
@@ -51203,7 +51203,7 @@ cd src/rspace-eclipse/scharp/
 #1484587212
 git pull --all --prune
 #1484587254
-mvn clean generate-sources compile 
+mvn clean generate-sources compile
 #1484589028
 git stash pop
 #1484589129
@@ -51221,19 +51221,19 @@ git add src/main/java/edu/kestrel/scharp/planner/analysis/display/PlanAnalysisGU
 #1484591425
 git commit -m "Fixed test for select options in TestStrikeServers. PlanaAnalysisGUI now uses the functional plan manager by default."
 #1484591441
-git pull 
+git pull
 #1484591555
-git checkout te3-evaluation-workflow 
+git checkout te3-evaluation-workflow
 #1484591570
-git push -u origin te3-evaluation-workflow 
+git push -u origin te3-evaluation-workflow
 #1484591608
-git branch -d te3-evaluation-workflow 
+git branch -d te3-evaluation-workflow
 #1484591628
 git checkout drs5
 #1484591636
-git pull origin master 
+git pull origin master
 #1484591815
-git push -u origin drs5 
+git push -u origin drs5
 #1484596663
 ssh becker@10.206.87.82
 #1484596763
@@ -51255,21 +51255,21 @@ git add src/main/java/edu/kestrel/scharp/planner/manager
 #1484604134
 git commit -m "Removed some print statements."
 #1484604145
-git push -u origin marcel-nerve-config 
+git push -u origin marcel-nerve-config
 #1484604210
 git stash
 #1484604232
 git checkout marcel-nerve-config
 #1484604240
-git branch -d marcel-functional-manager 
+git branch -d marcel-functional-manager
 #1484604258
-git checkout marcel-functional-manager 
+git checkout marcel-functional-manager
 #1484604261
 git status
 #1484604275
-git checkout master 
+git checkout master
 #1484604282
-git branch -D marcel-functional-manager 
+git branch -D marcel-functional-manager
 #1484604284
 ls
 #1484776406
@@ -51341,7 +51341,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java src/te
 #1484523367
 git commit -m "Fixed problem with dca missions with 2 ships instead of 4."
 #1484523376
-git push -u origin te3-evaluation-workflow 
+git push -u origin te3-evaluation-workflow
 #1484523486
 git pull --all
 #1484529509
@@ -51355,7 +51355,7 @@ docker ps
 #1484530988
 git checkout -- src/main/java/edu/kestrel/scharp/planner/analysis/display/PlanAnalysisGUI.java
 #1484530991
-git checkout marcel-synch-multi-mission 
+git checkout marcel-synch-multi-mission
 #1484531994
 git add src/main/java/edu/kestrel/scharp/planner/manager
 #1484534685
@@ -51363,7 +51363,7 @@ git diff src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager
 #1484534714
 git commit -m "Commented out code not in use."
 #1484534732
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1484442952
 cd ../
 #1484443123
@@ -51383,7 +51383,7 @@ cd ../
 #1484443072
 cd jboss-fuse-docker/
 #1484443082
-./docker-run.sh 
+./docker-run.sh
 #1484443368
 git add Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile Docker/DockerScharpPlanner/Dockerfile Docker/DockerScharpPlanner/docker-run.sh Docker/jboss-fuse-docker/Dockerfile
 #1484443405
@@ -51435,17 +51435,17 @@ docker ps
 #1484530988
 git checkout -- src/main/java/edu/kestrel/scharp/planner/analysis/display/PlanAnalysisGUI.java
 #1484530991
-git checkout marcel-synch-multi-mission 
+git checkout marcel-synch-multi-mission
 #1484534685
 git diff src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java
 #1484534714
 git commit -m "Commented out code not in use."
 #1484534732
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1484587212
 git pull --all --prune
 #1484587254
-mvn clean generate-sources compile 
+mvn clean generate-sources compile
 #1484589028
 git stash pop
 #1484589129
@@ -51461,15 +51461,15 @@ git add src/main/java/edu/kestrel/scharp/planner/analysis/display/PlanAnalysisGU
 #1484591425
 git commit -m "Fixed test for select options in TestStrikeServers. PlanaAnalysisGUI now uses the functional plan manager by default."
 #1484591555
-git checkout te3-evaluation-workflow 
+git checkout te3-evaluation-workflow
 #1484591570
-git push -u origin te3-evaluation-workflow 
+git push -u origin te3-evaluation-workflow
 #1484591608
-git branch -d te3-evaluation-workflow 
+git branch -d te3-evaluation-workflow
 #1484591628
 git checkout drs5
 #1484591815
-git push -u origin drs5 
+git push -u origin drs5
 #1484596663
 ssh becker@10.206.87.82
 #1484604043
@@ -51487,11 +51487,11 @@ git stash
 #1484604232
 git checkout marcel-nerve-config
 #1484604240
-git branch -d marcel-functional-manager 
+git branch -d marcel-functional-manager
 #1484604258
-git checkout marcel-functional-manager 
+git checkout marcel-functional-manager
 #1484604282
-git branch -D marcel-functional-manager 
+git branch -D marcel-functional-manager
 #1484675614
 ping 10.206.87.81
 #1484675622
@@ -51521,15 +51521,15 @@ cd MacOS/
 #1484695582
 cd Eclipse/
 #1484695613
-more eclipse.ini 
+more eclipse.ini
 #1484695623
 pwd
 #1484696214
 cd src/rspace-eclipse/scharp/Docker/DockerScharpPlanner/
 #1484696220
-more docker-run.sh 
+more docker-run.sh
 #1484696238
-more Dockerfile 
+more Dockerfile
 #1484700164
 cd
 #1484700175
@@ -51543,7 +51543,7 @@ git add src/main/java/edu/kestrel/scharp/airdomain/entities/ScenarioNodeConfigur
 #1484700298
 git commit -m "Changes to connect to mitre broker cluster."
 #1484725309
-git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java 
+git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
 #1484725322
 git commit -m "Fixed merge conflicts."
 #1484763285
@@ -51569,7 +51569,7 @@ git clean generate-sources
 #1484769275
 mvn clean generate-sources
 #1484769327
-git pull 
+git pull
 #1484769576
 git reset -- hard HEAD
 #1484769591
@@ -51581,31 +51581,31 @@ git diff docker-compose.yml
 #1484770089
 git commit -m "Changes."
 #1484770099
-git checkout master 
+git checkout master
 #1484770109
-git branch -D compose 
+git branch -D compose
 #1484770116
-git checkout compose 
+git checkout compose
 #1484770281
 cd scharp/
 #1484770389
 git commit -m "Merged with master."
 #1484771177
-docker build -f Docker/DockerJava/Dockerfile -t scharp/ubuntujava8 . 
+docker build -f Docker/DockerJava/Dockerfile -t scharp/ubuntujava8 .
 #1484771623
-chmod +x build-all-docker-images.sh 
+chmod +x build-all-docker-images.sh
 #1484771625
-./build-all-docker-images.sh 
+./build-all-docker-images.sh
 #1484773393
 cd Docker/jboss-fuse-docker/
 #1484773404
-./docker-build.sh 
+./docker-build.sh
 #1484773763
 cd ../..
 #1484773952
 docker images -a
 #1484776174
-Docker/jboss-fuse-docker/docker-run.sh 
+Docker/jboss-fuse-docker/docker-run.sh
 #1484778424
 docker ps -a
 #1484778454
@@ -51621,27 +51621,27 @@ docker-compose run  davis_monthan_afb  ping fuse
 #1484779012
 docker-compose run  davis_monthan_afb  /bin/bash
 #1484779398
-git add Docker/DockerScharpPlanner/Dockerfile Docker/jboss-fuse-docker/install.sh docker-compose.yml 
+git add Docker/DockerScharpPlanner/Dockerfile Docker/jboss-fuse-docker/install.sh docker-compose.yml
 #1484779427
 git commit -m "Small changes to docker build files and compose files."
 #1484779458
 git pull
 #1484779465
-git push -u origin compose 
+git push -u origin compose
 #1484779477
-git checkout marcel-nerve-config 
+git checkout marcel-nerve-config
 #1484779483
-git pull origin master 
+git pull origin master
 #1484779493
 git status
 #1484779500
-git push -u origin marcel-nerve-config 
+git push -u origin marcel-nerve-config
 #1484779511
-git pull origin compose 
+git pull origin compose
 #1484782033
 docker-compose build
 #1484782413
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1484783200
 docker-compose down
 #1484783210
@@ -51649,25 +51649,25 @@ docker-compose up
 #1484783320
 cd Docker/DockerScharpCacheMaven/DockerScharpBaseImage/
 #1484783327
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1484783410
-cd mode docker-build-no-cache.sh 
+cd mode docker-build-no-cache.sh
 #1484783418
-more  docker-build-no-cache.sh 
+more  docker-build-no-cache.sh
 #1484783438
 cd DockerScharpUpdateImage/
 #1484783447
-more docker-build-no-cache.sh 
+more docker-build-no-cache.sh
 #1484783480
 cd ..
 #1484783486
-more common.yml 
+more common.yml
 #1484783507
 ls
 #1484790780
 exit
 #1484604282
-git branch -D marcel-functional-manager 
+git branch -D marcel-functional-manager
 #1484604284
 ls
 #1484776406
@@ -51697,11 +51697,11 @@ cd Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/
 #1484792746
 pwd
 #1484792783
-more docker-build-no-cache.sh 
+more docker-build-no-cache.sh
 #1484792823
 cd ../..
 #1484792826
-cd ../ 
+cd ../
 #1484792967
 docker-compose up
 #1484793451
@@ -51719,39 +51719,39 @@ exit
 #1484779427
 git commit -m "Small changes to docker build files and compose files."
 #1484779465
-git push -u origin compose 
+git push -u origin compose
 #1484779477
-git checkout marcel-nerve-config 
+git checkout marcel-nerve-config
 #1484779483
-git pull origin master 
+git pull origin master
 #1484779511
-git pull origin compose 
+git pull origin compose
 #1484782033
 docker-compose build
 #1484782413
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1484783210
 docker-compose up
 #1484783320
 cd Docker/DockerScharpCacheMaven/DockerScharpBaseImage/
 #1484783327
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1484783410
-cd mode docker-build-no-cache.sh 
+cd mode docker-build-no-cache.sh
 #1484783418
-more  docker-build-no-cache.sh 
+more  docker-build-no-cache.sh
 #1484783438
 cd DockerScharpUpdateImage/
 #1484783447
-more docker-build-no-cache.sh 
+more docker-build-no-cache.sh
 #1484783480
 cd ..
 #1484783486
-more common.yml 
+more common.yml
 #1484790780
 exit
 #1484604282
-git branch -D marcel-functional-manager 
+git branch -D marcel-functional-manager
 #1484776406
 Docker/DockerScharpPlanner/docker-run.sh 4
 #1484776348
@@ -51775,9 +51775,9 @@ cd Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/
 #1484792746
 pwd
 #1484792783
-more docker-build-no-cache.sh 
+more docker-build-no-cache.sh
 #1484792826
-cd ../ 
+cd ../
 #1484792967
 docker-compose up
 #1484793473
@@ -51815,7 +51815,7 @@ git add src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE3Workflow.j
 #1484805215
 git commit -m "Small changes to run with Mitre broker."
 #1484805715
-rm .#Marcel_Notes_WIP.txt 
+rm .#Marcel_Notes_WIP.txt
 #1484805728
 git add .gitignore build-all-docker-images.sh
 #1484805754
@@ -51833,9 +51833,9 @@ git add src/test/java/edu/kestrel/scharp/activemq/TestTE3MainServersWithAMQBroke
 #1484811053
 git commit -m "Removed unused import."
 #1484811059
-git push -u origin marcel-nerve-config 
+git push -u origin marcel-nerve-config
 #1484839977
-git checkout master 
+git checkout master
 #1484847136
 mvn clean generate-sources compile
 #1484847980
@@ -51843,11 +51843,11 @@ git add src/main/java/edu/kestrel/scharp/activemq/PlannerServer.java
 #1484848007
 git commit -m "Fixed compilation error in PlannerServer."
 #1484848014
-git push -u origin master 
+git push -u origin master
 #1484848487
 cd src/main/java/edu/kestrel/scharp/activemq/
 #1484848499
-diff WorldStateServer.java te3/WorldStateServer.java 
+diff WorldStateServer.java te3/WorldStateServer.java
 #1484849170
 git checkout -b marcel-cleanup-activemq
 #1484864861
@@ -51873,13 +51873,13 @@ git add ../../../../../../../Docker/jboss-fuse-docker/activemq.xml te3/SeadPlann
 #1484895404
 git commit -m "Added log statements to ui bridge and made the strike manager to always true."
 #1484895492
-git push -u origin marcel-ui-integration 
+git push -u origin marcel-ui-integration
 #1484895648
-git checkout sf-reduce-comms 
+git checkout sf-reduce-comms
 #1484895660
 mvn generate-sources clean
 #1484895667
-mvn generate-sources 
+mvn generate-sources
 #1484895677
 cd ../..
 #1484895683
@@ -51907,7 +51907,7 @@ docker logs scharp_davis_monthan_afb_1
 #1484777554
 docker inspect fuse_1
 #1484777560
-docker ps 
+docker ps
 #1484777571
 docker inspect scharp_fuse_1
 #1484777583
@@ -51937,21 +51937,21 @@ cd
 #1484871839
 cd src/scharp-docker-ui/
 #1484871855
-docker load -i scharp-ui.tar.xz 
+docker load -i scharp-ui.tar.xz
 #1484871941
 docker images -i
 #1484871944
 docker images -a
 #1484872146
-gunzip scharp-ui.tar.xz 
+gunzip scharp-ui.tar.xz
 #1484872204
 ls
 #1484872211
-docker load < scharp-ui.tar 
+docker load < scharp-ui.tar
 #1484872248
-docker image -a 
+docker image -a
 #1484872253
-docker images -a 
+docker images -a
 #1484872382
 docker tag e304d2eb152dea8210fc66dbe8428206294668a7118fc980d419ee2d89b297a5 sharp-ui
 #1484872610
@@ -51963,9 +51963,9 @@ docker tag e304d2eb152dea8210fc66dbe8428206294668a7118fc980d419ee2d89b297a5 scha
 #1484875362
 docker run -p 8080:8080 scharp/gui
 #1484771623
-chmod +x build-all-docker-images.sh 
+chmod +x build-all-docker-images.sh
 #1484776174
-Docker/jboss-fuse-docker/docker-run.sh 
+Docker/jboss-fuse-docker/docker-run.sh
 #1484778454
 docker-compose up -d
 #1484778474
@@ -51979,39 +51979,39 @@ docker-compose run  davis_monthan_afb  ping fuse
 #1484779012
 docker-compose run  davis_monthan_afb  /bin/bash
 #1484779398
-git add Docker/DockerScharpPlanner/Dockerfile Docker/jboss-fuse-docker/install.sh docker-compose.yml 
+git add Docker/DockerScharpPlanner/Dockerfile Docker/jboss-fuse-docker/install.sh docker-compose.yml
 #1484779427
 git commit -m "Small changes to docker build files and compose files."
 #1484779465
-git push -u origin compose 
+git push -u origin compose
 #1484779477
-git checkout marcel-nerve-config 
+git checkout marcel-nerve-config
 #1484779483
-git pull origin master 
+git pull origin master
 #1484779500
-git push -u origin marcel-nerve-config 
+git push -u origin marcel-nerve-config
 #1484779511
-git pull origin compose 
+git pull origin compose
 #1484783320
 cd Docker/DockerScharpCacheMaven/DockerScharpBaseImage/
 #1484783327
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1484783410
-cd mode docker-build-no-cache.sh 
+cd mode docker-build-no-cache.sh
 #1484783418
-more  docker-build-no-cache.sh 
+more  docker-build-no-cache.sh
 #1484783438
 cd DockerScharpUpdateImage/
 #1484783447
-more docker-build-no-cache.sh 
+more docker-build-no-cache.sh
 #1484783480
 cd ..
 #1484783486
-more common.yml 
+more common.yml
 #1484790780
 exit
 #1484604282
-git branch -D marcel-functional-manager 
+git branch -D marcel-functional-manager
 #1484776406
 Docker/DockerScharpPlanner/docker-run.sh 4
 #1484776348
@@ -52033,9 +52033,9 @@ cd Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/
 #1484792746
 pwd
 #1484792783
-more docker-build-no-cache.sh 
+more docker-build-no-cache.sh
 #1484792826
-cd ../ 
+cd ../
 #1484794038
 exit
 #1484794170
@@ -52051,13 +52051,13 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.
 #1484855802
 git commit -m "Fixed tests to use new select option protocol returning ack. Fixed generate options when specifying an empty list of strings."
 #1484855810
-git push -u origin marcel-cleanup-activemq 
+git push -u origin marcel-cleanup-activemq
 #1484855881
-git checkout master 
+git checkout master
 #1484856555
 mvn clean generate-sources
 #1484856805
-./build-all-docker-images.sh 
+./build-all-docker-images.sh
 #1484857562
 git status
 #1484857569
@@ -52065,7 +52065,7 @@ git add build-all-docker-images.sh
 #1484857587
 git commit -m "Fixed the sequence of commands to build docker images."
 #1484857591
-git push -u origin master 
+git push -u origin master
 #1484859161
 ssh becker@crake.kestrel.edu
 #1484872409
@@ -52079,7 +52079,7 @@ docker rmi --force=true jboss/jboss-fuse-full:latest
 #1484875771
 docker rmi -f jboss/jboss-fuse-full
 #1484875835
-docker rm -f 04ac88c9a7ce a3d3de0d0527 4d39a9a10fe0 
+docker rm -f 04ac88c9a7ce a3d3de0d0527 4d39a9a10fe0
 #1484875841
 docker ps -a
 #1484875847
@@ -52087,25 +52087,25 @@ docker images -a
 #1484875867
 docker rmi -f 14e49ae8d75f
 #1484875897
-more docker-run-on-mac.sh 
+more docker-run-on-mac.sh
 #1484875908
-more docker-build.sh 
+more docker-build.sh
 #1484875950
-more readme.md 
+more readme.md
 #1484875993
 ls
 #1484875997
-more Dockerfile 
+more Dockerfile
 #1484876242
 ./Docker/jboss-fuse-docker/docker-run
 #1484876338
-./Docker/jboss-fuse-docker/docker-build.sh 
+./Docker/jboss-fuse-docker/docker-build.sh
 #1484876353
 cd Docker/jboss-fuse-docker/
 #1484876413
-./docker-build.sh 
+./docker-build.sh
 #1484876419
-./docker-run.sh 
+./docker-run.sh
 #1484876504
 cd ../..
 #1484879315
@@ -52119,7 +52119,7 @@ docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/
 #1484880831
 docker-compose up
 #1484890869
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1484794055
 docker-compose build
 #1484794170
@@ -52137,11 +52137,11 @@ cd /Applications/JMSToolBox.app/Contents/MacOS/
 #1484874483
 ls -al
 #1484874494
-chmod +x JMSToolBox 
+chmod +x JMSToolBox
 #1484874515
 ls
 #1484874519
-./JMSToolBox 
+./JMSToolBox
 #1484794170
 exit
 #1484864936
@@ -52161,11 +52161,11 @@ scp -i becker@kestrel.edu:~/Public/* .
 #1484865188
 scp -i becker@kestrel.edu:~/Public/* . -i ~/.ssh/kestrel_id_rsa
 #1484865213
-scp -v becker@kestrel.edu:~/Public/* . 
+scp -v becker@kestrel.edu:~/Public/* .
 #1484865250
-scp -v -i ~/.ssh/kestrel_id_rsa becker@kestrel.edu:~/Public/* . 
+scp -v -i ~/.ssh/kestrel_id_rsa becker@kestrel.edu:~/Public/* .
 #1484865279
-scp -v -i ~/.ssh/kestrel_id_rsa becker@crake.kestrel.edu:~/Public/* . 
+scp -v -i ~/.ssh/kestrel_id_rsa becker@crake.kestrel.edu:~/Public/* .
 #1484865868
 docker load -i scharp-ui.tar.xz
 #1484869533
@@ -52205,7 +52205,7 @@ docker run -it scharp-ui
 #1484870970
 docker ps
 #1484870975
-docker ps -a 
+docker ps -a
 #1484870995
 docker rm cd58fdd7162c
 #1484871007
@@ -52219,7 +52219,7 @@ docker-compose build
 #1484794170
 exit
 #1484873835
-his 
+his
 #1484873841
 cd jmstoolbox-code/
 #1484873845
@@ -52229,21 +52229,21 @@ cd org.titou10.jtb.build/
 #1484873861
 ls
 #1484873866
-more readme.txt 
+more readme.txt
 #1484873860
 cd org.titou10.jtb.build/
 #1484873866
-more readme.txt 
+more readme.txt
 #1484929801
 docker run --net="host" -p 8080:8080 scharp/gui
 #1484929951
 docker images -a
 #1484952271
-jconsole 
+jconsole
 #1484965285
 docker run -p 8080:8080 scharp/gui
 #1484977023
-unzip scharp-ui.20170120.tar.xz.zip 
+unzip scharp-ui.20170120.tar.xz.zip
 #1484977215
 docker load -i -
 #1484977399
@@ -52255,7 +52255,7 @@ ls
 #1485039476
 ls -al
 #1485039498
-unzip scharp-ui.20170121.tar.xz\ \(1\).zip 
+unzip scharp-ui.20170121.tar.xz\ \(1\).zip
 #1485041202
 exit
 #1485108915
@@ -52275,9 +52275,9 @@ cd /Applications/JMSToolBox.app/Contents/MacOS/
 #1484874483
 ls -al
 #1484874494
-chmod +x JMSToolBox 
+chmod +x JMSToolBox
 #1484874519
-./JMSToolBox 
+./JMSToolBox
 #1484864947
 cd src/
 #1484864954
@@ -52293,11 +52293,11 @@ scp -i becker@kestrel.edu:~/Public/* .
 #1484865188
 scp -i becker@kestrel.edu:~/Public/* . -i ~/.ssh/kestrel_id_rsa
 #1484865213
-scp -v becker@kestrel.edu:~/Public/* . 
+scp -v becker@kestrel.edu:~/Public/* .
 #1484865250
-scp -v -i ~/.ssh/kestrel_id_rsa becker@kestrel.edu:~/Public/* . 
+scp -v -i ~/.ssh/kestrel_id_rsa becker@kestrel.edu:~/Public/* .
 #1484865279
-scp -v -i ~/.ssh/kestrel_id_rsa becker@crake.kestrel.edu:~/Public/* . 
+scp -v -i ~/.ssh/kestrel_id_rsa becker@crake.kestrel.edu:~/Public/* .
 #1484865868
 docker load -i scharp-ui.tar.xz
 #1484869533
@@ -52325,7 +52325,7 @@ docker run -it scharp-ui
 #1484870970
 docker ps
 #1484870975
-docker ps -a 
+docker ps -a
 #1484870995
 docker rm cd58fdd7162c
 #1484871007
@@ -52333,7 +52333,7 @@ docker rm $(docker ps -aq)
 #1484871029
 docker run -it -p 8080:8080 scharp-ui
 #1484873835
-his 
+his
 #1484873841
 cd jmstoolbox-code/
 #1484873845
@@ -52341,7 +52341,7 @@ cd trunk/
 #1484873860
 cd org.titou10.jtb.build/
 #1484873866
-more readme.txt 
+more readme.txt
 #1484928647
 mvn clean generate-sources compile
 #1484955208
@@ -52351,13 +52351,13 @@ git add Docker/jboss-fuse-docker/activemq.xml Docker/jboss-fuse-docker/docker-ru
 #1484955267
 git commit -m "Do not call sead ui bridge id there are no bids for support."
 #1484955277
-git push -u origin marcel-fix-generate-options 
+git push -u origin marcel-fix-generate-options
 #1484956768
 jconsole
 #1484979092
-./build-all-docker-images.sh 
+./build-all-docker-images.sh
 #1485108688
-git checkout marcel-change-queue-name-mitre 
+git checkout marcel-change-queue-name-mitre
 #1485108767
 docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile -t scharp/planner .
 #1485109904
@@ -52367,7 +52367,7 @@ mvn generate-sources compile install
 #1485110030
 ./run-plan-cell-te3.sh 2
 #1485110681
-git push -u origin marcel-change-queue-name-mitre 
+git push -u origin marcel-change-queue-name-mitre
 #1485110809
 docker-compose build
 #1485201466
@@ -52383,35 +52383,35 @@ git commit -m "Added and fixed the docker run scripts for TE3."
 #1485208729
 git pull
 #1485208749
-git checkout compose 
+git checkout compose
 #1485208760
 git checkout master
 #1485208766
-git branch -d compose 
+git branch -d compose
 #1485208793
-git branch -d marcel-fix-amq-tests 
+git branch -d marcel-fix-amq-tests
 #1485208801
-git branch -D marcel-fix-amq-tests 
+git branch -D marcel-fix-amq-tests
 #1485208858
-git branch -D marcel-cleanup-activemq 
+git branch -D marcel-cleanup-activemq
 #1485208884
 git pull --all --prune
 #1485208903
-git branch -d marcel-change-queue-name-mitre 
+git branch -d marcel-change-queue-name-mitre
 #1485208913
 git branch
 #1485208932
-git branch -d marcel-nerve-config 
+git branch -d marcel-nerve-config
 #1485208940
-git branch -d marcel-ui-integration 
+git branch -d marcel-ui-integration
 #1485208948
-git branch -d marcel-fix-generate-options 
+git branch -d marcel-fix-generate-options
 #1485208951
-git branch 
+git branch
 #1485208966
-git branch -d sf-reduce-comms 
+git branch -d sf-reduce-comms
 #1485209069
-git pull origin master 
+git pull origin master
 #1485209433
 git add src/main/java/edu/kestrel/scharp/planner/manager~
 #1485209435
@@ -52419,7 +52419,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager
 #1485209449
 git commit -m "Merged with master."
 #1485209472
-mvn clean generate-sources 
+mvn clean generate-sources
 #1485211826
 git status
 #1485211836
@@ -52429,11 +52429,11 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellM
 #1485211865
 git commit -m "Fixed null pointer exceptions when activity has no resources."
 #1485211872
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1485211879
-git checkout master 
+git checkout master
 #1485212037
-git checkout marcel-synch-multi-mission 
+git checkout marcel-synch-multi-mission
 #1485281292
 ls
 #1485281310
@@ -52445,29 +52445,29 @@ docker images -a
 #1484875867
 docker rmi -f 14e49ae8d75f
 #1484875897
-more docker-run-on-mac.sh 
+more docker-run-on-mac.sh
 #1484875908
-more docker-build.sh 
+more docker-build.sh
 #1484875950
-more readme.md 
+more readme.md
 #1484875993
 ls
 #1484875997
-more Dockerfile 
+more Dockerfile
 #1484876242
 ./Docker/jboss-fuse-docker/docker-run
 #1484876338
-./Docker/jboss-fuse-docker/docker-build.sh 
+./Docker/jboss-fuse-docker/docker-build.sh
 #1484876353
 cd Docker/jboss-fuse-docker/
 #1484876413
-./docker-build.sh 
+./docker-build.sh
 #1484876419
-./docker-run.sh 
+./docker-run.sh
 #1484876504
 cd ../..
 #1484890869
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1484873668
 cd ..
 #1484873678
@@ -52481,11 +52481,11 @@ cd /Applications/JMSToolBox.app/Contents/MacOS/
 #1484874483
 ls -al
 #1484874494
-chmod +x JMSToolBox 
+chmod +x JMSToolBox
 #1484874515
 ls
 #1484874519
-./JMSToolBox 
+./JMSToolBox
 #1484864936
 ls
 #1484864947
@@ -52503,11 +52503,11 @@ scp -i becker@kestrel.edu:~/Public/* .
 #1484865188
 scp -i becker@kestrel.edu:~/Public/* . -i ~/.ssh/kestrel_id_rsa
 #1484865213
-scp -v becker@kestrel.edu:~/Public/* . 
+scp -v becker@kestrel.edu:~/Public/* .
 #1484865250
-scp -v -i ~/.ssh/kestrel_id_rsa becker@kestrel.edu:~/Public/* . 
+scp -v -i ~/.ssh/kestrel_id_rsa becker@kestrel.edu:~/Public/* .
 #1484865279
-scp -v -i ~/.ssh/kestrel_id_rsa becker@crake.kestrel.edu:~/Public/* . 
+scp -v -i ~/.ssh/kestrel_id_rsa becker@crake.kestrel.edu:~/Public/* .
 #1484865868
 docker load -i scharp-ui.tar.xz
 #1484869533
@@ -52533,7 +52533,7 @@ docker run -it scharp-ui
 #1484870970
 docker ps
 #1484870975
-docker ps -a 
+docker ps -a
 #1484870995
 docker rm cd58fdd7162c
 #1484871007
@@ -52541,7 +52541,7 @@ docker rm $(docker ps -aq)
 #1484871029
 docker run -it -p 8080:8080 scharp-ui
 #1484873835
-his 
+his
 #1484873841
 cd jmstoolbox-code/
 #1484873845
@@ -52551,13 +52551,13 @@ cd org.titou10.jtb.build/
 #1484873861
 ls
 #1484873866
-more readme.txt 
+more readme.txt
 #1485196722
 docker exec -it DAVIS_MONTHAN_AFB bash
 #1485197721
 ./docker-run-plan-cell-te3-mitre.sh 1
 #1485198213
-./docker-run-plan-cell-te3-local.sh 
+./docker-run-plan-cell-te3-local.sh
 #1485198217
 ./docker-run-plan-cell-te3-local.sh 1
 #1485384574
@@ -52569,13 +52569,13 @@ git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java src/test
 #1485384641
 git commit -m "Clean up tests and renamed some of the test to make it easier to identify what we are testing."
 #1485384760
-git checkout marcel-clean-tests 
+git checkout marcel-clean-tests
 #1485385429
 git commit -m "Added measurement for bytes compressed."
 #1485385503
 git commit -m "Changed format for printing size of message."
 #1485385510
-git push -u origin marcel-clean-tests 
+git push -u origin marcel-clean-tests
 #1485385825
 git commit -m "Changed message size string format."
 #1485388109
@@ -52595,13 +52595,13 @@ git reset --hard origin/HEAD
 #1485388709
 git log
 #1485388716
-git pull 
+git pull
 #1485388728
 git checkout sf-reduce-comms
 #1485388732
 git checkout sf-reduce-comms3
 #1485388744
-git pull origin marcel-clean-tests 
+git pull origin marcel-clean-tests
 #1485388784
 git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellAMQClient.java
 #1485388804
@@ -52617,11 +52617,11 @@ docker-compose -f docker-compose-mitre.yml down
 #1485414425
 docker-compose -f docker-compose-mitre.yml up
 #1485448073
-git checkout -t origin/sf-serial-size 
+git checkout -t origin/sf-serial-size
 #1485448094
 mvn clean generate-sources compile install
 #1485448230
-more build-all-docker-images.sh 
+more build-all-docker-images.sh
 #1485449812
 docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
 #1485450368
@@ -52635,7 +52635,7 @@ mvn clean generate-source
 #1485457169
 mvn clean generate-sources
 #1485459241
-git checkout sf-reduce-comms3 
+git checkout sf-reduce-comms3
 #1485459256
 mvn clean generate-sources compile
 #1485459668
@@ -52643,9 +52643,9 @@ git add src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTe
 #1485459679
 git commit -m "Fixed run2 test."
 #1485459689
-git push -u origin sf-reduce-comms3 
+git push -u origin sf-reduce-comms3
 #1485459696
-git checkout sf-serial-size 
+git checkout sf-serial-size
 #1485470826
 git diff Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile
 #1485470840
@@ -52659,7 +52659,7 @@ git diff src/main/resources/logback.xml
 #1485470891
 git checkout -- src/main/resources/logback.xml
 #1485470896
-git checkout master 
+git checkout master
 #1485470900
 git pull
 #1485474666
@@ -52669,17 +52669,17 @@ exit
 #1484876242
 ./Docker/jboss-fuse-docker/docker-run
 #1484876338
-./Docker/jboss-fuse-docker/docker-build.sh 
+./Docker/jboss-fuse-docker/docker-build.sh
 #1484876353
 cd Docker/jboss-fuse-docker/
 #1484876413
-./docker-build.sh 
+./docker-build.sh
 #1484876419
-./docker-run.sh 
+./docker-run.sh
 #1484879347
 docker-compose build
 #1484890869
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1484794055
 docker-compose build
 #1484873678
@@ -52693,9 +52693,9 @@ cd /Applications/JMSToolBox.app/Contents/MacOS/
 #1484874483
 ls -al
 #1484874494
-chmod +x JMSToolBox 
+chmod +x JMSToolBox
 #1484874519
-./JMSToolBox 
+./JMSToolBox
 #1484864947
 cd src/
 #1484864954
@@ -52711,11 +52711,11 @@ scp -i becker@kestrel.edu:~/Public/* .
 #1484865188
 scp -i becker@kestrel.edu:~/Public/* . -i ~/.ssh/kestrel_id_rsa
 #1484865213
-scp -v becker@kestrel.edu:~/Public/* . 
+scp -v becker@kestrel.edu:~/Public/* .
 #1484865250
-scp -v -i ~/.ssh/kestrel_id_rsa becker@kestrel.edu:~/Public/* . 
+scp -v -i ~/.ssh/kestrel_id_rsa becker@kestrel.edu:~/Public/* .
 #1484865279
-scp -v -i ~/.ssh/kestrel_id_rsa becker@crake.kestrel.edu:~/Public/* . 
+scp -v -i ~/.ssh/kestrel_id_rsa becker@crake.kestrel.edu:~/Public/* .
 #1484865868
 docker load -i scharp-ui.tar.xz
 #1484869533
@@ -52745,7 +52745,7 @@ docker run -it scharp-ui
 #1484870970
 docker ps
 #1484870975
-docker ps -a 
+docker ps -a
 #1484870995
 docker rm cd58fdd7162c
 #1484871007
@@ -52755,7 +52755,7 @@ docker run -it -p 8080:8080 scharp-ui
 #1484794055
 docker-compose build
 #1484873835
-his 
+his
 #1484873841
 cd jmstoolbox-code/
 #1484873845
@@ -52763,9 +52763,9 @@ cd trunk/
 #1484873860
 cd org.titou10.jtb.build/
 #1484873866
-more readme.txt 
+more readme.txt
 #1484956941
-./run-plan-cell-te3-mitre.sh 
+./run-plan-cell-te3-mitre.sh
 #1484957088
 ./run-plan-cell-te3-mitre.sh 1
 #1484957139
@@ -52773,9 +52773,9 @@ git add run-plan-cell-te3-mitre.sh
 #1484957154
 git commit -m "Fixed the shell script to run with mitre"
 #1484957963
-chmod +x docker-run-plan-cell-te3-mitre.sh 
+chmod +x docker-run-plan-cell-te3-mitre.sh
 #1484957969
-./docker-run-plan-cell-te3-mitre.sh 
+./docker-run-plan-cell-te3-mitre.sh
 #1484957974
 ./docker-run-plan-cell-te3-mitre.sh 0
 #1484958025
@@ -52793,9 +52793,9 @@ git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE2PacificaScenario
 #1485111518
 git commit -m "Fixed compilation errors."
 #1485111525
-git push -u origin drs5 
+git push -u origin drs5
 #1485111838
-git checkout marcel-change-queue-name-mitre 
+git checkout marcel-change-queue-name-mitre
 #1485191729
 git pull
 #1485192531
@@ -52830,13 +52830,13 @@ git add docker-run-plan-cell-te3-mitre-run1.sh docker-run-plan-cell-te3-mitre-ru
 #1485193162
 git commit -m "Added scripts to run the experiments."
 #1485194105
-docker ps 
+docker ps
 #1485194245
 docker-compose up
 #1485195305
 ./docker-compose down
 #1485195343
-./docker-run-plan-cell-te3-mitre-run1.sh 
+./docker-run-plan-cell-te3-mitre-run1.sh
 #1485195383
 docker rm -f 69ffeb5c8b4c24300e5132e9f8330073858ae0cd8f7b7d54b4736e3b41621313.
 #1485195406
@@ -52848,7 +52848,7 @@ docker ps -a
 #1485195441
 docker-compose down
 #1485195506
-./docker-run-plan-cell-te3-mitre-run2.sh 2 
+./docker-run-plan-cell-te3-mitre-run2.sh 2
 #1485195573
 git add common-mitre.yml common.yml docker-run-plan-cell-te3-mitre-run1.sh docker-run-plan-cell-te3-mitre-run2.sh docker-run-plan-cell-te3-mitre-run3.sh
 #1485195628
@@ -52856,29 +52856,29 @@ git add notes/
 #1485195647
 git commit -m "Fixed scripts to run system."
 #1485195658
-git push -u origin master 
+git push -u origin master
 #1485195666
-rm Marcel_Notes_WIP.txt 
+rm Marcel_Notes_WIP.txt
 #1485195684
 ls
 #1485195693
-rm mvn-deps.txt 
+rm mvn-deps.txt
 #1485195699
-rm tasks.org 
+rm tasks.org
 #1485196691
 ./docker-run-plan-cell-te3-mitre-run1.sh 1
 #1485382237
 git diff src/main/java/edu/kestrel/scharp/activemq/AmqJsonServer.java
 #1485382256
-git checkout master 
+git checkout master
 #1485382269
-git branch -d marcel-clean-tests 
+git branch -d marcel-clean-tests
 #1485382280
-git branch -D marcel-clean-tests 
+git branch -D marcel-clean-tests
 #1485382294
 git checkout -b marcel-clean-tests
 #1485382301
-git pull origin master 
+git pull origin master
 #1485382327
 git add src/main/java/edu/kestrel/scharp/activemq/AmqJsonServer.java src/test/java/edu/kestrel/scharp/activemq/
 #1485382331
@@ -52888,19 +52888,19 @@ git diff src/test/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager
 #1485483344
 exit
 #1484873866
-more readme.txt 
+more readme.txt
 #1484873860
 cd org.titou10.jtb.build/
 #1484873866
-more readme.txt 
+more readme.txt
 #1484929801
 docker run --net="host" -p 8080:8080 scharp/gui
 #1484929951
 docker images -a
 #1484952271
-jconsole 
+jconsole
 #1484977023
-unzip scharp-ui.20170120.tar.xz.zip 
+unzip scharp-ui.20170120.tar.xz.zip
 #1484977215
 docker load -i -
 #1484977399
@@ -52912,7 +52912,7 @@ ls
 #1485039476
 ls -al
 #1485039498
-unzip scharp-ui.20170121.tar.xz\ \(1\).zip 
+unzip scharp-ui.20170121.tar.xz\ \(1\).zip
 #1485110056
 ./run-plan-cell-te3.sh 4
 #1485109922
@@ -52932,9 +52932,9 @@ git diff src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerT
 #1485297793
 git commit -m "Changes to allow analysis and ato generation using activities without resources."
 #1485297801
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1485297815
-git checkout master 
+git checkout master
 #1485297825
 git add src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
 #1485297850
@@ -52962,19 +52962,19 @@ git checkout -- src/main/java/edu/kestrel/scharp/planner/entities/Resource.java
 #1485300194
 git branch
 #1485311326
-echo "$PROMPT_COMMAND" 
+echo "$PROMPT_COMMAND"
 #1485311697
 git status
 #1485311730
 git diff head
 #1485311734
-git diff 
+git diff
 #1485311739
 git diff HEAD
 #1485311766
-git push -u origin master 
+git push -u origin master
 #1485312042
-git pull 
+git pull
 #1485312063
 mvn clean generate-sources compile install
 #1485312409
@@ -52984,9 +52984,9 @@ docker-compose up
 #1485374163
 git pull --all --prune
 #1485374181
-git checkout origin/sf-reduce-comms3 
+git checkout origin/sf-reduce-comms3
 #1485374203
-git checkout -t origin/sf-reduce-comms3 
+git checkout -t origin/sf-reduce-comms3
 #1485374210
 git pull
 #1485375174
@@ -53002,7 +53002,7 @@ docker run -it scharp-ui
 #1484870970
 docker ps
 #1484870975
-docker ps -a 
+docker ps -a
 #1484870995
 docker rm cd58fdd7162c
 #1484871007
@@ -53010,7 +53010,7 @@ docker rm $(docker ps -aq)
 #1484871029
 docker run -it -p 8080:8080 scharp-ui
 #1484873835
-his 
+his
 #1484873841
 cd jmstoolbox-code/
 #1484873845
@@ -53020,7 +53020,7 @@ cd org.titou10.jtb.build/
 #1484873861
 ls
 #1484873866
-more readme.txt 
+more readme.txt
 #1484931418
 git pull
 #1484947623
@@ -53036,7 +53036,7 @@ git add src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE3Workflow.j
 #1484947770
 git commit -m "Changed the logic of generate-options to use the selected target as primary if cluster is used."
 #1484947879
-git pull origin master 
+git pull origin master
 #1484947900
 git clean genrate-options
 #1484947911
@@ -53044,7 +53044,7 @@ mvn clean generate-options
 #1484947922
 mvn clean generate-sources
 #1484947955
-git push -u origin marcel-fix-generate-options 
+git push -u origin marcel-fix-generate-options
 #1484949844
 docker ps -a
 #1484949872
@@ -53052,11 +53052,11 @@ docker rm -f $(docker ps -aq)
 #1484950320
 docker-compose build
 #1484950456
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1484951051
 cd Docker/jboss-fuse-docker/
 #1484951054
-./docker-build.sh 
+./docker-build.sh
 #1484951064
 ./docker-run
 #1485018528
@@ -53064,7 +53064,7 @@ git status
 #1485018534
 git pull ;2C-
 #1485108653
-./docker-run.sh 
+./docker-run.sh
 #1485483348
 exit
 #1484880757
@@ -53072,7 +53072,7 @@ docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/
 #1484880831
 docker-compose up
 #1484890869
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1484794055
 docker-compose build
 #1484873678
@@ -53086,9 +53086,9 @@ cd /Applications/JMSToolBox.app/Contents/MacOS/
 #1484874483
 ls -al
 #1484874494
-chmod +x JMSToolBox 
+chmod +x JMSToolBox
 #1484874519
-./JMSToolBox 
+./JMSToolBox
 #1484864954
 mkdir scharp-docker-ui
 #1484864958
@@ -53102,11 +53102,11 @@ scp -i becker@kestrel.edu:~/Public/* .
 #1484865188
 scp -i becker@kestrel.edu:~/Public/* . -i ~/.ssh/kestrel_id_rsa
 #1484865213
-scp -v becker@kestrel.edu:~/Public/* . 
+scp -v becker@kestrel.edu:~/Public/* .
 #1484865250
-scp -v -i ~/.ssh/kestrel_id_rsa becker@kestrel.edu:~/Public/* . 
+scp -v -i ~/.ssh/kestrel_id_rsa becker@kestrel.edu:~/Public/* .
 #1484865279
-scp -v -i ~/.ssh/kestrel_id_rsa becker@crake.kestrel.edu:~/Public/* . 
+scp -v -i ~/.ssh/kestrel_id_rsa becker@crake.kestrel.edu:~/Public/* .
 #1484865868
 docker load -i scharp-ui.tar.xz
 #1484869533
@@ -53140,7 +53140,7 @@ docker run -it scharp-ui
 #1484870970
 docker ps
 #1484870975
-docker ps -a 
+docker ps -a
 #1484870995
 docker rm cd58fdd7162c
 #1484871007
@@ -53150,7 +53150,7 @@ docker run -it -p 8080:8080 scharp-ui
 #1484794055
 docker-compose build
 #1484873835
-his 
+his
 #1484873841
 cd jmstoolbox-code/
 #1484873845
@@ -53158,13 +53158,13 @@ cd trunk/
 #1484873860
 cd org.titou10.jtb.build/
 #1484873866
-more readme.txt 
+more readme.txt
 #1485041217
 cd src/scharp-docker-ui/
 #1485041242
-rm scharp-ui.20170121.tar.xz.zip 
+rm scharp-ui.20170121.tar.xz.zip
 #1485041269
-unzip scharp-ui.20170121.tar.xz\ \(1\).zip 
+unzip scharp-ui.20170121.tar.xz\ \(1\).zip
 #1485041447
 docker tag scharp-ui:20170121 scharp/gui:latest
 #1485108955
@@ -53172,11 +53172,11 @@ docker run -it -p 8080:8080 scharp/gui:latest
 #1485200537
 rm -
 #1485200549
-rm scharp-ui.tar 
+rm scharp-ui.tar
 #1485200562
 rm scharp-ui.2017012*
 #1485200576
-unzip scharp-ui-20170122.tar.xz.zip 
+unzip scharp-ui-20170122.tar.xz.zip
 #1485200608
 docker load -i -
 #1485200742
@@ -53212,7 +53212,7 @@ git remote add origin ssh://git@stash.kestrel.edu:2222/rspce/atodatamodel.git
 #1485368363
 git remote add kestrel ssh://git@stash.kestrel.edu:2222/rspce/atodatamodel.git
 #1485368375
-git push -u kestrel master 
+git push -u kestrel master
 #1485368434
 rm -rf atodatamodel-java-git
 #1485368453
@@ -53222,11 +53222,11 @@ cd rspace-eclipse/
 #1485368995
 git clone git@scharp-itar01.isi.edu:usc-isi-i2/scharp-em.git atoparserisi
 #1485369031
-more ~/.gitconfig 
+more ~/.gitconfig
 #1485371775
 cd .
 #1485371776
-cd 
+cd
 #1485371779
 cd .ssh
 #1485371866
@@ -53250,7 +53250,7 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/
 #1485372845
 git commit -m "Changed the transient state of some fields to help comms."
 #1485372850
-git push -u origin master 
+git push -u origin master
 #1485372873
 git clone  git@scharp-itar01.isi.edu:usc-isi-i2/scharp-em.git atoparserisi
 #1485372982
@@ -53258,7 +53258,7 @@ git clone https://scharp-itar01.isi.edu/usc-isi-i2/scharp-em.git atoparserisi
 #1485373025
 cd atoparserisi/
 #1485373033
-more RUN.sh 
+more RUN.sh
 #1485373054
 cd ato
 #1485373135
@@ -53272,7 +53272,7 @@ cd Kestrel20170117.1931/
 #1485373189
 ls
 #1485373196
-more Kestrel20170117.1931.json 
+more Kestrel20170117.1931.json
 #1485483351
 exit
 #1485991464
@@ -53282,7 +53282,7 @@ cd Dropbox/EclipseMarsSettings/
 #1485991471
 ls
 #1485991489
-diff EclipseDefaultKeys.csv EclipseEmacsKeys.csv 
+diff EclipseDefaultKeys.csv EclipseEmacsKeys.csv
 #1485367929
 cd ATOUSMTF2004/
 #1485367941
@@ -53296,7 +53296,7 @@ git remote add origin ssh://git@stash.kestrel.edu:2222/rspce/atodatamodel.git
 #1485368363
 git remote add kestrel ssh://git@stash.kestrel.edu:2222/rspce/atodatamodel.git
 #1485368375
-git push -u kestrel master 
+git push -u kestrel master
 #1485368434
 rm -rf atodatamodel-java-git
 #1485368453
@@ -53306,7 +53306,7 @@ cd rspace-eclipse/
 #1485368995
 git clone git@scharp-itar01.isi.edu:usc-isi-i2/scharp-em.git atoparserisi
 #1485369031
-more ~/.gitconfig 
+more ~/.gitconfig
 #1485371775
 cd .
 #1485371779
@@ -53328,7 +53328,7 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/
 #1485372845
 git commit -m "Changed the transient state of some fields to help comms."
 #1485372850
-git push -u origin master 
+git push -u origin master
 #1485372873
 git clone  git@scharp-itar01.isi.edu:usc-isi-i2/scharp-em.git atoparserisi
 #1485372982
@@ -53336,7 +53336,7 @@ git clone https://scharp-itar01.isi.edu/usc-isi-i2/scharp-em.git atoparserisi
 #1485373025
 cd atoparserisi/
 #1485373033
-more RUN.sh 
+more RUN.sh
 #1485373054
 cd ato
 #1485373135
@@ -53348,7 +53348,7 @@ cd ato/
 #1485373188
 cd Kestrel20170117.1931/
 #1485373196
-more Kestrel20170117.1931.json 
+more Kestrel20170117.1931.json
 #1485483351
 exit
 #1485795798
@@ -53358,7 +53358,7 @@ git diff src/main/resources/logback.xml
 #1485795854
 git stash
 #1485795864
-git stash pop 
+git stash pop
 #1485796183
 git diff
 #1485796205
@@ -53366,15 +53366,15 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.ja
 #1485796223
 git commit -m "fixing conflict. No change in code."
 #1485796232
-git push origin master 
+git push origin master
 #1485796434
 git pull --all --prune
 #1485796448
-git branch -d marcel-clean-tests sf-reduce-comms3 
+git branch -d marcel-clean-tests sf-reduce-comms3
 #1485796456
-git branch 
+git branch
 #1485796512
-git branch -d drs5 sf-serial-size 
+git branch -d drs5 sf-serial-size
 #1485797653
 git add src/main/java/edu/kestrel/scharp/activemq/AmqJsonServer.java
 #1485797670
@@ -53382,27 +53382,27 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/
 #1485797688
 git commit -m "Merged with master and fixed conflicts."
 #1485800752
-git pull 
+git pull
 #1485810810
 cd /Applications/
 #1485810811
 ls
 #1485890021
-cd 
+cd
 #1485890028
 cd src/rspace-eclipse/scharp/
 #1485890039
-git checkout master 
+git checkout master
 #1485890041
 git pujll
 #1485890530
 mvn compile
 #1485890929
-git checkout marcel-synch-multi-mission 
+git checkout marcel-synch-multi-mission
 #1485890932
 git pull
 #1485890937
-git pull origin master 
+git pull origin master
 #1485891672
 git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java src/main/java/edu/kestrel/scharp/planner/manager
 #1485891679
@@ -53414,13 +53414,13 @@ git commit -m "Fixed merge conflicts."
 #1485891709
 mvn clean generate-sources compile
 #1485891829
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1485373196
-more Kestrel20170117.1931.json 
+more Kestrel20170117.1931.json
 #1485483351
 exit
 #1485812628
-cd 
+cd
 #1485812637
 cd src/scharp-compile-test-workspace/
 #1485812640
@@ -53446,11 +53446,11 @@ cd rspace-eclipse/
 #1485368995
 git clone git@scharp-itar01.isi.edu:usc-isi-i2/scharp-em.git atoparserisi
 #1485369031
-more ~/.gitconfig 
+more ~/.gitconfig
 #1485371775
 cd .
 #1485371776
-cd 
+cd
 #1485371779
 cd .ssh
 #1485371871
@@ -53472,7 +53472,7 @@ git clone https://scharp-itar01.isi.edu/usc-isi-i2/scharp-em.git atoparserisi
 #1485373025
 cd atoparserisi/
 #1485373033
-more RUN.sh 
+more RUN.sh
 #1485373054
 cd ato
 #1485373137
@@ -53482,11 +53482,11 @@ cd ato/
 #1485373188
 cd Kestrel20170117.1931/
 #1485373196
-more Kestrel20170117.1931.json 
+more Kestrel20170117.1931.json
 #1485991471
 cd Dropbox/EclipseMarsSettings/
 #1485991489
-diff EclipseDefaultKeys.csv EclipseEmacsKeys.csv 
+diff EclipseDefaultKeys.csv EclipseEmacsKeys.csv
 #1485367929
 cd ATOUSMTF2004/
 #1485367941
@@ -53500,7 +53500,7 @@ git remote add origin ssh://git@stash.kestrel.edu:2222/rspce/atodatamodel.git
 #1485368363
 git remote add kestrel ssh://git@stash.kestrel.edu:2222/rspce/atodatamodel.git
 #1485368375
-git push -u kestrel master 
+git push -u kestrel master
 #1485368434
 rm -rf atodatamodel-java-git
 #1485368453
@@ -53510,7 +53510,7 @@ cd rspace-eclipse/
 #1485368995
 git clone git@scharp-itar01.isi.edu:usc-isi-i2/scharp-em.git atoparserisi
 #1485369031
-more ~/.gitconfig 
+more ~/.gitconfig
 #1485371775
 cd .
 #1485371779
@@ -53534,7 +53534,7 @@ git clone https://scharp-itar01.isi.edu/usc-isi-i2/scharp-em.git atoparserisi
 #1485373025
 cd atoparserisi/
 #1485373033
-more RUN.sh 
+more RUN.sh
 #1485373054
 cd ato
 #1485373137
@@ -53544,7 +53544,7 @@ cd ato/
 #1485373188
 cd Kestrel20170117.1931/
 #1485373196
-more Kestrel20170117.1931.json 
+more Kestrel20170117.1931.json
 #1485795798
 git diff src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java
 #1485795848
@@ -53552,7 +53552,7 @@ git diff src/main/resources/logback.xml
 #1485795854
 git stash
 #1485795864
-git stash pop 
+git stash pop
 #1485796183
 git diff
 #1485796205
@@ -53560,23 +53560,23 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.ja
 #1485796223
 git commit -m "fixing conflict. No change in code."
 #1485796232
-git push origin master 
+git push origin master
 #1485796434
 git pull --all --prune
 #1485796448
-git branch -d marcel-clean-tests sf-reduce-comms3 
+git branch -d marcel-clean-tests sf-reduce-comms3
 #1485796512
-git branch -d drs5 sf-serial-size 
+git branch -d drs5 sf-serial-size
 #1485797670
 git add src/main/java/edu/kestrel/scharp/planner/manager/
 #1485797688
 git commit -m "Merged with master and fixed conflicts."
 #1485800752
-git pull 
+git pull
 #1485810810
 cd /Applications/
 #1485890021
-cd 
+cd
 #1485890028
 cd src/rspace-eclipse/scharp/
 #1485890041
@@ -53584,9 +53584,9 @@ git pujll
 #1485890530
 mvn compile
 #1485890929
-git checkout marcel-synch-multi-mission 
+git checkout marcel-synch-multi-mission
 #1485890937
-git pull origin master 
+git pull origin master
 #1485891672
 git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java src/main/java/edu/kestrel/scharp/planner/manager
 #1485891679
@@ -53596,11 +53596,11 @@ git commit -m "Fixed merge conflicts."
 #1485891709
 mvn clean generate-sources compile
 #1485891829
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1485373196
-more Kestrel20170117.1931.json 
+more Kestrel20170117.1931.json
 #1485812628
-cd 
+cd
 #1485812637
 cd src/scharp-compile-test-workspace/
 #1485890654
@@ -53614,7 +53614,7 @@ git diff
 #1486507576
 mvn clean generate-sources
 #1486507587
-git branch 
+git branch
 #1486507679
 git checkout marcel-code-cleanup
 #1486507689
@@ -53652,41 +53652,41 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler.
 #1486513488
 git commit -m "Fixed imports and removed some dead code."
 #1486515761
-more org.eclipse.wst.common.project.facet.core.prefs.xml 
+more org.eclipse.wst.common.project.facet.core.prefs.xml
 #1486515776
-more org.eclipse.wst.common.project.facet.core.xml 
+more org.eclipse.wst.common.project.facet.core.xml
 #1486515932
 rm -rf org.eclipse.wst.*
 #1486515998
-more org.eclipse.m2e.core.prefs 
+more org.eclipse.m2e.core.prefs
 #1486516013
-more org.eclipse.core.resources.prefs 
+more org.eclipse.core.resources.prefs
 #1486516022
-more org.eclipse.jdt.core.prefs 
+more org.eclipse.jdt.core.prefs
 #1486516067
 pwd
 #1486516221
 cd .settings/
 #1486516238
-more .pydevproject 
+more .pydevproject
 #1486516247
-more .project 
+more .project
 #1486516275
-rm -rf .DS_Store 
+rm -rf .DS_Store
 #1486516279
 cd .metadata/
 #1486516282
 ls -al
 #1486516319
-more .lock 
+more .lock
 #1486516368
 cd com.jprofiler.integrations.eclipse/
 #1486516371
-more jvmCache2.properties 
+more jvmCache2.properties
 #1486516401
 cd scharp/
 #1486516404
-more .tern-project 
+more .tern-project
 #1486517449
 git add src/main/java/edu/kestrel/scharp/activemq/PlanCellHeartbeatClient.java src/main/java/edu/kestrel/scharp/airdomain/entities
 #1486517463
@@ -53710,7 +53710,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager
 #1486579336
 git commit -m "Commented out unused methods."
 #1486579350
-git push -u origin marcel-code-cleanup 
+git push -u origin marcel-code-cleanup
 #1486666544
 cd
 #1486666552
@@ -53726,7 +53726,7 @@ grep "comment" *
 #1486666862
 cd org.eclipse.e4.workbench/
 #1486666866
-more workbench.xmi 
+more workbench.xmi
 #1486667644
 cd ../..
 #1486667646
@@ -53734,13 +53734,13 @@ cd ..
 #1486667646
 ls
 #1486671192
-cd scharp/ 
+cd scharp/
 #1486671200
 git add src/main/java/edu/kestrel/scharp/activemq/AmqJsonServer.java
 #1486671241
 git commit -m "Changed extension of message log file from jsn to txt so Eclipse stop complaining about invalid json file."
 #1486671249
-git push -u origin master 
+git push -u origin master
 #1486677044
 git diff src/main/java/edu/kestrel/scharp/planner/analysis/Utils.java
 #1486678328
@@ -53752,11 +53752,11 @@ git status
 #1486678359
 git commit -m "Sort classes in reports."
 #1486678365
-git push -u origin marcel-fix-summary-reports 
+git push -u origin marcel-fix-summary-reports
 #1486678407
-git checkout master 
+git checkout master
 #1486678420
-git checkout drs6 
+git checkout drs6
 #1486678422
 git pull
 #1486684075
@@ -53784,7 +53784,7 @@ git clone https://scharp-itar01.isi.edu/usc-isi-i2/scharp-em.git atoparserisi
 #1485373025
 cd atoparserisi/
 #1485373033
-more RUN.sh 
+more RUN.sh
 #1485373054
 cd ato
 #1485373137
@@ -53794,7 +53794,7 @@ cd ato/
 #1485373188
 cd Kestrel20170117.1931/
 #1485373196
-more Kestrel20170117.1931.json 
+more Kestrel20170117.1931.json
 #1485795798
 git diff src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java
 #1485795848
@@ -53802,7 +53802,7 @@ git diff src/main/resources/logback.xml
 #1485795854
 git stash
 #1485795864
-git stash pop 
+git stash pop
 #1485796183
 git diff
 #1485796205
@@ -53810,15 +53810,15 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.ja
 #1485796223
 git commit -m "fixing conflict. No change in code."
 #1485796232
-git push origin master 
+git push origin master
 #1485796434
 git pull --all --prune
 #1485796448
-git branch -d marcel-clean-tests sf-reduce-comms3 
+git branch -d marcel-clean-tests sf-reduce-comms3
 #1485796456
-git branch 
+git branch
 #1485796512
-git branch -d drs5 sf-serial-size 
+git branch -d drs5 sf-serial-size
 #1485797653
 git add src/main/java/edu/kestrel/scharp/activemq/AmqJsonServer.java
 #1485797670
@@ -53826,7 +53826,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/
 #1485797688
 git commit -m "Merged with master and fixed conflicts."
 #1485800752
-git pull 
+git pull
 #1485810810
 cd /Applications/
 #1485890041
@@ -53840,7 +53840,7 @@ git add src/main/java/edu/kestrel/scharp/planner/search/SearchStrategy.java
 #1485891700
 git commit -m "Fixed merge conflicts."
 #1485373196
-more Kestrel20170117.1931.json 
+more Kestrel20170117.1931.json
 #1485812637
 cd src/scharp-compile-test-workspace/
 #1485890654
@@ -53856,7 +53856,7 @@ cd src/rspace-eclipse/scharp/
 #1486064625
 mvn clean generate-sources
 #1486072145
-cd 
+cd
 #1486072148
 cd Dropbox/
 #1486072160
@@ -53864,7 +53864,7 @@ cd backup/
 #1486072241
 cd Linux_Config/
 #1486072255
-more sync_home_with_dropbox.sh 
+more sync_home_with_dropbox.sh
 #1486072298
 cd Home/
 #1486072302
@@ -53886,11 +53886,11 @@ ls -al
 #1486074064
 configdot config --local status.showUntrackedFiles no
 #1486074139
-configdot add .bash_history 
+configdot add .bash_history
 #1486074201
-configdot add .gitconfig .git-prompt.sh .gitconfig .gitignore_global 
+configdot add .gitconfig .git-prompt.sh .gitconfig .gitignore_global
 #1486074333
-configdot add .emacs.d/init.el 
+configdot add .emacs.d/init.el
 #1486074355
 configdot commit -m "Essential dot files added."
 #1486074492
@@ -53908,7 +53908,7 @@ git diff src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitSchedule
 #1486076322
 git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
 #1486076330
-git status 
+git status
 #1486076336
 git diff src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler.java
 #1486076382
@@ -53922,7 +53922,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.
 #1486078982
 git commit -m "Fixed imports and format."
 #1486078989
-git push -u origin master 
+git push -u origin master
 #1486079094
 title THIS
 #1486079104
@@ -53946,17 +53946,17 @@ git tag -a TE3 -m "Version used in TE3 at Mitre."
 #1486079422
 git push origin TE3
 #1486079512
-git checkout marcel-synch-multi-mission 
+git checkout marcel-synch-multi-mission
 #1486079522
 git pull
 #1486079529
-git pull origin master 
+git pull origin master
 #1486079560
 cd ../../..
 #1486079567
 mvn clean generate-sources compile
 #1486082867
-git checkout master 
+git checkout master
 #1486082884
 git diff src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
 #1486082938
@@ -53964,13 +53964,13 @@ git checkout -- src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResourc
 #1486082943
 git status
 #1486082947
-git diff 
+git diff
 #1486082958
 git add src/main/java/edu/kestrel/scharp/planner/entities/TankerAirUnitResource.java
 #1486082997
 git commit -m "Change the create child resource method to reuse activity's resource if present."
 #1486083003
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1486083139
 cd
 #1486083148
@@ -53990,7 +53990,7 @@ ps -a | grep java
 #1486140851
 ps -al | grep java
 #1486140854
-ps -al 
+ps -al
 #1486140861
 ps -A
 #1486140871
@@ -54000,7 +54000,7 @@ kill -9 88780
 #1486684079
 exit
 #1486140854
-ps -al 
+ps -al
 #1486140861
 ps -A
 #1486140871
@@ -54008,7 +54008,7 @@ ps -A | grep eclipse
 #1486140893
 kill -9 88780
 #1487176299
-cd 
+cd
 #1487176309
 cd src/rspace-merge-test/
 #1487176320
@@ -54034,7 +54034,7 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/TankerAirUnitResource.
 #1486082997
 git commit -m "Change the create child resource method to reuse activity's resource if present."
 #1486083003
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1486083139
 cd
 #1486083148
@@ -54054,7 +54054,7 @@ ps -a | grep java
 #1486140851
 ps -al | grep java
 #1486140854
-ps -al 
+ps -al
 #1486140861
 ps -A
 #1486140871
@@ -54064,7 +54064,7 @@ kill -9 88780
 #1486686390
 cd src/rspace-eclipse/scharp/
 #1486687204
-git checkout 
+git checkout
 #1486687207
 git status -
 #1486687213
@@ -54080,13 +54080,13 @@ git checkout -- src/main/java/edu/kestrel/scharp/planner/resource/GoBasedCapacit
 #1486687308
 git checkout -- src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
 #1486687329
-git branch 
+git branch
 #1486687341
-git branch -d 
+git branch -d
 #1486687346
 git branch -d marcel-code-cleanup
 #1486687352
-git branch -d marcel-fix-summary-reports 
+git branch -d marcel-fix-summary-reports
 #1486687375
 git checkout marcel-fix-refuel-support
 #1486687384
@@ -54098,9 +54098,9 @@ git add src/main/java/edu/kestrel/scharp/planner/manager
 #1486914882
 git commit -m "Changed the creation of refuel and positioning legs to use the same methods in DCA escort and support."
 #1486914891
-git push -u origin marcel-fix-refuel-support 
+git push -u origin marcel-fix-refuel-support
 #1486914898
-git checkout master 
+git checkout master
 #1486922049
 git pull --all --prune
 #1487102810
@@ -54114,7 +54114,7 @@ git pull
 #1487177829
 exit
 #1486687352
-git branch -d marcel-fix-summary-reports 
+git branch -d marcel-fix-summary-reports
 #1486687375
 git checkout marcel-fix-refuel-support
 #1486687384
@@ -54126,9 +54126,9 @@ git add src/main/java/edu/kestrel/scharp/planner/manager
 #1486914882
 git commit -m "Changed the creation of refuel and positioning legs to use the same methods in DCA escort and support."
 #1486914891
-git push -u origin marcel-fix-refuel-support 
+git push -u origin marcel-fix-refuel-support
 #1486914898
-git checkout master 
+git checkout master
 #1486922049
 git pull --all --prune
 #1487102826
@@ -54144,11 +54144,11 @@ git status
 #1487181264
 git add src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java
 #1487181269
-git commit -m 
+git commit -m
 #1487181290
 git commit -m "Changed log statement."
 #1487181296
-git push -u origin master 
+git push -u origin master
 #1487183429
 cd /Applications/java-oxygen/Eclipse.app/Contents/MacOS/
 #1487183550
@@ -54158,9 +54158,9 @@ cd MacOS/
 #1487184114
 more ls
 #1487184120
-more eclipse.ini 
+more eclipse.ini
 #1487184187
-cd ../Eclipse/ 
+cd ../Eclipse/
 #1487184190
 cd plugins/
 #1487259953
@@ -54168,7 +54168,7 @@ pwd
 #1487259958
 cd ..
 #1487259968
-cd  
+cd
 #1487259974
 cd .eclipse
 #1487259975
@@ -54180,7 +54180,7 @@ exit
 #1486076322
 git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
 #1486076330
-git status 
+git status
 #1486076336
 git diff src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler.java
 #1486076382
@@ -54194,7 +54194,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.
 #1486078982
 git commit -m "Fixed imports and format."
 #1486078989
-git push -u origin master 
+git push -u origin master
 #1486079094
 title THIS
 #1486079110
@@ -54212,7 +54212,7 @@ git tag -a TE3 -m "Version used in TE3 at Mitre."
 #1486079422
 git push origin TE3
 #1486079512
-git checkout marcel-synch-multi-mission 
+git checkout marcel-synch-multi-mission
 #1486079560
 cd ../../..
 #1486079567
@@ -54222,13 +54222,13 @@ git diff src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
 #1486082938
 git checkout -- src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
 #1486082947
-git diff 
+git diff
 #1486082958
 git add src/main/java/edu/kestrel/scharp/planner/entities/TankerAirUnitResource.java
 #1486082997
 git commit -m "Change the create child resource method to reuse activity's resource if present."
 #1486083003
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1486083148
 configdot status
 #1486083156
@@ -54246,7 +54246,7 @@ ps -a | grep java
 #1486140851
 ps -al | grep java
 #1486140854
-ps -al 
+ps -al
 #1486140861
 ps -A
 #1486140871
@@ -54254,7 +54254,7 @@ ps -A | grep eclipse
 #1486140893
 kill -9 88780
 #1486140854
-ps -al 
+ps -al
 #1486140861
 ps -A
 #1486140871
@@ -54274,7 +54274,7 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/TankerAirUnitResource.
 #1486082997
 git commit -m "Change the create child resource method to reuse activity's resource if present."
 #1486083003
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1486083148
 configdot status
 #1486083156
@@ -54292,7 +54292,7 @@ ps -a | grep java
 #1486140851
 ps -al | grep java
 #1486140854
-ps -al 
+ps -al
 #1486140861
 ps -A
 #1486140871
@@ -54302,7 +54302,7 @@ kill -9 88780
 #1486686390
 cd src/rspace-eclipse/scharp/
 #1486687204
-git checkout 
+git checkout
 #1486687207
 git status -
 #1486687213
@@ -54318,11 +54318,11 @@ git checkout -- src/main/java/edu/kestrel/scharp/planner/resource/GoBasedCapacit
 #1486687308
 git checkout -- src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
 #1486687341
-git branch -d 
+git branch -d
 #1486687346
 git branch -d marcel-code-cleanup
 #1486687352
-git branch -d marcel-fix-summary-reports 
+git branch -d marcel-fix-summary-reports
 #1486687375
 git checkout marcel-fix-refuel-support
 #1486687384
@@ -54332,13 +54332,13 @@ git add src/main/java/edu/kestrel/scharp/planner/manager
 #1486914882
 git commit -m "Changed the creation of refuel and positioning legs to use the same methods in DCA escort and support."
 #1486914891
-git push -u origin marcel-fix-refuel-support 
+git push -u origin marcel-fix-refuel-support
 #1486922049
 git pull --all --prune
 #1487102826
 mvn clean compile
 #1486687352
-git branch -d marcel-fix-summary-reports 
+git branch -d marcel-fix-summary-reports
 #1486687375
 git checkout marcel-fix-refuel-support
 #1486687384
@@ -54348,7 +54348,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager
 #1486914882
 git commit -m "Changed the creation of refuel and positioning legs to use the same methods in DCA escort and support."
 #1486914891
-git push -u origin marcel-fix-refuel-support 
+git push -u origin marcel-fix-refuel-support
 #1486922049
 git pull --all --prune
 #1487102826
@@ -54356,11 +54356,11 @@ mvn clean compile
 #1487181250
 cd src/scharp-compile-test-workspace/
 #1487181269
-git commit -m 
+git commit -m
 #1487181290
 git commit -m "Changed log statement."
 #1487181296
-git push -u origin master 
+git push -u origin master
 #1487183429
 cd /Applications/java-oxygen/Eclipse.app/Contents/MacOS/
 #1487183550
@@ -54370,11 +54370,11 @@ cd MacOS/
 #1487184114
 more ls
 #1487184120
-more eclipse.ini 
+more eclipse.ini
 #1487184187
-cd ../Eclipse/ 
+cd ../Eclipse/
 #1487259968
-cd  
+cd
 #1487377258
 alias
 #1487642124
@@ -54416,7 +54416,7 @@ cd org.eclipse.ui.ide/
 #1487643609
 cd org.eclipse.ui.workbench
 #1487643618
-more dialog_settings.xml 
+more dialog_settings.xml
 #1487643968
 cd src/
 #1487643983
@@ -54454,7 +54454,7 @@ rm -rf .metadata/
 #1487715162
 rm -rf .recommenders/
 #1487715165
-cd 
+cd
 #1487715184
 cd ../.p2
 #1487715196
@@ -54480,7 +54480,7 @@ pwd
 #1487715298
 mkdir eclipse-oxygen
 #1487718601
-git branch 
+git branch
 #1487718853
 cd .eclipse
 #1487718859
@@ -54498,19 +54498,19 @@ cd src/rspace-eclipse/
 #1487722231
 cd scharp/
 #1487722234
-git checkout master 
+git checkout master
 #1487723583
 git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/ src/main/java/edu/kestrel/scharp/planner/analysis/display/PlanAnalysisGUI.java src/main/java/edu/kestrel/scharp/planner/manager/PlanningOptions.java
 #1487723610
 git commit -m "Fixed format and changed visibility of class variables."
 #1487723618
-git push origin master 
+git push origin master
 #1487723631
-git checkout marcel-fix-refuel-support 
+git checkout marcel-fix-refuel-support
 #1487723666
 git pull origin master --rebase
 #1487723745
-git pull origin master 
+git pull origin master
 #1487723766
 git pull
 #1487723907
@@ -54520,7 +54520,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.ja
 #1487723931
 git commit -m "Fixed merge conflicts."
 #1487723943
-git push origin marcel-fix-refuel-support 
+git push origin marcel-fix-refuel-support
 #1487727518
 git status
 #1487727745
@@ -54528,7 +54528,7 @@ exit
 #1487815792
 bash
 #1487723745
-git pull origin master 
+git pull origin master
 #1487723766
 git pull
 #1487723907
@@ -54538,7 +54538,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.ja
 #1487723931
 git commit -m "Fixed merge conflicts."
 #1487723943
-git push origin marcel-fix-refuel-support 
+git push origin marcel-fix-refuel-support
 #1487727518
 git status
 #1487877357
@@ -54592,23 +54592,23 @@ git commit -m "Renamed target scheduler for later removal."
 #1488227163
 git status
 #1488227173
-git push -u origin marcel-fix-refuel-support 
+git push -u origin marcel-fix-refuel-support
 #1488227182
-git pull origin master 
+git pull origin master
 #1488227432
-git checkout master 
+git checkout master
 #1488227509
-git checkout marcel-fix-refuel-support 
+git checkout marcel-fix-refuel-support
 #1488227524
 mvn clean generate-sources compile
 #1486082947
-git diff 
+git diff
 #1486082958
 git add src/main/java/edu/kestrel/scharp/planner/entities/TankerAirUnitResource.java
 #1486082997
 git commit -m "Change the create child resource method to reuse activity's resource if present."
 #1486083003
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1486083148
 configdot status
 #1486083156
@@ -54626,7 +54626,7 @@ ps -a | grep java
 #1486140851
 ps -al | grep java
 #1486140854
-ps -al 
+ps -al
 #1486140861
 ps -A
 #1486140871
@@ -54634,7 +54634,7 @@ ps -A | grep eclipse
 #1486140893
 kill -9 88780
 #1486140854
-ps -al 
+ps -al
 #1486140861
 ps -A
 #1486140871
@@ -54654,7 +54654,7 @@ git add src/main/java/edu/kestrel/scharp/planner/entities/TankerAirUnitResource.
 #1486082997
 git commit -m "Change the create child resource method to reuse activity's resource if present."
 #1486083003
-git push -u origin marcel-synch-multi-mission 
+git push -u origin marcel-synch-multi-mission
 #1486083148
 configdot status
 #1486083156
@@ -54672,7 +54672,7 @@ ps -a | grep java
 #1486140851
 ps -al | grep java
 #1486140854
-ps -al 
+ps -al
 #1486140861
 ps -A
 #1486140871
@@ -54682,7 +54682,7 @@ kill -9 88780
 #1486686390
 cd src/rspace-eclipse/scharp/
 #1486687204
-git checkout 
+git checkout
 #1486687207
 git status -
 #1486687213
@@ -54696,11 +54696,11 @@ git checkout -- src/main/java/edu/kestrel/scharp/planner/resource/GoBasedCapacit
 #1486687308
 git checkout -- src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
 #1486687341
-git branch -d 
+git branch -d
 #1486687346
 git branch -d marcel-code-cleanup
 #1486687352
-git branch -d marcel-fix-summary-reports 
+git branch -d marcel-fix-summary-reports
 #1486687375
 git checkout marcel-fix-refuel-support
 #1486687384
@@ -54708,11 +54708,11 @@ git checkout -b marcel-fix-refuel-support
 #1486914882
 git commit -m "Changed the creation of refuel and positioning legs to use the same methods in DCA escort and support."
 #1486914891
-git push -u origin marcel-fix-refuel-support 
+git push -u origin marcel-fix-refuel-support
 #1487102826
 mvn clean compile
 #1486687352
-git branch -d marcel-fix-summary-reports 
+git branch -d marcel-fix-summary-reports
 #1486687375
 git checkout marcel-fix-refuel-support
 #1486687384
@@ -54720,17 +54720,17 @@ git checkout -b marcel-fix-refuel-support
 #1486914882
 git commit -m "Changed the creation of refuel and positioning legs to use the same methods in DCA escort and support."
 #1486914891
-git push -u origin marcel-fix-refuel-support 
+git push -u origin marcel-fix-refuel-support
 #1487102826
 mvn clean compile
 #1487181250
 cd src/scharp-compile-test-workspace/
 #1487181269
-git commit -m 
+git commit -m
 #1487181290
 git commit -m "Changed log statement."
 #1487181296
-git push -u origin master 
+git push -u origin master
 #1487183429
 cd /Applications/java-oxygen/Eclipse.app/Contents/MacOS/
 #1487183550
@@ -54740,11 +54740,11 @@ cd MacOS/
 #1487184114
 more ls
 #1487184120
-more eclipse.ini 
+more eclipse.ini
 #1487184187
-cd ../Eclipse/ 
+cd ../Eclipse/
 #1487259968
-cd  
+cd
 #1487377258
 alias
 #1487642124
@@ -54786,7 +54786,7 @@ cd org.eclipse.ui.ide/
 #1487643609
 cd org.eclipse.ui.workbench
 #1487643618
-more dialog_settings.xml 
+more dialog_settings.xml
 #1487643986
 ls -a
 #1487643989
@@ -54836,7 +54836,7 @@ rm -rf eclipse-neon/
 #1487715298
 mkdir eclipse-oxygen
 #1487718601
-git branch 
+git branch
 #1487718853
 cd .eclipse
 #1487718861
@@ -54848,13 +54848,13 @@ git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/ src/main/java/edu/
 #1487723610
 git commit -m "Fixed format and changed visibility of class variables."
 #1487723618
-git push origin master 
+git push origin master
 #1487723631
-git checkout marcel-fix-refuel-support 
+git checkout marcel-fix-refuel-support
 #1487723666
 git pull origin master --rebase
 #1487723745
-git pull origin master 
+git pull origin master
 #1487723907
 git diff src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java
 #1487723918
@@ -54862,13 +54862,13 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.ja
 #1487723931
 git commit -m "Fixed merge conflicts."
 #1487723943
-git push origin marcel-fix-refuel-support 
+git push origin marcel-fix-refuel-support
 #1487727745
 exit
 #1487815792
 bash
 #1487723745
-git pull origin master 
+git pull origin master
 #1487723907
 git diff src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java
 #1487723918
@@ -54876,7 +54876,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.ja
 #1487723931
 git commit -m "Fixed merge conflicts."
 #1487723943
-git push origin marcel-fix-refuel-support 
+git push origin marcel-fix-refuel-support
 #1487877357
 git clone git@github.com:alblue/com.packtpub.e4.git
 #1487877366
@@ -54914,11 +54914,11 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/TargetScheduler.javaold
 #1488227159
 git commit -m "Renamed target scheduler for later removal."
 #1488227173
-git push -u origin marcel-fix-refuel-support 
+git push -u origin marcel-fix-refuel-support
 #1488227182
-git pull origin master 
+git pull origin master
 #1488227509
-git checkout marcel-fix-refuel-support 
+git checkout marcel-fix-refuel-support
 #1488227524
 mvn clean generate-sources compile
 #1488480410
@@ -54948,7 +54948,7 @@ cd rspacesrc/
 #1488480640
 cd rspace-vagrant/
 #1488480652
-more Vagrantfile 
+more Vagrantfile
 #1488480665
 cd
 #1488480667
@@ -54956,23 +54956,23 @@ cd src/
 #1488480671
 cd rspace-eclipse/
 #1488480680
-git pull 
+git pull
 #1488480704
 mkdir rspace-eclipse-testws
 #1488480733
 git clone git@github.com:KestrelInstitute/scharp.git
 #1488480749
-git checkout -t marcel-fix-refuel-support 
+git checkout -t marcel-fix-refuel-support
 #1488480821
 his | grep checkout
 #1488480839
-git checkout -t origin/marcel-fix-refuel-support 
+git checkout -t origin/marcel-fix-refuel-support
 #1488480960
-cd 
+cd
 #1488480963
 cd src/rspace-eclipse
 #1488480967
-more copy-eclipse-workspace.sh 
+more copy-eclipse-workspace.sh
 #1488493537
 ./copy-eclipse-workspace.sh ~/src/rspace-eclipse ~/src/rspace-eclipse-testws/
 #1488577974
@@ -54980,9 +54980,9 @@ git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCell
 #1488578025
 git checkout --  src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
 #1488578236
-git status 
+git status
 #1488578268
-git checkout -- src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellAMQClient.java 
+git checkout -- src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellAMQClient.java
 #1488578686
 git diff src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java
 #1488578707
@@ -55024,15 +55024,15 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler
 #1489095150
 git commit -m "Removed unreachable code from Fighter Scheduler that processed the recon targets."
 #1489095167
-git checkout master 
+git checkout master
 #1489095174
 his | grep tag
 #1489095242
 git tag -a TE3-Before-Refactoring -m "Version used in TE3 before refactoring the unit schedulers."
 #1489095305
-git push origin TE3-Before-Refactoring 
+git push origin TE3-Before-Refactoring
 #1489095316
-git checkout marcel-refactor-scheduler 
+git checkout marcel-refactor-scheduler
 #1489095320
 git pull
 #1489099594
@@ -55122,11 +55122,11 @@ cd scharp/
 #1489180633
 docker build --rm=true --no-cache -f Docker/DockerJava/Dockerfile -t scharp/ubuntujava8 .
 #1489182994
-./build-all-docker-images.sh 
+./build-all-docker-images.sh
 #1489183889
-docker-compose 
+docker-compose
 #1489183906
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1489184277
 git add Docker/DockerJava/Dockerfile Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile Docker/jboss-fuse-docker/Dockerfile README.md docker-compose.yml src/main/java/edu/kestrel/scharp/activemq/AmqConnectionManager.java src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellAMQServer.java
 #1489184349
@@ -55136,7 +55136,7 @@ ls
 #1489190119
 pwd
 #1489190238
-chmod +x wait-for-it.sh 
+chmod +x wait-for-it.sh
 #1489190848
 docker-compose build
 #1489191076
@@ -55148,7 +55148,7 @@ git add Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile docker-
 #1489191301
 git commit -m "Updated docker file and docker compose file."
 #1489191306
-git push -u origin marcel-refactor-scheduler 
+git push -u origin marcel-refactor-scheduler
 #1489191343
 docker ps -a
 #1489191355
@@ -55168,9 +55168,9 @@ df
 #1489191762
 docker images | grep “^<none>” | awk ‘{print $3}’
 #1489191776
-docker images | grep “^<none>” 
+docker images | grep “^<none>”
 #1489191786
-docker images -a | grep “^<none>” 
+docker images -a | grep “^<none>”
 #1489191809
 docker images
 #1489191815
@@ -55222,7 +55222,7 @@ git status
 #1489595863
 git commit -m "Unifying and simplifying creation of positioning and depositioning legs for sead and DCA. First pass."
 #1489595872
-git push -u origin marcel-refactor-scheduler 
+git push -u origin marcel-refactor-scheduler
 #1489180478
 cd rspace-eclipse-testws/
 #1489180480
@@ -55230,17 +55230,17 @@ cd scharp/
 #1489180633
 docker build --rm=true --no-cache -f Docker/DockerJava/Dockerfile -t scharp/ubuntujava8 .
 #1489182994
-./build-all-docker-images.sh 
+./build-all-docker-images.sh
 #1489183889
-docker-compose 
+docker-compose
 #1489183906
-./Docker/jboss-fuse-docker/docker-run.sh 
+./Docker/jboss-fuse-docker/docker-run.sh
 #1489184277
 git add Docker/DockerJava/Dockerfile Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile Docker/jboss-fuse-docker/Dockerfile README.md docker-compose.yml src/main/java/edu/kestrel/scharp/activemq/AmqConnectionManager.java src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellAMQServer.java
 #1489184349
 git commit -m "Updated jboss fuse version, optimized rspace amq server to not create a connection for each server, updated README files."
 #1489190238
-chmod +x wait-for-it.sh 
+chmod +x wait-for-it.sh
 #1489190848
 docker-compose build
 #1489191076
@@ -55270,9 +55270,9 @@ df
 #1489191762
 docker images | grep “^<none>” | awk ‘{print $3}’
 #1489191776
-docker images | grep “^<none>” 
+docker images | grep “^<none>”
 #1489191786
-docker images -a | grep “^<none>” 
+docker images -a | grep “^<none>”
 #1489191809
 docker images
 #1489191815
@@ -55330,7 +55330,7 @@ git add src/main/java/edu/kestrel/scharp/planner/time
 #1489774537
 git commit -m "Removed TimeUtils class and moved methods to SchTime."
 #1489774544
-git status 
+git status
 #1489795536
 git add src/main/java/edu/kestrel/scharp/planner/manager/
 #1489795584
@@ -55366,17 +55366,17 @@ git add src/test/java/edu/kestrel/scharp/activemq/TestTE3EmbeddedBrokerEmbeddedS
 #1490199031
 git commit -m "Added method to stop planning cell threads to functional planning cell manager."
 #1490199043
-git push -u origin marcel-refactor-scheduler 
+git push -u origin marcel-refactor-scheduler
 #1490199049
 clear
 #1490207201
 ifconfig
 #1490290783
-git checkout master 
+git checkout master
 #1490290785
 git pull
 #1490290845
-git branch -d marcel-refactor-scheduler 
+git branch -d marcel-refactor-scheduler
 #1490290852
 git pull --all --prune
 #1490291888
@@ -55418,13 +55418,13 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler
 #1490331805
 git commit -m "Removed code commented out."
 #1490331810
-git push -u origin marcel-no-amq-scheduler 
+git push -u origin marcel-no-amq-scheduler
 #1490332414
 git status
 #1490332425
 exit
 #1489623128
-cd 
+cd
 #1489711246
 cd
 #1490332427
@@ -55474,7 +55474,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler
 #1490331805
 git commit -m "Removed code commented out."
 #1490331810
-git push -u origin marcel-no-amq-scheduler 
+git push -u origin marcel-no-amq-scheduler
 #1490920269
 curl -L https://iterm2.com/misc/install_shell_integration_and_utilities.sh | bash
 #1490920632
@@ -55488,13 +55488,13 @@ git checkout -- eclipse-utils/PlanAnalysisGUI\ run1.launch
 #1490920752
 rm eclipse-utils/PlanAnalysisGUI\ run1.launch
 #1490920793
-git checkout marcel-compare-plans 
+git checkout marcel-compare-plans
 #1490920879
-git branch -d marcel-fix-refuel-support 
+git branch -d marcel-fix-refuel-support
 #1490920888
 vd
 #1490920892
-cd 
+cd
 #1490920918
 cd src/rspace-eclipse-testws/scharp/
 #1490920943
@@ -55502,11 +55502,11 @@ git checkout master
 #1490920952
 git status
 #1490920964
-git branch 
+git branch
 #1490920974
 git branch -d marcel-fix-refuel-support
 #1490920983
-git branch -d marcel-no-amq-scheduler 
+git branch -d marcel-no-amq-scheduler
 #1490920994
 git pull --all --prune
 #1490924299
@@ -55516,11 +55516,11 @@ cd
 #1490925625
 ls -al
 #1490925665
-more .iterm2_shell_integration.bash 
+more .iterm2_shell_integration.bash
 #1490925685
 more .bashrc
 #1490925697
-more .profile 
+more .profile
 #1490975516
 clear
 #1490975518
@@ -55600,7 +55600,7 @@ git status
 #1491239693
 git commit -m "Added test to generate multiple plans and fixed the code to shutdown all scheduling threads and re-start a new plan manager in the same vm."
 #1491239699
-git push -u origin marcel-compare-plans 
+git push -u origin marcel-compare-plans
 #1491432056
 his | grep open
 #1491432069
@@ -55670,7 +55670,7 @@ scp -r -P422 ~/src/rspace-eclipse/scharp/output/SCHARP-NO-ROUTE.ato DoD_Admin@50
 #1491583615
 cd
 #1491760701
-cd 
+cd
 #1491760713
 cd src/rspace-eclipse/scharp/
 #1491760714
@@ -55706,7 +55706,7 @@ git add src/main/java/edu/kestrel/scharp/planner/util/PlanComparison.java
 #1492021317
 git commit -m "Started comparing missions."
 #1492021326
-git push -u origin marcel-compare-plans 
+git push -u origin marcel-compare-plans
 #1492038006
 git pull
 #1492060263
@@ -55724,7 +55724,7 @@ git add src/main/java/edu/kestrel/scharp/planner/util/PlanComparison.java
 #1492707234
 git commit -m "Comparing missions."
 #1492707243
-git push -u origin marcel-compare-plans 
+git push -u origin marcel-compare-plans
 #1492707255
 git pull --all --prune
 #1492707255
@@ -55750,7 +55750,7 @@ git pull
 #1492790800
 git pull --all
 #1492791265
-cd 
+cd
 #1492791267
 cd src
 #1492791281
@@ -55772,7 +55772,7 @@ exit
 #1492707234
 git commit -m "Comparing missions."
 #1492707243
-git push -u origin marcel-compare-plans 
+git push -u origin marcel-compare-plans
 #1492707255
 git pull --all --prune
 #1492707255
@@ -55798,7 +55798,7 @@ scp -r -P422 TE3\ v3.ptt DoD_Admin@10.10.200.13:/home/DoD_Admin/becker/
 #1492804926
 scp -r -P22 TE3\ v3.ptt DoD_Admin@10.10.200.13:/home/DoD_Admin/becker/
 #1492807962
-cd 
+cd
 #1493049489
 cd src/
 #1493049493
@@ -55808,7 +55808,7 @@ cd scharp/
 #1493049530
 git checkout -- src/main/resources/logback.xml
 #1493049534
-git checkout -t origin/marcel-replan-reuse-bid 
+git checkout -t origin/marcel-replan-reuse-bid
 #1493049537
 git pull
 #1493049542
@@ -55820,11 +55820,11 @@ git add src/main/java/edu/kestrel/scharp/replanner/Replanner.java
 #1493074299
 git commit -m "Fixed the cancelling of the tanker mission."
 #1493074312
-git push -u origin marcel-replan-reuse-bid 
+git push -u origin marcel-replan-reuse-bid
 #1493074319
 git status
 #1493074312
-git push -u origin marcel-replan-reuse-bid 
+git push -u origin marcel-replan-reuse-bid
 #1493074319
 git status
 #1493314375
@@ -55852,7 +55852,7 @@ scp -r -P422 TE3\ v3.ptt DoD_Admin@10.10.200.13:/home/DoD_Admin/becker/
 #1492804926
 scp -r -P22 TE3\ v3.ptt DoD_Admin@10.10.200.13:/home/DoD_Admin/becker/
 #1492807962
-cd 
+cd
 #1493049489
 cd src/
 #1493049493
@@ -55860,7 +55860,7 @@ cd rspace-eclipse
 #1493049530
 git checkout -- src/main/resources/logback.xml
 #1493049534
-git checkout -t origin/marcel-replan-reuse-bid 
+git checkout -t origin/marcel-replan-reuse-bid
 #1493074141
 git add src/main/java/edu/kestrel/scharp/planner/analysis/ src/main/java/edu/kestrel/scharp/planner/entities src/main/java/edu/kestrel/scharp/planner/manager/
 #1493074209
@@ -55868,9 +55868,9 @@ git add src/main/java/edu/kestrel/scharp/replanner/Replanner.java
 #1493074299
 git commit -m "Fixed the cancelling of the tanker mission."
 #1493074312
-git push -u origin marcel-replan-reuse-bid 
+git push -u origin marcel-replan-reuse-bid
 #1493074312
-git push -u origin marcel-replan-reuse-bid 
+git push -u origin marcel-replan-reuse-bid
 #1493314375
 his | grep ssh
 #1493315179
@@ -55918,11 +55918,11 @@ git pull --all --prunt
 #1494630225
 git tag -a TE3-May2017-NG-Dry-Run -m "TE3 version to be used in NG Dev Cloud dry run in May 2017."
 #1494630274
-git push origin TE3-May2017-NG-Dry-Run 
+git push origin TE3-May2017-NG-Dry-Run
 #1494630294
 clear
 #1494870735
-git pull origin master 
+git pull origin master
 #1494873080
 git reset --hard
 #1494873087
@@ -55938,7 +55938,7 @@ git checkout a52ac330f0f5331fbe69d4517a37ab6743203509
 #1494885276
 pwd
 #1494886222
-git checkout master 
+git checkout master
 #1494886230
 mvn clean compile
 #1494886781
@@ -55950,7 +55950,7 @@ git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler
 #1494886890
 git commit -m "Re-formatted file."
 #1494886895
-git push -u origin master 
+git push -u origin master
 #1494887395
 git statis
 #1494887397
@@ -55958,11 +55958,11 @@ git status
 #1494887405
 git pull --all
 #1494887454
-git remote -v 
+git remote -v
 #1494888286
 git pull --all --prune
 #1494888298
-git checkout marcel-sync-all-missions 
+git checkout marcel-sync-all-missions
 #1494888303
 git pull
 #1494888317
@@ -55972,21 +55972,21 @@ ifconfig
 #1493418901
 git pull --all --prune
 #1493418918
-git branch -d marcel-compare-plans 
+git branch -d marcel-compare-plans
 #1493418940
-git checkout marcel-compare-plans 
+git checkout marcel-compare-plans
 #1493418951
-git checkout master 
+git checkout master
 #1493418960
-git branch -D marcel-compare-plans 
+git branch -D marcel-compare-plans
 #1493418974
-git branch -D marcel-replan-reuse-bid 
+git branch -D marcel-replan-reuse-bid
 #1493418978
 git branch -D marcel-replan
 #1493418984
-git branch 
+git branch
 #1493418995
-git checkout marcel-sync-all-missions 
+git checkout marcel-sync-all-missions
 #1493418997
 git pull
 #1493419013
@@ -56000,7 +56000,7 @@ exit
 #1493049493
 cd rspace-eclipse
 #1493049534
-git checkout -t origin/marcel-replan-reuse-bid 
+git checkout -t origin/marcel-replan-reuse-bid
 #1493074141
 git add src/main/java/edu/kestrel/scharp/planner/analysis/ src/main/java/edu/kestrel/scharp/planner/entities src/main/java/edu/kestrel/scharp/planner/manager/
 #1493074209
@@ -56008,9 +56008,9 @@ git add src/main/java/edu/kestrel/scharp/replanner/Replanner.java
 #1493074299
 git commit -m "Fixed the cancelling of the tanker mission."
 #1493074312
-git push -u origin marcel-replan-reuse-bid 
+git push -u origin marcel-replan-reuse-bid
 #1493074312
-git push -u origin marcel-replan-reuse-bid 
+git push -u origin marcel-replan-reuse-bid
 #1493314375
 his | grep ssh
 #1493315179
@@ -56032,7 +56032,7 @@ ping 10.22.100.112
 #1493318098
 ifconfig
 #1494872715
-cd 
+cd
 #1494872717
 cd src/
 #1494872735
@@ -56044,13 +56044,13 @@ git pull --all --prunt
 #1494872773
 git pull --all --prune
 #1494872781
-git branch 
+git branch
 #1494882035
 git commit -m "Fixed the use of ac type and ac type label when selecting the strike option for task."
 #1494882044
-git push -u origin master 
+git push -u origin master
 #1494882115
-git checkout -t origin/marcel-sync-all-missions 
+git checkout -t origin/marcel-sync-all-missions
 #1494883141
 git diff src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
 #1494883629
@@ -56076,11 +56076,11 @@ cd scharp/
 #1494887481
 mvn clean compile
 #1494887509
-git checkout marcel-sync-all-missions 
+git checkout marcel-sync-all-missions
 #1494887512
 git pull
 #1494887523
-git pull origin master 
+git pull origin master
 #1494888229
 git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
 #1494888236
@@ -56094,13 +56094,13 @@ git status
 #1494888261
 git commit -m "Merged with master."
 #1494888271
-git push -u origin marcel-sync-all-missions 
+git push -u origin marcel-sync-all-missions
 #1494888324
 exitg
 #1494888325
 exit
 #1494888271
-git push -u origin marcel-sync-all-missions 
+git push -u origin marcel-sync-all-missions
 #1494888324
 exitg
 #1494888325
@@ -56118,7 +56118,7 @@ git add notes/marcel-notes.org
 #1494960341
 git commit -m "Updated notes."
 #1494960343
-git push -u origin master 
+git push -u origin master
 #1494886985
 git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningOptions.java
 #1494887331
@@ -56132,11 +56132,11 @@ cd scharp/
 #1494887481
 mvn clean compile
 #1494887509
-git checkout marcel-sync-all-missions 
+git checkout marcel-sync-all-missions
 #1494887512
 git pull
 #1494887523
-git pull origin master 
+git pull origin master
 #1494888229
 git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
 #1494888236
@@ -56148,7 +56148,7 @@ git add src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTe
 #1494888261
 git commit -m "Merged with master."
 #1494888271
-git push -u origin marcel-sync-all-missions 
+git push -u origin marcel-sync-all-missions
 #1494888324
 exitg
 #1494888325
@@ -56156,7 +56156,7 @@ exit
 #1494951933
 cd src/rspace-eclipse/scharp/
 #1494951943
-git checkout master 
+git checkout master
 #1494951951
 git add notes/
 #1494951979
@@ -56170,27 +56170,27 @@ cd DockerJava/
 #1494952352
 cd ../jboss-fuse-docker/
 #1494952358
-./docker-build.sh 
+./docker-build.sh
 #1494952879
 git add ../../notes/
 #1494952891
 git commit -m "Added more notes."
 #1494952896
-git push -u origin master 
+git push -u origin master
 #1494953103
 cd DockerScharpCacheMaven/DockerScharpBaseImage/
 #1494953107
-./docker-build-no-cache.sh 
+./docker-build-no-cache.sh
 #1494953170
 cd ../..
 #1494953208
 docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
 #1494953522
-more build-all-docker-images.sh 
+more build-all-docker-images.sh
 #1494953543
 docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile -t scharp/planner .
 #1494955021
-cd 
+cd
 #1494955023
 cd ..
 #1494955025
@@ -56206,11 +56206,11 @@ docker images
 #1494955085
 docker images -q
 #1494955096
-docker images 
+docker images
 #1494955328
 docker save --output scharp-java.tar scharp/ubuntujava8
 #1494955372
-gzip scharp-java.tar 
+gzip scharp-java.tar
 #1494955446
 docker save --output scharp-plannerbase.tar scharp/plannerbase
 #1494955666
@@ -56218,13 +56218,13 @@ docker save --output scharp-planner.tar scharp/planner
 #1494955842
 ls -al
 #1494955857
-gzip scharp-planner.tar 
+gzip scharp-planner.tar
 #1494956071
-gzip scharp-plannerbase.tar 
+gzip scharp-plannerbase.tar
 #1494956146
 docker save --output scharp-jboss.tar jboss/jboss-fuse-full
 #1494956300
-gzip scharp-jboss.tar 
+gzip scharp-jboss.tar
 #1494959527
 ls
 #1494959970
@@ -56240,13 +56240,13 @@ sudo find / -name F5* -print
 #1494966696
 exit
 #1494955857
-gzip scharp-planner.tar 
+gzip scharp-planner.tar
 #1494956071
-gzip scharp-plannerbase.tar 
+gzip scharp-plannerbase.tar
 #1494956146
 docker save --output scharp-jboss.tar jboss/jboss-fuse-full
 #1494956300
-gzip scharp-jboss.tar 
+gzip scharp-jboss.tar
 #1494959970
 git status
 #1494966008
@@ -56292,7 +56292,7 @@ sudo find / -depth -name SSLVpn* -print
 #1495230484
 cd src/rspace-eclipse/scharp/
 #1495230503
-git checkout marcel-fix-repair-refuel 
+git checkout marcel-fix-repair-refuel
 #1495325270
 git diff src/main/java/edu/kestrel/scharp/replanner/Replanner.java
 #1495325290
@@ -56304,19 +56304,19 @@ ssh admin@10.22.54.125 -p 443
 #1495336638
 git pull --all --prune
 #1495336645
-git branch 
+git branch
 #1495336736
 git branch -d marcel-sync-all-missions
 #1495336749
-git branch -d drs6 
+git branch -d drs6
 #1495336752
 git status
 #1495336758
-git pull --all 
+git pull --all
 #1495336768
-git checkout sf-get-url 
+git checkout sf-get-url
 #1495336883
-git checkout master 
+git checkout master
 #1495336886
 git pull
 #1495336902
@@ -56338,9 +56338,9 @@ cd src/rspace-eclipse/scharp/
 #1495471021
 git pull --all
 #1495471032
-git checkout sf-publish-repairs 
+git checkout sf-publish-repairs
 #1495471354
-git checkout master 
+git checkout master
 #1495471356
 git pull
 #1495471366
@@ -56354,7 +56354,7 @@ git add Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile Docker/de
 #1495494995
 git commit -m "Moved the go offline command earlier."
 #1495495003
-git push -u origin master 
+git push -u origin master
 #1495495146
 git checkout -b marcel-run-both-uis
 #1495495162
@@ -56364,7 +56364,7 @@ git status
 #1495495184
 git commit -m "Changes to try to run both uis at the same time."
 #1495495196
-git push -u origin marcel-run-both-uis 
+git push -u origin marcel-run-both-uis
 #1495569192
 exit
 #1495471366
@@ -56374,17 +56374,71 @@ git status
 #1495481798
 docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile -t scharp/planner .
 #1495481949
-more build-all-docker-images.sh 
+more build-all-docker-images.sh
 #1495481968
 docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
 #1495569194
 exit
 #1495754690
 /Applications/Alfred\ 3.app/Contents/Frameworks/Alfred\ Framework.framework/Versions/A/Resources/reindexdel.sh ; exit;
+#1495569194
+exit
+#1495668081
+diff .bashrc Dropbox/.bashrc
+#1495668672
+cd .dotfiles/
+#1495668787
+source ~/.bashrc
+#1495668793
+ls
+#1496254392
+cd ..
+#1496254400
+his | grep ubuntu@
+#1494966698
+exit
+#1494966700
+exit
+#1494966215
+cd ~/Library/Internet\ Plug-Ins/
+#1494966234
+cd /private/tmp/
+#1494966273
+ls f5*
+#1494966322
+find / -depth -name SSLVpn* -print
+#1494966337
+sudo find / -depth -name SSLVpn* -print
+#1495230484
+cd src/rspace-eclipse/scharp/
+#1495230503
+git checkout marcel-fix-repair-refuel
+#1495325270
+git diff src/main/java/edu/kestrel/scharp/replanner/Replanner.java
+#1495325290
+git checkout -- src/main/java/edu/kestrel/scharp/replanner/Replanner.java
+#1495334089
+ssh admin@10.22.54.125
+#1495334094
+ssh admin@10.22.54.125 -p 443
+#1495336638
+git pull --all --prune
+#1495336645
+git branch
+#1495336736
+git branch -d marcel-sync-all-missions
+#1495336749
+git branch -d drs6
+#1495336752
+git status
+#1495336758
+git pull --all
 #1495336768
-git checkout sf-get-url 
+git checkout sf-get-url
 #1495336883
-git checkout master 
+git checkout master
+#1495336886
+git pull
 #1495336902
 mvn clean compile
 #1495391066
@@ -56395,14 +56449,20 @@ ssh -p 443 marcel.becker.local@10.22.54.71
 ssh 10.22.54.71
 #1495391120
 ssh -v -v -v 10.22.54.71
+#1495391124
+exit
+#1495391124
+exit
 #1495471018
 cd src/rspace-eclipse/scharp/
 #1495471021
 git pull --all
 #1495471032
-git checkout sf-publish-repairs 
+git checkout sf-publish-repairs
 #1495471354
-git checkout master 
+git checkout master
+#1495471356
+git pull
 #1495471366
 mvn clean compile
 #1495471366
@@ -56414,21 +56474,29 @@ git add Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile Docker/de
 #1495494995
 git commit -m "Moved the go offline command earlier."
 #1495495003
-git push -u origin master 
+git push -u origin master
 #1495495146
 git checkout -b marcel-run-both-uis
 #1495495162
 git add src/main/java/edu/kestrel/scharp/activemq/te3/TE3MainServers.java src/main/java/edu/kestrel/scharp/planner/analysis/
+#1495495164
+git status
 #1495495184
 git commit -m "Changes to try to run both uis at the same time."
 #1495495196
-git push -u origin marcel-run-both-uis 
+git push -u origin marcel-run-both-uis
 #1495471366
 mvn clean compile
+#1495569192
+exit
+#1495471366
+mvn clean compile
+#1495481587
+git status
 #1495481798
 docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile -t scharp/planner .
 #1495481949
-more build-all-docker-images.sh 
+more build-all-docker-images.sh
 #1495481968
 docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
 #1495753149
@@ -56436,7 +56504,7 @@ cd Dropbox/.spacemacs.d/
 #1495753152
 git status
 #1495753192
-more init.el 
+more init.el
 #1495753261
 cd src/
 #1495753263
@@ -56444,7 +56512,7 @@ cd emacs/
 #1495753266
 git pull
 #1495754341
-emacs-undumped 
+emacs-undumped
 #1495754431
 brew unistall emacs
 #1495754441
@@ -56462,25 +56530,25 @@ brew list emacs
 #1495758304
 more INSTALL
 #1495758479
-./configure --with-ns 
+./configure --with-ns
 #1495759175
 make install
 #1495770597
 cd
 #1495770646
-configdot add .spacemacs 
+configdot add .spacemacs
 #1495770667
 configdot add .emacs.d/init.el
 #1495770688
 configdot commit -m "Added spacemacs init file."
 #1495770697
-configdot push 
+configdot push
 #1495770719
 configdot push -u origin master
 #1495770734
 configdot pull
 #1495817541
-diff .spacemacs Dropbox/.spacemacs.d/init.el 
+diff .spacemacs Dropbox/.spacemacs.d/init.el
 #1495818740
 brew cask list
 #1495818746
@@ -56494,7 +56562,7 @@ brew unlink texinfo
 #1495821151
 brew instal mac-emacs
 #1495822995
-diff .spacemacs .dotfile-backup/.spacemacs 
+diff .spacemacs .dotfile-backup/.spacemacs
 #1495823014
 configdot status
 #1495823228
@@ -56502,9 +56570,9 @@ mv .spacemacs spacemace-saved
 #1495823281
 ls -al
 #1495823284
-more .spacemacs 
+more .spacemacs
 #1495826739
-diff spacemace-saved Dropbox/.spacemacs.d/init.el 
+diff spacemace-saved Dropbox/.spacemacs.d/init.el
 #1495833830
 rm ~/Dropbox/.emacs.d/elpa/archives/melpa/archive-contents*
 #1495833985
@@ -56530,11 +56598,11 @@ rm init.el~
 #1495848761
 cd elpa/window-number-20141106.1829/
 #1495848771
-rm window-number\ \(dhcp210.kestrel.edu\'s\ conflicted\ copy\ 2017-05-26\).elc 
+rm window-number\ \(dhcp210.kestrel.edu\'s\ conflicted\ copy\ 2017-05-26\).elc
 #1495848781
-rm window-number.elc 
+rm window-number.elc
 #1495848814
-rm window-number-autoloads\ \(dhcp210.kestrel.edu\'s\ conflicted\ copy\ 2017-05-26\).el 
+rm window-number-autoloads\ \(dhcp210.kestrel.edu\'s\ conflicted\ copy\ 2017-05-26\).el
 #1495848836
 cd window-numbering-20160809.1110/
 #1495848849
@@ -56542,11 +56610,11 @@ cd ../winum-20170430.1629/
 #1495848850
 ls
 #1495848861
-rm winum.elc 
+rm winum.elc
 #1495851267
 /Applications/Emacs.app/Contents/MacOS/Emacs --debug-init -q
 #1495853273
-/Applications/Emacs.app/Contents/MacOS/Emacs --debug-init 
+/Applications/Emacs.app/Contents/MacOS/Emacs --debug-init
 #1495853983
 cd ..
 #1495853990
@@ -56578,21 +56646,21 @@ brew link --overwrite --dry-run emacs-mac
 #1495854186
 exit
 #1495140657
-git pull origin master 
+git pull origin master
 #1495140671
 git pull
 #1495140674
 git status
 #1495140685
-git push -u origin sf-get-url 
+git push -u origin sf-get-url
 #1495152650
 git status
 #1495152901
-git pull origin master 
+git pull origin master
 #1495152947
 git status
 #1495152963
-git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/ScenarioConfig.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE3ScenarioConfiguration.java src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java 
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/ScenarioConfig.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE3ScenarioConfiguration.java src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
 #1495152969
 git status
 #1495152984
@@ -56604,13 +56672,13 @@ git status
 #1495153018
 git commit -m "Added code to load the targets from the data services."
 #1495153030
-git push -u origin sf-get-url 
+git push -u origin sf-get-url
 #1495153054
-git checkout sf-xmpp 
+git checkout sf-xmpp
 #1495153057
 git pull
 #1495153176
-git pull origin master 
+git pull origin master
 #1495153359
 docker ps -a
 #1495153381
@@ -56638,7 +56706,7 @@ git status
 #1495218876
 git commit -m "Fixed the refueling tanker repair action."
 #1495218884
-git push -u origin marcel-fix-repair-refuel 
+git push -u origin marcel-fix-repair-refuel
 #1495241032
 git status
 #1495241042
@@ -56666,29 +56734,29 @@ git status
 #1495241328
 git commit -m "Fixed problems with refueling repair."
 #1495241333
-git push -u origin marcel-fix-repair-refuel 
+git push -u origin marcel-fix-repair-refuel
 #1495241345
-git pull origin master 
+git pull origin master
 #1495241372
-git pull origin sf-xmpp 
+git pull origin sf-xmpp
 #1495241380
-git push -u origin marcel-fix-repair-refuel 
+git push -u origin marcel-fix-repair-refuel
 #1495241529
-git checkout sf-xmpp 
+git checkout sf-xmpp
 #1495241532
 git status
 #1495241535
 git pull
 #1495241568
-git checkout marcel-fix-repair-refuel 
+git checkout marcel-fix-repair-refuel
 #1495241571
 git pull
 #1495241576
-git pull origin master 
+git pull origin master
 #1495241585
 git status
 #1495241592
-git push -u origin marcel-fix-repair-refuel 
+git push -u origin marcel-fix-repair-refuel
 #1495295982
 docker ps -a
 #1495296243
@@ -56700,15 +56768,15 @@ docker volume ls
 #1495296272
 docker volume rm teiid_9.2.3
 #1495296293
-sh ./docker_scripts/rspace_populate_teiid_data_volume.sh users.json 
+sh ./docker_scripts/rspace_populate_teiid_data_volume.sh users.json
 #1495296315
-sh docker_scripts/run_teiid_container.sh 
+sh docker_scripts/run_teiid_container.sh
 #1495316541
 docker ps -a
 #1495316552
 docker rm -f 2db5cfe29b36
 #1495316845
-sh docker_scripts/run_teiid_container.sh 
+sh docker_scripts/run_teiid_container.sh
 #1495512796
 cd src/rspace-eclipse/scharp/
 #1495512798
@@ -56716,7 +56784,7 @@ git pull
 #1495514156
 git pull --all
 #1495514179
-git checkout sf-publish-repairs 
+git checkout sf-publish-repairs
 #1495514182
 git pull
 #1495666058
@@ -56740,13 +56808,13 @@ file Icon\?
 #1495666639
 cd EclipseMarsSettings/
 #1495666666
-diff EclipseNeonPreferences.epf EclipseNeonPreferencesIMac.epf 
+diff EclipseNeonPreferences.epf EclipseNeonPreferencesIMac.epf
 #1495666806
 ls -F
 #1495666837
 mv Sarraute-Buffet-Hoffmann-AAAI2012.pdf Books/
 #1495666853
-rm DataBindingExamples.java 
+rm DataBindingExamples.java
 #1495666865
 mv Sublime\ Text\ for\ Windows\ Cheat\ Sheet.pdf Books/
 #1495666874
@@ -56762,7 +56830,7 @@ cd Music/
 #1495666953
 ls -F
 #1495666983
-cd Dropbox/ 
+cd Dropbox/
 #1495666990
 cd CD\ Sheet\ Music/
 #1495666995
@@ -56770,19 +56838,19 @@ ls -F
 #1495667005
 cd Music/
 #1495667007
-ls 
+ls
 #1495667023
 ls -F
 #1495667080
-rm synergy-v1.8.6-stable-2ab21aa-MacOSX-x86_64.dmg 
+rm synergy-v1.8.6-stable-2ab21aa-MacOSX-x86_64.dmg
 #1495667087
-more version.xml 
+more version.xml
 #1495667120
  ls
 #1495667191
-rm eclipse-spring-code-conventions.xml 
+rm eclipse-spring-code-conventions.xml
 #1495667200
-more eclipse.ini 
+more eclipse.ini
 #1495667214
 mv eclipse.ini EclipseMarsSettings/
 #1495667227
@@ -56792,15 +56860,15 @@ source .bashrc
 #1495667268
 diff .bashrc ~/.bashrc
 #1495667821
-diff .bashrc .bashrc-merged 
+diff .bashrc .bashrc-merged
 #1495667945
-rm .bashrc-merged 
+rm .bashrc-merged
 #1495667955
-cp .bashrc ~/.bashrc 
+cp .bashrc ~/.bashrc
 #1495667960
 source ~/.bashrc
 #1495667972
-./List_Linux_Colors.sh 
+./List_Linux_Colors.sh
 #1495671041
 cd
 #1495671063
@@ -56808,13 +56876,13 @@ cp ~/Dropbox/.bashrc .
 #1495674353
 cd Dropbox/
 #1495674367
-cd 
+cd
 #1495676338
 config_data
 #1495676348
-source ~/.bashrc 
+source ~/.bashrc
 #1495676356
-configdot 
+configdot
 #1495676387
 git clone --bare git@github.com:marcel-becker/my-dotfiles.git $HOME/.dotfiles
 #1495676521
@@ -56830,7 +56898,7 @@ configdot checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .d
 #1495676712
 cd .emacs.d/
 #1495676737
-configdot checkout 2>&1 | egrep "\s+\." | awk {'print $1'} 
+configdot checkout 2>&1 | egrep "\s+\." | awk {'print $1'}
 #1495677116
 cd .dotfile-backup/
 #1495677125
@@ -56854,7 +56922,7 @@ ls
 #1495677241
 ls -al
 #1495677247
-more .bashrc 
+more .bashrc
 #1495677319
 configdot config status.showUntrackedFiles no
 #1495677328
@@ -56886,4 +56954,4905 @@ ls
 #1495835430
 cd ..
 #1495854191
+=======
+#1495569194
 exit
+#1495668820
+more ~/.profile
+#1495668882
+rm .bash_profile~
+#1495669009
+cd dotfiles_old/
+#1495669009
+la
+#1495669160
+cd .virtualenvs/
+#1495669229
+more .eclipse_keyring
+#1495669239
+more .dircolors
+#1495669264
+diff .bashrc ./dotfiles/bashrc
+#1495669312
+more .wgetrc
+#1495669321
+more .wget
+#1495669325
+cd .wget
+#1495669367
+more .mavenrc
+#1495669401
+ls -al .#.bash_profile
+#1495669687
+configdot status
+#1495669707
+configdot diff .bashrc
+#1495669754
+configdot -add .bash_history .bashrc
+#1495669775
+alias
+#1495669796
+configdot add .bash_history .bashrc
+#1495669814
+configdot commit -m "Updated bashrc."
+#1495672657
+cd config
+#1495672660
+more config
+#1495674459
+cd .dotfiles/
+#1495674465
+cd src/
+#1495674485
+cd
+#1495674491
+cd dotfiles
+#1495674503
+ls -a
+#1495674508
+ls -al
+#1495674609
+diff bashrc ~/.bashrc
+#1495674921
+more makesymlinks.sh
+#1495676860
+cd ..
+#1495676908
+configdot add .git-prompt.sh .git-completion.bash .gitconfig .gitignore_global
+#1495676941
+ls -aF
+#1495677032
+configdot add .dircolors .mavenrc .latexmkrc .spacemacs
+#1495677049
+configdot commit -m "Added files."
+#1495677063
+configdot push
+#1496252839
+his | grep ubuntu
+#1496252895
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.13.63 -i ~/.ssh/planx_key
+#1496252942
+more .ssh/planx_key
+#1496252965
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.13.63 -i ~/.ssh/id_rsa
+#1496252988
+more .ssh/known_hosts
+#1496253048
+his | grep ubuntu@
+#1496253127
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -i ~/.ssh/id_rsa
+#1496253415
+cd .ssh
+#1496253416
+ls
+#1496253441
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -i ~/.ssh/planx_key
+#1496253458
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v
+#1496253490
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i derecho_id_rsa
+#1496253503
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i innovate_id_rsa
+#1496253662
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i planx_key
+#1496346342
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i planx_key -X
+#1496346416
+ssh -L 5901:127.0.0.1:5902 -l ubuntu 10.131.33.60 -v -v -v -i planx_key -X
+#1496346553
+ssh -l ubuntu 10.131.33.60 -v -v -v -i planx_key -X
+#1496350965
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.13.63 -v -v -v -i planx_key -X
+#1496351040
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i planx_key -X
+#1495481968
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
+#1495569194
+exit
+#1496254537
+his | grep ssh
+#1496255038
+open vnc://10.131.33.60:5901
+#1496345472
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.13.63 -i ~/.ssh/planx_key
+#1496345487
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.13.63 -i ~/.ssh/innovate_id_rsa
+#1496357030
+ps -a
+#1496357085
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -i ~/.ssh/planx_key
+#1496254400
+his | grep ubuntu@
+#1496346992
+open vnc://10.131.33.60:5902
+#1496347004
+open vnc://10.131.33.60:5901
+#1496350889
+his | grep scp
+#1496352675
+set
+#1496352679
+
+#1496352959
+mvn --version
+#1496358779
+ssh --help
+#1496358802
+man ssh
+#1496360654
+his
+#1496425436
+exit
+#1496252895
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.13.63 -i ~/.ssh/planx_key
+#1496252942
+more .ssh/planx_key
+#1496252965
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.13.63 -i ~/.ssh/id_rsa
+#1496252988
+more .ssh/known_hosts
+#1496253048
+his | grep ubuntu@
+#1496253127
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -i ~/.ssh/id_rsa
+#1496253415
+cd .ssh
+#1496253441
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -i ~/.ssh/planx_key
+#1496253458
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v
+#1496253490
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i derecho_id_rsa
+#1496253503
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i innovate_id_rsa
+#1496253662
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i planx_key
+#1496346342
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i planx_key -X
+#1496346416
+ssh -L 5901:127.0.0.1:5902 -l ubuntu 10.131.33.60 -v -v -v -i planx_key -X
+#1496346553
+ssh -l ubuntu 10.131.33.60 -v -v -v -i planx_key -X
+#1496350965
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.13.63 -v -v -v -i planx_key -X
+#1496351040
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i planx_key -X
+#1496357924
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i planx_key
+#1496358736
+ssh
+#1496359518
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.13.63 -v -v -v -i planx_key
+#1496360009
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.13.63 -v -v -v -i planx_key
+#1496360031
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i planx_key
+#1496420729
+cd planx-mono-test/
+#1496420749
+cd plan-construction/
+#1496420819
+cd planx-monorepo/
+#1496420830
+cd src/
+#1496420833
+cd gocdparser/
+#1496420837
+more gocd_parser.py
+#1496420880
+workon planx-eclipse
+#1496420883
+python gocd_parser.py
+#1496421165
+cd ..
+#1496421176
+more staging4-pipelines.xml
+#1496424060
+cd Dropbox/.emacs.d
+#1496424066
+git status
+#1496424071
+git pull
+#1496425108
+git diff init.el
+#1496425127
+git add init.el
+#1496425167
+git commit -m "Changed the location of the call to (package-initialize) to make sure packages are installed if not available."
+#1496425171
+git push -u origin master
+#1496425291
+cd
+#1496425294
+cd .gocd/
+#1496425294
+ls
+#1496425296
+more gocd-cli.cfg
+#1496425438
+exit
+#1496358295
+docker pull docker.px.ftw/px_core/px-luna-seed-base:latest-dev
+#1496360804
+his
+#1496360822
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.13.63 -v -v -v -i planx_key -X
+#1496425390
+cd ..
+#1496425396
+configdot status
+#1496425410
+configdot pull
+#1496425440
+exit
+#1496351040
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i planx_key -X
+#1496357924
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i planx_key
+#1496358736
+ssh
+#1496359518
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.13.63 -v -v -v -i planx_key
+#1496360009
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.13.63 -v -v -v -i planx_key
+#1496360031
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i planx_key
+#1496420749
+cd plan-construction/
+#1496420819
+cd planx-monorepo/
+#1496420830
+cd src/
+#1496420833
+cd gocdparser/
+#1496420837
+more gocd_parser.py
+#1496420880
+workon planx-eclipse
+#1496420883
+python gocd_parser.py
+#1496421176
+more staging4-pipelines.xml
+#1496424060
+cd Dropbox/.emacs.d
+#1496425108
+git diff init.el
+#1496425127
+git add init.el
+#1496425167
+git commit -m "Changed the location of the call to (package-initialize) to make sure packages are installed if not available."
+#1496425171
+git push -u origin master
+#1496425291
+cd
+#1496425294
+cd .gocd/
+#1496425296
+more gocd-cli.cfg
+#1496425438
+exit
+#1496358295
+docker pull docker.px.ftw/px_core/px-luna-seed-base:latest-dev
+#1496360822
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.13.63 -v -v -v -i planx_key -X
+#1496425396
+configdot status
+#1496425410
+configdot pull
+#1496425440
+exit
+#1496678890
+cd src/plan-construction/planx-monorepo/
+#1496678914
+cd planx-mono-test/
+#1496678952
+git clone git@github-enterprise.px.ftw:p-x-1/mono-mirror.git
+#1496680372
+more update_pxbuild.py
+#1496680389
+cd mono-mirror/
+#1496680403
+his
+#1496680465
+git checkout dev-pxbuild
+#1496680468
+git pull
+#1496680472
+find . -name pxbuild.conf -print -exec grep -i "project_name" {} +
+#1496680604
+git checkout --
+#1496680616
+git reset --hard
+#1496680644
+git clean -rf
+#1496680660
+git clean -f
+#1496680970
+cp ../update_pxbuild.py .
+#1496681340
+cd range/etr-host/
+#1496681345
+more pxbuild.conf
+#1496681429
+cd ../../
+#1496681434
+python update_pxbuild.py
+#1496681626
+find . -name pxbuild.conf -exec grep -i "project_name" {} +
+#1496682079
+cd presentation/
+#1496682104
+cd px-web-no-vnc
+#1496682124
+cd px-web-no-vnc-base/
+#1496682124
+ls
+#1496682130
+more .gitmodules
+#1496682213
+ls -al
+#1496682354
+cd ..
+#1496682358
+pwsd
+#1496682360
+pwd
+#1496682408
+git add .gitmodules
+#1496682437
+git add appstore/ controller/ core/ plan-construction/ presentation/ px-io/
+#1496682461
+git add execution/ px-docker-base/ px-integration/ px-playbooks/ range/
+#1496682469
+git add px-deployment/
+#1496682476
+git status
+#1496682498
+git clog
+#1496682501
+git log
+#1496682581
+git commit -m "PLX-14034 Added project_name to pxbuild.conf files, tagged base docker images with staging4, fixed submodules for presentation novnc repo."
+#1496682595
+git push -u origin dev-pxbuild
+#1496683090
+git diff HEAD~1
+#1496683370
+git format-patch HEAD~1
+#1496683468
+scp -l planx 0001-PLX-14034-Added-project_name-to-pxbuild.conf-files-t.patch 10.131.23.157:. -i ~/.ssh/planx_key
+#1496683516
+scp 0001-PLX-14034-Added-project_name-to-pxbuild.conf-files-t.patch planx@10.131.23.157:.
+#1496683552
+ssh planx@10.131.23.157
+#1496683516
+scp 0001-PLX-14034-Added-project_name-to-pxbuild.conf-files-t.patch planx@10.131.23.157:.
+#1496691958
+cd
+#1496691960
+cd ssh
+#1496691964
+cd .ssh
+#1496691965
+ls
+#1496691976
+more kestrel_id_rsa.pub
+#1496691991
+more config
+#1496772503
+his | grep deploy
+#1496772559
+his | grep agent
+#1496772581
+ssh -i ~/.ssh/planx_key ubuntu@go-deploy04
+#1496862784
+ssh -i ~/.ssh/planx_key ubuntu@go-deploy17
+#1496862934
+ssh -i ~/.ssh/planx_key ubuntu@go-deploy18
+#1496872746
+ssh -i ~/.ssh/planx_key ubuntu@go-deploy24
+#1496899022
+his | grep ssh
+#1496899038
+ssh planx@10.131.23.157
+#1496900317
+exit
+#1496686156
+his
+#1496686168
+ssh planx@10.131.23.157
+#1496900319
+exit
+#1496351040
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i planx_key -X
+#1496357924
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i planx_key
+#1496358736
+ssh
+#1496359518
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.13.63 -v -v -v -i planx_key
+#1496360009
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.13.63 -v -v -v -i planx_key
+#1496360031
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i planx_key
+#1496420749
+cd plan-construction/
+#1496420819
+cd planx-monorepo/
+#1496420830
+cd src/
+#1496420837
+more gocd_parser.py
+#1496421176
+more staging4-pipelines.xml
+#1496424060
+cd Dropbox/.emacs.d
+#1496425108
+git diff init.el
+#1496425127
+git add init.el
+#1496425167
+git commit -m "Changed the location of the call to (package-initialize) to make sure packages are installed if not available."
+#1496425171
+git push -u origin master
+#1496425294
+cd .gocd/
+#1496425296
+more gocd-cli.cfg
+#1496358295
+docker pull docker.px.ftw/px_core/px-luna-seed-base:latest-dev
+#1496360804
+his
+#1496360822
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.13.63 -v -v -v -i planx_key -X
+#1496425396
+configdot status
+#1496425410
+configdot pull
+#1496426255
+cd
+#1496426279
+cd src/plan-construction/planx-monorepo/src/
+#1496426283
+cd gocdparser/
+#1496426299
+workon planx-eclipse
+#1496426841
+cd ../..
+#1496426866
+more .pydevproject
+#1496427257
+ls -a
+#1496427266
+rm .project .pydevproject
+#1496427292
+more create_submodules_for_mono.sh
+#1496427302
+rm create_submodules_for_mono.sh
+#1496427315
+cd src/gocdparser/
+#1496427324
+python gocd_parser.py
+#1496685625
+his | grep agent
+#1496685658
+ssh -i ~/.ssh/planx_key ubuntu@go-deploy21
+#1496700600
+ssh -i ~/.ssh/planx_key ubuntu@go-deploy25
+#1496766496
+cd MonoGOCD/
+#1496766525
+diff src/gocdparser/gocd_parser.py ../src/gocdparser/gocd_parser.py
+#1496766729
+cd planx-mono-test/
+#1496766735
+cd mono-mirror/
+#1496766738
+git pull
+#1496766765
+git status
+#1496766777
+diff update_pxbuild.py ../update_pxbuild.py
+#1496766787
+cd ..
+#1496766806
+cp mono-mirror/0001-PLX-14034-Added-project_name-to-pxbuild.conf-files-t.patch .
+#1496772525
+his | grep godeploy
+#1496783875
+ls
+#1496900321
+exit
+#1496425447
+his
+#1496425479
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i planx_key
+#1496425543
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -v -v -v -i ./ssh/planx_key
+#1496425558
+his | grep ssh
+#1496425579
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -i ~/.ssh/planx_key
+#1496900322
+exit
+#1496425579
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -i ~/.ssh/planx_key
+#1496900777
+brew upgrade
+#1496901049
+brew update
+#1496901205
+exit
+#1496901205
+exit
+#1497024578
+configdot status
+#1497024624
+configdot stash
+#1497024626
+configdot 
+#1497024633
+configdot stash pop
+#1497024794
+source ~/.bashrc
+#1497025390
+exit
+#1497025395
+his
+#1497025402
+cd
+#1497025432
+ssh planx@10.131.23.157
+#1497027515
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.13.63 -v -v -v -i planx_key -X
+#1497027633
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.13.63 -v -v -v -i ~/.ssh/planx_key
+#1497027641
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.13.63 -v -v -v -i ~/.ssh/innovate_id_rsa
+#1497027668
+ssh -L 5902:127.0.0.1:5901 -l ubuntu 10.131.13.63 -v -v -v -i ~/.ssh/id_rsa
+#1497027809
+more ~/.ssh/planx_key.pub 
+#1497027848
+ssh -L 5902:127.0.0.1:5901 ubuntu@10.131.13.63 -v -v -v -i ~/.ssh/id_rsa
+#1497027898
+ssh -L 5902:127.0.0.1:5901 ubuntu@10.131.13.63 -v -v -v -i ~/.ssh/planx_key
+#1497028193
+ssh -L 5902:127.0.0.1:5901 ubuntu@10.131.13.63 -v -v -v -i ~/.ssh/innovate_id_rsa
+#1497028203
+ssh -L 5902:127.0.0.1:5901 ubuntu@10.131.13.63 -v -v -v -i ~/.ssh/derecho_id_rsa
+#1497028228
+ssh -L 5902:127.0.0.1:5901 ubuntu@10.131.13.63 -v -v -v -i ~/.ssh/id_rsa
+#1497028433
+ssh -L 5902:127.0.0.1:5901 ubuntu@10.131.13.63 -v -v -v -i ~/.ssh/planx_key
+#1497028440
+ssh -L 5902:127.0.0.1:5901 ubuntu@10.131.13.63 -v -v -v -i ~/.ssh/innovate_id_rsa
+#1497028463
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -i ~/.ssh/planx_key
+#1497028680
+ssh -L 5902:127.0.0.1:5901 planx@10.131.13.63 -v -v -v 
+#1497032779
+more .gitconfig 
+#1497037253
+ssh ssh -v -v -v git@github-enterprise.px.ftw
+#1497041585
+ssh ubuntu@10.131.10.247 -i ~/.ssh/planx_key
+#1497041598
+ssh planx@10.131.10.247 -i ~/.ssh/planx_key
+#1497041605
+ssh planx@10.131.10.247 
+#1497041622
+ssh -v -v -v planx@10.131.10.247 
+#1497041643
+ssh -v -v -v planx@10.131.10.247 -i ~/.ssh/planx_key
+#1497041649
+ssh -v -v -v planx@10.131.10.247 -i ~/.ssh/innovate_id_rsa
+#1497041685
+ssh -v -v -v ubuntu@10.131.10.247 -i ~/.ssh/innovate_id_rsa
+#1497041693
+ssh -v -v -v ubuntu@10.131.10.247 -i ~/.ssh/planx_key
+#1497041767
+ssh -v -v -v planx@10.131.10.247 -i ~/.ssh/planx_key
+#1497041774
+ssh -v -v -v planx@10.131.10.247 
+#1497041782
+ssh  planx@10.131.10.247 
+#1497042123
+ssh  planx@10.131.10.247 -i ~/.ssh/id_alt-planx.key 
+#1497042138
+cd .ssh
+#1497042140
+ls -al
+#1497042174
+chmod og-r id_alt-planx.key 
+#1497042177
+ssh  planx@10.131.10.247 -i ~/.ssh/id_alt-planx.key 
+#1497046694
+exit
+#1497055504
+ssh -i ~/.ssh/planx_key ubuntu@gocd-server
+#1497055531
+ssh -i ~/.ssh/planx_key go@gocd-server
+#1497055555
+ssh -i ~/.ssh/planx_key planx@gocd-server
+#1497052755
+ssh  planx@10.131.10.247 -i ~/.ssh/id_alt-planx.key 
+#1497056026
+exit
+#1497047735
+ssh  planx@10.131.10.247 -i ~/.ssh/id_alt-planx.key 
+#1497056032
+exit
+#1497029008
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -i ~/.ssh/planx_key
+#1497056039
+exit
+#1497054056
+ssh -i ~/.ssh/planx_key ubuntu@go-infra03
+#1497056074
+exit
+#1497286772
+ssh  planx@10.131.10.247 -i ~/.ssh/id_alt-planx.key 
+#1497287076
+ssh -L 5901:127.0.0.1:5901 -l ubuntu 10.131.33.60 -i ~/.ssh/planx_key
+#1497288283
+ssh -i ~/.ssh/planx_key ubuntu@go-infra03
+#1497289977
+ssh -i ~/.ssh/planx_key ubuntu@go-infra02
+#1497301669
+pwd
+#1497307375
+cd
+#1497307378
+cd src/
+#1497307384
+cd planx-mono-test/
+#1497307385
+ls
+#1497307393
+cd mono
+#1497307394
+ls
+#1497307403
+cd ..
+#1497307405
+ls
+#1497307467
+git clone git@github-enterprise.px.ftw:plan-construction/buildgraph.git
+#1497307519
+cd build
+#1497307522
+cd buildgraph/
+#1497307523
+ls
+#1497307546
+python buildgraph/buildgraph.py targets
+#1497307556
+workon planx
+#1497307568
+workon planx-eclipse
+#1497307571
+python buildgraph/buildgraph.py targets
+#1497307592
+pip install -r requirements.txt 
+#1497307620
+pip install ply==3.9
+#1497307628
+pip install -r requirements.txt -U
+#1497307713
+pip install pyparsing
+#1497307719
+pip install pyparsing -U
+#1497307725
+pip install -r requirements.txt -U
+#1497307759
+pip install -e .
+#1497307765
+cd ..
+#1497307765
+ls
+#1497307769
+cd mono-mirror/
+#1497307772
+git pull
+#1497307795
+ls
+#1497307799
+cd ..
+#1497307803
+cd mono-mirror/
+#1497307818
+git status
+#1497307838
+more update_pxbuild.py 
+#1497307920
+ls
+#1497307942
+git log
+#1497307970
+ls
+#1497307985
+diff update_pxbuild.py ../update_pxbuild.py 
+#1497307998
+git reset --hard HEAD
+#1497308004
+git status
+#1497308049
+git reset --hard origin/dev-pxbuild 
+#1497308054
+git status
+#1497308066
+buildgraph targets
+#1497308073
+ls
+#1497308114
+buildgraph run cluster build
+#1497308130
+git checkout dev-buildgraph 
+#1497308134
+git pull
+#1497308141
+buildgraph targets
+#1497308157
+buildgraph targets build
+#1497308262
+buildgraph components
+#1497308424
+buildgraph artifacts
+#1497308562
+buildgraph deps
+#1497308570
+buildgraph deps px-avro
+#1497308804
+buildgraph targets
+#1497308811
+buildgraph targets px-avro
+#1497308878
+etr-agent
+#1497308886
+buildgraph targets etr-agent
+#1497308895
+buildgraph targets etr_agent
+#1497308912
+buildgraph run etr_agent build
+#1497308926
+buildgraph run etr_agent unit-test
+#1497315504
+cd src/planx-mono-test/
+#1497315504
+ls
+#1497315654
+python find-pxbuild.py 
+#1497316248
+workon planx-eclipse
+#1497316258
+cd buildgraph/
+#1497316267
+pip install -e .
+#1497316273
+cd ..
+#1497316276
+python find-pxbuild.py 
+#1497316299
+more buildgraph/buildgraph/__init__.py
+#1497316317
+python
+#1497316456
+python find-pxbuild.py 
+#1497316510
+python
+#1497316516
+python find-pxbuild.py 
+#1497316585
+python
+#1497316589
+python find-pxbuild.py 
+#1497316660
+cd mono-mirror/
+#1497316661
+ls
+#1497316687
+cd ..
+#1497316690
+python find-pxbuild.py 
+#1497318754
+buildgraph components
+#1497318764
+cd mono-mirror/
+#1497318766
+buildgraph components
+#1497318811
+cd .. 
+#1497318814
+python find-pxbuild.py 
+#1497305259
+ssh  planx@10.131.10.247 -i ~/.ssh/id_alt-planx.key 
+#1497309117
+ssh planx@10.131.23.157
+#1497374621
+python find-pxbuild.py 
+#1497376453
+cd mono-mirror/
+#1497376455
+git status
+#1497376461
+git pull
+#1497376480
+git checkout -- build-config.yml
+#1497376483
+git pull
+#1497376865
+cd ..
+#1497376870
+python find-pxbuild.py 
+#1497379922
+python find-pxbuild
+#1497379928
+python find-pxbuild.py 
+#1497388728
+python find-pxbuild
+#1497388735
+python find-pxbuild.py 
+#1497389161
+cd mono-mirror/
+#1497389163
+git status
+#1497389179
+git add build-config.yml
+#1497389268
+git log
+#1497389305
+git commit -m "PLX-14069 updated some of the components and target names."
+#1497389326
+git push -u origin dev-buildgraph 
+#1497389410
+ls
+#1497389423
+git format-patch HEAD~1
+#1497389441
+more 0001-PLX-14069-updated-some-of-the-components-and-target-.patch 
+#1497389473
+git pull
+#1497389756
+git status
+#1497389813
+cd ..
+#1497389822
+python find-pxbuild.py 
+#1497389876
+cd mono-mirror/
+#1497389886
+git diff build-config.yml
+#1497389902
+git remote -v
+#1497389910
+ls
+#1497389929
+diff update_pxbuild.py ../update_pxbuild.py 
+#1497389936
+git status
+#1497389946
+cd ..
+#1497390088
+cp build-mono-repo.sh ../build-config.saved
+#1497390100
+cd ..
+#1497390101
+ls
+#1497390108
+rm build-config.saved 
+#1497390111
+ls
+#1497390116
+cd planx-mono-test/
+#1497390117
+ls
+#1497390150
+cp mono-mirror/build-config.yml  build-config.yml.saved
+#1497390157
+cd mono-mirror/
+#1497390162
+git remote -v
+#1497390176
+cd ..
+#1497390181
+rm -rf mono-mirror/
+#1497390186
+git clone git@github-enterprise.px.ftw:p-x-1/mono-mirror.git
+#1497391502
+cd mono-mirror/
+#1497391511
+git checkout dev-buildgraph 
+#1497391513
+git pull
+#1497391519
+cd ..
+#1497391524
+python find-pxbuild.py 
+#1497391570
+diff build-config.yml.saved mono-mirror/build-config.yml 
+#1497391679
+python find-pxbuild.py 
+#1497392387
+cd mono-mirror/
+#1497392389
+git status
+#1497392401
+cd ..
+#1497392405
+python find-pxbuild.py 
+#1497392415
+cd mono-mirror/
+#1497392427
+git diff build-config.yml
+#1497392554
+cd ..
+#1497392558
+python find-pxbuild.py 
+#1497456766
+git pull
+#1497456787
+cd mono-mirror/
+#1497456789
+git pull
+#1497456803
+git stash
+#1497456806
+git pull
+#1497456818
+git stash pop
+#1497456902
+git diff build-config.yml
+#1497456957
+cd ..
+#1497456960
+python find-pxbuild.py 
+#1497471251
+export CLICOLOR=1
+#1497471252
+ls
+#1497487355
+cd mono-mirror/
+#1497487359
+git status
+#1497487379
+git checkout -- build-config.yml
+#1497487382
+git status
+#1497487402
+git reset HEAD build-config.yml
+#1497487409
+git checkout -- build-config.yml
+#1497487413
+git reset HEAD build-config.yml
+#1497487416
+git status
+#1497487421
+git pull
+#1497487448
+cd ..
+#1497487452
+python find-pxbuild.py 
+#1497489284
+cd mono-mirror/
+#1497489286
+git status
+#1497489291
+git diff build-config.yml
+#1497489319
+git add build-config.yml
+#1497489323
+git log
+#1497489416
+git commit -m "PLX-14069 Commented out px-web-transform integration and unit test in cluster component, added dockerfile to rt-bobproxy component docker target." 
+#1497489427
+git push -u origin dev-buildgraph 
+#1497489450
+ssh  planx@10.131.10.247 -i ~/.ssh/id_alt-planx.key 
+#1497497669
+ls -al
+#1497497779
+scp -i ~/.ssh/planx_key .iterm2_shell_integration.bash  planx@10.131.10.247:/home/planx
+#1497505516
+ls
+#1497505525
+cd dotfiles_old/
+#1497505526
+ls
+#1497505538
+ls -al
+#1497505544
+cd ../dotfiles
+#1497505547
+ls -a
+#1497505554
+more bashrc 
+#1497505700
+title marcel
+#1497505738
+winname  "$(pwd)"
+#1497505750
+winname  test
+#1497505762
+more ~/.bashrc
+#1497505821
+tabname  MARCEL
+#1497505887
+hostname
+#1497505907
+title  $(hostname)
+#1497505977
+his
+#1497506016
+exit
+#1497506022
+cd
+#1497506039
+scp -i ~/.ssh/planx_key .bashrc  planx@10.131.10.247:/home/planx
+#1497546508
+RunningX
+#1497547105
+exit
+#1497546342
+ssh  planx@10.131.10.247 -i ~/.ssh/id_alt-planx.key 
+#1497547111
+exit
+#1497548557
+git pull
+#1497548564
+cd
+#1497548565
+pwd
+#1497548568
+cd src/
+#1497548569
+ls
+#1497548577
+cd planx-mono-test/
+#1497548578
+ls
+#1497548581
+cd mono-mirror/
+#1497548584
+git pull
+#1497548615
+pwd
+#1497548628
+cd ..
+#1497548630
+ls
+#1497548633
+cd mono-mirror/
+#1497548637
+git pull
+#1497550098
+cd src/planx-mono-test/
+#1497550099
+ls
+#1497550105
+python find-pxbuild.py 
+#1497550110
+workon planx-eclipse
+#1497550112
+python find-pxbuild.py 
+#1497551038
+ls
+#1497551041
+cd px-playbooks/
+#1497551042
+ls
+#1497551044
+cd ..
+#1497551045
+ls
+#1497551052
+cd qa
+#1497551053
+ls
+#1497551055
+cd tstng/
+#1497551056
+ls
+#1497551061
+cd build/
+#1497551061
+ls
+#1497551081
+cd ..
+#1497551083
+ls
+#1497551729
+cd ..
+#1497551734
+python find-pxbuild.py 
+#1497551739
+workon planx-eclipse
+#1497551742
+python find-pxbuild.py 
+#1497554582
+cd mono-mirror/
+#1497554585
+git pull
+#1497560713
+git status
+#1497547123
+ssh  planx@10.131.10.247 -i ~/.ssh/id_alt-planx.key 
+#1497563468
+ssh -i ~/.ssh/planx_key ubuntu@go-deploy14
+#1497653678
+cd src/plan-construction/
+#1497653685
+git clone git@github-enterprise.px.ftw:px-deployment/testing-wrappers.git
+#1497653695
+cd testing-wrappers/
+#1497653696
+ls
+#1497653705
+emacs testWrapper.sh 
+#1497654155
+git status
+#1497654159
+git add testWrapper.sh
+#1497654214
+git commit -m "PLX-14069 Add prefix to mv command in testWrapper.sh"
+#1497654233
+cd ..
+#1497654244
+rm -rf testing-wrappers/
+#1497654250
+git clone git@github-enterprise.px.ftw:px-deployment/testing-wrappers.git
+#1497654263
+cd testing-wrappers/
+#1497654274
+git checkout staging4 
+#1497654284
+git pull -u origin master 
+#1497654291
+git pull origin master 
+#1497654361
+git status
+#1497654366
+git add testWrapper.sh
+#1497654370
+git commit -m "PLX-14069 Add prefix to mv command in testWrapper.sh"
+#1497654377
+git push -u origin staging4 
+#1497654644
+git remote add planconstruction git@github-enterprise.px.ftw:plan-construction/testng.git
+#1497654655
+git push -u planconstruction staging4 
+#1497654684
+git pull planconstruction staging4
+#1497654773
+ls
+#1497654781
+cd ..
+#1497654788
+ls
+#1497654824
+rm -rf testing-wrappers/
+#1497654878
+git clone git@github-enterprise.px.ftw:plan-construction/testing-wrappers.git
+#1497654886
+cd testing-wrappers/
+#1497654888
+git pull
+#1497654894
+git checkout staging4 
+#1497654897
+git pull 
+#1497654907
+git pull origin dev
+#1497654959
+git status
+#1497654966
+git add testWrapper.sh
+#1497654976
+git commit -m "PLX-14069 Add prefix to mv command in testWrapper.sh"
+#1497654986
+git push -u origin staging4 
+#1497915521
+brew tap caskroom/fonts
+#1497915553
+brew cask install font-source-code-pro
+#1497915642
+cd
+#1497915647
+cd Dropbox/.spacemacs.d/
+#1497915648
+ls
+#1497915651
+git pull
+#1497915659
+ls
+#1497915872
+cd
+#1497915873
+ls
+#1497915877
+cd src/
+#1497915879
+ls
+#1497915888
+mkdir spacemacs-docker
+#1497915891
+cd spacemacs-docker/
+#1497915897
+git clone git@github.com:JAremko/docker-emacs.git
+#1497915900
+ls
+#1497915902
+cd docker-emacs/
+#1497915903
+ls
+#1497915916
+cp Dockerfile.emacs25 Dockerfile
+#1497915944
+docker build -t emacsdocker .
+#1497916740
+open -a XQuartz
+#1497916806
+ip=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
+#1497916812
+echo ip
+#1497916816
+echo $ip
+#1497916826
+xhost + ip
+#1497916855
+xhost + $ip
+#1497916859
+xhost
+#1497916914
+his
+#1497916922
+brew update
+#1497916975
+exit
+#1497554452
+title MacBook
+#1497561696
+ls
+#1497631276
+cd mono-mirror/
+#1497631278
+git pull
+#1497631306
+git status
+#1497631321
+cd ..
+#1497631341
+rm -rf mono-mirror/
+#1497631347
+git clone git@github-enterprise.px.ftw:p-x-1/mono-mirror.git
+#1497637937
+ssh -i ~/.ssh/planx_key ubuntu@gocd-ui-agent02
+#1497917277
+open -a XQuartz
+#1497917300
+ip=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
+#1497917309
+xhost + $ip
+#1497917348
+docker run -ti --name spacemacs  -e DISPLAY=$ip:0  -e TZ=<your_time_zone>  -v <path_to_your_workspace>:/mnt/workspace \
+#1497917931
+docker ps -a
+#1497917437
+docker run -ti --name spacemacs -e DISPLAY=$ip:0 -v src:/mnt/workspace spacemacs/emacs25:develop
+#1497917958
+docker rm -f 7552fa1a1256 91e5bc3cd59903dd7147aa80
+#1497917977
+pwd
+#1497918130
+exit
+#1497918132
+exit
+#1497918002
+docker run -ti --name spacemacs -e DISPLAY=$ip:0 -v /Users/marcelbecker/src:/mnt/workspace spacemacs/emacs25:develop
+#1497918492
+cd src/spacemacs-docker/
+#1497918493
+ls
+#1497918501
+git clone git@github.com:syl20bnr/spacemacs.git
+#1497918512
+cd spacemacs/
+#1497918513
+ls
+#1497918521
+git checkout -t origin/develop 
+#1497918524
+git pull
+#1497918525
+ls
+#1497918558
+docker build -t spacemacs-docker -f Dockerfile.emacs25 
+#1497918570
+docker build -t spacemacs-docker  Dockerfile.emacs25 
+#1497918599
+docker build -t spacemacs-docker  -f Dockerfile.emacs25 .
+#1497918901
+git pull
+#1497918905
+docker build -t spacemacs-docker  -f Dockerfile.emacs25 .
+#1498063653
+ssh -i ~/.ssh/planx_key ubuntu@go-deployxl02
+#1498063665
+ssh -i ~/.ssh/planx_key ubuntu@go-deploy-xl02
+#1498063672
+sudo su go
+#1498063691
+ssh -i ~/.ssh/planx_key ubuntu@go-deploy-xl02
+#1498063729
+cd 
+#1498063730
+cd .ss
+#1498063733
+cd .ssh
+#1498063733
+ls
+#1498063756
+ssh -i ~/.ssh/id_alt-planx.key ubuntu@go-deploy-xl02
+#1498063793
+ssh -i ~/.ssh/planx_key ubuntu@go-deploy14
+#1498063819
+ssh -i ~/.ssh/id_alt-planx.key ubuntu@go-deploy14
+#1498063937
+his | grep ssh
+#1498063972
+ssh -i ~/.ssh/planx_key ubuntu@go-deploy04
+#1498064201
+ssh -i ~/.ssh/planx_key go@go-deploy04
+#1498064304
+ssh -i ~/.ssh/planx_key go@go-deploy01
+#1498064316
+ssh -i ~/.ssh/planx_key ubuntu@go-deploy01
+#1498064417
+ssh -i ~/.ssh/planx_key ubuntu@go-deploy14
+#1498064439
+more ~/.ssh/planx_key
+#1498064448
+ls -al ~/.ssh
+#1498064462
+ls -al
+#1498064467
+cd .ssh
+#1498064468
+cd
+#1498064470
+cd .ssh
+#1498064472
+ls -al
+#1498064479
+firl planx_key
+#1498064487
+file planx_key
+#1498064536
+ls -al planx_key
+#1498064799
+ssh -i ~/.ssh/id_alt-planx.key mbecker@go-deploy-xl02
+#1498064914
+ssh mbecker@go-deploy-xl02
+#1498065081
+ssh mbecker@go-deploy14
+#1498074515
+cd
+#1498074528
+cd src/rspace-eclipse
+#1498074529
+ls
+#1498074537
+cd scharp/
+#1498074547
+git pull --all --prune
+#1498074572
+git checkout master 
+#1498074576
+git pull
+#1498074604
+mvn clean compile
+#1498074654
+more build-all-docker-images.sh 
+#1498074667
+docker build --rm=true -f Docker/DockerJava/Dockerfile -t scharp/ubuntujava8 .
+#1498074929
+more build-all-docker-images.sh 
+#1498074943
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
+#1498075770
+more build-all-docker-images.sh 
+#1498075808
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile -t scharp/planner .
+#1498075896
+mvn dependency:analyze
+#1498075992
+git status
+#1498075998
+clear
+#1498233419
+exit
+#1498233425
+exit
+#1498236755
+cd
+#1498236766
+cd src/rspace/TE-4-Documents/
+#1498236767
+ls
+#1498236771
+cd ..
+#1498236777
+cd TE-3-Documents/
+#1498236778
+ls
+#1498236807
+cp -r SCHARP-AMQ ~/src/rspace-eclipse/scharp/Docker/jboss-fuse-docker/
+#1498236809
+cd
+#1498236819
+cd src/rspace-eclipse/scharp/
+#1498236820
+ls
+#1498236824
+git status
+#1498236838
+git add Docker/jboss-fuse-docker/SCHARP-AMQ/
+#1498236842
+git status
+#1498236844
+git pull
+#1498236864
+git commit -m "Added the Mitre AMQ config to the joss fuse folder."
+#1498236874
+git push -u origin master 
+#1498583408
+git pull --all --prune
+#1498583432
+git pull
+#1498583435
+git pull --all --prune
+#1498583443
+git checkout preTE4 
+#1498583445
+git pull
+#1498584813
+git status
+#1498584823
+git add src/main/java/edu/kestrel/scharp/usmtf/convert/PlanToATOConverter.java
+#1498584843
+git commit -m "Changed bom-drg to best for tanker missions."
+#1498584849
+git push -u origin preTE4 
+#1498585509
+git status
+#1498585526
+git add src/main/java/edu/kestrel/scharp/replanner/ReplanUtils.java src/main/java/edu/kestrel/scharp/usmtf/convert/PlanToATOConverter.java
+#1498585564
+git commit -m "Changed DRG and XDCA to BEST, fixed mission abort mission to use ICAO."
+#1498585569
+git push -u origin preTE4 
+#1498597039
+docker run -it eclipse/che start
+#1498597072
+docker-machine start
+#1498597120
+docker-machine env
+#1498597135
+eval $(docker-machine env)
+#1498597140
+docker run -it eclipse/che start
+#1498597317
+docker run -it --user marcelbecker:marcelbecker eclipse/che start
+#1498597547
+docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v <path>:/data eclipse/che start
+#1498597572
+cd
+#1498597574
+ls
+#1498597593
+docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v lixo:/data eclipse/che start
+#1498597753
+cd lixo/
+#1498597753
+ls
+#1498597757
+ls -al
+#1498597766
+rm -rf .DS_Store .vagrant/
+#1498597768
+cd ..
+#1498597771
+docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v lixo:/data eclipse/che start
+#1498597804
+docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock -v /Users/marcelbecker/lixo:/data eclipse/che start
+#1498598520
+ls
+#1498598524
+cd lixo/
+#1498598524
+ls
+#1498598528
+cd instance/
+#1498598529
+ls
+#1498598534
+cd data/
+#1498598534
+ls
+#1498598538
+cd workspaces/
+#1498598539
+ls
+#1498598540
+cd
+#1498598544
+cd -
+#1498598545
+ls
+#1498598547
+cd wksp-qpx8/
+#1498598549
+ls
+#1498598552
+cd web-java-petclinic
+#1498598553
+ls
+#1498598617
+docker ps -a
+#1498598654
+docker rm -f a17182beff10 35d874903c28 a8c9979ce2c2 03f78a57b84e 031da95f166a
+#1498598658
+docker ps -a
+#1498598665
+docker images -a
+#1498598709
+docker images | grep che
+#1498598728
+docker rmi -f eclipse/che-action
+#1498598747
+docker rm d0bdc43b96db
+#1498598753
+docker rmi d0bdc43b96db
+#1498598781
+docker rmi $(docker images -a)
+#1498598850
+docker images -a
+#1498598865
+docker rm 03e1848962bd 03e1848962bd
+#1498598874
+docker rmi 03e1848962bd 03e1848962bd
+#1498598900
+docker rmi 30f2a39672a6 d04e4bbcb541 0a8bb83db1ed 
+#1498598918
+docker rmi 30f2a39672a6 
+#1498598930
+docker rmi fe6e0a9d3505
+#1498598938
+docker volumes ls
+#1498598945
+docker volume ls
+#1498598963
+docker volume rm $(docker volume ls -a)
+#1498598979
+docker volume rm $(docker volume ls -aq)
+#1498598988
+docker volume ls -a
+#1498598992
+docker volume ls
+#1498598995
+docker volume ls -q
+#1498599015
+docker volume rm $(docker volume ls -q)
+#1498599023
+docker images -a
+#1498599036
+docker rmi fe6e0a9d3505
+#1498599046
+docker rmi -f
+#1498599049
+docker rmi b8c9765064c5
+#1498599064
+docker-image restart
+#1498599071
+docker-machine restart
+#1498599137
+docker rmi $(docker images -a)
+#1498599277
+cd /var/lib
+#1498599278
+lx
+#1498599279
+ls
+#1498599318
+cd 
+#1498599325
+cd Library/Containers/
+#1498599326
+ls
+#1498599342
+cd com.docker.docker/Data/
+#1498599342
+ls
+#1498599359
+ls -al
+#1498599388
+rm -rf *
+#1498599393
+ls
+#1498599396
+cd ..
+#1498599397
+ls
+#1498599402
+ls -al
+#1498599409
+cd Data/
+#1498599409
+ls
+#1498599414
+rm -rf *
+#1498599416
+cd ..
+#1498599417
+ls
+#1498599530
+cd ..
+#1498599531
+ls
+#1498599544
+cd
+#1498599554
+cd Applications/
+#1498599555
+ls
+#1498599559
+ls -a
+#1498599564
+cd ..
+#1498599564
+ls
+#1498599567
+df
+#1498599576
+clear
+#1498599595
+docker-machine start
+#1498599605
+brew uninstall docker
+#1498599614
+brew uninstall docker-machine
+#1498599619
+docker --help
+#1498599627
+brew --help
+#1498599633
+brew list
+#1498599653
+brew update
+#1498599674
+which bash
+#1498599689
+brew list bash
+#1498599703
+bash --version
+#1498599756
+brew --help
+#1498599783
+brew home
+#1498599876
+brew cleanup -n
+#1498599897
+brew cleanup 
+#1498599925
+brew outdated
+#1498599934
+brew update 
+#1498599941
+brew upgrade
+#1498600004
+brew cleanup 
+#1498600066
+brew list
+#1498600071
+brew list --all
+#1498600080
+brew list --A
+#1498600085
+brew list -A
+#1498600092
+brew list --help
+#1498600337
+cd
+#1498600340
+cd src/emacs-
+#1498600346
+cd src
+#1498600347
+ls
+#1498600533
+brew install --with-cocoa --srgb emacs
+#1498600681
+brew linkapps emacs
+#1498600758
+brew cask install emacs
+#1498600854
+brew uninstall emacs
+#1498688611
+cd
+#1498688624
+cd src/rspace-eclipse/scharp/
+#1498688625
+ls
+#1498688628
+git status
+#1498688641
+git diff src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.java
+#1498688653
+git diff src/main/java/edu/kestrel/scharp/usmtf/convert/PlanToATOConverter.java
+#1498688742
+git status
+#1498688754
+got diff src/test/java/edu/kestrel/scharp/replanner/ReplannerTest.java
+#1498688759
+git diff src/test/java/edu/kestrel/scharp/replanner/ReplannerTest.java
+#1498688780
+git diff src/main/java/edu/kestrel/scharp/whitecell/messages/AbstractWhiteCellMessage.java
+#1498688804
+git add src/test/java/edu/kestrel/scharp/replanner/ReplannerTest.java src/main/java/edu/kestrel/scharp/whitecell/messages
+#1498688807
+git status
+#1498688819
+git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.java src/main/java/edu/kestrel/scharp/usmtf/convert/PlanToATOConverter.java
+#1498688822
+git status
+#1498688880
+git commit -m "Changed the xmpp connection to stop sending the messages to chat client if connetion throws exception. Changed some log statements from info to debug."
+#1498688888
+git push -u origin preTE4 
+#1498840163
+git pull
+#1498840191
+git checkout marcel-test-te4-ui-server 
+#1498840193
+git pull
+#1498849094
+ps -al
+#1498849100
+ps -aux
+#1498849107
+ps -a
+#1498849110
+ps -au
+#1498849115
+ps -A
+#1498849122
+ps -A | grep java
+#1498849147
+killall -941364
+#1498849153
+killall -9 41364
+#1498849166
+sudo killall -9 41364
+#1498849175
+ps -A | grep java
+#1498849194
+sudo killall -9 java
+#1498849199
+ps -A | grep java
+#1498849207
+ps -A | grep eclipse
+#1498849245
+ps -A | grep java
+#1498854235
+git checkout 201706-hackathon 
+#1498854239
+git pull
+#1498858764
+git diff src/main/java/edu/kestrel/scharp/airdomain/entities/Scenario.java
+#1498858777
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/Scenario.java
+#1498858792
+git commit -m "Changed score computation."
+#1498858862
+git pull
+#1498858888
+mvn clean compile 
+#1498858942
+git status
+#1498861227
+git add src/test/java/edu/kestrel/scharp/planner/manager/
+#1498861237
+git add src/main/java/edu/kestrel/scharp/planner/
+#1498861239
+git status
+#1498861256
+git add src/main/java/edu/kestrel/scharp/
+#1498861260
+git status
+#1498861267
+git add eclipse-utils/EclipseRspaceFormatter.xml
+#1498861289
+git commit -m "Fixed conflicts after merging master. Reformatted code."
+#1498861297
+git push -u origin 201706-hackathon 
+#1498861477
+git checkout master 
+#1498861481
+git pull
+#1498871579
+git checkout -- src/main/resources/logback.xml
+#1498871581
+git pull
+#1498871593
+mvn clean compile
+#1498872089
+git status
+#1498872096
+mvn clean compile
+#1498872151
+git status
+#1498872166
+git add src/main/java/edu/kestrel/scharp/
+#1498872171
+git status
+#1498872215
+git commit -m "Fixed compilation error due to lack of import in PlanManager. Removed warnings, and re-formatted code."
+#1498872235
+git pull
+#1498872243
+git push -u origin master 
+#1498872452
+git checkout marcel-test-te4-ui-server 
+#1498872458
+git pull origin master 
+#1498872497
+git log
+#1498872528
+git pull origin master 
+#1498872576
+git checkout master 
+#1498872587
+git reset --hard
+#1498872591
+git status
+#1499117622
+git pull --all
+#1499117632
+git status
+#1499119441
+git pull
+#1499119450
+git status
+#1499272111
+git pull
+#1499272136
+git diff src/main/resources/data/TE4/FOX Mobile Targets.xls
+#1499272147
+git diff "src/main/resources/data/TE4/FOX Mobile Targets.xls"
+#1499272166
+git checkout -- "src/main/resources/data/TE4/FOX Mobile Targets.xls"
+#1499272169
+git pull
+#1499272212
+git status
+#1499272295
+rm src/main/resources/data/TE4/.#Airspace*
+#1499272300
+ls
+#1499272303
+git status
+#1499272309
+cd eclipse-utils/
+#1499272310
+ls
+#1499272335
+mvn clean compile
+#1499272343
+cd ..
+#1499272344
+mvn clean compile
+#1498849284
+/Applications/eclipse-oxygen/Eclipse.app/Contents/MacOS/eclipse 
+#1499278117
+git pull
+#1499278121
+cd eclipse-utils/
+#1499278122
+ls
+#1499278137
+ls TE4MainServers\ 
+#1499278141
+ls TE4MainServers\ *
+#1499288302
+git pull --all 
+#1499295242
+git status
+#1499295267
+git pull
+#1499295320
+git status
+#1499295358
+git add docker-run-plan-cell-te4-local.sh docker-run-plan-cell-te4-ng.sh
+#1499295370
+git add run-plan-cell-te4-ng.sh
+#1499295377
+git diff src/main/java/edu/kestrel/scharp/activemq/te3/TE4MainServers.java
+#1499295394
+git add src/main/java/edu/kestrel/scharp/activemq/te3/TE4MainServers.java
+#1499295397
+git status
+#1499295460
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4Scenario.java src/main/resources/data/TE4/RSPACE_TE4_TACINFO_v2.json
+#1499295463
+git status
+#1499295474
+git add eclipse-utils/
+#1499295484
+git add run-plan-cell-te4-local-broker.sh
+#1499295489
+git status
+#1499295497
+git diff src/main/java/edu/kestrel/scharp/airdomain/entities/MobileTarget.java
+#1499295507
+git checkout -- src/main/java/edu/kestrel/scharp/airdomain/entities/MobileTarget.java
+#1499295510
+git status
+#1499295548
+git commit -m "Updating DC2C node config and scripts to use the correct base name."
+#1499295566
+git push -u origin marcel-test-te4-ui-server 
+#1499302783
+git statu
+#1499302785
+git status
+#1499302862
+git branch
+#1499302886
+git checkout preTE4 
+#1499302894
+mvn clean compilr
+#1499302898
+mvn clean compile
+#1499305252
+clear
+#1499305255
+ps -a 
+#1499305263
+exit
+#1499305265
+exit
+#1499305376
+cd src/rspace-eclipse/scharp/
+#1499305386
+git checkout master 
+#1499305391
+git pull
+#1499305400
+mvn clean compile
+#1499444239
+git pull --all
+#1499444248
+git checkout marcel-test-te4-ui-server 
+#1499444250
+git pull
+#1499451467
+cd 
+#1499451470
+cd src/
+#1499451471
+ls
+#1499451506
+cd rspace-eclipse/scharp/
+#1499451507
+ls
+#1499451513
+cd Docker/
+#1499451514
+ls
+#1499451517
+cd jboss-fuse-docker/
+#1499451518
+ls
+#1499451531
+cd SCHARP-AMQ/
+#1499451531
+ls
+#1499451549
+cd ..
+#1499451550
+ls
+#1499451553
+cd ..
+#1499451559
+ls
+#1499451569
+cd ..
+#1499451569
+ls
+#1499451574
+cd ..
+#1499451575
+ls
+#1499451747
+cd rspacesrc/
+#1499451748
+ls
+#1499451759
+cd ..
+#1499451765
+cd rspace-eclipse
+#1499451766
+ls
+#1499451886
+git clone git@github.com:marcel-becker/vagrant-jboss.git
+#1499451893
+cd vagrant-jboss/
+#1499451902
+vagrant global-state
+#1499451914
+vagrant global-status
+#1499451931
+vagrant up 
+#1499452067
+vagrant plugin repair
+#1499452100
+vagrant up 
+#1499452132
+git checkout dev 
+#1499452134
+git pull
+#1499452782
+vagrant up node-3
+#1499452137
+vagrant up 
+#1499456280
+vagrant ssh node-1
+#1499456298
+vagrant global-status
+#1499456318
+vagrant up node-1
+#1499456639
+vagrant halt 
+#1499453134
+vagrant up node-4
+#1499452774
+vagrant up node-3
+#1499452764
+vagrant up node-2
+#1499456767
+exit
+#1499456772
+exit
+#1499456774
+exti
+#1499456776
+exit
+#1499456778
+exit
+#1499456782
+git pull
+#1499456786
+exit
+#1499457057
+cd src/rspace-eclipse
+#1499457058
+ls
+#1499457064
+cd vagrant-jboss/
+#1499457075
+exit
+#1499620746
+cd 
+#1499620756
+cd src/rspace-eclipse/scharp/
+#1499620768
+git checkout master
+#1499620830
+git pull
+#1499620878
+git checkout -- src/main/resources/logback.xml
+#1499620897
+git pull
+#1499620913
+mvn clean generate-sources compile
+#1499704205
+/Applications/Emacs.app/Contents/MacOS/Emacs --insecure
+#1499705139
+git pull
+#1499705184
+mvn clean generate-sources compile
+#1499707076
+more build-all-docker-images.sh 
+#1499707091
+docker build --rm=true -f Docker/DockerJava/Dockerfile -t docker-rspace.di2e.net/ncc-ubuntujava8 .
+#1499707106
+docker images
+#1499707285
+docker build --rm=true -f Docker/DockerJava/Dockerfile -t docker-rspace.di2e.net/ncc-ubuntujava8 .
+#1499707692
+ls
+#1499707719
+chmod +x docker-pu*
+#1499707720
+ls
+#1499707723
+git status
+#1499707748
+ls
+#1499707780
+more build-all-docker-images.sh 
+#1499707790
+docker build --rm=true -f Docker/DockerJava/Dockerfile -t docker-rspace.di2e.net/ncc-ubuntujava8 .
+#1499707809
+more build-all-docker-images.sh 
+#1499708481
+docker login docker-rspace.di2e.net
+#1499708534
+docker images -a
+#1499707822
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t docker-rspace.di2e.net/ncc-plannerbase .
+#1499708555
+docker push docker-rspace.di2e.net/ncc-ubuntujava8:latest
+#1499708611
+docker push docker-rspace.di2e.net/ncc-ubuntujava8
+#1499708662
+docker push docker-rspace.di2e.net/ncc-ubuntujava8:0.0.1
+#1499708675
+docker push docker-rspace.di2e.net/ncc-ubuntujava8
+#1499708741
+docker tag docker-rspace.di2e.net/ncc-ubuntujava8 docker-rspace.di2e.net/ncc-ubuntujava8:0.0.1
+#1499708745
+docker push docker-rspace.di2e.net/ncc-ubuntujava8:0.0.1
+#1499708774
+docker push --help
+#1499708794
+docker push docker-rspace.di2e.net/ncc-ubuntujava8
+#1499708812
+more build-all-docker-images.sh 
+#1499708835
+docker images -a
+#1499708852
+docker push docker-rspace.di2e.net/ncc-plannerbase
+#1499708824
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile -t docker-rspace.di2e.net/ncc-planner .
+#1499709884
+git status
+#1499709907
+git checkout marcel-fix-docker-files
+#1499709914
+git checkout -b marcel-fix-docker-files
+#1499709939
+got add Docker/DockerJava/
+#1499709984
+git add Docker/
+#1499709991
+git status
+#1499710037
+git add build-all-docker-images-ng-cloud.sh build-all-docker-images.sh common-ng.yml common.yml docker-run-plan-cell-te4-local.sh docker-run-plan-cell-te4-ng.sh notes/marcel-notes.org src/main/java/edu/kestrel/scharp/activemq/AmqConfigurationConstants.java
+#1499710040
+git status
+#1499710054
+git add docker-pull-from-di2e.sh docker-push-to-di2e.sh
+#1499710057
+git status
+#1499710104
+git git commit -m "Changed the names of the docker images to use the Di2E prefix."
+#1499710111
+git commit -m "Changed the names of the docker images to use the Di2E prefix."
+#1499710123
+git push -u origin marcel-fix-docker-files 
+#1499710634
+git status
+#1499710642
+git checkout master 
+#1499710659
+git remote set-url origin ssh://git@bitbucket.di2e.net:7999/rspacencc/scharp.git
+#1499710702
+git remote -v
+#1499710760
+git remote set-url origin git@github.com:KestrelInstitute/scharp.git
+#1499710762
+git remote -v
+#1499710813
+git remote add di2e ssh://git@bitbucket.di2e.net:7999/rspacencc/scharp.git
+#1499710830
+git push -u di2e master
+#1499710915
+git pull --all
+#1499710937
+git push di2e --all --tags --dry-run
+#1499710945
+git push di2e --all --dry-run
+#1499710972
+git push di2e --all
+#1499710978
+git push di2e --tags
+#1499711002
+git checkout marcel-fix-docker-files 
+#1499711065
+git status
+#1499711272
+docker pull hello-world
+#1499711290
+docker login docker-rspace.di2e.net
+#1499711317
+docker tag hello-world docker-rspace.di2e.net/ncc-hello-world:0.0.1
+#1499711328
+docker push docker-rspace.di2e.net/ncc-hello-world:0.0.1
+#1499794321
+git status
+#1499794335
+git add notes/marcel-notes.org
+#1499794360
+git commit -m "Added notes on how to use theDi2E Docker Registry."
+#1499794374
+git push -u origin marcel-fix-docker-files 
+#1499794385
+git remote -v
+#1499794400
+git pull
+#1499794408
+git pull --all --prune
+#1499794431
+git push di2e --all
+#1499794458
+git status
+#1499794468
+git push -u origin marcel-fix-docker-files 
+#1499794496
+docker push docker-rspace.di2e.net/ncc-hello-world:0.0.1
+#1499901305
+cd
+#1499901310
+cd src/scharp-docker-ui/
+#1499901311
+ls
+#1499901317
+docker load -i ui-te4-docker.xz 
+#1499901522
+docker-machine iip
+#1499901525
+docker-machine ip
+#1499901606
+cd
+#1499901608
+cd src/
+#1499901609
+ls
+#1499901618
+cd scharp
+#1499901619
+ls
+#1499901627
+cd nextcentury-scharp/
+#1499901629
+git pull
+#1499901651
+docker diff Docker/buildDocker.sh
+#1499901658
+git  diff Docker/buildDocker.sh
+#1499901682
+git remote -v
+#1499901695
+cd ..
+#1499901696
+ls
+#1499901716
+cd nextcentury-scharp/
+#1499901723
+git reset --hard
+#1499901729
+git pull
+#1499901734
+ls
+#1499901747
+./run-all.sh 
+#1499901761
+ls
+#1499901766
+more README.md 
+#1499901795
+npm run build
+#1499901816
+yarn install
+#1499901823
+brew install yarn
+#1499901870
+yarn install
+#1499901918
+npm run build
+#1499901977
+more README.md 
+#1499901995
+npm start
+#1499901414
+docker run -it -p 4200:4200 scharp-ui:latest ./run-all.sh --stompHost 10.22.54.7~
+#1499902029
+docker ps -a
+#1499902041
+docker rm -f bb58158542cd
+#1499457084
+vagrant up node-1
+#1499457112
+vagrant up node-3
+#1499457093
+vagrant up node-2
+#1499457119
+vagrant up node-4
+#1500049519
+ls
+#1500049521
+owd
+#1500049524
+pwd
+#1500049528
+git status
+#1500049536
+cd scharp/
+#1500049537
+ls
+#1500049837
+git status
+#1500049882
+git checkout master 
+#1500049887
+gitpull
+#1500049896
+git pull
+#1500049905
+git pull --all
+#1500049964
+git branch
+#1500049998
+git branch -d marcel-test-te4-ui-server 
+#1500050023
+git branch -d marcel-fix-repair-refuel 
+#1500050035
+git branch
+#1500050062
+git pull --all
+#1500050065
+--prune
+#1500050073
+git pull --all --prune
+#1500050119
+git checkout preTE4 
+#1500050181
+git checkout --  "src/main/resources/data/TE4/FOX Mobile Targets.xls"
+#1500050588
+#
+#1500050714
+bash
+#1500050815
+git tags --help
+#1500050824
+git tag --help
+#1500050910
+git checkout -b te3 TE3-Before-Refactoring 
+#1500050943
+git status
+#1500051037
+git checkout -- src/main/resources/data/TE4/FOX\ Mobile\ Targets.xls
+#1500051044
+git checkout -b te3 TE3-Before-Refactoring 
+#1500051051
+mvn clean compile
+#1500066428
+git checkout master 
+#1500066435
+mvn clean compile
+#1500066453
+cd eclipse-utils/
+#1500066454
+ls
+#1500066816
+git status
+#1500066829
+git add .
+#1500066832
+git status
+#1500066863
+git commit -m "Added new run configuration for running the Dc2C nodes for TE4."
+#1500066874
+git push -u origin master 
+#1500066880
+git pull
+#1500066901
+git status
+#1500066915
+git push -u di2e master 
+#1500066923
+git push -u origin master 
+#1500066939
+git pull origin master 
+#1500066958
+pwd
+#1500066970
+git status
+#1500066982
+git push -u di2e master 
+#1500066989
+git push -u origin master 
+#1500067161
+ls
+#1500231095
+git pull --all
+#1500231112
+git pull --all --prune
+#1500231127
+git checkout -t origin/marcel-drs10-add-xcas-track 
+#1500231134
+git pull 
+#1500231142
+mvn clean compile
+#1500231149
+cd ..
+#1500231150
+mvn clean compile
+#1500233811
+mvn clean generate-sources
+#1500233820
+mvn compile
+#1500239358
+git status
+#1500239398
+git add src/main/avro/Plan.avdl src/main/java/edu/kestrel/scharp/activemq/te3/SeadPlannerUiBridge.java src/main/java/edu/kestrel/scharp/planner/analysis/displayables/DisplayableMission.java
+#1500239406
+git status
+#1500239412
+cd src-gen/
+#1500239413
+ls
+#1500239422
+cd edu/kestrel/scharp/comms/avro/
+#1500239424
+ls
+#1500239433
+cd ../..
+#1500239434
+ls
+#1500239436
+cd ..
+#1500239439
+cd ../../..
+#1500239442
+pwd
+#1500239444
+l;s
+#1500239445
+ls
+#1500239452
+rm -rf src-gen/
+#1500239457
+mvn generate-sources
+#1500239467
+git status
+#1500239488
+git add src/main/java/edu/kestrel/scharp/planner/entities/
+#1500239496
+src/main/java/edu/kestrel/scharp/planner/util/
+#1500239498
+git add
+#1500239503
+git status
+#1500239521
+git add src/main/java/edu/kestrel/scharp/planner/
+#1500239523
+git status
+#1500239546
+git add src/main/java/edu/kestrel/scharp/usmtf/convert/PlanToATOConverter.java src/main/java/edu/kestrel/scharp/whitecell/messages/WhiteCellFileTransfer.java src/main/java/edu/kestrel/scharp/whitecell/messages/WhiteCellTextMessage.java src/test/java/edu/kestrel/scharp/workflow/StrikeUiStandin.java
+#1500239550
+git status
+#1500239575
+git commit -m "Fixed some of the avro schemas and code conversion methods."
+#1500239595
+git push -u origin marcel-drs10-add-xcas-track 
+#1500242773
+git status
+#1500242781
+git add eclipse-utils/
+#1500242784
+git status
+#1500242854
+git commit -m "Added eclipse launch configurations."
+#1500242866
+git push -a origin marcel-drs10-add-xcas-track 
+#1500242879
+git push -u origin marcel-drs10-add-xcas-track 
+#1500243093
+git status
+#1500243310
+git pull --all
+#1500243330
+git pull origin drs10 
+#1500245181
+git status
+#1500245196
+git add src/main/java/edu/kestrel/scharp/airdomain/
+#1500245201
+git status
+#1500245210
+git add src/main/java/edu/kestrel/scharp/planner/entities
+#1500245216
+git status
+#1500245225
+git add src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1500245230
+git add src/main/java/edu/kestrel/scharp/planner/manager
+#1500245245
+git status
+#1500245267
+git commit -m "Merged with DRS10 and fixed conflicts."
+#1500245277
+git push -u origin marcel-drs10-add-xcas-track 
+#1500245288
+rm -rf src-gen/
+#1500245295
+mvn clean compile
+#1500246235
+ps -aux | grep java
+#1500246241
+ps -Au | grep java
+#1500246246
+ps -A | grep java
+#1500246275
+git pull
+#1500246282
+mvn clean compile
+#1500246611
+git status
+#1500246947
+git pull
+#1500246951
+git status
+#1500246988
+git checkout master 
+#1500247002
+git branch -d marcel-drs10-add-xcas-track 
+#1500247012
+git pull --all --prunt
+#1500247014
+git pull --all --prune
+#1500247019
+git branch -d marcel-drs10-add-xcas-track 
+#1500247023
+git branch 
+#1500247046
+git branch -d sf-get-url 
+#1500247053
+git branch -d sf-publish-repairs 
+#1500247079
+git branch -d 201706-hackathon 
+#1500247083
+git branch 
+#1500247104
+mvn clean
+#1500247250
+ls
+#1500247301
+rm -rf src-gen/
+#1500247312
+mvn generate-sources
+#1500247319
+ls
+#1500247656
+rm -rf src-gen/
+#1500247761
+git status
+#1500251876
+git pull --all --prune
+#1500255529
+git pull
+#1500255543
+git pull --all --prune
+#1500255593
+git checkout -t origin/sf-ato-converter 
+#1500255595
+git pull
+#1500255603
+mvn clean compile
+#1500255643
+exit
+#1500255646
+exit
+#1500255648
+exit
+#1500255649
+exit
+#1500255650
+exit
+#1500255651
+exit
+#1500255653
+exit
+#1500255807
+cd src/rspace-eclipse/scharp/
+#1500255815
+mvn clean compile
+#1500256383
+git checkout master 
+#1500256387
+git pull 
+#1500256398
+git pull --all --prune
+#1500256407
+git branch -d sf-ato-converter 
+#1500256418
+mvn clean compile
+#1500256466
+git checkout sf-timeout 
+#1500256473
+git pull
+#1500256483
+mvn clean compile
+#1500257411
+git checkout master 
+#1500257424
+git checkout -- eclipse-utils/
+#1500257428
+git checkout master 
+#1500257431
+git pull
+#1500257440
+git pull --all
+#1500257447
+git pull --all --prune
+#1500257457
+git branch -d sf-timeout 
+#1500257461
+git pull
+#1500257472
+git push -u di2e master 
+#1500257485
+mvn clean compile
+#1500270749
+git pull
+#1500270771
+git pull --all
+#1500270859
+git branch
+#1500270862
+git log
+#1500270899
+git status
+#1500270921
+git remote -v
+#1500270956
+git pull --all
+#1500270962
+git log
+#1500271069
+git pull origin master 
+#1500271208
+mvn clean compile
+#1500271631
+git status
+#1500271655
+git push di2e master 
+#1500271727
+git status
+#1500271742
+git pull
+#1500271747
+git pull origin master 
+#1500271758
+git pull origin master --all --prune
+#1500271775
+git push -u origin master 
+#1500271783
+git pull --all
+#1500272430
+git status
+#1500272442
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4Scenario.java
+#1500272451
+git add src/main/java/edu/kestrel/scharp/airdomain/
+#1500272456
+git status
+#1500272468
+git add src/main/java/edu/kestrel/scharp/planner/
+#1500272470
+git status
+#1500272485
+git diff src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1500272496
+src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1500272503
+git add src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1500272506
+git status
+#1500272539
+git commit -m "Removed warnings and added new test to run scenarion with dill emulator."
+#1500272545
+git push -u origin master 
+#1500273430
+git status
+#1500273451
+git checkout marcel-timeout-reject-bid
+#1500273470
+git add src/main/java/edu/kestrel/scharp/planner/manager
+#1500273502
+git status
+#1500273541
+git reset src/main/java/edu/kestrel/scharp/planner/manager/TimeoutBuffer.java
+#1500273546
+git status
+#1500273555
+git checkout -b marcel-timeout-reject-bid
+#1500273561
+git add src/main/java/edu/kestrel/scharp/planner/manager/TimeoutBuffer.java
+#1500273564
+git status
+#1500273574
+git add src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1500273577
+git status
+#1500273606
+git commit -m "Added a reject bid to the discarded bids when we hit the timeout."
+#1500273615
+git push -u origin marcel-timeout-reject-bid 
+#1500398813
+his | grep rdp
+#1500673497
+exit
+#1501187417
+cd src/rspace-eclipse/scharp/
+#1501187420
+git pull
+#1501187427
+git checkout master 
+#1501187430
+git pull
+#1501187445
+git checkout -- src/main/resources/logback.xml
+#1501187448
+git pull
+#1501187458
+git checkout sf-execution-state 
+#1501187489
+git rm src/main/java/edu/kestrel/scharp/executionstate/updates/.~lock.Alerts.docx#
+#1501187497
+git status
+#1501187524
+git commit -m "Removed unused file."
+#1501187539
+git push -u origin sf-execution-state 
+#1501191392
+git pull
+#1501191512
+mvn clean compile
+#1501191692
+git checkout master 
+#1501191695
+git pull
+#1501191702
+mvn clean compile
+#1501192138
+git status
+#1501192162
+git checkout -- src/main/resources/data/TE4/FOX\ Mobile\ Targets.xls
+#1501192167
+git status
+#1501192175
+git diff src/main/java/edu/kestrel/scharp/planner/analysis/display/patches/PatchesChart.java
+#1501192317
+git add src/main/java/edu/kestrel/scharp/planner/analysis/display/patches/PatchesChart.java
+#1501192340
+git commit -m "Added default case for case statement."
+#1501192358
+git push -u origin master 
+#1501193315
+cd /Library/Java/JavaVirtualMachines/
+#1501193316
+ls
+#1501193427
+java -version
+#1501193683
+cd /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java
+#1501193694
+cd /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents
+#1501193698
+cd /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/
+#1501193705
+pwd
+#1501193706
+ls
+#1501193726
+rm -fr 1.7.0*
+#1501193734
+sudo rm -fr 1.7.0*
+#1501193742
+ls
+#1501193763
+sudo rm -fr jdk1.7*
+#1501193766
+ls
+#1501193778
+rm -rf jdk1.8.0_74.jdk
+#1501193782
+sudo rm -rf jdk1.8.0_74.jdk
+#1501193785
+ls
+#1501193819
+sudo rm -rf jdk1.8.0_102.jdk jdk1.8.0_112.jdk jdk1.8.0_60.jdk
+#1501193821
+ls
+#1501193842
+cd /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java
+#1501193850
+cd /Library/Internet Plug-Ins/
+#1501193857
+cd /Library/Internet\ Plug-Ins/
+#1501193858
+ls
+#1501193862
+cd JavaAppletPlugin.plugin/
+#1501193863
+ls
+#1501193865
+cd Contents/
+#1501193865
+ls
+#1501193868
+cd Home/
+#1501193869
+ls
+#1501193871
+cd bin/
+#1501193872
+ls
+#1501193884
+./java -version
+#1501194128
+cd
+#1501194136
+cd src/rspace-eclipse/scharp/
+#1501194140
+mvn clean compile
+#1501194167
+git statud
+#1501194170
+git status
+#1501194181
+git add src/main/java/edu/kestrel/scharp/planner/analysis/display/patches/
+#1501194194
+git commit -m "Removed warnings."
+#1501194207
+git push -u origin master 
+#1501705908
+git pull
+#1501705915
+git remote -v 
+#1501705931
+git push di2e master 
+#1501705963
+mvn clean compile
+#1501706227
+git checkout -t origin/sf-get-status 
+#1501706232
+git pull
+#1501706238
+git pull origin master 
+#1501706268
+git status
+#1501706282
+git pull origin marcel-repair-plan 
+#1501707631
+git status
+#1501707639
+git add src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairOption.java
+#1501707657
+git commit -m "Fixed problem with status for missions."
+#1501707671
+git checkout marcel-repair-plan 
+#1501707674
+git pull
+#1501707680
+mvn clean compile
+#1501708293
+git pull
+#1501708313
+mvn clean compile
+#1501712950
+git checkout sf-get-status 
+#1501713011
+mvn clean generate-sources
+#1501713176
+git pull origin marcel-repair-plan 
+#1501713189
+mvn clean generate-sources
+#1501717560
+git status
+#1501717597
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/StandardConfigurationLoad.java src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairOption.java src/main/java/edu/kestrel/scharp/planner/repair/RepairUtils.java src/main/java/edu/kestrel/scharp/planner/util/AvroUtils.java src/test/java/edu/kestrel/scharp/replanner/ReplannerTest.java
+#1501717603
+git status
+#1501717637
+git commit -m "Fixed problems with computing activity schedule."
+#1501717645
+git push -u origin sf-get-status 
+#1501717656
+git checkout marcel-repair-plan 
+#1501717661
+git pull
+#1501717671
+git pull origin sf-get-status 
+#1501717681
+git status
+#1501717691
+git push -u origin marcel-repair-plan 
+#1501717786
+git pull 
+#1502110349
+git pull --all --prune
+#1502110360
+git checkout master 
+#1502110364
+git pull
+#1502110377
+git remote -v
+#1502110389
+git push di2e master 
+#1502167177
+git pull
+#1502167195
+git pull --all --prune
+#1502167222
+git push di2e master
+#1502351163
+git pull
+#1502351168
+git push di2e master
+#1502351181
+git pull origin master
+#1502351192
+git stash
+#1502351195
+git pull origin master
+#1502351200
+git stash pop
+#1502351206
+git push di2e master
+#1502411756
+git pull
+#1502411773
+git pull --all --prune
+#1502411783
+git branch 
+#1502411802
+git branch -d sf-get-status
+#1502411810
+git branch -d marcel-timeout-reject-bid 
+#1502411823
+git branch -d marcel-repair-plan 
+#1502411832
+git branch -d sf-execution-state 
+#1502411859
+git branch
+#1502411873
+git branch -d preTE4 
+#1502411886
+git branch
+#1502411894
+git branch -d te3
+#1502411901
+git status 
+#1502411926
+git checkout -t origin/marcel-check-ki-refuel 
+#1502411929
+git pull
+#1502411942
+mvn clean compile 
+#1502422366
+git status
+#1502422402
+git add src/main/java/edu/kestrel/scharp/airdomain/interfaces/IAirRefuelingTrack.java src/main/java/edu/kestrel/scharp/planner/manager/ src/main/java/edu/kestrel/scharp/planner/resource/GoBasedCapacityProfile.java
+#1502422405
+git status
+#1502422424
+git commit -m "Added better log statements to see what is going on.
+"
+#1502422439
+git push -u origin marcel-check-ki-refuel 
+#1502937482
+git checkout master 
+#1502937486
+git pull
+#1502937498
+mvn clean compile
+#1503108442
+ git pull
+#1503108456
+exit
+#1503108474
+cd src/rspace-eclipse/scharp/
+#1503108477
+git pull
+#1503108486
+mvn clean compile
+#1503378946
+git pull
+#1503378951
+git pull --all
+#1503378966
+git pull --all --prune
+#1503378975
+git checkout marcel-no-amq-for-local-schedulers 
+#1503378982
+git status
+#1503379016
+git checkout marcel-ki-with-selected-bid
+#1503379026
+git checkout -b marcel-ki-with-selected-bid
+#1503379042
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1503379046
+git status
+#1503379067
+git commit -m "Fixed the re-bidding of ki missions."
+#1503379078
+git push -u origin marcel-ki-with-selected-bid 
+#1503379097
+git checkout marcel-no-amq-for-local-schedulers 
+#1503379099
+git pull
+#1503431775
+mvn clean compile
+#1503434798
+cd output/
+#1503434798
+ls
+#1503434816
+more Summary_no_amq.txt 
+#1503434832
+git checkout master 
+#1503434880
+git diff src/main/java/edu/kestrel/scharp/airdomain/entities/StrikeOption.java
+#1503434892
+cd ..
+#1503434901
+git status
+#1503434908
+git diff src/main/java/edu/kestrel/scharp/airdomain/entities/StrikeOption.java
+#1503434925
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/StrikeOption.java
+#1503434938
+git commit -m "Fixed imports."
+#1503434945
+git checkout master 
+#1503434966
+git stash
+#1503434970
+git checkout master 
+#1503434974
+git stash pop
+#1503435210
+cd output/
+#1503435211
+ls
+#1503435228
+diff -y Summary_master.txt Summary_no_amq.txt 
+#1503436079
+git status
+#1503436106
+git checkout marcel-no-amq-for-local-schedulers 
+#1503436158
+git status
+#1503436282
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1503436323
+git diff ../src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1503436355
+cd ..
+#1503436403
+git status 
+#1503436414
+git add src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1503436435
+git commit -m "Added a test to print schedule summary."
+#1503436448
+git status
+#1503436455
+git checkout marcel-no-amq-for-local-schedulers 
+#1503436470
+git stash
+#1503436474
+git checkout marcel-no-amq-for-local-schedulers 
+#1503436483
+git stash pop
+#1503436496
+git pull master
+#1503436522
+git merge master 
+#1503439510
+git status
+#1503439535
+git add src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1503439548
+git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java 
+#1503439554
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1503439561
+git status
+#1503439570
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1503439602
+git commit -m "Investigating why there are some positioning legs with zero duration."
+#1503439607
+git checkout master 
+#1503439615
+mvn clean compile
+#1503440461
+git checkout marcel-no-amq-for-local-schedulers 
+#1503440475
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1503440485
+git checkout -- src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1503440489
+git checkout marcel-no-amq-for-local-schedulers 
+#1503440507
+mvn clean compile
+#1503506204
+git status
+#1503537330
+git diff src/main/java/edu/kestrel/scharp/planner/entities/TargetTask.java
+#1503537343
+git add src/main/java/edu/kestrel/scharp/planner/entities/TargetTask.java
+#1503537347
+git status
+#1503537355
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1503537372
+git status
+#1503537393
+git commit -m "Made some fields in TargetTask private."
+#1503537404
+git push -u origin marcel-no-amq-for-local-schedulers 
+#1503537412
+git checkout master 
+#1503537425
+git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1503537446
+git commit -m "Print route with targets for fighter mission."
+#1503537455
+git push -u origin marcel-no-amq-for-local-schedulers 
+#1503537460
+git checkout master 
+#1503537468
+git pull
+#1503537477
+mvn clean compile
+#1503538218
+git checkout marcel-no-amq-for-local-schedulers 
+#1503538244
+git status
+#1503538264
+git checkout -- src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1503538271
+git checkout marcel-no-amq-for-local-schedulers 
+#1503538570
+cd output/
+#1503538572
+ls
+#1503538579
+rm *
+#1503538607
+rm -rf *
+#1503538609
+ls
+#1503538936
+git status
+#1503538945
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1503538963
+git add ../src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1503538964
+ls
+#1503538967
+git status
+#1503538973
+git add ../src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1503539011
+git commit -m "Removed addition of repeated targets to TargetTask after successful scheduling."
+#1503539022
+git push -u origin marcel-no-amq-for-local-schedulers 
+#1503539027
+git checkout master 
+#1503539030
+git pull
+#1503539076
+ls
+#1503539086
+diff -y Summary_master.txt Summary_no_amq.txt 
+#1503539357
+git checkout marcel-no-amq-for-local-schedulers 
+#1503539363
+mvn clean compile
+#1503540387
+git status
+#1503540403
+git add ../src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java ../src/main/java/edu/kestrel/scharp/planner/manager/TSTAirUnitScheduler.java
+#1503540432
+git commit -m "Added conditionals to test log level before log statement."
+#1503540440
+git push -u origin marcel-no-amq-for-local-schedulers 
+#1503540450
+clear
+#1503540907
+git checkout master 
+#1503540922
+mvn clean compile
+#1503540954
+cd ..
+#1503587324
+git status
+#1503587333
+git log
+#1503587361
+git diff 4a0ea114beb7f8998dfb1b1bc1321c8eef551e3f..ee03355d8011a7a03bbe77ce99d48944a59f6fcc
+#1503587441
+git branch 
+#1503587466
+git checkout marcel-fix-docker-files
+#1503587469
+git pull
+#1503587475
+mvn clean compile
+#1503587831
+git log
+#1503587848
+git checkout master 
+#1503587853
+git branch
+#1503588052
+git checkout -t origin/marcel-read-data-from-different-files 
+#1503588062
+git checkout master 
+#1503588080
+git status
+#1503588091
+git diff src/main/resources/logback.xml
+#1503588099
+git stash
+#1503588108
+git checkout -t origin/marcel-read-data-from-different-files 
+#1503588114
+git pull
+#1503588723
+mvn clean compile
+#1503623032
+cd output/
+#1503623033
+ls
+#1503623082
+diff -y SCHARP-08241852.ato SCHARP-08241853.ato 
+#1503623161
+ls
+#1503623176
+rm SCHARP-082*
+#1503623188
+y
+#1503623195
+ls
+#1503623441
+ls -l
+#1503623485
+ls -al
+#1503623508
+diff -y SCHARP-08250110.ato SCHARP-08250111.ato
+#1503623589
+ls
+#1503623594
+ls -al
+#1503623608
+diff -y SCHARP-08250112.ato SCHARP-08250110.ato
+#1503623806
+ls
+#1503623810
+ls -al
+#1503623830
+diff -y SCHARP-08250115.ato SCHARP-08250114.ato
+#1503623900
+git status
+#1503624134
+git checkout marcel-no-amq-for-local-schedulers 
+#1503624216
+git add src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java src/main/java/edu/kestrel/scharp/usmtf/convert/PlanToATOConverter.java
+#1503624227
+git status
+#1503624234
+git add ../src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java
+#1503624243
+git add ../src/main/java/edu/kestrel/scharp/usmtf/convert/PlanToATOConverter.java
+#1503624279
+git commit -m "Removed error log, fixed sorting of tasks in plan to ato converter to use only the task id."
+#1503624288
+git checkout marcel-no-amq-for-local-schedulers 
+#1503624295
+git stash 
+#1503624298
+git checkout marcel-no-amq-for-local-schedulers 
+#1503624303
+git stash pop
+#1503624441
+cd ..
+#1503624446
+mvn clean compile
+#1503624811
+cd output/
+#1503624813
+ls
+#1503624821
+rm -rf *.ato
+#1503624822
+ls
+#1503625069
+LS
+#1503625075
+ls
+#1503625080
+ls -al
+#1503625095
+diff -y SCHARP-08250136.ato SCHARP-08250137.ato
+#1503625193
+ls
+#1503625210
+diff SCHARP-08250136.ato SCHARP-08250139.ato
+#1503625814
+git status
+#1503625828
+git add ../src/main/resources/logback.xml
+#1503625846
+git commit -m "Fixed conflicts in logback file."
+#1503625854
+git checkout master 
+#1503625861
+mvn clean compile
+#1503625896
+ls
+#1503625899
+rm *.ato
+#1503625907
+rm -rf *.ato
+#1503625983
+ls
+#1503626073
+diff SCHARP-08250152.ato SCHARP-08250153.ato
+#1503626101
+ls
+#1503626113
+diff SCHARP-08250152.ato SCHARP-08250154.ato
+#1503626158
+mv SCHARP-08250152.ato master.ato
+#1503626229
+ls
+#1503626237
+rm -rf SCHARP-0825015*
+#1503626256
+ls
+#1503626259
+ls -al
+#1503626281
+diff SCHARP-08250157.ato master.ato 
+#1503626290
+diff -y SCHARP-08250157.ato master.ato 
+#1503627382
+cd ..
+#1503627382
+ld
+#1503627385
+cd ..
+#1503627386
+ld
+#1503627388
+cd ..
+#1503627391
+ls
+#1503627493
+cd spacemacs-docker/
+#1503627494
+ls
+#1503627499
+cd docker-emacs/
+#1503627500
+ls
+#1503627507
+more README.md 
+#1503627560
+open -a XQuartz
+#1503627622
+ls
+#1503627630
+more asEnvUser 
+#1503627640
+ls
+#1503627659
+more README.md 
+#1503627701
+1=="inet" {print $2}')
+#1503627715
+ip=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
+#1503627787
+xhost + $ip
+#1503627821
+docker run -ti --name emacs -e DISPLAY=$ip:0 -e UNAME="emacser" -e GNAME="emacsers" -e UID="1000" -e GID="1000" -v <path_to_your_.emacs.d>:/home/emacs/.emacs.d -v <path_to_your_workspace>:/mnt/workspacedocker run -ti --name emacs -e DISPLAY=$ip:0 -e UNAME="emacser" -e GNAME="emacsers" -e UID="1000" -e GID="1000" -v <path_to_your_.emacs.d>:/home/emacs/.emacs.d -v <path_to_your_workspace>:/mnt/workspace\docker run -ti --name emacs -e DISPLAY=$ip:0 -e UNAME="emacser" -e GNAME="emacsers" -e UID="1000" -e GID="1000" -v <path_to_your_.emacs.d>:/home/emacs/.emacs.d -v <path_to_your_workspace>:/mnt/workspace jare/emacs emacs
+#1503627900
+docker run -ti --name emacs -e DISPLAY=$ip:0 -e UNAME="emacser" -e GNAME="emacsers" -e UID="1000" -e GID="1000" -v <path_to_your_.emacs.d>:/home/emacs/.emacs.d -v <path_to_your_workspace>:/mnt/workspacedocker run -ti --name emacs -e DISPLAY=$ip:0 -e UNAME="emacser" -e GNAME="emacsers" -e UID="1000" -e GID="1000" -v <path_to_your_.emacs.d>:/home/emacs/.emacs.d -v <path_to_your_workspace>:/mnt/workspace\docker run -ti --name emacs -e DISPLAY=$ip:0 -e UNAME="emacser" -e GNAME="emacsers" -e UID="1000" -e GID="1000"  -v .:/mnt/workspace jare/emacs emacs
+#1503627926
+docker run -ti --name emacs -e DISPLAY=$ip:0 -e UNAME="emacser" -e GNAME="emacsers" -e UID="1000" -e GID="1000" -v <path_to_your_.emacs.d>:/home/emacs/.emacs.d -v <path_to_your_workspace>:/mnt/workspacedocker run -ti --name emacs -e DISPLAY=$ip:0 -e UNAME="emacser" -e GNAME="emacsers" -e UID="1000" -e GID="1000" -v <path_to_your_.emacs.d>:/home/emacs/.emacs.d -v <path_to_your_workspace>:/mnt/workspacedocker run -ti --name emacs -e DISPLAY=$ip:0 -e UNAME="emacser" -e GNAME="emacsers" -e UID="1000" -e GID="1000" -v <path_to_your_.emacs.d>:/home/emacs/.emacs.d -v <path_to_your_workspace>:/mnt/workspacedocker run -ti --name emacs -e DISPLAY=$ip:0 -e UNAME="emacser" -e GNAME="emacsers" -e UID="1000" -e GID="1000" -v <path_to_your_.emacs.d>:/home/emacs/.emacs.d -v <path_to_your_workspace>:/mnt/workspace
+#1503627949
+docker run -ti --name emacs -e DISPLAY=$ip:0 -e UNAME="emacser" -e GNAME="emacsers" -e UID="1000" -e GID="1000" -v <path_to_your_.emacs.d>:/home/emacs/.emacs.d -v <path_to_your_workspace>:/mnt/workspacejare/emacs emacs
+#1503627997
+docker run -ti --name emacs -e DISPLAY=$ip:0 -e UNAME="emacser" -e GNAME="emacsers" -e UID="1000" -e GID="1000" -v /Users/marcelbecker/Dropbox/.emacs.d>:/home/emacs/.emacs.d -v .:/mnt/workspacejare/emacs emacs
+#1503628012
+docker run -ti --name emacs -e DISPLAY=$ip:0 -e UNAME="emacser" -e GNAME="emacsers" -e UID="1000" -e GID="1000" -v /Users/marcelbecker/Dropbox/.emacs.d:/home/emacs/.emacs.d -v .:/mnt/workspacejare/emacs emacs
+#1503628025
+ls
+#1503628037
+more README.md 
+#1503628118
+docker build -t emacs .
+#1503628151
+more Dockerfile
+#1503628224
+docker images
+#1503628279
+ls
+#1503628308
+exit
+#1503628310
+exit
+#1503679591
+cd
+#1503679614
+cd src/rspace-eclipse/scharp/
+#1503679616
+ls
+#1503679620
+git status
+#1503679632
+git push -u origin marcel-no-amq-for-local-schedulers 
+#1503679669
+git checkout master 
+#1503679690
+git checkout -- src/main/resources/logback.xml
+#1503679883
+git checkout master 
+#1503679894
+git diff 
+#1503679903
+git log
+#1503679923
+git diff 4a0ea114beb7f8998dfb1b1bc1321c8eef551e3f..ee03355d8011a7a03bbe77ce99d48944a59f6fcc
+#1503679944
+git push -u origin master 
+#1503679956
+git checkout marcel-read-data-from-different-files 
+#1503679972
+git push -u origin marcel-read-data-from-different-files 
+#1503938200
+git pull
+#1503938207
+git checkout master 
+#1503938449
+mvn clean compile
+#1504037140
+git checkout marcel-no-amq-plus-cache-distances 
+#1504037153
+git diff src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1504037229
+git status
+#1504037233
+git checkout marcel-no-amq-plus-cache-distances 
+#1504037237
+git pull
+#1504037243
+mvn clean compile
+#1504037275
+clear
+#1504037657
+git status
+#1504051321
+git diff src/main/java/edu/kestrel/scharp/planner/entities/TankerActivity.java
+#1504051345
+git status
+#1504051353
+git add src/main/java/edu/kestrel/scharp/planner/propagation/ConstraintNetwork.java
+#1504051364
+git add src/main/java/edu/kestrel/scharp/planner/entities/TankerActivity.java
+#1504051409
+git commit -m "Small fixes to propagation and to the duration of the tanker orbit after an air refueling reservation is completed."
+#1504051414
+git status
+#1504051420
+git push
+#1504126722
+git pull
+#1504126748
+git checkout marcel-read-data-from-different-files 
+#1504126755
+git pull
+#1504126760
+git checkout master 
+#1504126764
+git pull
+#1504126834
+mvn clean compile
+#1504216256
+git status
+#1504216264
+git log
+#1504216281
+cd output/
+#1504216282
+ks
+#1504216283
+ls
+#1504216287
+rm -rf *
+#1504216422
+ls
+#1504216495
+diff SCHARP-08312153.ato SCHARP-08312154.ato
+#1504216606
+git pull
+#1504216668
+ls
+#1504216672
+ls -al
+#1504216716
+diff SCHARP-08312154.ato SCHARP-08312157.ato
+#1504216724
+diff -y SCHARP-08312154.ato SCHARP-08312157.ato
+#1504216888
+ls
+#1504216941
+LS
+#1504216945
+ls -al
+#1504216962
+diff -y SCHARP-08312157.ato SCHARP-08312202.ato
+#1504217139
+ls
+#1504217150
+diff Summary_BeforeCleanPlan.txt Summary_AfterCleanPlan.txt 
+#1504217167
+git checkout marcel-read-data-from-different-files 
+#1504217171
+git pull
+#1504217177
+mvn clean compile
+#1504217182
+cd ..
+#1504217186
+cd output/
+#1504217190
+rm -rf *
+#1504217192
+cd ,,
+#1504217196
+cd ..
+#1504217196
+ls
+#1504217204
+mvn clean compile
+#1504217431
+cd output/
+#1504217432
+ls
+#1504217489
+pwd
+#1504217491
+ls
+#1504217493
+cd ..
+#1504217494
+ls
+#1504217552
+cd output/
+#1504217553
+ls
+#1504217557
+df
+#1504217584
+ls
+#1504217606
+diff Summary_BeforeCleanPlan.txt Summary_AfterCleanPlan.txt 
+#1504637432
+git checkout master 
+#1504637439
+git pull --all --prune
+#1504637448
+git branch 
+#1504637462
+git branch -d marcel-check-ki-refuel 
+#1504637468
+git branch -d marcel-synch-multi-mission 
+#1504637476
+git branch -d marcel-read-data-from-different-files 
+#1504637500
+git branch -d marcel-ki-with-selected-bid 
+#1504637517
+git branch 
+#1504637526
+git branch -d marcel-synch-multi-mission 
+#1504637537
+git pull --all --prune
+#1504637543
+git branch -d marcel-synch-multi-mission 
+#1504637549
+git branch -D marcel-synch-multi-mission 
+#1504637553
+git branch 
+#1504652891
+git pull --all --prune
+#1504652903
+git checkout marcel-no-amq-plus-cache-distances 
+#1504652906
+git pull
+#1504652919
+mvn clean compile
+#1504652924
+cd ..
+#1504652926
+mvn clean compile
+#1505091700
+git pull --all --prune
+#1505095675
+git pull
+#1505095686
+git checkout marcel-no-amq-plus-drs12 
+#1505095688
+git pull
+#1505095694
+git checkout master 
+#1505095697
+git pull
+#1505143290
+git pull --all
+#1505143308
+git pull --all --prune
+#1505144409
+git checkout marcel-no-amq-plus-drs12 
+#1505144411
+git pull
+#1505144686
+exit
+#1505144974
+cd src/rspace-eclipse/scharp/
+#1505144979
+git status
+#1505144983
+git pull
+#1505192875
+mvn clean compile
+#1505193143
+git checkout master 
+#1505193146
+git pull
+#1505259799
+mvn clean compile
+#1505316381
+git checkout marcel-no-amq-plus-drs12 
+#1505316395
+git diff src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1505316438
+git checkout -b marcel-test-set-entry-exit-npe
+#1505316443
+git add src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1505316464
+git commit -m "Added test for settting entry exit pairs."
+#1505316477
+git checkout marcel-no-amq-plus-drs12 
+#1505316504
+mvn clean compile
+#1505332294
+git checkout master 
+#1505332309
+git status
+#1505332317
+git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningOptions.java
+#1505332335
+git commit -m "Set the planning options to generate a good plan."
+#1505332356
+git checkout marcel-test-set-entry-exit-npe 
+#1505332365
+mvn clean compile
+#1505361620
+git status
+#1505361635
+git checkout -- src/main/java/edu/kestrel/scharp/planner/manager/PlanningOptions.java src/main/resources/logback.xml
+#1505361644
+git checkout marcel-no-amq-plus-drs12 
+#1505361649
+git pul
+#1505362207
+cd 
+#1505362210
+cd src/
+#1505362211
+ls
+#1505362225
+cd rspacesrc/
+#1505362226
+ls
+#1505362688
+cd ..
+#1505362689
+ls
+#1505362702
+git status
+#1505362719
+cd scharp
+#1505362720
+ks
+#1505362721
+ls
+#1505362728
+cd nextcentury-scharp/
+#1505362730
+ls
+#1505362732
+git pull
+#1505362874
+git submodules init
+#1505362878
+git submodule init
+#1505362886
+git pull
+#1505362897
+more README.md 
+#1505362913
+git submodule update
+#1505362996
+cd 
+#1505363005
+cd src/rspace-eclipse/scharp/
+#1505363025
+cd Docker/jboss-fuse-docker/
+#1505363026
+./docker-run.sh 
+#1505363056
+cd
+#1505363085
+cd src/rspace-eclipse/scharp/
+#1505363087
+ls
+#1505363089
+git status
+#1505363102
+git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningOptions.java
+#1505363126
+git commit -m "Set the default value to send ato to xmpp to false."
+#1505363140
+git push -u origin marcel-no-amq-plus-drs12 
+#1506109673
+git pull
+#1506109707
+mvn clean compile
+#1506109987
+git pull
+#1506109996
+mvn clean compile
+#1506354062
+git status
+#1506354073
+sudo xcodebuild -license
+#1506354096
+git status
+#1506354106
+git add notes/flames.flf
+#1506354116
+git diff src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java
+#1506354128
+git diff src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1506354138
+git pull
+#1506354153
+git status
+#1506354157
+git pull
+#1506354244
+git checkout -- src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1506354250
+git checkout -- src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java
+#1506354253
+git pull
+#1506354259
+git status
+#1506354265
+git add notes/flames.flf
+#1506354280
+git commit -m "Added flames ptt license file."
+#1506354291
+git push -u origin marcel-no-amq-plus-drs12 
+#1506446795
+git pull
+#1506448988
+mvn clean compile
+#1506452649
+cd output/
+#1506452650
+ls
+#1506452655
+rm -f *
+#1506452695
+ls
+#1506452699
+ls -al
+#1506452708
+ls
+#1506452712
+ls -al
+#1506452714
+ls
+#1506452722
+ls -al
+#1506452739
+ls
+#1506452757
+cd ..
+#1506452758
+ls
+#1506452786
+cd output/
+#1506452786
+ls
+#1506452840
+rm *
+#1506452926
+ls
+#1506452935
+more SCHARP-ATO.json.txt 
+#1505362947
+./run-all.sh 
+#1506538128
+cd /Library/Frameworks/OpenVPN.framework/Versions/Current/bin/
+#1506538129
+ls
+#1506538176
+sudo ./capicli -k basic_client -v false SetPreference
+#1507054408
+git pull
+#1507054415
+git pull --all
+#1507054423
+git pull --all --prune
+#1507054448
+git diff src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1507054678
+git add src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1507054953
+git commit -m "Added option to print json string to file when testing computePlan."
+#1507054958
+git pull --all --prune
+#1507055189
+mvn clean compile
+#1507305663
+git pull
+#1507305679
+git status
+#1507305698
+git stash list
+#1507305710
+git log
+#1507305787
+git diff marcel-no-amq-plus-drs12..origin/marcel-no-amq-plus-drs12 
+#1507306188
+git status
+#1507306195
+git push 
+#1507306887
+cd
+#1507306889
+cd src/
+#1507306890
+ls
+#1507306897
+cd rspacesrc/
+#1507306898
+ls
+#1507306902
+cd ..
+#1507308293
+ls
+#1507308302
+cd scharp
+#1507308302
+ls
+#1507308307
+cd ..
+#1507308308
+ls
+#1507308314
+cd rspace
+#1507308315
+ls
+#1507308317
+cd ..
+#1507308318
+ls
+#1507308335
+cd scharp
+#1507308336
+ls
+#1507308349
+cd nextcentury-scharp/
+#1507308350
+ls
+#1507308353
+git pull
+#1507308370
+pwd
+#1507308388
+./run-all.sh 
+#1507308413
+npm i -g npm
+#1507308455
+brew install yarn
+#1507308674
+brew upgrade yarn
+#1507308756
+docker login docker-rspace.di2e.net
+#1507308702
+brew upgrade 
+#1507308866
+git submodule init
+#1507308871
+git submodule update
+#1507308878
+yarn install
+#1507308919
+yarn build
+#1507309035
+ls
+#1507309060
+cd Docker/
+#1507309061
+ls
+#1507309071
+more marcel-build-and-run.sh 
+#1507309170
+./buildDocker.sh master
+#1507309468
+docker tag scharp-ui:latest docker-rspace.di2e.net/ncc-kestrel-scharp-ui:latest
+#1507309490
+docker push docker-rspace.di2e.net/ncc-kestrel-scharp-ui:latest
+#1507312102
+curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+#1507312110
+cd ..
+#1507312128
+curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+#1507312149
+cd
+#1507312169
+cd src/jboss-fuse/
+#1507312170
+ls
+#1507312187
+cd ..
+#1507312188
+ls
+#1507312215
+cd jboss-fuse/
+#1507312215
+ls
+#1507312231
+cd ..
+#1507312231
+ls
+#1507312296
+cd jboss-workspace/
+#1507312297
+ls
+#1507312307
+cd ..
+#1507312308
+ls
+#1507312344
+cd rspace
+#1507312345
+ls
+#1507312350
+cd ..
+#1507312354
+cd rspacesrc/
+#1507312354
+ls
+#1507312358
+cd rspace-vagrant/
+#1507312359
+ls
+#1507312363
+cd ..
+#1507312370
+ls
+#1507312374
+cd ..
+#1507312375
+ls
+#1507312398
+cd scharp
+#1507312399
+ls
+#1507312404
+cd ..
+#1507312405
+ls
+#1507312429
+cd scharp-docker-ui/
+#1507312430
+ls
+#1507312437
+rm -rf *
+#1507312439
+ls
+#1507312441
+cd ..
+#1507312447
+rm scharp-docker-ui/
+#1507312453
+rm -r scharp-docker-ui/
+#1507312460
+ls
+#1507312473
+cd rspace-docker-images/
+#1507312474
+ls
+#1507312480
+cd ..
+#1507312481
+ls
+#1507312522
+cd rspacesrc/
+#1507312523
+ls
+#1507312527
+cd rspace-vagrant/
+#1507312528
+ls
+#1507312531
+git status
+#1507312542
+git diff recipes/default.rb
+#1507312560
+git remote -v
+#1507312569
+ls
+#1507312571
+cd ..
+#1507312572
+ls
+#1507312589
+rm -fr rspace-vagrant/
+#1507312591
+cd ..
+#1507312596
+rm -rf rspacesrc/
+#1507312598
+ld
+#1507312600
+ls
+#1507312612
+cd scharp/
+#1507312613
+ls
+#1507312620
+cd exerciseData
+#1507312621
+ls
+#1507312626
+cd ..
+#1507312627
+ls
+#1507312630
+cd mongo/
+#1507312631
+ls
+#1507312634
+cd ..
+#1507312637
+rm -rf mongo/
+#1507312648
+rm -rf neon/
+#1507312660
+cd ..
+#1507312663
+ls
+#1507312722
+cd rspace-eclipse
+#1507312723
+ls
+#1507312730
+cd vagrant-jboss/
+#1507312732
+ls
+#1507312735
+git status
+#1507312737
+git pull
+#1507312750
+vagrant up node-1
+#1507313137
+vagrant halt node-1
+#1507313155
+git pull
+#1507313168
+vagrant destroy 
+#1507313202
+vagrant up node-=
+#1507314780
+curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+#1507314792
+git status
+#1507314794
+git pull
+#1507315052
+exit
+#1507315661
+pwd
+#1507315726
+vagrant up node-3 --provision
+#1507315742
+vagrant up node-4 --provision
+#1507316063
+vagrant ssh node-3
+#1507316112
+vagrant reload node-3 --provision
+#1507316124
+vagrant ssh node-4
+#1507316237
+ls
+#1507316212
+vagrant reload node-4 --provision
+#1507316278
+vagrant destroy  node-3 
+#1507316320
+vagrant destroy  node-4
+#1507315690
+vagrant up node-1 --provision
+#1507317329
+vagrant halt
+#1507315713
+vagrant up node-2 --provision
+#1507317347
+vagrant halt node-1
+#1507316300
+vagrant up node-3 --provision
+#1507317358
+vagrant halt node-2
+#1507316347
+vagrant up node-4 --provision
+#1507317373
+vagrant halt node-3
+#1507317384
+vagrant halt node-4
+#1507317401
+vagrant global-status
+#1507317434
+cd  /Users/marcelbecker/src/rspacesrc/rspace-vagrant
+#1507317452
+vagrant destroy  /Users/marcelbecker/src/rspacesrc/rspace-vagrant --f
+#1507317463
+cd ..
+#1507317504
+vagrant global-status --prune
+#1507317542
+vagrant global-status 
+#1507323028
+git pull
+#1507323720
+vagrant up node-1
+#1507570955
+vagrant halt
+#1507323041
+yarn start
+#1507589837
+exit
+#1507589838
+exit
+#1507589839
+exti
+#1507589842
+exit
+#1507589844
+exit
+#1507589857
+his | grep DoD
+#1507589902
+ssh -p 422 -L 3390:wts:3389 DoD_Admin@71.179.165.116
+#1507589924
+ssh  -L 3390:wts:3389 DoD_Admin@71.179.165.116
+#1507591206
+scp -r -P22 ~/src/rspace-eclipse/scharp/notes/flames.flf  DoD_Admin@10.10.200.13:/home/DoD_Admin/becker
+#1507591610
+cd
+#1507591626
+cd src/rspace-eclipse/scharp/src/main/
+#1507591627
+ls
+#1507591635
+cd resources/
+#1507591635
+ls
+#1507591640
+cd data/TE4
+#1507591641
+ls
+#1507591673
+scp -r -P22 MASTERACO_FOUO_V1.2.aco  DoD_Admin@10.10.200.13:/home/DoD_Admin/becker
+#1507591705
+ls *.ptt
+#1507591729
+scp -r -P22 RSPACE_TE4_V2.2_PTT.ptt  DoD_Admin@10.10.200.13:/home/DoD_Admin/becker
+#1507591949
+git pull
+#1507591961
+cd ..
+#1507591964
+cd ../..
+#1507591969
+ls
+#1507591971
+cd output/
+#1507591972
+ls
+#1507592245
+scp -r -P22 SCHARP-10092336.ato  DoD_Admin@10.10.200.13:/home/DoD_Admin/becker
+#1507595926
+git status
+#1507595935
+git diff ../src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1507654188
+git pull
+#1507654241
+mvn clean compile
+#1507654248
+cd ..
+#1507654250
+mvn clean compile
+#1507654279
+git pull
+#1507655417
+cd output/
+#1507655418
+ls
+#1507655450
+scp -r -P22 SCHARP-10101654.ato  DoD_Admin@10.10.200.13:/home/DoD_Admin/becker
+#1507756280
+git puoll
+#1507756283
+git pull
+#1507756541
+ls
+#1507756575
+scp -r -P22 SCHARP-10112113.ato  DoD_Admin@10.10.200.13:/home/DoD_Admin/becker
+#1508169576
+git pull
+#1508169592
+mvn clean compile
+#1508169599
+cd ..
+#1508169600
+mvn clean compile
+#1508430158
+git pull
+#1508430169
+git diff src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1508430181
+git checkout -- src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1508430183
+git pull
+#1508430190
+mvn clean compile
+#1508430531
+cd output/
+#1508430536
+his | grep scp
+#1508430570
+ls
+#1508430608
+scp -r -P22 SCHARP-10_19_16_25_42.ato  DoD_Admin@10.10.200.13:/home/DoD_Admin/becker
+#1508433074
+ls
+#1508433212
+scp -r -P22 SCHARP-10_19_17_12_45.ato  DoD_Admin@10.10.200.13:/home/DoD_Admin/becker
+#1508434178
+ls
+#1508434197
+scp -r -P22 SCHARP-10_19_17_27_20.ato  DoD_Admin@10.10.200.13:/home/DoD_Admin/becker
+#1508435836
+ls
+#1508435850
+scp -r -P22 SCHARP-10_19_17_56_55.ato  DoD_Admin@10.10.200.13:/home/DoD_Admin/becker
+#1508438638
+ls
+#1508438642
+ls -al
+#1508438661
+scp -r -P22 SCHARP-10_19_18_42_35.ato  DoD_Admin@10.10.200.13:/home/DoD_Admin/becker
+#1508443712
+git status
+#1508443724
+git add ../src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java ../src/main/java/edu/kestrel/scharp/planner/manager/PlanningOptions.java
+#1508443805
+git commit -m "Added refueling to CAS missions, changed fuel consumption for orbits from high to low altitude, removed tanker requests that were not providig refuel."
+#1508443809
+git push
+#1508452478
+git pull
+#1508452542
+ls
+#1508452621
+scp -r -P22 SCHARP-10_19_22_35_29.ato  DoD_Admin@10.10.200.13:/home/DoD_Admin/becker
+#1508453677
+ls
+#1508453697
+scp -r -P22 SCHARP-10_19_22_54_15.ato  DoD_Admin@10.10.200.13:/home/DoD_Admin/becker
+#1508454554
+git status
+#1508454562
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1508454656
+git status
+#1508454662
+git add ../src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1508454685
+git commit -m "Changed fuel consumption to Low altitude."
+#1508454687
+git push
+#1508460201
+git pull
+#1508510590
+git status
+#1508510602
+git diff ../src/main/java/edu/kestrel/scharp/activemq/AmqJsonClient.java
+#1508510616
+git status
+#1508510627
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1508510655
+git add ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1508510658
+git status
+#1508510667
+git add ../src/main/java/edu/kestrel/scharp/activemq/AmqJsonClient.java 
+#1508510673
+git diff ../src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1508510684
+git add ../src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1508510695
+git status
+#1508510740
+git commit -m "Added guards around log statements, commented out unused methods."
+#1508510743
+git push
+#1508861703
+cd
+#1508861707
+cd src/rspace
+#1508861708
+ls
+#1508861721
+cd TE-4-Documents/
+#1508861722
+ls
+#1508861738
+cd ../TE-5-Documents/
+#1508861739
+ls
+#1508861759
+more GetAllMissions_RSPACE_TE4_MASTER_ABP1.xml 
+#1508861883
+ls
+#1508861909
+emacs &
+#1508862111
+ls
+#1508862371
+cd ../
+#1508862373
+ls
+#1508862390
+cd ..
+#1508862390
+ls
+#1508862399
+cd rspace
+#1508862400
+ls
+#1508862411
+cd rspace/
+#1508862412
+ls
+#1508862425
+cd ..
+#1508862425
+ls
+#1508862432
+cd AOCOI-Soap-Examples-Mitre/
+#1508862433
+ls
+#1508862437
+cd AOCOI_143_1521_SOAP_Projects
+#1508862438
+ls
+#1508862448
+more 1521-AOCOI-SOAP-soapui-project.xml 
+#1508862456
+ls
+#1508862458
+cd ..
+#1508862458
+ls
+#1508862460
+cd ..
+#1508862461
+ls
+#1508862475
+cd atodatamodel-java-stash/
+#1508862476
+ls
+#1508862483
+cd ..
+#1508862483
+ls
+#1508862592
+cd ..
+#1508862593
+ls
+#1508862660
+cd rspace
+#1508862660
+ls
+#1508862668
+cd rspace/
+#1508862669
+ls
+#1508862671
+cd ..
+#1508862676
+cd rspace/
+#1508862676
+ls
+#1508862678
+cd s
+#1508862681
+cd src/
+#1508862681
+ls
+#1508862691
+cd ..
+#1508862692
+ls
+#1508862694
+cd
+#1508862698
+cd -
+#1508862699
+ls
+#1508862703
+cd ..
+#1508862705
+ks
+#1508862707
+ls
+#1508862729
+cd ..
+#1508862730
+ls
+#1508862749
+cd rspace-eclipse
+#1508862750
+ls
+#1508862773
+cd vagrant-jboss/
+#1508862774
+ls
+#1508862778
+git status
+#1508862781
+git pull
+#1508862784
+cd ..
+#1508862785
+ls
+#1508862793
+cd ..
+#1508862794
+ls
+#1508862840
+cd planx
+#1508862841
+ls
+#1508862845
+cd ..
+#1508862846
+ls
+#1508862852
+cd planx-avro-mission-receipt/
+#1508862853
+ls
+#1508862856
+cd ..
+#1508862862
+rm -rf planx-avro-mission-receipt/
+#1508862873
+rm -rf planx-luna-seed-mix-test/
+#1508862884
+rm -rf planx-mono-test/
+#1508862900
+rm -rf pxbuild-test/
+#1508862903
+ls
+#1508862917
+cd plan-construction/
+#1508862918
+ls
+#1508862935
+cd ..
+#1508862936
+ls
+#1508862943
+cd rspace-docker-images/
+#1508862944
+ls
+#1508862959
+rm -rf *
+#1508862960
+ls
+#1508862961
+cd ..
+#1508862962
+ls
+#1508862968
+cd scharp/
+#1508862969
+ls
+#1508862977
+cd nextcentury-scharp/
+#1508862982
+git pull --all
+#1508862987
+git pull --all --prune
+#1508862993
+cd ..
+#1508862993
+ls
+#1508862999
+cd ..
+#1508863001
+ls
+#1508863015
+cd CGC/
+#1508863015
+ls
+#1508863023
+more notes.txt 
+#1508863037
+cd ..
+#1508863042
+rm -rf CGC/
+#1508863043
+ls
+#1508863055
+rm -rf LuaSource/
+#1508863066
+rm -rf Specware/
+#1508863067
+ls
+#1508863091
+cd planning/
+#1508863092
+ls
+#1508863095
+cd
+#1508863097
+cd -
+#1508863099
+cd ..
+#1508863099
+ls
+#1508863168
+cd rspace-eclipse
+#1508863168
+ls
+#1508863234
+git clone ssh://git@bitbucket.di2e.net:7999/rspace/dmf.git ng-rspace-data-models
+#1508863245
+cd ng-rspace-data-models/
+#1508863245
+ls
+#1508863249
+cd InformationExchangeDefinitions/
+#1508863250
+ls
+#1508863251
+cd schemas/
+#1508863252
+ls
+#1508863259
+cd AOCOI/
+#1508863260
+ls
+#1508863270
+cd AOCOI-2017-FEB/
+#1508863271
+ls
+#1508863274
+cd schema/
+#1508863275
+ls
+#1508863301
+cd ..
+#1508863302
+ls
+#1508877119
+cd 
+#1508877123
+ls
+#1508877127
+cd src/
+#1508877128
+ls
+#1508877136
+cd coordinators-eclipse-workspace/
+#1508877137
+ls
+#1508877143
+cd aocoi
+#1508877144
+ls
+#1508877149
+more pom.xml
+#1508877164
+mvn compile
+#1508877245
+ls
+#1508877251
+cd src/
+#1508877252
+ls
+#1508877254
+cd main/
+#1508877255
+ls
+#1508877257
+cd resources/
+#1508877258
+ls
+#1508877263
+cd AOCOI2/
+#1508877264
+ls
+#1508877279
+cd ..
+#1508877280
+ls
+#1508877282
+cd schemas/
+#1508877283
+ls
+#1508877330
+cd ..
+#1508877331
+ls
+#1508877335
+cd xsd/
+#1508877336
+ls
+#1508877353
+more Reference.xsd 
+#1508877383
+ls
+#1508877385
+cd ..
+#1508877386
+ls
+#1508877389
+cd AOCOI2/
+#1508877390
+ls
+#1508877395
+cd ..
+#1508877396
+ls
+#1508884030
+cd
+#1508884039
+cd src/rspace-eclipse/aocoi/
+#1508884045
+mvn generate-sources
+#1508884185
+mvn jaxb2:xjc
+#1508884248
+rm /Users/marcelbecker/src/rspace-eclipse/aocoi/src/main/resources/schema/AOCOI_2017_FEB.xpr
+#1508884252
+mvn jaxb2:xjc
+#1508884322
+find . -name "*.wsdl"
+#1508884390
+find . -name "*.wsdl" -exec rm -f {} \;
+#1508884394
+mvn jaxb2:xjc
+#1508886471
+exit
+#1508886473
+exit
+#1508886474
+exit
+#1508886475
+exit
+#1508886477
+exit
+#1508948584
+which python
+#1508948604
+emacs .bashrc
+#1508948654
+source ~/.bashrc
+#1508948681
+sudo pip install -U pip
+#1508949334
+brew update
+#1508949497
+brew upgrade
+#1508949543
+sudo pip install -U pip
+#1508949591
+rm -rf ~/Library/Caches/pip
+#1508949594
+sudo pip install -U pip
+#1508949617
+sudo pip install -U virtualenv
+#1508949630
+sudo pip install -U virtualenvwrapper
+#1508949707
+source ~/.bashrc
+#1508949723
+which virtualenvwrapper
+#1508949769
+virtualenvwrapper
+#1508949796
+sudo pip install -U virtualenvwrapper
+#1508949912
+source ~/.bashrc
+#1508949984
+sudo -H pip install -U virtualenvwrapper
+#1508950039
+source ~/.bashrc
+#1508950068
+brew install python
+#1508950082
+brew update
+#1508950094
+which python
+#1508950113
+/usr/local/bin/python --version
+#1508950143
+cd src/rspace-eclipse/aocoi/
+#1508950152
+mvn jaxb2:xjc
+#1508950717
+clear
+#1508950720
+mvn jaxb2:xjc
+#1508950802
+cd src/rspace-eclipse/aocoi/
+#1508950804
+mvn jaxb2:xjc
+#1508972719
+;9Acd 
+#1508972722
+cd ..
+#1508972725
+cd AOCOIJAXB/
+#1508972726
+ls
+#1508972731
+mvn jaxb2:xjc
+#1508973111
+pwd
+#1508973114
+mvn jaxb2:xjc
+#1508974170
+top
+#1508974802
+mvn jaxb2:xjc
+#1509566691
+cd
+#1509566702
+cd src/rspace-eclipse/scharp/
+#1509566706
+git status
+#1509566709
+git pull
+#1509566720
+git checkout master 
+#1509566732
+git checkout -- src/main/resources/logback.xml
+#1509566734
+git checkout master 
+#1509566737
+git pull
+#1509566760
+mvn clean compile
+#1509566989
+cd output/
+#1509566990
+ls
+#1509567200
+ls -l
+#1509568340
+scp -r -P22 SCHARP-11012010.ato  DoD_Admin@10.10.200.13:/home/DoD_Admin/becker
+#1509568825
+scp -r -P22 DoD_Admin@10.10.200.13:/home/DoD_Admin/becker/ptt.txt 
+#1509568870
+scp -r -P22 DoD_Admin@10.10.200.13:/home/DoD_Admin/becker/ptt.txt ./ptt.txt
+#1509568883
+ls
+#1509568887
+more ptt.txt 
+#1509569111
+ls
+#1509569126
+mv ptt.txt ptt-load-analysis.txt
+#1509569438
+scp -r -P22 DoD_Admin@10.10.200.13:/home/DoD_Admin/becker/ptt.xml ./ptt-results.xmp
+#1509569575
+scp -r -P22 DoD_Admin@10.10.200.13:/home/DoD_Admin/becker/ptt.txt ./ptt-summary.txt
+#1509569591
+ls
+#1509569602
+mv ptt-results.xmp ptt-results.xml
+#1509569887
+cd .. 
+#1509569908
+cd src/main/resources/data/TE4/
+#1509569914
+ls *.ptt
+#1510160537
+cd
+#1510160558
+ln -s Dropbox/zprezto .zprezto
+#1510160575
+cp Dropbox/ZSH/zshrc.template .zshrc
+#1510160595
+cp Dropbox/ZSH/zpreztorc.template .zpreztorc
+#1510160596
+zsh
+#1510161067
+configdot status
+#1510161076
+git add .bashrc
+#1510161097
+configdot add .bashrc
+#1510161108
+configdot add .zshrc .zprezto
+#1510161134
+configdot commit -m "Update bashrc, added zshrc."
+#1510161163
+configdot pull
+#1510161182
+configdot status

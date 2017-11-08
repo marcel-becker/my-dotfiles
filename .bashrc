@@ -380,7 +380,7 @@ alias git-update-all='find . -maxdepth 1 -type d -print -exec git --git-dir={}/.
 # For Python Virtual Envs
 # $ pip install virtualenvwrapper
 # $ export WORKON_HOME=~/Envs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 source /usr/local/bin/virtualenvwrapper.sh
 # $ mkvirtualenv venv
