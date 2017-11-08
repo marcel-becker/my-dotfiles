@@ -466,6 +466,27 @@ function iterm_tab_color {
             ;;
     esac
 }
+
+
+
+
+if [ -f ~/Dropbox/Bash/iterm2_rainbow_tabs/iterm2_rainbow_tabs.sh ];
+then . ~/Dropbox/Bash/iterm2_rainbow_tabs/iterm2_rainbow_tabs.sh
+fi
+
+
+# Change iterm2 profile. Usage it2prof ProfileName (case sensitive)
+function iterm2profile() {
+    echo -e "\033]50;SetProfile=$1\a"
+}
+
+
+alias profiledefault='iterm2profile Default'
+alias profilessh1='iterm2profile Planx-In-A-Box'
+alias profilessh2='iterm2profile Rspace-Distributed'
+alias profilessh3='iterm2profile RemoteOpenstack'
+
+
 ## Use this to save the dot files in a github repo.
 # mkdir ~/.dotfiles
 #git init --bare $HOME/.dotfiles
