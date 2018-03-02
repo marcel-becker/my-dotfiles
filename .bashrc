@@ -126,7 +126,7 @@ fi
 
 export CLICOLOR=1
 # use yellow for directories
-export LSCOLORS=exfxcxdxbxegedabagacad
+export LSCOLORS=Bxfxcxdxbxegedabagacad
 
 
 # some more ls aliases
