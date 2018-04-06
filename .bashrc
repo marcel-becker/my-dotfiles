@@ -162,9 +162,9 @@ export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=$PATH:/Library/TeX/texbin # Add latex and tex executables
 export M3_HOME=/usr/local/Cellar/maven/3.3.9
 export PATH=${M3_HOME}/bin:${PATH}
-export PATH=/home/becker/src/play-2.2.0/:${PATH}
+export PATH=/home/becker/src/play-2.2.0:${PATH}
 export PATH=/opt/chef/embedded/bin:${PATH}
-
+export PATH=/usr/local/opt/texinfo/bin:${PATH}
 
 
 alias his=history
@@ -522,3 +522,8 @@ alias configdot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # fi;
 # configdot checkout
 # configdor config status.showUntrackedFiles no
+
+alias amazon1='ssh ubuntu@54.219.167.48 -i amazon_aws1.pem'
+alias amazon2='ssh ubuntu@54.183.243.113 -i amazon_aws1.pem'
+alias amazon3='ssh ubuntu@54.193.71.18 -i amazon_aws1.pem'
+alias amazon3='ssh ubuntu@54.183.27.174 -i amazon_aws1.pem'

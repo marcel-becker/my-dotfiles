@@ -84,10 +84,12 @@ values."
      doremi
      doremi-frm
      doremi-cmd
-     hlinum 
+     hlinum
      menu-bar+
      switch-window
      window-number
+     window-numbering
+     winum
      )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -352,17 +354,17 @@ you should place your code here."
   (global-hl-line-mode 1) ; Disable current line highlight
   (global-linum-mode 1)
   (hlinum-activate)
-  ;(window-number-mode )
-  ;(window-numbering-mode )
-  ;(window-number-meta-mode )
+ ;; (window-number-mode)
+ ;; (window-numbering-mode )
+  ;;(window-number-meta-mode)
   ;; Use the clipboard, pretty please, so that copy/paste "works"
-  ;(setq x-select-enable-clipboard t)
+  (setq x-select-enable-clipboard t)
   ;; Navigate windows with M-<arrows>
 
-  ;(setq windmove-wrap-around t)
+  ;;(setq windmove-wrap-around t)
 
   ;; winner-mode provides C-<left> to get back to previous window layout
-  ;(winner-mode 1)
+  ;;(winner-mode 1)
 
 
   (setq linum-format " %d ")
@@ -409,8 +411,6 @@ you should place your code here."
      (output-dvi "Yap")
      (output-pdf "SumatraPDF")
      (output-html "start"))))
- '(ansi-color-names-vector
-   ["#0a0814" "#f2241f" "#67b11d" "#b1951d" "#4f97d7" "#a31db1" "#28def0" "#b2b2b2"])
  '(anzu-deactivate-region t)
  '(anzu-mode-lighter "")
  '(anzu-replace-threshold 50)
@@ -803,21 +803,22 @@ you should place your code here."
                             (setq selected-item
                                   (quote not)))))))
  '(package-selected-packages
-   (quote
-    (hlinum doremi-frm faces+ doremi-cmd doremi ac-helm ac-ispell ac-python ace-flyspell ace-jump-helm-line ace-link ace-window adaptive-wrap afternoon-theme aggressive-indent alect-themes alert ample-regexps ample-theme ample-zen-theme anaconda-mode anti-zenburn-theme anything anzu apropospriate-theme async auctex auto-compile auto-complete auto-dictionary auto-highlight-symbol auto-yasnippet autopair autothemer avy badwolf-theme bind-key bind-map birds-of-paradise-plus-theme browse-kill-ring+ bubbleberry-theme buffer-move busybee-theme cherry-blossom-theme cl-lib clean-aindent-mode clues-theme coffee-mode color-theme color-theme-sanityinc-solarized color-theme-sanityinc-tomorrow color-theme-tango column-enforce-mode company company-anaconda company-jedi company-quickhelp company-statistics company-tern csv-mode ctable cyberpunk-theme cython-mode dakrone-theme darkburn-theme darkmine-theme darkokai-theme darktooth-theme dash dash-functional deferred define-word diff-hl diminish dired+ dired-atool dired-avfs dired-details dired-details+ dired-dups dired-efap dired-explorer dired-fdclone dired-filetype-face dired-filter dired-hacks-utils dired-imenu dired-launch dired-narrow dired-nav-enhance dired-open dired-quick-sort dired-rainbow dired-ranger dired-single dired-sort dired-sort-menu dired-sort-menu+ dired-subtree dired-toggle dired-toggle-sudo diredful direx direx-grep django-theme dockerfile-mode dracula-theme dumb-jump el-get elisp-slime-nav elpy emacs-eclim epc epl escreen espresso-theme eval-sexp-fu evil evil-anzu evil-args evil-ediff evil-escape evil-exchange evil-iedit-state evil-indent-plus evil-indent-textobject evil-leader evil-lisp-state evil-magit evil-matchit evil-mc evil-nerd-commenter evil-numbers evil-search-highlight-persist evil-surround evil-tutor evil-unimpaired evil-visual-mark-mode evil-visualstar exec-path-from-shell expand-region eyebrowse f fancy-battery farmhouse-theme fill-column-indicator find-file-in-project firebelly-theme flatland-theme flatui-theme flx flx-ido flycheck flycheck-pos-tip flymake flyspell-correct flyspell-correct-helm frame-cmds frame-fns fringe-helper fuzzy gandalf-theme gh-md git-commit git-gutter git-gutter+ git-gutter-fringe git-gutter-fringe+ git-link git-messenger git-timemachine gitattributes-mode gitconfig-mode gitignore-mode gntp gnuplot golden-ratio google-translate gotham-theme goto-chg goto-last-change grandshell-theme gruber-darker-theme gruvbox-theme hc-zenburn-theme header2 helm helm-ag helm-anything helm-c-yasnippet helm-company helm-core helm-descbinds helm-flx helm-git helm-git-files helm-gitignore helm-helm-commands helm-ls-git helm-make helm-mode-manager helm-package helm-projectile helm-pydoc helm-spotify helm-swoop helm-themes help-fns+ hemisu-theme heroku-theme hexrgb hide-comnt highlight highlight-indentation highlight-numbers highlight-parentheses hl-todo htmlize hungry-delete hy-mode hydra icicles ido-vertical-mode idomenu iedit indent-guide info+ inkpot-theme ir-black-theme jazz-theme jbeans-theme jedi jedi-core js-doc js2-mode js2-refactor json json-mode json-reformat json-rpc json-snatcher let-alist leuven-theme light-soap-theme link-hint linum-relative livid-mode log4e lorem-ipsum lua-mode lush-theme mac-key-mode macrostep madhat2r-theme magit magit-gitflow magit-popup majapahit-theme markdown-mode markdown-toc material-theme menu-bar+ minimal-theme mmm-mode moe-theme molokai-theme monochrome-theme monokai-theme move-text multiple-cursors mustang-theme mwim naquadah-theme neotree nginx-mode niflheim-theme noctilux-theme nose nxml-mode obsidian-theme occidental-theme oldlace-theme omtose-phellack-theme open-junk-file org org-bullets org-download org-plus-contrib org-pomodoro org-present org-projectile organic-green-theme orgit package package-build packed page-break-lines paradox parent-mode pastels-on-dark-theme pcache pcre2el persp-mode phoenix-dark-mono-theme phoenix-dark-pink-theme pip-requirements pkg-info planet-theme popup popup-kill-ring popwin pos-tip powerline professional-theme projectile purple-haze-theme py-autopep8 pycomplete pydoc pydoc-info pyenv-mode pytest python-environment python-mode python-pep8 pythonic pyvenv quelpa railscasts-theme rainbow-delimiters rainbow-mode recentf-ext redo+ request restart-emacs reverse-theme s seq seti-theme shell-command simple-httpd skewer-mode smartparens smartrep smeargle smooth-scroll smooth-scrolling smyx-theme soft-charcoal-theme soft-morning-theme soft-stone-theme solarized-theme soothe-theme spacegray-theme spaceline spacemacs-theme spinner spotify spray sr-speedbar subatomic-theme subatomic256-theme sublime-themes sunny-day-theme swiper switch-window tabbar tango-2-theme tango-plus-theme tangotango-theme tao-theme tern toc-org toxi-theme tronesque-theme twilight-anti-bright-theme twilight-bright-theme twilight-theme ujelly-theme unbound underwater-theme undo-tree unfill use-package uuidgen vi-tilde-fringe virtualenvwrapper vline volatile-highlights web-beautify websocket which-key window-number window-numbering winum with-editor ws-butler yaml-mode yasnippet zen-and-art-theme zenburn-theme zencoding-mode zonokai-theme)))
+(quote
+ (yapfify xterm-color shell-pop rainbow-identifiers py-isort multi-term magit-gh-pulls github-clone github-browse-file eshell-z dash-at-point company-emacs-eclim company-auctex ht pdf-tools org-category-capture live-py-mode imenu-list ibuffer-projectile helm-dash github-search gist eshell-prompt-extras esh-help docker color-identifiers-mode eclim marshal auctex-latexmk hlinum doremi-frm faces+ doremi-cmd doremi ac-helm ac-ispell ac-python ace-flyspell ace-jump-helm-line ace-link ace-window adaptive-wrap afternoon-theme aggressive-indent alect-themes alert ample-regexps ample-theme ample-zen-theme anaconda-mode anti-zenburn-theme anything anzu apropospriate-theme async auctex auto-compile auto-complete auto-dictionary auto-highlight-symbol auto-yasnippet autopair autothemer avy badwolf-theme bind-key bind-map birds-of-paradise-plus-theme browse-kill-ring+ bubbleberry-theme buffer-move busybee-theme cherry-blossom-theme cl-lib clean-aindent-mode clues-theme coffee-mode color-theme color-theme-sanityinc-solarized color-theme-sanityinc-tomorrow color-theme-tango column-enforce-mode company company-anaconda company-jedi company-quickhelp company-statistics company-tern csv-mode ctable cyberpunk-theme cython-mode dakrone-theme darkburn-theme darkmine-theme darkokai-theme darktooth-theme dash dash-functional deferred define-word diff-hl diminish dired+ dired-atool dired-avfs dired-details dired-details+ dired-dups dired-efap dired-explorer dired-fdclone dired-filetype-face dired-filter dired-hacks-utils dired-imenu dired-launch dired-narrow dired-nav-enhance dired-open dired-quick-sort dired-rainbow dired-ranger dired-single dired-sort dired-sort-menu dired-sort-menu+ dired-subtree dired-toggle dired-toggle-sudo diredful direx direx-grep django-theme dockerfile-mode dracula-theme dumb-jump el-get elisp-slime-nav elpy emacs-eclim epc epl escreen espresso-theme eval-sexp-fu evil evil-anzu evil-args evil-ediff evil-escape evil-exchange evil-iedit-state evil-indent-plus evil-indent-textobject evil-leader evil-lisp-state evil-magit evil-matchit evil-mc evil-nerd-commenter evil-numbers evil-search-highlight-persist evil-surround evil-tutor evil-unimpaired evil-visual-mark-mode evil-visualstar exec-path-from-shell expand-region eyebrowse f fancy-battery farmhouse-theme fill-column-indicator find-file-in-project firebelly-theme flatland-theme flatui-theme flx flx-ido flycheck flycheck-pos-tip flymake flyspell-correct flyspell-correct-helm frame-cmds frame-fns fringe-helper fuzzy gandalf-theme gh-md git-commit git-gutter git-gutter+ git-gutter-fringe git-gutter-fringe+ git-link git-messenger git-timemachine gitattributes-mode gitconfig-mode gitignore-mode gntp gnuplot golden-ratio google-translate gotham-theme goto-chg goto-last-change grandshell-theme gruber-darker-theme gruvbox-theme hc-zenburn-theme header2 helm helm-ag helm-anything helm-c-yasnippet helm-company helm-core helm-descbinds helm-flx helm-git helm-git-files helm-gitignore helm-helm-commands helm-ls-git helm-make helm-mode-manager helm-package helm-projectile helm-pydoc helm-spotify helm-swoop helm-themes help-fns+ hemisu-theme heroku-theme hexrgb hide-comnt highlight highlight-indentation highlight-numbers highlight-parentheses hl-todo htmlize hungry-delete hy-mode hydra icicles ido-vertical-mode idomenu iedit indent-guide info+ inkpot-theme ir-black-theme jazz-theme jbeans-theme jedi jedi-core js-doc js2-mode js2-refactor json json-mode json-reformat json-rpc json-snatcher let-alist leuven-theme light-soap-theme link-hint linum-relative livid-mode log4e lorem-ipsum lua-mode lush-theme mac-key-mode macrostep madhat2r-theme magit magit-gitflow magit-popup majapahit-theme markdown-mode markdown-toc material-theme menu-bar+ minimal-theme mmm-mode moe-theme molokai-theme monochrome-theme monokai-theme move-text multiple-cursors mustang-theme mwim naquadah-theme neotree nginx-mode niflheim-theme noctilux-theme nose nxml-mode obsidian-theme occidental-theme oldlace-theme omtose-phellack-theme open-junk-file org org-bullets org-download org-plus-contrib org-pomodoro org-present org-projectile organic-green-theme orgit package package-build packed page-break-lines paradox parent-mode pastels-on-dark-theme pcache pcre2el persp-mode phoenix-dark-mono-theme phoenix-dark-pink-theme pip-requirements pkg-info planet-theme popup popup-kill-ring popwin pos-tip powerline professional-theme projectile purple-haze-theme py-autopep8 pycomplete pydoc pydoc-info pyenv-mode pytest python-environment python-mode python-pep8 pythonic pyvenv quelpa railscasts-theme rainbow-delimiters rainbow-mode recentf-ext redo+ request restart-emacs reverse-theme s seq seti-theme shell-command simple-httpd skewer-mode smartparens smartrep smeargle smooth-scroll smooth-scrolling smyx-theme soft-charcoal-theme soft-morning-theme soft-stone-theme solarized-theme soothe-theme spacegray-theme spaceline spacemacs-theme spinner spotify spray sr-speedbar subatomic-theme subatomic256-theme sublime-themes sunny-day-theme swiper switch-window tabbar tango-2-theme tango-plus-theme tangotango-theme tao-theme tern toc-org toxi-theme tronesque-theme twilight-anti-bright-theme twilight-bright-theme twilight-theme ujelly-theme unbound underwater-theme undo-tree unfill use-package uuidgen vi-tilde-fringe virtualenvwrapper vline volatile-highlights web-beautify websocket which-key window-number window-numbering winum with-editor ws-butler yaml-mode yasnippet zen-and-art-theme zenburn-theme zencoding-mode zonokai-theme)))
+ '(paradox-github-token t)
  '(puppet-indent-level tab-width)
  '(ruby-indent-level tab-width)
  '(show-paren-delay 0)
  '(slime-repl-enable-presentations t)
- '(speedbar-frame-parameters
-   (quote
-    ((minibuffer)
-     (width . 40)
-     (border-width . 0)
-     (menu-bar-lines . 0)
-     (tool-bar-lines . 0)
-     (unsplittable . t)
-     (left-fringe . 0))))
+'(speedbar-frame-parameters
+(quote
+ ((minibuffer)
+  (width . 40)
+  (border-width . 0)
+  (menu-bar-lines . 0)
+  (tool-bar-lines . 0)
+  (unsplittable . t)
+  (left-fringe . 0))))
  '(speedbar-show-unknown-files t)
  '(tab-width 4)
  '(visual-line-mode nil t))
@@ -839,4 +840,3 @@ you should place your code here."
  '(one-key-keystroke ((t (:foreground "light green"))))
  '(region ((t (:background "sky blue"))))
  '(slime-repl-inputed-output-face ((t (:foreground "CadetBlue1")))))
-
