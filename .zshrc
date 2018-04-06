@@ -78,6 +78,7 @@ setopt EXTENDED_GLOB
 # hows about arrays be awesome?  (that is, frew${cool}frew has frew surrounding all the variables, not just first and last
 setopt RC_EXPAND_PARAM
 
+
 # Do not query the user before executing rm * or rm path/*.
 setopt RM_STAR_SILENT
 
