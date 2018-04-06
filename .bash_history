@@ -56887,3 +56887,12048 @@ ls
 cd ..
 #1495854191
 exit
+#1495676356
+configdot 
+#1495676387
+git clone --bare git@github.com:marcel-becker/my-dotfiles.git $HOME/.dotfiles
+#1495676521
+mkdir -p .dotfile-backup
+#1495676540
+config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/{}
+#1495676591
+config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .dotfile-backup/{}
+#1495676619
+cd ls -al
+#1495676666
+configdot checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .dotfile-backup/{}
+#1495676712
+cd .emacs.d/
+#1495676737
+configdot checkout 2>&1 | egrep "\s+\." | awk {'print $1'} 
+#1495677116
+cd .dotfile-backup/
+#1495677125
+mkdir .emacs.d
+#1495677146
+cp ~/.emacs.d/init.el .emacs.d/
+#1495677179
+configdot pull
+#1495677209
+mv .git-completion.bash .dotfile-backup/
+#1495677221
+mv .spacemacs .dotfile-backup/
+#1495677233
+rm .emacs.d/init.el
+#1495677237
+configdot checkout
+#1495677241
+ls -al
+#1495677247
+more .bashrc 
+#1495677319
+configdot config status.showUntrackedFiles no
+#1495677478
+configdot add .bashrc
+#1495677503
+configdot commit -m "Fixed save dotfiles script."
+#1495677511
+configdot push
+#1495677525
+configdot remote
+#1495677534
+configdot remote -v
+#1495752635
+emacs -debug-init
+#1495854188
+exit
+#1495481968
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
+#1495754690
+/Applications/Alfred\ 3.app/Contents/Frameworks/Alfred\ Framework.framework/Versions/A/Resources/reindexdel.sh ; exit;
+#1495835409
+cd ivy-20170524.950/
+#1495835421
+rm *.elc
+#1495854191
+exit
+#1496178994
+grep *.el "0b74"
+#1496179365
+rm srecode-map.el 
+#1496179399
+git add elpy-init_flymake.el elpy-pure.el
+#1496179433
+more network-security.data 
+#1496179457
+git add init.el
+#1496187569
+git diff custom.el
+#1496187593
+git diff .gitignore
+#1496187609
+git add .gitignore custom.el init.el
+#1496187627
+git commit -m "Added more files to the ignore."
+#1496187630
+git push
+#1496188702
+diff .spacemacs .dotfile-backup/.spacemacs 
+#1496188774
+cd Dropbox/.spacemacs.d/
+#1496188776
+cd layers/
+#1496188798
+cd +os
+#1496188801
+cd osx/
+#1496188816
+cd +emacs/
+#1496188822
+cd ..
+#1496188832
+cd +spacemacs/
+#1496188840
+cd spacemacs-ui
+#1496188872
+cd local/
+#1496188873
+ls
+#1496189850
+cd
+#1496189946
+configdot commit -m "Fixed packages."
+#1496278093
+which bash
+#1496278105
+/bin/bash --version
+#1496278115
+/usr/local/bin/bash
+#1496278122
+/usr/local/bin/bash --version
+#1496330533
+his | grep confl
+#1496331571
+/Applications/Emacs.app/Contents/MacOS/Emacs --debug-init -Q
+#1496331827
+/Applications/Emacs.app/Contents/MacOS/Emacs --debug-init 
+#1496337317
+configdot status
+#1496337325
+configdot diff .spacemacs 
+#1496337352
+configdot add .spacemacs 
+#1496337372
+configdot commit -m "Removed packages from list."
+#1496337393
+configdot push -u origin master
+#1496337407
+cd Dropbox/.emacs.d
+#1496337419
+git diff init.el
+#1496337446
+git add becker-mode-line.el custom.el header-line-original.el init.el
+#1496337449
+git status
+#1496337470
+git commit -m "Fixed mode line and header line."
+#1496337475
+git push 
+#1496352486
+env
+#1496352743
+source ~/.bashrc 
+#1496352748
+his
+#1496352752
+env
+#1496352781
+sh bash_prompt_command
+#1496352859
+his
+#1496360678
+git status
+#1496360681
+cd
+#1496360688
+configdot status
+#1496360699
+configdot diff .bashrc 
+#1496360713
+configdot add .bashrc 
+#1496360731
+configdot commit -m "Added history setting to prompt."
+#1496360745
+configdot push origin master
+#1496360756
+source ~/.bashrc
+#1496360761
+his
+#1496456375
+exit
+#1495241592
+git push -u origin marcel-fix-repair-refuel 
+#1495295982
+docker ps -a
+#1495296243
+cd dmf/services/vdb-dataservices/
+#1495296253
+his | grep volume
+#1495296261
+docker volume ls
+#1495296272
+docker volume rm teiid_9.2.3
+#1495296293
+sh ./docker_scripts/rspace_populate_teiid_data_volume.sh users.json 
+#1495296315
+sh docker_scripts/run_teiid_container.sh 
+#1495316541
+docker ps -a
+#1495316552
+docker rm -f 2db5cfe29b36
+#1495316845
+sh docker_scripts/run_teiid_container.sh 
+#1495512796
+cd src/rspace-eclipse/scharp/
+#1495512798
+git pull
+#1495514156
+git pull --all
+#1495514179
+git checkout sf-publish-repairs 
+#1495514182
+git pull
+#1495666058
+cd backup/
+#1495666082
+ls -F
+#1495666086
+ls -F
+#1495666111
+more Linux
+#1495666140
+cd Linux_Config/
+#1495666151
+cd ;;
+#1495666169
+cd Camera\ Uploads/
+#1495666195
+rm -rf Garmin\ Fenix2/
+#1495666230
+file Icon\?
+#1495666639
+cd EclipseMarsSettings/
+#1495666666
+diff EclipseNeonPreferences.epf EclipseNeonPreferencesIMac.epf 
+#1495666806
+ls -F
+#1495666837
+mv Sarraute-Buffet-Hoffmann-AAAI2012.pdf Books/
+#1495666853
+rm DataBindingExamples.java 
+#1495666865
+mv Sublime\ Text\ for\ Windows\ Cheat\ Sheet.pdf Books/
+#1495666874
+cd Linux_Config/
+#1495666880
+cd Home/
+#1495666883
+cd becker/
+#1495666887
+ls -a
+#1495666930
+cd Music/
+#1495666953
+ls -F
+#1495666983
+cd Dropbox/ 
+#1495666990
+cd CD\ Sheet\ Music/
+#1495666995
+ls -F
+#1495667005
+cd Music/
+#1495667007
+ls 
+#1495667023
+ls -F
+#1495667080
+rm synergy-v1.8.6-stable-2ab21aa-MacOSX-x86_64.dmg 
+#1495667087
+more version.xml 
+#1495667120
+ ls
+#1495667191
+rm eclipse-spring-code-conventions.xml 
+#1495667200
+more eclipse.ini 
+#1495667214
+mv eclipse.ini EclipseMarsSettings/
+#1495667227
+mv EclipseMarsSettings EclipseSettings
+#1495667253
+source .bashrc
+#1495667268
+diff .bashrc ~/.bashrc
+#1495667821
+diff .bashrc .bashrc-merged 
+#1495667945
+rm .bashrc-merged 
+#1495667955
+cp .bashrc ~/.bashrc 
+#1495667960
+source ~/.bashrc
+#1495667972
+./List_Linux_Colors.sh 
+#1495671041
+cd
+#1495671063
+cp ~/Dropbox/.bashrc .
+#1495674353
+cd Dropbox/
+#1495674367
+cd 
+#1495676338
+config_data
+#1495676348
+source ~/.bashrc 
+#1495676356
+configdot 
+#1495676387
+git clone --bare git@github.com:marcel-becker/my-dotfiles.git $HOME/.dotfiles
+#1495676521
+mkdir -p .dotfile-backup
+#1495676540
+config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/{}
+#1495676591
+config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .dotfile-backup/{}
+#1495676619
+cd ls -al
+#1495676666
+configdot checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .dotfile-backup/{}
+#1495676712
+cd .emacs.d/
+#1495676737
+configdot checkout 2>&1 | egrep "\s+\." | awk {'print $1'} 
+#1495677116
+cd .dotfile-backup/
+#1495677125
+mkdir .emacs.d
+#1495677146
+cp ~/.emacs.d/init.el .emacs.d/
+#1495677179
+configdot pull
+#1495677209
+mv .git-completion.bash .dotfile-backup/
+#1495677221
+mv .spacemacs .dotfile-backup/
+#1495677233
+rm .emacs.d/init.el
+#1495677237
+configdot checkout
+#1495677247
+more .bashrc 
+#1495677319
+configdot config status.showUntrackedFiles no
+#1495677478
+configdot add .bashrc
+#1495677503
+configdot commit -m "Fixed save dotfiles script."
+#1495677511
+configdot push
+#1495677525
+configdot remote
+#1495677534
+configdot remote -v
+#1495752635
+emacs -debug-init
+#1495481968
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
+#1495754690
+/Applications/Alfred\ 3.app/Contents/Frameworks/Alfred\ Framework.framework/Versions/A/Resources/reindexdel.sh ; exit;
+#1495835409
+cd ivy-20170524.950/
+#1496176601
+configdot diff .spacemacs 
+#1496176650
+configdot status
+#1496176669
+configdot add .spacemacs .bash_history .emacs.d/init.el
+#1496176684
+git commit -m "Updated init files."
+#1496176698
+configdot commit -m "Updated init files."
+#1496176715
+configdot push 
+#1496176726
+configdot push -u origin master
+#1496176742
+cd Dropbox/.emacs.d
+#1496176866
+git init
+#1496176887
+git remote add origin git@github.com:marcel-becker/dotemacs.git
+#1496177039
+git add init.el mode-line.el header-line.el header-line-original.el helm-init.el package-activated-list.el 
+#1496177062
+git add sacha-emacs.el
+#1496177088
+cp ~/src/rspace-eclipse/scharp/.gitignore .
+#1496177324
+git add profile-dotemacs.el mac-setup.el spacemacs-init.el print-all-emacs-fonts.el ido-init.el init-saved.el icicles-init.el 
+#1496177353
+git add elpy-init.el anaconda-init.el
+#1496177395
+git add latex-init.el 
+#1496177407
+git add emacs-avro/avdl-mode.el
+#1496177417
+more srecode-map.el 
+#1496177525
+cd snippets/
+#1496177528
+cd django/
+#1496177572
+rm recentf-*
+#1496177582
+y
+#1496177590
+rm smex-*
+#1496177605
+more tramp 
+#1496177623
+rm -fd savehistory-*
+#1496177633
+rm -rf places-*
+#1496177657
+rm *~
+#1496177675
+more ac-comphist.dat 
+#1496177682
+rm ac-comphist*
+#1496177703
+git add becker-mode-line.el
+#1496177733
+more history 
+#1496177740
+rm history 
+#1496177745
+rm helm-history 
+#1496177755
+more places
+#1496177763
+rm places*
+#1496177782
+diff init\ \(Marcel’s\ iMac\'s\ conflicted\ copy\ 2016-09-08\).el init.el 
+#1496177800
+ks
+#1496177817
+git add sumatra-forward.el tramp
+#1496177824
+rm session.10187d38e51fe4c5ac148642649324176000000182220068 
+#1496177864
+rm \#header-line.el# \#init.el# \#recentf-beckermac.lan# 
+#1496177928
+git add cygwin-mount.el dot_emacs_test.el duplicate-line.el eclim-setup.el 
+#1496177931
+more init-kicker.el 
+#1496177982
+mv init-kicker.el el-get-init-kicker.el 
+#1496177987
+git add el-get-init-kicker.el
+#1496178015
+rm -rf snippets/
+#1496178032
+git add .gitignore
+#1496178042
+git rm -r .#header-line.el
+#1496178059
+rm -rf .smex-items 
+#1496178072
+cd request/
+#1496178076
+more curl-cookie-jar 
+#1496178417
+git add load-specware.el lua-mode.el 
+#1496178420
+cd image-dired/
+#1496178453
+git add pycheckers.py my-python-header.el setup-cygwin.el 
+#1496178456
+more template.py 
+#1496178466
+git add template.py
+#1496178770
+git add el-get-packages.el
+#1496178780
+rm el-get-load-packages.el 
+#1496178819
+more ls
+#1496178837
+more profile-dotemacs.el 
+#1496178909
+/Applications/Emacs.app/Contents/MacOS/Emacs -Q -l profile-dotemacs.el -f profile-dotemacs
+#1496179734
+/Applications/Emacs.app/Contents/MacOS/Emacs -Q
+#1496180317
+cd el-get-20170112.2204/
+#1496180362
+rm el-get-autoloads\ \(dhcp210.kestrel.edu\'s\ conflicted\ copy\ 2017-05-26\).el 
+#1496180368
+cd  methods/
+#1496181789
+cd pydoc-info/
+#1496181816
+rm -rf snippets/ image-dired/ icicles
+#1496182010
+cd el-get
+#1496183761
+rm magit-popup 
+#1496183791
+rm company 
+#1496183795
+rm windata 
+#1496183908
+more anything-config.el 
+#1496184363
+more init-use-package.el 
+#1496184468
+rm projectile-bookmarks.eld init-use-package.el get-icicles.sh 
+#1496184484
+more python-setup.el 
+#1496184519
+rm icicles-install.el 
+#1496184522
+git stauts
+#1496184611
+rm .#header-line.el 
+#1496184613
+~ls
+#1496184655
+git add anything-config.el custom.el ranger-init.el
+#1496184665
+rm ido.last 
+#1496184737
+rm eproject.lst 
+#1496184774
+git add pydoc-info/
+#1496184783
+git status
+#1496184803
+git commit -m "Added emacs setup files."
+#1496184808
+git push -u origin master 
+#1496330712
+cd ../.spacemacs.d/
+#1496330728
+find ./ -name "*.elc" --print
+#1496330731
+find ./ -name "*.elc" -print
+#1496330816
+cd .cache/
+#1496330828
+rm -rf *
+#1496330842
+rm .rollback/
+#1496330847
+rm -rf .rollback/
+#1496331712
+cd elpa/
+#1496331721
+cd auctex-latexmk-20160923.7/
+#1496331730
+ls -al
+#1496331761
+cd auctex-11.90.2/
+#1496331780
+rm *.elc
+#1496331883
+cd evil-20170531.1149/
+#1496331884
+ls
+#1496331890
+cd ..
+#1496331961
+find . -name "*.elc" -print -exec rm -fr {} \;
+#1496332017
+find . -name "*.elc" -print
+#1496456378
+exit
+#1496934531
+source ~/.bashrc 
+#1496934549
+exit
+#1496934559
+configdot status
+#1496934566
+git add .bashrc
+#1496934577
+configdot add .bashrc 
+#1496934589
+configdot commit -m "Fixed prompt"
+#1496934596
+configdot push
+#1496934612
+cd src/rspace-eclipse/scharp/
+#1496934619
+git checkout master 
+#1496934629
+git diff notes/marcel-notes.org
+#1496934651
+git pull --all --prune
+#1496934665
+git add notes/marcel-notes.org
+#1496934691
+git commit -m "Added instructions on how to use DI2E from Devcloud."
+#1496934703
+git pull --all --prune
+#1496934891
+git status
+#1496934920
+git add notes/marcel-notes.org
+#1496934922
+git status
+#1496934939
+git commit -m "Merged master."
+#1496934957
+rm Docker/jboss-fuse-docker.zip 
+#1496934960
+git status
+#1496934982
+git push -u origin master 
+#1496934992
+git pull --all --prune
+#1496935040
+git checkout drs6
+#1496935043
+git pull
+#1496936808
+git status
+#1496936829
+git add src/main/java/edu/kestrel/scharp/
+#1496936831
+git status
+#1496936840
+git add src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1496936843
+git status
+#1496936873
+git commit -m "Fixed imports, re-formatted, removed unused warnings."
+#1496936880
+git push -u origin drs6 
+#1496937164
+git pull origin master 
+#1496938295
+git status
+#1496938313
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1496946782
+git reset --hard
+#1496946789
+git status
+#1496946800
+git pull
+#1496946808
+git status
+#1496946879
+git pull
+#1496946903
+mvn clean compile
+#1496946973
+cd ..
+#1496946976
+ls
+#1496946998
+cd rspace-eclipse/scharp/
+#1496946998
+ls
+#1496947001
+git pull 
+#1496947008
+git checkout master 
+#1496947011
+git pull
+#1496947186
+mvn clean generate-sources compile
+#1496954006
+git status
+#1496954017
+git diff src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1496965653
+git status
+#1496965663
+git diff src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1496965680
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1496965699
+git pull
+#1497030488
+git log
+#1497030497
+git remote -v
+#1497030736
+git log --help
+#1497030774
+git log --log-size 1
+#1497030879
+git log
+#1497030892
+git pull
+#1497031695
+git stash 
+#1497031697
+git pull
+#1497049146
+git status
+#1497049148
+git pull
+#1497049163
+git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1497049166
+git status
+#1497049201
+git commit -m "Fixed warnings, added back code to deal with tasks with selected bids in FighterAirUnitScheduler."
+#1497049208
+git push -u origin drs6 
+#1497049270
+git checkout master 
+#1497049272
+git pull
+#1497049282
+mvn clean compile
+#1497049460
+git status
+#1497049473
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1497049485
+git commit -m "Removed unused methods."
+#1497049496
+git push -u origin master
+#1497049504
+git pull
+#1497049513
+git pull --all --prune
+#1497049520
+git branch 
+#1497049540
+git rm drs6
+#1497049549
+git branch -6 drs6 
+#1497049555
+git branch -d drs6 
+#1497049567
+git branch -d sf-get-url 
+#1497049572
+git branch -d sf-publish-repairs 
+#1497049577
+git branch -d sf-xmpp 
+#1497058691
+cd 
+#1497058694
+cd Dropbox/
+#1497058695
+ls
+#1497058708
+mkdir Bash
+#1497058711
+cd Bash
+#1497058712
+ls
+#1497058729
+git clone git@github.com:lfender6445/iterm2_rainbow_tabs.git
+#1497058740
+cd iterm2_rainbow_tabs/
+#1497058741
+ls
+#1497058871
+source iterm2_rainbow_tabs.sh 
+#1497058903
+tab_pure_red 
+#1497058994
+tab_deep_sky_blue 
+#1497507487
+source ~/.bashrc
+#1497507502
+it2prof Default
+#1497507509
+it2prof PlanX
+#1497507522
+it2prof PlanInABox
+#1497507548
+it2prof RemoteOpenstack
+#1497507777
+source ~/.bashrc
+#1497507783
+profile
+#1497507789
+profiledefault 
+#1497507801
+profilessh1
+#1497507804
+profilessh2
+#1497507808
+profilessh3
+#1497507828
+exit
+#1497572782
+cd Dropbox/.emacs.d
+#1497572785
+git status
+#1497572792
+git diff init.el
+#1497572818
+git commit -m "Addes swiper."
+#1497572826
+git push -u origin master 
+#1497572837
+ls
+#1497572843
+more spacemacs-init.el 
+#1497572964
+source ~/.bashrc
+#1497572982
+more ~/.profile 
+#1497573013
+source ~/.iterm2_shell_integration.bash 
+#1497573053
+cd
+#1497573068
+more .iterm2_shell_integration.bash 
+#1497573099
+bash --help
+#1497573198
+exit
+#1497573162
+bash --verbose
+#1497573200
+exit
+#1497573149
+bash --noprofile
+#1497573203
+exit
+#1497573106
+bash --debug
+#1497573206
+exit
+#1497573086
+bash
+#1497573208
+exit
+#1497573026
+bash
+#1497573218
+exit
+#1497573220
+exit
+#1497660001
+brew install emacs --with-cocoa --HEAD --with-gnutls --with-imagemagick --with-librsvg
+#1497661158
+cd /Users/marcelbecker/Dropbox/.emacs.d
+#1497663657
+emacs -q
+#1497890360
+cd 
+#1497890367
+cd src/rspace-eclipse/scharp/
+#1497890369
+git pull
+#1497890377
+git pull drs6
+#1497890390
+git checkout -t origin/drs6 
+#1497890392
+git pull
+#1497890398
+mvn clean compile
+#1497892281
+cd ..
+#1497892282
+ls
+#1497892285
+cd dmf/
+#1497892286
+ls
+#1497892290
+ls -al
+#1497892293
+git pull
+#1497892325
+git remote -v
+#1497892346
+cd ..
+#1497892347
+ls
+#1497892353
+rm -rf dmf/
+#1497892358
+git clone https://marcel.becker@bitbucket.di2e.net/scm/rspace/dmf.git
+#1497892366
+cd dmf/
+#1497892366
+ls
+#1497892370
+cd services/
+#1497892370
+ls
+#1497892377
+cd vdb-dataservices/
+#1497892378
+ls
+#1497892386
+cd src/
+#1497892386
+ls
+#1497892388
+cd main/
+#1497892388
+ls
+#1497892390
+cd resources/
+#1497892390
+ls
+#1497892395
+cd sources/
+#1497892395
+ls
+#1497892397
+cd CSV/
+#1497892397
+ls
+#1497898648
+cd
+#1497898653
+cd src/rspace-eclipse/scharp/
+#1497898655
+git pull
+#1497900576
+git status
+#1497900585
+git diff src/main/java/edu/kestrel/scharp/planner/manager/CyberUnitScheduler.java
+#1497900674
+git status
+#1497900693
+git pull
+#1497901227
+git reset --hard
+#1497901229
+git status
+#1497901234
+git checkout master 
+#1497901237
+git pull
+#1497902038
+emacs -q
+#1497902357
+cd
+#1497902363
+cd Dropbox/.emacs.d
+#1497902366
+emacs -q
+#1497920032
+cd
+#1497920043
+configdot status
+#1497920050
+configdot diff .bashrc
+#1497920089
+configdot add .bashrc 
+#1497920141
+configdot commit -m "Added a function to switch iterm2 profiles."
+#1497920151
+configdot push 
+#1497920158
+cd .emacs.d/
+#1497920159
+ls
+#1497920161
+git status
+#1497920166
+ls
+#1497920169
+cd 
+#1497920174
+cd Dropbox/.emacs.d
+#1497920178
+git status
+#1497920186
+git diff helm-init.el
+#1497920200
+git checkout -- helm-init.el
+#1497920209
+git diff init.el
+#1497920219
+git status
+#1497920234
+git add custom.el init.el spacemacs-init.el
+#1497920237
+git status
+#1497920251
+git commit -m "Added swipper to init."
+#1497920255
+git push
+#1497920277
+ls
+#1497920287
+git status
+#1497920612
+exit
+#1497920614
+exit
+#1498111657
+emacs --debug-init
+#1498111680
+which emacs
+#1498111785
+cd Dropbox/.emacs.d
+#1498111785
+ls
+#1498111787
+ls -al
+#1498111830
+diff init\ \(dhcp210.kestrel.edu\'s\ conflicted\ copy\ 2017-06-02\).el init.el
+#1498112312
+rm init\ \(dhcp210.kestrel.edu\'s\ conflicted\ copy\ 2017-06-02\).el 
+#1498112314
+ls
+#1498112320
+rm \#header-line.el# 
+#1498112323
+ls
+#1498112342
+git status
+#1498112346
+git add init.el
+#1498112355
+git commit -m "Added more packages."
+#1498112365
+got push 
+#1498112370
+git push 
+#1498112393
+clear
+#1498112396
+ls
+#1498259649
+cd
+#1498259652
+cd src/
+#1498259652
+ls
+#1498259663
+mkdir jboss-vagrant
+#1498259667
+git clone git@github.com:marcel-becker/vagrant-jboss.git
+#1498259673
+cd vagrant-jboss/
+#1498259674
+ls
+#1498259681
+vagrant up
+#1498259943
+vagrant plugin repair
+#1498259946
+vagrant up
+#1498260263
+git checkout dev 
+#1498260301
+more install.sh 
+#1498260349
+vagrant up
+#1498260513
+vagrant up --debug
+#1498260918
+vagrant up 
+#1498260954
+vagrant destroy
+#1498260963
+vagrant up 
+#1498261817
+vagrant ssh
+#1498261761
+curl -O http://origin-repository.jboss.org/nexus/content/groups/ea/org/jboss/fuse/jboss-fuse-full/6.2.1.redhat-185/jboss-fuse-full-6.2.1.redhat-185.zip
+#1498261827
+vagrant ssh node-1
+#1498262128
+vagrant provision node-1
+#1498262406
+ls
+#1498262419
+cd 
+#1498262426
+cd src/rspace-eclipse/scharp/
+#1498262428
+git pull
+#1498262477
+cp Docker/jboss-fuse-docker/SCHARP-AMQ/* .
+#1498262509
+cp ~/src/rspace-eclipse/scharp/Docker/jboss-fuse-docker/SCHARP-AMQ/* .
+#1498262510
+ls
+#1498262534
+mv activemq-serverA.xml activemq-1.xml
+#1498262544
+mv activemq-serverB.xml activemq-2.xml
+#1498262553
+mv activemq-serverC.xml activemq-3.xml
+#1498262563
+mv activemq-serverD.xml activemq-4.xml
+#1498262580
+vagrant provision node-1
+#1498263072
+ls
+#1498263082
+chmod +x start-fuse.sh 
+#1498263085
+vagrant provision node-1
+#1498263166
+ls
+#1498263131
+vagrant ssh node-1
+#1498263350
+ls
+#1498263336
+vagrant provision node-1
+#1498263670
+vagrant ssh node-1
+#1498263944
+vagrant provision node-2
+#1498264016
+vagrant ssh node-2
+#1498264051
+vagrant provision node-2
+#1498264448
+vagrant up node-2
+#1498264470
+ping 10.22.54.1
+#1498264657
+netstat -rn
+#1498264996
+vagrant down
+#1498265013
+vagrant halt
+#1498263849
+vagrant provision node-1
+#1498265043
+vagrant halt
+#1498265061
+vagrant up
+#1498266383
+his
+#1498266402
+cp ~/src/rspace-eclipse/scharp/Docker/jboss-fuse-docker/users.properties .
+#1498266403
+ls
+#1498266406
+more users.properties 
+#1498267177
+vagrant provision node-1
+#1498267287
+man rm
+#1498267378
+vagrant provision node-1
+#1498267477
+vagrant ssh node1
+#1498267486
+vagrant ssh node-1
+#1498265572
+vagrant ssh node-1
+#1498267736
+vagrant halt node-1
+#1498267541
+vagrant provision node-1
+#1498267765
+vagrant reload node-1
+#1498267890
+vagrant up node-2
+#1498268044
+vagrant provision node-2
+#1498268134
+man rm
+#1498268367
+vagrant ssh node-2
+#1498268469
+vagrant halt node-1
+#1498268587
+df
+#1498268794
+vagrant ssh node-3
+#1498268494
+vagrant up node-3
+#1498275916
+ls
+#1498276003
+git pull
+#1498268170
+vagrant provision node-2
+#1498276159
+exit
+#1498276173
+exit
+#1498268930
+vagrant up node-4
+#1498276265
+cd
+#1498276271
+cd src/rspace-eclipse/scharp/
+#1498276346
+git checkout preTE4 
+#1498276354
+mvn clean compile install
+#1498276408
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
+#1498276475
+more build-all-docker-images.sh 
+#1498276485
+docker build --rm=true -f Docker/DockerJava/Dockerfile -t scharp/ubuntujava8 .
+#1498276653
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
+#1498277544
+more build-all-docker-images.sh 
+#1498277555
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile -t scharp/planner .
+#1498277737
+./docker-run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498277908
+ifconfig
+#1498278235
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498276213
+vagrant reload node-1
+#1498276228
+vagrant reload node-2
+#1498276242
+vagrant reload node-3
+#1498276308
+vagrant reload node-4
+#1498278298
+vagrant ssh node-1
+#1498278537
+vagrant destroy
+#1498278558
+y
+#1498278562
+vagrant destroy
+#1498279361
+vagrant up node-4
+#1498279739
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498279811
+vagrant ssh node-1
+#1498279892
+cd 
+#1498279902
+cd src/rspace-eclipse/scharp/Docker/jboss-fuse-docker/
+#1498279904
+ls
+#1498279912
+more activemq.xml 
+#1498280030
+cd 
+#1498280045
+cd src/vagrant-jboss/
+#1498280047
+ls
+#1498279320
+vagrant up node-1
+#1498280729
+docker-machine create --driver virtualbox default
+#1498280793
+docker-machine env default
+#1498280802
+eval $(docker-machine env default)
+#1498280055
+vagrant ssh node-1
+#1498281354
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498280977
+vagrant reload node-1
+#1498282023
+git status
+#1498282033
+git add Vagrantfile
+#1498282053
+git add install.sh
+#1498282154
+git status
+#1498282183
+git add users.properties activemq-1.xml activemq-2.xml
+#1498282205
+git add activemq-3.xml activemq-4.xml
+#1498282210
+git status
+#1498282710
+git add start-fuse.sh
+#1498282713
+git status
+#1498282754
+git commit -m "Build 4 servers."
+#1498282762
+git push -u origin master 
+#1498282773
+git push -u origin dev
+#1498283991
+cd
+#1498283992
+ls
+#1498283997
+cd Downloads/
+#1498283998
+ls
+#1498284047
+cd
+#1498284058
+find . -name "amazon"
+#1498284075
+find ./ -name "amazon" -print
+#1498284083
+find ./ -name "amazon*" -print
+#1498284129
+ls
+#1498284144
+mv amazon_aws1.pem .ssh/
+#1498284147
+cd .ssh/
+#1498284148
+ls
+#1498284389
+ls -al
+#1498284422
+ssh ubuntu@52.72.203.245 -i amazon_aws1.pem 
+#1498284438
+chmod 400 amazon_aws1.pem 
+#1498284836
+cd 
+#1498284888
+scp -i ~/.ssh/amazon_aws1.pem .bashrc ubuntu@52.72.203.245
+#1498284935
+scp -i ~/.ssh/amazon_aws1.pem .bashrc ubuntu@52.72.203.245:
+#1498284949
+scp -i ~/.ssh/amazon_aws1.pem .git* ubuntu@52.72.203.245:
+#1498284958
+ls -al
+#1498285414
+scp -i ~/.ssh/amazon_aws1.pem src/vagrant-jboss/install.sh ubuntu@52.72.203.245:
+#1498285439
+scp -i ~/.ssh/amazon_aws1.pem src/vagrant-jboss/activemq-* ubuntu@52.72.203.245:
+#1498285452
+scp -i ~/.ssh/amazon_aws1.pem src/vagrant-jboss/user* ubuntu@52.72.203.245:
+#1498284440
+ssh ubuntu@52.72.203.245 -i amazon_aws1.pem 
+#1498279689
+vagrant provision node-4
+#1498279352
+vagrant up node-3
+#1498279337
+vagrant up node-2
+#1498317868
+vagrant provision node-2
+#1498317877
+vagrant provision node-3
+#1498317852
+vagrant provision node-1
+#1498318354
+ls
+#1498318357
+vagrant provision node-1
+#1498318435
+ls
+#1498318486
+vagrant ssh node-1
+#1498319130
+ping 10.0.2.15
+#1498319144
+ping 192.168.55.111
+#1498319231
+./run-plan-cell-te3-vagrant-4-amqs.sh 
+#1498319237
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498318561
+vagrant reload node-1
+#1498319046
+vagrant ssh node-1
+#1498317967
+vagrant ssh node-3
+#1498319884
+vagrant halt
+#1498320098
+vagrant reload node-1
+#1498321293
+ping 10.0.2.15
+#1498321323
+ping 192.168.55.111
+#1498321340
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498321604
+ping 10.0.2.15
+#1498322965
+vagrant status
+#1498321269
+vagrant ssh node-1
+#1498322978
+vagrant halt
+#1498323071
+ssh ubuntu@54.219.167.48 -i amazon_aws2.pem 
+#1498323550
+ssh ubuntu@54.183.243.113 -i amazon_aws3.pem
+#1498323576
+ssh ubuntu@54.183.243.113 -i amazon_aws2.pem
+#1498324048
+./run-plan-cell-te3-vagrant-4-amqs.sh 3
+#1498333515
+./run-plan-cell-te3-vagrant-4-amqs.sh 
+#1498334895
+vagrant reload node-1
+#1498337197
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498335093
+vagrant ssh node-1
+#1498337246
+cd src/rspace-eclipse/scharp/Docker/jboss-fuse-docker/devcloud/
+#1498337248
+ls
+#1498337255
+chmod +x copy-to-hosts.sh 
+#1498337258
+./copy-to-hosts.sh 
+#1498323720
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498340666
+./copy-to-hosts.sh 
+#1498341072
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498341100
+./run-plan-cell-te3-vagrant-4-amqs.sh 2
+#1498341107
+./run-plan-cell-te3-vagrant-4-amqs.sh 3
+#1498333544
+./run-plan-cell-te3-vagrant-4-amqs.sh 4
+#1498341939
+./copy-to-hosts.sh 
+#1498342815
+git pull
+#1498343414
+cd Docker/jboss-fuse-docker/
+#1498343415
+ls
+#1498343420
+mkdir mitre
+#1498343423
+cd mitre/
+#1498343438
+cp ~/src/vagrant-jboss/activemq-* .
+#1498343439
+ls
+#1498344018
+cp ../devcloud/copy-to-hosts.sh .
+#1498344018
+ls
+#1498344022
+./copy-to-hosts.sh 
+#1498341982
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498341993
+./run-plan-cell-te3-vagrant-4-amqs.sh 2
+#1498342002
+./run-plan-cell-te3-vagrant-4-amqs.sh 3
+#1498344354
+./run-plan-cell-te3-vagrant-4-amqs.sh 4
+#1498323094
+ssh ubuntu@54.219.167.48 -i amazon_aws1.pem 
+#1498323581
+ssh ubuntu@54.183.243.113 -i amazon_aws1.pem
+#1498344642
+ls
+#1498323957
+ssh ubuntu@54.193.71.18 -i amazon_aws1.pem
+#1498324335
+ssh ubuntu@54.183.27.174 -i amazon_aws1.pem
+#1498346429
+ls
+#1498346438
+vagrant destroy
+#1498346458
+y
+#1498346694
+vagrant up node-1
+#1498346860
+vagrant destroy node-1
+#1498346870
+vagrant destroy
+#1498346891
+vagrant up node-1
+#1498347237
+vagrant destroy
+#1498347261
+vagrant up node-1
+#1498347340
+vagrant box list
+#1498347359
+vagrant box remove v0rtex/xenial64
+#1498347363
+vagrant box list
+#1498347375
+vagrant box remove ubuntu-wily64
+#1498347942
+vagrant provision node-1
+#1498347984
+vagrant reload node-1 --provision
+#1498348054
+vagrant  destroy node-1
+#1498348065
+vagrant up node-1
+#1498348395
+ls
+#1498348412
+pwd
+#1498348419
+vagrant ssh
+#1498344470
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498348425
+vagrant ssh node-1
+#1498349612
+ping 192.168.21.10
+#1498349562
+vagrant ssh node-1
+#1498349664
+vagrant halt
+#1498349672
+vagrant halt node-1
+#1498349454
+vagrant reload
+#1498349881
+ping 192.168.21.10
+#1498349989
+ping 192.168.55.162
+#1498350066
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498350102
+ping 192.168.55.162
+#1498350113
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498344481
+./run-plan-cell-te3-vagrant-4-amqs.sh 2
+#1498344489
+./run-plan-cell-te3-vagrant-4-amqs.sh 3
+#1498350572
+vagrant reload node-1
+#1498350939
+ping 192.168.22.10
+#1498350578
+vagrant up node-2
+#1498350922
+vagrant ssh node-2
+#1498350961
+vagrant reload node-2
+#1498351044
+vagrant halt node-2
+#1498351120
+ping 192.168.55.162
+#1498352410
+ping 192.168.55.162
+#1498352422
+ping 192.168.21.10
+#1498352441
+ifconfig
+#1498352568
+ping 192.168.55.162
+#1498352579
+ping 192.168.21.10
+#1498352646
+ping 192.168.55.162
+#1498352768
+ping 192.168.21.10
+#1498354132
+vagrant destroy node-2
+#1498354139
+vagrant destroy node-1
+#1498354151
+vagrant destroy node-3
+#1498354443
+ping 192.168.20.11
+#1498354163
+vagrant up node-1
+#1498354692
+vagrant ssh node-4
+#1498351243
+./run-plan-cell-te3-vagrant-4-amqs.sh 2
+#1498355035
+./run-plan-cell-te3-vagrant-4-amqs.sh 4
+#1498354653
+vagrant up node-3
+#1498354417
+vagrant ssh node-1
+#1498354674
+vagrant up node-2
+#1498354703
+vagrant up node-4
+#1498354604
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498355895
+./run-plan-cell-te3-vagrant-4-amqs.sh 4
+#1498355890
+./run-plan-cell-te3-vagrant-4-amqs.sh 3
+#1498355885
+./run-plan-cell-te3-vagrant-4-amqs.sh 2
+#1498360730
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498361013
+./run-plan-cell-te3-vagrant-4-amqs.sh 14
+#1498361002
+./run-plan-cell-te3-vagrant-4-amqs.sh 2
+#1498361016
+./run-plan-cell-te3-vagrant-4-amqs.sh 4
+#1498361008
+./run-plan-cell-te3-vagrant-4-amqs.sh 3
+#1498362050
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498362061
+./run-plan-cell-te3-vagrant-4-amqs.sh 4
+#1498362174
+./run-plan-cell-te3-vagrant-4-amqs.sh 0
+#1498363374
+./run-plan-cell-te3-vagrant-4-amqs.sh 4
+#1498363370
+./run-plan-cell-te3-vagrant-4-amqs.sh 3
+#1498363366
+./run-plan-cell-te3-vagrant-4-amqs.sh 2
+#1498363359
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498355302
+vagrant ssh node-4
+#1498363492
+exit
+#1498355229
+vagrant ssh node-3
+#1498363503
+exit
+#1498355165
+vagrant ssh node-2
+#1498363511
+exit
+#1498355097
+vagrant ssh node-1
+#1498363521
+git status
+#1498363548
+git add Vagrantfile activemq-1.xml activemq-2.xml activemq-3.xml 4.xml install-java-and-git.sh install.sh
+#1498363558
+git status
+#1498363585
+git add Vagrantfile activemq-1.xml activemq-2.xml activemq-3.xml activemq-4.xml install-java-and-git.sh install.sh
+#1498363590
+git status
+#1498363621
+git commit -m "Fixed the config files."
+#1498363628
+git status
+#1498363638
+git push -u origin dev 
+#1498363719
+vagrant halt
+#1498364501
+cp ~/src/rspace-eclipse/scharp/Docker/jboss-fuse-docker/devcloud .
+#1498364511
+cp -r ~/src/rspace-eclipse/scharp/Docker/jboss-fuse-docker/devcloud .
+#1498364513
+ls
+#1498364517
+cd devcloud/
+#1498364517
+ls
+#1498364540
+vagrant up node-1
+#1498364565
+vagrant up node-3
+#1498364552
+vagrant up node-2
+#1498364577
+vagrant up node-4
+#1498364702
+vagrant up node-3
+#1498364759
+vagrant reload node-3
+#1498365524
+cd
+#1498365530
+cd src/vagrant-jboss/
+#1498365532
+git status
+#1498365537
+git add devcloud/
+#1498365540
+git status
+#1498365556
+git commit -m "Added devcloud config files."
+#1498365563
+git push -u origin dev 
+#1498365845
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498365867
+./run-plan-cell-te3-vagrant-4-amqs.sh 2
+#1498365888
+./run-plan-cell-te3-vagrant-4-amqs.sh 3
+#1498365897
+./run-plan-cell-te3-vagrant-4-amqs.sh 4
+#1498364715
+vagrant ssh node-4
+#1498366260
+exit
+#1498364867
+vagrant ssh node-3
+#1498366265
+exit
+#1498364669
+vagrant ssh node-2
+#1498366269
+exi
+#1498366271
+exit
+#1498364614
+vagrant ssh node-1
+#1498366282
+git status
+#1498366298
+git add .
+#1498366301
+git status
+#1498366314
+git commit -m "Changed dynamicall to statically."
+#1498366319
+git push -u origin dev 
+#1498366327
+exit
+#1498366330
+exit
+#1498366332
+exit
+#1498366335
+exit
+#1498366337
+exit
+#1498366345
+exit
+#1498366349
+exit
+#1498366351
+exit
+#1498366353
+exit
+#1498366453
+cd src/vagrant-jboss/
+#1498366457
+vagrant halt
+#1498405212
+cd src/vagrant-jboss/
+#1498405213
+ls
+#1498405243
+wget https://archive.apache.org/dist/activemq/5.14.5/apache-activemq-5.14.5-bin.tar.gz
+#1498405377
+curl -o  https://archive.apache.org/dist/activemq/5.14.5/apache-activemq-5.14.5-bin.tar.gz
+#1498405387
+curl -O  https://archive.apache.org/dist/activemq/5.14.5/apache-activemq-5.14.5-bin.tar.gz
+#1498405428
+tar xvf apache-activemq-5.14.5-bin.tar.gz 
+#1498405430
+ls
+#1498408749
+cd apache-activemq-5.14.5
+#1498408751
+ls
+#1498408753
+cd conf/
+#1498408754
+ls
+#1498408757
+more activemq.xml 
+#1498408822
+cp activemq.xml activemq-saved.xml 
+#1498408828
+cd ..
+#1498408828
+ls
+#1498408841
+./bin/activemq
+#1498408850
+./bin/activemq start
+#1498408880
+./bin/activemq console
+#1498408886
+./bin/activemq stop
+#1498408893
+./bin/activemq console
+#1498408979
+cp ../..
+#1498408996
+cp ../activemq-1.xml conf/activemq.xml 
+#1498409002
+./bin/activemq console
+#1498411964
+cd ..
+#1498411965
+ls
+#1498412607
+chmod +x install-apache-amq.sh 
+#1498412741
+vagrant up node-1
+#1498412906
+vagrant provision node-1
+#1498413557
+vagrant provision node-4
+#1498413568
+vagrant up --provision node-4
+#1498413546
+vagrant up node-3 --provision
+#1498413849
+vagrant provision node-1
+#1498413971
+vagrant ssh node-1
+#1498413527
+vagrant up node-2 --provision
+#1498414462
+vagrant ssh
+#1498414477
+vagrant ssh node-1
+#1498414487
+vagrant ssh node-2
+#1498414692
+cd
+#1498414698
+cd src/rspace-eclipse/scharp/
+#1498414745
+exit
+#1498416667
+git status
+#1498416681
+git diff install.sh
+#1498416800
+git status
+#1498416826
+git add Vagrantfile install.sh activemq-apache-*.xml 
+#1498416829
+git status
+#1498416845
+git add install-apache-amq.sh
+#1498416879
+cp ~/src/rspace-eclipse/scharp/.gitignore .
+#1498416882
+git add install-apache-amq.sh
+#1498416885
+git status
+#1498416959
+git add .gitignore
+#1498416972
+git status
+#1498416997
+git commit -m "Added install and config files for apache amq 5.14.5."
+#1498417002
+git push -u origin dev 
+#1498417061
+vagrant halt
+#1498414448
+vagrant reload node-1
+#1498414525
+vagrant reload node-2
+#1498414539
+vagrant reload node-3 --provision
+#1498414549
+vagrant reload node-4
+#1498417089
+vagrant halt
+#1498417800
+vagrant up node-4
+#1498418975
+vagrant ssh node-4
+#1498414711
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498414780
+./run-plan-cell-te3-vagrant-4-amqs.sh 2
+#1498414800
+./run-plan-cell-te3-vagrant-4-amqs.sh 3
+#1498414816
+./run-plan-cell-te3-vagrant-4-amqs.sh 4
+#1498419360
+ping 10.22.54.17
+#1498419261
+vagrant reload node-4
+#1498419493
+ping 10.22.54.7
+#1498419497
+ping 10.22.54.8
+#1498419502
+ping 10.22.54.9
+#1498419427
+vagrant reload node-1
+#1498419432
+vagrant reload node-2
+#1498419444
+vagrant reload node-3 
+#1498420945
+vagrant reload node-2 --provision
+#1498421043
+./run-plan-cell-te3-vagrant-4-amqs.sh 1
+#1498420975
+vagrant reload node-4 --provision
+#1498420954
+vagrant reload node-3 --provision
+#1498420894
+vagrant reload node-1 --provision
+#1498421519
+git status
+#1498421537
+git add Vagrantfile activemq-*.xml
+#1498421539
+git status
+#1498421548
+git add install.sh
+#1498421550
+git status
+#1498421576
+git commit -m "Changed IP address to use the NG devcloud ip addresses."
+#1498421581
+git push -u origin dev 
+#1498421294
+vagrant reload node-2 --provision
+#1498421406
+./run-plan-cell-te3-vagrant-4-amqs.sh 4
+#1498421402
+./run-plan-cell-te3-vagrant-4-amqs.sh 3
+#1498421396
+./run-plan-cell-te3-vagrant-4-amqs.sh 2
+#1498422348
+ls
+#1498423513
+git status
+#1498423543
+git add Vagrantfile README.md
+#1498423551
+git commit -m "Added README"
+#1498423553
+git push 
+#1498423973
+git status
+#1498423978
+git add README.md
+#1498423991
+git commit -m "Fixed format of README."
+#1498423993
+git push
+#1498428842
+git status
+#1498433164
+vagrant halt
+#1498433256
+git status
+#1498433440
+git status
+#1498433451
+git diff Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile
+#1498433462
+git status
+#1498433480
+git diff docker-run-plan-cell-te3-ng.sh
+#1498433549
+exit
+#1498433552
+exit
+#1498433554
+exit
+#1498433557
+git status
+#1498433580
+git diff src/test/java/edu/kestrel/scharp/activemq/TestMainServersNGDevCloud.java
+#1498433614
+git status
+#1498434508
+diff docker-run-plan-cell-te3-vagrant-4-amqs.sh docker-run-plan-cell-te3-ng.sh 
+#1498436723
+git pull
+#1498436727
+git status
+#1498436738
+git add Docker/jboss-fuse-docker/devcloud/ 
+#1498436743
+git add Docker/jboss-fuse-docker/mitre/
+#1498436761
+diff run-plan-cell-te3-vagrant-4-amqs.sh run-plan-cell-te3-ng.sh
+#1498436821
+rm mv run-plan-cell-te3-ng.sh run-plan-cell-te3-ng-4-amqs.sh
+#1498436838
+mv run-plan-cell-te3-ng.sh run-plan-cell-te3-ng-4-amqs.sh
+#1498436841
+git status
+#1498436865
+git add run-plan-cell-te3-ng-4-amqs.sh docker-run-plan-cell-te3-ng.sh 
+#1498436868
+git status
+#1498436891
+git diff Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile
+#1498436918
+git add Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile
+#1498436921
+git status
+#1498436932
+git add src/test/java/edu/kestrel/scharp/activemq/TestMainServersNGDevCloud.java
+#1498436935
+git status
+#1498437008
+git commit -m "Added config files for running 4 amq servers."
+#1498437017
+git push -u origin preTE4 
+#1498438383
+git pull
+#1498438622
+exit
+#1498438624
+exit
+#1498438626
+exit
+#1498438627
+exit
+#1498438629
+exit
+#1498438631
+exit
+#1498509118
+cd src/rspace-eclipse/scharp/
+#1498509119
+ls
+#1498509122
+git pull
+#1498509333
+mvn clean compile
+#1498509734
+git status
+#1498518013
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE3Scenario.java src/test/java/edu/kestrel/scharp/activemq/AmqConnectionManagerTest.java
+#1498518016
+git status
+#1498518053
+git commit -m "Fixed loading of targets when using the data services and the target file does not have dataservice in its name. "
+#1498518061
+git push -u origin preTE4 
+#1498519359
+git status
+#1498519366
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE3Scenario.java src/test/java/edu/kestrel/scharp/activemq/AmqConnectionManagerTest.java
+#1498519368
+git status
+#1498519376
+git commit -m "Fixed loading of targets when using the data services and the target file does not have dataservice in its name. "
+#1498519437
+git push -u origin preTE4 
+#1498625448
+docker image
+#1498625454
+docker images 
+#1498625460
+docker images -a
+#1498625522
+docker rmi $(docker images --quiet --filter "dangling=true")
+#1498625580
+docker volume rm $(docker volume ls -f dangling=true -q)
+#1498625596
+docker images
+#1498625846
+cd
+#1498625848
+cd src/
+#1498625848
+ls
+#1498625781
+docker run -it --name spacemacs jare/spacemacs
+#1498626447
+brew update
+#1498626466
+brew upgrade
+#1498626505
+brew cleanup
+#1498626524
+brew list
+#1498626537
+brew uninstall emacs
+#1498629801
+emacs -q
+#1498629824
+/Applications/Emacs.app/Contents/MacOS/Emacs
+#1498629841
+/Applications/Emacs.app/Contents/MacOS/Emacs -q
+#1498755650
+git pull --all --prune
+#1498755834
+git checkout origin/201706-hackathon 
+#1498755836
+git pull
+#1498763915
+git checkout -t origin/201706-hackathon 
+#1498763922
+git pull
+#1498763935
+git checkout master 
+#1498767832
+git pull
+#1498767849
+docker run -it -p 8080:8080 scharp/gui:latest
+#1498778465
+docker ps -a
+#1498778491
+docker rm -f c7194b9f0d26
+#1498835257
+git status
+#1498835284
+git diff src/main/java/edu/kestrel/scharp/activemq/AmqJsonServer.java
+#1498835306
+git checkout marcel-test-te4-ui-server
+#1498835315
+git checkout -b marcel-test-te4-ui-server
+#1498835330
+git add src/main/java/edu/kestrel/scharp/activemq/AmqJsonServer.java src/main/java/edu/kestrel/scharp/activemq/te3/StrikePlannerUiBridge.java
+#1498835333
+git status
+#1498835339
+git add src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1498835354
+git commit -m "Testing TE4 ui integration."
+#1498835361
+git push -u origin marcel-test-te4-ui-server 
+#1498835370
+ls
+#1498867081
+git pull --all --prune
+#1498867086
+git checkout master 
+#1498867088
+git pull
+#1498867103
+git checkout -- src/main/resources/logback.xml
+#1498867105
+git pull
+#1498867128
+git checkout marcel-test-te4-ui-server 
+#1498867138
+git pull
+#1498867294
+git rebase master
+#1498870670
+git status
+#1498870678
+git rebase --continue
+#1498870734
+git rebase --abort
+#1498870738
+git status
+#1498870748
+git pull origin master 
+#1498870776
+git status
+#1498870963
+git add src/main/java/edu/kestrel/scharp/activemq/te3/StrikePlannerUiBridge.java
+#1498870966
+git status
+#1498870974
+mvn clean compile
+#1498871000
+mvn --version
+#1498871036
+cd rspace-eclipse/scharp/
+#1498871042
+mvn clean compile
+#1498871205
+git status
+#1498871237
+mvn clean compile
+#1498871268
+git diff marcel-test-te4-ui-server...master 
+#1498871315
+git status
+#1498871323
+git diff src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java
+#1498871432
+cd ..
+#1498871435
+ls
+#1498872627
+cd rspace-eclipse/scharp/
+#1498872627
+ls
+#1498872634
+git reset --
+#1498872638
+git status
+#1498872669
+git reset -- hard
+#1498872672
+git status
+#1498872684
+git checkout master 
+#1498872694
+git status
+#1498872867
+git reset -- hard HEAD
+#1498872871
+git status
+#1498872890
+git checkout -- .
+#1498872892
+git status
+#1498872911
+git clean --help
+#1498872937
+git clean -n
+#1498872943
+git clean -i
+#1498873073
+git checkout --help
+#1498873134
+git remote -v
+#1498873145
+cd ..
+#1498873147
+ls
+#1498873151
+rm -rf scharp/
+#1498873159
+git clone git@github.com:KestrelInstitute/scharp.git
+#1498873166
+cd scharp/
+#1498873174
+mvn clean compile
+#1498873211
+git checkout -t origin/marcel-test-te4-ui-server 
+#1498873214
+git pull
+#1498873219
+git pull origin master 
+#1498873389
+mvn compile
+#1498873407
+git status
+#1498873424
+git commit -m "Merged with master and solved conflicts."
+#1498873430
+git status
+#1498873442
+git push -u origin marcel-test-te4-ui-server 
+#1498873588
+ps -A | grep java
+#1498873601
+killall -9 java
+#1498873604
+ps -A | grep java
+#1499097718
+git pull --all
+#1499101714
+git status
+#1499125169
+git pull -all --prune
+#1499125176
+git pull --all --prune
+#1499125194
+git pull origin master 
+#1499125230
+git status
+#1499125241
+git diff src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java
+#1499182116
+git pull
+#1499189969
+cd
+#1499189972
+cd src/
+#1499189973
+ls
+#1499189982
+cd jboss-vagrant/
+#1499189982
+ls
+#1499189986
+cd ..
+#1499189989
+cd vagrant-jboss/
+#1499189990
+ls
+#1499190087
+git status
+#1499190091
+git pull
+#1499190495
+which bash
+#1499190514
+/usr/local/bin/bash --version
+#1499190104
+vagrant up node-1
+#1499190755
+vagrant ssh node-1
+#1499190190
+vagrant up node-2
+#1499190643
+vagrant up node-3
+#1499190671
+vagrant up node-4
+#1499190842
+vagrant reload --provision node-1
+#1499190859
+vagrant reload --provision  node-2
+#1499190901
+vagrant  reload --provision node-4
+#1499220249
+git status
+#1499220262
+ls
+#1499220272
+cd
+#1499220275
+exit
+#1499220277
+exit
+#1499220280
+exit
+#1499192955
+vagrant ssh node-4
+#1499220294
+exit
+#1499192877
+vagrant ssh node-3
+#1499220305
+exit
+#1499192835
+vagrant ssh node-2
+#1499220314
+exit
+#1499192660
+vagrant ssh node-1
+#1499220331
+vagrant halt
+#1499220359
+eit
+#1499220361
+exit
+#1499268314
+cd src/rspace-eclipse/scharp/
+#1499268318
+git status
+#1499268328
+git add eclipse-utils/
+#1499268335
+git diff src/main/java/edu/kestrel/scharp/activemq/te3/servers/ComputePlan.java
+#1499268344
+git add src/main/java/edu/kestrel/scharp/activemq/te3/servers/ComputePlan.java
+#1499268346
+git status
+#1499268358
+git diff src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellAMQClient.java
+#1499268373
+git add src/main/java/edu/kestrel/scharp/planner/manager
+#1499268376
+git status
+#1499268384
+git diff src/main/resources/data/TE4/RSPACE_TE4_UC_v1.7.json
+#1499268395
+git add src/main/resources/data/TE4/RSPACE_TE4_UC_v1.7.json
+#1499268398
+git status
+#1499268414
+git commit -m "Changed queues to topics."
+#1499268420
+git push -u origin marcel-test-te4-ui-server 
+#1499295639
+git pull --all --prune
+#1499295656
+git pull origin master 
+#1499295669
+git stash
+#1499295672
+git pull origin master 
+#1499305598
+git status
+#1499305622
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4Scenario.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java
+#1499305647
+git commit -m "Merged with master and fixed dc2c node configuration."
+#1499305650
+git pull
+#1499305661
+git push -u origin marcel-test-te4-ui-server 
+#1499305670
+git pull origin master 
+#1499362365
+git status
+#1499362371
+git pull --all
+#1499367054
+git pull
+#1499367942
+git status
+#1499367957
+git add eclipse-utils/
+#1499367960
+git status
+#1499367990
+git diff src/main/java/edu/kestrel/scharp/activemq/AmqConnectionManager.java
+#1499368001
+git add src/main/java/edu/kestrel/scharp/activemq/AmqConnectionManager.java
+#1499368003
+git status
+#1499368023
+git commit -m "Fixed embedded broker initialization."
+#1499368029
+git push -u origin marcel-test-te4-ui-server 
+#1499368036
+git pull --all
+#1499372068
+cd Docker/
+#1499372069
+ls
+#1499372072
+cd jboss-fuse-docker/
+#1499372073
+ls
+#1499372086
+more docker-run.sh 
+#1499372125
+docker run -it --rm --name fuse -e JAVA_MIN_MEM=3g -e JAVA_MAX_SIZE=6g -ip 10.22.54.7 -p 8181:8181 -p 8101:8101 -p 1099:1099 -p 1098:1098 -p 44444:44444 -p 61616:61616 -p 1883:1883 -p 5672:5672 -p 61613:61613 -p 61617:61617 -p 8883:8883 -p 5671:5671 -p 61614:61614  jboss/jboss-fuse-full
+#1499372159
+docker run -it --rm --name fuse -e JAVA_MIN_MEM=3g -e JAVA_MAX_SIZE=6g --ip 10.22.54.7 -p 8181:8181 -p 8101:8101 -p 1099:1099 -p 1098:1098 -p 44444:44444 -p 61616:61616 -p 1883:1883 -p 5672:5672 -p 61613:61613 -p 61617:61617 -p 8883:8883 -p 5671:5671 -p 61614:61614  jboss/jboss-fuse-full
+#1499372175
+docker images
+#1499372187
+./docker-build.sh 
+#1499372361
+docker run -it --rm --name fuse -e JAVA_MIN_MEM=3g -e JAVA_MAX_SIZE=6g --ip 10.22.54.7 -p 8181:8181 -p 8101:8101 -p 1099:1099 -p 1098:1098 -p 44444:44444 -p 61616:61616 -p 1883:1883 -p 5672:5672 -p 61613:61613 -p 61617:61617 -p 8883:8883 -p 5671:5671 -p 61614:61614  jboss/jboss-fuse-full
+#1499372395
+docker network create --subnet 10.22.54.0/16 rspace
+#1499372691
+docker ps -a
+#1499372709
+docker run -it f780b610d5cb bash
+#1499372939
+ping 10.22.54.7
+#1499372723
+docker exec -it f780b610d5cb bash
+#1499372420
+docker run -it --rm --name fuse -e JAVA_MIN_MEM=3g -e JAVA_MAX_SIZE=6g --net rspace --ip 10.22.54.7 -p 8181:8181 -p 8101:8101 -p 1099:1099 -p 1098:1098 -p 44444:44444 -p 61616:61616 -p 1883:1883 -p 5672:5672 -p 61613:61613 -p 61617:61617 -p 8883:8883 -p 5671:5671 -p 61614:61614  jboss/jboss-fuse-full
+#1499373054
+docker network
+#1499373059
+docker network ls
+#1499373108
+docker run -it --rm --name fuse -e JAVA_MIN_MEM=3g -e JAVA_MAX_SIZE=6g --net bridge --ip 10.22.54.7 -p 8181:8181 -p 8101:8101 -p 1099:1099 -p 1098:1098 -p 44444:44444 -p 61616:61616 -p 1883:1883 -p 5672:5672 -p 61613:61613 -p 61617:61617 -p 8883:8883 -p 5671:5671 -p 61614:61614  jboss/jboss-fuse-full
+#1499373148
+docker run -it --rm --name fuse -e JAVA_MIN_MEM=3g -e JAVA_MAX_SIZE=6g --net rspace --ip 10.22.54.7  jboss/jboss-fuse-full
+#1499373200
+docker ps -a
+#1499373207
+cd
+#1499373210
+cd src/jboss-vagrant/
+#1499373211
+ls
+#1499373214
+cd ..
+#1499373215
+ls
+#1499373225
+ls jboss-vagrant/
+#1499373229
+rm -rf jboss-vagrant/
+#1499373231
+cd vagrant-jboss/
+#1499373232
+ls
+#1499373380
+cd devcloud/
+#1499373380
+ls
+#1499373385
+more activemq-1.xml 
+#1499373717
+cd ..
+#1499373733
+vagrant up --node-1 --provision
+#1499373884
+vagrant up --node-2 --provision
+#1499373754
+vagrant up node-1 --provision
+#1499373907
+vagrant up node-3 --provision
+#1499373924
+vagrant up node-4 --provision
+#1499373892
+vagrant up node-2 --provision
+#1499374456
+vagrant ssh -c /opt/jboss/jboss-fuse/bin/fuse node-1
+#1499374491
+vagrant ssh -c "/opt/jboss/jboss-fuse/bin/admin --list" node-1
+#1499374504
+vagrant ssh -c "/opt/jboss/jboss-fuse/bin/admin list" node-1
+#1499374670
+ps -aux
+#1499374672
+ps -au
+#1499374676
+ps -A
+#1499442922
+git status
+#1499442946
+git add ../../src/main/java/edu/kestrel/scharp/activemq/
+#1499442957
+git diff ../../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java
+#1499442970
+git add ../../src/main/java/edu/kestrel/scharp/planner/manager
+#1499442973
+git status
+#1499442994
+git commit -m "Changed the creation of clients and servers."
+#1499442997
+git status
+#1499443003
+git push -u origin marcel-test-te4-ui-server 
+#1499474900
+git pull --all --prune
+#1499474911
+git pull
+#1499474917
+git pull origin master 
+#1499477289
+cd 
+#1499477300
+cd Dropbox/EclipseMarsSettings/
+#1499477314
+diff EclipseOxygenDefaultShortcuts.csv EclipseOxygenEmacsShortcuts.csv 
+#1499480201
+git status
+#1499480208
+git checkout sf-te4-3 
+#1499480217
+mvn clean compile
+#1499480226
+cd .. 
+#1499480228
+cd ..
+#1499480239
+mvn clean compile
+#1499374629
+vagrant ssh node-4 
+#1499374599
+vagrant ssh node-3 
+#1499374564
+vagrant ssh node-2
+#1499374525
+vagrant ssh node-1
+#1499481038
+cd 
+#1499481043
+cd src/rspace-eclipse/scharp/
+#1499481046
+git pull
+#1499481067
+git status
+#1499481076
+mvn clean compile
+#1499481258
+git checkout master 
+#1499481268
+git checkout -- src/main/resources/logback.xml
+#1499481271
+git checkout master 
+#1499481276
+git pull
+#1499481284
+git pull --all --prune
+#1499481293
+git branch -d sf-te4-3 
+#1499481296
+git branch 
+#1499481301
+git pull
+#1499481312
+git checkout marcel-test-te4-ui-server 
+#1499481318
+git status
+#1499481332
+git push -u origin marcel-test-te4-ui-server 
+#1499481338
+git status
+#1499481357
+git pull origin master 
+#1499481941
+mvn clean compile
+#1499481955
+git status
+#1499481968
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4Scenario.java src/main/java/edu/kestrel/scharp/planner/manager
+#1499481970
+git status
+#1499481985
+git commit -m "Merged with master and solved conflicts."
+#1499481991
+git push -u origin marcel-test-te4-ui-server 
+#1499492308
+cd src/
+#1499492313
+cd rspace-eclipse/scharp/
+#1499492314
+git status
+#1499492320
+git add src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1499492344
+git commit -m "Fixed tests to use new avro schemas for package options."
+#1499492349
+git push -u origin marcel-test-te4-ui-server 
+#1499492381
+mvn clean compile 
+#1499492426
+cd 
+#1499492429
+cd src/vagrant-jboss/
+#1499492443
+vagrant up node-4
+#1499493475
+git status
+#1499493484
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4Scenario.java
+#1499493510
+git commit -m "Fixed the base ids for the units."
+#1499493516
+git push -u origin marcel-test-te4-ui-server 
+#1499492483
+vagrant up node-1
+#1499492472
+vagrant up node-2
+#1499492460
+vagrant up node-3
+#1499538717
+git status
+#1499538725
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java
+#1499538743
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java
+#1499538767
+git commit -m "Changed some log statements to test if debug level is enabled."
+#1499538772
+git push -u origin marcel-test-te4-ui-server 
+#1499543817
+diff devcloud/activemq-1.xml ng-original/activemq-ng-1.xml 
+#1499544473
+git status
+#1499551522
+git status
+#1499562829
+git diff src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1499562912
+git status
+#1499562916
+git diff src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1499562952
+git status
+#1499562956
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1499562964
+git diff src/test/java/edu/kestrel/scharp/activemq/TestMainServersNGDevCloud.java
+#1499562988
+git status
+#1499562996
+git add src/test/java/edu/kestrel/scharp/activemq/TestMainServersNGDevCloud.java
+#1499563001
+git add src/main/resources/logback.xml
+#1499563019
+git commit -m "Removed the prefix from the queue names."
+#1499563029
+git push -u origin marcel-test-te4-ui-server 
+#1499563038
+git checkout sf-avro-update 
+#1499563041
+git pull
+#1499563056
+mvn clean generate-sources compile
+#1499563189
+cd eclipse-utils/
+#1499563189
+ls
+#1499563202
+git checkout master 
+#1499563206
+ls
+#1499563211
+git pull
+#1499563214
+ls
+#1499563290
+git checkout sf-avro-update 
+#1499563326
+git checkout sf-avro
+#1499563329
+git pull
+#1499563336
+mvn clean compile
+#1499563346
+cd ..
+#1499563347
+mvn clean compile
+#1499563919
+git checkout master 
+#1499563920
+git pull
+#1499563955
+git pull --all --prune
+#1499563964
+git branch -d sf-avro
+#1499563970
+git branch 
+#1499563982
+git checkout marcel-test-te4-ui-server 
+#1499563994
+git checkout -- src/main/resources/logback.xml
+#1499564001
+git checkout marcel-test-te4-ui-server 
+#1499564004
+git pull
+#1499564011
+git pull origin master 
+#1499564041
+mvn clean generate-sources compile
+#1499564943
+git status
+#1499564949
+git add src/main/java/edu/kestrel/scharp/planner/entities/PackageActivity.java
+#1499565008
+git commit -m "Fixed write external to use AircraftActivity for support missions instead of FighterActivity."
+#1499565013
+git push -u origin marcel-test-te4-ui-server 
+#1499571592
+git status
+#1499571606
+git checkout -- src/main/java/edu/kestrel/scharp/planner/util/AvroUtils.java
+#1499571610
+git status
+#1499571617
+git add src/main/java/edu/kestrel/scharp/planner/entities/FighterActivity.java src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1499571660
+git commit -m "Fixed write and read external method for FighterActivity, removed warning from get broker label method."
+#1499571665
+git push -u origin marcel-test-te4-ui-server 
+#1499571737
+git pull --all --prune
+#1499571868
+git checkout master 
+#1499571878
+git checkout -- src/main/resources/logback.xml
+#1499571879
+git checkout master 
+#1499571891
+mvn clean generate-sources compile
+#1499572054
+git branch 
+#1499572100
+git checkout marcel-test-te4-ui-server 
+#1499572112
+git checkout -- src/main/resources/logback.xml
+#1499572116
+git checkout marcel-test-te4-ui-server 
+#1499576633
+git status
+#1499576638
+git pull --all
+#1499492515
+vagrant ssh node-4
+#1499536174
+vagrant ssh node-3
+#1499536145
+vagrant ssh node-2
+#1499536075
+vagrant ssh node-1
+#1499576656
+vagrant halt
+#1499576703
+exit
+#1499576704
+exit
+#1499576706
+exit
+#1499576707
+exit
+#1499576708
+exit
+#1499576711
+exit
+#1499618971
+cd src/rspace-eclipse/scharp/
+#1499618972
+ls
+#1499618980
+git checkout master
+#1499618991
+git status
+#1499618997
+git diff src/main/resources/logback.xml
+#1499619005
+git checkout -- src/main/resources/logback.xml
+#1499619008
+git status
+#1499619016
+git push -u origin marcel-test-te4-ui-server 
+#1499619024
+git checkout master 
+#1499619026
+git pull
+#1499619038
+git pull --all --prune
+#1499619043
+git checkout sf-avro
+#1499619045
+git pull
+#1499619055
+mvn clean generate-sources compile
+#1499619387
+git checkout marcel-test-te4-ui-server 
+#1499619391
+git status
+#1499619437
+git branch 
+#1499619451
+git branch -d marcel-test-te4-ui-server 
+#1499619463
+git checkout master 
+#1499619466
+git pull
+#1499619483
+git branch -d marcel-test-te4-ui-server 
+#1499619488
+git branch -d sf-avro
+#1499619491
+git branch -d sf-avro-update 
+#1499619517
+git checkout sf-avro-update 
+#1499619531
+git checkout -- src/main/resources/logback.xml
+#1499619534
+git checkout sf-avro-update 
+#1499619536
+git status
+#1499619540
+git pull
+#1499619582
+git checkout master 
+#1499619601
+mvn clean generate-sources compile
+#1499619627
+more build-all-docker-images.sh 
+#1499619641
+docker build --rm=true -f Docker/DockerJava/Dockerfile -t scharp/ubuntujava8 .
+#1499619661
+more build-all-docker-images.sh 
+#1499619671
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
+#1499620380
+more build-all-docker-images.sh 
+#1499620389
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile -t scharp/planner .
+#1499622160
+git checkout marcel-tanker-missions
+#1499622168
+git checkout -b marcel-tanker-missions
+#1499622173
+git status
+#1499636337
+cd
+#1499636343
+cd Downloads/
+#1499636343
+ls
+#1499636359
+ls *.iso
+#1499636407
+ls
+#1499636411
+ls *.iso
+#1499636434
+cp Win10_1703_English_x64.iso /Users/markbecker/Downloads/
+#1499636438
+sudo cp Win10_1703_English_x64.iso /Users/markbecker/Downloads/
+#1499636489
+cd /Users/markbecker/Downloads/
+#1499636490
+ls
+#1499636493
+ls -al
+#1499636502
+ls Win10_1703_English_x64.iso 
+#1499636507
+ls -al Win10_1703_English_x64.iso 
+#1499636516
+exit
+#1499636480
+sudo -s
+#1499636595
+cd
+#1499636597
+cd src/
+#1499636604
+cd rspace-eclipse/scharp/
+#1499636606
+git pull
+#1499636613
+git status
+#1499636623
+git diff src/main/java/edu/kestrel/scharp/planner/search/SearchState.java
+#1499636634
+git add src/main/java/edu/kestrel/scharp/planner
+#1499636639
+git status
+#1499636661
+git commit -m "Added log statements to know when things go wrong with reservations."
+#1499636668
+git push -u origin marcel-tanker-missions 
+#1499636675
+exit
+#1499659439
+cd src/rspace-eclipse/scharp/
+#1499659442
+git status
+#1499711930
+git pull --all 
+#1499711940
+git pull origin master 
+#1499711953
+mvn clean compile
+#1499712035
+git status
+#1499712043
+git push -u origin marcel-tanker-missions 
+#1499713979
+git pull --all 
+#1499713984
+git pull origin master 
+#1499714071
+git status
+#1499714087
+git push -u origin marcel-tanker-missions 
+#1499717726
+git pull --all
+#1499717730
+git pull origin master 
+#1499719649
+docker pull
+#1499719680
+docker pull docker-rspace.di2e.net/ng-ptt-email:0.0.2
+#1499719705
+docker loging docker-rspace.di2e.net
+#1499719714
+docker login docker-rspace.di2e.net
+#1499719752
+docker pull docker-rspace.di2e.net/ng-ptt-email:0.0.2
+#1499728253
+git pull origin master 
+#1499728274
+git status
+#1499728281
+git push -u origin marcel-tanker-missions 
+#1499728311
+git pull
+#1499731701
+git status
+#1499731712
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1499731721
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1499731732
+git commit -m "Added debug break."
+#1499731750
+git pull --all 
+#1499731767
+git checkout -t origin/sf-ui 
+#1499731773
+mvn clean compile
+#1499732285
+git checkout marcel-tanker-missions 
+#1499732295
+mvn clean compile
+#1499750726
+/Applications/Emacs.app/Contents/MacOS/Emacs --debug-init
+#1499751644
+cd
+#1499751646
+curl -i http://melpa.org/packages/archive-contents 
+#1499751652
+ls
+#1499751898
+curl -i http://melpa.org/packages/archive-contents cd 
+#1499751905
+ls 
+#1499751919
+cd Dropbox/.emacs.d/elp
+#1499751921
+cd Dropbox/.emacs.d/elpa/
+#1499751922
+ls
+#1499751997
+more dot-mode-readme.txt 
+#1499752205
+cd ..
+#1499752218
+mv dired.el init-dired.el
+#1499752118
+/Applications/Emacs.app/Contents/MacOS/Emacs --debug-init
+#1499753407
+git status
+#1499753420
+git add src/main/java/edu/kestrel/scharp/planner/entities/AircraftActivity.java
+#1499753433
+git commit -m "Fixed toString() method."
+#1499753440
+git push -u origin marcel-tanker-missions 
+#1499819519
+git pull
+#1499834766
+git status
+#1499834782
+git add src/main/java/edu/kestrel/scharp/planner/entities/AircraftActivity.java src/main/java/edu/kestrel/scharp/planner/manager/ControlAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java 
+#1499834788
+git diff src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler.java
+#1499834798
+git add src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler.java
+#1499834800
+git status
+#1499834812
+git commit -m "Fixed control missions."
+#1499834818
+git push -u origin marcel-tanker-missions 
+#1499834825
+git checkout master 
+#1499834834
+mvn clean compile
+#1499834851
+git pull
+#1499834854
+mvn clean compile
+#1499835129
+git checkout drs10
+#1499835132
+git pull
+#1499835138
+mvn clean compile
+#1499836144
+git pull
+#1499836152
+mvn clean compile
+#1499836420
+git checkout marcel-tanker-missions 
+#1499836425
+git pull origin master 
+#1499836434
+git pull
+#1499836440
+git push -u origin marcel-tanker-missions 
+#1499837716
+exit
+#1499837718
+exit
+#1499837720
+exit
+#1499909236
+cd src/
+#1499909236
+ls
+#1499909242
+cd scharp-docker-ui/
+#1499909243
+ls
+#1499909254
+cd ..
+#1499909257
+cd rspace
+#1499909258
+ps
+#1499909259
+ls
+#1499909262
+cd ..
+#1499909292
+mkdir rspace-ui-src
+#1499909296
+cd rspace-ui-src/
+#1499909324
+git clone git@github.com:NextCenturyCorporation/SCHARP.git
+#1499909333
+cd SCHARP/
+#1499909338
+brew update
+#1499909374
+brew install yarn
+#1499909426
+npm run build
+#1499909442
+yarn install
+#1499909661
+cd
+#1499909665
+cd src/vagrant-jboss/
+#1499909686
+cd 
+#1499909653
+npm run build
+#1499909699
+cd src/rspace-eclipse/scharp/
+#1499909705
+git checkout master 
+#1499909708
+git pull
+#1499909744
+mvn clean compile
+#1499910121
+npm start -- --stompHost 10.22.54.7
+#1499917581
+git pull --all 
+#1499917589
+git branch 
+#1499964187
+git checkout origin/SCHARP-601
+#1499964198
+git checkout -t origin/SCHARP-601
+#1499964207
+node run build
+#1499964242
+yarn install
+#1499964245
+node run build
+#1499964252
+more README.md 
+#1499964260
+npm run build
+#1499909679
+vagrant up node-1
+#1499967569
+git status
+#1499967579
+git diff src/main/java/edu/kestrel/scharp/activemq/te3/StrikePlannerUiBridge.java
+#1499967588
+git add src/main/java/edu/kestrel/scharp/activemq/te3/StrikePlannerUiBridge.java 
+#1499967613
+git commit -m "Changed the log statement for StrikePlannerUiBrigde."
+#1499967619
+git push -u origin master 
+#1499967627
+git pull
+#1499967646
+git checkout -b marcel-change-ui-reply-queue-to-topic
+#1499967649
+git pull
+#1499964330
+npm start -- --stompHost 10.22.54.7
+#1499968667
+git pull
+#1499968683
+mpm run build
+#1499968689
+npm run build
+#1499969675
+git status
+#1499969717
+git diff src/main/java/edu/kestrel/scharp/activemq/AmqJsonServer.java
+#1499969737
+git add src/main/java/edu/kestrel/scharp/activemq/AmqJsonServer.java
+#1499969761
+git commit -m "Changed the ui reply destination to a queue. "
+#1499969769
+git push -u origin marcel-change-ui-reply-queue-to-topic 
+#1499972186
+git status
+#1499972202
+git add src/main/java/edu/kestrel/scharp/activemq/te3/servers/SelectStrikeOptions.java
+#1499972232
+git commit -m "Fixed null pointer exception cause by pressing the select option in the ui multiple times."
+#1499972256
+git status
+#1499972267
+git push -u origin marcel-change-ui-reply-queue-to-topic 
+#1499972274
+git status
+#1499972295
+git checkout -b marcel-parse-isr-sync-matrix
+#1499972302
+git status
+#1499968741
+npm start
+#1499972382
+git pull
+#1499978471
+cd src/main/resources/data/TE4/
+#1499978484
+grep UAV14M
+#1499978496
+grep UAV14M *
+#1499978513
+grep UAV *
+#1499994240
+git pull
+#1499994251
+git status
+#1499996554
+cd
+#1499996560
+cd src/rspace-eclipse/scharp/
+#1499996564
+mvn clean
+#1499996656
+mvn generate-sources compile
+#1499997285
+cd target/classes/
+#1499997286
+ls
+#1499997290
+cd data/
+#1499997291
+ls
+#1499997295
+cd TE4/
+#1499997296
+ls
+#1499997303
+more Airspaces.xml 
+#1499997326
+mvn clean
+#1499997339
+cd ../..
+#1499997347
+ls
+#1499997350
+mvn clean
+#1499997715
+mvn generate-sources compile
+#1500010148
+git status
+#1500012150
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/
+#1500012162
+git add src/main/resources/data/TE4/
+#1500012165
+git status
+#1500012175
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/
+#1500012184
+git add src/main/java/edu/kestrel/scharp/planner/util/
+#1500012195
+git add src/main/resources/data/TE3
+#1500012198
+git status
+#1500012331
+git commit -m "Parsing of ISR sync matrix, parsing of the JIPCL, optimized creation of air tracks by removing repeated parsing of airspace files, some refactoring of scenario loading code, formatted some of the scenarion data files." 
+#1500012335
+git status
+#1500012344
+git push -u origin marcel-parse-isr-sync-matrix 
+#1500012352
+git status
+#1500012364
+git checkout master 
+#1500012367
+git pull
+#1500012379
+mvn clean compile
+#1500013684
+git status
+#1500013699
+git checkout -- src/main/java/edu/kestrel/scharp/planner/manager/PlanningOptions.java
+#1500013702
+git pull
+#1500013713
+git checkout drs10 
+#1500013716
+git pull
+#1500013724
+mvn clean compile
+#1499966739
+vagrant ssh node-1
+#1500083379
+cd src/rspace-eclipse/scharp/
+#1500083381
+git pull
+#1500083444
+mvn clean compile
+#1500139023
+sudo kextunload -b com.globaldelight.driver.Boom2Device
+#1500141912
+git checkout master
+#1500141918
+git pull --all
+#1500141940
+git checkout -- src/main/resources/logback.xml
+#1500141944
+git pull --all
+#1500141967
+git checkout -t origin/sf-sead-workflow-te4 
+#1500141970
+git pull
+#1500147564
+git status
+#1500147585
+git checkout marcel-parse-isr-sync-matrix 
+#1500147596
+git pull
+#1500147625
+git status
+#1500148051
+git checkout master 
+#1500148069
+git checkout -b marcel-create-isr-missions
+#1500151400
+mvn clean compile
+#1500151797
+git status
+#1500179698
+git pull
+#1500179705
+git pull origin master 
+#1500179735
+git status
+#1500179750
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/
+#1500179795
+git status
+#1500179825
+git add src/main/java/edu/kestrel/scharp/planner/
+#1500179828
+git status
+#1500179842
+git add src/main/java/edu/kestrel/scharp/airdomain/interfaces
+#1500179847
+git status
+#1500179855
+got add src/main/java/edu/kestrel/scharp/airdomain/scenarios/
+#1500179859
+git status
+#1500179869
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios
+#1500179872
+git status
+#1500179879
+git diff src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java
+#1500179888
+git status
+#1500179897
+git add src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java src/main/resources/data/TE4/AirspaceSegments.xml
+#1500179900
+git status
+#1500179907
+git diff src/main/resources/logback.xml
+#1500179951
+git commit -m "Implemented ISR task support. Refactored the air track hierarchy."
+#1500179963
+git push -u origin marcel-create-isr-missions 
+#1500179979
+git pull origin master 
+#1500179988
+git status
+#1500179995
+git push -u origin marcel-create-isr-missions 
+#1500180321
+git branch 
+#1500180354
+git branch -d marcel-change-ui-reply-queue-to-topic
+#1500180376
+git branch -d marcel-parse-isr-sync-matrix 
+#1500180397
+git branch -d marcel-tanker-missions 
+#1500180405
+git branch 
+#1500180427
+git branch -d sf-avro-update 
+#1500180432
+git branch -d sf-sead-workflow-te4 
+#1500180440
+git branch -d sf-ui 
+#1500180446
+git checkout master 
+#1500180448
+git pull
+#1500180455
+mvn clean compile 
+#1500181229
+git checkout -b marcel-add-tankers-to-bronze
+#1500182402
+git status
+#1500182409
+git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningOptions.java
+#1500182418
+git push -u origin marcel-add-tankers-to-bronze 
+#1500182435
+git status
+#1500182452
+git commit -m "Added some tanker allocations to Bronze AAR."
+#1500182458
+git push -u origin marcel-add-tankers-to-bronze 
+#1500182583
+git statis
+#1500182585
+git status
+#1500182625
+git checkout -t origin/drs10
+#1500182632
+git checkout drs10 
+#1500182643
+git checkout -- src/main/resources/logback.xml
+#1500182649
+git checkout drs10 
+#1500182651
+git pull
+#1500182682
+mvn clean compile
+#1500183559
+cd eclipse-utils/
+#1500183560
+ls
+#1500184424
+git status
+#1500184441
+git checkout marcel-add-tankers-to-bronze 
+#1500184444
+git pull
+#1500184454
+mvn clean compile
+#1500184461
+cd ..
+#1500184466
+mvn clean compile
+#1500184926
+git checkout drs10 
+#1500184929
+mvn clean compile
+#1500185844
+git checkout -b marcel-drs10-add-xcas-track
+#1500185881
+git status
+#1500185946
+git pull --all --prune
+#1500185967
+git pull origin marcel-create-isr-missions 
+#1500185989
+git add src/main/java/edu/kestrel/scharp/planner/entities/XCASTask.java 
+#1500186022
+git commit -m "Added the Air Track back to the task."
+#1500186037
+git push -u origin marcel-drs10-add-xcas-track 
+#1500186050
+git pull origin marcel-create-isr-missions 
+#1500187891
+git status
+#1500187910
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4Scenario.java src/main/java/edu/kestrel/scharp/planner/analysis/display/components/PlanningStatusPanel.java src/main/java/edu/kestrel/scharp/planner/entities/
+#1500187920
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1500187923
+git status
+#1500187929
+git add src/main/resources/data/TE4/AirspaceSegments.xml
+#1500187939
+git add eclipse-utils/
+#1500187941
+git status
+#1500187947
+git add src/main/java/edu/kestrel/scharp/planner/analysis/AnalyzeGoes.java
+#1500187951
+git status
+#1500187981
+git commit -m "Merged with marcel-create-isr-missions and solved conflicts."
+#1500187989
+git push -u origin marcel-drs10-add-xcas-track 
+#1500192349
+git status
+#1500192360
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/
+#1500192368
+git add src/main/java/edu/kestrel/scharp/planner/entities/
+#1500192377
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1500192386
+git add src/main/java/edu/kestrel/scharp/planner/util
+#1500192388
+git status
+#1500192408
+git commit -m "Added tracks back to XCASTasks."
+#1500192415
+git push -u origin marcel-drs10-add-xcas-track 
+#1500192442
+git checkout marcel-add-tankers-to-bronze 
+#1500192444
+git pull
+#1500192454
+mvn clean compile
+#1500192910
+git branch 
+#1500193413
+git checkout marcel-drs10-add-xcas-track
+#1500193417
+git pull
+#1500193987
+git status
+#1500193995
+git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1500194046
+git commit -m "Added the xcas track to the orbit activity for XCAS."
+#1500194056
+git push -u origin marcel-drs10-add-xcas-track 
+#1500194892
+exit
+#1500343926
+cd src/rspace-eclipse/scharp/
+#1500343928
+git pull
+#1500343937
+git checkout master 
+#1500343940
+git pull
+#1500343947
+git pull --all --prune
+#1500343953
+git branch 
+#1500343963
+git branch -d marcel-drs10-add-xcas-track 
+#1500343974
+git branch -d marcel-add-tankers-to-bronze 
+#1500343981
+git branch -d drs10 
+#1500343989
+git branch -d marcel-create-isr-missions 
+#1500344029
+mvn clean compile
+#1500355246
+git pull
+#1500355257
+git status
+#1500355317
+git checkout marcel-timeout-reject-bid 
+#1500355330
+git add src/main/java/edu/kestrel/scharp/planner/manager/TimeoutBuffer.java
+#1500355353
+git commit -m "Use the provider from the bid to reject bid when discarding bids."
+#1500355361
+git push -u origin marcel-timeout-reject-bid 
+#1500355752
+git status
+#1500355817
+git checkout marcel-fix-sead-duplicated-missions 
+#1500355819
+git pull
+#1500358675
+cd 
+#1500358681
+cd src/vagrant-jboss/
+#1500358702
+cd ..
+#1500358703
+ls
+#1500358709
+cd rspace-ui-src/
+#1500358710
+ls
+#1500358711
+cd SCHARP/
+#1500358713
+git pull
+#1500358729
+git checkout SCHARP-592
+#1500358732
+git pull
+#1500358739
+npm run build
+#1500360665
+git status
+#1500360682
+git diff src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.java
+#1500362187
+git status
+#1500362200
+git add src/main/java/edu/kestrel/scharp/activemq/te3/SeadPlannerUiBridge.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.java
+#1500362229
+git commit -m "Fixed generate options for sead to generate multiple options."
+#1500362237
+git push -u origin marcel-fix-sead-duplicated-missions 
+#1500362522
+git pull master
+#1500362530
+git pull origin master
+#1500362558
+git status
+#1500362571
+git push -u origin marcel-fix-sead-duplicated-missions 
+#1500362685
+git status
+#1500363577
+git checkout marcel-cache-distances
+#1500363586
+git checkout -b marcel-cache-distances
+#1500364937
+git status
+#1500364946
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/Location.java 
+#1500364965
+git commit -m "Cache the distances between location in a map."
+#1500365153
+git push -u origin marcel-cache-distances 
+#1500365161
+git checkout master 
+#1500365168
+git pull
+#1500365266
+git checkout marcel-cache-distances 
+#1500365268
+git branch 
+#1500365382
+git pull --all --prune
+#1500365391
+git checkout sf-ato-converter 
+#1500365401
+git checkout -- src/main/resources/logback.xml
+#1500365406
+git checkout sf-ato-converter 
+#1500365412
+mvn clean compilt
+#1500365415
+mvn clean compile
+#1500389653
+git checkout master 
+#1500389656
+git pull
+#1500389670
+mvn clean compile
+#1500389783
+git checkout marcel-fix-sead-duplicated-missions 
+#1500389789
+mvn clean compile
+#1500390065
+git status
+#1500390659
+ls
+#1500424016
+git pull
+#1500427520
+git checkout master 
+#1500427523
+git pull
+#1500427527
+git branch 
+#1500427552
+git checkout marcel-timeout-reject-bid 
+#1500427555
+git status
+#1500427619
+git branch 
+#1500427633
+git branch -d marcel-fix-sead-duplicated-missions 
+#1500427637
+git checkout master
+#1500427644
+git branch -d marcel-timeout-reject-bid 
+#1500427649
+git pull --all --prunte
+#1500427651
+git pull --all --prune
+#1500427658
+git status
+#1500427663
+git branch 
+#1500427682
+git branch -d sf-ato-converter 
+#1500427688
+git pull
+#1500427691
+ls
+#1500427705
+git checkout -t origin/marcel-read-data-from-different-files 
+#1500429458
+./run-plan-cell-te4-local-broker.sh 0
+#1500429749
+mvn install
+#1500429766
+./run-plan-cell-te4-local-broker.sh 0
+#1500429895
+mvn install
+#1500429909
+./run-plan-cell-te4-local-broker.sh 0
+#1500432877
+./run-plan-cell-te4-ng.sh 0
+#1500433299
+more build-all-docker-images.sh 
+#1500433315
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile -t scharp/planner .
+#1500433386
+./docker-run-plan-cell-te4-ng.sh 0
+#1500433991
+docker ps -a
+#1500434018
+ls
+#1500358689
+vagrant up node-1
+#1500434080
+vagrant halt
+#1500434192
+./docker-run-plan-cell-te4-ng.sh 0
+#1500434295
+ls
+#1500434305
+cd mitre/run1/
+#1500434305
+ls
+#1500434308
+cd ..
+#1500434309
+ls
+#1500434335
+./docker-run-plan-cell-te4-ng.sh 1
+#1500434340
+cd ..
+#1500434342
+./docker-run-plan-cell-te4-ng.sh 1
+#1500434497
+./run-plan-cell-te4-ng.sh 1
+#1500434514
+./run-plan-cell-te4-ng.sh 0
+#1500434664
+docker network list
+#1500434703
+./docker-run-plan-cell-te4-ng-run1.sh 
+#1500434707
+./docker-run-plan-cell-te4-ng-run1.sh 0
+#1500434772
+./docker-run-plan-cell-te4-mac-ng.sh 
+#1500434775
+./docker-run-plan-cell-te4-mac-ng.sh 0
+#1500434864
+docker network ls
+#1500434901
+./docker-run-plan-cell-te4-mac-ng.sh 0
+#1500435150
+docker ps -a
+#1500435163
+docker exec scharp/planner bash
+#1500435191
+docker exec a0e203a62146 bash
+#1500435203
+docker exec -it a0e203a62146 bash
+#1500435245
+docker ps -a
+#1500435275
+docker info a0e203a62146
+#1500435283
+docker info 
+#1500435497
+./docker-run-plan-cell-te4-ng-run1.sh 
+#1500435500
+./docker-run-plan-cell-te4-ng-run1.sh 0
+#1500436080
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile -t scharp/planner .
+#1500436119
+./docker-run-plan-cell-te4-ng-run1.sh 0
+#1500436229
+mkdir TE4DATA
+#1500436230
+ls
+#1500436241
+./docker-run-plan-cell-te4-ng-run1.sh 0
+#1500436263
+cp src/main/resources/data/TE4/* TE4DATA/
+#1500436271
+cd TE4DATA/
+#1500436272
+ls
+#1500436279
+cd ..
+#1500436283
+./docker-run-plan-cell-te4-ng-run1.sh 0
+#1500436307
+git status
+#1500436381
+git add Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile Docker/devcloud/planner/Dockerfile docker-run-plan-cell-te4-ng-run1.sh docker-run-plan-cell-te4-ng.sh run-plan-cell-te4-ng.sh src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4Scenario.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4ScenarioConfiguration.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4ScenarioConfiguration.java 
+#1500436386
+git status
+#1500436402
+git add run-plan-cell-te4-local-broker.sh 
+#1500436404
+git status
+#1500436412
+git diff src/main/java/edu/kestrel/scharp/planner/analysis/PlanAnalysis.java
+#1500436441
+git add src/main/java/edu/kestrel/scharp/planner/analysis/PlanAnalysis.java
+#1500436443
+git status
+#1500436625
+git add docker-run-plan-cell-te4-ng-load-local-data.sh
+#1500436634
+git add src/main/resources/logback.xml
+#1500436648
+git status 
+#1500436674
+git commit -m "Updated the docker scripts to use the correct input and output folders. 
+"
+#1500436692
+git push -u origin marcel-read-data-from-different-files 
+#1500437199
+ls 
+#1500437205
+rm hs_err_pid18546.log 
+#1500437221
+rm -rf TE4DATA/
+#1500437223
+ls
+#1500437233
+rm docker-run-plan-cell-te4-mac-ng.sh
+#1500437236
+ls
+#1500437244
+git status
+#1500437541
+git add eclipse-utils/
+#1500437542
+ls
+#1500437574
+mkdir archived
+#1500437589
+mv docker-run-plan-cell-te3-local.sh archived/ 
+#1500437602
+mv docker-run-plan-cell-te3-mitre-run* archived/
+#1500437603
+ls
+#1500437625
+mv docker-run-plan-cell-te3-* archived/
+#1500437626
+ls
+#1500437643
+mv run-plan-cell-te3* archived/
+#1500437644
+ls
+#1500437653
+git status
+#1500437670
+git add archived/ 
+#1500437673
+git status
+#1500437692
+git add docker-run-plan-cell-te3-local.sh docker-run-plan-cell-te3-mitre-run1.sh docker-run-plan-cell-te3-mitre-run2.sh docker-run-plan-cell-te3-mitre-run3.sh docker-run-plan-cell-te3-mitre.sh 
+#1500437694
+git status
+#1500437710
+git add docker-run-plan-cell-te3-ng.sh run-plan-cell-te3-mitre.sh run-plan-cell-te3-ng-4-amqs.sh run-plan-cell-te3.sh
+#1500437712
+git status
+#1500437731
+git commit -m "Moved scripts to archived folder."
+#1500437742
+git push -u origin marcel-read-data-from-different-files 
+#1500437747
+git status
+#1500437754
+git checkout master 
+#1500437756
+git pull
+#1500437767
+git checkout drs10 
+#1500437769
+git pull
+#1500437776
+mvn clean compile
+#1500441854
+git pull
+#1500443894
+git status
+#1500443912
+git checkout master 
+#1500443935
+git diff run-plan-cell-te4-ng.sh
+#1500443953
+git diff src/main/java/edu/kestrel/scharp/activemq/te3/SeadPlannerUiBridge.java
+#1500444045
+git checkout 
+#1500444049
+git status
+#1500444074
+git checkout run-plan-cell-te4-ng.sh src/main/java/edu/kestrel/scharp/activemq/AmqJsonServer.java src/main/java/edu/kestrel/scharp/activemq/te3/SeadPlannerUiBridge.java src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellAMQServer.java
+#1500444076
+git status
+#1500444087
+git checkout -- src/main/resources/logback.xml
+#1500444089
+git status
+#1500444091
+git pull
+#1500444097
+git checkout master 
+#1500444099
+git pull
+#1500444109
+mvn clean compile
+#1500444617
+git checkout -b marcel-reset-agents
+#1500447599
+git status
+#1500447605
+git reset
+#1500447607
+git status
+#1500447621
+git reset -- hard
+#1500447628
+git status
+#1500447641
+git checkout src/main/java/edu/kestrel/scharp/planner/manager
+#1500447645
+git status
+#1500447652
+git checkout master 
+#1500447666
+git branch -d marcel-reset-agents 
+#1500447680
+git checkout -b marcel-test-timeout
+#1500447788
+git status
+#1500449611
+git checkout -- src/main/resources/logback.xml
+#1500449622
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java src/main/java/edu/kestrel/scharp/planner/manager/TimeoutBuffer.java
+#1500449688
+git commit -m "Added a timeout value to the TimeoutBuffer and fixed the sead ui interaction to try to automatically schedule some bids if the ui does not return a value because of a timeout."
+#1500449695
+git push -u origin marcel-test-timeout 
+#1500449716
+git pull --all
+#1500449723
+git pull origin master 
+#1500449733
+git pull
+#1500449737
+git checkout master 
+#1500449752
+git checkout marcel-test-timeout 
+#1500449758
+git push -u origin marcel-test-timeout 
+#1500449845
+git checkout master 
+#1500449849
+git pull
+#1500449856
+mvn clean compile
+#1500450278
+git status
+#1500450946
+git add src/main/java/edu/kestrel/scharp/planner/entities/
+#1500450956
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1500450960
+git status
+#1500450983
+git add src/main/java/edu/kestrel/scharp/planner/propagation/ConstraintNode.java src/main/resources/logback.xml src/main/java/edu/kestrel/scharp/planner/util/AvroUtils.java
+#1500450987
+git status
+#1500451021
+git commit -m "Removed warnings, changed log level to something that shows enough progress but not too much. "
+#1500451025
+git push -u origin master 
+#1500451037
+mvn clean compile
+#1500451623
+git status
+#1500451630
+git add src/main/java/edu/kestrel/scharp/planner/plan/Plan.java
+#1500451651
+git commit -m "Changed log statement from error to info."
+#1500451656
+git push -u origin master 
+#1500452022
+git checkout marcel-test-timeout 
+#1500452567
+git checkout master 
+#1500452569
+git pull
+#1500452577
+git branch -d marcel-test-timeout 
+#1500472971
+git checkout marcel-read-data-from-different-files 
+#1500472974
+git pull
+#1500472982
+git pull origin master 
+#1500473224
+git start
+#1500473230
+git status
+#1500473243
+git add src/main/java/edu/kestrel/scharp/planner/analysis/PlanAnalysis.java src/main/resources/logback.xml
+#1500473300
+git commit -m "Merged with master"
+#1500473324
+git push -u origin marcel-read-data-from-different-files 
+#1500473366
+git checkout master 
+#1500473371
+git pull
+#1500473398
+git status
+#1500473404
+git add src/main/java/edu/kestrel/scharp/planner/manager/TimeoutBuffer.java
+#1500473424
+git commit -m "Put timeout to zero."
+#1500473429
+git push -u origin master 
+#1500473798
+git checkout marcel-read-data-from-different-files 
+#1500473803
+git pull origin master 
+#1500473814
+git status
+#1500473827
+git push -u origin marcel-read-data-from-different-files 
+#1500476785
+git status
+#1500476791
+git checkout 
+#1500476795
+git checkout master
+#1500476799
+git status
+#1500476812
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1500476846
+git commit -m "Changed a condition to rebid the sead mission."
+#1500476851
+git push -u origin master 
+#1500482717
+git status
+#1500482728
+git diff src/main/java/edu/kestrel/scharp/planner/manager/TimeoutBuffer.java
+#1500482738
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1500482745
+git push -u origin master 
+#1500485331
+git status
+#1500485348
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java
+#1500485766
+git status
+#1500485777
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java
+#1500486871
+git log
+#1500486898
+git status
+#1500487026
+git commit -m "Quick fix for tasks."
+#1500487032
+git push -u origin master 
+#1500487644
+git status
+#1500487667
+git diff src/main/java/edu/kestrel/scharp/activemq/te3/servers/SelectStrikeOptions.java
+#1500487685
+git checkout marcel-fix-sead-workflow
+#1500487689
+git status
+#1500487713
+git add   src/main/java/edu/kestrel/scharp/activemq/te3/servers/SelectStrikeOptions.java src/main/java/edu/kestrel/scharp/planner/manager/
+#1500487718
+git status
+#1500487733
+git commit -m "Fixing sead interaction."
+#1500509242
+git status
+#1500509269
+git pull
+#1500509322
+git status
+#1500509385
+git log
+#1500509438
+git diff 7922f490ba69ac7af0391dfc253b2269f55bb645 HEAD
+#1500509534
+git checkout -b  marcel-fix-sead-workflow
+#1500509541
+git status
+#1500509562
+git push -u origin marcel-fix-sead-workflow 
+#1500509577
+git checkout master 
+#1500509580
+git log
+#1500509608
+git diff 13c43ccf1cff5d490944e822b87280f53c7feb5c HEAD
+#1500509707
+git log
+#1500512712
+git pull
+#1500512787
+git status
+#1500514722
+cd ..
+#1500514724
+cd
+#1500514727
+cd .ssh/
+#1500514729
+ls
+#1500514835
+scp * becker@192.168.55.119:/home/becker/.ssh
+#1500517465
+cd
+#1500517525
+ssh -L 5901:127.0.0.1:5901 -N -f -l becker 192.168.55.119
+#1500517576
+open vnc://192.168.55.119:5901
+#1500518614
+exit
+#1500514479
+ssh becker@192.168.55.119
+#1500523925
+git checkout master 
+#1500523928
+git pull
+#1500525071
+git checkout marcel-fix-sead-workflow 
+#1500525078
+git status
+#1500525286
+git add src/main/java/edu/kestrel/scharp/activemq/te3/servers/SelectStrikeOptions.java src/main/java/edu/kestrel/scharp/planner/manager/DCAEscortUnitScheduler.java
+#1500525289
+git status
+#1500525306
+git add src/main/java/edu/kestrel/scharp/planner/manager/TimeoutBuffer.java
+#1500525308
+git status
+#1500525352
+git commit -m "Fixes the state update for a target task after ui select strike options."
+#1500525360
+git push -u origin marcel-fix-sead-workflow 
+#1500525370
+git status
+#1500525388
+git pull --all --prune
+#1500564990
+git status
+#1500564997
+git checkout master 
+#1500565014
+git pull
+#1500565034
+git status
+#1500565101
+git push origin master 
+#1500565121
+git checkout sf-tacinfo 
+#1500565124
+git pull
+#1500565133
+mvn clean compile
+#1500569303
+git status
+#1500569316
+git add src/main/java/edu/kestrel/scharp/planner/manager/StatsSummaryManager.java src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1500569321
+git status 
+#1500569358
+git commit -m "Changed timings in te4 manager test and changed the printing of the results."
+#1500569367
+git push -u origin sf-tacinfo 
+#1500569464
+git checkout master 
+#1500569468
+git pull
+#1500569833
+git pull --all
+#1500569855
+git checkout sf-sead 
+#1500569857
+git pull
+#1500569865
+mvn clean compile
+#1500570311
+git status
+#1500570320
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4ScenarioConfiguration.java
+#1500570357
+git commit -m "Added back the official TE4 scenario files."
+#1500570367
+git push -u origin sf-sead 
+#1500570439
+git checkout master 
+#1500570442
+git pull --all
+#1500570458
+git branch -d sf-sead 
+#1500570461
+git branch 
+#1500570471
+git branch -d sf-tacinfo 
+#1500570480
+git branch -d marcel-fix-sead-workflow 
+#1500570493
+git checkout marcel-cache-distances 
+#1500570512
+git checkout -- src/main/resources/logback.xml
+#1500570514
+git checkout marcel-cache-distances 
+#1500570521
+git pull
+#1500570527
+git pull origin master 
+#1500570540
+mvn clean compile
+#1500571299
+cd src/
+#1500571300
+ls
+#1500571303
+cd 
+#1500571306
+cd src
+#1500571306
+ls
+#1500571310
+cd rspace
+#1500571310
+ls
+#1500571312
+cd 
+#1500571323
+cd src/rspace/TE4/
+#1500571324
+ls
+#1500571377
+cp ~/src/rspace-eclipse/scharp/src/main/resources/data/TE4/RSPACE_TE4_V2.2_PTT.ptt .
+#1500571393
+cp RSPACE_TE4_V2.2_PTT.ptt RSPACE_TE4_V2.2_PTT.zip
+#1500571401
+unzip RSPACE_TE4_V2.2_PTT.zip 
+#1500571403
+ls
+#1500571440
+diff ~/src/rspace-eclipse/scharp/src/main/resources/data/TE4/Airspaces.xml Airspaces.xml 
+#1500571534
+ls
+#1500571549
+more Airspaces.xml 
+#1500571555
+ls -al
+#1500571573
+more AirspacePoints.xml 
+#1500571584
+more AirspaceSegments.xml 
+#1500571651
+more SAMSites.xml 
+#1500571738
+diff ~/src/rspace-eclipse/scharp/src/main/resources/data/TE4/SAMSites.xml SAMSites.xml 
+#1500573274
+git status
+#1500573279
+cd
+#1500573285
+cd src/rspace-eclipse/scharp
+#1500573286
+ls
+#1500573288
+git status
+#1500573299
+git diff src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4Scenario.java
+#1500573305
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4Scenario.java
+#1500573312
+git diff src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java
+#1500573321
+git diff src/main/java/edu/kestrel/scharp/planner/plan/Plan.java
+#1500573337
+git checkout -- src/main/resources/data/TE4/SAMSites.xml
+#1500573347
+git diff src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1500573357
+git add src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1500573361
+git status
+#1500573372
+git add src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java src/main/java/edu/kestrel/scharp/planner/plan/Plan.java
+#1500573399
+git commit -m "Removed system.out.println statements."
+#1500573405
+git push -u origin marcel-cache-distances 
+#1500573433
+git checkout master 
+#1500573436
+git pull
+#1500573445
+mvn clean compile
+#1500584257
+ssh -L 5901:127.0.0.1:5901 -N -f -l becker 192.168.55.119
+#1500585446
+echo $TERM_PROGRAM
+#1500585739
+open vnc://192.168.55.119
+#1500585748
+open vnc://192.168.55.119:5901
+#1500584302
+ssh becker@192.168.55.119
+#1500590060
+ping 192.168.55.119
+#1500590094
+ssh becker@192.168.55.119
+#1500679793
+exit
+#1500679795
+exit
+#1500679796
+exit
+#1500358807
+npm start
+#1500679801
+exit
+#1500439392
+vagrant up node-3
+#1500679809
+exit
+#1500439380
+vagrant up node-4
+#1500679811
+exit
+#1500439368
+vagrant up node-2
+#1500679816
+exitn
+#1500679822
+exit
+#1500434098
+vagrant up node-1
+#1500679832
+vagrant halt
+#1500919731
+cd src/rspace-eclipse/scharp
+#1500919733
+git pull
+#1500919767
+mvn clean compile
+#1500919787
+git status
+#1500920025
+git pull --all --prune
+#1500920035
+git branch 
+#1500920062
+git checkout -t origin/sf-patch-chart 
+#1500920074
+git stash
+#1500920079
+git checkout -t origin/sf-patch-chart 
+#1500920084
+git stash pop
+#1500920132
+mvn clean compile
+#1500920522
+git checkout master 
+#1500920525
+git branch 
+#1500920547
+git checkout marcel-no-amq-for-local-schedulers
+#1500920556
+git checkout -b  marcel-no-amq-for-local-schedulers
+#1500925889
+ls
+#1500925904
+git status
+#1500925915
+git diff src/main/resources/logback.xml
+#1500925926
+git add src/main/resources/logback.xml
+#1500925928
+git status
+#1500925948
+git commit -m "Fixed conlflicts."
+#1500925950
+git status
+#1500925956
+git checkout -b  marcel-no-amq-for-local-schedulers
+#1500925978
+git checkout master 
+#1500925999
+git branch -d marcel-no-amq-for-local-schedulers
+#1500926007
+git status
+#1500926015
+git branch -D marcel-no-amq-for-local-schedulers
+#1500926039
+git checkout -b  marcel-no-amq-for-local-schedulers
+#1500942002
+cd
+#1500942005
+cd src/vagrant-jboss/
+#1500942006
+ls
+#1500942031
+vagrant up node-1
+#1500942108
+vagrant halt node-1
+#1500942475
+cd
+#1500942481
+cd src/rspace-ui-src/SCHARP/
+#1500942483
+git pull
+#1500942522
+npm run build
+#1500945887
+git status
+#1500945898
+git diff src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4Scenario.java
+#1500945912
+git diff src/main/java/edu/kestrel/scharp/planner/manager/TimeoutBuffer.java
+#1500945943
+git status
+#1500945952
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1500945955
+git status
+#1500945982
+git commit -m "Plan manager returns server object if server is local."
+#1500945990
+git push -u origin marcel-no-amq-for-local-schedulers 
+#1500945997
+git checkout master 
+#1500946007
+git checkout -- src/main/resources/logback.xml
+#1500946010
+git checkout master 
+#1500946018
+mvn clean compile 
+#1500959768
+git checkout marcel-no-amq-for-local-schedulers 
+#1500959770
+git pull
+#1500959778
+mvn clean compile
+#1500960397
+git checkout master 
+#1500960787
+git checkout marcel-no-amq-for-local-schedulers 
+#1500961459
+git status
+#1500961467
+git add src/main/java/edu/kestrel/scharp/planner/entities/TargetTask.java src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.java
+#1500961490
+git commit -m "Added the requester id to the task before returning bids."
+#1500961495
+git push -u origin marcel-no-amq-for-local-schedulers 
+#1500961500
+ls
+#1500961501
+exit
+#1500942114
+vagrant up node-1
+#1500961509
+exit
+#1500942035
+vagrant up node-2
+#1500961512
+exit
+#1500942039
+vagrant up node-3
+#1500961515
+exit
+#1500942051
+vagrant up node-4
+#1500961521
+vagrant halt
+#1500942582
+npm start
+#1501118405
+cd src/rspace-eclipse/scharp
+#1501118408
+fir pull
+#1501118423
+git pull
+#1501118452
+mvn clean compile
+#1501134642
+git status
+#1501134688
+git add src/main/java/edu/kestrel/scharp/planner/manager/ src/main/java/edu/kestrel/scharp/planner/plan/Plan.java
+#1501134690
+git status
+#1501134757
+git commit -m "Investigating why tanker missions have child with null scheduled start time during Plan creation."
+#1501134763
+git push -u origin marcel-no-amq-for-local-schedulers 
+#1501134772
+exit
+#1501253999
+cd src/rspace-eclipse/scharp
+#1501254003
+git pull
+#1501254336
+git pull --all
+#1501254344
+git pull origin master 
+#1501254463
+git status
+#1501254468
+git add src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler.java
+#1501254478
+git commit -m "Fixed merge conflicts."
+#1501254486
+git push -u origin marcel-no-amq-for-local-schedulers 
+#1501254577
+mvn clean generate-sources compile
+#1501254854
+git checkout marcel-cache-distances 
+#1501254868
+git stash
+#1501254875
+git checkout master  
+#1501254906
+git stash pop
+#1501255692
+git status
+#1501255695
+git log
+#1501255714
+git reset -- hard
+#1501255717
+git status
+#1501255743
+git checkout -- src/main/java/edu/kestrel/scharp/planner/analysis/display/patches/PatchesChart.java src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java src/main/resources/logback.xml
+#1501255763
+git reset -- hard
+#1501255807
+git merge --abort
+#1501255921
+git reset --hard HEAD
+#1501255925
+git status
+#1501255936
+mvn pull
+#1501255946
+git pull
+#1501255954
+mvn clean compile
+#1501256155
+git status
+#1501256170
+git add src/main/java/edu/kestrel/scharp/planner/analysis/display/patches/PatchesChart.java src/main/java/edu/kestrel/scharp/planner/entities/TargetTask.java src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java
+#1501256181
+git commit -m "Fixed warnings."
+#1501256185
+git push -u origin master 
+#1501256200
+git pull --all
+#1501256210
+git checkout marcel-no-amq-for-local-schedulers 
+#1501256212
+git pull
+#1501256217
+git pull origin master 
+#1501256280
+git status
+#1501256286
+git add src/main/java/edu/kestrel/scharp/planner/entities/TargetTask.java
+#1501256298
+git commit -m "Solved merge conflict."
+#1501256306
+git push -u origin marcel-no-amq-for-local-schedulers 
+#1501256321
+mvn clean compile
+#1501256557
+git status
+#1501262866
+cd 
+#1501262871
+cd src/rspace-eclipse/
+#1501262872
+ls
+#1501262879
+cd scharp-em2/
+#1501262879
+ls
+#1501262907
+cd te4em/
+#1501262907
+ls
+#1501262911
+cd tests/
+#1501262912
+ls
+#1501262953
+cd Kestrel20170725.1717/
+#1501262954
+ls
+#1501262976
+more Kestrel-analysis.sh 
+#1501263017
+more config.sh 
+#1501263070
+./Kestrel-analysis.sh ~/src/rspace-eclipse/scharp/output/SCHARP-07281513.ato 
+#1501263264
+bash --version
+#1501263282
+./Kestrel-analysis.sh ~/src/rspace-eclipse/scharp/output/SCHARP-07281513.ato 
+#1501264712
+./Kestrel-analysis.sh ~/src/rspace-eclipse/scharp/output/SCHARP-07281513.ato >> ~/lixo/ATO_ANALYSIS.txt
+#1501266046
+./Kestrel-analysis.sh ~/src/rspace-eclipse/scharp/output/SCHARP-07281819.ato >> ~/lixo/ATO_ANALYSIS.txt
+#1501267246
+git status
+#1501267250
+git checkout master 
+#1501267265
+git checkout -b marcel-repair-plan
+#1501304276
+git status
+#1501304288
+git diff src/main/java/edu/kestrel/scharp/planner/analysis/display/components/NewTargetDialogue.java
+#1501304324
+git status
+#1501304330
+git add src/main/java/edu/kestrel/scharp/planner/entities/FighterActivity.java 
+#1501304336
+git diff src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java
+#1501304384
+git add src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java
+#1501304386
+git status
+#1501304404
+git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java src/test/java/edu/kestrel/scharp/replanner/ReplannerTest.java 
+#1501304427
+git commit -m "Initial version of plan repair functionality for tne targets."
+#1501304435
+git push -u origin marcel-repair-plan 
+#1501304443
+exit
+#1501304444
+exit
+#1501263650
+bash
+#1501304446
+exit
+#1501342483
+cd src/rspace-eclipse/scharp
+#1501342486
+git pull --all
+#1501342492
+git checkout master 
+#1501342516
+git checkout sf-plan-instance 
+#1501342546
+git checkout marcel-repair-plan 
+#1501342593
+git branch 
+#1501342616
+git branch -d sf-patch-chart 
+#1501342623
+git pull --all --prunt
+#1501342625
+git pull --all --prune
+#1501342639
+git branch -d sf-patch-chart 
+#1501342655
+git branch -D sf-patch-chart 
+#1501342660
+git branch 
+#1501342669
+git status
+#1501342675
+git add src/main/java/edu/kestrel/scharp/planner/analysis/display/components/NewTargetDialogue.java
+#1501342701
+git commit -m "Added print statements to print the values of the target parameters to create a unit test."
+#1501342708
+git push -u origin marcel-repair-plan 
+#1501342720
+git checkout sf-plan-instance 
+#1501342721
+git pull
+#1501342731
+mvn clean compile
+#1501343340
+git checkout master 
+#1501343344
+mvn clean compile
+#1501343397
+git checkout sf-plan-instance 
+#1501343592
+git status
+#1501343603
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4Scenario.java src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1501343642
+git commit -m "Fixed test for Sead ui workflow. Changed an error log to info."
+#1501343647
+git push -u origin sf-plan-instance 
+#1501343939
+git checkout master 
+#1501343945
+git pull --all --prune
+#1501343966
+git branch -d sf-plan-instance 
+#1501343972
+git checkout marcel-repair-plan 
+#1501343974
+git pull
+#1501343979
+git pull origin master 
+#1501344526
+git status
+#1501344531
+git add src/test/java/edu/kestrel/scharp/replanner/ReplannerTest.java
+#1501344547
+git commit -m "Merged with  master and fixed conflicts."
+#1501344553
+git push -u origin marcel-repair-plan 
+#1501344570
+mvn clean compile
+#1501372250
+git status
+#1501372271
+git add src/test/java/edu/kestrel/scharp/replanner/ReplannerTest.java src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java src/main/java/edu/kestrel/scharp/planner/manager/
+#1501372282
+git add src/main/java/edu/kestrel/scharp/activemq/te3/servers/ProcessNewTargetAlert.java src/main/java/edu/kestrel/scharp/planner/entities/PlanRepairBid.java src/main/java/edu/kestrel/scharp/planner/entities/PopUpTargetTask.java
+#1501372284
+git status
+#1501372330
+git commit -m "Moved the processing of the pop up target task to FunctinalPlanningCellManager and fixed the scheduling of the selected choice."
+#1501372337
+git push -u origin marcel-repair-plan 
+#1501431273
+cd src/rspace-eclipse/
+#1501431292
+cd scharp
+#1501431295
+git pull
+#1501438914
+git pull --all
+#1501470211
+git status
+#1501470223
+git diff src/main/java/edu/kestrel/scharp/planner/entities/AircraftActivity.java
+#1501470280
+git status
+#1501470292
+git add src/test/java/edu/kestrel/scharp/replanner/ReplannerTest.java src/main/java/edu/kestrel/scharp/planner/manager
+#1501470301
+git diff src/main/java/edu/kestrel/scharp/planner/interfaces/IPlanningTask.java
+#1501470307
+git add src/main/java/edu/kestrel/scharp/planner/interfaces/IPlanningTask.java
+#1501470310
+git status
+#1501470319
+git add src/main/java/edu/kestrel/scharp/planner/entities/AircraftActivity.java src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1501470344
+git commit -m "Fixed the scheduling of sead missions for pop up task."
+#1501470351
+git push -u origin marcel-repair-plan 
+#1501470362
+git pull --all
+#1501470365
+clear
+#1501481269
+git pull --all
+#1501481275
+git pull --all --prune
+#1501481282
+git pull origin master 
+#1501481291
+git status
+#1501481298
+git push 
+#1501481309
+mvn clean compile
+#1501481951
+git status
+#1501481964
+git diff src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java
+#1501481982
+git add src/main/java/edu/kestrel/scharp/planner/manager/ 
+#1501481984
+git status
+#1501482019
+git commit -m "Fixed DCA Unit Scheduler to use the common method to generate bids for remore dca tasks."
+#1501482026
+git push -u origin  marcel-repair-plan 
+#1501482032
+exit
+#1501521655
+cd src/rspace-eclipse/scharp
+#1501527910
+git status
+#1501527922
+git diff src/test/java/edu/kestrel/scharp/replanner/ReplannerTest.java
+#1501535235
+cd src/main/resources/data/TE4/
+#1501535236
+ls
+#1501535262
+diff 07\ Foxtrot\ TPW\ revised\ 21Mar17.csv 06\ FOX\ JIPTL\ 27Jan09\ v1.csv 
+#1501536020
+git pull
+#1501536024
+git status
+#1501536051
+git diff ../../../java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1501536059
+git add ../../../java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1501536062
+git status
+#1501536076
+git pull origin master 
+#1501536106
+git commit -m "Added selected bids to some tasks we already know will be the ones selected."
+#1501536114
+git push -u origin marcel-repair-plan 
+#1501536121
+git pull origin master 
+#1501536131
+git pull
+#1501536134
+git status
+#1501536140
+git pull origin master 
+#1501536144
+git status
+#1501536150
+git push -u origin marcel-repair-plan 
+#1501550746
+git status
+#1501550754
+git diff ../../../java/edu/kestrel/scharp/planner/plan/Plan.java
+#1501550789
+git diff ../../../java/edu/kestrel/scharp/usmtf/convert/MissionSupport.java
+#1501550805
+ls
+#1501550835
+git pull --all
+#1501550840
+git pull origin master 
+#1501562083
+git status
+#1501562117
+git diff ../../../java/edu/kestrel/scharp/planner/plan/Plan.java
+#1501562145
+git diff ../../../java/edu/kestrel/scharp/usmtf/convert/MissionSupport.java
+#1501562157
+git add ../../../java/edu/kestrel/scharp/usmtf/convert/MissionSupport.java
+#1501562185
+git status
+#1501562198
+git diff ../../../java/edu/kestrel/scharp/planner/plan/Plan.java
+#1501562245
+git add ../../../java/edu/kestrel/scharp/planner/plan/Plan.java
+#1501562250
+git status 
+#1501562266
+git add ../../../../test/java/edu/kestrel/scharp/replanner/ReplannerTest.java ../../../java/edu/kestrel/scharp/planner/util/ManagerUtils.java ../../../java/edu/kestrel/scharp/planner/repair/PlanRepairer.java
+#1501562270
+git status 
+#1501562307
+git commit -m "Several changes to make the plan update not throw an exception when updating missions."
+#1501562311
+git status 
+#1501562323
+git push -u origin mar
+#1501562333
+git push -u origin marcel-repair-plan 
+#1501562345
+git checkout sf-find-plan-problems 
+#1501562347
+git pull
+#1501562353
+mvn clean compile
+#1501562358
+cd
+#1501562365
+cd src/rspace-eclipse/scharp
+#1501562367
+git pull
+#1501562379
+mvn clean compile
+#1501562954
+git checkout master 
+#1501562956
+git pull
+#1501562969
+mvn clean compile
+#1501562986
+git checkout marcel-repair-plan 
+#1501562990
+git pull
+#1501562998
+git pull origin master 
+#1501563150
+git status
+#1501563159
+mvn clean compile
+#1501563176
+git status 
+#1501563183
+git add src/main/java/edu/kestrel/scharp/planner/analysis/display/patches/PatchesChart.java
+#1501563193
+git commit -m "Fixed merge conflict."
+#1501563200
+git push -a origin marcel-repair-plan 
+#1501563207
+git push -u origin marcel-repair-plan 
+#1501566064
+git checkout master 
+#1501566070
+git remote -v
+#1501566074
+git pull
+#1501566085
+mvn clean compile
+#1501645145
+git pull
+#1501645158
+git checkout marcel-repair-plan 
+#1501645160
+git pull
+#1501645169
+mvn clean compile
+#1501650396
+mvn generate-sources compile
+#1501650931
+mvn clean generate-sources compile
+#1501653754
+git status
+#1501653778
+git add src/main/java/edu/kestrel/scharp/activemq/te3/servers/ProcessAlert.java src/main/java/edu/kestrel/scharp/planner/entities/AircraftActivity.java src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java src/main/avro/events/Event.avdl
+#1501653785
+git checkout -- src/main/resources/data/TE4/SAMSites.xml
+#1501653789
+git status
+#1501653808
+git commit -m "Added process sam alert and unit test."
+#1501653814
+git push -u origin marcel-repair-plan 
+#1501654294
+git status
+#1501654304
+git pull --all
+#1501724384
+git pull --all --prune
+#1501724410
+mvn clean generate-sources
+#1501734528
+mvn clean generate-source compile
+#1501734548
+mvn clean generate-sources compile
+#1501742349
+git status
+#1501742372
+git add src/main/java/edu/kestrel/scharp/activemq/te3/servers/ProcessNewTargetAlert.java src/main/java/edu/kestrel/scharp/planner/entities/PopUpTargetTask.java src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java 
+#1501742378
+git diff src/main/java/edu/kestrel/scharp/planner/manager/StatsSummaryManager.java
+#1501742389
+git add src/main/java/edu/kestrel/scharp/planner/manager/StatsSummaryManager.java
+#1501742392
+git status
+#1501742400
+git add src/main/java/edu/kestrel/scharp/planner/analysis/
+#1501742409
+git diff src/main/java/edu/kestrel/scharp/planner/plan/Plan.java
+#1501742424
+git add 
+#1501742427
+git add src/main/java/edu/kestrel/scharp/planner/plan/Plan.java
+#1501742429
+git status
+#1501742436
+git add src/main/java/edu/kestrel/scharp/planner/repair/
+#1501742444
+git add src/main/java/edu/kestrel/scharp/planner/util/
+#1501742449
+git diff src/main/java/edu/kestrel/scharp/replanner/ReplanningResult.java
+#1501742458
+git add src/main/java/edu/kestrel/scharp/replanner/ReplanningResult.java
+#1501742460
+git status
+#1501742465
+git add src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1501742467
+git status
+#1501742501
+git commit -m "Changed the processing of the new pop up target task to use the new Alert Options as the response."
+#1501742510
+git push -u origin marcel-repair-plan 
+#1501742517
+exit
+#1501771871
+cd src/rspace-eclipse/scharp
+#1501771874
+git status
+#1501771880
+git pull --all
+#1501809451
+git pull
+#1501809467
+mvn clean generate-sources
+#1501809480
+mvn clean generate-sources compile
+#1501809622
+git status
+#1501809632
+git add src/main/java/edu/kestrel/scharp/activemq/te3/servers/ProcessNewTargetAlert.java
+#1501809645
+git commit -m "Fixed compilation error."
+#1501809653
+git push -u origin marcel-repair-plan 
+#1501809662
+clear
+#1501809975
+mvn clean generate-sources compile
+#1501816394
+git status
+#1501816403
+git add src/main/java/edu/kestrel/scharp/activemq/te3/servers/SelectAlertRepairOption.java git 
+#1501816411
+git diff src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1501816418
+git add src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1501816420
+git status
+#1501816440
+git add src/main/java/edu/kestrel/scharp/activemq/te3/servers/SelectAlertRepairOption.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java src/main/java/edu/kestrel/scharp/planner/util/AvroUtils.java src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1501816442
+git status
+#1501816491
+git commit -m "Added a countdown to select repair option for alert to allow unit test to wait for the processing of the selection to finish."
+#1501816498
+git push -u origin marcel-repair-plan 
+#1501816545
+git pull --all
+#1501816688
+git status
+#1501816728
+git add src/main/java/edu/kestrel/scharp/planner/manager/ControlAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/ISRAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellAMQServer.java
+#1501816741
+git src/main/java/edu/kestrel/scharp/planner/manager/
+#1501816743
+git status
+#1501816750
+git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningOptions.java
+#1501816763
+git commit -m "Reformatted some of the files."
+#1501816768
+git push -u origin marcel-repair-plan 
+#1501816808
+git status
+#1501817046
+git checkout -t origin/drs11
+#1501817049
+git pull
+#1501817065
+mvn clean generate-sources compile
+#1501817196
+git checkout -b marcel-drs11-merge
+#1501817203
+git pull origin master 
+#1501817453
+git log
+#1501818968
+git status
+#1501819227
+git add src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java
+#1501819237
+git commit -m "Merged with master."
+#1501819239
+git pull
+#1501819250
+mvn clean compile
+#1501819272
+git pull origin drs11 
+#1501819442
+git checkout drs11 
+#1501819447
+git status
+#1501819457
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1501819475
+git commit -m "Fixed eclipse warnings."
+#1501819478
+git checkout drs11 
+#1501819484
+mvn clean compile
+#1501819527
+git pull
+#1501819538
+git log
+#1501820053
+git checkout marcel-drs11-merge  
+#1501820057
+git status
+#1501820059
+git log
+#1501820157
+mvn clean generate-sources
+#1501820260
+git status
+#1501820267
+git checkout master 
+#1501820276
+git pull --all --prune
+#1501820302
+git checkout marcel-merge-drs11-into-master
+#1501820311
+git checkout -b marcel-merge-drs11-into-master
+#1501820315
+git pull
+#1501820323
+git pull origin drs11
+#1501822422
+cd D
+#1501822425
+cd 
+#1501822427
+cd Documents/
+#1501822427
+ls
+#1501822438
+cd OldOrchardDocuments/
+#1501822438
+ls
+#1501822447
+ls -a
+#1501822449
+ls -al
+#1501822539
+ls
+#1501822549
+cd Becker-ReOldOrchard-Remodel-ArchitectPlans
+#1501822549
+ls
+#1501824284
+git status
+#1501827344
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1501827366
+git commit -m "Merged drs11 into master and fixed conflicts."
+#1501827369
+git status
+#1501827376
+git checkout master 
+#1501827379
+git pull
+#1501827401
+git checkout -t origin/drs12 
+#1501827404
+git pull
+#1501827413
+mvn clean compile
+#1501862829
+git checkout master 
+#1501862831
+git pull
+#1501862834
+git pull --all
+#1501862848
+git checkout marcel-repair-plan 
+#1501863937
+git checkout drs12
+#1501863939
+git pull
+#1501864087
+git checkout marcel-repair-plan 
+#1501864345
+mvn clean generate-sources compile
+#1501869285
+cd
+#1501869293
+cd src/rspace-ui-src/SCHARP/
+#1501869294
+ls
+#1501869296
+git pull
+#1501869306
+git checkout master 
+#1501869312
+git pull --all --prune
+#1501869322
+npm run build
+#1501869384
+cd
+#1501869404
+cd src/
+#1501869406
+ls
+#1501869409
+cd vagrant-jboss/
+#1501869409
+ls
+#1501869769
+git status
+#1501869779
+git add activemq-*
+#1501869781
+git status
+#1501869795
+git commit -m "Fixed configuration files."
+#1501869797
+git push 
+#1501869922
+his | grep start
+#1501869900
+npm start
+#1501870119
+git branch 
+#1501870135
+git pull --all
+#1501870152
+git checkout -t origin/SCHARP-627
+#1501870156
+git pull
+#1501870167
+npm run build
+#1501870209
+npm start
+#1501870446
+git pull
+#1501870452
+npm build
+#1501870458
+npm run build
+#1501871371
+git status
+#1501909543
+git add src/main/java/edu/kestrel/scharp/planner/entities/AircraftKilledTask.java src/test/java/edu/kestrel/scharp/replanner/ReplannerTest.java src/main/java/edu/kestrel/scharp/planner/entities/TankerBid.java
+#1501909545
+git status
+#1501909551
+git diff src/main/java/edu/kestrel/scharp/replanner/Replanner.java
+#1501909557
+git add src/main/java/edu/kestrel/scharp/replanner/Replanner.java
+#1501909559
+git status
+#1501909570
+git add src/main/java/edu/kestrel/scharp/planner/manager
+#1501909577
+git diff src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java
+#1501909600
+git add src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java
+#1501909604
+git status
+#1501909632
+git commit -m "Added initial version for aircraft killed alert processing."
+#1501909638
+git push -u origin marcel-repair-plan 
+#1501909649
+git pull origin master 
+#1501909661
+git pull
+#1501909664
+git status
+#1501909674
+git push -u origin marcel-repair-plan 
+#1501909706
+git checkout -t origin/drs12
+#1501909712
+git checkout drs12
+#1501909714
+git pull
+#1501909723
+mvn clean compile 
+#1501910122
+git checkout marcel-repair-plan 
+#1501910128
+mvn clean compile
+#1501910559
+git status
+#1501950369
+git checkout drs12
+#1501950371
+git pull
+#1501950382
+mvn clean generate-sources compile
+#1501950632
+git status
+#1501951844
+git checkout marcel-repair-plan 
+#1501951859
+git stash
+#1501951868
+git checkout marcel-repair-plan 
+#1501951872
+git stash pop
+#1501952431
+mvn clean generate-sources compile
+#1501952453
+cd output/
+#1501952454
+ls
+#1501952461
+rm *.ato
+#1501952467
+rm -rf *.ato
+#1501952469
+ls
+#1501952967
+git pull
+#1501953996
+git status
+#1501954000
+git pull
+#1501957673
+git status
+#1501972973
+jconsole 
+#1501978574
+git status
+#1501978598
+git diff ../src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacityProfile.java
+#1501978613
+ls
+#1501978615
+git diff ../src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacityProfile.java
+#1501978619
+git status
+#1501978664
+git add ../src/main/java/edu/kestrel/scharp/planner/entities/
+#1501978668
+git add ../src/main/java/edu/kestrel/scharp/planner/
+#1501978670
+git status
+#1501978684
+git add ../src/main/java/edu/kestrel/scharp/activemq/te3/servers/ProcessAlert.java ../src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java ../src/test/java/edu/kestrel/scharp/replanner/ReplannerTest.java
+#1501978685
+git status
+#1501978709
+git commit -m "Fixes for AircraftKilled alert processing."
+#1501978716
+git push -u origin marcel-repair-plan 
+#1501978738
+git checkout -b marcel-repair-plan-plus-drs12
+#1501978740
+git pull 
+#1501978757
+git pull origin drs12
+#1501978769
+mvn clean compile
+#1501978776
+cd ..
+#1501978783
+mvn clean generate-sources compile
+#1501990716
+git pull
+#1501990728
+git pull origin drs12
+#1501990737
+git stash
+#1501990742
+git pull origin drs12
+#1501990753
+git stash pop 
+#1501996614
+git pull origin drs12
+#1501998688
+git status 
+#1501998697
+git diff src/main/java/edu/kestrel/scharp/planner/entities/Activity.java
+#1501998709
+git add src/main/java/edu/kestrel/scharp/planner/entities/Activity.java
+#1501998717
+git status
+#1501998759
+git add src/main/java/edu/kestrel/scharp/planner/entities/XCASBid.java src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java src/main/java/edu/kestrel/scharp/planner/manager/TankerAirUnitScheduler.java 
+#1501998763
+git diff src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacityProfile.java
+#1501998780
+git add src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacityProfile.java
+#1501998782
+git status
+#1501998801
+git add src/main/java/edu/kestrel/scharp/planner/search/SearchState.java
+#1501998811
+git status
+#1501998895
+git commit -m "Merged with drs12 and fixed the routes for orbit activities."
+#1501998904
+git push -u origin marcel-repair-plan-plus-drs12 
+#1501999026
+git diff marcel-repair-plan-plus-drs12..marcel-repair-plan
+#1501999245
+git checkout drs12
+#1501999250
+git pull
+#1501999265
+mvn clean generate-sources compile
+#1501999592
+git checkout marcel-repair-plan-plus-drs12 
+#1501999595
+git pull
+#1501999602
+git pull drs12
+#1501999608
+git pull origin drs12
+#1501999623
+git pull --all --prune
+#1501999642
+mvn clean generate-sources compile
+#1501999938
+git pull origin master 
+#1502000578
+git branch 
+#1502000600
+git branch -D drs10 drs11 
+#1502000626
+git branch -D marcel-drs11-merge 
+#1502000635
+git branch -D marcel-merge-drs11-into-master 
+#1502000652
+git branch -D sf-find-plan-problems 
+#1502000669
+git branch 
+#1502000922
+git pull --all
+#1502000948
+git pull --all --prune
+#1501869815
+vagrant up node-1
+#1502001013
+vagrant halt
+#1502001040
+exit
+#1502001044
+exti
+#1502001046
+exit
+#1502038163
+cd src/rspace-eclipse/scharp
+#1502038165
+git pull
+#1502039379
+git pull origin drs12 
+#1502039382
+git pull
+#1502039400
+git checkout marcel-repair-plan
+#1502039402
+git pull
+#1502039516
+git checkout marcel-repair-plan-plus-drs12 
+#1502039518
+git pull
+#1502049018
+git status
+#1502049037
+git diff src/main/java/edu/kestrel/scharp/planner/entities/AircraftKilledTask.java
+#1502049041
+git add src/main/java/edu/kestrel/scharp/planner/entities/AircraftKilledTask.java
+#1502049056
+git add src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
+#1502049066
+git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
+#1502049069
+git status
+#1502049077
+git add src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1502049079
+git status
+#1502049103
+git commit -m "Added unit test for packaged and unpackaged missions. "
+#1502049114
+git pull origin drs12
+#1502049126
+git push -u origin marcel-repair-plan-plus-drs12 
+#1502049173
+git checkout master 
+#1502049175
+git pull
+#1502049186
+git pull --all --prune
+#1502049198
+git branch -d marcel-repair-plan-plus-drs12 
+#1502049204
+git checkout marcel-repair-plan 
+#1502049207
+git pull
+#1502049211
+git pull origin master 
+#1502049219
+git status
+#1502049233
+git push -u origin marcel-repair-plan 
+#1502049293
+git checkout master 
+#1502049295
+git pull
+#1502049304
+git pull --all --prune
+#1502049313
+git branch -d marcel-repair-plan 
+#1502049319
+git status
+#1502049334
+git checkout -b marcel-kill-aircraft
+#1502049423
+git checkout marcel-no-amq-for-local-schedulers 
+#1502049425
+git pull
+#1502049431
+git status
+#1502049455
+git pull origin master 
+#1502049482
+git merge abort
+#1502049508
+git reset --hard
+#1502049514
+git status
+#1502049519
+git pull
+#1502049529
+git checkout marcel-kill-aircraft 
+#1502049531
+ls
+#1502049545
+rm hs_err_pid*
+#1502049552
+clear
+#1502049553
+ls
+#1502049815
+git status
+#1502049851
+git pull origin master 
+#1502055658
+git pull --all --prune
+#1502055667
+git status
+#1502055683
+git pull origin master 
+#1502055707
+mvn clean generate-sources compile
+#1502069976
+git status
+#1502069986
+git diff src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
+#1502070682
+git status
+#1502070691
+git add src/main/java/edu/kestrel/scharp/planner/entities/
+#1502070701
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1502070706
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1502070712
+git diff src/main/java/edu/kestrel/scharp/planner/resource/GoBasedCapacityProfile.java
+#1502070720
+git status
+#1502070730
+git add src/main/java/edu/kestrel/scharp/planner/resource/GoBasedCapacityProfile.java src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1502070733
+git status
+#1502070803
+git commit -m "Removed the staggering of activities. Several tests to check if cancelling of activities is working properly. Fixed problem with XEW scheduling re-creating a support scheduler all the time."
+#1502070810
+git push -u origin marcel-kill-aircraft 
+#1502070823
+git pull origin master 
+#1502071097
+git push -u origin marcel-kill-aircraft 
+#1502080969
+git status
+#1502080978
+git diff src/main/java/edu/kestrel/scharp/activemq/AmqConnectionManager.java
+#1502080988
+git checkout -- src/main/java/edu/kestrel/scharp/activemq/AmqConnectionManager.java
+#1502080994
+git ad src/main/java/edu/kestrel/scharp/planner/entities/Activity.java
+#1502081000
+git diff src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
+#1502081019
+git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java
+#1502081021
+git status
+#1502081029
+git add src/main/java/edu/kestrel/scharp/planner/entities/
+#1502081032
+git status
+#1502081040
+git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java 
+#1502081046
+git diff src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacityProfile.java
+#1502081056
+git add src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacityProfile.java
+#1502081102
+git commit -m "Fixed inconsistencies in resource profiles due to cloning of activities was not creating new time bounds for cloned activity. "
+#1502081108
+git push -u origin marcel-kill-aircraft 
+#1502081457
+git status
+#1502081468
+git checkout sf-send-repair-option-to-ptt 
+#1502081470
+git pull
+#1502081491
+mvn clean compile
+#1502082966
+git status
+#1502082991
+git checkout marcel-kill-aircraft 
+#1502083089
+git stash
+#1502083099
+git checkout marcel-kill-aircraft 
+#1502083105
+git stash pop
+#1502083109
+git status
+#1502083121
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1502083129
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1502083139
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1502083141
+git status
+#1502083175
+git commit -m "Chaged the processing of pop up targets to consider modifying non-executing missions."
+#1502083180
+git push -u origin marcel-kill-aircraft 
+#1502112111
+git pull --all --prune
+#1502112121
+git checkout master 
+#1502112123
+git pull
+#1502112641
+git status
+#1502112649
+git diff src/test/java/edu/kestrel/scharp/replanner/ReplannerTest.java
+#1502112672
+git checkout -- src/test/java/edu/kestrel/scharp/replanner/ReplannerTest.java
+#1502112675
+git pull
+#1502112693
+mvn clean compile
+#1502113291
+git status
+#1502113304
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1502113314
+git status
+#1502113322
+git checkout -- src/main/java/org/newdawn/slick/util/pathfinding/AStarPathFinder.java
+#1502113329
+git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1502113339
+git commit -m "Removed warning."
+#1502113347
+git push -u origin master 
+#1502114029
+git pull
+#1502114127
+git status
+#1502114153
+git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1502114168
+git commit -m "Fixed merge conflict."
+#1502114173
+git status
+#1502114187
+git push -u origin master 
+#1502114321
+git status
+#1502114330
+git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1502114334
+git commit -m "Fixed merge conflict."
+#1502114338
+git push -u origin master 
+#1502126262
+git status
+#1502126287
+git checkout marcel-kill-aircraft 
+#1502126297
+git stash list
+#1502126328
+git stash --help
+#1502126349
+git stash clear
+#1502126351
+git stash list
+#1502126357
+git status
+#1502126363
+git stash
+#1502126371
+git checkout marcel-kill-aircraft 
+#1502126375
+git stash pop
+#1502126449
+git status
+#1502126471
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/Scenario.java src/main/java/edu/kestrel/scharp/airdomain/interfaces/IScenario.java
+#1502126501
+git commit -m "Fixing pop up sam problems."
+#1502126516
+git push -u origin marcel-kill-aircraft 
+#1502126525
+git pull origin master 
+#1502126564
+mvn clean compile
+#1502126579
+git status
+#1502126588
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/Scenario.java src/main/java/edu/kestrel/scharp/airdomain/interfaces/IScenario.java
+#1502126592
+git commit -m "Fixing pop up sam problems."
+#1502126597
+git status
+#1502126604
+git push -u origin marcel-kill-aircraft 
+#1502126613
+git checkout master 
+#1502126646
+mvn clean compile
+#1502126810
+git checkout marcel-kill-aircraft 
+#1502126821
+git stash
+#1502126824
+git checkout marcel-kill-aircraft 
+#1502126828
+git stash pop
+#1502131630
+git status
+#1502131638
+git diff src/main/java/edu/kestrel/scharp/activemq/AmqConnectionManager.java
+#1502131647
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java
+#1502131657
+git status
+#1502131666
+git diff src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java
+#1502131688
+git diff src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java
+#1502131704
+git status
+#1502131722
+git add src/main/java/edu/kestrel/scharp/activemq/AmqConnectionManager.java src/main/java/edu/kestrel/scharp/airdomain/interfaces/ITarget.java src/main/java/edu/kestrel/scharp/planner/manager/
+#1502131727
+git add src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java
+#1502131730
+git status
+#1502131836
+git commit -m "Small changes in logging. Move the call to sending the message to the white cell later in the method where it is called."
+#1502131847
+git push -u origin marcel-kill-aircraft 
+#1502132118
+git checkout -b marcel-change-schedule-multithread-signature
+#1502132283
+git checkout marcel-kill-aircraft 
+#1502132296
+mvn clean compile
+#1502132314
+git status
+#1502132319
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/ReconTarget.java
+#1502132338
+git commit -m "Added new method getNewPriority"
+#1502132347
+git push -u origin marcel-kill-aircraft 
+#1502132364
+git checkout marcel-change-schedule-multithread-signature 
+#1502132385
+git pull origin marcel-kill-aircraft 
+#1502133439
+ls
+#1502137065
+git status
+#1502137083
+git add src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java 
+#1502137088
+mvn clean compile
+#1502137429
+git status
+#1502137443
+git add src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java src/main/java/edu/kestrel/scharp/planner/repair/problemhandlers/
+#1502137452
+git diff src/main/java/edu/kestrel/scharp/whitecell/messages/WhiteCellMissionMessage.java
+#1502137461
+git add src/main/java/edu/kestrel/scharp/whitecell/messages/WhiteCellMissionMessage.java
+#1502137463
+git status
+#1502137468
+git add src/test/java/edu/kestrel/scharp/replanner/ReplannerTest.java
+#1502137573
+git commit -m "Changed the signature of scheduleTaskMultiThread to return the bid instead or a boolean. Fixed unit test for pop up target that was using a null event."
+#1502137579
+git push -u origin marcel-change-schedule-multithread-signature 
+#1502137615
+git checkout master 
+#1502137629
+git add src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java
+#1502137644
+git commit -m "Added a comment to debug break message."
+#1502137652
+git push -u origin marcel-change-schedule-multithread-signature 
+#1502137878
+git checkout master 
+#1502137882
+git stash
+#1502137890
+git checkout master 
+#1502137893
+git branch 
+#1502137931
+git pull
+#1502137969
+mvn clean compile
+#1502138044
+git stash pop
+#1502141591
+git pull
+#1502141599
+git stash
+#1502141602
+git pull
+#1502141615
+git stash pop
+#1502141633
+git pull
+#1502145377
+git pull --all
+#1502145388
+git checkout drs12 
+#1502145393
+git stash
+#1502145395
+git checkout drs12 
+#1502145399
+git stash pop
+#1502145403
+git pull
+#1502145418
+mvn clean compile
+#1502145493
+git checkout master 
+#1502145508
+cd src/main/resources/data/TE4
+#1502145508
+ls
+#1502145515
+more white-cell-configuration.cfg 
+#1502145601
+git pull
+#1502145685
+cp white-cell-configuration-ng.cfg white-cell-configuration.cfg 
+#1502145688
+git status
+#1502145702
+git add white-cell-configuration-ng.cfg  white-cell-configuration.cfg
+#1502145704
+git status
+#1502145729
+git commit -m "Made the ng config the default config for white cell interactions."
+#1502145735
+git push -u origin master 
+#1502145743
+git pull
+#1502145747
+git checkout drs12
+#1502145751
+git pull
+#1502145760
+mvn clean compile
+#1502145768
+cd ../../..
+#1502145772
+cd ../..
+#1502145774
+mvn clean compile
+#1502146158
+git pull
+#1502147726
+git checkout master 
+#1502147729
+git pull
+#1502149856
+git status
+#1502149862
+git pull
+#1502149951
+git status
+#1502149962
+git add src/main/java/edu/kestrel/scharp/planner/analysis/Sortie.java src/main/resources/logback.xml 
+#1502149975
+git commit -m "Changed log for white cell messages."
+#1502149978
+git push
+#1502153840
+git status
+#1502153855
+git checkout -- src/main/resources/data/TE4/AircraftSCLs.xml
+#1502153865
+git checkout -- src/main/resources/data/TE4/RSPACE_TE4_SCLs_v1.3.json
+#1502153901
+git add src/main/resources/data/TE4/AircraftSCLs-PTT.xml
+#1502153908
+git push src/main/resources/data/TE4/AircraftSCLs-PTT.xml
+#1502153979
+git commit -m "Removed scl that ptt does not know about."
+#1502153996
+git checkout -b marcel-run-with-ptt-scls
+#1502154028
+git status
+#1502154035
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4ScenarioConfiguration.java
+#1502154100
+git commit -m "Changed the config to run with PTT known scls."
+#1502154108
+git push -u origin marcel-run-with-ptt-scls 
+#1502156164
+cd output/
+#1502156164
+ls
+#1502156174
+rm SCHARP*.ato
+#1502156186
+y
+#1502156188
+ls
+#1502159442
+exi5t
+#1502159446
+exit
+#1502238281
+cd src/rspace-eclipse/scharp
+#1502238286
+git pull
+#1502238293
+git checkout master 
+#1502238299
+git pull
+#1502238312
+git status
+#1502238332
+git diff origin/master 
+#1502238389
+mvn clean compile
+#1502238439
+git checkout marcel-run-with-ptt-scls 
+#1502238442
+git pull
+#1502238448
+cd output/
+#1502238450
+ls
+#1502238455
+rm SCHARP-08080136.ato 
+#1502238487
+git checkout marcel-sort-tasks 
+#1502238489
+git pull
+#1502238593
+ls
+#1502238603
+mv SCHARP-08090029.ato ato1.ato
+#1502238635
+ls
+#1502238644
+diff SCHARP-08090030.ato ato1.ato 
+#1502239213
+os
+#1502239216
+ls
+#1502239357
+git checkout master 
+#1502242091
+git status
+#1502242107
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1502252490
+git status
+#1502252497
+git branch 
+#1502252515
+git branch -b marcel-kill-aircraft 
+#1502252523
+git branch -d marcel-kill-aircraft 
+#1502252526
+git branch 
+#1502252540
+git pull --all --prune
+#1502252555
+git branch -d marcel-change-schedule-multithread-signature 
+#1502252567
+git branch -d drs12
+#1502252588
+git checkout -b marcel-kill-package
+#1502252604
+git add src/main/java/edu/kestrel/scharp/planner/entities/FighterActivity.java src/main/java/edu/kestrel/scharp/planner/manager/
+#1502252645
+git commit -m "Added some code to process ac kill for packages."
+#1502252656
+git add ../src/main/java/edu/kestrel/scharp/planner/entities/FighterActivity.java
+#1502252666
+git add ../src/main/java/edu/kestrel/scharp/planner/manager
+#1502252673
+git status
+#1502252678
+git commit -m "Added some code to process ac kill for packages."
+#1502252688
+git push -u origin marcel-kill-package 
+#1502289510
+cd src/rspace-eclipse/scharp
+#1502289516
+git checkout master 
+#1502289519
+git pull
+#1502289526
+mvn clean compile
+#1502294694
+git status
+#1502329414
+11111111111111111111111111111111111111111111111111111111111a1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+#1502329419
+clear
+#1502329424
+git pull
+#1502331241
+mvn clean compile
+#1502338885
+git status
+#1502340290
+git diff src/main/java/edu/kestrel/scharp/planner/plan/Plan.java 
+#1502340298
+git add src/main/java/edu/kestrel/scharp/whitecell/messages/WhiteCellFileTransfer.java
+#1502340300
+git status
+#1502340309
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1502340321
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1502340323
+git status
+#1502340332
+git add src/main/java/edu/kestrel/scharp/planner/plan/Plan.java
+#1502340340
+git diff src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java
+#1502340453
+git status
+#1502340462
+git add src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1502340467
+git status
+#1502340494
+git commit -m "Fixed the problem with mission id for repair events."
+#1502340498
+git push -u origin master 
+#1502340507
+git checkout marcel-sort-tasks 
+#1502340508
+git pull
+#1502340516
+git pull origin master 
+#1502340625
+git status
+#1502340636
+git add src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java
+#1502340645
+git commit -m "Solved merge conflict."
+#1502340653
+git push -u origin marcel-sort-tasks 
+#1502341000
+git status
+#1502341028
+git checkout master 
+#1502341050
+git checkout sf-oca-threats 
+#1502341052
+git pull
+#1502341059
+mvn clean compile
+#1502341102
+git pull origin master 
+#1502341396
+git status
+#1502341405
+git add src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java
+#1502341427
+git commit -m "Fixed minor merge conflict."
+#1502341432
+git push -u origin sf-oca-threats 
+#1502341468
+git checkout master 
+#1502341470
+git pull
+#1502341488
+git branch 
+#1502341511
+git branch -d sf-oca-threats 
+#1502341525
+git checkout -t origin/drs12 
+#1502341539
+git stash
+#1502341542
+git checkout -t origin/drs12 
+#1502341545
+git pull
+#1502341554
+git pull origin master 
+#1502341562
+git stash pop
+#1502341570
+mvn clean compile
+#1502341974
+git status
+#1502341996
+git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningOptions.java
+#1502342006
+git commit -m "Removed warnings."
+#1502342012
+git checkout master 
+#1502342020
+mvn clean compile
+#1502346479
+git checkout drs12 
+#1502346568
+git stash
+#1502346578
+git checkout drs12
+#1502346581
+git status
+#1502346692
+git checkout master 
+#1502346764
+git stash list
+#1502346782
+git status
+#1502346807
+git stash pop
+#1502346828
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1502347221
+git status
+#1502347266
+git checkout drs12
+#1502347286
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1502347296
+git checkout -- src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1502347302
+git checkout drs12 
+#1502348055
+git status
+#1502348059
+git checkout master 
+#1502348062
+git pull
+#1502348068
+git checkout marcel-sort-tasks 
+#1502348130
+git pull
+#1502348194
+git pul
+#1502348196
+git pull
+#1502348206
+git pull --all --prune
+#1502348211
+git pull origin master 
+#1502348314
+git status
+#1502348320
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1502348334
+git commit -m "Fixed merge conflict."
+#1502348340
+git push -u origin marcel-sort-tasks 
+#1502348395
+git pull
+#1502348409
+git checkout master 
+#1502348412
+git pull
+#1502349810
+git status
+#1502349819
+git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningOptions.java
+#1502349831
+git commit -m "Fixed warnings."
+#1502349837
+git push -u origin master 
+#1502411451
+git pull
+#1502411479
+git checkout -t origin/marcel-check-ki-refuel 
+#1502411490
+git diff src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java
+#1502411506
+git status
+#1502411519
+git stash
+#1502411523
+git checkout -t origin/marcel-check-ki-refuel 
+#1502411526
+git stash pop
+#1502411539
+mvn clean generate-sources compile
+#1502411641
+git status
+#1502411652
+git diff src/main/java/edu/kestrel/scharp/planner/repair/problemhandlers/CompositeHandler.java
+#1502411659
+git checkout -- src/main/java/edu/kestrel/scharp/planner/repair/problemhandlers/CompositeHandler.java
+#1502422455
+git pull
+#1502431323
+git status
+#1502431337
+git diff src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1502431344
+git add src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1502431346
+git status
+#1502431356
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1502431419
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1502431422
+git status
+#1502431437
+git diff src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.java
+#1502431456
+git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.java
+#1502431458
+git status
+#1502431467
+git diff src/main/java/edu/kestrel/scharp/planner/plan/Plan.java
+#1502431480
+git checkout -- src/main/java/edu/kestrel/scharp/planner/plan/Plan.java
+#1502431482
+git status
+#1502431492
+git diff src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1502431502
+git diff src/main/java/edu/kestrel/scharp/planner/resource/GoBasedCapacityProfile.java
+#1502431512
+git add src/main/java/edu/kestrel/scharp/planner/resource/GoBasedCapacityProfile.java
+#1502431514
+git status
+#1502431523
+git diff src/main/java/edu/kestrel/scharp/usmtf/convert/PlanToATOConverter.java
+#1502431552
+git checkout --  src/main/java/edu/kestrel/scharp/usmtf/convert/PlanToATOConverter.java
+#1502431555
+git status
+#1502431582
+git commit -m "Fixed the subtasks for target tasks."
+#1502431595
+git push -u origin marcel-check-ki-refuel 
+#1502433303
+git status
+#1502456916
+git checkout sf-send-repair-option-to-ptt 
+#1502456923
+git stash
+#1502456927
+git checkout sf-send-repair-option-to-ptt 
+#1502456933
+git pull
+#1502456940
+git stash pop
+#1502457088
+mvn clean generate-sources
+#1502458093
+git pull
+#1502458101
+git status
+#1502458125
+git add src/main/java/edu/kestrel/scharp/activemq/te3/servers/ComputePlan.java src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1502458280
+git commit -m "Fixed merge conflicts."
+#1502458283
+git pull
+#1502459664
+git checkout master 
+#1502459673
+git stash
+#1502459677
+git checkout master 
+#1502459682
+git pull
+#1502459699
+git checkout master 
+#1502459705
+mvn clean compile
+#1502460646
+git stash pop
+#1502460884
+git status
+#1502460900
+git reset -- hard src/main/resources/logback.xml
+#1502460907
+git checkout -- src/main/resources/logback.xml
+#1502460908
+ls
+#1502460910
+git status
+#1502461428
+git checkout sf-send-repair-option-to-ptt 
+#1502461439
+git stash
+#1502461442
+git checkout sf-send-repair-option-to-ptt 
+#1502461445
+git stash pop
+#1502461459
+mvn clean compile
+#1502461642
+git stash
+#1502461644
+git pull
+#1502461655
+git stash pop
+#1502463984
+git pull
+#1502463994
+git status
+#1502464003
+git checkout -- src/main/java/edu/kestrel/scharp/planner/repair/problemhandlers/CompositeHandler.java
+#1502464006
+git pull
+#1502466340
+git status
+#1502466353
+git add src/main/java/edu/kestrel/scharp/planner/manager/DCAEscortUnitScheduler.java
+#1502466427
+git status
+#1502466448
+git commit -m "Added xdca to instantiate empty bid."
+#1502466456
+git push -u origin sf-send-repair-option-to-ptt 
+#1502466735
+git pull
+#1502470248
+git status
+#1502470254
+git add src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1502470287
+git commit -m "Added multi mission test."
+#1502470292
+git push 
+#1502470724
+git pull
+#1502471734
+git checkout -- src/main/java/edu/kestrel/scharp/planner/entities/Activity.java
+#1502471737
+git pull
+#1502479570
+git checkout master 
+#1502479618
+git pull
+#1502479646
+git status
+#1502479656
+git stash list
+#1502484008
+exit
+#1502931992
+cd src/rspace-eclipse/scharp
+#1502931995
+git pull
+#1502932007
+git status
+#1502932033
+git checkout marcel-check-ki-refuel 
+#1502932039
+git stash
+#1502932050
+git checkout marcel-check-ki-refuel 
+#1502932052
+git pull
+#1502932058
+git stash pop
+#1502951375
+git status
+#1502951386
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1502951392
+git status
+#1502951400
+git add src/main/java/edu/kestrel/scharp/airdomain/interfaces/IAirRefuelingTrack.java src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1502951404
+git status
+#1502951483
+git commit -m "Simplify the creation of strike package so that the lead mission and subsequent strike missions in the package use similar code."
+#1502951490
+git push -u origin marcel-check-ki-refuel 
+#1502953140
+cd output/
+#1502953141
+ls
+#1502953150
+rm *.ato
+#1502953157
+rm -rf *.ato
+#1502953158
+ls
+#1502953332
+git status
+#1502953341
+git add ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1502953355
+git commit -m "Removed code commented out."
+#1502953361
+git push -u origin marcel-check-ki-refuel 
+#1502954549
+git status
+#1502954558
+git add ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1502954578
+git commit -m "Removed code commented out from FunctionalPlanningCellManager."
+#1502954588
+git push -u origin marcel-check-ki-refuel 
+#1502981532
+git pull --all
+#1502981537
+git pull --all --prune
+#1502981557
+git branch -d drs12 
+#1502981566
+git pull --all
+#1502981573
+git branch -D drs12 
+#1502981580
+git branch -D marcel-run-with-ptt-scls 
+#1502981592
+git branch -D marcel-sort-tasks 
+#1502981606
+git branch -D sf-send-repair-option-to-ptt 
+#1502981610
+git branch 
+#1502981637
+git status
+#1502981644
+git checkout marcel-read-data-from-different-files 
+#1502981651
+git stash
+#1502981653
+git checkout marcel-read-data-from-different-files 
+#1502981657
+git stash pop
+#1502981692
+git add src/main/resources/logback.xml
+#1502981708
+git commit -m "Fixed merge conflict on logback."
+#1502981725
+cd ..
+#1502981727
+git status
+#1502981733
+git add src/main/resources/logback.xml
+#1502981738
+git commit -m "Fixed merge conflict on logback."
+#1502981741
+git pull
+#1502981746
+git pull origin master 
+#1502981947
+git status
+#1502981964
+git diff src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4Scenario.java
+#1502982013
+git add src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4Scenario.java
+#1502982015
+git status
+#1502982030
+git add eclipse-utils/
+#1502982043
+rm src/main/resources/data/TE4/AircraftSCLs-Original.xml
+#1502982047
+ls
+#1502982051
+git status
+#1502982054
+ls
+#1502982060
+rm -rf hs_err_pid*
+#1502982092
+git status
+#1502982108
+git commit -m "Merged with master and fixed conflicts."
+#1502982123
+git add src/main/resources/logback.xml
+#1502982126
+git commit -m "Merged with master and fixed conflicts."
+#1502982136
+git push -u origin marcel-read-data-from-different-files 
+#1502982372
+git status
+#1502982378
+git add eclipse-utils/
+#1502982386
+git add src/main/resources/logback.xml
+#1502982403
+git commit -m "Removed some other conflicts."
+#1502982410
+git push -u origin marcel-read-data-from-different-files 
+#1503070102
+git pull
+#1503070115
+mvn clean compile
+#1503070678
+git pull --all
+#1503070683
+git pull --all --prune
+#1503070689
+git pull origin master 
+#1503070700
+git status 
+#1503070708
+git push -u origin marcel-read-data-from-different-files 
+#1503071310
+mvn checkstyle:checkstyle
+#1503071342
+ls
+#1503071406
+mvn checkstyle:check
+#1503071609
+git branch 
+#1503071622
+git checkout marcel-no-amq-for-local-schedulers 
+#1503071626
+git status
+#1503071629
+git pull
+#1503071636
+git pull origin master 
+#1503098941
+ps -aux
+#1503098942
+top
+#1503099000
+git status
+#1503099012
+git add src/main/java/edu/kestrel/scharp/activemq/
+#1503099023
+git add src/main/java/edu/kestrel/scharp/planner/
+#1503099025
+git status
+#1503099034
+git add src/main/java/edu/kestrel/scharp/airdomain/
+#1503099036
+git status
+#1503099049
+git add src/main/java/edu/kestrel/scharp/replanner/Replanner.java src/main/java/edu/kestrel/scharp/usmtf/convert/
+#1503099051
+git status
+#1503099099
+git rm " src/main/resources/data/TE4/.~lock.06 FOX JIPTL 27Jan09 v2.csv#"
+#1503099124
+git checkout --  src/main/resources/data/TE4/.~lock.06\ FOX\ JIPTL\ 27Jan09\ v2.csv#
+#1503099127
+git status
+#1503099183
+git reset  src/main/resources/data/TE4/.~lock.06\ FOX\ JIPTL\ 27Jan09\ v2.csv#
+#1503099184
+git status
+#1503099283
+git commit -m "Merged with master. Replaced bid.getServiceProvidingActivity().getParent() with bid.getServiceProvidingMission."
+#1503099293
+git push -u origin marcel-no-amq-for-local-schedulers 
+#1503099313
+rm src/main/resources/data/TE4/.~lock.06\ FOX\ JIPTL\ 27Jan09\ v2.csv# 
+#1503099318
+git status
+#1503099324
+git pull
+#1503099330
+git checkout master 
+#1503099334
+git pull
+#1503099351
+mvn clean generate-sources 
+#1503099567
+git checkout marcel-no-amq-for-local-schedulers 
+#1503099569
+git pull
+#1503099575
+git pull origin master 
+#1503099580
+mvn clean compile
+#1503100213
+git checkout master 
+#1503100215
+git pull
+#1503100224
+mvn clean compile
+#1503100476
+git checkout marcel-read-data-from-different-files 
+#1503100479
+git pull
+#1503100485
+mvn clean compile
+#1503100818
+cd output/
+#1503100818
+ls
+#1503100826
+rm -rf *.ato
+#1503100827
+ls
+#1503100904
+mv SCHARP-08190001.ato SCHARP-marcel.ato
+#1503100907
+git checkout master 
+#1503100915
+git stash
+#1503100922
+git checkout master 
+#1503100926
+git stash pop
+#1503100972
+mvn clean compile
+#1503100987
+cd ..
+#1503100988
+mvn clean compile
+#1503101105
+cd output/
+#1503101105
+ls
+#1503101118
+diff -y SCHARP-marcel.ato SCHARP-08190004.ato 
+#1503101306
+ls
+#1503101318
+mv SCHARP-08190004.ato SCHARP-master.ato
+#1503101322
+cd ..
+#1503101326
+git checkout marcel-no-amq-for-local-schedulers 
+#1503101363
+git reset --hard src/main/resources/logback.xml
+#1503101375
+git reset  src/main/resources/logback.xml
+#1503101381
+git status
+#1503101389
+git diff src/main/resources/logback.xml
+#1503101411
+git checkout -- src/main/resources/logback.xml
+#1503101413
+git status
+#1503101429
+git checkout marcel-no-amq-for-local-schedulers 
+#1503101430
+git pull
+#1503101435
+mvn clean compile
+#1503101499
+cd output/
+#1503101499
+ls
+#1503101510
+diff SCHARP-master.ato SCHARP-08190011.ato 
+#1503101518
+diff -y SCHARP-master.ato SCHARP-08190011.ato 
+#1503364076
+cd src/rspace-eclipse/scharp
+#1503364077
+ls
+#1503364080
+git status
+#1503364090
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1503364099
+git diff src/main/java/edu/kestrel/scharp/planner/plan/Plan.java
+#1503364121
+git add src/main/java/edu/kestrel/scharp/planner/plan/Plan.java
+#1503364123
+git status
+#1503364134
+git add src/main/java/edu/kestrel/scharp/planner/util/
+#1503364139
+git add src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1503364141
+git status
+#1503364150
+git diff src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java
+#1503364157
+git add src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java
+#1503364159
+git status
+#1503364191
+git commit -m "Fixed some problems with subtasks for KI using the wrong activities. "
+#1503364198
+git push -u origin marcel-no-amq-for-local-schedulers 
+#1503366050
+git status
+#1503366060
+git checkout marcel-read-data-from-different-files 
+#1503366065
+git stash
+#1503366067
+git checkout marcel-read-data-from-different-files 
+#1503366072
+git stash pop
+#1503680714
+cd src/rspace-eclipse/scharp
+#1503680716
+git pull
+#1503680728
+git status
+#1503680738
+git checkout -- src/main/resources/logback.xml
+#1503680744
+more src/main/resources/logback.xml
+#1503680905
+git add src/main/resources/logback.xml
+#1503680932
+git commit -m "Fixed merge conflicts."
+#1503680938
+git pull
+#1503680959
+git checkout marcel-no-amq-for-local-schedulers 
+#1503680963
+git pull
+#1503680970
+git pull --all --prune
+#1503680976
+git branch 
+#1503680986
+git branch -d marcel-check-ki-refuel
+#1503681027
+git checkout marcel-no-amq-plus-cache-distances
+#1503681048
+git checkout -b  marcel-no-amq-plus-cache-distances
+#1503681056
+git pull origin marcel-cache-distances 
+#1503681448
+git status
+#1503681456
+mvn clean compile
+#1503681515
+git status
+#1503681527
+git add src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1503681530
+git status
+#1503681551
+git commit -m "Merged the code that caches the distance between locations."
+#1503681565
+git push -u origin marcel-no-amq-plus-cache-distances 
+#1503681621
+git checkout marcel-no-amq-for-local-schedulers 
+#1503681623
+git pull
+#1503681635
+mvn clean compile
+#1503683403
+git checkout marcel-no-amq-plus-cache-distances 
+#1503683406
+git pull
+#1503683415
+mvn clean compile
+#1503692523
+ls
+#1503692526
+git status
+#1503692551
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/StandardConfigurationLoad.java src/main/java/edu/kestrel/scharp/airdomain/entities/Target.java src/main/java/edu/kestrel/scharp/airdomain/entities/Threat.java src/main/java/edu/kestrel/scharp/airdomain/interfaces/IThreat.java src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/propagation/ConstraintNetwork.java
+#1503692555
+git status
+#1503692582
+git commit -m "Some optimizations to reduce string matching calls."
+#1503692589
+git push -u origin marcel-no-amq-plus-cache-distances 
+#1503721835
+git status
+#1503721883
+git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java src/main/java/edu/kestrel/scharp/planner/entities/ src/main/java/edu/kestrel/scharp/planner/manager/
+#1503721888
+git status
+#1503721894
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1503721913
+git commit -m "Trying to fix refueling overallocations."
+#1503721921
+git push -u origin marcel-no-amq-plus-cache-distances 
+#1503935258
+cd src/rspace-eclipse/scharp
+#1503935260
+git pull
+#1503935264
+git status
+#1503957848
+git diff  src/main/java/edu/kestrel/scharp/airdomain/entities/Location.java
+#1503957856
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/
+#1503957857
+git status
+#1503957864
+git add src/main/java/edu/kestrel/scharp/airdomain/entities
+#1503957866
+git status
+#1503957874
+git add src/main/java/edu/kestrel/scharp/planner/entities/
+#1503957878
+git status
+#1503957901
+git add src/main/java/edu/kestrel/scharp/planner/manager/ src/main/java/edu/kestrel/scharp/planner/util/ src/main/java/edu/kestrel/scharp/planner/propagation/
+#1503957903
+git status
+#1503957916
+git commit -m "Fixed fuel level for alerts."
+#1503957925
+git push -u origin marcel-no-amq-plus-cache-distances 
+#1503969596
+git status
+#1503969609
+git add src/main/java/edu/kestrel/scharp/planner/entities/
+#1503969612
+git status
+#1503969621
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1503969627
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1503969629
+git status
+#1503969681
+git commit -m "Changed the computation of max duration for fuel level to use medium and high altitude where appropriate."
+#1503969688
+git push -u origin marcel-no-amq-plus-cache-distances 
+#1504050840
+git pull
+#1504050850
+git status
+#1504050857
+git diff src/main/java/edu/kestrel/scharp/planner/entities/TankerActivity.java
+#1504051433
+git pull
+#1504051445
+git stash
+#1504051448
+git pull
+#1504051453
+git stash pop
+#1504051685
+git status
+#1504051691
+git add src/main/java/edu/kestrel/scharp/planner/entities/TankerActivity.java
+#1504051702
+git commit -m "Fixed merge conflicts."
+#1504051705
+git push
+#1504051717
+git checkout marcel-read-data-from-different-files 
+#1504051726
+git pull
+#1504051767
+git stauts
+#1504051770
+git status
+#1504051791
+git add src/main/resources/logback.xml
+#1504051801
+git commit -m "Fixed merge conflicts."
+#1504051803
+git pull
+#1504051810
+git push -u origin marcel-read-data-from-different-files 
+#1504051819
+mvn clean compile
+#1504106377
+git status
+#1504109647
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java 
+#1504109681
+git commit -m "Added a call to generate more than one option when the support task is in interactive mode. "
+#1504109683
+git push 
+#1504138621
+cd src/rspace-eclipse/scharp
+#1504138622
+git pull
+#1504138635
+git checkout marcel-fix-reset-schedule 
+#1504138644
+git checkout -- src/main/resources/logback.xml
+#1504138651
+git checkout marcel-fix-reset-schedule 
+#1504138654
+git pull
+#1504138660
+mvn clean compile
+#1504142175
+cd output/ 
+#1504142181
+more Summary_BeforeCleanPlan.txt 
+#1504143004
+ls
+#1504143010
+rm *
+#1504143020
+rm -rf *
+#1504143021
+ls
+#1504143079
+diff -y Summary_BeforeCleanPlan.txt Summary_AfterCleanPlan.txt 
+#1504157393
+git status
+#1504157406
+git add ../src/main/java/edu/kestrel/scharp/planner/entities/TargetBid.java ../src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java 
+#1504157411
+git diff ../src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1504157422
+git add ../src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1504157456
+git commit -m "Fixed the reset of the plan to clear the sam scheduled tasks."
+#1504157466
+git push -u origin marcel-fix-reset-schedule 
+#1504157590
+git checkout drs12 
+#1504157594
+git pull
+#1504157604
+mvn clean compile
+#1504157609
+cd ..
+#1504157610
+mvn clean compile
+#1504158320
+git status
+#1504158325
+git checkout marcel-read-data-from-different-files 
+#1504158332
+git pull
+#1504194823
+git checkout master 
+#1504194827
+git pull
+#1504194863
+mvn clean generate-sources compile 
+#1504194907
+cd output/
+#1504194908
+ls
+#1504194914
+rm -rf *
+#1504194915
+ls
+#1504195034
+git checkout marcel-fix-reset-schedule 
+#1504195042
+mvn clean compile
+#1504195186
+cd ..
+#1504195188
+mvn clean compile
+#1504195352
+cd output/
+#1504195352
+ls
+#1504195375
+diff -y SCHARP-08311556.ato SCHARP-08311602.ato 
+#1504195505
+diff  SCHARP-08311556.ato SCHARP-08311602.ato 
+#1504195937
+git status
+#1504196075
+ls
+#1504196093
+diff SCHARP-08311602.ato SCHARP-08311614.ato
+#1504196198
+git checkout master 
+#1504196205
+git branch -d marcel-fix-reset-schedule 
+#1504196213
+git pull --all
+#1504196220
+git branch -d marcel-fix-reset-schedule 
+#1504196231
+git branch 
+#1504196246
+git pull --all --prune
+#1504196257
+git branch 
+#1504196277
+git pull
+#1504196285
+git checkout marcel-read-data-from-different-files 
+#1504196288
+git pull
+#1504196294
+git pull origin master 
+#1504196522
+ls
+#1504196535
+diff SCHARP-08311614.ato SCHARP-08311621.ato
+#1504196549
+diff -y SCHARP-08311614.ato SCHARP-08311621.ato
+#1504196598
+git status
+#1504196604
+mvn clean compile
+#1504196609
+cd ..
+#1504196610
+mvn clean compile
+#1504196630
+git status
+#1504196635
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1504196645
+git commit -m "Merged with master."
+#1504196647
+git push
+#1504196656
+cd output/
+#1504196657
+ls
+#1504196660
+rm -rf *
+#1504199949
+cd ou
+#1504199956
+ls
+#1504199985
+git status
+#1504200050
+ls
+#1504200118
+diff SCHARP-08311719.ato SCHARP-08311721.ato 
+#1504200185
+diff -y -w 100 SCHARP-08311719.ato SCHARP-08311721.ato 
+#1504200616
+ls
+#1504200619
+rm *
+#1504200623
+ls
+#1504200625
+ls -a
+#1504200672
+ls
+#1504200727
+diff SCHARP-08311730.ato SCHARP-08311731.ato
+#1504200794
+diff -y SCHARP-08311730.ato SCHARP-08311731.ato
+#1504201061
+ls
+#1504201072
+diff -y Summary_BeforeCleanPlan.txt Summary_AfterCleanPlan.txt 
+#1504202153
+git status
+#1504202176
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1504202199
+ls
+#1504202282
+cd ..
+#1504202287
+more build-all-docker-images.sh 
+#1504202460
+cd 
+#1504202465
+cd src/
+#1504202466
+ls
+#1504202468
+cd vagrant-jboss/
+#1504202469
+ls
+#1504202311
+docker build --rm=true -f Docker/DockerJava/Dockerfile -t scharp/ubuntujava8 .
+#1504202481
+more install.sh 
+#1504203067
+ls
+#1504203083
+vagrant up node-1 --provision
+#1504203151
+cd Docker/jboss-fuse-docker/
+#1504203114
+vagrant box update
+#1504203184
+vagran destroy 
+#1504203189
+vagrant destroy 
+#1504203155
+./docker-build.sh 
+#1504203385
+cd ..
+#1504203396
+more build-all-docker-images.sh 
+#1504203418
+mvn clean install && docker build --rm=true -f Docker/DockerScharpLocalBuild/Dockerfile -t scharp/planner .
+#1504203505
+./docker-run-plan-cell-te4-local.sh 
+#1504203212
+vagrant up node-1 --provision
+#1504203670
+ls
+#1504203680
+vagrant up node-2 --provision
+#1504203944
+vagrant up node-3 --provision
+#1504203509
+./docker-run-plan-cell-te4-local.sh 0
+#1504204490
+./docker-run-plan-cell-te4-local.sh 
+#1504204493
+./docker-run-plan-cell-te4-local.sh 0
+#1504204706
+docker ps -a
+#1504204181
+vagrant up node-4 --provision
+#1504204742
+vagrant halt
+#1504204769
+ls
+#1504204778
+git status
+#1504204785
+git add install.sh
+#1504204795
+git commit -m "Updated fuse version."
+#1504204799
+git push 
+#1504204804
+git push -u origin dev 
+#1504204809
+git pull
+#1504204818
+git push -u origin dev 
+#1504204848
+more build-all-docker-images.sh 
+#1504204990
+his | grep mvn
+#1504205016
+mvn dependency:analyze -Dverbose
+#1504205285
+source ~/.bashrc
+#1504205295
+his | grep mvn
+#1504205366
+mvn versions:display-dependency-updates
+#1504205452
+mvn clean compile
+#1504205494
+mvn clean compile install
+#1504204860
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
+#1504205694
+more build-all-docker-images.sh 
+#1504205706
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpUpdateImage/Dockerfile -t scharp/planner .
+#1504204459
+./Docker/jboss-fuse-docker/docker-run.sh 
+#1504205929
+./docker-run-plan-cell-te4-local.sh 0
+#1504206206
+exit
+#1504206304
+./docker-run-plan-cell-te4-local.sh 1
+#1504213355
+cd
+#1504213361
+cd src/vagrant-jboss/
+#1504213363
+ls
+#1504213453
+./docker-run-plan-cell-te4-ng.sh 0
+#1504214327
+docker ps -a
+#1504214333
+./docker-run-plan-cell-te4-ng.sh 1
+#1504215288
+exit
+#1504206315
+./docker-run-plan-cell-te4-local.sh 2
+#1504214405
+./docker-run-plan-cell-te4-ng.sh 2
+#1504215289
+exit
+#1504206323
+./docker-run-plan-cell-te4-local.sh 3
+#1504214415
+./docker-run-plan-cell-te4-ng.sh 3
+#1504215290
+exit
+#1504205929
+./docker-run-plan-cell-te4-local.sh 0
+#1504206206
+exit
+#1504206330
+./docker-run-plan-cell-te4-local.sh 4
+#1504214422
+./docker-run-plan-cell-te4-ng.sh 4
+#1504215316
+mv run-plan-cell.sh archived/
+#1504215319
+git status
+#1504215347
+unset PROMPT_COMMAND
+#1504215349
+ls
+#1504215354
+source ~/.bashrc
+#1504215356
+ls
+#1504215381
+git status
+#1504215405
+r mitre/run1/*
+#1504215411
+cd mitre/run1/
+#1504215412
+ls
+#1504215416
+rm *
+#1504215425
+ks
+#1504215427
+ls
+#1504215430
+cd ..
+#1504215432
+ls
+#1504215435
+git status
+#1504215449
+git add archived/
+#1504215451
+git status
+#1504215465
+git ad pom.xml run-plan-cell.sh
+#1504215474
+git add pom.xml run-plan-cell.sh
+#1504215476
+git status
+#1504215487
+git add src/main/java/edu/kestrel/scharp/usmtf/
+#1504215490
+git status
+#1504215535
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java src/main/java/edu/kestrel/scharp/planner/search/SearchStrategy.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java src/main/java/edu/kestrel/scharp/activemq/te3/servers/
+#1504215537
+git status
+#1504215584
+git commit -m "Added override annotations to methods, fixed unnecessary null checks, updated pom, removed unused imports."
+#1504215599
+git push -u origin marcel-read-data-from-different-files 
+#1504215776
+git stash 
+#1504215785
+git checkout master 
+#1504215789
+git stash pop
+#1504215874
+cd output/
+#1504215875
+ls
+#1504215877
+ls -al
+#1504215897
+diff SCHARP-08312144.ato SCHARP-08312141.ato
+#1504215908
+diff -y SCHARP-08312144.ato SCHARP-08312141.ato
+#1504215956
+ls -a
+#1504215958
+ls -al
+#1504215992
+diff SCHARP-08312146.ato SCHARP-08312144.ato
+#1504215997
+diff -y SCHARP-08312146.ato SCHARP-08312144.ato
+#1504216022
+source ~/.bashrc
+#1504216044
+diff  SCHARP-08312146.ato SCHARP-08312144.ato
+#1504216071
+diff -y SCHARP-08312146.ato SCHARP-08312144.ato
+#1504216078
+exit
+#1504216080
+exit
+#1504216081
+exit
+#1504213409
+vagrant up node-4
+#1504216088
+exit
+#1504213404
+vagrant up node-3
+#1504216091
+exit
+#1504213393
+vagrant up node-2
+#1504216094
+exit
+#1504213387
+vagrant up node-1
+#1504216097
+exit
+#1504216114
+cd src/rspace-eclipse/scharp/output/
+#1504216115
+ls
+#1504216118
+ls -al
+#1504216131
+diff -y SCHARP-08312144.ato SCHARP-08312146.ato
+#1504216439
+git checkout marcel-read-data-from-different-files 
+#1504216449
+git stash
+#1504216452
+git checkout marcel-read-data-from-different-files 
+#1504216456
+git stash pop
+#1504221300
+git status
+#1504221308
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1504221318
+git status
+#1504221326
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1504221633
+git status
+#1504221644
+git add ../src/main/java/edu/kestrel/scharp/planner/manager/
+#1504221659
+git diff ../src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1504221666
+git status
+#1504221673
+git add ../src/main/resources/logback.xml
+#1504221689
+git commit -m "Fixed some small things to run the unit tests."
+#1504221692
+git push 
+#1504221770
+git checkout master 
+#1504221797
+git tag
+#1504221829
+his | grep tag
+#1504222005
+git tag -a TE4 -m "TE4 Version before major refactoring for running the scheduler without AMQ messages for local agents."
+#1504222047
+git push origin TE4
+#1504222058
+git branch 
+#1504222101
+git pull
+#1504222115
+git pull --all
+#1504222124
+git branch -d marcel-read-data-from-different-files 
+#1504222128
+git branch 
+#1504222140
+git checkout marcel-no-amq-plus-cache-distances 
+#1504222143
+git pull
+#1504285902
+git status
+#1504285913
+git add ../src/main/java/edu/kestrel/scharp/planner/entities/
+#1504285924
+git add ../src/main/java/edu/kestrel/scharp/planner/manager/
+#1504285927
+git status
+#1504285932
+git add ../src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1504285935
+git status
+#1504285940
+mvn clean compile
+#1504285944
+cd ..
+#1504285945
+mvn clean compile
+#1504301309
+git status
+#1504301339
+git add src/main/java/edu/kestrel/scharp/planner/entities/AirUnitResource.java src/main/java/edu/kestrel/scharp/planner/entities/AircraftResource.java src/main/java/edu/kestrel/scharp/planner/manager/
+#1504301341
+git status
+#1504301351
+git add src/main/java/edu/kestrel/scharp/planner/entities/
+#1504301354
+src/main/java/edu/kestrel/scharp/planner/propagation/ConstraintNetwork.java
+#1504301362
+git add src/main/java/edu/kestrel/scharp/planner/propagation/ConstraintNetwork.java
+#1504301365
+git status
+#1504301404
+git commit -m "Merged with master, solved conflicts, updated check for available tanker fuel capacity."
+#1504301412
+git push -u origin marcel-no-amq-plus-cache-distances 
+#1504301428
+mvn clean generate-sources compile
+#1504317459
+cd reports/
+#1504317459
+ls
+#1504317465
+rm *
+#1504317472
+rm -rf *
+#1504317485
+ls
+#1504317497
+more task-scheduled-order.txt 
+#1504327820
+cd 
+#1504327824
+cd src/vagrant-jboss/
+#1504327826
+ls
+#1504327830
+vagrant halt
+#1504327858
+docker ps -a
+#1504329714
+git status
+#1504329723
+git add ../src/main/java/edu/kestrel/scharp/airdomain/entities/
+#1504329726
+git status
+#1504329734
+git add ../src/main/java/edu/kestrel/scharp/planner/entities/
+#1504329742
+git add ../src/main/java/edu/kestrel/scharp/planner/manager/
+#1504329744
+git status
+#1504329755
+git add ../src/main/java/edu/kestrel/scharp/planner/propagation/ConstraintNetwork.java ../src/main/java/edu/kestrel/scharp/planner/propagation/ConstraintNode.java ../src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1504329759
+git statis
+#1504329760
+git status
+#1504329794
+git commit -m "Several optimizations to cache values that are computed several times."
+#1504329804
+git push -u origin marcel-no-amq-plus-cache-distances 
+#1504406088
+brew cask install xquartz
+#1504406248
+brew install wine
+#1504406394
+brew update
+#1504406398
+brew upgrade
+#1504406528
+WINEARCH=win64 WINEPREFIX=~/.wine64 winecfg
+#1504657694
+which python
+#1504657706
+/usr/bin/python --version
+#1504657712
+python --version
+#1504657730
+source ~/.bashrc
+#1504657739
+brew update
+#1504657759
+brew upgrade
+#1504657866
+which python
+#1504657871
+brew --help
+#1504657884
+brew info python
+#1504657961
+pip2 install --upgrade pip setuptools
+#1504658020
+which python
+#1504658073
+pip --version
+#1504658294
+python --version
+#1504658299
+which python
+#1504658307
+source ~/.bashrc
+#1504658373
+sudo easy_install pip
+#1504658388
+pip --version
+#1504658447
+pip install virtualenv
+#1504658454
+pip install virtualenvwrapper
+#1504658462
+exit
+#1504658463
+exit
+#1504658465
+cd
+#1504658472
+cd src/rspace-eclipse/scharp
+#1504658473
+git pull
+#1504661898
+cd output/
+#1504661899
+ls
+#1504661904
+rm -rf *
+#1504661906
+ls
+#1504661949
+diff Summary_BeforeCleanPlan.txt Summary_AfterCleanPlan.txt 
+#1504661967
+diff -y Summary_BeforeCleanPlan.txt Summary_AfterCleanPlan.txt 
+#1504674134
+git status
+#1504674143
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java
+#1504674152
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java
+#1504674175
+git status
+#1504674185
+got diff ../src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1504674190
+git diff ../src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1504674223
+git add ../src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1504674226
+git status
+#1504674235
+git add ../src/main/java/edu/kestrel/scharp/planner/manager
+#1504674243
+git add ../src/main/resources/logback.xml
+#1504674245
+git status
+#1504674293
+git commit -m "Fixed problem with repeated tasks in task list when using ui, changes in the munition maps for strike options."
+#1504674303
+git push -u origin marcel-no-amq-plus-cache-distances 
+#1504674347
+git checkout master 
+#1504674359
+mvn clean compile
+#1504674364
+cd ..
+#1504674366
+mvn clean compile
+#1504674631
+git checkout marcel-no-amq-plus-cache-distances 
+#1504674636
+git pull
+#1504674642
+mvn clean compile
+#1504677115
+git status
+#1504677122
+git add src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1504677144
+git commit -m "Need to fix adjust profile for air unit resource profile."
+#1504677146
+git push
+#1504677152
+exit
+#1504677154
+exit
+#1504742246
+cd src/rspace-eclipse/scharp
+#1504742248
+git pull
+#1504744460
+git status
+#1504744470
+git checkout -- src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java
+#1504744473
+git checkout master 
+#1504744490
+git add src/main/resources/logback.xml
+#1504744500
+git commit -m "Log config."
+#1504744505
+git checkout master 
+#1504744514
+mvn clean compile
+#1504744809
+git checkout marcel-no-amq-plus-cache-distances 
+#1504744813
+git pull
+#1504744818
+mvn clean compile
+#1504745692
+git status
+#1504745701
+git diff src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java
+#1504745714
+git diff src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellAMQClient.java
+#1504745733
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1504745735
+git status
+#1504745742
+git add src/main/resources/logback.xml
+#1504745838
+git commit -m "Fixed the scheduler to run in distributed mode: added a static resource field to PlanningCellAMQClient."
+#1504745862
+git push
+#1504745872
+git checkout master 
+#1504763844
+git status
+#1504805537
+mvn clean compile
+#1504810902
+git status
+#1504810918
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java src/main/resources/logback.xml
+#1504810963
+git push commit -m "Added some log statements and some code to change the log dynamically during the session."
+#1504810970
+git commit -m "Added some log statements and some code to change the log dynamically during the session."
+#1504810975
+git push
+#1504810985
+git checkout master 
+#1504811000
+mvn clean compile
+#1504811499
+git status
+#1504811505
+git checkout marcel-no-amq-plus-cache-distances 
+#1504825742
+exit
+#1504825950
+cd src/rspace-eclipse/scharp
+#1504825952
+git status
+#1504829411
+jconsole 
+#1504830412
+git status
+#1504830419
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java 
+#1504830424
+git diff src/main/java/edu/kestrel/scharp/planner/manager/StatsSummaryManager.java
+#1504830441
+git checkout -- src/main/java/edu/kestrel/scharp/planner/manager/StatsSummaryManager.java
+#1504830442
+git status
+#1504830449
+git diff src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1504830460
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1504830480
+git commit -m "Refactored code for package creation."
+#1504830489
+git push -u origin marcel-no-amq-plus-cache-distances 
+#1504847545
+git status
+#1504847552
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1504850254
+git status
+#1504850263
+git diff src/main/java/edu/kestrel/scharp/planner/entities/TargetTask.java
+#1504850273
+git status
+#1504850279
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1504850401
+git status
+#1504850410
+git add src/main/java/edu/kestrel/scharp/planner/entities/TargetTask.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1504850460
+git commit -m "Simplify the generation of a strike package by moving duplicated code to separate methods."
+#1504850468
+git push -u origin marcel-no-amq-plus-cache-distances 
+#1504851307
+git status
+#1504922001
+cd src/rspace-eclipse/scharp
+#1504922003
+git pull
+#1504922786
+git checkout drs12
+#1504922789
+git pull
+#1504922796
+mvn clean compile
+#1504929045
+git checkout marcel-no-amq-plus-cache-distances 
+#1504929057
+git checkout -- src/main/java/edu/kestrel/scharp/planner/analysis/AnalyzeGoes.java
+#1504929060
+git checkout marcel-no-amq-plus-cache-distances 
+#1504929064
+git pull
+#1504936017
+git status
+#1504936028
+git diff src/main/java/edu/kestrel/scharp/planner/entities/FighterActivity.java
+#1504936086
+git status
+#1504936102
+git diff src/main/java/edu/kestrel/scharp/planner/manager/DCAEscortUnitScheduler.java
+#1504936117
+git checkout -- src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1504937568
+git status
+#1504937772
+git diff src/main/java/edu/kestrel/scharp/planner/entities/Activity.java
+#1504937792
+git diff src/main/java/edu/kestrel/scharp/planner/entities/FighterActivity.java
+#1504937823
+git status
+#1504937831
+git diff src/main/java/edu/kestrel/scharp/planner/entities/Resource.java
+#1504937851
+git diff src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1504937886
+git status
+#1504937902
+git diff src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1504937962
+git status
+#1504938101
+git diff src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java
+#1504938123
+git diff src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.java
+#1504938157
+git checkout -b marcel-no-amq-plus-cache-dist-plus-drs12
+#1504938162
+git status
+#1504938231
+git add src/main/java/edu/kestrel/scharp/planner/analysis/
+#1504938241
+git add src/main/java/edu/kestrel/scharp/planner/entities/
+#1504938243
+git status
+#1504938253
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1504938261
+git add src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacityProfile.java
+#1504938268
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1504938292
+cp src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitSchedulerDRS12.java src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1504938299
+git status
+#1504938315
+git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1504938328
+git reset src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitSchedulerDRS12.java
+#1504938333
+git status
+#1504938348
+git commit -m "merged with drs12"
+#1504938361
+git push -u origin marcel-no-amq-plus-cache-dist-plus-drs12 
+#1504938377
+git checkout marcel-no-amq-plus-cache-dist
+#1504938400
+git checkout marcel-no-amq-plus-cache-distances 
+#1504938420
+mvn clean compile
+#1504938461
+git status
+#1504938469
+rm src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitSchedulerDRS12.java
+#1504938476
+mvn clean compile
+#1504983235
+git pull
+#1504983332
+git status
+#1505008470
+jconsole
+#1505023399
+git branch -d marcel-no-amq-plus-cache-dist-plus-drs12 
+#1505023411
+git branch -D marcel-no-amq-plus-cache-dist-plus-drs12 
+#1505023432
+git checkout -b marcel-no-amq-plus-drs12
+#1505023530
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/ src/main/java/edu/kestrel/scharp/airdomain/interfaces/ src/main/java/edu/kestrel/scharp/planner/entities/
+#1505023532
+git status
+#1505023552
+git add src/main/java/edu/kestrel/scharp/planner/analysis/AnalyzeGoes.java 
+#1505023556
+git diff src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1505023585
+git add src/main/java/edu/kestrel/scharp/planner/manager
+#1505023587
+git status
+#1505023606
+git add src/main/java/edu/kestrel/scharp/planner/propagation/ConstraintNetwork.java src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacityProfile.java src/main/java/edu/kestrel/scharp/planner/time/SchDuration.java src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java src/main/resources/logback.xml
+#1505023609
+git status
+#1505023638
+git commit -m "Merged with drs12. Package generate options is not working yet."
+#1505023648
+git push -u origin marcel-no-amq-plus-drs12 
+#1505023670
+git checkout marcel-no-amq-plus-cache-distances 
+#1505023675
+git pull
+#1505023681
+mvn clean compile
+#1505023775
+git status
+#1505024294
+git add src/exit
+#1505024296
+exit
+#1505024711
+cd src/
+#1505025021
+cd rspace-eclipse/scharp
+#1505025022
+ls
+#1505025034
+git checkout marcel-no-amq-plus-drs12 
+#1505025082
+git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.java
+#1505025112
+git commit -m "Removed the check of the reject bid queue for the main task processing thread."
+#1505025122
+git push -u origin marcel-no-amq-plus-cache-distances 
+#1505055696
+ipconfig
+#1505055715
+ifconfig
+#1505055734
+cd src/rspace-eclipse/scharp
+#1505055736
+git pull
+#1505055748
+git checkout marcel-no-amq-plus-drs12 
+#1505055764
+git checkout -- src/main/resources/logback.xml
+#1505055766
+git checkout marcel-no-amq-plus-drs12 
+#1505055768
+git pull
+#1505068660
+ps -a
+#1505068755
+top
+#1505068784
+kill -9 10330
+#1505068788
+top
+#1505068804
+kill -9 10170
+#1505068807
+top
+#1505094885
+git status
+#1505094910
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/Target.java src/main/java/edu/kestrel/scharp/planner/analysis/display/components/PlanningStatusPanel.java src/main/java/edu/kestrel/scharp/planner/manager/
+#1505094912
+git status
+#1505094927
+git add src/main/java/edu/kestrel/scharp/planner/repair/problemhandlers/CompositeHandler.java src/main/java/edu/kestrel/scharp/planner/repair/problemhandlers/CompositeHandler.java 
+#1505094929
+git status
+#1505094946
+git add src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java src/main/java/edu/kestrel/scharp/planner/resource/GenericRedBlackCapacityProfile.java src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java 
+#1505094948
+git status
+#1505095024
+git commit -m "Added unit test to run the stability tests. Several fixes to null pointer exceptions. Fixed the update profile code to fix the activities in the interval and the last interval in the sequence."
+#1505095038
+git push -u origin marcel-no-amq-plus-drs12 
+#1505095459
+git status
+#1505095465
+git add src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java 
+#1505095513
+git commit -m "Force the scheduler to use the local server instead of sending the message via client server connection."
+#1505095515
+git push
+#1505095699
+git checkout master 
+#1505095705
+mvn clean compile
+#1505143526
+git checkout marcel-no-amq-plus-drs12 
+#1505143535
+git checkout -- src/main/resources/logback.xml
+#1505143538
+git checkout marcel-no-amq-plus-drs12 
+#1505143545
+mvn clean compile 
+#1505488367
+cd src/rspace-eclipse/scharp
+#1505488369
+git pull
+#1505488380
+mvn clean compile
+#1505490217
+cd reports/
+#1505490218
+ls
+#1505490241
+more summaries.txt 
+#1505490357
+brew update
+#1505490392
+brew upgrade
+#1505490484
+cd
+#1505490486
+cd src/
+#1505490487
+ls
+#1505490489
+cd emacs/
+#1505490490
+ls
+#1505490493
+git pull
+#1505490521
+git status
+#1505490686
+brew uninstall emacs
+#1505490703
+brew cleanup
+#1505490721
+brew update
+#1505490730
+brew doctor
+#1505490786
+brew upgrade
+#1505490793
+brew update
+#1505490907
+brew install autoconf automake
+#1505490938
+./configure --with-ns
+#1505490976
+make install
+#1505510570
+make bootstrap
+#1505510633
+brew install makeinfo
+#1505510683
+makeinfo --version
+#1505510697
+which makeinfo
+#1505510755
+git pull
+#1505510765
+./configure --with-ns
+#1505510859
+brew install texinfo
+#1505510881
+makeinfo --version
+#1505510906
+echo $PATH
+#1505511010
+cd /usr/local/opt/texinfo/bin/makeinfo 
+#1505511042
+brew ln texinfo --force
+#1505511061
+makeinfo --version
+#1505511227
+source ~/.bashrc 
+#1505511229
+makeinfo --version
+#1505511239
+./configure --with-ns
+#1505511287
+make install
+#1505750378
+cd src/rspace-eclipse/scharp
+#1505750380
+git status
+#1505784853
+git add src/main/java/edu/kestrel/scharp/planner/entities/OrbitTask.java src/test/java/edu/kestrel/scharp/planner/manager/
+#1505784863
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1505784866
+git status
+#1505784875
+git add src/main/java/edu/kestrel/scharp/planner/entities/
+#1505784877
+git status
+#1505784887
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/
+#1505784895
+git add src/main/java/edu/kestrel/scharp/planner/analysis/display/components
+#1505784897
+git status
+#1505784905
+git add src/main/java/edu/kestrel/scharp/planner/analysis
+#1505784907
+git status
+#1505784915
+git add src/main/java/edu/kestrel/scharp/planner/util/
+#1505784917
+git status
+#1505784924
+git add src/main/java/edu/kestrel/scharp/replanner
+#1505784926
+git status
+#1505784934
+git add src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java src/main/resources/logback.xml
+#1505784984
+git status
+#1505784989
+git add src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1505784991
+git status
+#1505785066
+git commit -m "Added an orbit task as a generic task for orbit based missions. Moved bid creation and activity sequence expansion for orbit based missions to common code in Abstract Scheduler."
+#1505785070
+git pull
+#1505785081
+git push -u origin marcel-no-amq-plus-drs12 
+#1505785097
+mvn clean compile
+#1505952823
+curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+#1505952846
+cd src/rspace-eclipse/scharp
+#1505952848
+git pull
+#1505952860
+mvn clean compile
+#1506053720
+git status
+#1506053741
+sudo xcodebuild -license
+#1506053771
+git status
+#1506105312
+top
+#1506105350
+mvn clean compile 
+#1506110597
+git diff git status
+#1506110604
+git status
+#1506110611
+git diff src/main/java/edu/kestrel/scharp/planner/entities/Activity.java
+#1506110630
+git diff src/main/java/edu/kestrel/scharp/planner/entities/TargetBid.java
+#1506110648
+git diff src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1506110803
+git status
+#1506110816
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1506110903
+curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+#1506129230
+git status
+#1506129260
+git add src/main/java/edu/kestrel/scharp/planner/analysis/display/components/PlanningStatusPanel.java src/main/java/edu/kestrel/scharp/planner/entities/ src/main/java/edu/kestrel/scharp/planner/util/ 
+#1506129268
+git diff src/main/java/edu/kestrel/scharp/planner/propagation/ConstraintNetwork.java
+#1506129282
+git add src/main/java/edu/kestrel/scharp/planner/propagation/ConstraintNetwork.java
+#1506129284
+git status
+#1506129294
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1506129296
+git status
+#1506129327
+git commit -m "Removed staggering for KI missions. Fixed the generation of options for packages."
+#1506129332
+git push
+#1506129481
+exit
+#1506355284
+cd src/rspace-eclipse/scharp
+#1506355288
+git pull
+#1506355582
+git status
+#1506355588
+git add src/main/java/edu/kestrel/scharp/planner/entities/AirRefuelingTask.java
+#1506355614
+git commit -m "Set the minimum amount of fuel to refuel to be 100."
+#1506355616
+git push
+#1506355728
+git status 
+#1506355734
+git add src/test/java/edu/kestrel/scharp/airdomain/entities/TE2ScenarioTest.java
+#1506355755
+git commit -m "Removed test that use old route creation method."
+#1506355756
+git push
+#1506356129
+git status
+#1506356178
+git add src/test/java/edu/kestrel/scharp/airdomain/entities/TE2ScenarioTest.java
+#1506356182
+git commit -m "Removed test that use old route creation method."
+#1506356185
+git push
+#1506359091
+cd output/
+#1506359092
+ld
+#1506359094
+ls
+#1506359097
+rm *
+#1506359103
+rm -rf *
+#1506359105
+ls
+#1506363077
+git status
+#1506363088
+git add ../src/main/java/edu/kestrel/scharp/planner/analysis/Sortie.java ../src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java
+#1506363108
+git commit -m "Fixed missions without air refueling info."
+#1506363438
+git status
+#1506363444
+git push
+#1506370403
+ks
+#1506370406
+ls
+#1506370413
+rm *
+#1506370426
+ls
+#1506374769
+git status
+#1506374778
+git add ../src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1506374801
+git commit -m "Added scl to sead and oca escort missions."
+#1506374804
+git push 
+#1506375820
+git status
+#1506384766
+git diff ../src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1506384795
+git status
+#1506384802
+git add ../src/main/java/edu/kestrel/scharp/airdomain/entities/StrikeOption.java
+#1506384821
+git commit -m "Changed the munition quantities from Integer to int."
+#1506384824
+git push 
+#1506384828
+git status
+#1506384837
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1506384858
+git add ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1506384894
+git commit -m "Added wrapper around log statements. Added service options to xew and xdca tasks."
+#1506384896
+git push 
+#1506388182
+git status
+#1506388189
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1506388200
+git add ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1506388220
+git commit -m "Added strike options to XDCA bids."
+#1506388222
+git push
+#1506438637
+git status
+#1506438644
+git add ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1506438652
+git commit -m "Work in progress."
+#1506438654
+git push 
+#1506439051
+git status
+#1506439056
+git add ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1506439058
+git commit -m "Work in progress."
+#1506439061
+git push 
+#1506439072
+exit
+#1506466163
+cd src/rspace-eclipse/scharp
+#1506466166
+git pull
+#1506467701
+cd src/
+#1506467701
+ls
+#1506467706
+cd 
+#1506467707
+cd src/
+#1506467708
+ls
+#1506467712
+cd my-vagrant-simplified/
+#1506467712
+ls
+#1506467715
+git status
+#1506467722
+git pull
+#1506467727
+vagrant up
+#1506468277
+vagrant halt
+#1506468409
+vagrant destroy
+#1506523601
+git status
+#1506558250
+cd src/rspace-eclipse/scharp
+#1506558252
+git pull
+#1506558263
+mvn clean compile
+#1506565292
+git status
+#1506565302
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1506567579
+git status
+#1506567586
+git add src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1506567612
+git commit -m "Removed assert statement that was causing errors."
+#1506567616
+git push 
+#1506567697
+git add src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1506567699
+git commit -m "Removed assert statement that was causing errors."
+#1506567702
+git push 
+#1506567851
+git add src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1506567855
+git commit -m "Removed assert statement that was causing errors."
+#1506567857
+git push 
+#1506569197
+exit
+#1506620245
+cd src/
+#1506620246
+ls
+#1506620251
+cd rspace-ui-src/
+#1506620252
+ls
+#1506620254
+cd SCHARP/
+#1506620254
+ls
+#1506620256
+git pull
+#1506620264
+git checkout master 
+#1506620266
+git pull
+#1506620271
+ls
+#1506620278
+more run-all.sh 
+#1506620303
+more README.md 
+#1506620320
+git submodule update
+#1506620344
+yarn install
+#1506620367
+brew update
+#1506620519
+brew upgrade
+#1506620600
+yarn install
+#1506620611
+npm run build
+#1506620683
+./run-all.sh 
+#1506621041
+npm i -g npm
+#1506621334
+cd 
+#1506621344
+cd src/rspace-eclipse/scharp/Docker/jboss-fuse-docker/
+#1506621345
+ls
+#1506621397
+more README.md 
+#1506621355
+./docker-run.sh 
+#1506621651
+cd
+#1506621661
+cd src/vagrant-jboss/
+#1506621495
+yarn start
+#1506621717
+yarn build
+#1506621772
+git pull
+#1506621780
+git submodule init
+#1506621787
+git submodule update
+#1506621795
+yarn build
+#1506622886
+cd 
+#1506622891
+cd src/rspace-eclipse/scharp
+#1506622895
+git status
+#1506622952
+git add src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1506622983
+git commit -m "Removed log statements."
+#1506622985
+git push
+#1506632128
+git status
+#1506632137
+git diff src/main/java/edu/kestrel/scharp/activemq/te3/servers/ComputePlan.java
+#1506632145
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1506632156
+git status
+#1506632167
+git add src/main/java/edu/kestrel/scharp/activemq/te3/servers/ComputePlan.java src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java 
+#1506632174
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1506632197
+git diff src/main/java/edu/kestrel/scharp/planner/manager/ISRAirUnitScheduler.java
+#1506632203
+git add src/main/java/edu/kestrel/scharp/planner/manager/ISRAirUnitScheduler.java
+#1506632228
+git commit -m "Generating options for packages for interactive scheduling."
+#1506632231
+git push
+#1506655423
+git status
+#1506655435
+git add src/main/java/edu/kestrel/scharp/activemq/te3/servers/SelectStrikeOptions.java 
+#1506655441
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1506655481
+git status
+#1506655492
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1506655500
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1506655506
+git status
+#1506655538
+git commit -m "Fixed the generate options to generate multiple options and properly schedule the selection."
+#1506655540
+git push
+#1506655593
+git pull origin master 
+#1506655602
+git status
+#1506655605
+git push
+#1506621836
+yarn start
+#1506660999
+git pull
+#1506661004
+yarn start
+#1506621666
+vagrant up node-1
+#1506661361
+vagrant halt
+#1506661392
+git pull --all --prune
+#1506661404
+git pull
+#1506661410
+brew update
+#1506661425
+brew upgrade
+#1506661434
+clear
+#1506661437
+exit
+#1506661443
+docker ps
+#1506661447
+docker ps -a
+#1506661454
+exit
+#1506661456
+exit
+#1506722710
+cd src/rspace-eclipse/scharp
+#1506722712
+git pull
+#1506722721
+;s
+#1506722723
+ls
+#1506722728
+mvn clean compile
+#1506967834
+cd src/rspace-eclipse/
+#1506967837
+cd scharp
+#1506967838
+ls
+#1506967840
+git pull
+#1506967873
+cd output/
+#1506967874
+ls
+#1506969758
+brew update
+#1506969811
+brew upgrade
+#1506969880
+mkdir -p /Users/marcelbecker/Library/Python/2.7/lib/python/site-packages
+#1506969888
+echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/marcelbecker/Library/Python/2.7/lib/python/site-packages/homebrew.pth
+#1506969892
+brew upgrade
+#1506969899
+brew doctor
+#1506970046
+brew link python
+#1506970097
+brew link --overwrite --dry-run python
+#1506970124
+brew link --overwrite python
+#1506970130
+brew doctor
+#1506970245
+brew unlink texinfo
+#1506970252
+brew doctor
+#1506970379
+which python
+#1506970392
+python --version
+#1506970412
+/usr/local/share/python --version
+#1506970434
+/usr/local/share/python
+#1506970435
+ls
+#1506970495
+python2 --version
+#1506970508
+which python2
+#1506984808
+git pull origin master 
+#1506984817
+git pull
+#1506984822
+mvn clean compile
+#1506984827
+cd ..
+#1506984829
+mvn clean compile
+#1506984854
+git status
+#1506984863
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1506984867
+git status
+#1506984870
+git push
+#1506984878
+clear
+#1507041950
+git status
+#1507041966
+git checkout marcel-refactor-fighter-scheduler
+#1507041984
+git add src/main/java/edu/kestrel/scharp/planner/entities/Graph.java src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java
+#1507041990
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1507041997
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1507041999
+git status
+#1507042026
+git commit -m "Started refactoring strike routing method."
+#1507042041
+git push
+#1507164033
+cd src/rspace-eclipse/scharp
+#1507164035
+git pull
+#1507164042
+git pull --all --prune
+#1507164053
+git branch 
+#1507164079
+git branch -d drs12 marcel-cache-distances marcel-no-amq-for-local-schedulers marcel-no-amq-plus-cache-distances
+#1507164108
+git branch -D drs12 marcel-cache-distances marcel-no-amq-for-local-schedulers marcel-no-amq-plus-cache-distances
+#1507164113
+git branch 
+#1507164118
+git pull
+#1507164125
+git pull origin master 
+#1507164151
+git push
+#1507164171
+mvn clean compile
+#1507221686
+git status
+#1507221698
+git diff src/main/java/edu/kestrel/scharp/planner/entities/FighterActivity.java
+#1507240594
+git status
+#1507240611
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/StandardConfigurationLoad.java src/main/java/edu/kestrel/scharp/airdomain/interfaces/IStandardConfiguration.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/
+#1507240614
+git status
+#1507240633
+git add src/main/java/edu/kestrel/scharp/planner/analysis/AnalysisUtils.java src/main/java/edu/kestrel/scharp/planner/analysis/display/PlanAnalysisGUI.java src/main/java/edu/kestrel/scharp/planner/entities/FighterActivity.java src/main/java/edu/kestrel/scharp/planner/manager/
+#1507240639
+git diff src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1507240651
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1507240654
+git status
+#1507240758
+git commit -m "Optimized the creation of strike options to avoid calling isDroppableMunition all the time with the expensive string matching. Fixed the update of the PlanAnalysis ui by sending the notifications for bid acceptance only once the strike package is completed."
+#1507240760
+git push
+#1507240771
+git pull origin master 
+#1507240775
+git push
+#1507241772
+his | grep yarn
+#1507256344
+git status
+#1507256353
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java
+#1507329483
+git pull
+#1507511918
+chflags nohidden ~/Library
+#1507511965
+cd Library/
+#1507511965
+ls
+#1507511997
+cd Caches/
+#1507511997
+ls
+#1507563622
+cd
+#1507563631
+cd src/rspace-eclipse/scharp
+#1507563635
+git pull
+#1507589755
+ssh -L 9999:localhost:3389 -p 422 DoD_Admin@71.179.165.116
+#1507590904
+cd 
+#1507590909
+cd src/rspace-eclipse/
+#1507590910
+ls
+#1507590911
+cd scharp
+#1507590912
+ls
+#1507590923
+cd notes/
+#1507590924
+ls
+#1507590934
+git status
+#1507594391
+git diff ../src/main/java/edu/kestrel/scharp/planner/analysis/AnalysisUtils.java
+#1507594396
+git pull
+#1507594404
+git status
+#1507594413
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java
+#1507594420
+git status
+#1507594432
+git add ../src/main/java/edu/kestrel/scharp/planner/analysis/AnalysisUtils.java ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java ../src/main/java/edu/kestrel/scharp/planner/util/PlanStability.java
+#1507594434
+git status
+#1507594478
+git commit -m "Added battlespace entry and exit to analysis util method that checks if a leg is a positioning leg."
+#1507594483
+git checkout master 
+#1507594487
+git pull
+#1507594494
+mvn clean compile
+#1507594500
+cd ../
+#1507594502
+mvn clean compile
+#1507595353
+git checkout drs12
+#1507595361
+mvn clean compile
+#1507596102
+git checkout marcel-no-amq-plus-drs12 
+#1507596109
+git status
+#1507596111
+git push
+#1507596122
+mvn clean compile
+#1507598232
+git status
+#1507598244
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java 
+#1507598254
+git commit -m "Added some logging statements."
+#1507598264
+git checkout drs12 
+#1507598270
+mvn clean compile
+#1507598425
+git checkout marcel-no-amq-plus-drs12 
+#1507598429
+mvn clean compile
+#1507646388
+git status
+#1507646401
+git add src/main/java/edu/kestrel/scharp/planner/entities/TargetBid.java src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1507646429
+git commit -m "Added sorting of package bids before selecting bid."
+#1507646431
+git push
+#1507682607
+git pull
+#1507764892
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1507764920
+git status
+#1507764928
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1507764951
+git commit -m "Removed  unnecessary test for null."
+#1507764954
+git pull
+#1507906478
+git status
+#1507906506
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/Scenario.java src/main/java/edu/kestrel/scharp/airdomain/interfaces/IScenario.java src/main/java/edu/kestrel/scharp/airdomain/scenarios/TE4Scenario.java src/main/java/edu/kestrel/scharp/planner/entities/TargetBid.java src/main/java/edu/kestrel/scharp/planner/manager/
+#1507906511
+git status
+#1507906518
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1507906560
+git commit -m "FIxed the secondary targetst. Optimized computation of remaining munition and jdpis. Changed tanker missions."
+#1507906563
+git push
+#1507940635
+git pull
+#1508166569
+cd src/rspace-eclipse/scharp
+#1508166572
+git pull
+#1508166703
+cd 
+#1508166711
+cd Dropbox/.spacemacs.d/
+#1508166713
+git pull
+#1508167240
+brew --prefix
+#1508167262
+cd /usr/local
+#1508167263
+ls
+#1508167279
+brew update
+#1508167390
+brew cleanup
+#1508167398
+brew cleanup --force
+#1508167409
+brew upgrade
+#1508167601
+brew cleanup --force
+#1508167609
+brew upgrade
+#1508167618
+brew cleanup
+#1508167623
+brew update
+#1508167881
+git status
+#1508167893
+mvn clean
+#1508167900
+mvn compile
+#1508168175
+cd
+#1508168177
+ls
+#1508168178
+cd src/
+#1508168179
+ls
+#1508168204
+cd cd rspace
+#1508168205
+ls
+#1508168216
+cd rspace
+#1508168217
+ls
+#1508168219
+cd ..
+#1508168219
+ls
+#1508168878
+whereis java
+#1508168883
+java -version
+#1508169071
+/usr/libexec/java_home
+#1508169085
+cd /Library/Java/JavaVirtualMachines/
+#1508169085
+ls
+#1508169941
+git status
+#1508201905
+git add src/main/java/edu/kestrel/scharp/planner/datastructures/
+#1508201918
+git add src/main/java/edu/kestrel/scharp/planner/entities
+#1508202649
+git status
+#1508202665
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1508202672
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1508202673
+git status
+#1508202740
+git commit -m "Fixed update of refueling activity fuel level; removed the scheduling of subtasks inside fighter unit scheduler during rebidding of KI tasks."
+#1508202744
+git push
+#1508203087
+git status
+#1508203093
+git push
+#1508203097
+git pull
+#1508376878
+brew update
+#1508376931
+brew upgrade
+#1508376948
+brew cask install xquartz
+#1508376967
+docker images
+#1508377047
+open -a XQuartz
+#1508377058
+ip=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
+#1508377071
+xhost + $ip
+#1508377092
+docker run -ti --name spacemacs  -e DISPLAY=$ip:0  -e TZ=<your_time_zone>  -v <path_to_your_workspace>:/mnt/workspace  spacemacs/emacs25:develop
+#1508377283
+pwd
+#1508377296
+docker run -ti --name spacemacs  -e DISPLAY=$ip:0  -e TZ=America/Los_Angeles -v /Users/marcelbecker:/mnt/workspace  spacemacs/emacs25:develop
+#1508377387
+xhost + $ip
+#1508377400
+docker run -ti --name spacemacs  -e DISPLAY=$ip:0  -e TZ=America/Los_Angeles -v /Users/marcelbecker:/mnt/workspace  spacemacs/emacs25:develop
+#1508377409
+docker ps -a
+#1508377418
+docker rm -f 8a860684f3be
+#1508377421
+docker run -ti --name spacemacs  -e DISPLAY=$ip:0  -e TZ=America/Los_Angeles -v /Users/marcelbecker:/mnt/workspace  spacemacs/emacs25:develop
+#1508377479
+docker ps -a
+#1508377490
+docker rm -f 95e28b1f1e38
+#1508377492
+docker run -ti --name spacemacs  -e DISPLAY=$ip:0  -e TZ=America/Los_Angeles -v /Users/marcelbecker:/mnt/workspace  spacemacs/emacs25:develop
+#1508377509
+echo $ip
+#1508377516
+echo "$ip"
+#1508377529
+ip=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
+#1508377532
+echo "$ip"
+#1508377549
+ipconfig en0
+#1508377561
+ipconfig 
+#1508377572
+ifconfig
+#1508377576
+ifconfig en0
+#1508377589
+ifconfig en1
+#1508377604
+ip=$(ifconfig en1 | grep inet | awk '$1=="inet" {print $2}')
+#1508377609
+echo "$ip"
+#1508377623
+xhost + $ip
+#1508377650
+docker run -ti --name spacemacs  -e DISPLAY=$ip:0  -e TZ=America/Los_Angeles -v /Users/marcelbecker:/mnt/workspace  spacemacs/emacs25:develop
+#1508377657
+docker ps -a
+#1508377667
+docker rm -f 59a2a2df9925
+#1508377669
+docker run -ti --name spacemacs  -e DISPLAY=$ip:0  -e TZ=America/Los_Angeles -v /Users/marcelbecker:/mnt/workspace  spacemacs/emacs25:develop
+#1508377710
+docker ps -a
+#1508377721
+docker rm -f spacemacs
+#1508377728
+ifconfig
+#1508377779
+ip = 192.168.55.143
+#1508377806
+ip=192.168.55.143
+#1508377819
+xhost + 192.168.55.143
+#1508377896
+docker ps -a
+#1508377837
+docker run -ti --name spacemacs  -e DISPLAY=$ip:0  -e TZ=America/Los_Angeles -v /Users/marcelbecker:/mnt/workspace  spacemacs/emacs25:develop
+#1508377909
+docker rm -f spacemacs
+#1508377921
+docker ps -a
+#1508377930
+docker ps
+#1508377932
+clear
+#1508377935
+docker ps
+#1508377961
+exit
+#1508377969
+docker run -ti --name spacemacs  -e DISPLAY=$ip:0  -e TZ=America/Los_Angeles -v /Users/marcelbecker:/mnt/workspace  spacemacs/emacs25:develop
+#1508378003
+cd src/
+#1508378004
+ls
+#1508378046
+cd
+#1508378050
+docker ps -a
+#1508378057
+docker rm -f spacemacs
+#1508378063
+xhost + 192.168.55.143
+#1508378073
+docker run -ti --name spacemacs  -e DISPLAY=$ip:0  -e TZ=America/Los_Angeles -v /Users/marcelbecker:/mnt/workspace  spacemacs/emacs25:develop
+#1508378146
+echo "$ip"
+#1508378153
+ip=192.168.55.143
+#1508378155
+echo "$ip"
+#1508378161
+docker rm -f spacemacs
+#1508378164
+docker run -ti --name spacemacs  -e DISPLAY=$ip:0  -e TZ=America/Los_Angeles -v /Users/marcelbecker:/mnt/workspace  spacemacs/emacs25:develop
+#1508378197
+docker run -ti --name spacemacs  -e DISPLAY=192.168.55.143:0  -e TZ=America/Los_Angeles -v /Users/marcelbecker:/mnt/workspace  spacemacs/emacs25:develop
+#1508378202
+docker rm -f spacemacs
+#1508378204
+docker run -ti --name spacemacs  -e DISPLAY=192.168.55.143:0  -e TZ=America/Los_Angeles -v /Users/marcelbecker:/mnt/workspace  spacemacs/emacs25:develop
+#1508378337
+docker rm -f spacemacs
+#1508378340
+startx
+#1508378481
+open -a XQuartz
+#1508378496
+xstart
+#1508378552
+xauth list
+#1508378601
+defaults write org.macosforge.xquartz.X11 nolisten_tcp -boolean false
+#1508378613
+docker rm -f spacemacs
+#1508378618
+docker run -ti --name spacemacs  -e DISPLAY=192.168.55.143:0  -e TZ=America/Los_Angeles -v /Users/marcelbecker:/mnt/workspace  spacemacs/emacs25:develop
+#1508379628
+docker ps -a
+#1508379634
+docker rm -f spacemacs
+#1508379636
+ls
+#1508379638
+ps -a
+#1508427748
+cd src/rspace-eclipse/scharp
+#1508427752
+git pull
+#1508427770
+mvn clean compile 
+#1508427961
+exit
+#1508428098
+docker ps -a
+#1508428103
+ps -a
+#1508428109
+top
+#1508428134
+exit
+#1508428471
+cd src/rspace-eclipse/scharp/output/
+#1508428472
+ls
+#1508428481
+rm *
+#1508428487
+rm -rf *
+#1508428819
+ls
+#1508428841
+more SCHARP-10_19_16_00_00.json.txt 
+#1508443834
+git pull
+#1508452266
+git status
+#1508452276
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java
+#1508452287
+git status
+#1508452300
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1508452328
+git status
+#1508452340
+git diff ../src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1508452363
+git add ../src/main/java/edu/kestrel/scharp/planner/manager
+#1508452365
+git status
+#1508452376
+git add ../src/main/java/edu/kestrel/scharp/planner/plan/Plan.java ../src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1508452387
+git status
+#1508452413
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/PlanningOptions.java
+#1508452450
+git commit -m "Added some log statements and fixed a place where a log statement would throw an NPE."
+#1508452451
+git push
+#1508454706
+git pull
+#1508772394
+cd src/rspace-eclipse/scharp
+#1508772398
+git pull --all
+#1508772419
+git checkout -t origin/sf-ar-support 
+#1508772422
+git pull
+#1508772429
+mvn clean compile
+#1508772897
+git statys
+#1508772899
+git status
+#1508772906
+git checkout -- src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1508772916
+git add src/main/java/edu/kestrel/scharp/activemq/te3/servers/SelectStrikeOptions.java src/main/java/edu/kestrel/scharp/planner/datastructures/
+#1508772919
+git status
+#1508772971
+git commit -m "Fixed some new eclipse errors in the toString methods for DoubleLinkedNode and RedBlackLinkedNode."
+#1508772974
+git push
+#1508773011
+git checkout master 
+#1508773013
+git pull
+#1508773024
+git branch -d sf-ar-support 
+#1508773048
+git checkout -t origin/sf-orbit-geometry 
+#1508773051
+git pull
+#1508773056
+mvn clean compile
+#1508773101
+git pull origin master 
+#1508773241
+git status
+#1508773253
+git push -u origin sf-orbit-geometry 
+#1508773262
+git status
+#1508773317
+git checkout master 
+#1508773326
+git branch -d sf-orbit-geometry 
+#1508773331
+git pull --all --prune
+#1508773339
+git pull
+#1508773347
+git checkout sf-fix-location-equality 
+#1508773351
+git pull origin master 
+#1508773358
+git status
+#1508773360
+git pull
+#1508773369
+mvn clean compile
+#1508773492
+git status
+#1508773505
+git push -u origin sf-fix-location-equality 
+#1508773604
+git checkout master 
+#1508773618
+git branch -d sf-fix-location-equality 
+#1508773639
+git pull --all --prune
+#1508773646
+git branch -d sf-fix-location-equality 
+#1508773654
+git branch 
+#1508773663
+git branch -d drs12 
+#1508773667
+git pull 
+#1508773676
+git checkout marcel-no-amq-plus-drs12 
+#1508773678
+git pull
+#1508773685
+git pull origin master 
+#1508776992
+git status
+#1508779081
+mvn clean compile
+#1508780623
+git status
+#1508780634
+git add src/main/java/edu/kestrel/scharp/airdomain/entities/Location.java src/main/java/edu/kestrel/scharp/planner/datastructures/RedBlackLinkedNode.java
+#1508780652
+git commit -m "Merged with master and fixed conflicts."
+#1508780656
+git push
+#1508805387
+git status
+#1508805394
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java
+#1508805416
+git status
+#1508805427
+git diff src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java
+#1508805434
+git status
+#1508805441
+git diff src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java
+#1508805454
+git status
+#1508805465
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java
+#1508805512
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManager.java
+#1508805549
+git commit -m "Sorted the bids returned by the option generator for Pop Up Sam site."
+#1508805551
+git push
+#1508805557
+git status
+#1508805565
+git diff src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1508805608
+git add src/main/java/edu/kestrel/scharp/planner/manager/FunctionalPlanningCellManager.java
+#1508805618
+git commit -m "Reforamatted code. "
+#1508805620
+git push
+#1508805625
+git status
+#1508805636
+git diff src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1508805645
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1508805665
+git commit -m "Added sort function for IPlanningBids"
+#1508805667
+git push
+#1508805674
+git status
+#1508805686
+git add src/main/java/edu/kestrel/scharp/usmtf/convert/ATOMission.java src/main/java/edu/kestrel/scharp/planner/repair/PlanRepairer.java src/main/java/edu/kestrel/scharp/planner/plan/Plan.java
+#1508805689
+git status
+#1508805701
+git commit -m "Changed log statements."
+#1508805702
+git push
+#1508856415
+[11~
+#1508971197
+git pull
+#1509039235
+cd out
+#1509039237
+cd output/
+#1509039238
+ls
+#1509041125
+rm -f *
+#1509041126
+ls
+#1509041759
+cd
+#1509041764
+cd src/avro-tools/
+#1509041915
+java -jar ./avro-tools-1.8.2.jar fromjson --schema-file ~/src/rspace-eclipse/scharp/src/main/avro/Plan.avdl  ~/src/rspace-eclipse/scharp/output/SCHARP-10_26_18_05_41.json.txt > AnyNameForYourBinaryAvro.avro
+#1509044273
+cd ..
+#1509044274
+ls
+#1509044278
+mvn clean compile
+#1509046026
+mvn clean generate-sources compile 
+#1509059472
+cd output/
+#1509059472
+ls
+#1509059493
+more SCHARP-10_26_23_11_02.json.txt 
+#1509118422
+ls
+#1509118433
+more SCHARP-10_27_15_33_36.json.txt 
+#1509134419
+ls
+#1509134433
+rm -f *
+#1509134434
+ls
+#1509134512
+ls -al
+#1509135829
+ls
+#1509136334
+rm -f *
+#1509136407
+ls
+#1509136463
+cd ..
+#1509136473
+mvn clean generate-sources compile
+#1509136597
+cd output/
+#1509136598
+ls
+#1509137214
+node --version
+#1509140066
+rm *
+#1509140074
+rm -rf *
+#1509140075
+ls
+#1509140389
+rm -rf *
+#1509140420
+ls
+#1509141116
+rm *
+#1509141124
+ls
+#1509147236
+cd ..
+#1509147238
+git status
+#1509147276
+git add src/main/java/edu/kestrel/scharp/activemq/te3/servers/ComputePlan.java src/main/java/edu/kestrel/scharp/airdomain/entities/ src/main/java/edu/kestrel/scharp/airdomain/scenarios/ src/main/java/edu/kestrel/scharp/executionstate/
+#1509147278
+git status
+#1509147300
+git add src/test/java/edu/kestrel/scharp/planner/manager/ManagerUtilsTest.java src/main/java/edu/kestrel/scharp/usmtf/convert/ src/main/java/edu/kestrel/scharp/planner/time/
+#1509147311
+git add src/main/java/edu/kestrel/scharp/planner/analysis
+#1509147314
+git status
+#1509147324
+git add src/main/java/edu/kestrel/scharp/planner/entities/
+#1509147334
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1509147337
+git status
+#1509147344
+git add src/main/java/edu/kestrel/scharp/planner/plan/
+#1509147351
+git add src/main/java/edu/kestrel/scharp/planner/util/
+#1509147357
+git add src/main/java/edu/kestrel/scharp/replanner/
+#1509147359
+git status
+#1509147366
+git add src/main/avro/Plan.avdl
+#1509147370
+git status
+#1509147477
+git commit -m "Changed the format of time used in the json serialization to ISO_INSTANT, changed DCAEscort to OCA, changed ATOMission.MissionType and Plan.avdl MissionType to match. Replaced TST mission type by XATK, DCAEscort by OCA, XDCA by DCA." 
+#1509147480
+git pus
+#1509147483
+git push
+#1509378033
+cd src/rspace-eclipse/scharp
+#1509378035
+git pull
+#1509378038
+git status
+#1509378055
+git checkout -t origin/sf-xml-schema 
+#1509378058
+git pulol
+#1509378061
+git pull
+#1509378069
+mvn clean compile
+#1509378733
+git checkout marcel-no-amq-plus-drs12 
+#1509378735
+git pull
+#1509378753
+mvn clean compile
+#1509383113
+cd output/
+#1509383113
+ls
+#1509383118
+rm -rf *
+#1509384132
+ls
+#1509384608
+cd ..
+#1509384615
+cd ../.metadata/
+#1509384616
+ls
+#1509384625
+cd .plugins/
+#1509384625
+ls
+#1509384641
+cd org.eclipse.core.resources/
+#1509384642
+ls
+#1509384645
+ls -al
+#1509384652
+rm -rf 115.snap 
+#1509384664
+lx
+#1509384665
+ls
+#1509384667
+ls 
+#1509384669
+ls -al
+#1509384674
+more .history/
+#1509384675
+ls
+#1509384679
+cd .history/
+#1509384679
+ls
+#1509384682
+ls -al
+#1509384713
+ls
+#1509384715
+ls -al
+#1509384717
+cd ..
+#1509384718
+ls
+#1509384720
+ls -al
+#1509386724
+cd 
+#1509386732
+cd src/rspace-eclipse/scharp/output/
+#1509386732
+ls
+#1509386751
+more SCHARP-10_30_18_05_06.xml.txt 
+#1509387314
+ls
+#1509388053
+git status
+#1509388385
+git diff ../src/main/java/edu/kestrel/scharp/planner/util/AvroUtils.java
+#1509388394
+git add ../src/main/java/edu/kestrel/scharp/planner/util/AvroUtils.java
+#1509388396
+git status
+#1509388421
+git add ../src/main/java/edu/kestrel/scharp/utils/FixupPlanXMLForSchemaGeneration.java ../src/main/xml/plan.xml ../src/main/xml/plan.xsd ../src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java
+#1509388453
+git add ../src/test/java/edu/kestrel/scharp/utils/
+#1509388466
+git commit -m "Fixed xml schemas."
+#1509388469
+git push
+#1509389095
+cd ..
+#1509389102
+mvn clean compile
+#1509389334
+cd output/
+#1509389335
+ls
+#1509389340
+rm *
+#1509389352
+rm -rf *
+#1509389371
+ls
+#1509389432
+cd ..
+#1509389436
+mvn clean compile
+#1509389469
+cd output/
+#1509389470
+ls
+#1509389474
+rm -rf *
+#1509389476
+ls
+#1509389647
+mvn clean compile
+#1509389652
+ls
+#1509389653
+cd ..
+#1509389655
+mvn clean compile
+#1509389764
+cd output/
+#1509389765
+ls
+#1509389768
+rm *
+#1509389920
+git status
+#1509389933
+git add ../src/main/avro/Plan.avdl
+#1509389967
+git commit -m "Made dependencies required in plan.avdl."
+#1509389974
+git push
+#1509390828
+brew update 
+#1509391029
+ls
+#1509391332
+ls
+#1509391335
+ls -al
+#1509391339
+rm 115.snap 
+#1509391361
+ls
+#1509391363
+ls -al
+#1509392590
+ls
+#1509392594
+rm 115.snap 
+#1509392804
+ls
+#1509392805
+ls -al
+#1509392814
+cd ..
+#1509392815
+ls
+#1509392824
+cd org.eclipse.oomph.setup
+#1509392825
+ls
+#1509392829
+more workspace.setup 
+#1509392835
+cd ..
+#1509396431
+git pull --all --prune
+#1509404978
+cd ..
+#1509404983
+mvn clean compile
+#1509405623
+cd output/
+#1509405623
+ls
+#1509405633
+rm -rf *
+#1509405644
+ls
+#1509406039
+cd ..
+#1509406041
+git pull
+#1509407062
+mvn clean compile 
+#1509407132
+cd output/
+#1509407133
+ls
+#1509407136
+rm *
+#1509407441
+ls
+#1509407868
+cd ..
+#1509407874
+mvn clean compile
+#1509407966
+rm -rf *
+#1509408056
+git status
+#1509408212
+git checkout -- .
+#1509408216
+git status
+#1509408283
+mvn clean compile 
+#1509408673
+cd output/
+#1509408674
+ls
+#1509408917
+rm -rf *
+#1509408919
+ls
+#1509409737
+cd ..
+#1509409744
+ls
+#1509409757
+mvn clean compile
+#1509409888
+cd output/
+#1509409889
+ls
+#1509409901
+ls -al
+#1509410241
+git status
+#1509410524
+ls
+#1509410782
+ls 
+#1509410788
+rm -rf *
+#1509410790
+ls
+#1509411067
+;s
+#1509411068
+ls
+#1509411072
+rm -rf *
+#1509411076
+cd ..
+#1509411081
+cd src/main/xml/
+#1509411082
+ls
+#1509411090
+rm plan-new.xsd
+#1509411099
+rm SCHARP-10_3*
+#1509411111
+ls
+#1509411119
+rm plan.jsn 
+#1509411121
+ls
+#1509411130
+rm plan-new.xsd.bak 
+#1509411132
+ls
+#1509411152
+rm plan.xml.bak plan.xsd.bak 
+#1509411156
+ls
+#1509411165
+git status
+#1509411177
+git add .
+#1509411189
+git add ../avro/Plan.avdl ../java/edu/kestrel/scharp/planner/util/AvroUtils.java ../../test/java/edu/kestrel/scharp/utils/FixupPlanXMLForSchemaGenerationTest.java
+#1509411193
+git status
+#1509411253
+git commit -m "Fixed the json and xml schema to replace dca by oca, xdca by dca, tst by xatk. Fixed the xml schema and the example files."
+#1509411256
+git push
+#1509412211
+mvn clean compile
+#1509412230
+cd ../..
+#1509412233
+cd ..
+#1509412235
+mvn clean compile
+#1509412575
+cd output/
+#1509412576
+ls
+#1509412582
+rm -rf *
+#1509412583
+ls
+#1509414048
+rm -rf *
+#1509414050
+ls
+#1509414292
+rm -rf *
+#1509414294
+ls
+#1509414463
+diff SCHARP-10_31_01_45_07.json.txt ../src/main/xml/plan.json 
+#1509414475
+cp SCHARP-10_31_01_45_07.json.txt ../src/main/xml/plan.json 
+#1509414477
+diff SCHARP-10_31_01_45_07.json.txt ../src/main/xml/plan.json 
+#1509414493
+cd ../src/main/xml/
+#1509414493
+ls
+#1509414524
+cp SCHARP-10_31_01_45_07.xml plan.xml 
+#1509414526
+ls
+#1509414530
+rm SCHARP-10_31_01_*
+#1509414533
+ls
+#1509414536
+git status
+#1509414551
+git add ../avro/Plan.avdl ../java/edu/kestrel/scharp/planner/util/AvroUtils.java ../java/edu/kestrel/scharp/utils/FixupPlanXMLForSchemaGeneration.java .
+#1509414553
+git status
+#1509414559
+git add ../../test/java/edu/kestrel/scharp/utils/FixupPlanXMLForSchemaGenerationTest.java
+#1509414570
+git commit -m "Fixed the schemas."
+#1509414572
+git push
+#1509464169
+cd ../..
+#1509464171
+cd ..
+#1509464175
+mvn clean compile
+#1509464370
+cd ../..
+#1509464370
+ls
+#1509464373
+cd ..
+#1509464374
+ls 
+#1509464376
+cd output/
+#1509464377
+ls
+#1509464380
+rm -rf *
+#1509464395
+ls
+#1509464639
+cd src/main/xml/
+#1509464639
+ls
+#1509464654
+diff plan.xml SCHARP-10_31_15_39_56.xml
+#1509464688
+ls
+#1509464690
+git status
+#1509464714
+git diff ../../test/java/edu/kestrel/scharp/utils/FixupPlanXMLForSchemaGenerationTest.java
+#1509464729
+ls
+#1509464750
+cp SCHARP-10_31_15_39_56.xml plan.xml
+#1509464772
+cp ../../../output/SCHARP-10_31_15_39_56.json.txt plan.json
+#1509464773
+ls
+#1509464783
+rm -rf SCHARP-10_31_*
+#1509464784
+lsw
+#1509464786
+ls
+#1509464794
+rm *.bak
+#1509464799
+ls
+#1509464980
+git status
+#1509465000
+git add ../avro/AirDomainDataTypes.avdl ../avro/Plan.avdl ../java/edu/kestrel/scharp/planner/util/AvroUtils.java .
+#1509465002
+git status
+#1509465012
+git add ../../test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java ../../test/java/edu/kestrel/scharp/utils/FixupPlanXMLForSchemaGenerationTest.java
+#1509465014
+git status
+#1509465113
+git commit -m "Changed some of the field names for avro records -- lat to latitude, lon to longitude, dmpiLocation to location, to simplify xml schema. Fixed code that uses those fields, changed xml schema to include enumeration types for mission types and way point types."
+#1509465116
+git push
+#1509466306
+ls -l
+#1509493826
+mvn clean compile
+#1509493832
+cd ../../..
+#1509493833
+mvn clean compile
+#1509577028
+git pull
+#1509577035
+cd src/rspace-eclipse/scharp
+#1509577037
+git pull
+#1509582365
+xsh
+#1509598092
+zsh
+#1509598880
+echo "$PS1"
+#1509598924
+zsh
+#1509636873
+echo "$PS1"
+#1509636876
+zsh
+#1509637375
+ls
+#1509637461
+zsh
+#1509721643
+exit
+#1509582368
+zsh
+#1509721653
+exit
+#1509754828
+zsh
+#1509776388
+exit
+#1509984793
+zsh
+#1510019919
+brew update
+#1510020017
+echo -ne "\e]1;this is the title\a"
+#1510020026
+zsh
+#1510036892
+cd Dropbox/
+#1510036892
+ls
+#1510036896
+cd ZSH/
+#1510036897
+ls
+#1510036899
+cd ..
+#1510036899
+ls
+#1510036902
+exit
+#1510069868
+cd Dropbox/.spacemacs.d/
+#1510069870
+git pull
+#1510069882
+git stash
+#1510069884
+git pull
+#1510069889
+git stash pop
+#1510192379
+zsh
+#1510104035
+zsh
+#1510192727
+ls
+#1510192734
+zsh
+#1510356310
+cd src/rspace-eclipse/scharp
+#1510356314
+cd output/
+#1510356315
+ls
+#1510356319
+rm -rf *
+#1510356320
+ls
+#1510370242
+mvn clean generate-sources
+#1510370248
+cd ..
+#1510370249
+mvn clean generate-sources
+#1510370258
+cd output/
+#1510370259
+ls
+#1510432042
+lc
+#1510432043
+ls
+#1510432047
+rm -rf *
+#1510442067
+git status
+#1510442090
+git add ../src/main/java/edu/kestrel/scharp/planner/entities/
+#1510442093
+git status
+#1510442107
+git add ../src/main/java/edu/kestrel/scharp/planner/interfaces/IPlanningTask.java ../src/main/java/edu/kestrel/scharp/planner/manager/
+#1510442117
+git add ../src/main/java/edu/kestrel/scharp/planner/plan/loader/
+#1510442128
+git add ../src/main/java/edu/kestrel/scharp/planner/util/AvroUtils.java ../src/main/avro/Plan.avdl
+#1510442131
+git status
+#1510442246
+git commit -m "Changed the plan.avdl schema to add some fields needed to reload the plan from Json. Fixed problem with rejection of Bids not cancelling air refueling bid. Added cross references to activities receiving and providing fuel. Fixed loading of non-strike mission to use the same refueling missions as specified in plan."
+#1510442249
+git push
+#1510593091
+cd src/rspace-eclipse/scharp
+#1510593093
+ls
+#1510593104
+rm -rf hs_err_pid*
+#1510593105
+ls
+#1510593108
+cd output/
+#1510593108
+ls
+#1510593113
+rm -rf *
+#1510623966
+git status
+#1510623980
+git add ../src/main/java/edu/kestrel/scharp/planner/analysis/AnalysisUtils.java ../src/main/java/edu/kestrel/scharp/planner/manager/
+#1510623986
+git add ../src/main/java/edu/kestrel/scharp/planner/util/AvroUtils.java
+#1510623987
+git status
+#1510624007
+git commit -m "Working on reloading packages."
+#1510624009
+git push
+#1510795978
+git pull
+#1510802401
+cd 
+#1510802407
+cd Dropbox/.spacemacs.d/
+#1510802440
+grep -r "package" layers/*
+#1510882160
+git pull
+#1510882172
+ls
+#1510882175
+cd elpa/
+#1510882175
+ls
+#1510938229
+git status
+#1510938232
+git pull
+#1510938236
+cd 
+#1510938242
+alias
+#1510938292
+configdot status
+#1510938303
+configdot pull
+#1510938351
+cd Dropbox/.emacs.d
+#1510938355
+git status
+#1510938384
+ls
+#1510938401
+more sacha-emacs.el 
+#1510938421
+ls
+#1510938467
+cd nil/
+#1510938468
+ls
+#1510938492
+cd ..
+#1510938492
+ls
+#1510938522
+more package-activated-list.el 
+#1510938581
+more duplicate-line.el 
+#1510950406
+git pul
+#1510950408
+git pull
+#1510950419
+mvn clean compile
+#1510950427
+cd ..
+#1510950428
+mvn clean compile
+#1510950563
+git status
+#1510950569
+git add src/test/java/edu/kestrel/scharp/planner/manager/FunctionalPlanManagerTest.java
+#1510950587
+git commit -m "Fixed problem with test code."
+#1510950588
+git push
+#1510956730
+cd output/
+#1510956730
+ls
+#1510956734
+rm *
+#1510961499
+ls
+#1510961502
+rm -rf *
+#1510961504
+ls
+#1510966124
+rm *
+#1510975391
+git status
+#1510975402
+git add ../src/main/java/edu/kestrel/scharp/planner/manager/
+#1510975417
+git commit -m "Fixing reservations from Json Plan."
+#1510975419
+git push
+#1510975578
+exit
+#1510975580
+exit
+#1511222036
+cd 
+#1511222045
+cd src/rspace-eclipse/scharp/output/
+#1511222046
+ls
+#1511226276
+mv SCHARP-11_20_23_42_57.xml.txt SCHARP-11_20_23_42_57.xml
+#1511227641
+ls
+#1511227783
+rm *.xml
+#1511227791
+ls
+#1511290452
+git status
+#1511290537
+git add ../src/main/xml/plan.xsd
+#1511290569
+git commit -m "Updated the xml schema for the ato to include the new fields."
+#1511290572
+git push
+#1511290706
+ls
+#1511290737
+rm *.txt
+#1511290743
+ls
+#1511290752
+rm *.xml
+#1511290758
+ls
+#1511290772
+rm *.ato
+#1511290776
+ls
+#1511292435
+more SCHARP-11_21_19_25_24.json 
+#1511292527
+ls
+#1511297911
+git status
+#1511297939
+git add ../src/main/xml/plan.xsd ../src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java ../src/main/java/edu/kestrel/scharp/utils/FixupPlanXMLForSchemaGeneration.java ../src/test/java/edu/kestrel/scharp/activemq/TestStrikeServersTE4Workflow.java ../src/test/java/edu/kestrel/scharp/planner/manager/ManagerUtilsTest.java ../src/test/java/edu/kestrel/scharp/utils/FixupPlanXMLForSchemaGenerationTest.java
+#1511297940
+git status
+#1511297985
+git diff ../pom.xml
+#1511298003
+git checkout -- ../pom.xml
+#1511298005
+git status
+#1511298058
+git commit -m "Fix the generation of the xml file from the json string."
+#1511298060
+git push
+#1511195107
+zsh
+#1511801143
+cd src/rspace-eclipse/scharp
+#1511801147
+git pull
+#1511801159
+mvn clean compile
+#1511802367
+which java
+#1511802376
+java -version
+#1511802601
+$(/usr/libexec/java_home)
+#1511803214
+cd /Library/Java/JavaVirtualMachines/
+#1511803215
+ls
+#1511803302
+pkgutil --pkgs|grep -i oracle
+#1511803366
+jenv
+#1511803433
+sudo pkgutil --forget com.oracle.jdk8u74
+#1511803445
+ls
+#1511803453
+rm -rf jdk1.8.0_74.jdk
+#1511803459
+sudo rm -rf jdk1.8.0_74.jdk
+#1511803461
+ls
+#1511803467
+pkgutil --pkgs|grep -i oracle
+#1511803497
+sudo pkgutil --forget com.oracle.jdk8u144
+#1511803511
+ls
+#1511803521
+rm -rf jdk1.8.0_144.jdk
+#1511803527
+sudo rm -rf jdk1.8.0_144.jdk
+#1511803529
+ls
+#1511803534
+java -version
+#1511803602
+mvn clean compile 
+#1511806015
+cd output/
+#1511806016
+ls
+#1511807310
+diff plan.xsd ../src/main/xml/plan.xsd 
+#1511807335
+ls
+#1511807366
+git status
+#1511807380
+git diff ../src/main/java/edu/kestrel/scharp/planner/manager/SupportUnitScheduler.java
+#1511807590
+git status
+#1511807926
+ls
+#1511807936
+rm *.ato 
+#1511807948
+rm *.json
+#1511807953
+ls
+#1511807957
+rm *.xml
+#1511807964
+ls
+#1511808135
+diff plan.xsd ../src/main/xml/plan.xsd 
+#1511808170
+cp SCHARP-11_27_18_39_59.json ../src/main/xml/plan.json 
+#1511808192
+cp SCHARP-11_27_18_39_59-final.xml ../src/main/xml/plan.xml
+#1511808206
+cd ..
+#1511808210
+cd src/main/xml/
+#1511808211
+ls
+#1511808225
+rm SCHARP-11_20_*
+#1511808228
+ls
+#1511808260
+git status
+#1511808270
+git add ../java/edu/kestrel/scharp/planner/manager/
+#1511808285
+git add ../java/edu/kestrel/scharp/planner/util/AvroUtils.java ../java/edu/kestrel/scharp/planner/util/ManagerUtils.java plan.json plan.xml
+#1511808288
+git status
+#1511808340
+git commit -m "Updated plan.xml to the latest version. Fixed avro util functions that were creating dependencies with null fields."
+#1511808342
+git push
+#1511808353
+cd ../..
+#1511808354
+cd ..
+#1511808357
+ls
+#1511808361
+cd dmf/
+#1511808363
+git pull
+#1511808403
+git status
+#1511808409
+git remote -v
+#1511808417
+git pull
+#1511808596
+ls
+#1511808602
+git remote -v
+#1511808620
+git status
+#1511808647
+more .git/config 
+#1511808664
+cd 
+#1511808666
+cd .ssh
+#1511808667
+ls
+#1511808676
+more known_hosts 
+#1511808681
+more config 
+#1511808689
+more kestrel_id_rsa
+#1511808694
+ls
+#1511808704
+more id_rsa.ppk 
+#1511808732
+ls
+#1511808755
+more gmail_id_rsa
+#1511808764
+more gmail_id_rsa.pub 
+#1511808781
+more id_rsa.pub 
+#1511808894
+pbcopy < ~/.ssh/id_rsa.pub
+#1511808928
+more config 
+#1511808968
+cd src
+#1511808968
+ls
+#1511808972
+cd 
+#1511808973
+cd src/
+#1511808974
+ls
+#1511808979
+cd rspace-eclipse/
+#1511808980
+ls
+#1511808983
+cd dmf/
+#1511808984
+ls
+#1511808985
+git pull
+#1511809007
+cd ..
+#1511809011
+rm -r dmf/
+#1511809019
+rm -rf dmf/
+#1511809057
+git clone ssh://git@bitbucket.di2e.net:7999/rspace/dmf.git
+#1511809068
+git pull
+#1511809071
+cd dmf/
+#1511809071
+ls
+#1511809077
+cd services/
+#1511809078
+ls
+#1511809080
+cd ..
+#1511809083
+cd InformationExchangeDefinitions/
+#1511809084
+ls
+#1511809086
+cd schemas/
+#1511809087
+ls
+#1511809099
+cd ..
+#1511809099
+ls
+#1511809102
+cd xslts/
+#1511809102
+ls
+#1511809105
+cd RSPACEPlanXSLTs/
+#1511809105
+ls
+#1511809108
+cd SCHARPPlanXSLTs/
+#1511809109
+ls
+#1511809115
+cd SCHARPPlan-to-AOCOIMissions/
+#1511809115
+ls
+#1511809145
+more SampleOutput_scharp-for-plan-schema-te5-v2xml-PulledNov3.xml 
+#1511809185
+ls
+#1511809191
+more ScharpPlan-to-AOCOIMissions_v1.0.0.xsl  
+#1511809307
+cd ..
+#1511809308
+ls
+#1511809312
+cd AOCOIMission-to-SCHARPPlan/
+#1511809313
+ls
+#1511809328
+more SampleSCHARPPlanOutput.xml 
+#1511809388
+ls
+#1511809399
+more SampleInputIsTransformedSCHARPPlan.xml 
+#1511809411
+ls
+#1511809414
+cd ..
+#1511809415
+ls
+#1511809417
+cd ..
+#1511809418
+ls
+#1511809421
+cd ..
+#1511809421
+ls
+#1511809423
+cd ..
+#1511809424
+ls
+#1511809427
+cd schemas/
+#1511809427
+ls
+#1511809434
+cd AOCOI/
+#1511809435
+ls
+#1511809446
+cd ..
+#1511809446
+ls
+#1511809455
+cd RSPACELibrary/
+#1511809456
+ls
+#1511809459
+more RSPACELibrary.xsd 
+#1511813012
+git remote -v
+#1511814102
+git status
+#1511820286
+more cd ..
+#1511820287
+ls
+#1511820289
+cd ..
+#1511820290
+ls
+#1511820294
+cd ..
+#1511820295
+ls
+#1511820298
+cd xslts/
+#1511820298
+ls
+#1511820300
+cd RSPACEPlanXSLTs/
+#1511820301
+ls
+#1511820302
+cd SCHARPPlanXSLTs/
+#1511820303
+ls
+#1511820308
+cd SCHARPPlan-to-AOCOIMissions/
+#1511820308
+ls
+#1511820360
+cp ScharpPlan-to-AOCOIMissions_v1.0.0.xsl ~/src/rspace-eclipse/scharp/src/main/xml/
+#1511822064
+ls
+#1511822089
+git pull
+#1511822110
+ls
+#1511822166
+git checkout -b marcel-update-scharp-xsd
+#1511822232
+cp ~/src/rspace-eclipse/scharp/src/main/xml/plan.xml scharp-plan-schema-te5-v2-PulledNov3.xml 
+#1511822252
+cp ~/src/rspace-eclipse/scharp/src/main/xml/plan.xsd scharp-plan-schema-te5-v2-PulledNov3.xsd
+#1511822254
+git status
+#1511823268
+cp scharp-plan-schema-te5-v2-PulledNov3.xsd scharp-plan.xsd
+#1511823378
+git status
+#1511823387
+git add scharp-plan.xsd
+#1511823390
+git status
+#1511823407
+git add SampleOutput_scharp-for-plan-schema-te5-v2xml-PulledNov3.xml scharp-plan-schema-te5-v2-PulledNov3.xml scharp-plan-schema-te5-v2-PulledNov3.xsd
+#1511823431
+git commit -m "Updated the scharp plan schema and the plan files generated."
+#1511823435
+git push 
+#1511823449
+git push -u origin marcel-update-scharp-xsd 
+#1511826412
+git remote -v
+#1511826451
+git remote add marceldmf ssh://git@bitbucket.di2e.net:7999/~marcel.becker/dmf.git
+#1511826453
+git remote -v
+#1511826468
+git push -u marceldmf marcel-update-scharp-xsd 
+#1511828483
+git status
+#1511828498
+git add ../AOCOIMission-to-SCHARPPlan/AOCOIMission-to-ScharpPlan_v1.0.0.xsl
+#1511828526
+git commit -m "Fixed some typos in the transform from AOCOI to Scharp plan."
+#1511828528
+git push
+#1511828538
+ls
+#1511828574
+diff scharp-plan.xsd ~/src/rspace-eclipse/scharp/output/plan.xsd 
+#1511828609
+cp  ~/src/rspace-eclipse/scharp/output/plan.xsd scharp-plan.xsd 
+#1511828610
+;s
+#1511828612
+ls
+#1511828625
+cp scharp-plan.xsd scharp-plan-schema-te5-v2-PulledNov3.xsd
+#1511828628
+git status
+#1511828631
+git add .
+#1511828633
+git status
+#1511828665
+git commit -m "Changed the scharp plan schema to accept empty durations and latest start."
+#1511828667
+git push
+#1511828687
+git add ../src/main/xml/plan.xsd
+#1511828707
+git commit -m "Fixed plan xml schema to support empty time elements."
+#1511828709
+git push
+#1511883825
+git status
+#1511883843
+diff plan.xsd ../src/main/xml/plan.xsd 
+#1511883847
+git status
+#1511883856
+git status
+#1511883862
+exit
+#1511883863
+exit
+#1511883865
+exit
+#1511883866
+exit
+#1512007579
+zsh
+#1512091368
+exit
+#1512008076
+zsh
+#1512091372
+exit
+#1512145876
+zsh
+#1512410125
+cd src/rspace-eclipse/scharp
+#1512410128
+git pull
+#1512410132
+git status
+#1512410177
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java src/main/java/edu/kestrel/scharp/planner/plan/loader/PlanLoaderFromScharpXml.java src/main/resources/xsd/plan.xsd
+#1512410182
+git status
+#1512410207
+git commit -m "Loading plan from XML."
+#1512410208
+git push
+#1512410221
+git pull origin master 
+#1512410229
+git status
+#1512410234
+git push
+#1512410256
+git remote -v
+#1512435554
+cd 
+#1512435565
+cd src/rspace-eclipse/dmf/
+#1512435566
+ls
+#1512435570
+cd common-support/
+#1512435570
+ls
+#1512435572
+cd atoms-aocoi-2.1/
+#1512435573
+ls
+#1512435577
+pwd
+#1512435648
+ls
+#1512435665
+mvn clean install 
+#1512435748
+ls
+#1512435750
+cd target/
+#1512435751
+ls
+#1512410287
+zsh
+#1512632329
+exit
+#1512632330
+exit
+#1512776522
+cd src/rspace-eclipse/
+#1512776523
+ls
+#1512776536
+cd dmf/
+#1512776537
+ls
+#1512776545
+git checkout master 
+#1512776549
+git pull
+#1512776556
+ls
+#1512776560
+cd services/
+#1512776560
+ls
+#1512776579
+cd cd rhel-jdk/
+#1512776580
+ls
+#1512776587
+cd rhel-jdk/
+#1512776587
+ls
+#1512776606
+more Dockerfile 
+#1512776632
+cd ..
+#1512776633
+ls
+#1512776636
+cd rhel-maven/
+#1512776637
+ls
+#1512776642
+cd files/
+#1512776642
+ls
+#1512776644
+cd ..
+#1512776645
+ls
+#1512776646
+cd ..
+#1512776647
+ls
+#1512776655
+cd support/
+#1512776655
+ls
+#1512776657
+cd ptt/
+#1512776658
+ls
+#1512776661
+cd ..
+#1512776662
+ls
+#1512776666
+cd ..
+#1512776667
+ls
+#1512776671
+cd vdb-dataservices/
+#1512776672
+ls
+#1512776692
+git pull
+#1512776697
+cd src/
+#1512776697
+ls
+#1512776699
+cd main/
+#1512776700
+ls
+#1512776701
+cd resources/
+#1512776702
+ls
+#1512776706
+cd sources/
+#1512776707
+ls
+#1512776708
+cd CSV/
+#1512776709
+ls
+#1512776732
+cd ..
+#1512776733
+ls
+#1512776734
+cd ..
+#1512776735
+ls
+#1512776739
+cd support/
+#1512776740
+ls
+#1512776742
+cd scripts/
+#1512776743
+ls
+#1512776757
+more DMFTE5DataSources-vdb.xml 
+#1512776778
+ls
+#1512776780
+cd ..
+#1512776780
+ls
+#1512776782
+cd ..
+#1512776783
+ls
+#1512776786
+cd ..
+#1512776790
+ls
+#1512776798
+more README.md 
+#1512776825
+cd ..
+#1512776826
+ls
+#1512776833
+cd support/
+#1512776834
+ls
+#1512776836
+cd ..
+#1512776836
+ls
+#1512776849
+unzip DMF-TE5-DataServices-Information.zip 
+#1512776858
+ls
+#1512776877
+more fuse_integ1-atoms-mission-response1.txt 
+#1512776906
+ls
+#1512776954
+open DMF-TE5-DataServices-11072017.xlsx 
+#1512779652
+cd ..
+#1512779655
+cd common-support/
+#1512779656
+ls
+#1512779659
+cd atoms-aocoi-2.1/
+#1512779660
+ls
+#1512779662
+git pull
+#1512779750
+mvn clean install
+#1512802775
+exit
+#1512930913
+brew install inkscape
+#1513031475
+find / -name "*.ica"
+#1513031546
+sudo find / -name "*.ica"
+#1513031606
+cd Library/
+#1513031606
+ls
+#1513031615
+cd Application\ Support/
+#1513031616
+ls
+#1513036735
+cd /Library
+#1513036747
+cd Internet\ Plug-Ins/
+#1513036748
+ls
+#1513036763
+rm -rf CitrixICAClientPlugIn.plugin/
+#1513036773
+sudo rm -rf CitrixICAClientPlugIn.plugin/
+#1513036780
+ls
+#1513036784
+cd cd Disabled\ Plug-Ins/
+#1513036784
+ls
+#1513036793
+cd Disabled\ Plug-Ins/
+#1513036794
+ls
+#1513036797
+cd ..
+#1513036799
+cd 
+#1513036802
+cd Library/
+#1513036803
+ls
+#1513036816
+cd Internet\ Plug-Ins/
+#1513036817
+ls
+#1513102350
+cd
+#1513102357
+cd src/rspace-eclipse/scharp
+#1513105247
+cd 
+#1513105257
+cd src/rspace-eclipse/dmf/
+#1513105257
+ls
+#1513105262
+cd InformationExchangeDefinitions/
+#1513105262
+ls
+#1513105265
+cd schemas/
+#1513105266
+ls
+#1513105270
+cd AOCOI/
+#1513105270
+ls
+#1513105275
+cd ATOMS-AOCOI-Extracted-July2017Release/
+#1513105275
+ls
+#1513105278
+pwd
+#1513105318
+ls Miss*
+#1513124354
+cd
+#1513124364
+cd src/rspace-eclipse/scharp/output/
+#1513124365
+ls
+#1513124384
+cat ATOMS-AOCOI-Missions.xml | grep package
+#1513132981
+git status
+#1513132990
+git diff ../src/main/java/edu/kestrel/scharp/planner/plan/loader/PlanLoaderFromScharpXml.java
+#1513133011
+git add ../src/main/avro/Plan.avdl ../src/main/java/edu/kestrel/scharp/planner/plan/loader/PlanLoaderFromScharpXml.java ../src/test/java/edu/kestrel/scharp/planner/manager/ManagerUtilsTest.java
+#1513133017
+git status
+#1513133032
+git add ../src/main/java/edu/kestrel/scharp/planner/plan/translator/
+#1513133035
+git status
+#1513133062
+git commit -m "Added initial version of AOCOI to AVRO translator."
+#1513133065
+git push
+#1513133077
+git pull
+#1513133108
+git push
+#1513102359
+zsh
+#1513373256
+df
+#1513614647
+cd src/rspace-eclipse/scharp
+#1513614650
+git pull
+#1513614669
+clear
+#1513614674
+mvn clean compile
+#1513614817
+git status
+#1513641577
+mvn dependency:tree
+#1513643312
+mvn clean generate-sources
+#1513643542
+mvn -v clean generate-sources
+#1513643551
+mvn clean generate-sources
+#1513643563
+mvn clean generate-sources compilw
+#1513643567
+mvn clean generate-sources compile
+#1513643592
+mvn clean generate-sources compile -e
+#1513643658
+git checkout -- pom.xml
+#1513643662
+git status
+#1513643666
+mvn clean generate-sources compile -e
+#1513643916
+mvn clean
+#1513643925
+mvn clean generate-sources compile 
+#1513644009
+mvn clean generate-sources compile  -x
+#1513644017
+mvn clean generate-sources compile  -X
+#1513644239
+mvn generate-sources   -X
+#1513644381
+git checkout -- pom.xml
+#1513644386
+mvn generate-sources   -X
+#1513645210
+mvn generate-sources compile
+#1513645527
+mvn initialize
+#1513645626
+mvn initialize -X
+#1513645651
+mvn compile
+#1513645885
+git status
+#1513645898
+more .gitignore 
+#1513645945
+ls
+#1513645968
+mv lib local-maven
+#1513645968
+ls
+#1513645971
+git status
+#1513645979
+mvn clean compile
+#1513784758
+git status
+#1513784774
+git add pom.xml local-maven
+#1513784777
+git status
+#1513784805
+ls src/main/xml/
+#1513784864
+git rm -rf src/main/xml/
+#1513784873
+rm -rf src/main/xml/
+#1513784877
+git status
+#1513784887
+git add notes/
+#1513784889
+git status
+#1513784910
+git commit -m "Added AOCOI jar files to repo and modified pom."
+#1513784912
+git push
+#1513784925
+clear
+#1513784926
+exit
+#1513823893
+cd src/rspace-eclipse/
+#1513823895
+cd scharp
+#1513823897
+git pull
+#1513823913
+git pull --all --prune
+#1513823928
+git checkout marcel-new-comms 
+#1513823931
+git pull
+#1513828868
+mvn clean compile
+#1513830431
+git status
+#1513830445
+git add src/main/java/edu/kestrel/scharp/activemq/message/ProposeBidMessage.java src/main/java/edu/kestrel/scharp/main/
+#1513830454
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1513830458
+git status
+#1513830466
+git add src/test/java/edu/kestrel/scharp/planner/manager/TE2PlanManagerTest.java src/test/java/edu/kestrel/scharp/planner/manager/TE3PlanManagerTest.java
+#1513830469
+git status
+#1513830494
+git commit -m "Fixed the addition of messages to the message queues."
+#1513830502
+mvn clean compile
+#1513830529
+git statusd
+#1513830531
+git status
+#1513830534
+git push
+#1513879913
+git status
+#1513879919
+git checkout master 
+#1513879925
+git pull
+#1513879932
+mvn clean compile
+#1513880105
+git checkout marcel-new-comms 
+#1513880112
+mvn clean compile
+#1513884565
+cd 
+#1513884576
+cd src/rspace-eclipse/dmf/
+#1513884576
+ls
+#1513885540
+git pull
+#1513885560
+cd InformationExchangeDefinitions/
+#1513885560
+ls
+#1513885563
+cd schemas/
+#1513885563
+ls
+#1513885572
+cd DCP/
+#1513885573
+ls
+#1513885585
+more DCP.xsd 
+#1513885608
+ls
+#1513885615
+more DCP-SampleInstance.xml 
+#1513885950
+cd ../..
+#1513885952
+cd ..
+#1513885956
+cd scharp
+#1513885956
+ls
+#1513885959
+git pull
+#1513885962
+git status
+#1513885978
+git add src/main/java/edu/kestrel/scharp/activemq/message/ScharpMessage.java src/main/java/edu/kestrel/scharp/planner/entities/Graph.java src/main/java/edu/kestrel/scharp/planner/manager/FighterAirUnitScheduler.java src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellManager.java
+#1513885988
+git commit -m "Small optimizations."
+#1513885991
+git push
+#1513886230
+git status
+#1513886252
+git checkout -- ../../../services/DMF-TE5-DataServices-Information.zip
+#1513886548
+mvn generate-sources
+#1513886594
+ls
+#1513886596
+cd ..
+#1513886597
+ls
+#1513886600
+cd RSPACELibrary/
+#1513886601
+ls
+#1513886606
+more RSPACELibrary.xsd 
+#1513886782
+ls
+#1513886783
+cd ..
+#1513886783
+ls
+#1513886788
+cd DDMS/
+#1513886788
+ls
+#1513886790
+cd 2.0/
+#1513886791
+ls
+#1513886971
+mvn generate-sources
+#1513889678
+cd ..
+#1513889680
+cd dcp/
+#1513889681
+~ls
+#1513889682
+ls
+#1513889691
+mvn generate-sources
+#1513889780
+mvn 
+#1513889810
+mvn clean install
+#1513889863
+mvn clean generate-sources install
+#1513889881
+ls
+#1513889883
+cd target/
+#1513889884
+ls
+#1513889888
+cd generated-sources/
+#1513889889
+ls
+#1513889892
+cd annotations/
+#1513889893
+ls
+#1513889895
+cd ..
+#1513889896
+ls
+#1513889897
+cd ..
+#1513889898
+ls
+#1513890251
+cd ..
+#1513890259
+mvn clean install
+#1513891444
+mvn clean generate-sources
+#1513895397
+mvn clean generate-sources compile
+#1513895440
+rm -rf /Users/marcelbecker/.m2/repository/org/glassfish
+#1513895443
+mvn clean generate-sources compile
+#1513896028
+mvn clean 
+#1513896258
+mvn clean -X
+#1513896384
+cd src/main/
+#1513896384
+ls
+#1513896405
+mvn clean -X
+#1513896415
+cd ..
+#1513896420
+mvn clean -X
+#1513896427
+ls
+#1513896429
+cd src/
+#1513896429
+ls
+#1513896435
+cd main/
+#1513896435
+ks
+#1513896436
+ls
+#1513896439
+cd java/
+#1513896440
+ls
+#1513896540
+pwd
+#1513896546
+ls
+#1513896573
+mvn clean -X
+#1513896580
+cd ../..
+#1513896582
+cd ../
+#1513896585
+mvn clean -X
+#1513896589
+ls
+#1513896594
+cd src/main/java/
+#1513896595
+ls
+#1513896694
+mvn clean -X
+#1513896698
+cd ../../..
+#1513896700
+mvn clean -X
+#1513896709
+cd src/main/
+#1513896710
+ks
+#1513896711
+ls
+#1513896713
+cd java/
+#1513896714
+ls
+#1513896723
+cd net/
+#1513896724
+ls
+#1513896777
+cd ../../..
+#1513896780
+cd ..
+#1513896786
+mvn clean -X
+#1513896803
+cd src/main/
+#1513896803
+ls
+#1513896806
+cd ../..
+#1513896807
+ls
+#1513896822
+mvn clean generate
+#1513896832
+mvn clean generate-sources
+#1513896863
+mvn clean generate-sources -X
+#1513896889
+ls -al src/main/java/
+#1513896945
+mvn clean generate-sources -X
+#1513897171
+mvn clean generate-sources compile
+#1513899812
+ls
+#1513899814
+cd target/
+#1513899814
+ls
+#1513899820
+cd ..
+#1513899826
+mvn clean generate-sources compile install
+#1513899846
+ls target/
+#1513899853
+cd ..
+#1513899854
+ls
+#1513899861
+cd
+#1513899867
+cd src/rspace-eclipse/scharp
+#1513899873
+mvn clean compile
+#1513899955
+versions:display-dependency-updates
+#1513899960
+mvn versions:display-dependency-updates
+#1513900056
+git status
+#1513900064
+git add pom.xml
+#1513900087
+git commit -m "Removed error message caused by jaxb plugin."
+#1513900090
+git push
+#1513900610
+mvn versions:display-dependency-updates
+#1513900863
+mvn clean compile
+#1513900945
+rm -rf /Users/marcelbecker/.m2/repository/org/igniterealtime
+#1513900947
+mvn clean compile
+#1513901228
+mvn install -X
+#1513901526
+git status
+#1513901532
+git add pom.xml
+#1513901556
+git commit -m "Updated versions for maven dependencies."
+#1513901558
+git push
+#1513901653
+mvn dependency:analyze
+#1513902418
+mvn clean compile
+#1513902434
+mvn dependency:analyze
+#1513902470
+mvn clean compile
+#1513902486
+mvn dependency:analyze
+#1513902850
+mvn dependency:tree
+#1513902897
+mvn clean verify
+#1513902948
+mvn clean verify generate-sources compile install
+#1513902994
+git status
+#1513903009
+git add pom.xml src/main/java/edu/kestrel/scharp/planner/manager/StatsSummaryManager.java
+#1513903037
+git commit -m "Removed code to generate json for AirTaskingOrder in StatsSummaryManager.java."
+#1513903041
+git push
+#1513903112
+rm -rf ~/.m2/*
+#1513903215
+mvn versions:display-plugin-updates
+#1513903133
+mvn clean generate-sources compile install
+#1513904200
+mvn versions:display-plugin-updates
+#1513904516
+git status
+#1513904523
+git add pom.xml 
+#1513904541
+git commit -m "Updated maven plugin versions."
+#1513904543
+git push
+#1513906152
+git status
+#1513980221
+git add src/test/java/edu/kestrel/scharp/workflow/clientsandservers
+#1513980232
+git add src/main/java/edu/kestrel/scharp/utils/
+#1513980236
+git add src/main/java/edu/kestrel/scharp/main/
+#1513980244
+git add src/main/java/edu/kestrel/scharp/
+#1513980246
+git status
+#1513980256
+git add src/test/java/edu/kestrel/scharp/activemq/
+#1513980268
+git add src/test/java/edu/kestrel/scharp/airdomain/entities/TE2ScenarioTest.java src/test/java/edu/kestrel/scharp/workflow/ExecutionAlertTest.java
+#1513980270
+git status
+#1513980342
+git commit -m "Code cleanup. Added tests around potential null pointer exception. Solved potential resource leak. Solved unnecessary else statements."
+#1513980346
+git push
+#1513980655
+exit
+#1513980657
+exit
+#1513980658
+exit
+#1513994011
+cd 
+#1513994022
+cd src/rspace-eclipse/scharp
+#1513994023
+ls
+#1513994026
+clear
+#1513994233
+mvn clean generate-sources compile install
+#1514318917
+cd src/rspace-eclipse/
+#1514318919
+cd scharp
+#1514318920
+ls
+#1514318922
+git pull
+#1514318935
+git pull --all --prune
+#1514351197
+git status
+#1514351207
+git add src/main/java/edu/kestrel/scharp/activemq/message/
+#1514351216
+git add src/main/java/edu/kestrel/scharp/airdomain/interfaces/
+#1514351225
+git add src/main/java/edu/kestrel/scharp/planner/manager/
+#1514351227
+git status
+#1514351236
+git add src/main/java/edu/kestrel/scharp/planner/entities
+#1514351243
+git status src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1514351248
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1514351250
+git status
+#1514351260
+git diff src/main/java/edu/kestrel/scharp/planner/propagation/ConstraintNode.java
+#1514351270
+git add src/main/java/edu/kestrel/scharp/planner/propagation/ConstraintNode.java
+#1514351273
+git status
+#1514351302
+git commit -m "Fixed communication and serialization to use the single queue, single thread model."
+#1514351305
+git push
+#1514351642
+exit
+#1515202897
+pwd
+#1515202900
+cd src/
+#1515202901
+ls
+#1515203465
+exit
+#1515204079
+ 
+#1515204543
+fdfdfdffdfdfdffdfdfdf≥≥≥≥
+#1515204575
+ls
+#1515205917
+tmux
+#1515205924
+brew install tmux
+#1515205979
+zsh
+#1515205993
+exit
+#1515205971
+tmux
+#1515206006
+?
+#1515206030
+ls
+#1515206067
+more ~/.profile
+#1515206119
+ls
+#1515206190
+exit
+#1515206194
+ls
+#1515206200
+?
+#1515206232
+echo
+#1515206241
+echo "$PS1"
+#1515206247
+exit
+#1515433373
+cd rspace-eclipse/
+#1515433375
+cd scharp
+#1515433379
+git pull
+#1515433396
+git checkout drs13
+#1515433410
+git diff src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellAMQServer.java
+#1515433418
+git add src/main/java/edu/kestrel/scharp/planner/manager/PlanningCellAMQServer.java
+#1515433426
+git commit -m "Fixed imports."
+#1515433428
+git push
+#1515433439
+git checkout drs13
+#1515433448
+git checkout -- src/main/resources/logback.xml
+#1515433456
+git checkout drs13
+#1515433460
+git pull
+#1515433468
+mvn clean compile
+#1515433588
+mvn initialize
+#1515433594
+mvn clean compile
+#1515434016
+git pull --all
+#1515434027
+mvn clean generate-sources compile 
+#1515434103
+git checkout marcel-new-comms 
+#1515434105
+git pull
+#1515434108
+mvn clean generate-sources compile 
+#1515434143
+mvn clean generate-sources 
+#1515434383
+git checkout drs13
+#1515434386
+git pull
+#1515434399
+cd src/main/resources/JTTxsd/
+#1515434416
+grep "Jdpi.xsd" *.xsd
+#1515434446
+ls
+#1515434473
+git mv jdpi.xsd Jdpi.xsd
+#1515434474
+ls
+#1515434479
+git status
+#1515434495
+git add .
+#1515434498
+git status
+#1515434510
+git push -u origin drs13 
+#1515434523
+cd ../../..
+#1515434526
+cd ..
+#1515434535
+mvn clean generate-sources
+#1515434663
+mvn clean compile
+#1515434768
+git checkout marcel-new-comms 
+#1515434770
+ls
+#1515434782
+clear
+#1515434791
+ls
+#1515434801
+mvn clean
+#1515434879
+git status
+#1515434946
+mvn clean
+#1515435029
+mvn generate-sources compile
+#1515454550
+git remote -v
+#1515454703
+git status
+#1515454708
+git add pom.xml
+#1515454729
+git commit -m "added the jtt folders to clean target."
+#1515454732
+git push
+#1515454759
+git checkout marcel-fix-docker-files 
+#1515454765
+git pull
+#1515454771
+git pull origin master 
+#1515454874
+git merge --abort
+#1515454983
+git checkout master 
+#1515454985
+git pull
+#1515455020
+git checkout -b marcel-docker-centos
+#1515455068
+git status
+#1515455073
+git pull
+#1515455546
+wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk"
+#1515455556
+brew install wget
+#1515455582
+wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk"
+#1515455882
+cd Docker/
+#1515455882
+ls
+#1515455887
+cd DockerJavaCentos/
+#1515455888
+ls
+#1515455894
+./docker-build.sh 
+#1515456831
+cd ..
+#1515456852
+more build-all-docker-images-centos.sh 
+#1515456865
+docker build --rm=true -f Docker/DockerJavaCentos/Dockerfile -t scharp/centosjava8 .
+#1515456944
+more build-all-docker-images-centos.sh 
+#1515456960
+an initialize generate-sources install && docker build --rm=true -f Docker/DockerScharpLocalCentos/Dockerfile -t scharp/planner .
+#1515456964
+mvn clean initialize generate-sources install && docker build --rm=true -f Docker/DockerScharpLocalCentos/Dockerfile -t scharp/planner .
+#1515457097
+./docker-run-plan-cell-te4-local.sh 0
+#1515457142
+docker run -it scharp/centosjava8 bash
+#1515457377
+docker build --rm=true -f Docker/DockerJavaCentos/Dockerfile -t scharp/centosjava8 .
+#1515457440
+docker run -it scharp/centosjava8 bash
+#1515457583
+docker build --rm=true -f Docker/DockerJavaCentos/Dockerfile -t scharp/centosjava8 .
+#1515457598
+docker run -it scharp/centosjava8 bash
+#1515457617
+mvn clean initialize generate-sources install && docker build --rm=true -f Docker/DockerScharpLocalCentos/Dockerfile -t scharp/planner .
+#1515457668
+./docker-run-plan-cell-te4-local.sh 0
+#1515457699
+./docker-run-plan-cell-te4-local.sh 1
+#1515457706
+./docker-run-plan-cell-te4-local.sh 2
+#1515457769
+docker ps -a
+#1515457790
+docker rm -f 5247f4b577c2 973cb7507917 99a97bef2cbc 
+#1515457794
+docker ps -a
+#1515457812
+docker rm -f d9f90ad790f1 af994c92e156 d793554741e2
+#1515457815
+docker ps
+#1515457821
+docker status
+#1515457826
+git status
+#1515457846
+git add Docker/DockerJavaCentos/ Docker/DockerScharpLocalCentos/ build-all-docker-images-centos.sh
+#1515457849
+git status
+#1515457869
+git commit -m "Added docker files to build docker images using centos."
+#1515457877
+git push -u origin marcel-docker-centos 
+#1515458139
+cd ..
+#1515458143
+cd dmf/services/
+#1515458144
+ls
+#1515458149
+cd rhel-maven/
+#1515458149
+ls
+#1515458155
+more Dockerfile 
+#1515458960
+more build-all-docker-images-centos.sh 
+#1515458978
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseimage/Dockerfile -t scharp/plannerbase .
+#1515459047
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
+#1515459089
+curl -fsSL http://apache.osuosl.org/maven/maven-3/
+#1515459106
+docker build --rm=true -f Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile -t scharp/plannerbase .
+#1515513024
+git status
+#1515513042
+git add Docker/DockerScharpCacheMaven/DockerScharpBaseImage/Dockerfile Docker/devcloud/base/Dockerfile
+#1515513063
+git commit -m "Changed base image for docker."
+#1515513081
+git push -u origin marcel-docker-centos 
+#1515202822
+zsh
+#1515202911
+zsh
+#1515631778
+cd src/rspace-eclipse/scharp
+#1515631785
+git pull --all --prune
+#1515631843
+git checkout master 
+#1515631848
+git pull
+#1515631860
+git branch 
+#1515631873
+git pull --all --prune
+#1515631886
+git branch -d marcel-no-amq-plus-drs12 
+#1515631891
+git branch -d marcel-docker-centos 
+#1515631904
+git pull
+#1515631909
+git remote -v
+#1515631929
+git checkout marcel-new-comms 
+#1515631934
+git pull
+#1515631942
+mvn clean compile
+#1515632038
+git pull origin master
+#1515632112
+git add pom.xml
+#1515633214
+mvn clean generate-sources
+#1515633262
+mvn clean initialize generate-sources
+#1515633313
+mvn initialize 
+#1515633585
+mvn clean generate-sources compile 
+#1515633899
+git status
+#1515633918
+git add src/main/java/edu/kestrel/scharp/planner/manager/PlanManager.java src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1515633921
+git status
+#1515633931
+git commit -m "Merged with master."
+#1515633934
+git pull
+#1515633940
+mvn clean compile
+#1515634028
+mvn initialize
+#1515635065
+git push
+#1515637434
+clear
+#1515684146
+git status
+#1515684156
+git diff src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java
+#1515684172
+git diff pom.xml
+#1515684182
+git add pom.xml
+#1515684202
+git commit -m "Removed explicit dependency on slf4 from pom."
+#1515684204
+git push
+#1515718598
+git pull
+#1515718608
+git pull --all
+#1515718627
+git checkout -t marcel-dcp-manager 
+#1515718640
+git checkout -t origin/marcel-dcp-manager 
+#1515718656
+git diff src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java
+#1515718715
+git checkout -- src/main/java/edu/kestrel/scharp/planner/manager/DistributedPlanManager.java
+#1515718718
+git status
+#1515718720
+git pull
+#1515718732
+mvn clean
+#1515718757
+mvn generate-sources compile
+#1515800981
+git pull
+#1515801227
+git status
+#1515806536
+git pull
+#1515808055
+more build-all-docker-images-centos.sh 
+#1515808071
+mvn clean initialize generate-sources install && docker build --rm=true -f Docker/DockerScharpLocalCentos/Dockerfile -t scharp/planner .
+#1515808397
+mvn clean initialize generate-sources install && docker build --rm=true -f Docker/DockerScharpLocalCentosTE5/ -t scharp/planner .
+#1515808438
+mvn clean initialize generate-sources install && docker build --rm=true -f Docker/DockerScharpLocalCentosTE5/Dockerfile -t scharp/planner .
+#1515808494
+ls
+#1515808508
+./docker-run-plan-cell-te4-local.sh 1
+#1515808526
+./docker-run-plan-cell-te4-local.sh 2
+#1515808541
+./docker-run-plan-cell-te4-local.sh 3
+#1515808556
+./docker-run-plan-cell-te4-local.sh 4
+#1515808740
+cd Docker/jboss-fuse-docker/
+#1515808742
+ls
+#1515808750
+./docker-build.sh 
+#1515809147
+./docker-run-on-mac.sh 
+#1515809175
+./docker-run.sh 
+#1515809184
+docker ps -a
+#1515809197
+docker rm -f 50236ef8165a
+#1515809249
+./docker-run-plan-cell-te4-local.sh 1
+#1515809257
+./docker-run-plan-cell-te4-local.sh 2
+#1515809263
+./docker-run-plan-cell-te4-local.sh 3
+#1515811213
+mvn clean initialize generate-sources install && docker build --rm=true -f Docker/DockerScharpLocalCentosTE5/Dockerfile -t scharp/planner .
+#1515811264
+./docker-run-plan-cell-te4-local.sh 1
+#1515809213
+./docker-run.sh 
+#1515811394
+git status
+#1515811419
+git add Docker/jboss-fuse-docker/Dockerfile pom.xml src/main/java/edu/kestrel/scharp/main/TE5MainServers.java src/main/java/edu/kestrel/scharp/planner/manager/DcpFunctionalPlanManager.java Docker/DockerScharpLocalCentosTE5/
+#1515811421
+git status
+#1515811454
+git commit -m "Added reset resources code. Changed main class to TE5MainServers."
+#1515811456
+git push
+#1515811288
+./docker-run-plan-cell-te4-local.sh 4
+#1515981831
+cd /Library/Extensions/
+#1515981832
+;s
+#1515981834
+ls
+#1515981929
+rm -rf LogiWheelDriver.kext LogitechHIDDevices.kext LogitechUnifying.kext Boom2Device.kext
+#1515981936
+sudo rm -rf LogiWheelDriver.kext LogitechHIDDevices.kext LogitechUnifying.kext Boom2Device.kext
+#1515981944
+ls
+#1515981966
+sudo rm -rf LogiGamingMouseFilter.kext 
+#1515995800
+exit
+#1516154011
+cd src/rspace-eclipse/scharp
+#1516154013
+ls
+#1516154018
+git status
+#1516154033
+git pull
+#1516249451
+git checkout master 
+#1516249454
+git pull
+#1516290506
+git status
+#1516290514
+git checkout marcel-dcp-manager 
+#1516290518
+git status
+#1516290522
+exit
+#1516413506
+cd src/
+#1516413506
+ls
+#1516413513
+cd rspace-eclipse/
+#1516413514
+ls
+#1516413519
+cd dmf/
+#1516413520
+ls
+#1516413524
+git status
+#1516413537
+git pull
+#1516413560
+git diff services/rhel-jdk/scripts/build_image.sh
+#1516413601
+git diff common-support/atoms-aocoi-2.1/pom.xml
+#1516413607
+git remote -v
+#1516413630
+git add InformationExchangeDefinitions/schemas/AOCOI/ATOMS-AOCOI-Extracted-July2017Release/Mission_ATOMS-ConnieAddedImportsForValidation.xsd
+#1516413632
+git status
+#1516413646
+git add common-support/atoms-aocoi-2.1/pom.xml
+#1516413656
+git checkout -- 
+#1516413684
+git add common-support/atoms-aocoi-2.1/pom.xml
+#1516413701
+git commit -m "Changes to AOCOI pom file."
+#1516413711
+git push -u marceldmf master 
+#1516413719
+git branch 
+#1516413731
+git checkout marcel-update-scharp-xsd 
+#1516413734
+git status
+#1516413749
+git diff services/rhel-jdk/scripts/build_image.sh
+#1516413761
+more services/rhel-jdk/scripts/build_image.sh
+#1516413791
+git checkout master 
+#1516413795
+git status
+#1516413802
+git add services/rhel-jdk/scripts/build_image.sh
+#1516413815
+git commit -m "Changed file mode to be executable."
+#1516413823
+git push -u marceldmf master 
+#1516413839
+cd ..
+#1516413839
+ls
+#1516413857
+rm -rf em-te4k0727-tar.gz 
+#1516413858
+ls
+#1516413862
+cd ..
+#1516413863
+ls
+#1516413871
+cd vagrant-jboss/
+#1516413872
+ls
+#1516413874
+git status
+#1516413880
+cd apache-activemq-5.14.5
+#1516413880
+ls
+#1516413883
+cd ..
+#1516413884
+ls
+#1516413896
+git status
+#1516413912
+ls
+#1516413913
+cd ..
+#1516413917
+ls
+#1516413921
+cd runtime-EclipseApplication/
+#1516413922
+ls
+#1516413925
+cd ..
+#1516413929
+rm -rf runtime-EclipseApplication/
+#1516413937
+cd avro-tools/
+#1516413938
+ls
+#1516413941
+cd ..
+#1516413945
+rm -rf avro-tools/
+#1516413946
+ls
+#1516413947
+cd ..
+#1516413948
+ls
+#1516413951
+cd src/
+#1516413951
+ls
+#1516413955
+cd emacs/
+#1516413956
+ls
+#1516413958
+git pull
+#1516413995
+cd ..
+#1516413996
+ls
+#1516505721
+exit
+#1517272950
+cd src/rspace-eclipse/scharp
+#1517272955
+git pull
+#1517272969
+mvn clean compile
+#1517273001
+git pull --all
+#1517273017
+git pull origin master 
+#1517274049
+git status
+#1517274055
+mvn clean compile
+#1517292986
+git status
+#1517293001
+git diff src/main/java/edu/kestrel/scharp/planner/manager/AbstractUnitScheduler.java 
+#1517293017
+git diff src/main/java/edu/kestrel/scharp/planner/manager/DcpFunctionalPlanManager.java
+#1517293027
+git diff src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1517293039
+mvn clean compile
+#1517293056
+git status
+#1517293061
+git add src/main/java/edu/kestrel/scharp/planner/util/ManagerUtils.java
+#1517293069
+git add src/main/java/edu/kestrel/scharp/planner/
+#1517293071
+git status
+#1517293081
+git add src/main/java/edu/kestrel/scharp/main/TE4MainServers.java~
+#1517293084
+git add src/main/java/edu/kestrel/scharp/main/TE4MainServers.java
+#1517293086
+git status
+#1517293107
+git commit -m "Merged with master and changed TE4MainServers."
+#1517293131
+git status
+#1517293139
+git push
+#1517296931
+git status
+#1517296937
+exit
+#1517274619
+./Docker/jboss-fuse-docker/docker-run.sh 
+#1517296944
+docker ps -a
+#1517296947
+exit
+#1517452764
+cd src/rspace-eclipse/scharp
+#1517452766
+git pull
+#1517452777
+git checkout master 
+#1517452779
+git pull
+#1517452783
+git pull 
+#1517452788
+git checkout marcel-delete-package 
+#1517452791
+git pull
+#1517452803
+mvn clean generates-sources compile
+#1517452816
+mvn clean generate-sources compile
+#1517452947
+git status
+#1517452968
+git checkout -- src/test/java/edu/kestrel/scharp/workflow/StrikeUiStandin.java
+#1517452971
+git checkout master 
+#1517452975
+mvn clean compile
+#1517464076
+git pull --all
+#1517597419
+cd .m2
+#1517597419
+ls
+#1517597421
+cd repository/
+#1517597422
+ls
+#1517768137
+cp ~/Dropbox/.emacs.d/init.el emacs-init.el
+#1517768298
+more emacs-init.el 
+#1517768398
+ls
+#1517791717
+git status
+#1518983844
+sudo killall synergy-core
+#1518983885
+launchctl load /Library/LaunchAgents/com.symless.synergy.synergy-service.plist
+#1518984174
+ls
+#1519169351
+cd src/rspace-eclipse/scharp
+#1519169355
+git pull
+#1519169369
+git checkout drs16
+#1519169370
+git pull
+#1519169378
+mvn clean compile
+#1519437438
+cd src/emacs/
+#1519437439
+ls
+#1519437442
+git pull
+#1519437462
+ls
+#1519437467
+./configure 
+#1519437528
+make install
+#1519437655
+./autogen.sh 
+#1519437668
+./configure 
+#1519437730
+make
+#1519437798
+make clean
+#1519437805
+git status
+#1519437813
+git pull origin master
+#1519437818
+make clean 
+#1519437828
+ls
+#1519437838
+./autogen.sh 
+#1519437851
+./configure 
+#1519437944
+make
+#1519438073
+xcode-select --install
+#1519438151
+./configure 
+#1519438415
+make
+#1519439287
+make install
+#1519439527
+ls
+#1519439558
+cd nextstep/
+#1519439559
+ls
+#1519439564
+cd Emacs.app/
+#1519439564
+ls
+#1519439567
+cd Contents/
+#1519439567
+ls
+#1519439570
+cd MacOS/
+#1519439571
+ls
+#1519439574
+./Emacs 
+#1520551341
+cd src/rspace-eclipse/scharp
+#1520551347
+git checkout master 
+#1520551400
+git checkout -- src/main/java/edu/kestrel/scharp/planner/entities/Activity.java
+#1520551405
+git checkout master 
+#1520551409
+git pull
+#1520551418
+mvn clean compile 
+#1520886850
+git pull --all --prune
+#1520886860
+git checkout drs17 
+#1520886863
+git branch 
+#1520886882
+git branch -d drs13 drs15 marcel-dcp-manager 
+#1520886884
+git pull
+#1520886905
+git branch -d marcel-delete-package marcel-fix-docker-files marcel-kill-package 
+#1520886909
+git branch
+#1520886918
+git branch -d marcel-fix-docker-files 
+#1520886926
+git branch -D marcel-fix-docker-files 
+#1520886939
+git branch -D marcel-kill-package marcel-new-comms 
+#1520886949
+git branch -D sf-xml-schema 
+#1520886951
+git status
+#1520886966
+git pull
+#1520886971
+mvn clean compile
+#1520963234
+git pull
+#1520963241
+mvn clean compile
+#1521676145
+git pull
+#1521676152
+mvn clean compile
+#1522084268
+git pull
+#1522084279
+mvn clean compile
+#1522299677
+git pull
+#1522773156
+cd src/rspace-eclipse/scharp
+#1522773158
+git pull
+#1522773166
+mvn clean compile
+#1522773273
+cd output/
+#1522773273
+ls
+#1522773282
+rm -rf *
+#1522773283
+ls
+#1523056776
+cd
+#1523056786
+configdot 
+#1523056801
+configdot pull
+#1523056840
+configdot diff .bashrc 
+#1523056868
+configdot add .bashrc 
+#1523056874
+configdot status
+#1523056890
+configdot add .spacemacs 
+#1523056920
+configdot add .zshrc 
+#1523056925
+configdot add .zprezto
+#1523056930
+configdot status
+#1523056955
+configdot commit -m "Update some of the files."
+#1523056963
+configdot pull
