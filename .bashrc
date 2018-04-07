@@ -549,3 +549,8 @@ alias amazon1='ssh ubuntu@54.219.167.48 -i amazon_aws1.pem'
 alias amazon2='ssh ubuntu@54.183.243.113 -i amazon_aws1.pem'
 alias amazon3='ssh ubuntu@54.193.71.18 -i amazon_aws1.pem'
 alias amazon3='ssh ubuntu@54.183.27.174 -i amazon_aws1.pem'
+
+# bash: Place this in .bashrc.
+function iterm2_print_user_vars() {
+  iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
+}
