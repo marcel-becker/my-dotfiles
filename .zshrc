@@ -127,3 +127,10 @@ if [[ "$TERM" == (screen*|xterm*|rxvt*) ]]; then
 fi
 
 unsetopt prompt_cr prompt_sp
+
+# Change tab color based on pwd.
+function tab_color_precmd {
+  ~/Dropbox/ZSH/change-tab-color-pwd 0.5 0.5
+}
+autoload -U add-zsh-hook
+add-zsh-hook precmd tab_color_precmd
