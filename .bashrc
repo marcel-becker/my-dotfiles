@@ -330,7 +330,7 @@ bash_prompt() {
     [ $UID -eq "0" ] && UC=$EMR   # root's color
 
     #echo 'Setting bash prompt'
-    PS1="$TITLEBAR${UC}[\@][\u@\h]${NONE}:${UC}[\${NEW_PWD}]${EMY}\$(__git_ps1 '(%s)') \\$ ${NONE}"
+    PS1="$TITLEBAR${EMB}[\@]${EMM}[\u@\h]${NONE}:${UC}[\${NEW_PWD}]${EMY}\$(__git_ps1 '(%s)') \\$ ${NONE}"
     # without colors: PS1="[\u@\h \${NEW_PWD}]\\$ "
     # extra backslash in front of \$ to make bash colorize the prompt
 }
