@@ -446,6 +446,8 @@ dbash () {
 
 alias emacsnw='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 alias emacsnoinit='/Applications/Emacs.app/Contents/MacOS/Emacs -q'
+alias spacemacs='HOME=~/Dropbox/spacemacs /Applications/Emacs27.app/Contents/MacOS/Emacs'
+
 
 alias mvnver="mvn versions:display-dependency-updates versions:display-plugin-updates | grep 'INFO' | grep '>' | sort | uniq"
 alias mvnclean="mvn dependency:purge-local-repository -DactTransitively=false -DreResolve=false"

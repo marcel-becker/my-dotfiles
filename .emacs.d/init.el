@@ -10,7 +10,7 @@
   (setq user-emacs-directory
         (if (eq system-type 'windows-nt)      ; Windows
             (cond ((file-exists-p "C:/Dropbox/.spacemacs.d")
-                   "C:/Dropbox/.emacs.d/")
+                   "C:/Dropbox/.spacemacs.d/")
                   ((file-exists-p "D:/Dropbox/.spacemacs.d")
                    "D:/Dropbox/.spacemacs.d/")
                   (t
@@ -19,7 +19,8 @@
                  "~/Dropbox/.spacemacs.d/")
                 (t
                  (expand-file-name "~/.spacemacs.d/")))))
-  (setq spacemacs-start-directory user-emacs-directory)
+  (setq spacemacs-start-directory user-emacs-directory
+        marcel-lisp-dir user-emacs-directory)
   (if (file-exists-p (expand-file-name "init.el" user-emacs-directory))
       (load (expand-file-name "init.el" user-emacs-directory))))
 
