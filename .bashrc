@@ -126,7 +126,7 @@ fi
 
 export CLICOLOR=1
 # use yellow for directories
-export LSCOLORS=Bxfxcxdxbxegedabagacad
+export LSCOLORS=ExfxcxdxBxEgedabagacad
 
 
 # some more ls aliases
@@ -154,16 +154,24 @@ if [ -f /opt/local/etc/bash_completion ]; then
     . /opt/local/etc/bash_completion
 fi
 
-export PATH=~/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:~/.chefdk/gem/ruby/2.1.0/bin:$PATH
+echo PATH = "$PATH"
+export PATH=~/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:$PATH
+echo PATH = "$PATH"
+export PATH=/usr/local/opt/texinfo/bin:${PATH}
+echo PATH = "$PATH"
+export PATH=$PATH:/Library/TeX/texbin # Add latex and tex executables
+echo PATH = "$PATH"
+#export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}
+echo PATH = "$PATH"
 export USE_CCACHE=1
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-export PATH=$PATH:/Library/TeX/texbin # Add latex and tex executables
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+#export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
 export M3_HOME=/usr/local/Cellar/maven/3.3.9
-export PATH=${M3_HOME}/bin:${PATH}
-export PATH=/home/becker/src/play-2.2.0/:${PATH}
-export PATH=/opt/chef/embedded/bin:${PATH}
+#export PATH=${M3_HOME}/bin:${PATH}
+#export PATH=/home/becker/src/play-2.2.0:${PATH}
+#export PATH=/opt/chef/embedded/bin:${PATH}
 
 
 
@@ -330,7 +338,7 @@ bash_prompt() {
     [ $UID -eq "0" ] && UC=$EMR   # root's color
 
     #echo 'Setting bash prompt'
-    PS1="$TITLEBAR${UC}[\@][\u@\h]${NONE}:${UC}[\${NEW_PWD}]${EMY}\$(__git_ps1 '(%s)') \\$ ${NONE}"
+    PS1="$TITLEBAR${EMB}[\@]${EMM}[\u@\h]${NONE}:${UC}[\${NEW_PWD}]${EMY}\$(__git_ps1 '(%s)') \\$ ${NONE}"
     # without colors: PS1="[\u@\h \${NEW_PWD}]\\$ "
     # extra backslash in front of \$ to make bash colorize the prompt
 }
@@ -355,14 +363,14 @@ export ANDROID_SDK_HOME="/home/becker/src/Android-SDK/android-sdk-linux"
 #eval "$(rbenv init -)"
 export BERKSHELF_PATH=~/.berkshelf
 
-export LUA_PATH='/opt/local/share/luarocks/share/lua/5.2/?.lua;/opt/local/share/luarocks/share/lua/5.2/?/init.lua;/Users/marcelbecker/.luarocks/share/lua/5.2/?.lua;/Users/marcelbecker/.luarocks/share/lua/5.2/?/init.lua;/opt/local/share/lua/5.2//?.lua;/opt/local/share/lua/5.2//?/init.lua;/opt/local/share/lua/5.2/?.lua;/opt/local/share/lua/5.2/?/init.lua;/opt/local/lib/lua/5.2/?.lua;/opt/local/lib/lua/5.2/?/init.lua;./?.lua'
+#export LUA_PATH='/opt/local/share/luarocks/share/lua/5.2/?.lua;/opt/local/share/luarocks/share/lua/5.2/?/init.lua;/Users/marcelbecker/.luarocks/share/lua/5.2/?.lua;/Users/marcelbecker/.luarocks/share/lua/5.2/?/init.lua;/opt/local/share/lua/5.2//?.lua;/opt/local/share/lua/5.2//?/init.lua;/opt/local/share/lua/5.2/?.lua;/opt/local/share/lua/5.2/?/init.lua;/opt/local/lib/lua/5.2/?.lua;/opt/local/lib/lua/5.2/?/init.lua;./?.lua'
 alias test-speed='cd /tmp; rm -rf rvm-stable* ; time wget -a wget.log http://repo.px.net/software/rvm-stable.tar.gz'
 alias copy-pem='scp -i ~/.vagrant.d/less_insecure_private_key vagrant@33.33.33.11:/home/vagrant/.chef/*.pem ~/.chef/'
 
-export LUA_CPATH='/opt/local/share/luarocks/lib/lua/5.2/?.so;/Users/marcelbecker/.luarocks/lib/lua/5.2/?.so;/opt/local/lib/lua/5.2/?.so;/opt/local/lib/lua/5.2/loadall.so;./?.so'
-export RABBIT_IP='33.33.33.22'
-export MONGO_DATABASE_IP='33.33.33.23'
-export STATSD_IP='33.33.33.20'
+#export LUA_CPATH='/opt/local/share/luarocks/lib/lua/5.2/?.so;/Users/marcelbecker/.luarocks/lib/lua/5.2/?.so;/opt/local/lib/lua/5.2/?.so;/opt/local/lib/lua/5.2/loadall.so;./?.so'
+#export RABBIT_IP='33.33.33.22'
+#export MONGO_DATABASE_IP='33.33.33.23'
+#export STATSD_IP='33.33.33.20'
 
 # to increase mouse speed on ubuntu
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
@@ -380,8 +388,10 @@ alias git-update-all='find . -maxdepth 1 -type d -print -exec git --git-dir={}/.
 # For Python Virtual Envs
 # $ pip install virtualenvwrapper
 # $ export WORKON_HOME=~/Envs
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+export WORKON_HOME=~/PythonEnvs
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--always-copy'
 source /usr/local/bin/virtualenvwrapper.sh
 # $ mkvirtualenv venv
 # $ workon venv
@@ -395,10 +405,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 # Like the above, but directly into site-packages directory.
 # lssitepackages
 # Shows contents of site-packages directory.
-export WORKON_HOME=~/PythonEnvs
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--always-copy'
-export WORKON_HOME=~/PythonEnvs
-source /usr/local/bin/virtualenvwrapper.sh
 
 function title ()
 {
@@ -440,6 +446,8 @@ dbash () {
 
 alias emacsnw='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 alias emacsnoinit='/Applications/Emacs.app/Contents/MacOS/Emacs -q'
+alias spacemacs='HOME=~/Dropbox/spacemacs /Applications/Emacs27.app/Contents/MacOS/Emacs'
+
 
 alias mvnver="mvn versions:display-dependency-updates versions:display-plugin-updates | grep 'INFO' | grep '>' | sort | uniq"
 alias mvnclean="mvn dependency:purge-local-repository -DactTransitively=false -DreResolve=false"
@@ -551,3 +559,40 @@ alias configdot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # fi;
 # configdot checkout
 # configdor config status.showUntrackedFiles no
+
+alias amazon1='ssh ubuntu@54.219.167.48 -i amazon_aws1.pem'
+alias amazon2='ssh ubuntu@54.183.243.113 -i amazon_aws1.pem'
+alias amazon3='ssh ubuntu@54.193.71.18 -i amazon_aws1.pem'
+alias amazon3='ssh ubuntu@54.183.27.174 -i amazon_aws1.pem'
+
+# bash: Place this in .bashrc.
+function iterm2_print_user_vars() {
+  iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
+}
+
+
+# http://thirtysixthspan.com/posts/grep-history-for
+# ghf - [G]rep [H]istory [F]or top ten commands and execute one
+# usage:
+#  Most frequent command in recent history
+#   ghf
+#  Most frequent instances of {command} in all history
+#   ghf {command}
+#  Execute {command-number} after a call to ghf
+#   !! {command-number}
+function latest-history { history | tail -n 100 ; }
+function grepped-history { history | grep "$1" ; }
+function chop-first-column { awk '{for (i=2; i<NF; i++) printf $i " "; print $NF}' ; }
+function add-line-numbers { awk '{print NR " " $0}' ; }
+function top-ten { sort | uniq -c | sort -r | head -n 50 ; }
+function unique-history { chop-first-column | top-ten | chop-first-column | add-line-numbers ; }
+function ghf {
+  if [ $# -eq 0 ]; then latest-history | unique-history; fi
+  if [ $# -eq 1 ]; then grepped-history "$1" | unique-history; fi
+  if [ $# -eq 2 ]; then
+    `grepped-history "$1" | unique-history | grep ^$2 | chop-first-column`;
+  fi
+}
+
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
