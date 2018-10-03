@@ -78,6 +78,9 @@ setopt EXTENDED_GLOB
 # hows about arrays be awesome?  (that is, frew${cool}frew has frew surrounding all the variables, not just first and last
 setopt RC_EXPAND_PARAM
 
+# Do not ask for confirmation when deleting files.
+setopt rm_star_silent
+
 # Who doesn't want home and end to work?
 bindkey '\e[1~' beginning-of-line
 bindkey '\e[4~' end-of-line
@@ -123,3 +126,9 @@ if [[ "$TERM" == (screen*|xterm*|rxvt*) ]]; then
 fi
 
 unsetopt prompt_cr prompt_sp
+
+
+source ~/.iterm2_shell_integration.zsh
+iterm2_print_user_vars() {
+  iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
+}

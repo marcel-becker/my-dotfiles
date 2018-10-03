@@ -504,8 +504,15 @@ alias profilessh3='iterm2profile RemoteOpenstack'
 # voilà!
 # put this in your .bash_profile
 if [ $ITERM_SESSION_ID ]; then
-  export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; '"$PROMPT_COMMAND";
+    export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}$(__git_ps1 :[%s])\007"; '"$PROMPT_COMMAND";
+
+# bash: Place this in .bashrc.
+function iterm2_print_user_vars() {
+  iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
+}
+
 fi
+
 
 
 
