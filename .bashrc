@@ -154,15 +154,15 @@ if [ -f /opt/local/etc/bash_completion ]; then
     . /opt/local/etc/bash_completion
 fi
 
-echo PATH = "$PATH"
+#echo PATH = "$PATH"
 export PATH=~/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:$PATH
-echo PATH = "$PATH"
+#echo PATH = "$PATH"
 export PATH=/usr/local/opt/texinfo/bin:${PATH}
-echo PATH = "$PATH"
+#echo PATH = "$PATH"
 export PATH=$PATH:/Library/TeX/texbin # Add latex and tex executables
-echo PATH = "$PATH"
+#echo PATH = "$PATH"
 #export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}
-echo PATH = "$PATH"
+#echo PATH = "$PATH"
 export USE_CCACHE=1
 
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
