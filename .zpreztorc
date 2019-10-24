@@ -37,6 +37,9 @@ zstyle ':prezto:load' pmodule \
   'osx' \
   'ssh' \
   'completion' \
+  'syntax-highlighting' \
+  'history-substring-search' \
+  'contrib-prompt' \
   'prompt'
 
 #

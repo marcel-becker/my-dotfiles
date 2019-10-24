@@ -2,13 +2,19 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-#echo "Now Executing .bashrc"
+#set -x
+echo "Now Executing .bashrc"
+echo "BASH VERSION $BASH_VERSION"
+#echo "PS1 = $PS1"
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # don't overwrite GNU Midnight Commander's setting of `ignorespace'.
+#echo "HISTCONTROL = $HISTCONTROL"
+#echo "PROMPT = $PROMPT_COMMAND"
+
 HISTCONTROL=$HISTCONTROL${HISTCONTROL+:}ignoredups
 # ... or force ignoredups and ignorespace
 export HISTCONTROL=ignoreboth:erasedups
@@ -160,6 +166,8 @@ export PATH=~/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:
 export PATH=/usr/local/opt/texinfo/bin:${PATH}
 #echo PATH = "$PATH"
 export PATH=$PATH:/Library/TeX/texbin # Add latex and tex executables
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="/usr/local/anaconda3/bin:$PATH"
 #echo PATH = "$PATH"
 #export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}
 #echo PATH = "$PATH"
@@ -361,7 +369,7 @@ export ANDROID_SDK_HOME="/home/becker/src/Android-SDK/android-sdk-linux"
 
 #export PATH=${HOME}/.rbenv/bin:${PATH}
 #eval "$(rbenv init -)"
-export BERKSHELF_PATH=~/.berkshelf
+#export BERKSHELF_PATH=~/.berkshelf
 
 #export LUA_PATH='/opt/local/share/luarocks/share/lua/5.2/?.lua;/opt/local/share/luarocks/share/lua/5.2/?/init.lua;/Users/marcelbecker/.luarocks/share/lua/5.2/?.lua;/Users/marcelbecker/.luarocks/share/lua/5.2/?/init.lua;/opt/local/share/lua/5.2//?.lua;/opt/local/share/lua/5.2//?/init.lua;/opt/local/share/lua/5.2/?.lua;/opt/local/share/lua/5.2/?/init.lua;/opt/local/lib/lua/5.2/?.lua;/opt/local/lib/lua/5.2/?/init.lua;./?.lua'
 alias test-speed='cd /tmp; rm -rf rvm-stable* ; time wget -a wget.log http://repo.px.net/software/rvm-stable.tar.gz'
@@ -596,3 +604,20 @@ function ghf {
 
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+## [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+## [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+if [[ -e "/usr/local/share/bash-completion/bash_completion" ]]; then
+        export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
+        source "/usr/local/share/bash-completion/bash_completion"
+elif [[ -e "/usr/local/etc/profile.d/bash_completion.sh" ]]; then
+        source "/usr/local/etc/profile.d/bash_completion.sh"
+elif [[ -e "/etc/bash_completion" ]]; then
+        source "/etc/bash_completion"
+fi
+
+
+## Compile emacs
+# env CFLAGS="$(xml2-config --cflags)" XML_CFLAGS="$(xml2-config --cflags)" XML_LIBS="$(xml2-config --libs)" ./configure
+# make
