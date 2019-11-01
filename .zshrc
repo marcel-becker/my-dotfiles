@@ -144,3 +144,5 @@ function tab_color_precmd {
 }
 autoload -U add-zsh-hook
 add-zsh-hook precmd tab_color_precmd
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
