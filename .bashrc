@@ -626,8 +626,8 @@ fi
 test -e "/usr/local/etc/shell_completion" && source "/usr/local/etc/shell_completion"
 
 
-# MacPorts Installer addition on 2014-11-07_at_10:09:57: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+
+
 # Finished adapting your PATH environment variable for use with MacPorts.
 
 # added by Anaconda3 5.3.1 installer
@@ -646,3 +646,12 @@ else
 fi
 unset __conda_setup
 # <<< conda init <<<
+
+
+
+
+###### Powerline setup
+powerline-daemon -q
+export POWERLINE_BASH_CONTINUATION=1
+export POWERLINE_BASH_SELECT=1
+source /usr/local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
