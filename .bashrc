@@ -651,7 +651,13 @@ unset __conda_setup
 
 
 ###### Powerline setup
-powerline-daemon -q
-export POWERLINE_BASH_CONTINUATION=1
-export POWERLINE_BASH_SELECT=1
-source /usr/local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
+# pip3 install powerline-status
+# powerline-daemon -q
+# export POWERLINE_BASH_CONTINUATION=1
+# export POWERLINE_BASH_SELECT=1
+# source /usr/local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
+
+
+#### Better tab completions:
+bind 'set show-all-if-ambiguous on'
+bind 'set completion-ignore-case on'

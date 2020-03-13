@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 #############################################################################################
 # All key bindings:
 
@@ -20,11 +27,19 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#fi
 
 export TERM="xterm-256color"
+source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+#source ~/.zprezto/modules/prompt/external/powerlevel9k/powerlevel9k.zsh-theme
+POWERLEVEL9K_MODE='nerdfont-complete'
+#ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+
+
 
 # use this to get color numbers.
 # for code in {000..255}; do print -P -- "$code: %F{$code}Test%f"; done
@@ -121,6 +136,21 @@ setopt rm_star_silent
 # Do not query the user before executing rm * or rm path/*.
 setopt RM_STAR_SILENT
 
+# share history across multiple zsh sessions
+setopt SHARE_HISTORY
+# append to history
+setopt APPEND_HISTORY
+# adds commands as they are typed, not at shell exit
+setopt INC_APPEND_HISTORY
+# do not store duplications
+setopt HIST_IGNORE_DUPS
+#ignore duplicates when searching
+setopt HIST_FIND_NO_DUPS
+# removes blank lines from history
+setopt HIST_REDUCE_BLANKS
+
+
+
 
 # Who doesn't want home and end to work?
 bindkey '\e[1~' beginning-of-line
@@ -146,12 +176,12 @@ bindkey -M viins ' ' magic-space
 autoload -Uz add-zsh-hook
 
 function xterm_title_precmd () {
-      print -Pn '\e]2;[%n@%m]: %~\a'
+    print -Pn '\e]2;[%n@%m]: %~\a'
 }
 
 function xterm_title_preexec () {
-      print -Pn '\e]2;[%n@%m]: %~ %# '
-      print -n "${(q)1}\a"
+    print -Pn '\e]2;[%n@%m]: %~ %# '
+    print -n "${(q)1}\a"
 }
 
 # set tab title to cwd
@@ -162,8 +192,8 @@ precmd () {
 }
 
 if [[ "$TERM" == (screen*|xterm*|rxvt*) ]]; then
-      add-zsh-hook -Uz precmd xterm_title_precmd
-      add-zsh-hook -Uz preexec xterm_title_preexec
+    add-zsh-hook -Uz precmd xterm_title_precmd
+    add-zsh-hook -Uz preexec xterm_title_preexec
 fi
 
 unsetopt prompt_cr prompt_sp
@@ -172,12 +202,12 @@ unsetopt prompt_cr prompt_sp
 
 source ~/.iterm2_shell_integration.zsh
 iterm2_print_user_vars() {
-  iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
+    iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
 }
 
 # Change tab color based on pwd.
 function tab_color_precmd {
-  ~/Dropbox/ZSH/change-tab-color-pwd 0.5 0.5
+    ~/Dropbox/ZSH/change-tab-color-pwd 0.5 0.5
 }
 autoload -U add-zsh-hook
 add-zsh-hook precmd tab_color_precmd
@@ -239,37 +269,128 @@ alias configdot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 #     configdot checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .dotfile-backup/{}
 # fi;
 # configdot checkout
-# configdor config status.showUntrackedFiles no
+# configdot config status.showUntrackedFiles no
 
 
+export WORKON_HOME=$HOME/PythonEnvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+source /usr/local/bin/virtualenvwrapper.sh
 
+
+PROMPT_EOL_MARK=''
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Power Level 9k custom
-# POWERLEVEL9K_TIME_BACKGROUND='32'
-# POWERLEVEL9K_TIME_FOREGROUND='0'
 
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+prompt_zsh_showStatus () {
+    local color='%F{white}'
+    state=`osascript -e 'tell application "Spotify" to player state as string'`;
+    if [ $state = "playing" ]; then
+        artist=`osascript -e 'tell application "Spotify" to artist of current track as string'`;
+        track=`osascript -e 'tell application "Spotify" to name of current track as string'`;
 
-POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='black'
-POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='009'
+        echo -n "%{$color%}  $artist - $track " ;
 
-POWERLEVEL9K_DIR_HOME_BACKGROUND='009'
-POWERLEVEL9K_DIR_HOME_FOREGROUND='black'
+    fi
+}
 
-POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='196'
+list_all_terminal_colors() {
+    for i in {0..255};
+    do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'};
+    done
+}
+
+
+POWERLEVEL9K_PROMPT_ON_NEWLINE=false
+POWERLEVEL9K_RPROMPT_ON_NEWLINE=false
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=false
+
+POWERLEVEL9K_TIME_BACKGROUND='32'
+POWERLEVEL9K_TIME_FOREGROUND='227'
+POWERLEVEL9K_TIME_FORMAT='%D{%H:%M}'
+POWERLEVEL9K_TIME_PREFIX=''
+POWERLEVEL9K_TIME_VISUAL_IDENTIFIER_EXPANSION='⏰'
+
+POWERLEVEL9K_OS_ICON_BACKGROUND='017' #'232'
+POWERLEVEL9K_OS_ICON_FOREGROUND='255'
+
+
+
+POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='018' #'232'
+POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='048'
+POWERLEVEL9K_CONTEXT_FOREGROUND='0'
+POWERLEVEL9K_CONTEXT_BACKGROUND='0'
+
+
+
+POWERLEVEL9K_CONTEXT_VISUAL_IDENTIFIER_EXPANSION='' #'⭐'
+
+POWERLEVEL9K_CONTEXT_PREFIX=''
+
+
+POWERLEVEL9K_DIR_HOME_FOREGROUND="231"
+POWERLEVEL9K_DIR_HOME_BACKGROUND="033"
+
+
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='200'
 POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='232'
 
 #POWERLEVEL9K_VCS_CLEAN_FOREGROUND='099'
-POWERLEVEL9K_MODE='awesome-fontconfig'
+#POWERLEVEL9K_MODE='awesome-fontconfig'
+#POWERLEVEL9K_MODE='nerdfont-complete'
+#POWERLEVEL9K_MODE='default'
 
 #Icon config
-POWERLEVEL9K_HOME_ICON='\UF20E'
+POWERLEVEL9K_HOME_ICON='\UF015' #'\UF20E'
 POWERLEVEL9K_SUB_ICON='\UF07C'
 POWERLEVEL9K_FOLDER_ICON='\UF07B'
-#POWERLEVEL9K_STATUS_OK_ICON='\UF2B0'
+POWERLEVEL9K_STATUS_OK_ICON='\UF2B0'
 POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR='\UE0BC'
 POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR='\UE0BA'
+
+
+## POWERLEVEL9K SETTINGS ##
+POWERLEVEL9K_STATUS_VERBOSE=false
+POWERLEVEL9K_STATUS_OK_IN_NON_VERBOSE=true
+
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
+#POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%K{white}%F{black} \UE12E `date +%T` %f%k%F{white}%f "
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=5
+#POWERLEVEL9K_CUSTOM_INTERNET_SIGNAL="zsh_internet_signal"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon time context virtualenv dir vcs)
+#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status date)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='%B${P9K_CONTENT// }'
+
+
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="018"
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND="129"
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="227"
+
+
+# use printf '\uE0B1' to see the UTF character on the shell.
+# Separator between same-color segments on the left.
+POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR='\uE0B1'
+# Separator between same-color segments on the right.
+POWERLEVEL9K_RIGHT_SUBSEGMENT_SEPARATOR='\uE0B3'
+# Separator between different-color segments on the left.
+POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR='\uE0B0'
+# Separator between different-color segments on the right.
+POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR='\uE0B2'
+# The right end of left prompt.
+POWERLEVEL9K_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL='\uE0B0'
+# The left end of right prompt.
+POWERLEVEL9K_RIGHT_PROMPT_FIRST_SEGMENT_START_SYMBOL='\uE0B2'
+# The left end of left prompt.
+POWERLEVEL9K_LEFT_PROMPT_FIRST_SEGMENT_START_SYMBOL='\UE0C0'
+# The right end of right prompt.
+POWERLEVEL9K_RIGHT_PROMPT_LAST_SEGMENT_END_SYMBOL=''
+# Left prompt terminator for lines without any segments.
+POWERLEVEL9K_EMPTY_LINE_LEFT_PROMPT_LAST_SEGMENT_END_SYMBOL=
+
+
+##
+
 
 # # Anaconda
 # POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(anaconda battery)
@@ -296,3 +417,13 @@ POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR='\UE0BA'
 # POWERLEVEL9K_BATTERY_DISCONNECTED_FOREGROUND='195'
 # POWERLEVEL9K_BATTERY_DISCONNECTED_BACKGROUND='009'
 # POWERLEVEL9K_BATTERY_ICON='\UF1E6'
+
+
+autoload colors && colors
+# for COLOR in RED GREEN YELLOW BLUE MAGENTA CYAN BLACK WHITE; do
+#     eval $COLOR='%{$fg_no_bold[${(L)COLOR}]%}'  #wrap colours between %{ %} to avoid weird gaps in autocomplete
+#     eval BOLD_$COLOR='%{$fg_bold[${(L)COLOR}]%}'
+#     echo $COLOR
+#     echo BOLD_$COLOR
+# done
+# eval RESET='%{$reset_color%}'
