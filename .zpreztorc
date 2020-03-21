@@ -37,6 +37,7 @@ zstyle ':prezto:load' pmodule \
   'osx' \
   'ssh' \
   'completion' \
+  'python' \
   'syntax-highlighting' \
   'history-substring-search' \
   'contrib-prompt' \
@@ -118,8 +119,9 @@ zstyle ':prezto:module:history-substring-search:color' not-found 'red'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'marcel'
+#zstyle ':prezto:module:prompt' theme 'marcel'
 #zstyle ':prezto:module:prompt' theme 'powerlevel9k'
+zstyle ':prezto:module:prompt' theme 'powerlevel10k'
 #zstyle ':prezto:module:prompt' theme 'alien'
 
 # Set the working directory prompt display length.

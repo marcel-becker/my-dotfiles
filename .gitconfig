@@ -9,6 +9,6 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[filesystem "AdoptOpenJDK|13.0.1|/dev/disk1s5"]
+[filesystem "AdoptOpenJDK|13.0.1|/dev/disk2s5"]
 	timestampResolution = 14000 nanoseconds
 	minRacyThreshold = 0 nanoseconds
