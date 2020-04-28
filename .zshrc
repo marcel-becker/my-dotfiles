@@ -199,8 +199,10 @@ fi
 unsetopt prompt_cr prompt_sp
 
 
+if [[ -s "${HOME}/.iterm2_shell_integration.zsh" ]]; then
+    source ~/.iterm2_shell_integration.zsh
+fi
 
-source ~/.iterm2_shell_integration.zsh
 iterm2_print_user_vars() {
     iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
 }
@@ -212,7 +214,9 @@ function tab_color_precmd {
 autoload -U add-zsh-hook
 add-zsh-hook precmd tab_color_precmd
 
+if [[ -s "/usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]]; then
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -275,8 +279,9 @@ alias configdot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 export WORKON_HOME=$HOME/PythonEnvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+if [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]]; then
 source /usr/local/bin/virtualenvwrapper.sh
-
+fi
 
 PROMPT_EOL_MARK=''
 
