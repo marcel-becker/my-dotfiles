@@ -49,6 +49,13 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
     source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
 
 autoload -Uz compinit promptinit
 compinit
@@ -427,3 +434,12 @@ autoload colors && colors
 #     echo BOLD_$COLOR
 # done
 # eval RESET='%{$reset_color%}'
+
+
+export JAVA_HOME=`/usr/libexec/java_home`
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+. /usr/local/opt/asdf/asdf.sh

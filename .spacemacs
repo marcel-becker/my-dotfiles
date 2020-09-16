@@ -41,7 +41,7 @@ values."
      ;;auto-completion
      better-defaults
      colors
-     company
+     ;;company
      dash
      docker
      emacs-lisp
@@ -51,7 +51,7 @@ values."
      imenu-list
      markdown
      org
-     pdf-tools
+     ;;pdf-tools
      java
      latex
      python
@@ -73,8 +73,7 @@ values."
      spacemacs-layouts
      spacemacs-misc
      spacemacs-org
-     spacemacs-ui
-     spacemacs-ui-visual
+     spacemacs-visual
      ;;marcel
      )
    ;; List of additional packages that will be installed without being
