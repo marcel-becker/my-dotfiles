@@ -1,8 +1,9 @@
 [user]
 	name = Marcel Becker
-	email = marcelbecker@gmail.com
+	email = mbecker.ctr@kr.af.mil
 [core]
 	excludesfile = /Users/marcelbecker/.gitignore_global
+	autocrlf = input
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
