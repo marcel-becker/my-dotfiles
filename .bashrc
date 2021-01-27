@@ -5,7 +5,7 @@
 #set -x
 echo "Now Executing .bashrc"
 echo "BASH VERSION $BASH_VERSION"
-#echo "PS1 = $PS1"
+
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -13,7 +13,9 @@ echo "BASH VERSION $BASH_VERSION"
 # don't put duplicate lines in the history. See bash(1) for more options
 # don't overwrite GNU Midnight Commander's setting of `ignorespace'.
 #echo "HISTCONTROL = $HISTCONTROL"
-#echo "PROMPT = $PROMPT_COMMAND"
+# echo "PS1 = $PS1"
+# echo "PROMPT COMMAND = $PROMPT_COMMAND"
+# echo "TERM = $TERM"
 
 HISTCONTROL=$HISTCONTROL${HISTCONTROL+:}ignoredups
 # ... or force ignoredups and ignorespace
@@ -138,7 +140,7 @@ export LSCOLORS=ExfxcxdxBxEgedabagacad
 # some more ls aliases
 #alias ll='ls -l'
 #alias la='ls -A'
-alias ls='ls -CF'
+alias ls='ls -CFG'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -573,12 +575,6 @@ alias amazon2='ssh ubuntu@54.183.243.113 -i amazon_aws1.pem'
 alias amazon3='ssh ubuntu@54.193.71.18 -i amazon_aws1.pem'
 alias amazon3='ssh ubuntu@54.183.27.174 -i amazon_aws1.pem'
 
-# bash: Place this in .bashrc.
-function iterm2_print_user_vars() {
-  iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
-}
-
-
 # http://thirtysixthspan.com/posts/grep-history-for
 # ghf - [G]rep [H]istory [F]or top ten commands and execute one
 # usage:
@@ -602,8 +598,13 @@ function ghf {
   fi
 }
 
+if  [ -e  "${HOME}/.iterm2_shell_integration.bash" ] && [ $ITERM_SESSION_ID ]
+then
+    # echo "Sourcing iterm integration"
+    source "${HOME}/.iterm2_shell_integration.bash"
+fi
 
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+# test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 
 ## [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
@@ -651,6 +652,7 @@ unset __conda_setup
 
 
 ###### Powerline setup
+<<<<<<< Updated upstream
 # pip3 install powerline-status
 # powerline-daemon -q
 # export POWERLINE_BASH_CONTINUATION=1
@@ -665,3 +667,9 @@ bind 'set completion-ignore-case on'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+=======
+# powerline-daemon -q
+# export POWERLINE_BASH_CONTINUATION=1
+#export POWERLINE_BASH_SELECT=1
+#source /usr/local/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
+>>>>>>> Stashed changes

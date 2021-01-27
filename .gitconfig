@@ -12,3 +12,6 @@
 [filesystem "AdoptOpenJDK|13.0.1|/dev/disk2s5"]
 	timestampResolution = 14000 nanoseconds
 	minRacyThreshold = 0 nanoseconds
+[filesystem "AdoptOpenJDK|13.0.2|/dev/disk2s1"]
+	timestampResolution = 7000 nanoseconds
+	minRacyThreshold = 0 nanoseconds
