@@ -228,6 +228,7 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 alias ls='ls -CFG'
 alias his=history
@@ -238,6 +239,8 @@ alias pip-upgrade="pip freeze --local | grep -v '^\e' | cut -d = -f 1 | xargs pi
 alias emacsnw='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 alias emacsnoinit='/Applications/Emacs.app/Contents/MacOS/Emacs -q'
 alias spacemacs='HOME=~/Dropbox/spacemacs /Applications/Emacs27.app/Contents/MacOS/Emacs'
+alias portgresdb='docker run --name scharp-postgres --rm -e POSTGRES_USER=scharp -e POSTGRES_PASSWORD=scharp -e POSTGRES_DB=scharp_db -p 5432:5432 postgres'
+alias echobase='docker run -p 9001:9001 -p 9999:9999 -p 10000:10000 -p 10001:10001 -p 10002:10002 -p 5672:5672 -p 5671:5671 -p 25672:25672 -p 15672:15672 -p 3305:3305 -p 61613:61613 registry.aoc-pathfinder.cloud/kessel-run-common/echo-base:latest'
 
 
 alias mvnver="mvn versions:display-dependency-updates versions:display-plugin-updates | grep 'INFO' | grep '>' | sort | uniq"
