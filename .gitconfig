@@ -4,6 +4,7 @@
 [core]
 	excludesfile = /Users/marcelbecker/.gitignore_global
 	autocrlf = input
+	pager = delta
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
@@ -13,3 +14,26 @@
 [filesystem "AdoptOpenJDK|13.0.1|/dev/disk2s5"]
 	timestampResolution = 14000 nanoseconds
 	minRacyThreshold = 0 nanoseconds
+[filesystem "Eclipse Adoptium|11.0.15|/dev/disk1s1"]
+	timestampResolution = 14000 nanoseconds
+	minRacyThreshold = 0 nanoseconds
+[filesystem "Oracle Corporation|18.0.2|/dev/disk1s1"]
+	timestampResolution = 6000 nanoseconds
+	minRacyThreshold = 0 nanoseconds
+[http "https://gitlab.csde.caci.com"]
+	cookiefile = /Users/marcelbecker/.csde-cookies
+[http "https://*.csde.caci.com"]
+	cookiefile = /Users/marcelbecker/.csde-cookies
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true    # use n and N to move between diff sections
+	side-by-side = true
+[merge]
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = default
+[url "git@gitlab.kesselrun.us:"]
+	insteadOf = git@git.aoc-pathfinder.cloud:

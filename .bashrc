@@ -1,3 +1,5 @@
+# CodeWhisperer pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/bashrc.pre.bash" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/bashrc.pre.bash"
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -665,3 +667,16 @@ bind 'set completion-ignore-case on'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+## Code to run acl2 and formal unit test
+export ACL2_ROOT=~/src/kestrel-acl2/acl2
+export ACL2=${ACL2_ROOT}/saved_acl2
+export KESTREL_ACL2=~/src/kestrel-acl2/trunk
+export PATH="${KESTREL_ACL2}/builder/bin:${ACL2_ROOT}/books/build:$PATH"
+export STP=$(command -v stp)
+source <(kubectl completion bash)
+. "$HOME/.cargo/env"
+
+# CodeWhisperer post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/bashrc.post.bash" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/bashrc.post.bash"
