@@ -32,7 +32,7 @@ fi
 #fi
 
 export TERM="xterm-256color"
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 #source ~/.zprezto/modules/prompt/external/powerlevel9k/powerlevel9k.zsh-theme
 POWERLEVEL9K_MODE='nerdfont-complete'
 #ZSH_THEME="powerlevel9k/powerlevel9k"
@@ -49,9 +49,14 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
     source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Additionally, if you receive “zsh compinit: insecure directories” warnings
+# when attempting to load these completions, you may need to run this: chmod -R go-w "$(brew --prefix)/share"
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+  FPATH=$(brew --prefix)/share/zsh-navigation-tools:$FPATH
+  FPATH=$(brew --prefix)/share/zsh-fast-syntax-highlighting/:$FPATH
+  FPATH=$(brew --prefix)/share/zsh-syntax-highlighting/:$FPATH
   autoload -Uz compinit
   compinit
 fi
@@ -68,16 +73,19 @@ promptinit
 #eval "$(rbenv init -)"
 
 # Add homebrew to the completion path
-fpath=("/usr/local/bin/" $fpath)
+fpath=("/opt/homebrew/bin/" $fpath)
 
 #echo PATH = "$PATH"
-export PATH=~/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=~/bin:/opt/homebrew/bin:/opt/home/sbin:$PATH
 #echo PATH = "$PATH"
-export PATH=/usr/local/opt/texinfo/bin:${PATH}
+export PATH=/opt/homebrew/opt/texinfo/bin:${PATH}
 #echo PATH = "$PATH"
 export PATH=$PATH:/Library/TeX/texbin # Add latex and tex executables
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-export PATH="/usr/local/anaconda3/bin:$PATH"
+export PATH=$PATH:/usr/local/bin # Add latex and tex executables
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export PATH="/opt/homebrew/anaconda3/bin:$PATH"
+export PATH=/opt/homebrew/Caskroom/redis-stack-server/6.2.6-v6/bin:$PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 
 
@@ -221,8 +229,8 @@ function tab_color_precmd {
 autoload -U add-zsh-hook
 add-zsh-hook precmd tab_color_precmd
 
-if [[ -s "/usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]]; then
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [[ -s "/opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]]; then
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -287,10 +295,10 @@ alias configdot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 
 export WORKON_HOME=$HOME/PythonEnvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
-if [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]]; then
-source /usr/local/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/opt/homebrew/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/opt/homebrew/bin/virtualenv
+if [[ -s "/opt/homebrew/bin/virtualenvwrapper.sh" ]]; then
+source /opt/homebrew/bin/virtualenvwrapper.sh
 fi
 
 PROMPT_EOL_MARK=''
@@ -450,4 +458,43 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-. /usr/local/opt/asdf/asdf.sh
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+export PATH="/opt/homebrew/opt/bison/bin:$PATH"
+
+
+## Code to run acl2 and formal unit test
+export ACL2_ROOT=~/src/kestrel-acl2/acl2
+export ACL2=${ACL2_ROOT}/saved_acl2
+export KESTREL_ACL2=~/src/kestrel-acl2/trunk
+export PATH="${KESTREL_ACL2}/builder/bin:${ACL2_ROOT}/books/build:$PATH"
+export STP=$(command -v stp)
+export NODE_EXTRA_CA_CERTS=/opt/homebrew/opt/kr-okta-aws/share/krca.pem
+
+
+alias zero-start="kr-zero-proxy --action=start"
+alias zero-on=". kr-zero-proxy --action=env"
+alias zero-off=". kr-zero-proxy --action=reset"
+[[ /opt/homebrew/bin/kubectl ]] && source <(kubectl completion zsh)
+
+source /opt/homebrew/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $(dirname $(gem which colorls))/tab_complete.sh
+
+# Handle Mac platforms
+#CPU=$(uname -p)
+#if [[ "$CPU" == "arm" ]]; then
+#    export PATH="/opt/homebrew/bin:$PATH"
+#    export EDITOR=/opt/homebrew/bin/nano
+#    alias nano=/opt/homebrew/bin/nano
+#    alias oldbrew=/usr/local/bin/brew
+#else
+#    export PATH="/usr/local/bin:$PATH"
+#    export EDITOR=/usr/local/bin/nano
+#    alias nano=/usr/local/bin/nano
+#fi
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+figlet "Marcel Becker" && neofetch
