@@ -1,3 +1,5 @@
+# CodeWhisperer pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -32,6 +34,7 @@ fi
 #fi
 
 export TERM="xterm-256color"
+
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 #source ~/.zprezto/modules/prompt/external/powerlevel9k/powerlevel9k.zsh-theme
 POWERLEVEL9K_MODE='nerdfont-complete'
@@ -212,6 +215,7 @@ if [[ "$TERM" == (screen*|xterm*|rxvt*) ]]; then
 fi
 
 unsetopt prompt_cr prompt_sp
+unsetopt auto_name_dirs
 
 
 if [[ -s "${HOME}/.iterm2_shell_integration.zsh" ]]; then
@@ -249,7 +253,7 @@ alias emacsnoinit='/Applications/Emacs.app/Contents/MacOS/Emacs -q'
 alias spacemacs='HOME=~/Dropbox/spacemacs /Applications/Emacs27.app/Contents/MacOS/Emacs'
 alias portgresdb='docker run --name scharp-postgres --rm -e POSTGRES_USER=scharp -e POSTGRES_PASSWORD=scharp -e POSTGRES_DB=scharp_db -p 5432:5432 postgres'
 alias echobase='docker run -p 9001:9001 -p 9999:9999 -p 10000:10000 -p 10001:10001 -p 10002:10002 -p 5672:5672 -p 5671:5671 -p 25672:25672 -p 15672:15672 -p 3305:3305 -p 61613:61613 registry.aoc-pathfinder.cloud/kessel-run-common/echo-base:latest'
-
+alias mount-scenario='hdiutil attach ~/src/scharp-ft-scenario.dmg'
 
 alias mvnver="mvn versions:display-dependency-updates versions:display-plugin-updates | grep 'INFO' | grep '>' | sort | uniq"
 alias mvnclean="mvn dependency:purge-local-repository -DactTransitively=false -DreResolve=false"
@@ -481,6 +485,7 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source $(dirname $(gem which colorls))/tab_complete.sh
 
+
 # Handle Mac platforms
 #CPU=$(uname -p)
 #if [[ "$CPU" == "arm" ]]; then
@@ -497,4 +502,52 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+
+# https://www.josean.com/posts/7-amazing-cli-tools
+# git clone https://github.com/junegunn/fzf-git.sh.git
+# ---- FZF -----
+# brew install fzf
+# brew install git-delta eza
+eval "$(fzf --zsh)"
+source ~/fzf-git.sh/fzf-git.sh
+
+# --- setup fzf theme ---
+fg="#CBE0F0"
+bg="#011628"
+bg_highlight="#143652"
+purple="#B388FF"
+blue="#06BCE4"
+cyan="#2CF9ED"
+
+export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${bg_highlight},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
+
+export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
+export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
+
+# Advanced customization of fzf options via _fzf_comprun function
+# - The first argument to the function is the name of the command.
+# - You should make sure to pass the rest of the arguments to fzf.
+_fzf_comprun() {
+  local command=$1
+  shift
+
+  case "$command" in
+    cd)           fzf --preview 'eza --tree --color=always {} | head -200' "$@" ;;
+    export|unset) fzf --preview "eval 'echo $'{}"         "$@" ;;
+    ssh)          fzf --preview 'dig {}'                   "$@" ;;
+    *)            fzf --preview "bat -n --color=always --line-range :500 {}" "$@" ;;
+  esac
+}
+
+
+# ---- FZF -----
+
 figlet "Marcel Becker" && neofetch
+
+
+
+# CodeWhisperer post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh"
+# eval "$(atuin init zsh)"
