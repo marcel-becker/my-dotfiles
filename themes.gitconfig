@@ -153,7 +153,7 @@
     syntax-theme = Vibrant Sunburst
 
 [delta "villsau"]
-    # author: https://github.com/torarnv
+    # Author: https://github.com/torarnv
     dark = true
     file-style = omit
     hunk-header-decoration-style = omit
@@ -174,7 +174,7 @@
     zero-style = dim syntax
 
 [delta "woolly-mammoth"]
-    # author: https://github.com/Kr1ss-XD
+    # Author: https://github.com/Kr1ss-XD
     commit-decoration-style = 232 130 box
     commit-style = 232 bold italic 130
     dark = true

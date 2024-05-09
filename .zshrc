@@ -221,8 +221,8 @@ unsetopt auto_name_dirs
 if [[ -s "${HOME}/.iterm2_shell_integration.zsh" ]]; then
     source ~/.iterm2_shell_integration.zsh
 fi
-
 iterm2_print_user_vars() {
+
     iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
 }
 
@@ -462,7 +462,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+#. /opt/homebrew/opt/asdf/libexec/asdf.sh
 export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 
 
@@ -483,6 +483,17 @@ alias zero-off=". kr-zero-proxy --action=reset"
 source /opt/homebrew/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+
+
+# see https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac
+# use
+# $ ruby-install 3.1.2
+# $ chruby 3.1.4
+# don't use sudo to install ruby gems.
+source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh
+source $(brew --prefix)/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.3.1
+
 source $(dirname $(gem which colorls))/tab_complete.sh
 
 
@@ -503,6 +514,11 @@ export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh
+source $(brew --prefix)/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.3.1
+
 
 
 # https://www.josean.com/posts/7-amazing-cli-tools

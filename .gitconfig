@@ -21,9 +21,13 @@
 	timestampResolution = 6000 nanoseconds
 	minRacyThreshold = 0 nanoseconds
 [http "https://gitlab.csde.caci.com"]
-	cookiefile = /Users/marcelbecker/.csde-cookies
+	#cookiefile = /Users/marcelbecker/.csde-cookies
+	sslCert = ~/.config/csde/client.cert
+	sslKey = ~/.config/csde/client.key
 [http "https://*.csde.caci.com"]
-	cookiefile = /Users/marcelbecker/.csde-cookies
+	#cookiefile = /Users/marcelbecker/.csde-cookies
+	sslCert = ~/.config/csde/client.cert
+	sslKey = ~/.config/csde/client.key
 [interactive]
 	diffFilter = delta --color-only
 
@@ -36,7 +40,6 @@
 	side-by-side = true
 [merge]
 	conflictstyle = diff3
-
 [diff]
 	colorMoved = default
 [url "git@gitlab.kesselrun.us:"]
