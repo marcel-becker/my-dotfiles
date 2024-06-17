@@ -253,6 +253,9 @@ alias emacsnoinit='/Applications/Emacs.app/Contents/MacOS/Emacs -q'
 alias spacemacs='HOME=~/Dropbox/spacemacs /Applications/Emacs27.app/Contents/MacOS/Emacs'
 alias portgresdb='docker run --name scharp-postgres --rm -e POSTGRES_USER=scharp -e POSTGRES_PASSWORD=scharp -e POSTGRES_DB=scharp_db -p 5432:5432 postgres'
 alias echobase='docker run -p 9001:9001 -p 9999:9999 -p 10000:10000 -p 10001:10001 -p 10002:10002 -p 5672:5672 -p 5671:5671 -p 25672:25672 -p 15672:15672 -p 3305:3305 -p 61613:61613 registry.aoc-pathfinder.cloud/kessel-run-common/echo-base:latest'
+
+alias artemis='docker run -e ARTEMIS_USER=admin -e ARTEMIS_PASSWORD=admin -p 61616:61616 apache/activemq-artemis:latest'
+# alias connect-vpn='osascript -e \'tell application "Viscosity" to connect "becker@WVDQCWJQH0-all-TCP"\''
 alias mount-scenario='hdiutil attach ~/src/scharp-ft-scenario.dmg'
 
 alias mvnver="mvn versions:display-dependency-updates versions:display-plugin-updates | grep 'INFO' | grep '>' | sort | uniq"
@@ -327,6 +330,36 @@ list_all_terminal_colors() {
     done
 }
 
+
+vterm_printf() {
+    if [ -n "$TMUX" ] && ([ "${TERM%%-*}" = "tmux" ] || [ "${TERM%%-*}" = "screen" ]); then
+        # Tell tmux to pass the escape sequences through
+        printf "\ePtmux;\e\e]%s\007\e\\" "$1"
+    elif [ "${TERM%%-*}" = "screen" ]; then
+        # GNU screen (screen, screen-256color, screen-256color-bce)
+        printf "\eP\e]%s\007\e\\" "$1"
+    else
+        printf "\e]%s\e\\" "$1"
+    fi
+}
+
+if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
+    alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
+fi
+
+vterm_cmd() {
+    local vterm_elisp
+    vterm_elisp=""
+    while [ $# -gt 0 ]; do
+        vterm_elisp="$vterm_elisp""$(printf '"%s" ' "$(printf "%s" "$1" | sed -e 's|\\|\\\\|g' -e 's|"|\\"|g')")"
+        shift
+    done
+    vterm_printf "51;E$vterm_elisp"
+}
+
+find_file() {
+    vterm_cmd find-file "$(realpath "${@:-.}")"
+}
 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=false
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=false
@@ -475,11 +508,12 @@ export STP=$(command -v stp)
 export NODE_EXTRA_CA_CERTS=/opt/homebrew/opt/kr-okta-aws/share/krca.pem
 
 
-alias zero-start="kr-zero-proxy --action=start"
-alias zero-on=". kr-zero-proxy --action=env"
-alias zero-off=". kr-zero-proxy --action=reset"
-[[ /opt/homebrew/bin/kubectl ]] && source <(kubectl completion zsh)
+# alias zero-start="kr-zero-proxy --action=start"
+# alias zero-on=". kr-zero-proxy --action=env"
+# alias zero-off=". kr-zero-proxy --action=reset"
+alias zero-start='java -jar $HOMEBREW_PREFIX/share/adcp-zero-trust-client.jar --start --verbose'
 
+[[ /opt/homebrew/bin/kubectl ]] && source <(kubectl completion zsh)
 source /opt/homebrew/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
@@ -537,7 +571,7 @@ purple="#B388FF"
 blue="#06BCE4"
 cyan="#2CF9ED"
 
-export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${bg_highlight},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
+export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${bg_highlight},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan} --height=50% --layout=reverse --info=inline --border --margin=1 --padding=1"
 
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
 export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
@@ -567,3 +601,11 @@ figlet "Marcel Becker" && neofetch
 # CodeWhisperer post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh"
 # eval "$(atuin init zsh)"
+
+
+
+vterm_prompt_end() {
+    vterm_printf "51;A$(whoami)@$(hostname):$(pwd)"
+}
+setopt PROMPT_SUBST
+PROMPT=$PROMPT'%{$(vterm_prompt_end)%}'
