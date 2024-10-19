@@ -553,7 +553,7 @@ source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh
 source $(brew --prefix)/opt/chruby/share/chruby/auto.sh
 chruby ruby-3.3.1
 
-
+eval "$(zoxide init zsh)"
 
 # https://www.josean.com/posts/7-amazing-cli-tools
 # git clone https://github.com/junegunn/fzf-git.sh.git
@@ -594,7 +594,7 @@ _fzf_comprun() {
 
 # ---- FZF -----
 
-figlet "Marcel Becker" && neofetch
+#clear && figlet "Marcel Becker" && fastfetch --bright-color true --pipe false --logo OSX
 
 
 
