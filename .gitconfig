@@ -44,3 +44,7 @@
 	colorMoved = default
 [url "git@gitlab.kesselrun.us:"]
 	insteadOf = git@git.aoc-pathfinder.cloud:
+[log]
+	date = short
+[format]
+	pretty = format:%C(yellow)%h %C(red bold)%ad %C(blue bold)%<(20)%an %C(magenta bold)%d %Creset%s
