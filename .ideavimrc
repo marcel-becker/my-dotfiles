@@ -1,0 +1,677 @@
+""""""""""""""""""""
+" General Settings "
+""""""""""""""""""""
+" https://github.com/JetBrains/ideavim/wiki/set-commands
+
+" Leader key (default: Space)
+"let mapleader=" "
+let mapleader ="\<Space>"
+
+" Paste from system clipboard - https://stackoverflow.com/a/30691754
+set clipboard^=unnamed,unnamedplus
+
+" Incremental search - searches as you type
+set incsearch
+
+" Highlight search - highlight searches
+set hlsearch
+
+" Ignores case sensitivity when searching
+set ignorecase
+
+" If you searched in all lowercase, search is NOT case sensitive.
+" If it contains an uppercase, search IS case sensitive.
+set smartcase
+
+" Show current line number
+set number
+
+" Show other line's numbers RELATIVE to your current position
+set relativenumber
+
+" Minimum number of lines above and below the cursor
+set scrolloff=4
+
+" Show current mode on the status line
+set showmode
+
+" Show partial command in status line
+set showcmd
+
+" Use visual bell instead of beeping
+set visualbell
+
+
+""" Plugins  --------------------------------
+set NERDTree
+set ReplaceWithRegister
+set argtextobj
+""""""""""""""""""
+" vim-commentary "
+""""""""""""""""""
+" https://github.com/JetBrains/ideavim/wiki/IdeaVim-Plugins#commentary
+" Comment Lines
+"   gc[motion] - comment
+"   gcc - comment entire line
+set commentary
+
+"" Which-Key mapping descriptions
+" Disable the description
+let g:WhichKeyDesc_commentary_gc = "gc comment"
+let g:WhichKeyDesc_commentary_gcc = "gcc comment line"
+let g:WhichKeyDesc_commentary_gcu = "gcu"
+set easymotion
+set exchange
+set highlightedyank
+set history=3000000
+set ideajoin
+set ideaput
+set idearefactormode=keep
+set multiple-cursors
+
+
+
+""""""""""""""""
+" vim-surround "
+""""""""""""""""
+" https://github.com/JetBrains/ideavim/wiki/IdeaVim-Plugins#surround
+" Change/delete/add surroundings
+"   cs[motion] - change surrounding
+"   ds[motion] - delete surrounding
+"   ys[motion] - add surrounding
+"   S - surround selected text
+set surround
+
+"" Which-Key mapping descriptions
+let g:WhichKeyDesc_surround_change = "cs Surround Change"
+let g:WhichKeyDesc_surround_delete = "ds Surround Delete"
+let g:WhichKeyDesc_surround_add    = "ys Surround Add"
+
+set textobj-entire
+
+" Trying the new syntax
+""" IdeaVim plugins
+
+Plug 'chrisbra/matchit'                 " Extended matching. Supports % (matching motion) and g% (reverse motion)
+Plug 'machakann/vim-highlightedyank'
+Plug 'easymotion/vim-easymotion'	" Requires IdeaVim-EasyMotion. Lots of mappings
+Plug 'kana/vim-textobj-entire'		" entire buffer text object: ae
+Plug 'machakann/vim-highlightedyank'
+Plug 'terryma/vim-multiple-cursors'	" See below for remapped keys. <A-n> doesn't work on Mac
+Plug 'tommcdo/vim-exchange'		    " cx{motion} to select, again to exchange
+Plug 'tpope/vim-commentary'		    " [count]gc{motion}, o_gc, v_gc, gcc
+Plug 'tpope/vim-surround'		    " ys, cs, ds, S
+Plug 'vim-scripts/argtextobj.vim'	    " argument text objects: aa, ia
+Plug 'vim-scripts/ReplaceWithRegister'  " [count][{reg}]gr{motion}, [count][{reg}]grr, {Visual}[{reg}]gr:w
+
+""" Plugin settings -------------------------
+""""""""""""""
+" argtextobj "
+""""""""""""""
+" https://github.com/JetBrains/ideavim/wiki/IdeaVim-Plugins#argtextobj
+" Arguments-based textobject
+"   [motion]aa - an argument
+"   [motion]ia - inner argument
+" Typical uses:
+"   daa - Delete an argument
+"   cia - Change an argument
+"   via - Select an argument
+set argtextobj
+
+" List of comma-separated pairs where it searches arguments inside. Order of pairs matter
+" By default without this option, only parenthesis is considered. This extends it to the other pairs.
+let g:argtextobj_pairs="[:],(:),<:>"
+"" Which-Key mapping descriptions
+" Disable the description
+let g:WhichKeyDesc_txtobj_arg_around = "aa"
+let g:WhichKeyDesc_txtobj_arg_inner = "ia"
+
+
+"""""""""
+" Sneak "
+"""""""""
+" https://github.com/JetBrains/ideavim/wiki/IdeaVim-Plugins#sneak
+" Simpler cursor navigation within a file
+"   s{char}{char} - Sneak forward; type s followed by two characters
+"   S{char}{char} - Sneak backward; type S followed by two characters
+"   ; or , - Continue sneaking
+Plug 'justinmk/vim-sneak'
+
+
+" <C-n> seems to me as a better solution than <M-n>,
+" but we should finally support vim-visual-multi because vim-multiple-cursors is deprecated now
+map <C-n> <Plug>NextWholeOccurrence
+
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=enabled
+
+""" My Mappings -----------------------------
+map <leader>f <Plug>(easymotion-s)
+map <leader>e <Plug>(easymotion-f)
+
+"map <leader>d <Action>(Debug)
+"map <leader>r <Action>(RenameElement)
+"map <leader>c <Action>(Stop)
+"map <leader>z <Action>(ToggleDistractionFreeMode)
+
+"map <leader>s <Action>(SelectInProjectView)
+"map <leader>a <Action>(Annotate)
+"map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
+map <S-Space> <Action>(GotoNextError)
+
+" Reformat the current line only
+map <leader>l V<Action>(ReformatCode)
+
+"map <leader>b <Action>(ToggleLineBreakpoint)
+" lmap <leader>o <Action>(FileStructurePopup)
+
+map <leader>J Ji <ESC>
+
+" Just makes me nervous
+"map H h
+
+" Toggle case and start typing. .g. `<leader>iget`: `property` -> `getProperty`
+"map <leader>i ~hi
+" Remove selection and toggle case. E.g. `v2l<leader>u`: `getProperty` -> `property`
+"vmap <leader>u d~h
+
+" I think it's a better solution
+map U <C-R>
+
+""""""""""""""""""""
+" Which-Key Plugin "
+""""""""""""""""""""
+" Doc: https://github.com/TheBlob42/idea-which-key
+" Required IntelliJ Plugin: https://plugins.jetbrains.com/plugin/15976-which-key
+" Displays available keybindings in a popup
+set which-key
+
+" Removes the timeout for the popup
+" https://github.com/TheBlob42/idea-which-key#activation
+" To disable this setting, add in your ~/.ideavimrc file:
+" `set timeoutlen=1000` Default value is 1000 ms. Change to your preference
+set notimeout
+
+" Styling the appearance
+" https://github.com/TheBlob42/idea-which-key#appearance
+
+let g:WhichKey_CommandStyle = "italic"
+let g:WhichKey_FontSize = 24
+let g:WhichKey_KeyColor = "keyword"
+let g:WhichKey_KeyColor = "#0035b2"
+let g:WhichKey_KeyStyle = "bold"
+let g:WhichKey_PrefixStyle = "bold"
+let g:WhichKey_CommandStyle = "bold"
+let g:WhichKey_PrefixColor = "#6fa4de"
+let g:WhichKey_ShowTypedSequence = "true"
+let g:WhichKey_ShowVimActions = "true"
+let g:WhichKey_SortCaseSensitive = "false"
+let g:WhichKey_SortOrder = "by_key_prefix_first"
+
+map <C-c> <Esc>
+map <C-g> <Esc>
+inoremap jk <Esc>
+
+" Tab navigation
+nnoremap <A-n> :tabnext<CR>
+nnoremap <A-p> :tabprev<CR>
+
+" Pane navigation
+nnoremap <c-h> <C-w>h
+nnoremap <c-l> <C-w>l
+nnoremap <c-k> <C-w>k
+nnoremap <c-j> <C-w>j
+
+" Open Terminal
+" TIP: When in the Terminal, press Escape to switch focus back to the editor without closing Terminal
+map <C-t> <Action>(ActivateTerminalToolWindow)
+
+
+" Move code using h/j/k/l rather than IntelliJ's keybindings that uses arrow keys
+"map <A-h> <Action>(MoveElementLeft)
+"map <A-l> <Action>(MoveElementRight)
+map <A-j> <Action>(MoveStatementDown)
+map <A-k> <Action>(MoveStatementUp)
+map <A-S-J> <Action>(MoveLineDown)
+map <A-S-K> <Action>(MoveLineUp)
+map <M-J> <Action>(MoveLineDown)
+map <M-K> <Action>(MoveLineUp)
+
+
+
+" Window splits
+let g:WhichKeyDesc_window                        = "<leader>w +Window splits"
+let g:WhichKeyDesc_window_split_vertically       = "<leader>wv Split vertically"
+let g:WhichKeyDesc_window_split_horizontally     = "<leader>wh Split horizontally"
+let g:WhichKeyDesc_window_split_unsplit          = "<leader>wu Unsplit"
+let g:WhichKeyDesc_window_split_unsplit_all      = "<leader>wa Unsplit All"
+let g:WhichKeyDesc_window_split_move_editor      = "<leader>wm Move editor to opposite tab group"
+let g:WhichKeyDesc_window_next_splitter          = "<leader>wn Next splitter"
+let g:WhichKeyDesc_windows_jump_to_last_window   = "<leader>wj Jump to Last Tool Window"
+let g:WhichKeyDesc_windows_close_tab             = "<leader>wq Close Current Tab"
+let g:WhichKeyDesc_windows_close_tabs_but_active = "<leader>wb Close OTHER Tabs"
+let g:WhichKeyDesc_windows_split_stretch_left    = "<leader>wh STRETCH split LEFT"
+let g:WhichKeyDesc_windows_split_stretch_down    = "<leader>wj STRETCH split DOWN"
+let g:WhichKeyDesc_windows_split_stretch_up      = "<leader>wk STRETCH split UP"
+let g:WhichKeyDesc_windows_split_stretch_right   = "<leader>wl STRETCH split RIGHT"
+let g:WhichKeyDesc_windows_split_and_move_right  = "<leader>wr Split and MOVE RIGHT"
+let g:WhichKeyDesc_windows_split_and_move_below  = "<leader>wd Split and MOVE BELOW"
+let g:WhichKeyDesc_windows_split_rotate_split    = "<leader>wo Rotate Orientation"
+let g:WhichKeyDesc_windows_view_maximize = "<leader>wM Maximize"
+
+
+map <leader>wM <Action>(MaximizeEditorInSplit)
+map <leader>wW <Action>(CloseAllEditors)
+map <leader>wa <Action>(UnsplitAll)
+map <leader>wd <Action>(MoveTabDown)
+map <leader>wh <Action>(SplitHorizontally)
+map <leader>wh <Action>(StretchSplitToLeft)
+map <leader>wj <Action>(JumpToLastWindow)
+map <leader>wj <Action>(StretchSplitToBottom)
+map <leader>wk <Action>(StretchSplitToTop)
+map <leader>wl <Action>(StretchSplitToRight)
+map <leader>wm <Action>(MoveEditorToOppositeTabGroup)
+map <leader>wn <Action>(NextSplitter)
+map <leader>wo <Action>(ChangeSplitOrientation)
+map <leader>wb <Action>(CloseAllEditorsButActive)
+map <leader>wq <Action>(CloseContent)
+map <leader>wr <Action>(MoveTabRight)
+map <leader>wu <Action>(Unsplit)
+map <leader>wv <Action>(SplitVertically)
+map <leader>ww <Action>(CloseEditorsGroup)
+
+" View
+let g:WhichKeyDesc_view = "<leader>v Views"
+let g:WhichKeyDesc_view_menu = "<leader>vm Menu"
+let g:WhichKeyDesc_view_buttons = "<leader>vb Tool Buttons"
+let g:WhichKeyDesc_view_presentation_mode = "<leader>vp Toggle Presentation Mode"
+
+map <leader>vm <Action>(ViewMenu)
+map <leader>vb <Action>(ViewToolButtons)
+map <leader>vp <Action>(TogglePresentationMode) <Action>(TogglePresentationAssistantAction)
+
+""" window splitting & navigation
+map <c-o> <Action>(Back)
+map <c-i> <Action>(Forward)
+map <c-\> <Action>(SplitVertically)
+map <c--> <Action>(SplitHorizontally)
+map <c-=> <Action>(Unsplit)
+map <c-m> <Action>(MoveEditorToOppositeTabGroup)
+
+" Jump between methods
+let g:WhichKeyDesc_method_up = "<A-[> Method Up"
+let g:WhichKeyDesc_method_down = "<A-]> Method Down"
+"nnoremap <A-[> <Action>(MethodUp)
+map <A-[> <Action>(MethodUp)
+" nnoremap <A-]> <Action>(MethodDown)
+map <A-]> <Action>(MethodDown)
+
+
+
+
+
+
+"""""""""""""
+" IdeaVimRC "
+"""""""""""""
+" Keybinds for dealing with ~/.ideavimrc
+let g:WhichKeyDesc_ideavim                  = "<leader>iv +IdeaVimRc"
+let g:WhichKeyDesc_ideavim_edit             = "<leader>ive Edit .ideavimrc"
+let g:WhichKeyDesc_ideavim_reload           = "<leader>ivr Reload IdeaVim"
+let g:WhichKeyDesc_ideavim_track_action_ids = "<leader>ivt Track Action IDs"
+let g:WhichKeyDesc_ideavim_action           = "<leader>iva Execute action"
+" View full list of actions
+let g:WhichKeyDesc_ideavim_actionlist       = "<leader>ivl Actions List""
+let g:WhichKeyDesc_restart_ide              = "<leader>ivq Restart IDE"
+
+map <leader>ive :e ~/.ideavimrc<cr>
+map <leader>ivr :source ~/.ideavimrc<CR>
+map <leader>ivt <Action>(VimFindActionIdAction)
+map <leader>iva :action<Space>
+map <leader>ivl :actionlist<Space>
+map <leader>ivq <Action>(RestartIde)
+
+
+"" Info
+let g:WhichKeyDesc_info                  = "<leader>i +Information"
+let g:WhichKeyDesc_info_error            = "<leader>ie Error Description"
+let g:WhichKeyDesc_info_type             = "<leader>it Expression Type"
+let g:WhichKeyDesc_info_parameter        = "<leader>ip Parameter Info"
+let g:WhichKeyDesc_info_javadoc          = "<leader>ij Java Doc"
+let g:WhichKeyDesc_info_file_structure   = "<leader>if File Structure"
+let g:WhichKeyDesc_info_call_hierarchy   = "<leader>ih Call Hierarchy"
+let g:WhichKeyDesc_info_show_usages      = "<leader>iu Usages"
+let g:WhichKeyDesc_info_method_hierarchy = "<leader>im Method Hierarchy"
+
+nmap <leader>ie <Action>(ShowErrorDescription)
+nmap <leader>it <Action>(ExpressionTypeInfo)
+nmap <leader>ip <Action>(ParameterInfo)
+nmap <leader>ij <Action>(QuickJavaDoc)
+nmap <leader>if <Action>(FileStructurePopup)
+nmap <leader>ih <Action>(CallHierarchy)
+nmap <leader>iu <Action>(ShowUsages)
+nmap <leader>im <Action>(MethodHierarchy)
+nmap <leader>io <Action>(ShowHoverInfo)
+
+
+" UI Display options
+let g:WhichKeyDesc_ui_display                        = "<leader>u +Display options"
+let g:WhichKeyDesc_ui_zen_mode                       = "<leader>uz Toggle Zen mode"
+let g:WhichKeyDesc_ui_df_mode                        = "<leader>ud Toggle Distraction-Free mode"
+let g:WhichKeyDesc_ui_fullscreen                     = "<leader>uf Toggle full screen"
+let g:WhichKeyDesc_ui_display_font_size_increase     = "<leader>ui Increase Editor Font Size"
+let g:WhichKeyDesc_ui_display_font_size_increase_all = "<leader>uI Increase ALL Font Size"
+let g:WhichKeyDesc_ui_font_size_decrease             = "<leader>u- Decrease Editor Font Size"
+let g:WhichKeyDesc_ui_font_size_decrease_all         = "<leader>u_ Decrease ALL Font Size"
+let g:WhichKeyDesc_ui_display_font_size_reset        = "<leader>ur Reset All Font Size"
+let g:WhichKeyDesc_ui_clear_search_highlight         = "<leader>uu Clear Search Highlight"
+
+map <leader>ud <action>(ToggleDistractionFreeMode)
+map <leader>uh :nohlsearch<cr>
+
+map <leader>uz <action>(ToggleZenMode)
+map <leader>uf <action>(ToggleFullScreen)
+map <leader>ui <Action>(EditorIncreaseFontSize)
+map <leader>uI <Action>(EditorIncreaseFontSizeGlobal)
+map <leader>u- <Action>(EditorDecreaseFontSize)
+map <leader>u_ <Action>(EditorDecreaseFontSizeGlobal)
+map <leader>ur <Action>(EditorResetFontSize) " Only works if you trigger the increase/decrease ALL font size actions
+
+" Clear search highlight
+
+map <leader>hh :noh<cr>
+" clear the search buffer when hitting return
+nnoremap <leader><cr> :nohlsearch<cr>
+
+
+
+
+
+
+
+" File navigation
+let g:WhichKeyDesc_file_nav                         = "<leader>f +File navigation"
+let g:WhichKeyDesc_file_nav_goto_file               = "<leader>ff Go to file"
+let g:WhichKeyDesc_file_nav_goto_recent_files       = "<leader>fr Recent files"
+let g:WhichKeyDesc_file_nav_goto_content            = "<leader>fi Search for file content"
+let g:WhichKeyDesc_file_nav_show_recent_locations   = "<leader>fl Show recent locations"
+let g:WhichKeyDesc_file_nav_new_scratch_file        = "<leader>fs New scratch file"
+let g:WhichKeyDesc_files_nav_select_in_project_view = "<leader>fp Select File in Project View"
+let g:WhichKeyDesc_files_nav_recent_files_changed   = "<leader>fc Recently CHANGED Files"
+let g:WhichKeyDesc_files_nav_tab_switcher           = "<leader>ft Tab Switcher"
+
+map <leader>ff <action>(GotoFile)
+map <leader>fr <action>(RecentFiles)
+map <leader>fi <action>(FindInPath)
+map <leader>fl <action>(RecentLocations)
+map <leader>fs <action>(NewScratchFile)
+map <leader>fp <Action>(SelectInProjectView)
+map <leader>fc <Action>(RecentChangedFiles)
+map <leader>ft <Action>(Switcher)
+
+
+" Find and replace, and search: everywhere, classes, files, actions, locations, etc...
+let g:WhichKeyDesc_sfr                                          = "<leader>s +Search"
+let g:WhichKeyDesc_sfr_find                                     = "<leader>sf Find"
+let g:WhichKeyDesc_sfr_find_path                                = "<leader>sF Find in Path"
+let g:WhichKeyDesc_sfr_replace                                  = "<leader>sr Replace"
+let g:WhichKeyDesc_sfr_replace_path                             = "<leader>sR Replace in Path"
+let g:WhichKeyDesc_sfr_search_everywhere                        = "<leader>se Search Everywhere"
+let g:WhichKeyDesc_sfr_search_class                             = "<leader>sc Search Classes"
+let g:WhichKeyDesc_sfr_search_action                            = "<leader>sa Search Actions"
+let g:WhichKeyDesc_sfr_search_symbol                            = "<leader>ss Search Symbols"
+
+map <leader>sf <Action>(Find)
+map <leader>sF <Action>(FindInPath)
+map <leader>sr <Action>(Replace)
+map <leader>sR <Action>(ReplaceInPath)
+map <leader>se <Action>(SearchEverywhere)
+map <leader>sc <Action>(GotoClass)
+map <leader>sa <Action>(GotoAction)
+map <leader>ss <Action>(GotoSymbol)
+
+let g:WhichKeyDesc_goto                = "<leader>g +Goto "
+let g:WhichKeyDesc_goto_declaratioln   = "<leader>gd Goto Declaration "
+let g:WhichKeyDesc_goto_declaration    = "<leader>gy Goto Type Declaration"
+let g:WhichKeyDesc_goto_implementation = "<leader>gi Goto Implementation "
+let g:WhichKeyDesc_goto_test           = "<leader>gt Goto Test "
+let g:WhichKeyDesc_goto_super_method   = "<leader>gm Goto Super Method "
+let g:WhichKeyDesc_goto_super_line     = "<leader>gl Goto Line "
+let g:WhichKeyDesc_goto_find_usage     = "<leader>gu Find Usage "
+let g:WhichKeyDesc_goto_show_usage     = "<leader>gU Show Usage "
+let g:WhichKeyDesc_goto_view_source    = "<leader>gs Goto Source "
+let g:WhichKeyDesc_goto_quick_implementation  = "<leader>gq Quick Implementation"
+let g:WhichKeyDesc_goto_quick_type_definition = "<leader>gT Quick Type Definition"
+let g:WhichKeyDesc_goto_next_error     = "<leader>ge Goto Next Error"
+let g:WhichKeyDesc_goto_previous_error = "<leader>gE Goto Next Error"
+let g:WhichKeyDesc_goto_last_change    = "<leader>gE Goto Last Change"
+let g:WhichKeyDesc_goto_back           = "<leader>gb Go Back"
+let g:WhichKeyDesc_goto_forward        = "<leader>gf Go Forward"
+
+map <leader>gd <Action>(GotoDeclaration)
+map <leader>gy <Action>(GotoTypeDeclaration)
+map <leader>gi <Action>(GotoImplementation)
+map <leader>gt <Action>(GotoTest)
+map <leader>gm <Action>(GotoSuperMethod)
+map <leader>gl <Action>(GotoLine)
+map <leader>gu <Action>(FindUsages)
+map <leader>gU <Action>(ShowUsages)
+map <leader>gs <Action>(ViewSource)
+map <leader>gq <Action>(QuickImplementations)
+map <leader>gT <Action>(QuickTypeDefinition)
+map <leader>ge <Action>(GotoNextError)
+map <leader>gE <Action>(GotoPreviousError)
+map <leader>gc <Action>(JumpToLastChange)
+map <leader>gf <Action>(Back)
+map <leader>gb <Action>(Forward)
+
+map <leader>oo <Action>(FileStructurePopup)
+
+map <S-f> <Action>(Find)
+map <S-r> <Action>(Replace)
+
+" Manage bookmarks
+let g:WhichKeyDesc_bookmark                             = "<leader>b +Bookmarks"
+let g:WhichKeyDesc_bookmark_show                        = "<leader>bb View Bookmarks"
+let g:WhichKeyDesc_bookmark_toggle                      = "<leader>bt Toggle Bookmark"
+" Set a bookmark with a mnemonic
+" TIP: As an alternative to this action, IdeaVim has an amazing feature
+" (ideamarks) where creation of a global Vim mark (letters and capital
+" letters only) will automatically create a mnemonic bookmark.  i.e.,
+" if you press "mB", it creates an IntelliJ bookmark "B"
+" automatically. You can then navigate to it with 'B
+let g:WhichKeyDesc_bookmark_mnemonic                    = "<leader>bm Mnemonic Bookmark"
+let g:WhichKeyDesc_bookmark_rename                      = "<leader>br Rename Bookmark"
+
+map <leader>bt <Action>(ToggleBookmark)
+map <leader>bb <Action>(ShowBookmarks)
+map <leader>bm <Action>(ToggleBookmarkWithMnemonic)
+map <leader>br <Action>(EditBookmark)
+
+" Code Actions and Refactoring
+let g:WhichKeyDesc_code_action                  = "<leader>c +Code Actions and Refactoring"
+let g:WhichKeyDesc_code_action_show_quick_fixes = "<leader>ci Quick Fixes"
+let g:WhichKeyDesc_code_action_format_code      = "<leader>cc Format Code"
+let g:WhichKeyDesc_code_action_optimize_imports = "<leader>co Optimize Imports"
+let g:WhichKeyDesc_code_action_rename           = "<leader>rn Rename element"
+let g:WhichKeyDesc_code_action_extract_method   = "<leader>rm Extract method"
+let g:WhichKeyDesc_code_action_extract_variable = "<leader>rv Introduce variable"
+let g:WhichKeyDesc_code_action_extract_field    = "<leader>rf Introduce field"
+let g:WhichKeyDesc_code_action_change_signature = "<leader>rs Change signature"
+let g:WhichKeyDesc_code_action_refactoring_all  = "<leader>rr Open refactorings list"
+
+map <leader>ci <Action>(ShowIntentionActions)
+map <leader>cf <Action>(IntroduceField)
+map <leader>cc <Action>(ReformatCode)
+map <leader>cm <Action>(ExtractMethod)
+map <leader>cn <Action>(RenameElement)
+map <leader>co <Action>(OptimizeImports)
+map <leader>cr <Action>(Refactorings.QuickListPopupAction)
+map <leader>cs <Action>(ChangeSignature)
+map <leader>cv <Action>(IntroduceVariable)
+
+"""""""""
+" Menus "
+"""""""""
+
+let g:WhichKeyDesc_main_menus            = "<leader>m +Intellij Menus"
+let g:WhichKeyDesc_main_menus_all        = "<leader>mm All Menus"
+let g:WhichKeyDesc_main_menus_file       = "<leader>mf File"
+let g:WhichKeyDesc_main_menus_edit       = "<leader>me Edit"
+let g:WhichKeyDesc_main_menus_view       = "<leader>mv View"
+let g:WhichKeyDesc_main_menus_navigate   = "<leader>mg Navigate"
+let g:WhichKeyDesc_main_menus_code       = "<leader>mc Code"
+let g:WhichKeyDesc_main_menus_refactor   = "<leader>mr Refactor"
+let g:WhichKeyDesc_main_menus_build      = "<leader>mb Build"
+let g:WhichKeyDesc_main_menus_run        = "<leader>mx Run"
+let g:WhichKeyDesc_main_menus_tools      = "<leader>mt Tools"
+let g:WhichKeyDesc_main_menus_git        = "<leader>mq Git"
+let g:WhichKeyDesc_main_menus_window     = "<leader>mw Window"
+let g:WhichKeyDesc_main_menus_editor     = "<leader>mp Editor Popup"
+let g:WhichKeyDesc_main_menus_editor_tab = "<leader>ms Tab Popup"
+let g:WhichKeyDesc_main_menus_quick_fix  = "<leader>am Quick fix menu"
+
+map <leader>mb <Action>(BuildMenu)
+map <leader>mc <Action>(CodeMenu)
+map <leader>me <Action>(EditMenu)
+map <leader>mf <Action>(FileMenu)
+map <leader>mg <Action>(GoToMenu)
+map <leader>mi <action>(ShowIntentionActions)
+map <leader>mm <Action>(MainMenu)
+map <leader>mp <Action>(EditorPopupMenu)
+map <leader>mq <Action>(VcsGroups)
+map <leader>mr <Action>(RefactoringMenu)
+map <leader>ms <Action>(EditorTabPopupMenu)
+map <leader>mt <Action>(ToolsMenu)
+map <leader>mv <Action>(ViewMenu)
+map <leader>mw <Action>(WindowMenu)
+map <leader>mx <Action>(RunMenu)
+
+
+
+""" Run
+let g:WhichKeyDesc_run                      = "<leader>r +Run"
+let g:WhichKeyDesc_run_class                = "<leader>rn Run Class"
+let g:WhichKeyDesc_run_choose_configuration = "<leader>rc Run Configuration"
+let g:WhichKeyDesc_create_run_configuration = "<leader>rC Create Run Configuration"
+let g:WhichKeyDesc_run_stop                 = "<leader>rs Stop"
+let g:WhichKeyDesc_run_run                  = "<leader>rr Run"
+let g:WhichKeyDesc_run_rerun                = "<leader>rR Rerun"
+let g:WhichKeyDesc_run_debug                = "<leader>rd Debug Nearest"
+let g:WhichKeyDesc_run_import_tests         = "<leader>rh Test History"
+let g:WhichKeyDesc_run_menu                 = "<leader>rm Run Menu"
+let g:WhichKeyDesc_run_failed               = "<leader>rf Rerun Failed"
+let g:WhichKeyDesc_run_tool                 = "<leader>rt Tool"
+let g:WhichKeyDesc_run_anything             = "<leader>ra Run Anything..."
+
+map <leader>rn <Action>(RunClass)
+map <leader>rc <Action>(ChooseRunConfiguration)
+map <leader>rC <Action>(CreateRunConfiguration)
+map <leader>rs <Action>(Stop)
+map <leader>rr <Action>(Run)
+map <leader>rR <Action>(Rerun)
+map <leader>rd <Action>(DebugClass)
+map <leader>rh <Action>(ImportTests)
+map <leader>rm <Action>(RunMenu)
+map <leader>rf <Action>(RerunFailedTests)
+map <leader>rt <Action>(ActivateRunToolWindow)
+map <leader>ra <Action>(RunAnything)
+
+
+
+""" Debugging
+let g:WhichKeyDesc_debugging                     = "<leader>d +Debug"
+let g:WhichKeyDesc_debugging_debug               = "<leader>dd Debug"
+let g:WhichKeyDesc_debugging_debug_class         = "<leader>dD Debug Class"
+let g:WhichKeyDesc_debugging_toggle_breakpoint   = "<leader>dd Toggle Break Point"
+let g:WhichKeyDesc_debugging_edit_breakpoint     = "<leader>de Edit Breakpoint"
+let g:WhichKeyDesc_debugging_view_breakpoints    = "<leader>dB View Breakpoints"
+let g:WhichKeyDesc_debugging_step_over           = "<leader>do Step Over"
+let g:WhichKeyDesc_debugging_step_into           = "<leader>di Step Into"
+let g:WhichKeyDesc_debugging_step_out            = "<leader>du Step Out"
+let g:WhichKeyDesc_debugging_repl                = "<leader>dv Repl (Evaluate)"
+let g:WhichKeyDesc_debugging_run_to_cursor       = "<leader>dc Run To Cursor"
+let g:WhichKeyDesc_debugging_force_run_to_cursor = "<leader>dC Force Run To Cursor"
+let g:WhichKeyDesc_debugging_resume              = "<leader>dr Resume"
+let g:WhichKeyDesc_debugging_stop                = "<leader>ds Stop"
+let g:WhichKeyDesc_debugging_mute                = "<leader>dm Mute"
+
+map <leader>dd <Action>(Debug)
+map <leader>dD <Action>(DebugClass)
+map <leader>db <Action>(ToggleLineBreakpoint)
+map <leader>dB <Action>(ViewBreakpoints)
+map <leader>de <Action>(EditBreakpoint)
+map <leader>do <Action>(StepOver)
+map <leader>di <Action>(StepInto)
+map <leader>du <Action>(StepOut)
+map <leader>dv <Action>(EvaluateExpression)
+map <leader>dc <Action>(RunToCursor)
+map <leader>dC <Action>(ForceRunToCursor)
+map <leader>dr <Action>(Resume)
+map <leader>ds <Action>(Stop)
+map <leader>dm <Action>(XDebugger.MuteBreakpoints)
+
+
+""" Tool Windows
+let g:WhichKeyDesc_tools           = "<leader>t +Tool Windows"
+let g:WhichKeyDesc_tools_menu      = "<leader>tm Menu"
+let g:WhichKeyDesc_tools_bookmarks = "<leader>tb Bookmark Tool"
+let g:WhichKeyDesc_tools_run       = "<leader>tr Run"
+let g:WhichKeyDesc_tools_find      = "<leader>tf Find"
+let g:WhichKeyDesc_tools_commit    = "<leader>tc Commit"
+let g:WhichKeyDesc_tools_debug     = "<leader>td Debug"
+let g:WhichKeyDesc_tools_gradle    = "<leader>tg Gradle"
+let g:WhichKeyDesc_tools_problems  = "<leader>tp Problems"
+let g:WhichKeyDesc_tools_todos     = "<leader>tT Todo's"
+let g:WhichKeyDesc_tools_terminal  = "<leader>tt Terminal"
+let g:WhichKeyDesc_tools_maximize_tool_window  = "<leader>tx Maximize Tool Window"
+let g:WhichKeyDesc_tools_hide_window  = "<leader>th Hide Active Window"
+let g:WhichKeyDesc_tools_hide_all_windows  = "<leader>th Hide All Windows"
+
+
+map <leader>tm <Action>(ToolWindowsGroup)
+map <leader>tb <Action>(ActivateBookmarksToolWindow)
+map <leader>tr <Action>(ActivateRunToolWindow)
+map <leader>tf <Action>(ActivateFindToolWindow)
+map <leader>tc <Action>(ActivateCommitToolWindow)
+map <leader>td <Action>(ActivateDebugToolWindow)
+map <leader>tg <Action>(ActivateGradleToolWindow)
+map <leader>tv <Action>(ActivateVersionControlToolWindow)
+map <leader>tp <Action>(ActivateProblemsViewToolWindow)
+map <leader>tT <Action>(ActivateTODOToolWindow)
+map <leader>tt <Action>(ActivateTerminalToolWindow)
+map <leader>tx <Action>(MaximizeToolWindow)
+map <leader>th <Action>(HideActiveWindow)
+map <leader>tH <action>(HideAllWindows)
+
+
+
+"" Mapping to intellij default commands
+map <c-z>a :action $SelectAll<CR>
+map <c-z>b :action GotoDeclaration<CR>
+map <c-z>c :action $Copy<CR>
+map <c-z>d :action EditorDuplicate<CR>
+map <c-z>e :action RecentFiles<CR>
+map <c-z>f :action Find<CR>
+map <c-z>g :action GotoLine<CR>
+map <c-z>h :action TypeHierarchy<CR>
+map <c-z>i :action ImplementMethods<CR>
+map <c-z>m :action EditorScrollToCenter<CR>
+map <c-z>n :action FileChooser.NewFolder<CR>
+map <c-z>o :action OverrideMethods<CR>
+map <c-z>p :action ParameterInfo<CR>
+map <c-z>q :action QuickJavaDoc<CR>
+map <c-z>r :action Replace<CR>
+map <c-z>s :action SaveAll<CR>
+map <c-z>t :action Vcs.UpdateProject<CR>
+map <c-z>u :action GotoSuperMethod<CR>
+map <c-z>v :action $Paste<CR>
+map <c-z>w :action EditorSelectWord<CR>
+map <c-z>x :action $Cut<CR>
+map <c-z>y :action EditorDeleteLine<CR>
+map <c-z>[ :action EditorCodeBlockStart<CR>
+map <c-z>] :action EditorCodeBlockEnd<CR>
+
+"source ~/.ideavimrc_megawubs
